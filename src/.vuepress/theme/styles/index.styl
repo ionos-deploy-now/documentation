@@ -68,7 +68,18 @@ body
     border-radius 4px
 
   img
-    max-width 100%
+    margin-top: 10px
+    margin-bottom: 20px
+    box-shadow: 3px 3px 10px Gainsboro
+
+  @media (max-width: 1000px)
+    img 
+      max-width: 100%
+  
+  @media (min-width: 1000px)
+    img 
+      max-width: 480px
+  
 
 {$contentClass}.custom
   padding 0
@@ -76,7 +87,7 @@ body
 
   img
     max-width 100%
-
+  
 a
   font-weight 500
   color $accentColor
@@ -104,7 +115,10 @@ blockquote
     margin 0
 
 ul, ol
-  padding-left 1.2em
+  padding-left 2em
+
+li
+  margin: 0 0 4px 0
 
 strong
   font-weight 600
@@ -138,6 +152,7 @@ h2
   font-weight 400
   padding-bottom .3rem
   border-bottom 1px solid $borderColor
+  margin-bottom: 15px!important
 
 h3
   font-size 19px
