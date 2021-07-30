@@ -18,11 +18,11 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: 'recursive'
-      - name: Setup Node.js 12.16.x
+      - name: Setup Node.js
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: actions/setup-node@v1
         with:
-          node-version: 12.16.x
+          node-version: 16.2.0
       - name: Prepare Project build environment
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         run: |
@@ -41,7 +41,7 @@ jobs:
           branch-id: ${{ steps.project.outputs.branch-id }}
           storage-quota: ${{ steps.project.outputs.storage-quota }}
           project: 11f02d16-408f-4f64-8037-0e2b57bb693a
-          dist-folder: src/.vuepress/dist
+          dist-folder: dist
           remote-host: ${{ steps.project.outputs.remote-host }}
           api-key: ${{ secrets.IONOS_API_KEY }}
           service-host: api-eu.ionos.space
