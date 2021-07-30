@@ -1,11 +1,9 @@
 <template>
-  <a href="url" target="_blank" rel="noopener noreferrer">
+  <a :href="url" target="_blank" rel="noopener noreferrer">
     <div
       class="flex items-center opacity-50 hover:opacity-100 hover:no-underline"
     >
       <Edit3Icon size="1.5x" />Suggest changes to this page
-<!--       {{ settings.github }}
-      {{ page.id }} -->
     </div>
   </a>
 </template>
@@ -28,6 +26,11 @@ export default {
     Edit3Icon,
   },
 
+  props: {
+    path: String,
+    required: true
+  },
+
   computed: {
     meta() {
       return this.$static.metadata;
@@ -35,10 +38,12 @@ export default {
     settings() {
       return this.meta.settings;
     },
-    page() {
-      console.log(this.$page);
-      return this.$page.markdownPage;
+    github() {
+      return this.settings.github;
     },
+    url() {
+      return this.github + "/content/" + this.path; // see @gridsome/source-filesystem options
+    }
   },
 };
 </script>
