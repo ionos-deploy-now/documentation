@@ -1,24 +1,24 @@
 {
-  "name": "deploy-now-doc",
-  "version": "0.0.1",
-  "description": "Documentation of Deploy Now",
-  "main": "index.js",
+  "name": "docs",
+  "private": true,
   "scripts": {
-    "dev": "vuepress dev src",
-    "verify": "vuepress check-md src",
-    "build": "vuepress build src"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "@vuepress/plugin-pwa": "^1.8.2",
-    "material-design-icons-iconfont": "^6.1.0",
-    "vuepress": "^1.8.2",
-    "vuepress-plugin-check-md": "^0.0.2",
-    "vuepress-plugin-code-copy": "^1.0.6",
-    "vuepress-plugin-sitemap": "^2.3.1",
-    "vuetify": "^2.5.3"
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
   },
   "dependencies": {
-    "@kawarimidoll/vuepress-plugin-tailwind": "^2.0.0"
+    "gridsome": "^0.7.23"
+  },
+  "devDependencies": {
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.4",
+    "gridsome-plugin-windicss": "^1.0.2",
+    "@gridsome/plugin-sitemap": "^0.4.0",
+    "@gridsome/remark-prismjs": "^0.5.0",
+    "fuse.js": "^6.4.6",
+    "node-sass": "^6.0.1",
+    "prism-themes": "^1.8.0",
+    "sass-loader": "^10.1.1",
+    "vue-feather-icons": "^5.1.0"
   }
 }
