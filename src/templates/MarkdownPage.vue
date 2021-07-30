@@ -14,10 +14,12 @@
         <div class="mt-8 pt-8 lg:mt-12 lg:pt-12 border-t border-ui-border">
           <NextPrevLinks />
         </div>
+
+        <div class="mt-4 pt-4">
+          <EditLink :path="$page.markdownPage.fileInfo.path" />
+        </div>
       </div>
     </div>
-
-    <EditLink :path="$page.markdownPage.fileInfo.path"/>
   </Layout>
 </template>
 
