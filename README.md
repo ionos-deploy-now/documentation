@@ -1,23 +1,13 @@
-## Setup
+# Deploy Now Documentation
 
-Install dependencies
+## ToDos
 
-```bash
-npm install
-```
-
-## Development & Editing
-
-Start local dev server and edit content
-
-```bash
-npm run dev
-```
-
-## Building
-
-Build static pages in `src/.vuepress/dist` folder
-
-```bash
-npm run build
-```
+* add EditLink
+* add Footer
+* fix dev server crash when editing markup pages
+* edit container padding > md
+* prettify components (replace CSS / SASS with WindiCSS where possible)
+* extract all text snippets from components
+* fix search component
+* enable plugins: sitemap, PWA
+* check header meta data

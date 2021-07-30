@@ -1,2 +1,9 @@
+*.log
+.cache
+.DS_Store
+src/.temp
 node_modules
-src/.vuepress/dist
+dist
+!.env.example
+.env
+.env.*
