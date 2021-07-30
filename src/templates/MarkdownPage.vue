@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <EditLink />
+    <EditLink :path="$page.markdownPage.fileInfo.path"/>
   </Layout>
 </template>
 
@@ -28,6 +28,9 @@ query ($id: ID!) {
     title
     description
     path
+    fileInfo {
+      path
+    }
     timeToRead
     content
     sidebar
