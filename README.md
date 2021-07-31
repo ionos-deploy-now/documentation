@@ -1,3 +1,5 @@
+![Deploy Now](https://github.com/hunsalz/documentation/actions/workflows/ionos-space.yml/badge.svg?branch=content-first)
+
 # Deploy Now Documentation
 
 ## ToDos
