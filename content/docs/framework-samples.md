@@ -5,16 +5,16 @@ prev: '/docs/staging-deployments/'
 next: '/docs/settings/'
 ---
 
-# Samples
+# Framework samples
 
-The following samples give you an overview of static site generator (SSR) frameworks with auto-setup ability by Deploy Now.
+The following frameworks samples give you an overview of static site generator (SSR) frameworks with Deploy Now. We're working on auto-setup abilities for the most popular frameworks. Besides it's possible to setup your web project by Deploy Now step-by-step assistance. In addition it's always possible to directly edit `.github/workflows/ionos-space.yml` in your repository. Following framework samples give you an idea. You find detail setting options [here](/docs/settings/).
 
 ## hello-plain-html
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-plain-html)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-plain-html)
 
-A plain html website that needs no additional build instructions, so that the whole content is just copied to IONOS.
+Just copy static assets to IONOS. This sample is plain html without additional build instructions.
 
 ::: tip .ionos.yml
 ``` yml

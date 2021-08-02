@@ -34,10 +34,10 @@ module.exports = {
           {
             title: 'Getting Started',
             items: [
-              '/docs/',
-              '/docs/git-integration/',
-              '/docs/staging-deployments/',
-              '/docs/samples/',
+              "/docs/",
+              "/docs/git-integration/",
+              "/docs/staging-deployments/",
+              "/docs/framework-samples/",
             ],
           },
           {
