@@ -2,9 +2,8 @@
 
 ## ToDos
 
-* add EditLink
 * add Footer
-* fix menu in mobile view (missing icon)
+* check & fix menu icon in mobile view (not visible on home page)
 * fix dev server crash when editing markup pages
 * edit container padding > md
 * prettify components (replace CSS / SASS with WindiCSS where possible)
@@ -14,3 +13,9 @@
 * check header meta data
 * fix .env in production
 * optimize favicon and other icons: https://realfavicongenerator.net/
+* dark mode
+  * depend on system settings
+  * how to handle images not svg with white background?
+* images
+  * set auto margins
+  * separate images from floating text (maybe a dashed border)
