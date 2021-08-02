@@ -1,5 +1,19 @@
 # Deploy Now Documentation
 
+## Setup
+
+```bash
+yarn install
+```
+
+```bash
+yarn develop
+```
+
+```bash
+yarn build
+```
+
 ## ToDos
 
 * add EditLink
