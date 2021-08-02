@@ -1,6 +1,7 @@
 <template>
   <div
-    class="mt-8 sm:px-4 sm:pb-16 md:px-6 md:pt-12 md:mt-0 lg:px-8 border-ui-border"
+    v-if="headings.length > 1"
+    class=" mt-8 sm:pl-4 md:pl-6 md:pt-12 lg:pl-8 sm:pb-16 sm:border-l border-ui-border md:mt-0"
   >
     <h3 class="pt-0 mt-0 text-sm tracking-wide uppercase border-none">
       On this page
