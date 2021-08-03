@@ -1,24 +1,31 @@
 {
-  "name": "docs",
+  "name": "ionos-space-documentation",
   "private": true,
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "lint": "eslint --ext .ts,.js,.vue,.json src"
   },
   "dependencies": {
     "gridsome": "^0.7.23"
   },
   "devDependencies": {
-    "@gridsome/source-filesystem": "^0.6.2",
-    "@gridsome/transformer-remark": "^0.6.4",
-    "gridsome-plugin-windicss": "^1.0.2",
     "@gridsome/plugin-sitemap": "^0.4.0",
     "@gridsome/remark-prismjs": "^0.5.0",
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.4",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-gridsome": "^1.6.2",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^7.15.1",
     "fuse.js": "^6.4.6",
+    "gridsome-plugin-windicss": "^1.0.2",
     "node-sass": "^6.0.1",
     "prism-themes": "^1.8.0",
     "sass-loader": "^10.1.1",
+    "vue-eslint-parser": "^7.10.0",
     "vue-feather-icons": "^5.1.0"
   }
 }

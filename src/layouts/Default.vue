@@ -36,6 +36,8 @@
         <MenuIcon v-else />
       </button>
     </div>
+
+    <layout-footer />
   </div>
 </template>
 
@@ -50,12 +52,14 @@ query {
 <script>
 import Sidebar from '@/components/Sidebar';
 import LayoutHeader from '@/components/LayoutHeader';
+import LayoutFooter from '@/components/LayoutFooter';
 import {sidebar} from '@/libs/mixins';
 import {MenuIcon, XIcon} from 'vue-feather-icons';
 
 export default {
   mixins: [sidebar],
   components: {
+    LayoutFooter,
     Sidebar,
     LayoutHeader,
     MenuIcon,
