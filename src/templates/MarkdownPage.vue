@@ -2,7 +2,7 @@
   <Layout v-slot="{ headerHeight }">
     <div class="flex flex-wrap justify-start">
       <div
-        class="hidden border-r md:block md:sticky lg:border-l lg:border-r-0 md:w-1/5 lg:order-2"
+        class="hidden border-ui-border border-r md:block md:sticky lg:border-l lg:border-r-0 md:w-1/5 lg:order-2"
         :style="sidebarStyle(headerHeight)"
       >
         <OnThisPage />
