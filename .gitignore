@@ -1,10 +1,11 @@
 *.log
 .cache
 .DS_Store
-.idea
-src/.temp
-node_modules
-dist
-!.env.example
 .env
 .env.*
+!.env.example
+.github/workflows/ionos-space.yml
+.idea
+dist
+node_modules
+src/.temp
