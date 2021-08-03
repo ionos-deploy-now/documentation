@@ -6,35 +6,35 @@ jobs:
   ionos-space:
     runs-on: ubuntu-latest
     steps:
-      - name: Get Ionos Project data
+      - name: Get project data
         uses: ionos-deploy-now/retrieve-project-info-action@v1
         id: project
         with:
           project: 11f02d16-408f-4f64-8037-0e2b57bb693a
           api-key: ${{ secrets.IONOS_API_KEY }}
           service-host: api-eu.ionos.space
-      - name: checkout
+      - name: Checkout repository
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: actions/checkout@v2
         with:
           submodules: 'recursive'
-      - name: Setup Node.js
+      - name: Setup project
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: actions/setup-node@v1
         with:
           node-version: 16.2.0
-      - name: Prepare Project build environment
+      - name: Prepare project
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         run: |
           npm install --global yarn
           yarn install --frozen-lockfile
-      - name: Build Node project
+      - name: Build project
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         run: yarn build
         env:
           CI: true
           SITE_URL: ${{ steps.project.outputs.site-url }}
-      - name: Deploy to IONOS
+      - name: Deploy project
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: ionos-deploy-now/deploy-to-ionos-action@v1
         with:
