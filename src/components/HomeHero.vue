@@ -1,5 +1,5 @@
 <template>
-  <header class="flex mt-4">
+  <header class="flex bg-ui-background mt-4">
     <div class="grid md:grid-cols-7 md:gap-2 px-8 md:px-20">
       <div class="col-span-4 background">
         <div class="relative z-10">

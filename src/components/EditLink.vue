@@ -1,11 +1,17 @@
 <template>
-  <a :href="url" target="_blank" rel="noopener noreferrer">
-    <div
+  <div>
+    <a
+      :href="url"
+      target="_blank"
       class="flex items-center opacity-50 hover:opacity-100 hover:no-underline"
+      rel="noopener noreferrer"
     >
-      <Edit3Icon size="1.5x" />Suggest changes to this page
-    </div>
-  </a>
+      <Edit3Icon size="1x" />
+      <span class="ml-1">
+        Suggest changes to this page
+      </span>
+    </a>
+  </div>
 </template>
 
 <static-query>
@@ -19,7 +25,7 @@ query {
 </static-query>
 
 <script>
-import { Edit3Icon } from "vue-feather-icons";
+import {Edit3Icon} from "vue-feather-icons";
 
 export default {
   components: {

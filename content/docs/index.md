@@ -1,7 +1,7 @@
 ---
 description: ''
 sidebar: 'docs'
-next: '/docs/installation/'
+next: '/docs/git-integration/'
 ---
 
 # Introduction
@@ -15,7 +15,7 @@ Deploy Now is a hosting platform dedicated to developers. Connect your GitHub ac
 1. **Select your deployment source.** We can deploy either repositories within your GitHub account or any public third party repository. No repository at hand? Deploy one of our samples [Link to "samples". 
 ![Screenshot from source selection step](/source-selection.jpg)  
   
-2. **Configure the deployment.** Deploy Now scans your repository to detect the framework and the dist folder. In case we are not able to identify them, we ask you to provide them explicitly.
+1. **Configure the deployment.** Deploy Now scans your repository to detect the framework and the dist folder. In case we are not able to identify them, we ask you to provide them explicitly.
 ![Screenshot from configuration screen](/confirm-configuration.jpg)
 
 1. **Your project is beeing build.** After a couple of seconds your website goes live under a preview URL. 
