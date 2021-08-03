@@ -1,13 +1,17 @@
 <template>
-  <a href="url" target="_blank" rel="noopener noreferrer">
-    <div
+  <div>
+    <a
+      :href="url"
+      target="_blank"
       class="flex items-center opacity-50 hover:opacity-100 hover:no-underline"
+      rel="noopener noreferrer"
     >
-      <Edit3Icon size="1.5x" />Suggest changes to this page
-<!--       {{ settings.github }}
-      {{ page.id }} -->
-    </div>
-  </a>
+      <Edit3Icon size="1x" />
+      <span class="ml-1">
+        Suggest changes to this page
+      </span>
+    </a>
+  </div>
 </template>
 
 <static-query>
@@ -21,11 +25,16 @@ query {
 </static-query>
 
 <script>
-import { Edit3Icon } from "vue-feather-icons";
+import {Edit3Icon} from "vue-feather-icons";
 
 export default {
   components: {
     Edit3Icon,
+  },
+
+  props: {
+    path: String,
+    required: true
   },
 
   computed: {
@@ -35,10 +44,12 @@ export default {
     settings() {
       return this.meta.settings;
     },
-    page() {
-      console.log(this.$page);
-      return this.$page.markdownPage;
+    github() {
+      return this.settings.github;
     },
+    url() {
+      return this.github + "/content/" + this.path; // see @gridsome/source-filesystem options
+    }
   },
 };
 </script>

@@ -1,23 +1,23 @@
 <template>
-  <Layout>
-    <div class="flex flex-wrap items-start justify-start">
+  <Layout v-slot="{ headerHeight }">
+    <div class="flex flex-wrap justify-start">
       <div
-        class="order-2 w-full md:w-1/3 sm:pl-4 md:pl-6 lg:pl-8 sticky"
-        style="top: 4rem"
+        class="hidden border-r md:block md:sticky lg:border-l lg:border-r-0 md:w-1/5 lg:order-2"
+        :style="sidebarStyle(headerHeight)"
       >
         <OnThisPage />
       </div>
 
-      <div class="order-1 w-full md:w-2/3">
+      <div class="container pb-24 md:w-3/5 lg:order-1">
         <div class="content" v-html="$page.markdownPage.content" />
 
-        <div class="mt-8 pt-8 lg:mt-12 lg:pt-12 border-t border-ui-border">
+        <EditLink class="mt-10" :path="$page.markdownPage.fileInfo.path" />
+
+        <div v-if="showPrevNextLinks" class="mt-8 pt-8 lg:mt-12 lg:pt-12 border-t border-ui-border">
           <NextPrevLinks />
         </div>
       </div>
     </div>
-
-    <EditLink />
   </Layout>
 </template>
 
@@ -28,6 +28,9 @@ query ($id: ID!) {
     title
     description
     path
+    fileInfo {
+      path
+    }
     timeToRead
     content
     sidebar
@@ -54,14 +57,25 @@ query ($id: ID!) {
 import OnThisPage from "@/components/OnThisPage.vue";
 import NextPrevLinks from "@/components/NextPrevLinks.vue";
 import EditLink from "@/components/EditLink.vue";
+import {sidebar} from "../libs/mixins";
 
 export default {
+  mixins: [sidebar],
   components: {
     OnThisPage,
     NextPrevLinks,
     EditLink,
   },
-
+  methods: {
+    sidebarStyle(headerHeight) {
+      return this.stickySidebarStyle(headerHeight)
+    }
+  },
+  computed: {
+    showPrevNextLinks() {
+      return this.$page.markdownPage.prev || this.$page.markdownPage.next;
+    }
+  },
   metaInfo() {
     const title = this.$page.markdownPage.title;
     const description =

@@ -1,7 +1,7 @@
 ---
 description: ''
 sidebar: 'docs'
-next: '/docs/installation/'
+next: '/docs/git-integration/'
 ---
 
 # Introduction
