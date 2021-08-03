@@ -22,14 +22,14 @@ jobs:
   ionos-space:
     runs-on: ubuntu-latest
     steps:
-      - name: Fetch project data
+      - name: Get project data
         uses: ionos-deploy-now/retrieve-project-info-action@v1
         id: project
         with:
           project: 719bd98b-3b8c-477b-8563-018a96856ab6
           api-key: ${{ secrets.IONOS_API_KEY }}
           service-host: api-eu.ionos.space
-      - name: Checkout project
+      - name: Checkout repository
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: actions/checkout@v2
         with:
@@ -38,8 +38,8 @@ jobs:
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: actions/setup-node@v1
         with:
-          node-version: 12.16.x
-      - name: Prepare project environment
+          node-version: 16.2.0
+      - name: Prepare project
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         run: |
           npm install --global yarn
@@ -50,7 +50,7 @@ jobs:
         env:
           CI: true
           SITE_URL: ${{ steps.project.outputs.site-url }}
-      - name: Deploy build
+      - name: Deploy project
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: ionos-deploy-now/deploy-to-ionos-action@v1
         with:
