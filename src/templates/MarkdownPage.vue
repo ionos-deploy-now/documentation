@@ -46,7 +46,7 @@ query ($id: ID!) {
       anchor
     }
   }
-  allMarkdownPage{
+  allMarkdownPage {
     edges {
       node {
         path
@@ -58,21 +58,21 @@ query ($id: ID!) {
 </page-query>
 
 <script>
-import OnThisPage from "@/components/OnThisPage.vue";
-import NextPrevLinks from "@/components/NextPrevLinks.vue";
-import EditLink from "@/components/EditLink.vue";
-import {sidebar} from "../libs/mixins";
+import OnThisPage from '@/components/OnThisPage.vue';
+import NextPrevLinks from '@/components/NextPrevLinks.vue';
+import EditLink from '@/components/EditLink.vue';
+import { sidebar } from '../libs/mixins';
 
 export default {
   mixins: [sidebar],
   components: {
     OnThisPage,
     NextPrevLinks,
-    EditLink,
+    EditLink
   },
   methods: {
     sidebarStyle(headerHeight) {
-      return this.stickySidebarStyle(headerHeight)
+      return this.stickySidebarStyle(headerHeight);
     }
   },
   computed: {
@@ -82,38 +82,37 @@ export default {
   },
   metaInfo() {
     const title = this.$page.markdownPage.title;
-    const description =
-      this.$page.markdownPage.description || this.$page.markdownPage.excerpt;
+    const description = this.$page.markdownPage.description || this.$page.markdownPage.excerpt;
 
     return {
       title: title,
       meta: [
         {
-          name: "description",
-          content: description,
+          name: 'description',
+          content: description
         },
         {
-          key: "og:title",
-          name: "og:title",
-          content: title,
+          key: 'og:title',
+          name: 'og:title',
+          content: title
         },
         {
-          key: "twitter:title",
-          name: "twitter:title",
-          content: title,
+          key: 'twitter:title',
+          name: 'twitter:title',
+          content: title
         },
         {
-          key: "og:description",
-          name: "og:description",
-          content: description,
+          key: 'og:description',
+          name: 'og:description',
+          content: description
         },
         {
-          key: "twitter:description",
-          name: "twitter:description",
-          content: description,
-        },
-      ],
+          key: 'twitter:description',
+          name: 'twitter:description',
+          content: description
+        }
+      ]
     };
-  },
+  }
 };
 </script>

@@ -4,19 +4,18 @@ import DefaultLayout from '~/layouts/Default.vue';
 import '~/assets/styles/global.scss';
 import 'prism-themes/themes/prism-material-oceanic.css';
 
-export default function (Vue, {router, head, isClient}) {
+export default function(Vue, { router, head }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
 
   // Add meta data to global head
   head.link.push({
     rel: 'preconnect',
-    href: 'https://fonts.gstatic.com',
+    href: 'https://fonts.gstatic.com'
   });
   head.link.push({
     rel: 'stylesheet',
-    href:
-      'https://fonts.googleapis.com/css2?family=Overpass:wght@100;300&display=swap',
+    href: 'https://fonts.googleapis.com/css2?family=Overpass:wght@100;300&display=swap'
   });
 
   // Add meta data to each page
@@ -24,7 +23,7 @@ export default function (Vue, {router, head, isClient}) {
     head.meta.push({
       key: 'og:url',
       name: 'og:url',
-      content: process.env.GRIDSOME_BASE_PATH + to.path,
+      content: process.env.GRIDSOME_BASE_PATH + to.path
     });
     next();
   });

@@ -11,7 +11,6 @@ module.exports = {
     'plugin:gridsome/recommended',
   ],
   parserOptions: {
-    //parser: 'vue-eslint-parser',
     ecmaVersion: 2021,
     sourceType: 'module',
   },
@@ -23,5 +22,6 @@ module.exports = {
         printWidth: 120,
       },
     ],
+    //'comma-dangle': ['error', 'always-multiline']
   }
 };

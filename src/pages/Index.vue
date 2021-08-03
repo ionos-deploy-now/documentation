@@ -20,48 +20,48 @@
 </template>
 
 <script>
-import HomeHero from "@/components/HomeHero";
-import HomeFeatures from "@/components/HomeFeatures";
+import HomeHero from '@/components/HomeHero';
+import HomeFeatures from '@/components/HomeFeatures';
 
 export default {
   components: {
     HomeHero,
-    HomeFeatures,
+    HomeFeatures
   },
 
   metaInfo() {
-    const title = "Deploy Now documentation";
-    const description = "Documentation of Deploy Now";
+    const title = 'Deploy Now documentation';
+    const description = 'Documentation of Deploy Now';
 
     return {
       title: title,
       meta: [
         {
-          name: "description",
-          content: description,
+          name: 'description',
+          content: description
         },
         {
-          key: "og:title",
-          name: "og:title",
-          content: title,
+          key: 'og:title',
+          name: 'og:title',
+          content: title
         },
         {
-          key: "twitter:title",
-          name: "twitter:title",
-          content: title,
+          key: 'twitter:title',
+          name: 'twitter:title',
+          content: title
         },
         {
-          key: "og:description",
-          name: "og:description",
-          content: description,
+          key: 'og:description',
+          name: 'og:description',
+          content: description
         },
         {
-          key: "twitter:description",
-          name: "twitter:description",
-          content: description,
-        },
-      ],
+          key: 'twitter:description',
+          name: 'twitter:description',
+          content: description
+        }
+      ]
     };
-  },
+  }
 };
 </script>

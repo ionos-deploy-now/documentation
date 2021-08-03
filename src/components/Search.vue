@@ -1,15 +1,8 @@
 <template>
-  <div
-    @keydown.down="increment"
-    @keydown.up="decrement"
-    @keydown.enter="go"
-    class="relative"
-  >
+  <div @keydown.down="increment" @keydown.up="decrement" @keydown.enter="go" class="relative">
     <label class="relative block">
       <span class="sr-only">Search Documentation</span>
-      <div
-        class="absolute inset-y-0 left-0 flex items-center justify-center px-3 py-2 opacity-50"
-      >
+      <div class="absolute inset-y-0 left-0 flex items-center justify-center px-3 py-2 opacity-50">
         <SearchIcon size="1.25x" class="text-ui-typo" />
       </div>
       <input
@@ -47,14 +40,14 @@
           @mousedown="go"
           class="border-ui-sidebar"
           :class="{
-            'border-b': index + 1 !== results.length,
+            'border-b': index + 1 !== results.length
           }"
         >
           <g-link
             :to="result.path + result.anchor"
             class="block p-2 -mx-2 text-base font-bold rounded-lg"
             :class="{
-              'bg-ui-sidebar text-ui-primary': focusIndex === index,
+              'bg-ui-sidebar text-ui-primary': focusIndex === index
             }"
           >
             <span v-if="result.value === result.title">
@@ -75,17 +68,17 @@
 
 <static-query>
 query Search {
-   allMarkdownPage{
+  allMarkdownPage {
     edges {
       node {
         id
         path
         title
         headings {
-        	depth
+          depth
           value
           anchor
-      	}
+        }
       }
     }
   }
@@ -93,44 +86,42 @@ query Search {
 </static-query>
 
 <script>
-import Fuse from "fuse.js";
-import { ChevronRightIcon, SearchIcon } from "vue-feather-icons";
+import Fuse from 'fuse.js';
+import { ChevronRightIcon, SearchIcon } from 'vue-feather-icons';
 
 export default {
   components: {
     ChevronRightIcon,
-    SearchIcon,
+    SearchIcon
   },
 
   data() {
     return {
-      query: "",
+      query: '',
       focusIndex: -1,
-      focused: false,
+      focused: false
     };
   },
   computed: {
     results() {
       const fuse = new Fuse(this.headings, {
-        keys: ["value"],
-        threshold: 0.25,
+        keys: ['value'],
+        threshold: 0.25
       });
 
       return fuse.search(this.query).slice(0, 15);
     },
     headings() {
       let result = [];
-      const allPages = this.$static.allMarkdownPage.edges.map(
-        (edge) => edge.node
-      );
+      const allPages = this.$static.allMarkdownPage.edges.map(edge => edge.node);
 
       // Create the array of all headings of all pages.
-      allPages.forEach((page) => {
-        page.headings.forEach((heading) => {
+      allPages.forEach(page => {
+        page.headings.forEach(heading => {
           result.push({
             ...heading,
             path: page.path,
-            title: page.title,
+            title: page.title
           });
         });
       });
@@ -140,7 +131,7 @@ export default {
     showResult() {
       // Show results, if the input is focused and the query is not empty.
       return this.focused && this.query.length > 0;
-    },
+    }
   },
   methods: {
     increment() {
@@ -172,9 +163,9 @@ export default {
 
       // Unfocus the input and reset the query.
       this.$refs.input.blur();
-      this.query = "";
-    },
-  },
+      this.query = '';
+    }
+  }
 };
 </script>
 

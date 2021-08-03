@@ -3,8 +3,8 @@ export const sidebar = {
     stickySidebarStyle(headerHeight) {
       return {
         top: `${headerHeight}px`,
-        height: `calc(100vh - ${headerHeight}px)`,
+        height: `calc(100vh - ${headerHeight}px)`
       };
-    },
+    }
   }
-}
+};

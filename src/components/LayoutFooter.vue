@@ -21,12 +21,11 @@ query {
 </static-query>
 
 <script>
-
 export default {
   computed: {
     meta() {
       return this.$static.metadata;
-    },
-  },
+    }
+  }
 };
 </script>
