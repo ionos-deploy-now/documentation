@@ -11,9 +11,8 @@
             <DeployNow class="text-4xl md:text-6xl" />
           </h1>
           <p class="flex-grow md:text-xl my-8 md:my-16">
-            Connect your GitHub account and instantly deploy your static web
-            projects on IONOS own DDoS-protected georedundant and green
-            infrastructure.
+            Connect your GitHub account and instantly deploy your static web projects on IONOS own DDoS-protected
+            georedundant and green infrastructure.
           </p>
         </div>
         <div class="flex justify-start">
@@ -33,12 +32,12 @@
 </template>
 
 <script>
-import DeployNow from "@/components/DeployNow";
+import DeployNow from '@/components/DeployNow';
 
 export default {
   components: {
-    DeployNow,
-  },
+    DeployNow
+  }
 };
 </script>
 
@@ -48,7 +47,7 @@ export default {
 }
 
 .background::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 0;
@@ -56,7 +55,7 @@ export default {
   width: 100%;
   height: 100%;
   z-index: 0;
-  background: url("/background-bright-mode.svg");
+  background: url('/background-bright-mode.svg');
   background-size: cover;
   opacity: 0.1;
 }

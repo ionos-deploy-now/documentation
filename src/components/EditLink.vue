@@ -25,16 +25,18 @@ query {
 </static-query>
 
 <script>
-import {Edit3Icon} from "vue-feather-icons";
+import { Edit3Icon } from 'vue-feather-icons';
 
 export default {
   components: {
-    Edit3Icon,
+    Edit3Icon
   },
 
   props: {
-    path: String,
-    required: true
+    path: {
+      type: String,
+      required: true
+    }
   },
 
   computed: {
@@ -48,8 +50,8 @@ export default {
       return this.settings.github;
     },
     url() {
-      return this.github + "/content/" + this.path; // see @gridsome/source-filesystem options
+      return this.github + '/content/' + this.path; // see @gridsome/source-filesystem options
     }
-  },
+  }
 };
 </script>

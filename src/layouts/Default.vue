@@ -10,12 +10,7 @@
       </header>
 
       <main class="relative flex bg-ui-background">
-        <aside
-          v-if="hasSidebar"
-          class="sidebar"
-          :class="{ open: sidebarOpen }"
-          :style="sidebarStyle"
-        >
+        <aside v-if="hasSidebar" class="sidebar" :class="{ open: sidebarOpen }" :style="sidebarStyle">
           <div class="w-full pb-16 bg-ui-background">
             <Sidebar @navigate="sidebarOpen = false" />
           </div>
@@ -37,7 +32,7 @@
       </button>
     </div>
 
-    <layout-footer />
+    <LayoutFooter />
   </div>
 </template>
 
@@ -53,8 +48,8 @@ query {
 import Sidebar from '@/components/Sidebar';
 import LayoutHeader from '@/components/LayoutHeader';
 import LayoutFooter from '@/components/LayoutFooter';
-import {sidebar} from '@/libs/mixins';
-import {MenuIcon, XIcon} from 'vue-feather-icons';
+import { sidebar } from '@/libs/mixins';
+import { MenuIcon, XIcon } from 'vue-feather-icons';
 
 export default {
   mixins: [sidebar],
@@ -63,25 +58,25 @@ export default {
     Sidebar,
     LayoutHeader,
     MenuIcon,
-    XIcon,
+    XIcon
   },
   data() {
     return {
       headerHeight: 0,
-      sidebarOpen: false,
+      sidebarOpen: false
     };
   },
   watch: {
     sidebarOpen(isOpen) {
-      document.body.classList.toggle("overflow-hidden", isOpen);
-    },
+      document.body.classList.toggle('overflow-hidden', isOpen);
+    }
   },
   methods: {
     setHeaderHeight() {
       this.$nextTick(() => {
         this.headerHeight = this.$refs.header.offsetHeight;
       });
-    },
+    }
   },
   computed: {
     sidebarStyle() {
@@ -89,7 +84,7 @@ export default {
     },
     hasSidebar() {
       return this.$page && this.headerHeight > 0;
-    },
+    }
   },
   mounted() {
     this.setHeaderHeight();
@@ -98,27 +93,27 @@ export default {
     return {
       meta: [
         {
-          key: "og:type",
-          name: "og:type",
-          content: "website",
+          key: 'og:type',
+          name: 'og:type',
+          content: 'website'
         },
         {
-          key: "twitter:card",
-          name: "twitter:card",
-          content: "summary_large_image",
+          key: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary_large_image'
         },
         {
-          key: "og:image",
-          name: "og:image",
-          content: process.env.SITE_URL + "/favicon.png",
+          key: 'og:image',
+          name: 'og:image',
+          content: process.env.SITE_URL + '/favicon.png'
         },
         {
-          key: "twitter:image",
-          name: "twitter:image",
-          content: process.env.SITE_URL + "/favicon.png",
-        },
-      ],
+          key: 'twitter:image',
+          name: 'twitter:image',
+          content: process.env.SITE_URL + '/favicon.png'
+        }
+      ]
     };
-  },
+  }
 };
 </script>

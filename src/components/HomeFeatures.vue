@@ -4,8 +4,7 @@
       <div>
         <div class="text-xl md:text-2xl text-ui-primary">Edit</div>
         <p class="text-sm md:text-base mt-4">
-          Blend with your own tooling for building up websites and editing
-          content.
+          Blend with your own tooling for building up websites and editing content.
         </p>
       </div>
       <div>

@@ -2,16 +2,12 @@
   <div class="py-2 border-t-2 border-ui-primary">
     <div class="container">
       <div class="flex flex-grow items-center">
-
         <g-link to="/" class="flex items-center mr-2 sm:mr-12" title="Home">
           <img class="h-8" src="/logo.svg" alt="Deploy Now logo" />
           <DeployNow class="hidden sm:block sm:ml-2" />
         </g-link>
 
-        <div
-          v-if="settings.nav.links.length > 0"
-          class="hidden sm:block  sm:text-red-400 sm:px-8"
-        >
+        <div v-if="settings.nav.links.length > 0" class="hidden sm:block  sm:text-red-400 sm:px-8">
           <g-link
             v-for="link in settings.nav.links"
             :key="link.path"
@@ -97,20 +93,11 @@ query {
 </static-query>
 
 <script>
-import ToggleDarkMode from "@/components/ToggleDarkMode";
-import DeployNow from "@/components/DeployNow";
-import {
-  SunIcon,
-  MoonIcon,
-  GlobeIcon,
-  GithubIcon,
-  TwitterIcon,
-} from "vue-feather-icons";
+import ToggleDarkMode from '@/components/ToggleDarkMode';
+import DeployNow from '@/components/DeployNow';
+import { SunIcon, MoonIcon, GlobeIcon, GithubIcon, TwitterIcon } from 'vue-feather-icons';
 
-const Search = () =>
-  import(/* webpackChunkName: "search" */ "@/components/Search").catch(
-    (error) => console.warn(error)
-  );
+const Search = () => import(/* webpackChunkName: "search" */ '@/components/Search').catch(error => console.warn(error));
 
 export default {
   components: {
@@ -121,7 +108,7 @@ export default {
     MoonIcon,
     GlobeIcon,
     GithubIcon,
-    TwitterIcon,
+    TwitterIcon
   },
 
   computed: {
@@ -130,8 +117,8 @@ export default {
     },
     settings() {
       return this.meta.settings;
-    },
-  },
+    }
+  }
 };
 </script>
 
