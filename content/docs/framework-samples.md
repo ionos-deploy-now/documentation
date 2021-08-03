@@ -11,39 +11,41 @@ The following frameworks samples give you an overview of static site generator (
 
 ## hello-plain-html
 
+Simply copy static assets to IONOS. 
+
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-plain-html)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-plain-html)
 
-Just copy static assets to IONOS. This sample is plain html without additional build instructions.
+This sample is plain html without additional build instructions.
 
-::: tip .ionos.yml
+:::details .ionos.yml
 ``` yml
     distFolder: "./"
 ```
 :::
 
-## hello-gridsome <Badge text="todo" type="warning"/>
+## hello-gridsome
 
-## hello-gatsby <Badge text="todo" type="warning"/>
+## hello-gatsby
 
-## hello-hugo <Badge text="todo" type="warning"/>
+## hello-hugo
 
-## hello-jigsaw <Badge text="todo" type="warning"/>
+## hello-jigsaw
 
-## hello-jekyll <Badge text="todo" type="warning"/>
+## hello-jekyll
 
-## hello-next <Badge text="todo" type="warning"/>
+## hello-next
 
-## hello-nuxt <Badge text="todo" type="warning"/>
+## hello-nuxt
 
 ## hello-vuepress
+
+A website based on Vue-powered Static Site Generator [VuePress](https://vuepress.vuejs.org/).
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-vuepress)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-vuepress)
 
-A website based on Vue-powered Static Site Generator [VuePress](https://vuepress.vuejs.org/).
-
-::: tip .ionos.yml
+:::tip .ionos.yml
 ``` yml
     distFolder: src/.vuepress/dist
     setup:
