@@ -16,7 +16,7 @@ Simply copy static assets to IONOS.
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-plain-html)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-plain-html)
 
-This sample is plain html without additional build instructions.
+Just copy static assets to IONOS. This sample is plain html without additional build instructions.
 
 :::details .ionos.yml
 ``` yml
