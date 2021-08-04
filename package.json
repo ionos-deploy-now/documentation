@@ -1,5 +1,5 @@
 {
-  "name": "ionos-space-documentation",
+  "name": "deploy-now-documentation",
   "private": true,
   "scripts": {
     "build": "gridsome build",
@@ -16,6 +16,7 @@
     "@gridsome/remark-prismjs": "^0.5.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
+    "@noxify/gridsome-remark-table-align": "^1.0.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-gridsome": "^1.6.2",
