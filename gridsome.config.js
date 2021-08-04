@@ -43,16 +43,15 @@ module.exports = {
           {
             title: 'Configuration',
             items: [
-              '/docs/settings/',
+              '/docs/configuration-overview/',
+              '/docs/file-based-configuration/',
+              '/docs/github-action/',
               '/docs/custom-domain-ssl/',
             ],
           },
           {
             title: 'More',
-            items: [
-              '/docs/faq/',
-              '/docs/about-us/',
-            ],
+            items: ['/docs/faq/', '/docs/about-us/'],
           },
         ],
       },
@@ -106,7 +105,10 @@ module.exports = {
   ],
   transformers: {
     remark: {
-      plugins: ['@gridsome/remark-prismjs'],
+      plugins: [
+        '@noxify/gridsome-remark-table-align',
+        '@gridsome/remark-prismjs',
+      ],
     },
   },
 };

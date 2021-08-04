@@ -1,7 +1,7 @@
 ---
 description: ''
 sidebar: 'docs'
-prev: '/docs/settings/'
+prev: '/docs/github-action/'
 next: '/docs/faq/'
 ---
 
