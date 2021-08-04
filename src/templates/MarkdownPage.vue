@@ -2,6 +2,7 @@
   <Layout v-slot="{ headerHeight }">
     <div class="flex flex-wrap justify-start">
       <div
+        v-if="headings && headings.length > 1"
         class="hidden border-ui-border border-r md:block md:sticky lg:border-l lg:border-r-0 md:w-1/5 lg:order-2"
         :style="sidebarStyle(headerHeight)"
       >
@@ -61,7 +62,7 @@ query ($id: ID!) {
 import OnThisPage from '@/components/OnThisPage.vue';
 import NextPrevLinks from '@/components/NextPrevLinks.vue';
 import EditLink from '@/components/EditLink.vue';
-import { sidebar } from '../libs/mixins';
+import { sidebar } from '@/libs/mixins';
 
 export default {
   mixins: [sidebar],
@@ -78,7 +79,10 @@ export default {
   computed: {
     showPrevNextLinks() {
       return this.$page.markdownPage.prev || this.$page.markdownPage.next;
-    }
+    },
+    headings() {
+      return this.$page.markdownPage.headings.filter(h => h.depth > 1);
+    },
   },
   metaInfo() {
     const title = this.$page.markdownPage.title;
