@@ -2,6 +2,8 @@
 
 # Deploy Now Documentation
 
+Uses gridsome with NodeJS v12.22
+
 ## Setup
 
 ```bash

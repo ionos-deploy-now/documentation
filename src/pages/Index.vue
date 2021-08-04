@@ -2,7 +2,7 @@
   <Layout>
     <HomeHero class="pt-8 md:pt-32" />
     <HomeFeatures class="pt-8 md:pt-16" />
-    <div class="flex justify-center items-center pt-4 md:pt-8">
+    <div class="flex justify-center items-center py-4 md:py-8">
       <a
         href="https://www.producthunt.com/posts/deploy-now?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-deploy-now"
         target="_blank"

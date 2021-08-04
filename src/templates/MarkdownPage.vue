@@ -1,12 +1,12 @@
 <template>
-  <Layout v-slot="{ headerHeight }">
+  <Layout v-slot="{ headerHeight, footerHeight }">
     <div class="flex flex-wrap justify-start">
       <div
-        v-if="headings && headings.length > 1"
-        class="hidden border-ui-border border-r md:block md:sticky lg:border-l lg:border-r-0 md:w-1/5 lg:order-2"
-        :style="sidebarStyle(headerHeight)"
+        class="hidden md:block md:sticky md:w-1/5 lg:order-2"
+        :class="{ 'lg:border-l lg:border-r-0 border-ui-border border-r': showOnThisPage() }"
+        :style="sidebarStyle(headerHeight, footerHeight)"
       >
-        <OnThisPage />
+        <OnThisPage v-if="showOnThisPage()" />
       </div>
 
       <div class="container pb-24 md:w-3/5 lg:order-1">
@@ -16,10 +16,6 @@
 
         <div v-if="showPrevNextLinks" class="mt-8 pt-8 lg:mt-12 lg:pt-12 border-t border-ui-border">
           <NextPrevLinks />
-        </div>
-
-        <div class="mt-4 pt-4">
-          <EditLink :path="$page.markdownPage.fileInfo.path" />
         </div>
       </div>
     </div>
@@ -69,12 +65,15 @@ export default {
   components: {
     OnThisPage,
     NextPrevLinks,
-    EditLink
+    EditLink,
   },
   methods: {
-    sidebarStyle(headerHeight) {
-      return this.stickySidebarStyle(headerHeight);
-    }
+    sidebarStyle(headerHeight, footerHeight) {
+      return this.stickySidebarStyle(headerHeight, footerHeight);
+    },
+    showOnThisPage() {
+      return this.headings && this.headings.length > 1;
+    },
   },
   computed: {
     showPrevNextLinks() {
@@ -93,30 +92,30 @@ export default {
       meta: [
         {
           name: 'description',
-          content: description
+          content: description,
         },
         {
           key: 'og:title',
           name: 'og:title',
-          content: title
+          content: title,
         },
         {
           key: 'twitter:title',
           name: 'twitter:title',
-          content: title
+          content: title,
         },
         {
           key: 'og:description',
           name: 'og:description',
-          content: description
+          content: description,
         },
         {
           key: 'twitter:description',
           name: 'twitter:description',
-          content: description
-        }
-      ]
+          content: description,
+        },
+      ],
     };
-  }
+  },
 };
 </script>

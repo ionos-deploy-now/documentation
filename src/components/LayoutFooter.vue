@@ -1,9 +1,9 @@
 <template>
-  <div class="px-4 py-2 border-t-2 border-ui-border">
+  <div class="px-4 py-2 border-t-1 border-ui-border">
     <div class="flex flex-grow items-center justify-between">
       <div class="flex flex-grow items-center">
-        <div class="mr-2">Imprint</div>
-        <div class="mr-2">Privacy Policy</div>
+        <div class="mr-3">Imprint</div>
+        <div class="mr-3">Privacy Policy</div>
       </div>
       <div>&copy; 2021 IONOS SE</div>
     </div>

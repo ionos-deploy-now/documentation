@@ -4,7 +4,7 @@
       <header
         ref="header"
         class="sticky top-0 z-10 w-full border-b bg-ui-background border-ui-border"
-        @resize="setHeaderHeight"
+        @resize="updateHeights"
       >
         <LayoutHeader />
       </header>
@@ -17,7 +17,7 @@
         </aside>
 
         <div :class="{ 'pl-0 lg:w-4/5': hasSidebar }">
-          <slot :headerHeight="headerHeight" />
+          <slot :header-height="headerHeight" :footer-height="footerHeight" />
         </div>
       </main>
     </div>
@@ -32,7 +32,7 @@
       </button>
     </div>
 
-    <LayoutFooter />
+    <LayoutFooter ref="footer" />
   </div>
 </template>
 
@@ -63,6 +63,7 @@ export default {
   data() {
     return {
       headerHeight: 0,
+      footerHeight: 0,
       sidebarOpen: false
     };
   },
@@ -72,22 +73,23 @@ export default {
     }
   },
   methods: {
-    setHeaderHeight() {
+    updateHeights() {
       this.$nextTick(() => {
         this.headerHeight = this.$refs.header.offsetHeight;
+        this.footerHeight = this.$refs.footer.offsetHeight;
       });
     }
   },
   computed: {
     sidebarStyle() {
-      return this.stickySidebarStyle(this.headerHeight);
+      return this.stickySidebarStyle(this.headerHeight, this.footerHeight);
     },
     hasSidebar() {
       return this.$page && this.headerHeight > 0;
     }
   },
   mounted() {
-    this.setHeaderHeight();
+    this.updateHeights();
   },
   metaInfo() {
     return {
