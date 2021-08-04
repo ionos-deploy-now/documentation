@@ -25,7 +25,7 @@ yarn build
 * prettify components (replace CSS / SASS with WindiCSS where possible)
 * extract all text snippets from components
 * fix search component
-* enable plugins: sitemap, PWA
+* enable plugins: sitemap, PWA, gridsome-plugin-remark-container
 * check header meta data
 * fix .env in production
 * optimize favicon and other icons: https://realfavicongenerator.net/
@@ -35,3 +35,5 @@ yarn build
 * images
   * set auto margins
   * separate images from floating text (maybe a dashed border)
+* remark 
+  * add an arrow icon to all external links
