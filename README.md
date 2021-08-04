@@ -25,9 +25,11 @@ npm run build
 * edit container padding > md
 * prettify components (replace CSS / SASS with WindiCSS where possible)
 * fix search component
-* enable plugins: sitemap, PWA
+* enable plugins: sitemap, PWA, gridsome-plugin-remark-container
 * check header meta data
 * fix .env in production
 * optimize favicon and other icons: https://realfavicongenerator.net/
 * images
   * separate images from floating text (maybe a dashed border)
+* remark 
+  * add an arrow icon to all external links
