@@ -1,13 +1,11 @@
 <template>
-  <div class="py-2 border-t-2 border-ui-primary">
-    <div class="container">
+  <div class="px-4 py-2 border-t-2 border-ui-border">
+    <div class="flex flex-grow items-center justify-between">
       <div class="flex flex-grow items-center">
-        <div>
-          <div class="mr-2">Imprint</div>
-          <div class="mr-2">Privacy Policy</div>
-        </div>
-        <div>&copy; 2021 IONOS SE</div>
+        <div class="mr-2">Imprint</div>
+        <div class="mr-2">Privacy Policy</div>
       </div>
+      <div>&copy; 2021 IONOS SE</div>
     </div>
   </div>
 </template>
@@ -25,7 +23,7 @@ export default {
   computed: {
     meta() {
       return this.$static.metadata;
-    }
-  }
+    },
+  },
 };
 </script>

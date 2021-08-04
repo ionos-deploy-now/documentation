@@ -5,10 +5,10 @@ module.exports = {
   },
   plugins: ['gridsome'],
   extends: [
-    '@vue/prettier',
     'eslint:recommended',
     'plugin:vue/essential',
     'plugin:gridsome/recommended',
+    '@vue/prettier',
   ],
   parserOptions: {
     ecmaVersion: 2021,
@@ -22,6 +22,7 @@ module.exports = {
         printWidth: 120,
       },
     ],
-    //'comma-dangle': ['error', 'always-multiline']
+    'object-curly-spacing': ['error', 'always'],
+    //'comma-dangle': ['error', 'always-multiline'],
   }
 };

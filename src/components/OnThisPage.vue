@@ -45,7 +45,7 @@ export default {
   data() {
     return {
       activeAnchor: '',
-      observer: null
+      observer: null,
     };
   },
 
@@ -55,11 +55,11 @@ export default {
     },
     headings() {
       return this.page.headings.filter(h => h.depth > 1);
-    }
+    },
   },
 
   watch: {
-    $route: function() {
+    $route() {
       if (process.isClient && window.location.hash) {
         this.activeAnchor = window.location.hash;
       }
@@ -71,7 +71,7 @@ export default {
 
       // And create another one for the next page.
       //this.$nextTick(this.initObserver);
-    }
+    },
   },
 
   methods: {
@@ -100,7 +100,7 @@ export default {
       this.observer = new IntersectionObserver(this.observerCallback, {
         // This rootMargin should allow intersections at the top of the page.
         rootMargin: '0px 0px 99999px',
-        threshold: 1
+        threshold: 1,
       });
 
       const elements = document.querySelectorAll('.content h2, .content h3, .content h4, .content h5, .content h6');
@@ -108,7 +108,7 @@ export default {
       for (let i = 0; i < elements.length; i++) {
         this.observer.observe(elements[i]);
       }
-    }
+    },
   },
 
   mounted() {
@@ -118,6 +118,6 @@ export default {
       }
       this.$nextTick(this.initObserver);
     }
-  }
+  },
 };
 </script>
