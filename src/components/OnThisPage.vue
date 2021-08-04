@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-8 sm:px-4 sm:pb-16 md:px-6 md:pt-12 md:mt-0 lg:px-8 border-ui-border">
-    <!-- mt-8 sm:pl-4 md:pl-6 md:pt-12 lg:pl-8 sm:pb-16 sm:border-l border-ui-border md:mt-0 -->
+  <div class="mt-8 sm:px-4 sm:pb-16 md:mt-0 md:px-6 md:pt-12 lg:px-8 border-ui-border">
+    <!-- mt-8 sm:pl-4 sm:pb-16 sm:border-l md:mt-0 md:pl-6 md:pt-12 lg:pl-8 border-ui-border -->
     <h3 class="pt-0 mt-0 text-sm tracking-wide uppercase border-none">
       On this page
     </h3>

@@ -2,18 +2,20 @@
 
 # Deploy Now Documentation
 
+Uses gridsome with NodeJS v12.22
+
 ## Setup
 
 ```bash
-yarn install
+npm install
 ```
 
 ```bash
-yarn develop
+npm run develop
 ```
 
 ```bash
-yarn build
+npm run build
 ```
 
 ## ToDos

@@ -1,13 +1,19 @@
 <template>
-  <div class="py-2 border-t-2 border-ui-primary">
-    <div class="container">
-      <div class="flex flex-grow items-center">
-        <g-link to="/" class="flex items-center mr-2 sm:mr-12" title="Home">
-          <img class="h-8" src="/logo.svg" alt="Deploy Now logo" />
-          <DeployNow class="hidden sm:block sm:ml-2" />
-        </g-link>
+  <div class="px-4 py-2 border-t-2 border-ui-primary">
+    <div class="flex flex-grow justify-between items-center">
+      <g-link to="/" class="flex items-center mr-2 sm:mr-12" title="Home">
+        <img class="h-8" src="/logo.svg" alt="Deploy Now logo" />
+        <DeployNow class="hidden sm:block sm:ml-2" />
+      </g-link>
 
-        <div v-if="settings.nav.links.length > 0" class="hidden sm:block  sm:text-red-400 sm:px-8">
+      <div class="px-4 max-w-screen-xs min-w-[400px]">
+        <ClientOnly>
+          <Search />
+        </ClientOnly>
+      </div>
+
+      <div class="flex items-center">
+        <div v-if="settings.nav.links.length > 0" class="hidden sm:block sm:px-8">
           <g-link
             v-for="link in settings.nav.links"
             :key="link.path"
@@ -18,13 +24,7 @@
           </g-link>
         </div>
 
-        <div class="w-full px-2 sm:px-4 max-w-screen-xs">
-          <ClientOnly>
-            <Search />
-          </ClientOnly>
-        </div>
-
-        <div class="flex items-center justify-end px-2 sm:px-4">
+        <div class="flex items-center justify-end px-2 sm:px-8">
           <a
             v-if="settings.web"
             :href="settings.web"
@@ -68,6 +68,10 @@
             </template>
           </ToggleDarkMode>
         </div>
+
+        <a class="px-4 py-2 rounded text-white bg-ui-primary">
+          Login
+        </a>
       </div>
     </div>
   </div>
@@ -108,7 +112,7 @@ export default {
     MoonIcon,
     GlobeIcon,
     GithubIcon,
-    TwitterIcon
+    TwitterIcon,
   },
 
   computed: {
@@ -117,8 +121,8 @@ export default {
     },
     settings() {
       return this.meta.settings;
-    }
-  }
+    },
+  },
 };
 </script>
 
