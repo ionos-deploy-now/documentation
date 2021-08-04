@@ -32,7 +32,7 @@
       </button>
     </div>
 
-    <LayoutFooter />
+    <LayoutFooter ref="footer" />
   </div>
 </template>
 
