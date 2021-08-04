@@ -2,7 +2,7 @@
 description: ''
 sidebar: 'docs'
 prev: '/docs/staging-deployments/'
-next: '/docs/settings/'
+next: '/docs/file-based-configuration/'
 ---
 
 # Framework samples
@@ -12,6 +12,7 @@ The following frameworks samples give you an overview of static site generator (
 ## hello-plain-html
 
 Simply copy static assets to IONOS. 
+
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-plain-html)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-plain-html)

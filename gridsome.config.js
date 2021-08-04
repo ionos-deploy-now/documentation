@@ -5,17 +5,17 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Deploy Now - Documentation',
-  siteDescription: 'Documentation of Deploy Now',
+  siteName: "Deploy Now - Documentation",
+  siteDescription: "Documentation of Deploy Now",
   siteUrl: process.env.SITE_URL,
-  pathPrefix: process.env.PATH_PREFIX ? process.env.PATH_PREFIX : '',
+  pathPrefix: process.env.PATH_PREFIX ? process.env.PATH_PREFIX : "",
   icon: {
     favicon: {
-      src: './static/favicon.png',
+      src: "./static/favicon.png",
       sizes: [16, 32, 96],
     },
     touchicon: {
-      src: './static/favicon.png',
+      src: "./static/favicon.png",
       sizes: [76, 152, 120, 167],
       precomposed: true,
     },
@@ -25,14 +25,14 @@ module.exports = {
     twitter: process.env.URL_TWITTER || false,
     github: process.env.URL_GITHUB || false,
     nav: {
-      links: [{ path: '/docs/', title: 'Docs' }],
+      links: [{ path: "/docs/", title: "Docs" }],
     },
     sidebar: [
       {
-        name: 'docs',
+        name: "docs",
         sections: [
           {
-            title: 'Getting Started',
+            title: "Getting Started",
             items: [
               "/docs/",
               "/docs/git-integration/",
@@ -41,18 +41,17 @@ module.exports = {
             ],
           },
           {
-            title: 'Configuration',
+            title: "Configuration",
             items: [
-              '/docs/settings/',
-              '/docs/custom-domain-ssl/'
+              "/docs/configuration-overview/",
+              "/docs/file-based-configuration/",
+              "/docs/github-action/",
+              "/docs/custom-domain-ssl/",
             ],
           },
           {
-            title: 'More',
-            items: [
-              '/docs/faq/',
-              '/docs/about-us/'
-            ],
+            title: "More",
+            items: ["/docs/faq/", "/docs/about-us/"],
           },
         ],
       },
@@ -60,20 +59,20 @@ module.exports = {
   },
   plugins: [
     {
-      use: '@gridsome/source-filesystem',
+      use: "@gridsome/source-filesystem",
       options: {
-        baseDir: './content',
-        path: '**/*.md',
-        typeName: 'MarkdownPage',
+        baseDir: "./content",
+        path: "**/*.md",
+        typeName: "MarkdownPage",
         remark: {
-          externalLinksTarget: '_blank',
-          externalLinksRel: ['noopener', 'noreferrer'],
-          plugins: ['@gridsome/remark-prismjs'],
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["noopener", "noreferrer"],
+          plugins: ["@gridsome/remark-prismjs"],
         },
       },
     },
     {
-      use: 'gridsome-plugin-windicss',
+      use: "gridsome-plugin-windicss",
       options: {
         purgeConfig: {
           // Prevent purging of prism classes.
@@ -81,14 +80,17 @@ module.exports = {
         },
       },
     },
-/*     {
+    /*     {
       use: '@gridsome/plugin-sitemap',
       options: {},
     }, */
   ],
   transformers: {
     remark: {
-      plugins: ['@gridsome/remark-prismjs'],
+      plugins: [
+        "@noxify/gridsome-remark-table-align",
+        "@gridsome/remark-prismjs",
+      ],
     },
   },
 };
