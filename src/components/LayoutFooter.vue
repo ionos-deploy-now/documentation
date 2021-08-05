@@ -2,10 +2,11 @@
   <div class="px-4 py-2 border-t-1 border-ui-border">
     <div class="flex flex-grow items-center justify-between">
       <div class="flex flex-grow items-center">
-        <div class="mr-3">Imprint</div>
-        <div class="mr-3">Privacy Policy</div>
+        <div class="mr-3">{{ $t('footer.imprint') }}</div>
+        <div class="mr-3">{{ $t('footer.privacy-policy') }}</div>
+        <div class="mr-3">{{ $t('footer.terms-of-service') }}</div>
       </div>
-      <div>&copy; 2021 IONOS SE</div>
+      <div>&copy; {{ year }} {{ $t('footer.company-name') }}</div>
     </div>
   </div>
 </template>
@@ -23,6 +24,9 @@ export default {
   computed: {
     meta() {
       return this.$static.metadata;
+    },
+    year() {
+      return new Date().getFullYear();
     },
   },
 };

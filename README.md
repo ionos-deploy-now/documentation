@@ -20,12 +20,10 @@ npm run build
 
 ## ToDos
 
-* add Footer
+* add footer links
 * check & fix menu icon in mobile view (not visible on home page)
-* fix dev server crash when editing markup pages
 * edit container padding > md
 * prettify components (replace CSS / SASS with WindiCSS where possible)
-* extract all text snippets from components
 * fix search component
 * enable plugins: sitemap, PWA
 * check header meta data
@@ -35,5 +33,4 @@ npm run build
   * depend on system settings
   * how to handle images not svg with white background?
 * images
-  * set auto margins
   * separate images from floating text (maybe a dashed border)

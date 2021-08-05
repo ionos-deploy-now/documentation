@@ -5,14 +5,13 @@
         <div class="relative z-10">
           <h1 class="flex-grow">
             <div class="text-2xl md:text-4xl font-normal">
-              <div>Deploy smarter.</div>
-              <div>Deploy faster.</div>
+              <div>{{ $t('home-hero.deploy-smarter') }}</div>
+              <div>{{ $t('home-hero.deploy-faster') }}</div>
             </div>
             <DeployNow class="text-4xl md:text-6xl" />
           </h1>
           <p class="flex-grow md:text-xl my-8 md:my-16">
-            Connect your GitHub account and instantly deploy your static web projects on IONOS own DDoS-protected
-            georedundant and green infrastructure.
+            {{ $t('home-hero.description') }}
           </p>
         </div>
         <div class="flex justify-start">
@@ -20,7 +19,7 @@
             to="/docs/"
             class="flex items-center px-6 py-4 text-2xl font-bold leading-none text-white border rounded-lg shadow-lg bg-ui-primary border-ui-primary transition-all duration-200 ease-out transform hover:shadow-xl hover:-translate-y-1"
           >
-            Getting started
+            {{ $t('home-hero.getting-started') }}
           </g-link>
         </div>
       </div>

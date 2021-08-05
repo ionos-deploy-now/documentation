@@ -1,5 +1,9 @@
 <template>
-  <button @click="handleClick" aria-label="Toggle Darkmode" title="Toggle Darkmode">
+  <button
+    @click="handleClick"
+    :aria-label="$t('display-mode.toggle-dark-mode')"
+    :title="$t('display-mode.toggle-dark-mode')"
+  >
     <slot :dark="isDarkMode" />
   </button>
 </template>
@@ -10,25 +14,20 @@ export const LIGHTS_OUT = 'lights-out';
 export default {
   data() {
     return {
-      isDarkMode: false
+      isDarkMode: false,
     };
   },
 
   methods: {
     handleClick() {
       const hasDarkMode = document.documentElement.hasAttribute(LIGHTS_OUT);
-
-      // Toggle dark mode on click.
       return this.toggleDarkMode(!hasDarkMode);
     },
 
     toggleDarkMode(shouldBeDark) {
       document.documentElement.toggleAttribute(LIGHTS_OUT, shouldBeDark);
-
       this.isDarkMode = shouldBeDark;
-
       this.writeToStorage(shouldBeDark);
-
       return shouldBeDark;
     },
 
@@ -37,9 +36,7 @@ export default {
     },
 
     hasInStorage() {
-      const check = localStorage.getItem(LIGHTS_OUT);
-
-      return check !== null;
+      return localStorage.getItem(LIGHTS_OUT) !== null;
     },
 
     writeToStorage(prefersDark) {
@@ -47,8 +44,8 @@ export default {
     },
 
     getFromStorage() {
-      return localStorage.getItem(LIGHTS_OUT) === 'true' ? true : false;
-    }
+      return localStorage.getItem(LIGHTS_OUT) === 'true';
+    },
   },
 
   mounted() {
@@ -57,7 +54,7 @@ export default {
     } else if (process.isClient && window.matchMedia) {
       this.toggleDarkMode(this.detectPrefered());
     }
-  }
+  },
 };
 </script>
 

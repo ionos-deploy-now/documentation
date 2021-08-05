@@ -13,17 +13,17 @@ You can deploy any kind of website or app that work with HTML, CSS and client-si
 
 ## What is the Jamstack?
 ![Jamstack vs. Classic Web Architecture](/jamstack-architecture.svg)  
-The Jamstack is a novel web architecture based on the principles of prerendering and decoupling. Jamstack stands for client-side **J**avaScript, reusable **A**PIs and **M**arkup. The basic concept is to deliver the markup of a site as fast as possible and use JavaScript and APIs to talk to various services at runtime, after the static frontend is delivered to the browser. In comparison to the classic web architecture the Jamstack is faster, as no database request has to be made at runtime, and more secure, as a static site offers less points for attacks.
+The Jamstack is a novel web architecture based on the principles of prerendering and decoupling. Jamstack stands for client-side **J**avaScript, reusable **A**PIs and **M**arkup. The basic concept is to deliver the markup of a site as fast as possible and use JavaScript and APIs to talk to various services at runtime, after the static frontend is delivered to the browser. In comparison to the classic web architecture the Jamstack is faster, as no database request has to be made at runtime, and more secure, as a static site offers fewer points for attacks.
 
 ## What is a static site generator?
 ![Static Site Generator](/static-site-generator.svg)  
 A static site generator is an essential component of the jamstack architecture. They allow prerendering in the sense that websites files are generated during the build time instead of the request time (when a user opens the side). A static site generator does this by listening to changes in a set of input files like content, templates or data. Everytime an input changes, new output is generated in the form of HTML, CSS and JavaScript files. 
 
 ## What is a build?
-In this context, a build is a process in which JavsScript is combiled or a static site generator is run. This can be triggered by a new git commit or by external services such as a headless CMS. Everytime a build is triggered, we use [GitHub Actions](https://github.com/features/actions) to update the files on the webserver.
+In this context, a build is a process in which JavsScript is compiled, or a static site generator is run. This can be triggered by a new git commit or by external services such as a headless CMS. Everytime a build is triggered, we use [GitHub Actions](https://github.com/features/actions) to update the files on the webserver.
 
 ## From which sources can I deploy?
-You can deploy from an existing GitHub repository in your account, provide the URL to a third party repository you would like to deploy or you can quickstart with one of our [samples](/guide/samples.html).
+You can deploy from an existing GitHub repository in your account, provide the URL to a third party repository you would like to deploy, or you can quickstart with one of our [samples](/docs/framework-samples).
 
 ## Which branches of a repository will be deployed?
 If you deploy a repository that exists in your GitHub account, you can select any branch for deployment. For third party repositories, we allways deploy the current default branch. You can allways switch the branches of your Production Deployment or connect additional branches to [staging deployments](/guide/#staging-deployments).
@@ -68,5 +68,5 @@ Deploy Now uses a freemium model. The three project packages included in the fre
 [Our team](/about) is continuously working on improving Deploy Now based on your needs and wishes. You can drop your feedback or feature requests directly via the feedback button on the product or below our [Post](https://www.producthunt.com/posts/deploy-now) on Product Hunt.
 
 ## What is this documentation built with?
-This documentation is based on the static site generator [VuePress](https://vuepress.vuejs.org/).
+This documentation is based on the static site generator [Gridsome](https://gridsome.org/).
 

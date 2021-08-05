@@ -2,13 +2,13 @@
   <div class="mt-8 sm:px-4 sm:pb-16 md:mt-0 md:px-6 md:pt-12 lg:px-8 border-ui-border">
     <!-- mt-8 sm:pl-4 sm:pb-16 sm:border-l md:mt-0 md:pl-6 md:pt-12 lg:pl-8 border-ui-border -->
     <h3 class="pt-0 mt-0 text-sm tracking-wide uppercase border-none">
-      On this page
+      {{ $t('on-this-page.title') }}
     </h3>
     <div>
       <ul>
         <li
           v-for="(heading, index) in headings"
-          :key="`${page.path}${heading.anchor}`"
+          :key="`${$tp(page.path)}${heading.anchor}`"
           :class="{
             'border-t border-dashed border-ui-border pt-2 mt-2': index > 0 && heading.depth === 2,
             'font-semibold': heading.depth === 2,
@@ -16,7 +16,7 @@
           }"
         >
           <g-link
-            :to="`${page.path}${heading.anchor}`"
+            :to="`${$tp(page.path)}${heading.anchor}`"
             class="relative flex items-center py-1 text-sm transition transform hover:translate-x-1"
             :class="{
               'pl-2': heading.depth === 3,

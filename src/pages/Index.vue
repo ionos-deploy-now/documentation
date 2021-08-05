@@ -26,7 +26,7 @@ import HomeFeatures from '@/components/HomeFeatures';
 export default {
   components: {
     HomeHero,
-    HomeFeatures
+    HomeFeatures,
   },
 
   metaInfo() {
@@ -38,30 +38,30 @@ export default {
       meta: [
         {
           name: 'description',
-          content: description
+          content: description,
         },
         {
           key: 'og:title',
           name: 'og:title',
-          content: title
+          content: title,
         },
         {
           key: 'twitter:title',
           name: 'twitter:title',
-          content: title
+          content: title,
         },
         {
           key: 'og:description',
           name: 'og:description',
-          content: description
+          content: description,
         },
         {
           key: 'twitter:description',
           name: 'twitter:description',
-          content: description
-        }
-      ]
+          content: description,
+        },
+      ],
     };
-  }
+  },
 };
 </script>
