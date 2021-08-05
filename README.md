@@ -5,23 +5,21 @@
 ## Setup
 
 ```bash
-yarn install
+npm ci
 ```
 
 ```bash
-yarn develop
+npm run develop
 ```
 
 ```bash
-yarn build
+npm run build
 ```
 
-## ToDos
+## Open issues
 
 * add Footer
 * check & fix menu icon in mobile view (not visible on home page)
-* fix dev server crash when editing markup pages
-* edit container padding > md
 * prettify components (replace CSS / SASS with WindiCSS where possible)
 * extract all text snippets from components
 * fix search component
