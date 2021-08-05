@@ -34,10 +34,10 @@ module.exports = {
           {
             title: "Getting Started",
             items: [
-              "/docs/",
-              "/docs/git-integration/",
-              "/docs/staging-deployments/",
-              "/docs/framework-samples/",
+              '/docs/',
+              '/docs/git-integration/',
+              '/docs/staging-deployments/',
+              '/docs/framework-samples/',
             ],
           },
           {
@@ -52,7 +52,7 @@ module.exports = {
           {
             title: "More",
             items: ["/docs/faq/", "/docs/about-us/"],
-          },
+          }
         ],
       },
     ],
@@ -80,7 +80,28 @@ module.exports = {
         },
       },
     },
-    /*     {
+    {
+      use: 'gridsome-plugin-i18n',
+      options: {
+        locales: [
+          'de-de',
+          'en-gb',
+        ],
+        pathAliases: {
+          'de-de': 'de',
+          'en-gb': 'en',
+        },
+        fallbackLocale: 'en-gb', // fallback language
+        defaultLocale: 'en-gb', // default language
+        enablePathRewrite: true, // rewrite path with locale prefix, default: true
+        rewriteDefaultLanguage: true, // rewrite default locale, default: true
+        messages: {
+          'de-de': require('./src/locales/de-de.json'),
+          'en-gb': require('./src/locales/en-gb.json'),
+        },
+      },
+    },
+    /* {
       use: '@gridsome/plugin-sitemap',
       options: {},
     }, */

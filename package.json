@@ -8,7 +8,8 @@
     "lint": "eslint --ext .ts,.js,.vue,.json src"
   },
   "dependencies": {
-    "gridsome": "^0.7.23"
+    "gridsome": "^0.7.23",
+    "gridsome-plugin-i18n": "^1.6.0"
   },
   "devDependencies": {
     "@gridsome/plugin-sitemap": "^0.4.0",

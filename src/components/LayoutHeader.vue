@@ -70,7 +70,7 @@
         </div>
 
         <a class="px-4 py-2 rounded text-white bg-ui-primary">
-          Login
+          {{ $t('header.login') }}
         </a>
       </div>
     </div>

@@ -1,0 +1,49 @@
+{
+  "footer": {
+    "imprint": "Imprint",
+    "privacy-policy": "Privacy policy",
+    "terms-of-service": "Terms of service",
+    "company-name": "IONOS SE"
+  },
+  "header": {
+    "login": "Login"
+  },
+  "edit-link": {
+    "text": "Suggest changes to this page"
+  },
+  "home-features": {
+    "edit": {
+      "title": "Edit",
+      "text": "Blend with your own tooling for building up websites and editing content."
+    },
+    "push": {
+      "title": "Push",
+      "text": "Keep your sources always under control with Git."
+    },
+    "publish": {
+      "title": "Publish",
+      "text": "Don't care anymore. Setup once with Deploy Now and enjoy!"
+    }
+  },
+  "home-hero": {
+    "deploy-smarter": "Deploy smarter.",
+    "deploy-faster": "Deploy faster.",
+    "description": "Connect your GitHub account and instantly deploy your static web projects on IONOS own DDoS-protected georedundant and green infrastructure.",
+    "getting-started": "Getting started"
+  },
+  "on-this-page": {
+    "title": "On this page"
+  },
+  "search": {
+    "title": "Search documentation",
+    "placeholder": "Search documentation...",
+    "no-results": "No results for <span class=\"font-bold\">{query}</span>."
+  },
+  "display-mode": {
+    "toggle-dark-mode": "Toggle darkmode"
+  },
+  "404": {
+    "title": "Oh no! There is nothing here.",
+    "back": "Go back"
+  }
+}

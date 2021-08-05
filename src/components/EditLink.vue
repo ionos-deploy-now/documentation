@@ -8,7 +8,7 @@
     >
       <Edit3Icon size="1x" />
       <span class="ml-1">
-        Suggest changes to this page
+        {{ $t('edit-link.text') }}
       </span>
     </a>
   </div>
