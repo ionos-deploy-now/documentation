@@ -8,29 +8,17 @@
       <ul>
         <li
           v-for="(heading, index) in headings"
-          :key="`${$tp(page.path)}${heading.anchor}`"
-          :class="{
-            'border-t border-dashed border-ui-border pt-2 mt-2': index > 0 && heading.depth === 2,
-            'font-semibold': heading.depth === 2,
-            [`depth-${heading.depth}`]: true
-          }"
+          :key="`${page.path}${heading.anchor}`"
+          :class="listItemClass(heading, index)"
         >
           <g-link
-            :to="`${$tp(page.path)}${heading.anchor}`"
+            :to="`${page.path}${heading.anchor}`"
             class="relative flex items-center py-1 text-sm transition transform hover:translate-x-1"
-            :class="{
-              'pl-2': heading.depth === 3,
-              'pl-3': heading.depth === 4,
-              'pl-4': heading.depth === 5,
-              'pl-5': heading.depth === 6,
-              'font-bold text-ui-primary': activeAnchor === heading.anchor
-            }"
+            :class="linkClasses(heading)"
           >
             <span
               class="absolute w-1 h-4 -ml-3 opacity-0 bg-ui-primary transition transform scale-0 origin-center"
-              :class="{
-                'opacity-100 scale-100': activeAnchor === heading.anchor
-              }"
+              :class="{'opacity-100 scale-100': activeAnchor === heading.anchor}"
             ></span>
             {{ heading.value }}
           </g-link>
@@ -109,6 +97,24 @@ export default {
         this.observer.observe(elements[i]);
       }
     },
+
+    listItemClass(heading, index) {
+      return {
+        'border-t border-dashed border-ui-border pt-2 mt-2': index > 0 && heading.depth === 2,
+        'font-semibold': heading.depth === 2,
+        [`depth-${heading.depth}`]: true
+      }
+    },
+
+    linkClasses(heading) {
+      return {
+        'pl-2': heading.depth === 3,
+        'pl-3': heading.depth === 4,
+        'pl-4': heading.depth === 5,
+        'pl-5': heading.depth === 6,
+        'font-bold text-ui-primary': this.activeAnchor === heading.anchor
+      }
+    }
   },
 
   mounted() {

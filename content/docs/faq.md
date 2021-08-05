@@ -5,7 +5,7 @@ prev: '/docs/custom-domain-ssl/'
 next: '/docs/about-us/'
 ---
 
-# Frequentl Asked Questions
+# Frequently Asked Questions
 
 ## What can I deploy with Deploy Now?
 ![Deployment Options](/deploy-now-supported-frameworks.svg)  
