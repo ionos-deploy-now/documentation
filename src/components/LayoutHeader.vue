@@ -61,7 +61,7 @@
             <GithubIcon size="1.5x" />
           </a>
 
-          <ToggleDarkMode class="ml-2">
+          <ToggleDarkMode class="icon ml-2">
             <template slot="default" slot-scope="{ dark }">
               <MoonIcon v-if="dark" size="1.5x" />
               <SunIcon v-else size="1.5x" />
@@ -69,7 +69,7 @@
           </ToggleDarkMode>
         </div>
 
-        <a class="px-4 py-2 rounded text-white bg-ui-primary">
+        <a class="btn primary px-4 py-2">
           {{ $t('header.login') }}
         </a>
       </div>

@@ -1,9 +1,9 @@
 export const sidebar = {
   methods: {
-    stickySidebarStyle(headerHeight, footerHeight) {
+    stickySidebarStyle(headerHeight) {
       return {
         top: `${headerHeight}px`,
-        height: `calc(100vh - ${headerHeight}px - ${footerHeight}px)`
+        height: `calc(100vh - ${headerHeight}px)`
       };
     }
   }

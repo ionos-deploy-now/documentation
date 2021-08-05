@@ -23,7 +23,6 @@ npm run build
 * add footer links
 * check & fix menu icon in mobile view (not visible on home page)
 * prettify components (replace CSS / SASS with WindiCSS where possible)
-* fix search component
 * enable plugins: sitemap, PWA, gridsome-plugin-remark-container
 * check header meta data
 * fix .env in production
