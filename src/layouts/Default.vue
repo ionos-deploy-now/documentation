@@ -4,7 +4,7 @@
       <header
         ref="header"
         class="sticky top-0 z-10 w-full border-b bg-ui-background border-ui-border"
-        @resize="updateHeights"
+        @resize="onResize"
       >
         <LayoutHeader />
       </header>
@@ -17,14 +17,14 @@
         </aside>
 
         <div :class="{ 'pl-0 lg:w-4/5': hasSidebar }">
-          <slot :header-height="headerHeight" :footer-height="footerHeight" />
+          <slot :header-height="headerHeight" />
         </div>
       </main>
     </div>
 
     <div v-if="hasSidebar" class="fixed bottom-0 right-0 z-50 p-8 lg:hidden">
       <button
-        class="p-3 text-white rounded-full shadow-lg bg-ui-primary hover:text-white"
+        class="icon p-3 text-white rounded-full shadow-lg bg-ui-primary hover:text-white"
         @click="sidebarOpen = !sidebarOpen"
       >
         <XIcon v-if="sidebarOpen" />
@@ -32,7 +32,7 @@
       </button>
     </div>
 
-    <LayoutFooter ref="footer" />
+    <LayoutFooter />
   </div>
 </template>
 
@@ -63,7 +63,6 @@ export default {
   data() {
     return {
       headerHeight: 0,
-      footerHeight: 0,
       sidebarOpen: false
     };
   },
@@ -73,23 +72,22 @@ export default {
     }
   },
   methods: {
-    updateHeights() {
+    onResize() {
       this.$nextTick(() => {
         this.headerHeight = this.$refs.header.offsetHeight;
-        this.footerHeight = this.$refs.footer.offsetHeight;
       });
     }
   },
   computed: {
     sidebarStyle() {
-      return this.stickySidebarStyle(this.headerHeight, this.footerHeight);
+      return this.stickySidebarStyle(this.headerHeight);
     },
     hasSidebar() {
       return this.$page && this.headerHeight > 0;
     }
   },
   mounted() {
-    this.updateHeights();
+    this.onResize();
   },
   metaInfo() {
     return {

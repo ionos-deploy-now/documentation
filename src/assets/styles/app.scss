@@ -61,7 +61,7 @@ h4 {
   @apply text-lg;
 }
 
-a:not(.active):not(.text-ui-primary):not(.text-white) {
+a:not(.active):not(.text-ui-primary):not(.text-white):not(.btn) {
   @apply text-ui-typo;
 }
 
@@ -198,5 +198,18 @@ table {
   img {
     @apply mx-auto my-4 md:my-8 shadow rounded bg-white;
   }
+}
+
+.btn {
+  @apply rounded transition-all;
+
+  &.primary {
+    @apply font-bold text-white bg-ui-primary border-ui-primary;
+    cursor: pointer;
+  }
+}
+
+.icon {
+  @apply leading-1;
 }
 

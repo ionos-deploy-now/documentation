@@ -1,10 +1,10 @@
 <template>
-  <Layout v-slot="{ headerHeight, footerHeight }">
+  <Layout v-slot="{ headerHeight }">
     <div class="flex flex-wrap justify-start">
       <div
-        class="hidden md:block md:sticky md:w-1/5 lg:order-2"
+        class="hidden md:block md:sticky md:w-1/5 lg:order-2 overflow-y-auto"
         :class="{ 'lg:border-l lg:border-r-0 border-ui-border border-r': showOnThisPage() }"
-        :style="sidebarStyle(headerHeight, footerHeight)"
+        :style="sidebarStyle(headerHeight)"
       >
         <OnThisPage v-if="showOnThisPage()" />
       </div>
@@ -68,8 +68,8 @@ export default {
     EditLink,
   },
   methods: {
-    sidebarStyle(headerHeight, footerHeight) {
-      return this.stickySidebarStyle(headerHeight, footerHeight);
+    sidebarStyle(headerHeight) {
+      return this.stickySidebarStyle(headerHeight);
     },
     showOnThisPage() {
       return this.headings && this.headings.length > 1;

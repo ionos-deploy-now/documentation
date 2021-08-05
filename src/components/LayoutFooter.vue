@@ -1,12 +1,12 @@
 <template>
-  <div class="px-4 py-2 border-t-1 border-ui-border">
+  <div class="px-4 py-3 border-t-1 border-ui-border">
     <div class="flex flex-grow items-center justify-between">
       <div class="flex flex-grow items-center">
-        <div class="mr-3">{{ $t('footer.imprint') }}</div>
-        <div class="mr-3">{{ $t('footer.privacy-policy') }}</div>
-        <div class="mr-3">{{ $t('footer.terms-of-service') }}</div>
+        <a href="https://www.ionos.de/impressum" target="_blank" class="mx-3 md:mx-6">{{ $t('footer.imprint') }}</a>
+        <a href="https://www.ionos.de/terms-gtc/terms-privacy" target="_blank" class="mx-3 md:mx-6">{{ $t('footer.privacy-policy') }}</a>
+        <a href="https://www.ionos.de/terms-gtc/terms" target="_blank" class="mx-3 md:mx-6">{{ $t('footer.terms-and-conditions') }}</a>
       </div>
-      <div>&copy; {{ year }} {{ $t('footer.company-name') }}</div>
+      <div class="mx-3 md:mx-6">&copy; {{ year }} {{ $t('footer.company-name') }}</div>
     </div>
   </div>
 </template>
