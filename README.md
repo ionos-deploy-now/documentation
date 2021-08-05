@@ -7,7 +7,7 @@ Uses gridsome with NodeJS v12.22
 ## Setup
 
 ```bash
-npm install
+npm ci
 ```
 
 ```bash
@@ -18,11 +18,10 @@ npm run develop
 npm run build
 ```
 
-## ToDos
+## Open issues
 
 * add footer links
 * check & fix menu icon in mobile view (not visible on home page)
-* edit container padding > md
 * prettify components (replace CSS / SASS with WindiCSS where possible)
 * fix search component
 * enable plugins: sitemap, PWA, gridsome-plugin-remark-container
