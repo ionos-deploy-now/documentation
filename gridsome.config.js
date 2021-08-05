@@ -53,6 +53,7 @@ module.exports = {
             title: 'More',
             items: ['/docs/faq/', '/docs/about-us/'],
           },
+        ],
       },
     ],
   },

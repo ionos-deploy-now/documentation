@@ -12,7 +12,7 @@
           :class="listItemClass(heading, index)"
         >
           <g-link
-            :to="`${page.path}${heading.anchor}`"
+            :to="`${$tp(page.path)}${heading.anchor}`"
             class="relative flex items-center py-1 text-sm transition transform hover:translate-x-1"
             :class="linkClasses(heading)"
           >
