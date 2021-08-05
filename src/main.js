@@ -1,8 +1,8 @@
 import Vuex from 'vuex';
 import createStore from '~/store';
+import DefaultLayout from '~/layouts/Default.vue';
 import 'prism-themes/themes/prism-material-oceanic.css';
 import '~/assets/styles/app.scss';
-import DefaultLayout from '~/layouts/Default.vue';
 
 export default function (Vue, { router, head, appOptions }) {
   Vue.use(Vuex);
