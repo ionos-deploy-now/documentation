@@ -53,7 +53,6 @@ module.exports = {
             title: 'More',
             items: ['/docs/faq/', '/docs/about-us/'],
           },
-        ],
       },
     ],
   },
@@ -98,10 +97,10 @@ module.exports = {
         },
       },
     },
-    /*     {
-          use: '@gridsome/plugin-sitemap',
-          options: {},
-        }, */
+    /* {
+      use: '@gridsome/plugin-sitemap',
+      options: {},
+    }, */
   ],
   transformers: {
     remark: {
