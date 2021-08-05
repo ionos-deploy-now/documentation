@@ -1,6 +1,6 @@
-import 'prism-themes/themes/prism-material-oceanic.css';
-import '~/assets/styles/global.scss';
 import DefaultLayout from '~/layouts/Default.vue';
+import 'prism-themes/themes/prism-material-oceanic.css';
+import '~/assets/styles/app.scss';
 
 export default function (Vue, { router, head }) {
   // Set default layout as a global component
