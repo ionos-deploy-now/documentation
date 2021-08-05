@@ -13,7 +13,7 @@ next: '/docs/custom-domain-ssl/'
 
 Starting a new project with *Deploy Now* generates a GitHub Action workflow YAML out of the box and makes CI/CD to a breeze.
 
-But *Deploy Now* isn't able to guess all options available and sometimes it makes sense to readjust or simply start your configuration from scratch. In both cases this is the right beginning to read further.
+But *Deploy Now* isn't able to guess all options available, and sometimes it makes sense to readjust or simply start your configuration from scratch. In both cases this is the right beginning to read further.
 
 If you look at your project repository into *.github/workflows/* you will find a generated **ionos-space.yml** file when using *Deploy Now*. You're welcome to change whatever you need between **'Get Ionos Project data'** and **'Deploy to IONOS'** actions:
 
@@ -74,57 +74,46 @@ Next, all steps and their options explained in detail.
 
 ### deploy
 
-| name       | type              | mandatory | description                                  | example                                 |
-| ---------- | ----------------- | --------- | -------------------------------------------- | --------------------------------------- |  |
-| distFolder | String            | true      | distribution folder for public use           | common usage `./` or `public` or `dist` |
-| prepare    | PrepareStep       | false     | preparation instructions for the environment |                                         |
-| setup      | List of SetupStep | false     | setup instructions for running a build       |                                         |
-| build      | BuildStep         | false     | build instructions                           |                                         |
+|name|type|mandatory|description|example|
+|---|---|---|---|---|
+|distFolder|String|true|distribution folder for public use|common usage `./` or `public` or `dist`|
+|prepare|PrepareStep|false|preparation instructions for the environment||
+|setup|List of SetupStep|false|setup instructions for running a build||
+|build|BuildStep|false|build instructions||
 
 ### deploy#PrepareStep
 
 A PrepareStep is a run step used to prepare the environment e.G. installing the build dependencies.
 It has the following properties:
 
-| name                                     | type     | mandatory | description                           | example |
-| ---------------------------------------- | -------- | --------- | ------------------------------------- | ------- |  |
-| name                                     | `String` | true      | name of the workflow step             |         |
-| command                                  | `String` | true      | The command to setup the environment. |
-| Separate commands will be split bei "\n" | ???      |
+|name|type|mandatory|description|example|
+|---|---|---|---|---|
+|name|`String`|true|name of the workflow step|
+|command|`String`|true|The command to setup the environment.|
+|Separate commands will be split bei "\n"|???|
 
 ### deploy#SetupStep
 
 A SetupStep is a uses steps for the github workflow that defines a action.
 It has the following properties:
 
-| name                                     | type     | mandatory | description                           | example |
-| ---------------------------------------- | -------- | --------- | ------------------------------------- | ------- |  |
-| name                                     | `String` | `true`    | name of the workflow step             |         |
-| command                                  | `String` | `true`    | The command to setup the environment. |
-| Separate commands will be split bei "\n" | ???      |
+|name|type|mandatory|description|example|
+|---|---|---|---|---|
+|name|`String`|`true`|name of the workflow step||
+|command|`String`|`true`|The command to setup the environment.|
+|Separate commands will be split bei "\n"|???|
 
 ### deploy#BuildStep
 
 A BuildStep is a run step used to build the project.
 It has the following properties:
 
-| name                                     | type                  | mandatory | description                                               | example                                                 |
-| ---------------------------------------- | --------------------- | --------- | --------------------------------------------------------- | ------------------------------------------------------- | -------- |
-| name                                     | `String`              | `true`    | name of the workflow step                                 | `Build node project`                                    |
-| command                                  | `String`              | `true`    | The command to run as build step.                         |
-| Separate commands will be split bei "\n" | `yarn build`          |
-| environment                              | `Map<String, String>` | `false`   | The entries are set es env-variables for the build shell. | environment: SITE_URL: `steps.project.outputs.site-url` | CI: true |
-
-
-
-
-
-
-
-
-
-
-
+|name|type|mandatory|description|example|
+|---|---|---|---|---|
+|name|`String`|`true`|name of the workflow step|`Build node project`|
+|command|`String`|`true`|The command to run as build step.|
+|Separate commands will be split bei "\n"|`yarn build`|
+|environment|`Map<String, String>`|`false`|The entries are set es env-variables for the build shell.|environment: SITE_URL: `steps.project.outputs.site-url`|CI: true|
 
 In order to have a sidebar visible on the side of the page (like on this one for example) or on mobile devices as an off-canvas navigation, you are required to do some global configuration, as well as some configuration per markdown file.
 

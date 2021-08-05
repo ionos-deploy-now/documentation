@@ -29,8 +29,5 @@ npm run build
 * check header meta data
 * fix .env in production
 * optimize favicon and other icons: https://realfavicongenerator.net/
-* dark mode
-  * depend on system settings
-  * how to handle images not svg with white background?
 * images
   * separate images from floating text (maybe a dashed border)

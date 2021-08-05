@@ -1,5 +1,10 @@
 <template>
-  <div @keydown.down="increment" @keydown.up="decrement" @keydown.enter="go" class="relative">
+  <div
+    @keydown.down="increment"
+    @keydown.up="decrement"
+    @keydown.enter="go"
+    class="relative"
+  >
     <label class="relative block">
       <span class="sr-only">{{ $t('search.title') }}</span>
       <div class="absolute inset-y-0 left-0 flex items-center justify-center px-3 py-2 opacity-50">
@@ -14,11 +19,8 @@
         :placeholder="$t('search.placeholder')"
         @focus="focused = true"
         @blur="focused = false"
-        @input="
-          focusIndex = -1;
-          query = $event.target.value;
-        "
-        @change="query = $event.target.value"
+        @input="onInput"
+        @change="onChange"
       />
     </label>
     <div
@@ -35,26 +37,26 @@
 
         <li
           v-else
-          v-for="(result, index) in results"
-          :key="result.path + result.anchor"
+          v-for="({ item }, index) in results"
+          :key="item.url"
           @mouseenter="focusIndex = index"
           @mousedown="go"
           class="border-ui-sidebar"
           :class="{'border-b': index + 1 !== results.length}"
         >
           <g-link
-            :to="result.path + result.anchor"
+            :to="item.url"
             class="block p-2 -mx-2 text-base font-bold rounded-lg"
             :class="{'bg-ui-sidebar text-ui-primary': focusIndex === index}"
           >
-            <span v-if="result.value === result.title">
-              {{ result.value }}
+            <span v-if="item.value === item.title">
+              {{ item.value }}
             </span>
 
             <span v-else class="flex items-center">
-              {{ result.title }}
+              {{ item.title }}
               <ChevronRightIcon size="1x" class="mx-1" />
-              <span class="font-normal opacity-75">{{ result.value }}</span>
+              <span class="font-normal opacity-75">{{ item.value }}</span>
             </span>
           </g-link>
         </li>
@@ -97,19 +99,12 @@ export default {
       query: '',
       focusIndex: -1,
       focused: false,
+      results: [],
     };
   },
   computed: {
-    results() {
-      const fuse = new Fuse(this.headings, {
-        keys: ['value'],
-        threshold: 0.25,
-      });
-
-      return fuse.search(this.query).slice(0, 15);
-    },
     headings() {
-      let result = [];
+      const result = [];
       const allPages = this.$static.allMarkdownPage.edges.map(edge => edge.node);
 
       // Create the array of all headings of all pages.
@@ -119,9 +114,11 @@ export default {
             ...heading,
             path: page.path,
             title: page.title,
+            url: `${page.path}${heading.anchor}`,
           });
         });
       });
+      console.log(result);
 
       return result;
     },
@@ -141,26 +138,36 @@ export default {
         this.focusIndex--;
       }
     },
+    updateSearchResults() {
+      const fuse = new Fuse(this.headings, {
+        keys: ['value'],
+        threshold: 0.25,
+      });
+      this.results = fuse.search(this.query).slice(0, 15);
+    },
     go() {
-      // Do nothing if we don't have results.
       if (this.results.length === 0) {
         return;
       }
 
-      let result;
-
       // If we don't have focus on a result, just navigate to the first one.
-      if (this.focusIndex === -1) {
-        result = this.results[0];
-      } else {
-        result = this.results[this.focusIndex];
-      }
-
-      this.$router.push(result.path + result.anchor);
+      const result = this.focusIndex === -1 ? this.results[0] : this.results[this.focusIndex];
+      this.$router.push(result.item.url);
 
       // Unfocus the input and reset the query.
       this.$refs.input.blur();
       this.query = '';
+    },
+    onInput(event) {
+      this.focusIndex = -1;
+      this.query = event.target.value;
+      console.log('input', event.target.value);
+      this.updateSearchResults();
+    },
+    onChange(event) {
+      this.query = event.target.value;
+      console.log('change', event.target.value);
+      this.updateSearchResults();
     },
   },
 };
