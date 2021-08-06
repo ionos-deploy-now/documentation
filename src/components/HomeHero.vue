@@ -1,7 +1,7 @@
 <template>
   <header class="flex bg-ui-background mt-4">
     <div class="grid md:grid-cols-7 md:gap-2 px-8 md:px-20">
-      <div class="col-span-4 background">
+      <div class="col-span-4 relative bg-img-dots">
         <div class="relative z-10">
           <h1 class="flex-grow">
             <div class="text-2xl md:text-4xl font-normal">
@@ -39,23 +39,3 @@ export default {
   }
 };
 </script>
-
-<style scoped lang="postcss">
-.background {
-  position: relative;
-}
-
-.background::before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  background: url('/background-bright-mode.svg');
-  background-size: cover;
-  opacity: 0.1;
-}
-</style>

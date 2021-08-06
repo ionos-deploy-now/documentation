@@ -1,17 +1,26 @@
 <template>
   <button
+    class="icon"
     @click="handleClick"
     :aria-label="$t('display-mode.toggle-dark-mode')"
     :title="$t('display-mode.toggle-dark-mode')"
   >
-    <slot :dark="isDarkMode" />
+    <SunIcon v-if="isDarkMode" size="1.5x" />
+    <MoonIcon v-else size="1.5x" />
   </button>
 </template>
 
 <script>
+import { SunIcon, MoonIcon } from 'vue-feather-icons';
+
 export const LIGHTS_OUT = 'lights-out';
 
 export default {
+  components: {
+    SunIcon,
+    MoonIcon,
+  },
+
   data() {
     return {
       isDarkMode: false,
@@ -57,5 +66,3 @@ export default {
   },
 };
 </script>
-
-<style></style>

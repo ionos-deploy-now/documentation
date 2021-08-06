@@ -156,6 +156,12 @@ pre[class*="language-"] {
 header {
   background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(4px);
+
+  svg:not(.feather-search) {
+    &:hover {
+      @apply text-ui-primary;
+    }
+  }
 }
 
 table {
@@ -179,6 +185,7 @@ table {
     }
   }
 }
+
 
 .sidebar {
   @apply fixed bg-ui-background px-4 inset-x-0 bottom-0 w-full border-r border-ui-border overflow-y-auto transition-all z-40;
@@ -211,4 +218,24 @@ table {
 
 .icon {
   @apply leading-1;
+}
+
+.nav-link {
+  &.active {
+    @apply text-ui-primary font-bold border-ui-primary;
+  }
+}
+
+.bg-img-dots::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: url('/background-bright-mode.svg');
+  background-size: cover;
+  opacity: 0.1;
 }

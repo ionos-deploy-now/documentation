@@ -61,12 +61,7 @@
             <GithubIcon size="1.5x" />
           </a>
 
-          <ToggleDarkMode class="icon ml-2">
-            <template slot="default" slot-scope="{ dark }">
-              <MoonIcon v-if="dark" size="1.5x" />
-              <SunIcon v-else size="1.5x" />
-            </template>
-          </ToggleDarkMode>
+          <ToggleDarkMode />
         </div>
 
         <a class="btn primary px-4 py-2">
@@ -99,7 +94,7 @@ query {
 <script>
 import ToggleDarkMode from '@/components/ToggleDarkMode';
 import DeployNow from '@/components/DeployNow';
-import { SunIcon, MoonIcon, GlobeIcon, GithubIcon, TwitterIcon } from 'vue-feather-icons';
+import { GlobeIcon, GithubIcon, TwitterIcon } from 'vue-feather-icons';
 
 const Search = () => import(/* webpackChunkName: "search" */ '@/components/Search').catch(error => console.warn(error));
 
@@ -108,8 +103,6 @@ export default {
     DeployNow,
     Search,
     ToggleDarkMode,
-    SunIcon,
-    MoonIcon,
     GlobeIcon,
     GithubIcon,
     TwitterIcon,
@@ -125,19 +118,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-header {
-  svg:not(.feather-search) {
-    &:hover {
-      @apply text-ui-primary;
-    }
-  }
-}
-
-.nav-link {
-  &.active {
-    @apply text-ui-primary font-bold border-ui-primary;
-  }
-}
-</style>
