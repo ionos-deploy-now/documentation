@@ -21,9 +21,9 @@ module.exports = {
     },
   },
   settings: {
-    web: process.env.URL_WEB || false,
-    twitter: process.env.URL_TWITTER || false,
-    github: process.env.URL_GITHUB || false,
+    web: process.env.WEB_URL || false,
+    twitter: process.env.TWITTER_URL || false,
+    github: process.env.GITHUB_URL || false,
     nav: {
       links: [{ path: "/docs/", title: "Docs" }],
     },
