@@ -25,7 +25,7 @@ npm run build
 ## Open issues
 
 * prettify components (replace CSS / SASS with WindiCSS where possible)
-* enable plugins: sitemap, PWA, gridsome-plugin-remark-container
+* enable plugins: sitemap, PWA
 * check header meta data
 * optimize favicon and other icons: https://realfavicongenerator.net/
 * images
@@ -36,3 +36,4 @@ npm run build
   * which source tbd 
     * a) e.g. https://twitter.com/GHchangelog 
     * b) https://github.com/olivierlacan/keep-a-changelog/blob/main/CHANGELOG.md as classic solution
+  * lazy load images

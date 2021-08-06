@@ -21,9 +21,9 @@ module.exports = {
     },
   },
   settings: {
-    web: process.env.WEB_URL || false,
-    twitter: process.env.TWITTER_URL || false,
-    github: process.env.GITHUB_URL || false,
+    web: process.env.URL_WEB || '',
+    twitter: process.env.URL_TWITTER || '',
+    github: process.env.URL_GITHUB || '',
     nav: {
       links: [{ path: '/docs/', title: 'Docs' }],
     },
@@ -108,6 +108,7 @@ module.exports = {
       plugins: [
         '@noxify/gridsome-remark-table-align',
         '@gridsome/remark-prismjs',
+        'gridsome-plugin-remark-container'
       ],
     },
   },
