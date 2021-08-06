@@ -1,0 +1,16 @@
+---
+distFolder: dist
+setup:
+- name: Setup project
+  action: actions/setup-node@v1
+  properties:
+    node-version: v12.22.3
+prepare:
+  name: Prepare project environment
+  command: npm ci
+build:
+  name: Build project
+  command: npm run build
+  environment:
+    SITE_URL: ${{ steps.project.outputs.site-url }}
+    WEB_URL: https://ionos.space
