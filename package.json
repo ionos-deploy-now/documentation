@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "gridsome": "^0.7.23",
-    "gridsome-plugin-i18n": "^1.6.0"
+    "gridsome-plugin-i18n": "^1.6.0",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@gridsome/plugin-sitemap": "^0.4.0",

@@ -1,10 +1,10 @@
 <template>
-  <Layout v-slot="{ headerHeight }">
+  <Layout>
     <div class="flex flex-wrap justify-start">
       <div
         class="hidden md:block md:sticky md:w-1/5 lg:order-2 overflow-y-auto"
         :class="{ 'lg:border-l lg:border-r-0 border-ui-border border-r': showOnThisPage() }"
-        :style="sidebarStyle(headerHeight)"
+        :style="sidebarStyle"
       >
         <OnThisPage v-if="showOnThisPage()" />
       </div>
@@ -55,27 +55,24 @@ query ($id: ID!) {
 </page-query>
 
 <script>
+import { mapGetters } from 'vuex';
 import OnThisPage from '@/components/OnThisPage.vue';
 import NextPrevLinks from '@/components/NextPrevLinks.vue';
 import EditLink from '@/components/EditLink.vue';
-import { sidebar } from '@/libs/mixins';
 
 export default {
-  mixins: [sidebar],
   components: {
     OnThisPage,
     NextPrevLinks,
     EditLink,
   },
   methods: {
-    sidebarStyle(headerHeight) {
-      return this.stickySidebarStyle(headerHeight);
-    },
     showOnThisPage() {
       return this.headings && this.headings.length > 1;
     },
   },
   computed: {
+    ...mapGetters(['sidebarStyle']),
     showPrevNextLinks() {
       return this.$page.markdownPage.prev || this.$page.markdownPage.next;
     },
