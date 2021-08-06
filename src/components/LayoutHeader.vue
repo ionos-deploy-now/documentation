@@ -24,15 +24,14 @@
           </g-link>
         </div>
 
-        <div class="flex items-center justify-end px-2 sm:px-8">
+        <div class="flex items-center pr-2 sm:pr-8">
           <a
             v-if="settings.web"
             :href="settings.web"
-            class="ml-2"
+            class="icon p-2 mx-2"
             target="_blank"
             rel="noopener noreferrer"
             title="Website"
-            name="Website"
           >
             <GlobeIcon size="1.5x" />
           </a>
@@ -40,11 +39,10 @@
           <a
             v-if="settings.twitter"
             :href="settings.twitter"
-            class="ml-2"
+            class="icon p-2 mx-2"
             target="_blank"
             rel="noopener noreferrer"
             title="Twitter"
-            name="Twitter"
           >
             <TwitterIcon size="1.5x" />
           </a>
@@ -52,16 +50,15 @@
           <a
             v-if="settings.github"
             :href="settings.github"
-            class="ml-2"
+            class="icon p-2 mx-2"
             target="_blank"
             rel="noopener noreferrer"
             title="Github"
-            name="Github"
           >
             <GithubIcon size="1.5x" />
           </a>
 
-          <ToggleDarkMode />
+          <ToggleDarkMode class="p-2 mx-2" />
         </div>
 
         <a class="btn primary px-4 py-2">
