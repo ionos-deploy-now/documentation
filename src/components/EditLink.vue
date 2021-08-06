@@ -40,17 +40,11 @@ export default {
   },
 
   computed: {
-    meta() {
-      return this.$static.metadata;
-    },
-    settings() {
-      return this.meta.settings;
-    },
     github() {
-      return this.settings.github;
+      return this.$static.metadata.settings.github;
     },
     url() {
-      return this.github + '/content/' + this.path; // see @gridsome/source-filesystem options
+      return `${this.github}/edit/main/content/${this.path}`
     }
   }
 };
