@@ -25,9 +25,12 @@ npm run build
 * prettify components (replace CSS / SASS with WindiCSS where possible)
 * enable plugins: sitemap, PWA, gridsome-plugin-remark-container
 * check header meta data
-* fix .env in production
 * optimize favicon and other icons: https://realfavicongenerator.net/
 * images
   * separate images from floating text (maybe a dashed border)
 * remark 
   * add an arrow icon to all external links
+* add an changelog link in sitebar 
+  * which source tbd 
+    * a) e.g. https://twitter.com/GHchangelog 
+    * b) https://github.com/olivierlacan/keep-a-changelog/blob/main/CHANGELOG.md as classic solution
