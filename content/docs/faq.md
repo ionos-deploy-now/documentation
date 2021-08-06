@@ -1,7 +1,7 @@
 ---
 description: ''
 sidebar: 'docs'
-prev: '/docs/custom-domain-ssl/'
+prev: '/docs/domain-tls/'
 next: '/docs/about-us/'
 ---
 

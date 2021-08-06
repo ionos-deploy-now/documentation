@@ -46,7 +46,7 @@ module.exports = {
               '/docs/configuration-overview/',
               '/docs/file-based-configuration/',
               '/docs/github-action/',
-              '/docs/custom-domain-ssl/',
+              '/docs/domain-tls/',
             ],
           },
           {
