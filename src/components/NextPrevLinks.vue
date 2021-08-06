@@ -26,7 +26,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from 'vue-feather-icons';
 export default {
   components: {
     ArrowLeftIcon,
-    ArrowRightIcon
+    ArrowRightIcon,
   },
 
   computed: {
@@ -49,7 +49,7 @@ export default {
       }
 
       return this.pages.find(page => page.path === this.page.prev);
-    }
-  }
+    },
+  },
 };
 </script>

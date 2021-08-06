@@ -18,7 +18,7 @@
           >
             <span
               class="absolute w-1 h-4 -ml-3 opacity-0 bg-ui-primary transition transform scale-0 origin-center"
-              :class="{'opacity-100 scale-100': activeAnchor === heading.anchor}"
+              :class="{ 'opacity-100 scale-100': activeAnchor === heading.anchor }"
             ></span>
             {{ heading.value }}
           </g-link>
@@ -102,8 +102,8 @@ export default {
       return {
         'border-t border-dashed border-ui-border pt-2 mt-2': index > 0 && heading.depth === 2,
         'font-semibold': heading.depth === 2,
-        [`depth-${heading.depth}`]: true
-      }
+        [`depth-${heading.depth}`]: true,
+      };
     },
 
     linkClasses(heading) {
@@ -112,9 +112,9 @@ export default {
         'pl-3': heading.depth === 4,
         'pl-4': heading.depth === 5,
         'pl-5': heading.depth === 6,
-        'font-bold text-ui-primary': this.activeAnchor === heading.anchor
-      }
-    }
+        'font-bold text-ui-primary': this.activeAnchor === heading.anchor,
+      };
+    },
   },
 
   mounted() {

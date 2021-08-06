@@ -1,10 +1,5 @@
 <template>
-  <div
-    @keydown.down="increment"
-    @keydown.up="decrement"
-    @keydown.enter="go"
-    class="relative"
-  >
+  <div @keydown.down="increment" @keydown.up="decrement" @keydown.enter="go" class="relative">
     <label class="relative block">
       <span class="sr-only">{{ $t('search.title') }}</span>
       <div class="absolute inset-y-0 left-0 flex items-center justify-center px-3 py-2 opacity-50">
@@ -29,11 +24,7 @@
       style="max-height: calc(100vh - 120px)"
     >
       <ul class="px-4 py-2 m-0">
-        <li
-          v-if="results.length === 0"
-          class="px-2"
-          v-html="$t('search.no-results', { query })"
-        />
+        <li v-if="results.length === 0" class="px-2" v-html="$t('search.no-results', { query })" />
 
         <li
           v-else
@@ -42,12 +33,12 @@
           @mouseenter="focusIndex = index"
           @mousedown="go"
           class="border-ui-sidebar"
-          :class="{'border-b': index + 1 !== results.length}"
+          :class="{ 'border-b': index + 1 !== results.length }"
         >
           <g-link
             :to="item.url"
             class="block p-2 -mx-2 text-base font-bold rounded-lg"
-            :class="{'bg-ui-sidebar text-ui-primary': focusIndex === index}"
+            :class="{ 'bg-ui-sidebar text-ui-primary': focusIndex === index }"
           >
             <span v-if="item.value === item.title">
               {{ item.value }}

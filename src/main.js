@@ -4,9 +4,9 @@ import DefaultLayout from '~/layouts/Default.vue';
 import 'prism-themes/themes/prism-material-oceanic.css';
 import '~/assets/styles/app.scss';
 
-export default function (Vue, { router, head, appOptions }) {
+export default function(Vue, { router, head, appOptions }) {
   Vue.use(Vuex);
-  appOptions.store = createStore()
+  appOptions.store = createStore();
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);

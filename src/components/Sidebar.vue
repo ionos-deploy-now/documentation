@@ -21,7 +21,7 @@
           <g-link :to="`${page.path}`" class="flex items-center py-1 font-semibold">
             <span
               class="absolute w-1 h-4 -ml-3 opacity-0 bg-ui-primary transition transform scale-0 origin-center"
-              :class="{'opacity-100 scale-100': currentPage.path === page.path}"
+              :class="{ 'opacity-100 scale-100': currentPage.path === page.path }"
             ></span>
             {{ page.title }}
           </g-link>
@@ -51,7 +51,7 @@ query Sidebar {
 export default {
   data() {
     return {
-      expanded: []
+      expanded: [],
     };
   },
   computed: {
@@ -66,18 +66,18 @@ export default {
     },
     currentPage() {
       return this.$page.markdownPage;
-    }
+    },
   },
   methods: {
     anchorClass({ path }) {
       return {
         'text-ui-primary': this.currentPage.path === path,
-        'transition transform hover:translate-x-1 hover:text-ui-primary': !this.currentPage.path === path
+        'transition transform hover:translate-x-1 hover:text-ui-primary': !this.currentPage.path === path,
       };
     },
     findPages(links) {
       return links.map(link => this.pages.find(page => page.path === link));
-    }
-  }
+    },
+  },
 };
 </script>

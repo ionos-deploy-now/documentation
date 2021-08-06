@@ -13,9 +13,9 @@
       </div>
 
       <div class="flex items-center">
-        <div v-if="settings.nav.links.length > 0" class="hidden sm:block sm:px-8">
+        <div v-if="navLinks.length > 0" class="hidden sm:block sm:px-8">
           <g-link
-            v-for="link in settings.nav.links"
+            v-for="link in navLinks"
             :key="link.path"
             :to="link.path"
             class="text-base font-bold text-ui-primary hover:text-ui-secondary"
@@ -89,9 +89,9 @@ query {
 </static-query>
 
 <script>
+import { GlobeIcon, GithubIcon, TwitterIcon } from 'vue-feather-icons';
 import ToggleDarkMode from '@/components/ToggleDarkMode';
 import DeployNow from '@/components/DeployNow';
-import { GlobeIcon, GithubIcon, TwitterIcon } from 'vue-feather-icons';
 
 const Search = () => import(/* webpackChunkName: "search" */ '@/components/Search').catch(error => console.warn(error));
 
@@ -111,6 +111,9 @@ export default {
     },
     settings() {
       return this.meta.settings;
+    },
+    navLinks() {
+      return this.settings.nav.links;
     },
   },
 };

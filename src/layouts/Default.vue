@@ -102,12 +102,12 @@ export default {
         {
           key: 'og:image',
           name: 'og:image',
-          content: process.env.SITE_URL + '/favicon.png',
+          content: process.env.GRIDSOME_SITE_URL + '/favicon.png',
         },
         {
           key: 'twitter:image',
           name: 'twitter:image',
-          content: process.env.SITE_URL + '/favicon.png',
+          content: process.env.GRIDSOME_SITE_URL + '/favicon.png',
         },
       ],
     };

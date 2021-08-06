@@ -29,14 +29,14 @@ import { Edit3Icon } from 'vue-feather-icons';
 
 export default {
   components: {
-    Edit3Icon
+    Edit3Icon,
   },
 
   props: {
     path: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
 
   computed: {
@@ -44,8 +44,8 @@ export default {
       return this.$static.metadata.settings.github;
     },
     url() {
-      return `${this.github}/edit/main/content/${this.path}`
-    }
-  }
+      return `${this.github}/edit/main/content/${this.path}`;
+    },
+  },
 };
 </script>
