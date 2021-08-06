@@ -17,7 +17,7 @@
         </aside>
 
         <div :class="{ 'pl-0 lg:w-4/5': hasSidebar }">
-          <slot :header-height="headerHeight" />
+          <slot />
         </div>
       </main>
     </div>
@@ -48,43 +48,40 @@ query {
 import Sidebar from '@/components/Sidebar';
 import LayoutHeader from '@/components/LayoutHeader';
 import LayoutFooter from '@/components/LayoutFooter';
-import { sidebar } from '@/libs/mixins';
 import { MenuIcon, XIcon } from 'vue-feather-icons';
+import { mapGetters, mapActions } from 'vuex';
 
 export default {
-  mixins: [sidebar],
   components: {
     LayoutFooter,
     Sidebar,
     LayoutHeader,
     MenuIcon,
-    XIcon
+    XIcon,
   },
   data() {
     return {
-      headerHeight: 0,
-      sidebarOpen: false
+      sidebarOpen: false,
     };
   },
   watch: {
     sidebarOpen(isOpen) {
       document.body.classList.toggle('overflow-hidden', isOpen);
-    }
-  },
-  methods: {
-    onResize() {
-      this.$nextTick(() => {
-        this.headerHeight = this.$refs.header.offsetHeight;
-      });
-    }
+    },
   },
   computed: {
-    sidebarStyle() {
-      return this.stickySidebarStyle(this.headerHeight);
-    },
+    ...mapGetters(['headerHeight', 'sidebarStyle']),
     hasSidebar() {
       return this.$page && this.headerHeight > 0;
-    }
+    },
+  },
+  methods: {
+    ...mapActions(['setHeaderHeight']),
+    onResize() {
+      if (this.$refs.header) {
+        this.setHeaderHeight(this.$refs.header.offsetHeight);
+      }
+    },
   },
   mounted() {
     this.onResize();
@@ -95,25 +92,25 @@ export default {
         {
           key: 'og:type',
           name: 'og:type',
-          content: 'website'
+          content: 'website',
         },
         {
           key: 'twitter:card',
           name: 'twitter:card',
-          content: 'summary_large_image'
+          content: 'summary_large_image',
         },
         {
           key: 'og:image',
           name: 'og:image',
-          content: process.env.SITE_URL + '/favicon.png'
+          content: process.env.SITE_URL + '/favicon.png',
         },
         {
           key: 'twitter:image',
           name: 'twitter:image',
-          content: process.env.SITE_URL + '/favicon.png'
-        }
-      ]
+          content: process.env.SITE_URL + '/favicon.png',
+        },
+      ],
     };
-  }
+  },
 };
 </script>

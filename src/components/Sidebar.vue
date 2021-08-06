@@ -15,7 +15,7 @@
           v-for="page in findPages(section.items)"
           :id="page.path"
           :key="page.path"
-          :class="getClassesForAnchor(page)"
+          :class="anchorClass(page)"
           @mousedown="$emit('navigate')"
         >
           <g-link :to="`${page.path}`" class="flex items-center py-1 font-semibold">
@@ -69,7 +69,7 @@ export default {
     }
   },
   methods: {
-    getClassesForAnchor({ path }) {
+    anchorClass({ path }) {
       return {
         'text-ui-primary': this.currentPage.path === path,
         'transition transform hover:translate-x-1 hover:text-ui-primary': !this.currentPage.path === path
