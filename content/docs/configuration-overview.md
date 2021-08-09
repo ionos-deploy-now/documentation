@@ -1,7 +1,7 @@
 ---
 description: ''
 sidebar: 'docs'
-prev: '/docs/samples/'
+prev: '/docs/framework-samples/'
 next: '/docs/file-based-configuration/'
 ---
 
