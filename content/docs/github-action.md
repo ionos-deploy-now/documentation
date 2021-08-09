@@ -2,7 +2,7 @@
 description: ''
 sidebar: 'docs'
 prev: '/docs/file-based-configuration/'
-next: '/docs/custom-domain-ssl/'
+next: '/docs/domain-tls/'
 ---
 
 # GitHub Action

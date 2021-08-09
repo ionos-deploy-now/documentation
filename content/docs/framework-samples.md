@@ -2,7 +2,7 @@
 description: ''
 sidebar: 'docs'
 prev: '/docs/staging-deployments/'
-next: '/docs/file-based-configuration/'
+next: '/docs/configuration-overview/'
 ---
 
 # Framework samples
