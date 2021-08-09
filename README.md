@@ -37,3 +37,6 @@ npm run build
     * a) e.g. https://twitter.com/GHchangelog 
     * b) https://github.com/olivierlacan/keep-a-changelog/blob/main/CHANGELOG.md as classic solution
   * lazy load images
+* framework-samples.md
+  * fix icon-base with GitHub icon
+  * embed .ionos.yml from repo (nice to have)
