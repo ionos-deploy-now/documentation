@@ -5,11 +5,6 @@ prev: '/docs/staging-deployments/'
 next: '/docs/file-based-configuration/'
 ---
 
-**TODO**
-
-* fix icon-base with GitHub icon
-* embed .ionos.yml from repo
-
 # Framework samples
 
 The following frameworks samples give you an overview of static site generator (SSR) frameworks with Deploy Now. We're working on auto-setup abilities for the most popular frameworks. Besides it's possible to setup your web project by Deploy Now step-by-step assistance. In addition it's always possible to directly edit `.github/workflows/ionos-space.yml` in your repository. Following framework samples give you an idea. You find detail setting options [here](/docs/settings/).
