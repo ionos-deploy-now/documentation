@@ -37,3 +37,6 @@ npm run build
   * which source tbd 
     * a) e.g. https://twitter.com/GHchangelog 
     * b) https://github.com/olivierlacan/keep-a-changelog/blob/main/CHANGELOG.md as classic solution
+* framework-samples.md
+  * fix icon-base with GitHub icon
+  * embed .ionos.yml from repo (nice to have)
