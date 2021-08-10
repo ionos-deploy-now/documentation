@@ -9,7 +9,7 @@
         <OnThisPage v-if="showOnThisPage()" />
       </div>
 
-      <div class="container pb-24 md:w-3/5 lg:order-1">
+      <div class="container pb-24 md:w-3/5 lg:order-1 <md:max-w-[100vw]">
         <div class="content" v-html="$page.markdownPage.content" />
 
         <EditLink class="mt-10" :path="$page.markdownPage.fileInfo.path" />

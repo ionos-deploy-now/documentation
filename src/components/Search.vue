@@ -1,19 +1,19 @@
 <template>
-  <div @keydown.down="increment" @keydown.up="decrement" @keydown.enter="go" class="relative">
-    <label class="relative block">
+  <div @keydown.down="increment" @keydown.up="decrement" @keydown.enter="go"
+    class="relative transistion-all">
+    <SearchIcon size="1.5x" v-show="!focused" class="icon flex-center !md:hidden" @click="focusSearch" />
+    <label class="relative md:flex-center md:opacity-100" :class="searchLabelClass">
       <span class="sr-only">{{ $t('search.title') }}</span>
-      <div class="absolute inset-y-0 left-0 flex items-center justify-center px-3 py-2 opacity-50">
-        <SearchIcon size="1.25x" class="text-ui-typo" />
-      </div>
+      <SearchIcon size="1.25x" class="icon absolute left-3 inset-3 z-1 text-ui-typo" />
       <input
         ref="input"
         type="search"
         :value="query"
-        class="block w-full py-2 pl-10 pr-4 border-2 rounded-lg bg-ui-sidebar border-ui-sidebar focus:bg-ui-background"
+        class="block w-full py-2 pl-10 pr-4 border-2 rounded-lg bg-ui-sidebar border-ui-sidebar focus:bg-ui-background md:min-w-[250px] lg:min-w-[400px]"
         :class="{ 'rounded-b-none': showResult }"
         :placeholder="$t('search.placeholder')"
-        @focus="focused = true"
-        @blur="focused = false"
+        @focus="setSearchFocused(true)"
+        @blur="setSearchFocused(false)"
         @input="onInput"
         @change="onChange"
       />
@@ -76,8 +76,9 @@ query Search {
 </static-query>
 
 <script>
-import Fuse from 'fuse.js';
+import { mapState, mapActions } from 'vuex';
 import { ChevronRightIcon, SearchIcon } from 'vue-feather-icons';
+import Fuse from 'fuse.js';
 
 export default {
   components: {
@@ -89,11 +90,11 @@ export default {
     return {
       query: '',
       focusIndex: -1,
-      focused: false,
       results: [],
     };
   },
   computed: {
+    ...mapState({ focused: 'searchFocused' }),
     headings() {
       const result = [];
       const allPages = this.$static.allMarkdownPage.edges.map(edge => edge.node);
@@ -109,7 +110,6 @@ export default {
           });
         });
       });
-      console.log(result);
 
       return result;
     },
@@ -117,8 +117,15 @@ export default {
       // Show results, if the input is focused and the query is not empty.
       return this.focused && this.query.length > 0;
     },
+    searchLabelClass() {
+      return {
+        '<md:hidden': !this.focused,
+        '<md:opacity-0': !this.focused,
+      };
+    },
   },
   methods: {
+    ...mapActions({ setSearchFocused: 'setSearchFocused' }),
     increment() {
       if (this.focusIndex < this.results.length - 1) {
         this.focusIndex++;
@@ -128,6 +135,12 @@ export default {
       if (this.focusIndex >= 0) {
         this.focusIndex--;
       }
+    },
+    focusSearch() {
+      this.setSearchFocused(true);
+      this.$nextTick(() => {
+        this.$refs.input.focus();
+      })
     },
     updateSearchResults() {
       const fuse = new Fuse(this.headings, {
@@ -152,12 +165,10 @@ export default {
     onInput(event) {
       this.focusIndex = -1;
       this.query = event.target.value;
-      console.log('input', event.target.value);
       this.updateSearchResults();
     },
     onChange(event) {
       this.query = event.target.value;
-      console.log('change', event.target.value);
       this.updateSearchResults();
     },
   },

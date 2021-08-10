@@ -127,6 +127,10 @@ blockquote {
       }
     }
   }
+
+  img {
+    @apply mx-auto my-4 md:my-8 shadow rounded bg-white;
+  }
 }
 
 blockquote {
@@ -187,6 +191,10 @@ table {
   }
 }
 
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
 
 .sidebar {
   @apply fixed bg-ui-background px-4 inset-x-0 bottom-0 w-full border-r border-ui-border overflow-y-auto transition-all z-40;
@@ -202,15 +210,8 @@ table {
   }
 }
 
-.content {
-  img {
-    @apply mx-auto my-4 md:my-8 shadow rounded bg-white;
-  }
-}
-
 .btn {
-  @apply px-4 py-2 space-x-2 flex justify-center items-center text-ui-primary bg-ui-background text-ui-primary font-bold border border-ui-border rounded-lg;
-  cursor: pointer;
+  @apply px-4 py-2 space-x-2 flex justify-center items-center text-ui-primary bg-ui-background text-ui-primary font-bold border border-ui-border rounded-lg cursor-pointer;
 }
 
 .btn-primary {
