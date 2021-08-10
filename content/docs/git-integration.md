@@ -8,7 +8,33 @@ next: '/docs/staging-deployments/'
 # GitHub Integration
 
 A Deploy Now subscription allows you to deploy public or private projects from one GitHub account. This can be either a personal or an organization account. Setting up a project via Deploy Now generates automatically a [GitHub Action](https://github.com/features/actions) workflow file, that enables direct deployments to IONOS. Just edit, commit and push your local changes and your updates go live. Try [staging deployments](/docs/staging-deployments/) to have the safety for doing live tests.
-![Deploy Now git integration](/git-integration.svg)
+
+~~~mermaid
+%%{init: {'darkMode': 'true'}}%%
+sequenceDiagram
+    autonumber
+    User ->> User: edit and commit
+    User ->> GitHub: push
+    GitHub ->> GitHub Action: on push
+    GitHub Action ->> Deploy Now: run .github/workflows/deploy-now.yml 
+    Note left of Deploy Now: checkout, build and deploy to IONOS
+~~~
+
+<!-- ![Deploy Now git integration](/git-integration.svg) -->
 As prerequisite you just need to enable IONOS Deploy Now App to your GitHub account and give correpsonding rights to your repositories. The App requires read access to actions and metadata as well as write access to administration, secrets, code and workflows.
-![IONOS Deploy Now App](/github-app.png)
+
+~~~mermaid
+%%{init: {'darkMode': 'true'}}%%
+sequenceDiagram
+    autonumber
+    User ->> Deploy Now: First login
+    Deploy Now->>GitHub: Authenticate
+    GitHub ->> IONOS Deploy Now: Grant account permissions
+    Note right of GitHub: Read access to actions and meta data
+    Note right of GitHub: Read and write access to administration, code, secrets and workflows
+    IONOS Deploy Now ->> GitHub: Grant repo access
+    Note left of IONOS Deploy Now: Select all or at least one repository
+~~~
+
+<!-- ![IONOS Deploy Now App](/github-app.png) -->
 Deploy Now does not limit the build time you can use to update your web project. However, the build time for private repositories depends on your personal GitHub plan.
