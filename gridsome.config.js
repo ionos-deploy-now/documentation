@@ -67,7 +67,6 @@ module.exports = {
         remark: {
           externalLinksTarget: '_blank',
           externalLinksRel: ['noopener', 'noreferrer'],
-          plugins: ['@gridsome/remark-prismjs'],
         },
       },
     },
@@ -106,9 +105,11 @@ module.exports = {
   transformers: {
     remark: {
       plugins: [
+        // add gridsome-plugin-remark-mermaid always first
+        'gridsome-plugin-remark-mermaid',
         '@noxify/gridsome-remark-table-align',
         '@gridsome/remark-prismjs',
-        'gridsome-plugin-remark-container'
+        'gridsome-plugin-remark-container',
       ],
     },
   },
