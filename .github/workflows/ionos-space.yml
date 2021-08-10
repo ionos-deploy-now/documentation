@@ -1,0 +1,45 @@
+name: IONOS.space
+
+on: [push]
+
+jobs:
+  ionos-space:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Ionos Project data
+        uses: ionos-deploy-now/retrieve-project-info-action@v1
+        id: project
+        with:
+          service-host: api-eu.ionos.space
+          project: a1c953ae-b153-4417-818f-3dd8944ec77b
+          api-key: ${{ secrets.IONOS_API_KEY }}
+      - name: checkout
+        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        uses: actions/checkout@v2
+        with:
+          submodules: 'recursive'
+      - name: Setup Node.js 12.16.x
+        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.16.x
+      - name: Prepare Project build environment
+        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        run: npm ci
+      - name: Build Node project
+        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        run: npm run build
+        env:
+          CI: true
+          SITE_URL: ${{ steps.project.outputs.site-url }}
+      - name: Deploy to IONOS
+        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        uses: ionos-deploy-now/deploy-to-ionos-action@v1
+        with:
+          remote-host: ${{ steps.project.outputs.remote-host }}
+          api-key: ${{ secrets.IONOS_API_KEY }}
+          service-host: api-eu.ionos.space
+          branch-id: ${{ steps.project.outputs.branch-id }}
+          storage-quota: ${{ steps.project.outputs.storage-quota }}
+          project: a1c953ae-b153-4417-818f-3dd8944ec77b
+          dist-folder: dist
