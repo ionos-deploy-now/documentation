@@ -133,9 +133,9 @@ The following [action](https://github.com/ionos-deploy-now/retrieve-project-info
     SITE_URL: ${{ steps.project.outputs.site-url }}
 ```
 
-### Build project
+### Deploy build
 
-**TODO** a few descriptive words
+The following [action](https://github.com/ionos-deploy-now/deploy-to-ionos-action) deploys data to IONOS via Deploy Now.
 
 ``` yml
 - name: Deploy build
