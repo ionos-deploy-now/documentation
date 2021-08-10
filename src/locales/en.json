@@ -29,7 +29,8 @@
     "deploy-smarter": "Deploy smarter.",
     "deploy-faster": "Deploy faster.",
     "description": "Connect your GitHub account and instantly deploy your static web projects on IONOS own DDoS-protected georedundant and green infrastructure.",
-    "getting-started": "Getting started"
+    "getting-started": "Get started",
+    "deploy-now": "Deploy now"
   },
   "on-this-page": {
     "title": "On this page"

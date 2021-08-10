@@ -1,5 +1,5 @@
 <template>
-  <header class="flex bg-ui-background mt-4">
+  <header class="container flex bg-ui-background mt-4">
     <div class="grid md:grid-cols-7 md:gap-2 px-8 md:px-20">
       <div class="col-span-4 relative bg-img-dots">
         <div class="relative z-10">
@@ -14,13 +14,14 @@
             {{ $t('home-hero.description') }}
           </p>
         </div>
-        <div class="flex justify-start">
-          <g-link
-            to="/docs/"
-            class="flex items-center px-6 py-4 text-2xl font-bold leading-none text-white border rounded-lg shadow-lg bg-ui-primary border-ui-primary transition-all duration-200 ease-out transform hover:shadow-xl hover:-translate-y-1"
-          >
+        <div class="flex justify-start space-x-8">
+          <g-link to="/docs/" class="btn btn-hero btn-primary">
             {{ $t('home-hero.getting-started') }}
           </g-link>
+          <a href="https://ionos.space" target="_blank" class="btn btn-hero">
+            <ExternalLinkIcon class="icon" size="1x" />
+            <span>{{ $t('home-hero.deploy-now') }}</span>
+          </a>
         </div>
       </div>
       <div class="hidden md:flex md:col-span-3">
@@ -31,10 +32,12 @@
 </template>
 
 <script>
+import { ExternalLinkIcon } from 'vue-feather-icons';
 import DeployNow from '@/components/DeployNow';
 
 export default {
   components: {
+    ExternalLinkIcon,
     DeployNow,
   },
 };

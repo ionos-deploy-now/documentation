@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 py-2 border-t-2 border-ui-primary">
+  <div class="px-4 py-2 bg-ui-background">
     <div class="flex flex-grow justify-between items-center">
       <g-link to="/" class="flex items-center mr-2 sm:mr-12" title="Home">
         <img class="h-8" src="/logo.svg" alt="Deploy Now logo" />
@@ -13,12 +13,12 @@
       </div>
 
       <div class="flex items-center space-x-2 md:space-x-4">
-        <div v-if="navLinks.length > 0" class="hidden sm:block">
+        <div v-if="navLinks.length > 0" class="hidden md:block">
           <g-link
             v-for="link in navLinks"
             :key="link.path"
             :to="link.path"
-            class="text-base font-bold text-ui-primary hover:text-ui-secondary"
+            class="text-base font-bold text-ui-primary hover:text-ui-secondary p-2 mx-2"
           >
             {{ link.title }}
           </g-link>

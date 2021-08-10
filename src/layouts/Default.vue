@@ -3,7 +3,7 @@
     <div class="flex flex-col justify-start min-h-screen bg-ui-background">
       <header
         ref="header"
-        class="sticky top-0 z-10 w-full border-b bg-ui-background border-ui-border"
+        class="sticky top-0 z-10 w-full border-b border-ui-border"
         @resize="onResize"
       >
         <LayoutHeader />

@@ -10,7 +10,7 @@
           $t('footer.terms-and-conditions')
         }}</a>
       </div>
-      <div class="mx-3 md:mx-6">&copy; {{ year }} {{ $t('footer.company-name') }}</div>
+      <div class="mx-2 md:mx-6">&copy; {{ year }} <span>{{ $t('footer.company-name') }}</span></div>
     </div>
   </div>
 </template>

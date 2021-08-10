@@ -1,9 +1,9 @@
 <template>
-  <div class="flex flex-col sm:flex-row justify-between items-center">
+  <div class="flex justify-between items-stretch space-x-2">
     <g-link
       v-if="prev"
       :to="prev.path"
-      class="mb-4 sm:mb-0 flex items-center mr-auto text-ui-primary font-bold px-4 py-2 border border-ui-border rounded-lg hover:bg-ui-primary hover:text-white transition-colors"
+      class="btn btn-hover"
     >
       <ArrowLeftIcon class="mr-2" size="1x" />
       {{ prev.title }}
@@ -12,7 +12,8 @@
     <g-link
       v-if="next"
       :to="next.path"
-      class="flex items-center ml-auto text-ui-primary font-bold px-4 py-2 border border-ui-border rounded-lg hover:bg-ui-primary hover:text-white transition-colors"
+      class="btn btn-hover"
+      :class="{ 'ml-auto': !prev }"
     >
       {{ next.title }}
       <ArrowRightIcon class="ml-2" size="1x" />

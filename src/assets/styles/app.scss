@@ -173,6 +173,7 @@ table {
     &:first-child {
       @apply pl-0;
     }
+
     &:last-child {
       @apply pr-0;
     }
@@ -208,12 +209,20 @@ table {
 }
 
 .btn {
-  @apply rounded transition-all;
+  @apply px-4 py-2 space-x-2 flex justify-center items-center text-ui-primary bg-ui-background text-ui-primary font-bold border border-ui-border rounded-lg;
+  cursor: pointer;
+}
 
-  &.primary {
-    @apply font-bold text-white bg-ui-primary border-ui-primary;
-    cursor: pointer;
-  }
+.btn-primary {
+  @apply text-white bg-ui-primary;
+}
+
+.btn-hero {
+  @apply px-6 py-4 text-2xl font-bold leading-none shadow-lg border-3 border-ui-primary duration-200 ease-out transform transition-all hover:-translate-y-1;
+}
+
+.btn-hover {
+  @apply transition-colors hover:bg-ui-primary hover:text-white;
 }
 
 .icon {
