@@ -17,7 +17,4 @@ The idea was born by a team of enthusiastic developers who gain a lot of experie
 
 ## Meet the Deploy Now Team
 
-:owl: https://www.gatsbyjs.com/about/
-
-add a custom layout https://vuepress.vuejs.org/theme/default-theme-config.html#custom-layout-for-specific-pages
-
+Example: https://www.gatsbyjs.com/about/
