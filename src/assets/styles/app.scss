@@ -165,7 +165,7 @@ header {
 }
 
 table {
-  @apply text-left mb-6 border;
+  @apply text-left mb-6;
 
   td,
   th {
@@ -179,7 +179,7 @@ table {
   }
 
   tr {
-    @apply border-b border-ui-border;
+    @apply border-b-1 border-ui-border;
     &:last-child {
       @apply border-b-0;
     }

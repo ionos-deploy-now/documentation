@@ -30,10 +30,10 @@ npm run build
 * optimize favicon and other icons: https://realfavicongenerator.net/
 * images
   * separate images from floating text (maybe a dashed border)
-* remark 
+* remark
+  * lazy load images
   * add an arrow icon to all external links
-* add an changelog link in sitebar 
+* add a changelog link in sitebar 
   * which source tbd 
     * a) e.g. https://twitter.com/GHchangelog 
     * b) https://github.com/olivierlacan/keep-a-changelog/blob/main/CHANGELOG.md as classic solution
-  * lazy load images

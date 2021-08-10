@@ -12,8 +12,8 @@
         </ClientOnly>
       </div>
 
-      <div class="flex items-center">
-        <div v-if="navLinks.length > 0" class="hidden sm:block sm:px-8">
+      <div class="flex items-center space-x-2 md:space-x-4">
+        <div v-if="navLinks.length > 0" class="hidden sm:block">
           <g-link
             v-for="link in navLinks"
             :key="link.path"
@@ -24,7 +24,7 @@
           </g-link>
         </div>
 
-        <div class="flex items-center pr-2 sm:pr-8">
+        <div class="flex items-center">
           <a
             v-if="settings.web"
             :href="settings.web"
@@ -60,10 +60,6 @@
 
           <ToggleDarkMode class="p-2 mx-2" />
         </div>
-
-        <a class="btn primary px-4 py-2">
-          {{ $t('header.login') }}
-        </a>
       </div>
     </div>
   </div>
