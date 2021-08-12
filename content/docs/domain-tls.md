@@ -7,7 +7,7 @@ next: '/docs/faq/'
 
 # Domains & TLS/SSL
 
-Deploy Now provides a generic preview URL by default to all deployment branches. All URLs are by default SSL protected and http requests are redirected to https by default.  
+Deploy Now provides a generic preview URL by default to all deployment branches. All URLs are SSL protected and http requests are redirected to https by default.
 
 ## Custom domains
 
