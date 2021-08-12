@@ -8,16 +8,16 @@ next: '/docs/about-us/'
 # Frequently Asked Questions
 
 ## What can I deploy with Deploy Now?
-![Deployment Options](/deploy-now-supported-frameworks.svg)  
 You can deploy any kind of website or app that work with HTML, CSS and client-side JavaScript. This includes popular frontend frameworks like Vue, React and Angular as well as static site generators like Gatsby, Hugo, Nuxt, Next, Jekyll, Jigsaw, Gridsome or Hexo, which follow the Jamstack approach.
+![Deployment Options](/deploy-now-supported-frameworks.svg)  
 
-## What is the Jamstack?
-![Jamstack vs. Classic Web Architecture](/jamstack-architecture.svg)  
+## What is the Jamstack? 
 The Jamstack is a novel web architecture based on the principles of prerendering and decoupling. Jamstack stands for client-side **J**avaScript, reusable **A**PIs and **M**arkup. The basic concept is to deliver the markup of a site as fast as possible and use JavaScript and APIs to talk to various services at runtime, after the static frontend is delivered to the browser. In comparison to the classic web architecture the Jamstack is faster, as no database request has to be made at runtime, and more secure, as a static site offers fewer points for attacks.
+![Jamstack vs. Classic Web Architecture](/jamstack-architecture.svg) 
 
-## What is a static site generator?
-![Static Site Generator](/static-site-generator.svg)  
-A static site generator is an essential component of the jamstack architecture. They allow prerendering in the sense that websites files are generated during the build time instead of the request time (when a user opens the side). A static site generator does this by listening to changes in a set of input files like content, templates or data. Everytime an input changes, new output is generated in the form of HTML, CSS and JavaScript files. 
+## What is a static site generator? 
+A static site generator is an essential component of the jamstack architecture. They allow prerendering in the sense that websites files are generated during the build time instead of the request time (when a user opens the side). A static site generator does this by listening to changes in a set of input files like content, templates or data. Everytime an input changes, new output is generated in the form of HTML, CSS and JavaScript files.
+![Static Site Generator](/static-site-generator.svg) 
 
 ## What is a build?
 In this context, a build is a process in which JavsScript is compiled, or a static site generator is run. This can be triggered by a new git commit or by external services such as a headless CMS. Everytime a build is triggered, we use [GitHub Actions](https://github.com/features/actions) to update the files on the webserver.
