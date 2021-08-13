@@ -29,11 +29,11 @@ sequenceDiagram
     autonumber
     User ->> Deploy Now: First login
     Deploy Now->>GitHub: Authenticate
-    GitHub ->> IONOS Deploy Now: Grant account permissions
-    Note right of GitHub: Read access to actions and meta data
-    Note right of GitHub: Read and write access to administration, code, secrets and workflows
-    IONOS Deploy Now ->> GitHub: Grant repo access
-    Note left of IONOS Deploy Now: Select all or at least one repository
+    GitHub ->> Deploy Now: Grant account permissions
+    Note left of GitHub: Read access to actions and meta data
+    Note left of GitHub: Read and write access to administration, code, secrets and workflows
+    GitHub ->> Deploy Now: Grant repo access
+    Note left of GitHub: Select all or at least one repository
 ~~~
 
 <!-- ![IONOS Deploy Now App](/github-app.png) -->
