@@ -7,7 +7,7 @@
           <DeployNow />
         </g-link>
 
-        <div v-if="navLinks.length > 0" class="hidden md:block">
+        <div v-if="navLinks.length > 0" class="hidden xl:block">
           <g-link
             v-for="link in navLinks"
             :key="link.path"
@@ -25,22 +25,11 @@
         </ClientOnly>
       </div>
 
-      <div class="md:flex-center space-x-2" :class="iconClass">
-        <a
-          v-if="settings.web"
-          :href="settings.web"
-          class="icon p-2 mx-2"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Website"
-        >
-          <GlobeIcon size="1.5x" />
-        </a>
-
+      <div class="md:flex-center space-x-2 md:space-x-8" :class="iconsClass">
         <a
           v-if="settings.twitter"
           :href="settings.twitter"
-          class="icon p-2 mx-2"
+          class="icon p-2"
           target="_blank"
           rel="noopener noreferrer"
           title="Twitter"
@@ -51,7 +40,7 @@
         <a
           v-if="settings.github"
           :href="settings.github"
-          class="icon p-2 mx-2"
+          class="icon p-2"
           target="_blank"
           rel="noopener noreferrer"
           title="Github"
@@ -59,7 +48,19 @@
           <GithubIcon size="1.5x" />
         </a>
 
-        <ToggleDarkMode class="p-2 mx-2" />
+        <ToggleDarkMode class="icon p-2" />
+
+        <a
+          v-if="settings.web"
+          :href="settings.web"
+          class="btn btn-primary ml-4"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Website"
+        >
+          <ExternalLinkIcon class="icon" size="1x" />
+          Deploy Now
+        </a>
       </div>
     </div>
   </div>
@@ -86,7 +87,7 @@ query {
 
 <script>
 import { mapState } from 'vuex';
-import { GlobeIcon, GithubIcon, TwitterIcon } from 'vue-feather-icons';
+import { GlobeIcon, GithubIcon, TwitterIcon, ExternalLinkIcon } from 'vue-feather-icons';
 import ToggleDarkMode from '@/components/ToggleDarkMode';
 import DeployNow from '@/components/DeployNow';
 
@@ -100,11 +101,12 @@ export default {
     GlobeIcon,
     GithubIcon,
     TwitterIcon,
+    ExternalLinkIcon,
   },
 
   computed: {
     ...mapState({ searchFocused: 'searchFocused' }),
-    iconClass() {
+    iconsClass() {
       return {
         'flex-center': !this.searchFocused,
         '<md:hidden': this.searchFocused,
