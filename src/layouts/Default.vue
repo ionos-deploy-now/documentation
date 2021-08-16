@@ -9,14 +9,14 @@
         <LayoutHeader />
       </header>
 
-      <main class="relative flex bg-ui-background">
+      <main class="relative justify-stretch bg-ui-background" :class="{ 'flex': hasSidebar }">
         <aside v-if="hasSidebar" class="sidebar" :class="{ open: sidebarOpen }" :style="sidebarStyle">
           <div class="w-full pb-16 bg-ui-background">
             <Sidebar @navigate="sidebarOpen = false" />
           </div>
         </aside>
 
-        <div :class="{ 'pl-0 lg:w-4/5': hasSidebar }">
+        <div class="grid grid-cols-1" :class="{ 'pl-0 lg:w-4/5': hasSidebar }">
           <slot />
         </div>
       </main>
