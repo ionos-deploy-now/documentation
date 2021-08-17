@@ -13,22 +13,17 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
-        <div class="space-y-6">
-          <div class="text-sm text-ui-primary uppercase">Hosting optimized for git workflows</div>
-          <div class="text-3xl font-bold">
-            Deploy your <span class="text-ui-primary">GitHub repository</span> to performant infrastucture in a few
-            clicks
+        <div class="my-auto space-y-6">
+          <div class="overline">
+            {{ $t('home-features.overline') }}
           </div>
+          <div class="text-3xl font-bold" v-html="$t('home-features.title')"></div>
           <div>
-            Connect your GitHub account and select your project in a few simple steps. Git push new code and we
-            instantly
-            update by connecting to the GitHub Actions pipeline.
+            {{ $t('home-features.text') }}
           </div>
-          <div>
-            <g-link class="btn btn-primary" to="/docs/staging-deployments/">
-              Read introduction
-            </g-link>
-          </div>
+          <g-link class="btn btn-primary" to="/docs/staging-deployments/">
+            {{ $t('home-features.button') }}
+          </g-link>
         </div>
       </div>
     </div>

@@ -59,10 +59,8 @@ h4 {
 
   a {
     &::before {
+      @apply absolute -ml-4 pr-4 text-ui-primary opacity-0 float-left;
       content: "#";
-      margin-left: -1em;
-      padding-right: 1em;
-      @apply text-ui-primary absolute opacity-0 float-left;
     }
   }
 }
@@ -296,6 +294,10 @@ html[lights-out] .container-secondary {
   &.invert {
     @apply text-white bg-ui-primary;
   }
+}
+
+.overline {
+  @apply text-sm text-ui-primary uppercase;
 }
 
 .sidebar {

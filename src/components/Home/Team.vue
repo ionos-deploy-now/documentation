@@ -3,14 +3,11 @@
     <div class="container">
       <div class="flex-center flex-col space-y-8 text-white my-16 lg:my-42">
         <div class="text-sm uppercase">
-          We are the team - We are deploy now
+          {{ $t('home-team.overline') }}
         </div>
-        <div class="text-4xl text-center font-bold max-w-[600px]">
-          Developed <span class="text-ui-primary">just for devs:</span><br />
-          Meet the IONOS Experts behind Deploy Now
-        </div>
+        <div class="text-4xl text-center font-bold max-w-[600px]" v-html="$t('home-team.title')"></div>
         <g-link class="btn btn-primary" to="/about-us/">
-          Get in touch
+          {{ $t('home-team.button') }}
         </g-link>
       </div>
     </div>
