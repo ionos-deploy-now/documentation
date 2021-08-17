@@ -9,7 +9,7 @@
           Developed <span class="text-ui-primary">just for devs:</span><br />
           Meet the IONOS Experts behind Deploy Now
         </div>
-        <g-link class="btn btn-primary" to="/docs/about-us/">
+        <g-link class="btn btn-primary" to="/about-us/">
           Get in touch
         </g-link>
       </div>
@@ -17,8 +17,8 @@
 
     <div class="<lg:hidden absolute absolute-center-x bottom-0 flex justify-center items-baseline space-x-[-120px]">
       <g-image class="" src="/team/fatih.png" />
-      <g-image class="" src="/team/josua.png" />
       <g-image class="" src="/team/marcel.png" />
+      <g-image class="" src="/team/josua.png" />
       <g-image class="" src="/team/robert.png" />
       <g-image class="" src="/team/markus.png" />
       <g-image class="" src="/team/alex.png" />

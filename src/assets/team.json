@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Markus Hunsalz",
+    "email": "markus.hunsalz@ionos.com",
+    "image": "markus.png",
+    "role": "Head of Development",
+    "github": "https://github.com/hunsalz",
+    "likes": [
+      "Language",
+      "Framework",
+      "Coffee"
+    ]
+  },
+  {
+    "name": "Marcel Solle",
+    "email": "marcel.solle@ionos.com",
+    "image": "marcel.png",
+    "role": "Frontend Developer",
+    "github": "https://github.com/Ap3rtur3",
+    "likes": [
+      "Language",
+      "Framework",
+      "Coffee"
+    ]
+  },
+  {
+    "name": "Roman Okon",
+    "email": "roman.okon@ionos.com",
+    "image": "roman.png",
+    "role": "Head of Product",
+    "github": "https://github.com",
+    "likes": [
+      "Language",
+      "Framework",
+      "Coffee"
+    ]
+  },
+  {
+    "name": "Alexander Gängel",
+    "email": "alexander.gaengel@ionos.com",
+    "image": "alex.png",
+    "role": "Fullstack Developer",
+    "github": "https://github.com/agaengel",
+    "likes": [
+      "Language",
+      "Framework",
+      "Coffee"
+    ]
+  },
+  {
+    "name": "Fatih Ok",
+    "email": "fatih.ok@ionos.com",
+    "image": "fatih.png",
+    "role": "Infrastructure Engineer",
+    "github": "https://github.com",
+    "likes": [
+      "Language",
+      "Framework",
+      "Coffee"
+    ]
+  },
+  {
+    "name": "Eric Szperlinski",
+    "email": "eric.szperlinski@ionos.com",
+    "image": "eric.png",
+    "role": "Frontend Developer",
+    "github": "https://github.com",
+    "likes": [
+      "Language",
+      "Framework",
+      "Coffee"
+    ]
+  },
+  {
+    "name": "Robert Schleinhege",
+    "email": "robert.schleinhege@ionos.com",
+    "image": "robert.png",
+    "role": "Product Owner",
+    "github": "https://github.com/Robert95Sch",
+    "likes": [
+      "Language",
+      "Framework",
+      "Coffee"
+    ]
+  },
+  {
+    "name": "Josua Meier",
+    "email": "josua.meier@ionos.com",
+    "image": "josua.png",
+    "role": "Frontend Developer",
+    "github": "https://github.com",
+    "likes": [
+      "Language",
+      "Framework",
+      "Coffee"
+    ]
+  },
+  {
+    "name": "Robin Müller",
+    "email": "robin.mueller@ionos.com",
+    "image": "robin.png",
+    "role": "Fullstack Developer",
+    "github": "https://github.com/coder-hugo",
+    "likes": [
+      "Language",
+      "Framework",
+      "Coffee"
+    ]
+  }
+]

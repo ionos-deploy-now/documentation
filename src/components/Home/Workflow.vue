@@ -2,7 +2,7 @@
   <div class="container-secondary">
     <div class="container">
       <div class="two-column-layout py-8">
-        <div class="my-auto space-y-4">
+        <div class="my-auto space-y-6">
           <div class="text-sm text-ui-primary uppercase">
             Continuous deployment &amp; easy staging
           </div>
