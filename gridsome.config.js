@@ -29,6 +29,7 @@ module.exports = {
         { path: '/docs/', title: 'Docs' },
         { path: '/docs/framework-samples/', title: 'Samples' },
         { path: '/docs/faq/', title: 'FAQ' },
+        { path: '/about-us/', title: 'About us' },
       ],
     },
     sidebar: [
@@ -55,7 +56,7 @@ module.exports = {
           },
           {
             title: 'More',
-            items: ['/docs/faq/', '/docs/about-us/'],
+            items: ['/docs/faq/', '/about-us/'],
           },
         ],
       },
@@ -89,11 +90,9 @@ module.exports = {
         locales: [
           'en',
         ],
-        pathAliases: {
-          'en': 'en',
-        },
         fallbackLocale: 'en',
         defaultLocale: 'en',
+        enablePathGeneration: false,
         enablePathRewrite: false,
         rewriteDefaultLanguage: false,
         messages: {

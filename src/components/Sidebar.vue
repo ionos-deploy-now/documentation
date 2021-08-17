@@ -35,6 +35,12 @@
 query Sidebar {
   metadata {
     settings {
+      nav {
+        links {
+          path
+          title
+        }
+      }
       sidebar {
         name
         sections {
@@ -61,6 +67,9 @@ export default {
     sidebar() {
       return this.$static.metadata.settings.sidebar.find(sidebar => sidebar.name === this.$page.markdownPage.sidebar);
     },
+    nav() {
+      return this.$static.metadata.settings.nav.links;
+    },
     showSidebar() {
       return this.$page.markdownPage.sidebar && this.sidebar;
     },
@@ -76,7 +85,10 @@ export default {
       };
     },
     findPages(links) {
-      return links.map(link => this.pages.find(page => page.path === link));
+      return links.map((l) => {
+        console.log(l);
+        return l;
+      }).map(link => this.pages.find(page => page && page.path === link) || this.nav.find(nav => nav.path === link)).filter(x => x);
     },
   },
 };

@@ -13,15 +13,15 @@
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 m-auto <md:max-w-[400px]">
         <g-link to="/docs/" class="card invert" style="background-color: #11C7E6">
-          <div class="title pt-4 lg:pt-10">Getting started</div>
+          <div class="title py-4 lg:pt-10">Getting started</div>
           <div>How to connect a repository and setup a deployment.</div>
         </g-link>
         <g-link to="/docs/framework-samples/" class="card invert">
-          <div class="title pt-4 lg:pt-10">Deploy a sample</div>
+          <div class="title py-4 lg:pt-10">Deploy a sample</div>
           <div>Setup a deployment with one of our framework samples.</div>
         </g-link>
         <g-link to="/docs/faq/" class="card invert" style="background-color: #003D8F">
-          <div class="title pt-4 lg:pt-10">FAQ</div>
+          <div class="title py-4 lg:pt-10">FAQ</div>
           <div>Frequently asked questions about deploy Now.</div>
         </g-link>
       </div>

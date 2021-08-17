@@ -13,7 +13,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
-        <div class="space-y-4">
+        <div class="space-y-6">
           <div class="text-sm text-ui-primary uppercase">Hosting optimized for git workflows</div>
           <div class="text-3xl font-bold">
             Deploy your <span class="text-ui-primary">GitHub repository</span> to performant infrastucture in a few

@@ -2,7 +2,7 @@
 description: ''
 sidebar: 'docs'
 prev: '/docs/domain-tls/'
-next: '/docs/about-us/'
+next: '/about-us/'
 ---
 
 # Frequently Asked Questions

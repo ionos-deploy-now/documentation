@@ -239,11 +239,11 @@ html[lights-out] .container-secondary {
 }
 
 .btn {
-  @apply px-4 py-2 space-x-2 inline-flex justify-center items-center text-ui-primary bg-ui-background text-ui-primary font-bold border border-ui-border rounded-lg cursor-pointer;
+  @apply px-4 py-2 space-x-2 inline-flex justify-center items-center text-ui-primary bg-ui-background text-ui-primary border border-ui-border rounded-lg cursor-pointer;
 }
 
 .btn-primary, .btn-secondary {
-  @apply text-lg font-bold border-2 border-ui-primary;
+  @apply text-lg border-2 border-ui-primary bg-ui-background z-1;
 }
 
 .btn-primary {
@@ -273,14 +273,10 @@ html[lights-out] .container-secondary {
 }
 
 .card {
-  @apply p-4 lg:p-6 color-ui-typo rounded;
+  @apply p-4 lg:p-6 color-ui-typo bg-white rounded-lg shadow-lg;
 
   &.invert {
     @apply text-white bg-ui-primary;
-  }
-
-  .title {
-    @apply pb-4;
   }
 }
 
@@ -299,7 +295,7 @@ html[lights-out] .container-secondary {
 }
 
 .bg-img-dots {
-  @apply relative z-1;
+  @apply relative z-0;
 
   &::before {
     @apply z-0;
