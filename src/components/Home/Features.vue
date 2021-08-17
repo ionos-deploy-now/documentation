@@ -7,7 +7,7 @@
             class="mx-auto"
             width="560"
             height="315"
-            src="https://www.youtube-nocookie.com/embed/DsoUtk-50UU"
+            src="https://www.youtube-nocookie.com/embed/wpELzwYFxQw"
             title="Deploy Now Video"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

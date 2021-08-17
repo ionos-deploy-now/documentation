@@ -16,14 +16,14 @@
     </div>
 
     <div class="<lg:hidden absolute absolute-center-x bottom-0 flex justify-center items-baseline space-x-[-120px]">
-      <g-image class="" src="/team/fatih.png" />
-      <g-image class="" src="/team/marcel.png" />
-      <g-image class="" src="/team/josua.png" />
-      <g-image class="" src="/team/robert.png" />
-      <g-image class="" src="/team/markus.png" />
-      <g-image class="" src="/team/alex.png" />
-      <g-image class="" src="/team/eric.png" />
-      <g-image class="" src="/team/robin.png" />
+      <g-image src="/team/fatih.svg" />
+      <g-image src="/team/marcel.svg" />
+      <g-image src="/team/josua.svg" />
+      <g-image src="/team/robert.svg" />
+      <g-image src="/team/markus.svg" />
+      <g-image src="/team/alex.svg" />
+      <g-image src="/team/eric.svg" />
+      <g-image src="/team/robin.svg" />
     </div>
   </div>
 </template>

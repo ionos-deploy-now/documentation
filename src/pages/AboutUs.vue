@@ -71,7 +71,9 @@
                 {{ member.github }}
               </a>
             </div>
-            <a class="block text-sm text-ui-primary" :href="`mailto:${member.email}`">{{ member.email }}</a>
+            <a class="block text-sm text-ui-primary" :href="`mailto:${member.email}`">
+              {{ member.email }}
+            </a>
           </div>
         </div>
       </div>
