@@ -3,13 +3,19 @@
  */
 
 :root {
+  // Palette
+  --color-primary: #0b9dcc;
+  --color-secondary: #2c3e50;
+  --color-ionos-blue: #003d8f;
+  --color-midnight: #1b365d;
+  --color-dark-midnight: #001b41;
+  // UI
   --color-ui-background: theme("colors.white");
   --color-ui-typo: theme("colors.gray.700");
   --color-ui-sidebar: theme("colors.gray.200");
   --color-ui-border: theme("colors.gray.300");
   --color-ui-headline: #1F282D;
-  --color-ui-dark-midnight: #001b41;
-  --color-ui-midnight: #1b365d;
+  --color-ui-body: #50575B;
 }
 
 html[lights-out] {
@@ -17,9 +23,6 @@ html[lights-out] {
   --color-ui-typo: theme("colors.gray.100");
   --color-ui-sidebar: theme("colors.gray.800");
   --color-ui-border: theme("colors.gray.800");
-  --color-ui-headline: #1F282D;
-  --color-ui-dark-midnight: #001b41;
-  --color-ui-midnight: #1b365d;
 
   pre[class*="language-"],
   code[class*="language-"] {
@@ -27,13 +30,15 @@ html[lights-out] {
   }
 }
 
-.bg-ui-midnight {
-  background-color: var(--color-ui-midnight);
-}
-
-.bg-ui-dark-midnight {
-  background-color: var(--color-ui-dark-midnight);
-}
+//$computedColors: "ionos-blue", "midnight", "dark-midnight";
+//@each $color in $computedColors {
+//  .text-#{$color} {
+//    color: var(--color-#{$color});
+//  }
+//  .bg-#{$color} {
+//    background-color: var(--color-#{$color});
+//  }
+//}
 
 /**
  * General

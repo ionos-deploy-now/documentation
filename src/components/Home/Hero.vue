@@ -7,7 +7,7 @@
           <div>{{ $t('home-hero.deploy-faster') }}</div>
         </div>
         <DeployNow class="text-4xl md:text-6xl" />
-        <p class="my-8 md:text-xl md:my-16 text-primary">
+        <p class="my-8 md:text-xl md:my-16">
           {{ $t('home-hero.description') }}
         </p>
       </div>

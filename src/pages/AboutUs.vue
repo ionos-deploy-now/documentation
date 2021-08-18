@@ -46,7 +46,7 @@
             class="object-cover max-w-[200px]"
             style="background-color: #f5f5f5"
           />
-          <div class="flex-grow p-4 space-y-4 bg-white">
+          <div class="flex-grow p-4 space-y-4 text-ui-headline bg-white">
             <div>
               <div class="text-xl font-bold">{{ member.name }}</div>
               <div>{{ member.role }}</div>

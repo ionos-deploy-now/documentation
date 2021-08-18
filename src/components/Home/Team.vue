@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-ui-dark-midnight bg-img-dots">
+  <div class="relative bg-dark-midnight bg-img-dots">
     <div class="container">
       <div class="flex-center flex-col space-y-8 text-white my-16 lg:my-42">
         <div class="text-sm uppercase">
