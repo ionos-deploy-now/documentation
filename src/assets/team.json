@@ -78,9 +78,9 @@
     "role": "Product Owner",
     "github": "https://github.com/Robert95Sch",
     "likes": [
-      "Language",
-      "Framework",
-      "Coffee"
+      "Python",
+      "HTML/CSS",
+      "Figma"
     ]
   },
   {
@@ -88,11 +88,11 @@
     "email": "josua.meier@ionos.com",
     "image": "josua.svg",
     "role": "Frontend Developer",
-    "github": "https://github.com",
+    "github": "https://github.com/JosuaMeier",
     "likes": [
-      "Language",
-      "Framework",
-      "Coffee"
+      "JavaScript",
+      "Vue",
+      "Material Design"
     ]
   },
   {
