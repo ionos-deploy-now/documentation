@@ -39,7 +39,7 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto">
-        <div v-for="member in team" :key="member.email" class="card flex !p-0 z-1 max-w-[550px]">
+        <div v-for="member in team" :key="member.email" class="card flex !p-0 max-w-[550px]">
           <img
             :src="`/team/${member.image}`"
             :alt="`Image of ${member.name}`"

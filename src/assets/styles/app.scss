@@ -30,16 +30,6 @@ html[lights-out] {
   }
 }
 
-//$computedColors: "ionos-blue", "midnight", "dark-midnight";
-//@each $color in $computedColors {
-//  .text-#{$color} {
-//    color: var(--color-#{$color});
-//  }
-//  .bg-#{$color} {
-//    background-color: var(--color-#{$color});
-//  }
-//}
-
 /**
  * General
  */
@@ -294,7 +284,7 @@ html[lights-out] .container-secondary {
 }
 
 .card {
-  @apply p-4 lg:p-6 color-ui-typo bg-white rounded-lg shadow-lg;
+  @apply p-4 lg:p-6 rounded-lg shadow-lg border-1 border-transparent overflow-hidden;
 
   &.invert {
     @apply text-white bg-ui-primary;

@@ -1,7 +1,7 @@
 <template>
   <div class="relative bg-dark-midnight bg-img-dots">
     <div class="container">
-      <div class="flex-center flex-col space-y-8 text-white my-16 lg:my-42">
+      <div class="flex-center flex-col space-y-8 text-white mt-8 mb-16 lg:mt-16 lg:mb-42">
         <div class="text-sm uppercase">
           {{ $t('home-team.overline') }}
         </div>
