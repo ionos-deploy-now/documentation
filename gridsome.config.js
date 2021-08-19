@@ -34,6 +34,7 @@ module.exports = {
         { path: '/docs/faq/', title: 'FAQ' },
         ...(showBlog ? [{ path: '/blog/', title: 'Blog' }] : []),
         { path: '/about-us/', title: 'About us' },
+        { path: '/blog/', title: 'Blog' },
       ],
     },
     sidebar: [
