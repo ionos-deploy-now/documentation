@@ -1,7 +1,6 @@
 ---
 description: ''
-sidebar: 'blog'
-category: 'blog'
+
 ---
 
 # Hello world

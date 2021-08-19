@@ -85,10 +85,7 @@ export default {
       };
     },
     findPages(links) {
-      return links.map((l) => {
-        console.log(l);
-        return l;
-      }).map(link => this.pages.find(page => page && page.path === link) || this.nav.find(nav => nav.path === link)).filter(x => x);
+      return links.map(link => this.pages.find(page => page && page.path === link) || this.nav.find(nav => nav.path === link)).filter(x => x);
     },
   },
 };
