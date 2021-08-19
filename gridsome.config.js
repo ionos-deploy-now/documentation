@@ -30,6 +30,7 @@ module.exports = {
         { path: '/docs/framework-samples/', title: 'Samples' },
         { path: '/docs/faq/', title: 'FAQ' },
         { path: '/about-us/', title: 'About us' },
+        { path: '/blog/', title: 'Blog' },
       ],
     },
     sidebar: [

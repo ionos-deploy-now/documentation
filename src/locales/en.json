@@ -71,6 +71,9 @@
     "feedback-text": "Got ideas or missing a feature? We’re still working on Deploy Now and would love to hear what you think. Use the feedback button in the product or send an email to info@deploynow.dev.",
     "team-title": "Meet the team"
   },
+  "blog": {
+    "title": "Blog"
+  },
   "404": {
     "title": "Oh no! There is nothing here.",
     "back": "Go back"
