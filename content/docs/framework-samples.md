@@ -3,6 +3,7 @@ description: ''
 sidebar: 'docs'
 prev: '/docs/staging-deployments/'
 next: '/docs/configuration-overview/'
+editable: true
 ---
 
 # Framework samples

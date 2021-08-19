@@ -72,7 +72,7 @@ export default {
   computed: {
     ...mapGetters(['headerHeight', 'sidebarStyle']),
     hasSidebar() {
-      return this.$page && this.headerHeight > 0;
+      return this.$page && this.$page.markdownPage && this.headerHeight > 0;
     },
   },
   methods: {

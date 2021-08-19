@@ -18,7 +18,7 @@
   --color-ui-body: #50575B;
 }
 
-html[lights-out] {
+html.dark {
   --color-ui-background: theme("colors.gray.900");
   --color-ui-typo: theme("colors.gray.100");
   --color-ui-sidebar: theme("colors.gray.800");
@@ -28,6 +28,14 @@ html[lights-out] {
   code[class*="language-"] {
     @apply bg-ui-border;
   }
+
+  .container-secondary {
+    background-color: var(--color-midnight);
+  }
+}
+
+.container-secondary {
+  background-color: #eee;
 }
 
 /**
@@ -208,14 +216,6 @@ table {
 
 .container {
   @apply pt-8 md:pt-32 py-8 md:py-20;
-}
-
-.container-secondary {
-  background-color: #eee;
-}
-
-html[lights-out] .container-secondary {
-  background-color: #1b365d;
 }
 
 .two-column-layout {

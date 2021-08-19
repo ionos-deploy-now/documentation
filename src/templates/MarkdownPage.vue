@@ -12,7 +12,7 @@
       <div class="container pb-24 lg:order-1 <md:max-w-[100vw]" :class="{ 'md:w-3/5': showOnThisPage() }">
         <div class="content" v-html="$page.markdownPage.content" />
 
-        <EditLink class="mt-10" :path="$page.markdownPage.fileInfo.path" />
+        <EditLink v-if="showEditLink" class="mt-10" :path="$page.markdownPage.fileInfo.path" />
 
         <div v-if="showPrevNextLinks" class="mt-8 pt-8 lg:mt-12 lg:pt-12 border-t border-ui-border">
           <NextPrevLinks />
@@ -32,6 +32,7 @@ query ($id: ID!) {
     fileInfo {
       path
     }
+    editable
     timeToRead
     content
     sidebar
@@ -73,6 +74,9 @@ export default {
   },
   computed: {
     ...mapGetters(['sidebarStyle']),
+    showEditLink() {
+      return this.$page.markdownPage.editable === true;
+    },
     showPrevNextLinks() {
       return this.$page.markdownPage.prev || this.$page.markdownPage.next;
     },

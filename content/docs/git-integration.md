@@ -3,6 +3,7 @@ description: ''
 sidebar: 'docs'
 prev: '/docs/'
 next: '/docs/staging-deployments/'
+editable: true
 ---
 
 # GitHub integration

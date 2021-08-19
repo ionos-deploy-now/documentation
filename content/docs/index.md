@@ -2,6 +2,7 @@
 description: ''
 sidebar: 'docs'
 next: '/docs/git-integration/'
+editable: true
 ---
 
 # Introduction

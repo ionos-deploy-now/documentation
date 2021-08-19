@@ -3,6 +3,7 @@ description: ''
 sidebar: 'docs'
 prev: '/docs/git-integration/'
 next: '/docs/framework-samples/'
+editable: true
 ---
 
 # Staging Deployments

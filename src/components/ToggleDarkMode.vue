@@ -13,7 +13,7 @@
 <script>
 import { SunIcon, MoonIcon } from 'vue-feather-icons';
 
-export const LIGHTS_OUT = 'lights-out';
+export const DARK_MODE = 'dark';
 
 export default {
   components: {
@@ -29,12 +29,12 @@ export default {
 
   methods: {
     handleClick() {
-      const hasDarkMode = document.documentElement.hasAttribute(LIGHTS_OUT);
+      const hasDarkMode = document.documentElement.classList.contains(DARK_MODE);
       return this.toggleDarkMode(!hasDarkMode);
     },
 
     toggleDarkMode(shouldBeDark) {
-      document.documentElement.toggleAttribute(LIGHTS_OUT, shouldBeDark);
+      document.documentElement.classList.toggle(DARK_MODE, shouldBeDark);
       this.isDarkMode = shouldBeDark;
       this.writeToStorage(shouldBeDark);
       return shouldBeDark;
@@ -45,15 +45,15 @@ export default {
     },
 
     hasInStorage() {
-      return localStorage.getItem(LIGHTS_OUT) !== null;
+      return localStorage.getItem(DARK_MODE) !== null;
     },
 
     writeToStorage(prefersDark) {
-      localStorage.setItem(LIGHTS_OUT, prefersDark ? 'true' : 'false');
+      localStorage.setItem(DARK_MODE, prefersDark ? 'true' : 'false');
     },
 
     getFromStorage() {
-      return localStorage.getItem(LIGHTS_OUT) === 'true';
+      return localStorage.getItem(DARK_MODE) === 'true';
     },
   },
 

@@ -3,6 +3,7 @@ description: ''
 sidebar: 'docs'
 prev: '/docs/file-based-configuration/'
 next: '/docs/domain-tls/'
+editable: true
 ---
 
 # GitHub Action

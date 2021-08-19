@@ -3,6 +3,7 @@ description: ''
 sidebar: 'docs'
 prev: '/docs/framework-samples/'
 next: '/docs/file-based-configuration/'
+editable: true
 ---
 
 # Overview
