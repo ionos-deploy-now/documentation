@@ -1,10 +1,21 @@
+/**
+ * Colors & Variables
+ */
+
 :root {
+  // Palette
+  --color-primary: #0b9dcc;
+  --color-secondary: #2c3e50;
+  --color-ionos-blue: #003d8f;
+  --color-midnight: #1b365d;
+  --color-dark-midnight: #001b41;
+  // UI
   --color-ui-background: theme("colors.white");
   --color-ui-typo: theme("colors.gray.700");
   --color-ui-sidebar: theme("colors.gray.200");
   --color-ui-border: theme("colors.gray.300");
-  --color-ui-dark-midnight: #001b41;
-  --color-ui-midnight: #1b365d;
+  --color-ui-headline: #1F282D;
+  --color-ui-body: #50575B;
 }
 
 html[lights-out] {
@@ -12,14 +23,16 @@ html[lights-out] {
   --color-ui-typo: theme("colors.gray.100");
   --color-ui-sidebar: theme("colors.gray.800");
   --color-ui-border: theme("colors.gray.800");
-  --color-ui-dark-midnight: #001b41;
-  --color-ui-midnight: #1b365d;
 
   pre[class*="language-"],
   code[class*="language-"] {
     @apply bg-ui-border;
   }
 }
+
+/**
+ * General
+ */
 
 * {
   transition-property: color, background-color, border-color;
@@ -41,10 +54,8 @@ h4 {
 
   a {
     &::before {
+      @apply absolute -ml-4 pr-4 text-ui-primary opacity-0 float-left;
       content: "#";
-      margin-left: -1em;
-      padding-right: 1em;
-      @apply text-ui-primary absolute opacity-0 float-left;
     }
   }
 }
@@ -195,14 +206,6 @@ table {
   }
 }
 
-.bg-ui-midnight {
-  background-color: var(--color-ui-midnight);
-}
-
-.bg-ui-dark-midnight {
-  background-color: var(--color-ui-dark-midnight);
-}
-
 .container {
   @apply pt-8 md:pt-32 py-8 md:py-20;
 }
@@ -237,6 +240,14 @@ html[lights-out] .container-secondary {
   @apply absolute-center-x absolute-center-y;
   transform: translate(-50%, -50%);
 }
+
+.absolute-fit {
+  @apply absolute top-0 left-0 right-0 bottom-0;
+}
+
+/**
+ * Components
+ */
 
 .btn {
   @apply px-4 py-2 space-x-2 inline-flex justify-center items-center text-ui-primary bg-ui-background text-ui-primary border border-ui-border rounded-lg cursor-pointer;
@@ -273,11 +284,15 @@ html[lights-out] .container-secondary {
 }
 
 .card {
-  @apply p-4 lg:p-6 color-ui-typo bg-white rounded-lg shadow-lg;
+  @apply p-4 lg:p-6 rounded-lg shadow-lg border-1 border-transparent overflow-hidden;
 
   &.invert {
     @apply text-white bg-ui-primary;
   }
+}
+
+.overline {
+  @apply text-sm text-ui-primary uppercase;
 }
 
 .sidebar {

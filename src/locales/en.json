@@ -1,36 +1,55 @@
 {
+  "header": {
+    "login": "Login"
+  },
   "footer": {
     "imprint": "Imprint",
     "privacy-policy": "Privacy policy",
     "terms-and-conditions": "T&Cs",
     "company-name": "IONOS SE"
   },
-  "header": {
-    "login": "Login"
-  },
   "edit-link": {
     "text": "Suggest changes to this page"
   },
   "home-features": {
-    "edit": {
-      "title": "Edit",
-      "text": "Blend with your own tooling for building up websites and editing content."
-    },
-    "push": {
-      "title": "Push",
-      "text": "Keep your sources always under control with Git."
-    },
-    "publish": {
-      "title": "Publish",
-      "text": "Don't care anymore. Setup once with Deploy Now and enjoy!"
-    }
+    "overline": "Hosting optimized for git workflows",
+    "title": "Deploy your <span class=\"text-ui-primary\">GitHub repository</span> to performant infrastucture in a few clicks",
+    "text": "Connect your GitHub account and select your project in a few simple steps. Git push new code and we instantly update by connecting to the GitHub Actions pipeline.",
+    "button": "Read introduction"
   },
   "home-hero": {
     "deploy-smarter": "Deploy smarter.",
     "deploy-faster": "Deploy faster.",
     "description": "Connect your GitHub account and instantly deploy your static web projects on IONOS own DDoS-protected georedundant and green infrastructure.",
-    "getting-started": "Get started",
-    "deploy-now": "Deploy now"
+    "getting-started": {
+      "title": "Getting started",
+      "text": "How to connect a repository and setup a deployment."
+    },
+    "deploy-sample": {
+      "title": "Deploy a sample",
+      "text": "Setup a deployment with one of our framework samples."
+    },
+    "faq": {
+      "title": "FAQ",
+      "text": "Frequently asked questions about deploy Now."
+    }
+  },
+  "home-samples": {
+    "overline": "More than static",
+    "title": "The home for your Jamstack project or Single Page Application",
+    "sample-button": "Deploy a sample",
+    "sign-up-button": "Sign up free"
+  },
+  "home-team": {
+    "overline": "We are the team - We are deploy now",
+    "title": "Developed <span class=\"text-ui-primary\">just for devs:</span><br />Meet the IONOS Experts behind Deploy Now",
+    "button": "Get in touch"
+  },
+  "home-workflow": {
+    "overline": "Continuous deployment &amp; easy staging",
+    "title": "The ideal workflow for you, your team and your clients",
+    "text": "You want to preview changes before they go live? Simply setup multiple feature branches as staging deployments. View changes live ander a preview link before merging them back.",
+    "button": "More about staging"
   },
   "on-this-page": {
     "title": "On this page"
@@ -42,6 +61,15 @@
   },
   "display-mode": {
     "toggle-dark-mode": "Toggle darkmode"
+  },
+  "about-us": {
+    "title": "Hi, nice to meet you!<br/><span class=\"text-ui-primary\">We are Deploy Now.</span>",
+    "text": "Our company asked us to build a product that we would use by ourselves, so we did. Our mission is to connect the GitHub community to our performant inhouse engineered hosting platform.",
+    "ionos-title": "Who is IONOS?",
+    "ionos-text": "Headquartered in Germany, IONOS offers various webhosting, domain and cloud products in Europe and North America. IONOS manages more than 8 million customer contracts and hosts over 12 million domains in own regional data centers. Customers in all markets canbenefit from a free, personal 24/7 support in their language.",
+    "feedback-title": "Feedback appreciated",
+    "feedback-text": "We are not done yet! Do you have ideas for Deploy Now or are you missing a feature? We would love to hear your feedback. You can use the feedback button in the product or send a mail to our Product Owner Robert.",
+    "team-title": "Meet the team"
   },
   "404": {
     "title": "Oh no! There is nothing here.",

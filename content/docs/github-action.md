@@ -86,7 +86,7 @@ The following [action](https://github.com/ionos-deploy-now/retrieve-project-info
 
 ### Checkout project
 
-**TODO** a few descriptive words
+Checkout repository from GitHub:
 
 ``` yml
 - name: Checkout project
@@ -98,7 +98,7 @@ The following [action](https://github.com/ionos-deploy-now/retrieve-project-info
 
 ### Setup project
 
-**TODO** a few descriptive words
+Set up build runtime:
 
 ``` yml
 - name: Setup project
@@ -110,7 +110,7 @@ The following [action](https://github.com/ionos-deploy-now/retrieve-project-info
 
 ### Prepare project environment
 
-**TODO** a few descriptive words
+Install build dependencies:
 
 ``` yml
 - name: Prepare project environment
@@ -122,7 +122,7 @@ The following [action](https://github.com/ionos-deploy-now/retrieve-project-info
 
 ### Build project
 
-**TODO** a few descriptive words
+Build project and set build env vars:
 
 ``` yml
 - name: Build project

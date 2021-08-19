@@ -4,14 +4,9 @@
       <div class="container">
         <div class="two-column-layout mt-8 lg:mt-16">
           <div class="space-y-4">
-            <div class="text-3xl font-bold">
-              Hi, nice to meet you!<br />
-              <div class="text-ui-primary">We are Deploy Now.</div>
-            </div>
+            <div class="text-4xl font-bold leading-normal" v-html="$t('about-us.title')"></div>
             <div>
-              Our company asked us to build a product that we would use by ourselves, so we did. Our mission is to
-              connect the
-              GitHub community to our performant inhouse engineered hosting platform.
+              {{ $t('about-us.text') }}
             </div>
           </div>
           <div></div>
@@ -20,23 +15,18 @@
         <div class="two-column-layout mt-8 lg:mt-16">
           <div class="space-y-4">
             <div class="text-xl font-bold">
-              Who is IONOS?
+              {{ $t('about-us.ionos-title') }}
             </div>
             <div>
-              Headquartered in Germany, IONOS offers various webhosting, domain and cloud products in Europe and North
-              America. IONOS manages more than 8 million customer contracts and hosts over 12 million domains in own
-              regional data centers. Customers in all markets canbenefit from a free, personal 24/7 support in their
-              language.
+              {{ $t('about-us.ionos-text') }}
             </div>
           </div>
           <div class="space-y-4">
             <div class="text-xl font-bold">
-              Feedback appreciated
+              {{ $t('about-us.feedback-title') }}
             </div>
             <div>
-              We are not done yet! Do you have ideas for Deploy Now or are you missing a feature? We would love to hear
-              your
-              feedback. You can use the feedback button in the product or send a mail to our Product Owner Robert.
+              {{ $t('about-us.feedback-text') }}
             </div>
           </div>
         </div>
@@ -45,18 +35,18 @@
 
     <div class="container">
       <div class="text-2xl font-bold mb-8">
-        Meet the team
+        {{ $t('about-us.team-title') }}
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto">
-        <div v-for="member in team" :key="member.email" class="card flex !p-0 z-1 max-w-[550px]">
+        <div v-for="member in team" :key="member.email" class="card flex !p-0 max-w-[550px]">
           <img
             :src="`/team/${member.image}`"
             :alt="`Image of ${member.name}`"
             class="object-cover max-w-[200px]"
             style="background-color: #f5f5f5"
           />
-          <div class="flex-grow p-4 space-y-4 bg-white">
+          <div class="flex-grow p-4 space-y-4 text-ui-headline bg-white">
             <div>
               <div class="text-xl font-bold">{{ member.name }}</div>
               <div>{{ member.role }}</div>
@@ -71,7 +61,9 @@
                 {{ member.github }}
               </a>
             </div>
-            <a class="block text-sm text-ui-primary" :href="`mailto:${member.email}`">{{ member.email }}</a>
+            <a class="block text-sm text-ui-primary" :href="`mailto:${member.email}`">
+              {{ member.email }}
+            </a>
           </div>
         </div>
       </div>

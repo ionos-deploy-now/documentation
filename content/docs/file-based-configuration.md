@@ -37,11 +37,11 @@ build:
 
 The following sections provide additional detail for commonly used configuration settings.
 
-### #distFolder
+### distFolder
 
 Option `distFolder` is mandatory. You need to specify a public distribution folder. Commonly used folders are: `./` or `public` or `dist`
 
-### #setup
+### setup
 
 Option `setup` is a run step used to install the project environment.
 
@@ -54,7 +54,7 @@ The following properties are allowed:
 
 Common separation of commands by "\n" split.
 
-### #prepare
+### prepare
 
 Option `prepare` is a run step used to install all build dependencies.
 
@@ -67,7 +67,7 @@ The following properties are allowed:
 
 Common separation of commands by "\n" split.
 
-### #build
+### build
 
 Option `build` is a run step used to build the project.
 
