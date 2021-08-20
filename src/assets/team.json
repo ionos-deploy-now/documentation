@@ -3,12 +3,13 @@
     "name": "Markus Hunsalz",
     "email": "markus.hunsalz@ionos.com",
     "image": "markus.svg",
-    "role": "Head of Development",
+    "role": "Passionate Engineer",
     "github": "https://github.com/hunsalz",
     "likes": [
-      "Language",
-      "Framework",
-      "Coffee"
+      "ESP32",
+      "JavaScript",
+      "Vue",
+      "Gridsome"
     ]
   },
   {
