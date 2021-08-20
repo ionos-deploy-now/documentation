@@ -53,10 +53,12 @@
     "email": "fatih.ok@ionos.com",
     "image": "fatih.svg",
     "role": "Infrastructure Engineer",
-    "github": "https://github.com",
+    "github": "https://github.com/fx35",
     "likes": [
-      "Language",
-      "Framework",
+      "Infrastructure",
+      "Devops",
+      "Puppet",
+      "Docker",
       "Coffee"
     ]
   },
