@@ -5,7 +5,7 @@ prev: '/docs/'
 next: '/docs/staging-deployments/'
 ---
 
-# GitHub Integration
+# GitHub integration
 
 Deploy Now allows you to deploy public or private projects from one GitHub account. This can be either a personal or an organization account. Setting up a project via Deploy Now automatically generates a [GitHub Action](https://github.com/features/actions) workflow file, that enables instant deployments to IONOS. Just edit, commit and push your local changes and your updates go live. Try [staging deployments](/docs/staging-deployments/) to preview changes before rolling them out to your production deployment.
 
