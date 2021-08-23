@@ -3,6 +3,14 @@ description: ''
 
 ---
 
-# Free Whitepaper: Benefits of the Jamstack for Agencies [ENG]
+# Inside IONOS Podcast: The story behind Deploy Now, CI/CD workflows and the benefits of the Jamstack  :de:
 
-Learn how the Jamstack can help you to generate higher outcome in less time for your clients. In the Whitepaper, we explain how the Jamstack makes agency workflows leaner and client websites faster and more secure.
+In the newest episode of our Inside IONOS podcast, our Tech Lead Markus tells the backstory behind Deploy Now, how the product was initiated and how we define our vision. Enrico and Jonas from [Fruchtec](https://www.fruchtec.de/) joined the discussion and explained what they like about Deploy Now and how they use the Jamstack in client projects.
+
+## Spotify
+<iframe src="https://open.spotify.com/embed/show/2LKPuu4U9YEy66ny7dint9" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+## Apple Podcast
+<iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/deploy-now-website-via-github-ver%C3%B6ffentlichen/id1501677939?i=1000531186091"></iframe>
+
+
