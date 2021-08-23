@@ -3,7 +3,7 @@ description: ''
 
 ---
 
-# Free Whitepaper: Faster, safer and smarter client websites with Jamstack :us:
+# Free Whitepaper: Faster, safer and smarter client websites with Jamstack 
 
 ![jamstack for agencies whitepaper](/whitepaper.png)
 
