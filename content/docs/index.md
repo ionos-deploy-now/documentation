@@ -21,4 +21,4 @@ Deploy Now is a hosting platform dedicated to developers. Connect your GitHub ac
 1. **Your project is beeing build.** After a couple of seconds your website goes live under a preview URL. 
 ![Screenshot from project details](/project-details.jpg)
 
-1. **Git commits code changes and Deploy Now updates your site.** Now, you can open [staging deployments](/guide/#staging-deployments) or connect a [custom domain](/advanced/custom-domains+ssl.html).
+1. **Git commits code changes and Deploy Now updates your site.** Now, you can open [staging deployments](/docs/staging-deployments/) or connect a [custom domain](/docs/domain-tls/.
