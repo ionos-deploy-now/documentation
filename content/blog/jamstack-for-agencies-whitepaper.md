@@ -5,7 +5,7 @@ description: ''
 
 # Free Whitepaper: Faster, safer and smarter client websites with Jamstack :us:
 
-![jamstack for agencies whitepaper](whitepaper.png)
+![jamstack for agencies whitepaper](/whitepaper.png)
 
 Are you still using a monolithic web architecture for your client projects? Learn how moving to the Jamstack can save you time and trouble and increase your project success. The whitepaper covers the following topics:
 
