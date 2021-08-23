@@ -13,17 +13,17 @@
   },
   "home-features": {
     "overline": "Hosting optimized for git workflows",
-    "title": "Deploy your <span class=\"text-ui-primary\">GitHub repository</span> to performant infrastucture in a few clicks",
-    "text": "Connect your GitHub account and select your project in a few simple steps. Git push new code and we instantly update by connecting to the GitHub Actions pipeline.",
+    "title": "Deploy your <span class=\"text-ui-primary\">GitHub repository</span> to powerful infrastucture in a few clicks",
+    "text": "Connect your GitHub account and set up your project in a few simple steps. Git push new code and we’ll instantly update it by connecting it to the GitHub Actions pipeline.",
     "button": "Read introduction"
   },
   "home-hero": {
     "deploy-smarter": "Deploy smarter.",
     "deploy-faster": "Deploy faster.",
-    "description": "Connect your GitHub account and instantly deploy your static web projects on IONOS own DDoS-protected georedundant and green infrastructure.",
+    "description": "Connect your GitHub account and instantly deploy your static web projects on DDoS-protected, georedundant, green IONOS infrastructure.",
     "getting-started": {
       "title": "Getting started",
-      "text": "How to connect a repository and setup a deployment."
+      "text": "How to connect a repository and set up a deployment."
     },
     "deploy-sample": {
       "title": "Deploy a sample",
@@ -31,7 +31,7 @@
     },
     "faq": {
       "title": "FAQ",
-      "text": "Frequently asked questions about deploy Now."
+      "text": "Frequently asked questions about Deploy Now."
     }
   },
   "home-samples": {
@@ -42,13 +42,13 @@
   },
   "home-team": {
     "overline": "We are the team - We are deploy now",
-    "title": "Developed <span class=\"text-ui-primary\">just for devs:</span><br />Meet the IONOS Experts behind Deploy Now",
+    "title": "Developed <span class=\"text-ui-primary\">just for devs:</span><br />Meet the IONOS experts behind Deploy Now",
     "button": "Get in touch"
   },
   "home-workflow": {
     "overline": "Continuous deployment &amp; easy staging",
     "title": "The ideal workflow for you, your team and your clients",
-    "text": "You want to preview changes before they go live? Simply setup multiple feature branches as staging deployments. View changes live ander a preview link before merging them back.",
+    "text": "Want to preview changes before they go live? Simply set up multiple feature branches as staging deployments. View changes live via a preview link before merging them back.",
     "button": "More about staging"
   },
   "on-this-page": {
@@ -63,12 +63,13 @@
     "toggle-dark-mode": "Toggle darkmode"
   },
   "about-us": {
-    "title": "Hi, nice to meet you!<br/><span class=\"text-ui-primary\">We are Deploy Now.</span>",
-    "text": "Our company asked us to build a product that we would use by ourselves, so we did. Our mission is to connect the GitHub community to our performant inhouse engineered hosting platform.",
+    "title": "Hi there!<br/><span class=\"text-ui-primary\">We're the Deploy Now team.</span>",
+    "text": "Our company asked us to build a product that we’d use ourselves, so we did. Our mission is to connect the GitHub community to the powerful hosting platform that we engineered in-house.",
     "ionos-title": "Who is IONOS?",
-    "ionos-text": "Headquartered in Germany, IONOS offers various webhosting, domain and cloud products in Europe and North America. IONOS manages more than 8 million customer contracts and hosts over 12 million domains in own regional data centers. Customers in all markets canbenefit from a free, personal 24/7 support in their language.",
+    "ionos-text": "Headquartered in Germany, IONOS offers web hosting, domain and cloud products in Europe and North America. IONOS manages more than 8 million customer contracts and hosts over 12 million domains in its own regional data centers. Customers in all markets have access to free, personal 24/7 support in their own language.",
     "feedback-title": "Feedback appreciated",
-    "feedback-text": "We are not done yet! Do you have ideas for Deploy Now or are you missing a feature? We would love to hear your feedback. You can use the feedback button in the product or send a mail to our Product Owner Robert.",
+    "feedback-text": "Got ideas or missing a feature? We’re still working on Deploy Now and would love to hear what you think. Use the feedback button in the product or send an email to info@deploynow.dev.
+",
     "team-title": "Meet the team"
   },
   "404": {
