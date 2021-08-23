@@ -3,13 +3,14 @@ description: ''
 sidebar: 'docs'
 prev: '/docs/configuration-overview/'
 next: '/docs/github-action/'
+editable: true
 ---
 
 # File based configuration
 
-We're anxious to give you all custom settings by using [Deploy Now UI](https://ionos.space) and make deployment even smarter. But to be honest the engine room is always first and gives you more flexibility to set up your environment vars, build and deploy settings. You can configure these settings by putting an `.ionos.yml` file into the root of your repository.
+In Deploy Now, all important settings can be made via the [user interface](https://ionos.space). But if you prefer to configure your deployment right where your project lives, you can set up environment variables, build and deploy settings via a dedicated file. You just need to put a `.ionos.yml` file into the root of your repository.
 
-In addition, the description of a `.ionos.yml` makes it handy to someone who forks your repository to setup instantly his own instance of your repository with Deploy Now. They don’t have to configure anything in the UI, and they’ll still get an identical project configuration.
+A file-based configuration also ensures that others who fork your repository on GitHub benefit from a seamless setup process without any unexpected error if they want to deploy their own instance of the project. They don’t have to configure anything in the UI, and they’ll still get an identical project configuration.
 
 The following sections will go through each setting option you’ll be able to use with `.ionos.yml` and give you some samples you could use in your projects. For more information about YAML syntax, visit the [YAML website](https://yaml.org/spec/1.2/spec.html).
 
@@ -35,7 +36,7 @@ build:
 
 ## Config file options
 
-The following sections provide additional detail for commonly used configuration settings.
+The following sections provide additional details for commonly used configuration settings.
 
 ### distFolder
 
