@@ -7,7 +7,7 @@ next: '/docs/framework-samples/'
 
 # Staging Deployments
   
-Staging Deployments give you the ability to build & deploy any branch of your web project to IONOS. While working on new features this gives you the advantage to preview changes on the fly and share them with your colleagues or customers. From our own work we recommend to open a feature branch rather than working right away on your main branch. By default any branch is automatically build & deploy with Deploy Now and reveives a generic preview URL. 
+Staging Deployments give you the ability to build & deploy any branch of your web project to IONOS. While working on new features this gives you the advantage to preview changes on the fly and share them with your colleagues or customers. Based on our own experiences, we recommend working with feature branches rather than allways editing the main branch right away. Deploy Now creates new Staging Deployments from freshly opened branches automatically. Staging Deployments receive generic preview URLs. 
 
 ~~~mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#fff'}, 'darkMode': 'true'}}%%
@@ -26,7 +26,7 @@ graph TD
     classDef inactive fill:#0b9dcc,stroke:#fff,stroke-width:1px,color:#fff
 ~~~
 
-In contrast to the production branch you can't connect a custom domain to a staging deployment. But you can switch your production branch with a staging branch at any time. Of course you can keep your main branch as production branch and merge back your changes with git. In the result both ways are equal.
+As Staging Deployment are not meant to be visible for website visitors, you cannot connect them with custom domains. If you want to make changes on your stage visible under your custom domain, you can either merge your changes to the production branch or switch the production branch in Deploy Now.
 
 ~~~mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#fff'}, 'darkMode': 'true'}}%%
@@ -45,6 +45,6 @@ graph TD
     classDef inactive fill:#0b9dcc,stroke:#fff,stroke-width:1px,color:#fff
 ~~~
 
-Last but not least the amount of staging deployments depends on your current Deploy Now plan.
+The number of available Staging Deployments depends on your project package size. 
 
 <!-- ![Screenshot from staging deployment section](/staging.jpg) -->
