@@ -27,4 +27,4 @@ As a result, Jamstack websites can be up to 10 times faster, more secure and che
 6. Merge changes to your production branch 
 7. [Connect your domain](/docs/domain-tls/) and go live
 
-You can download the full enlgish version [here]() and the german version [here]().
+You can download the full enlgish version [here](https://resources.ionos.com/hubfs/IONOS%20-%20DIFM/Create%20client%20websites%20with%20the%20Jamstack.pdf) and the german version [here](https://resources.ionos.com/hubfs/IONOS%20-%20DIFM/Kundenwebsites%20mit%20dem%20Jamstack%20erstellen.pdf).
