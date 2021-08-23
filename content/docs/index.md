@@ -6,7 +6,7 @@ next: '/docs/git-integration/'
 
 # Introduction
 
-Deploy Now is a hosting platform dedicated to developers. Connect your GitHub account and instantly deploy your web projects on IONOS own DDoS-protected, georedundant and green infrastructure.
+Deploy Now is a hosting platform dedicated to developers. Connect your GitHub account and instantly deploy your web projects to DDoS-protected, georedundant and green infrastructure.
 
 ## Getting started
   
