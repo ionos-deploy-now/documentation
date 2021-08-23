@@ -7,7 +7,7 @@ next: '/docs/file-based-configuration/'
 
 # Overview
 
-Deploy Now is web hosting right away from [GitHub](https://github.com/) to [IONOS](https://ionos.com). Automation is based on [Github actions](https://github.com/features/actions) as continous intergration and continous delivery/deployment (CI/CD) workflow. Starting a new project with Deploy Now generates a GitHub Action workflow file out of the box and makes CI/CD a breeze.
+Deploy Now connects GitHub repositories to IONOS infrastructure using [Github actions](https://github.com/features/actions) for the workflow automation. During the project setup  Deploy Now scans your repository for the technologies and frameworks you use and generates a GitHub action workflow file accordingly. This file is located in .github/workflows. If you want to ensure that this detection is correct, you can provide an explicit [file-based configuration](/docs/file-based-configuration/). 
 
 ~~~mermaid
 %%{init: {'darkMode': 'true'}}%%
@@ -31,4 +31,3 @@ sequenceDiagram
     GitHub ->> GitHub Action: Initial run
 ~~~
 
-But Deploy Now isn't able to guess all available settings and sometimes it makes sense to simply start your configuration from scratch. In both cases this is the right beginning to read further.
