@@ -8,7 +8,7 @@ description: ''
 In the newest episode of our Inside IONOS podcast, our Tech Lead Markus tells the backstory behind Deploy Now, how the product was initiated and how we define our vision. Enrico and Jonas from [Fruchtec](https://www.fruchtec.de/) joined the discussion and explained what they like about Deploy Now and how they use the Jamstack in client projects.
 
 ## Spotify
-<iframe src="https://open.spotify.com/embed/show/2LKPuu4U9YEy66ny7dint9" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe src="https://open.spotify.com/embed/episode/6jc54XhH39PIcxhZbXw35J" width="100%" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 ## Apple Podcast
 <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/deploy-now-website-via-github-ver%C3%B6ffentlichen/id1501677939?i=1000531186091"></iframe>
