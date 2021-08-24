@@ -23,3 +23,29 @@ Deploy Now is a hosting platform dedicated to developers. Connect your GitHub ac
 ![Screenshot from project details](/project-details.jpg)
 
 1. **Git commits code changes and Deploy Now updates your site.** Now, you can open [staging deployments](/docs/staging-deployments/) or connect a [custom domain](/docs/domain-tls/.
+
+## Supported frameworks and technologies
+
+### HTML, CSS & PHP Sites and Apps
+Deploy Now allows you to host static websites based on HTML and CSS. In addition, you can run PHP scripts on our infrastructure. Deploy Now projects are served from Apache webservers. 
+
+### Static Site Generators
+If you are working with static site generators, Deploy Now allows you to move static files to our infrastructure after every build based on the [GitHub Actions](https://github.com/features/actions) pipeline. If you setup the build pipeline manually, all existing static site generatos can be used. Out of the box, Deploy Now supports the following static site generators:  
+
+- Gridsome [(deploy sample)](/docs/framework-samples/#hello-gridsome)
+- Gatsby [(deploy sample)](/docs/framework-samples/#hello-gatsby)
+- Hugo [(deploy sample)](/docs/framework-samples/#hello-hugo)
+- Jigsaw [(deploy sample)](/docs/framework-samples/#hello-jigsaw)
+- Jekyll [(deploy sample)](/docs/framework-samples/#hello-jekyll)
+- Next [(deploy sample)](/docs/framework-samples/#hello-next)
+- Nuxt [(deploy sample)](/docs/framework-samples/#hello-nuxt)
+- Vuepress [(deploy sample)](/docs/framework-samples/#hello-vuepress)
+- Eleventy
+- Hexo
+- Metalsmith
+
+### Single Page Applications
+You can deploy Single Page Applications based on frameworks like React, Vue and Angular.
+
+### Not supported
+Our hosting infastructure uses Apache webservers only. Thus, server-side rendering with Node.js is not supported. Besides, Deploy Now does not support databases. If you are missing one of these or any other technology, you can let us know by requesting a feature via the product dashboard.
