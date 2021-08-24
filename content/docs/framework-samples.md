@@ -10,8 +10,8 @@ editable: true
 
 The following framework samples give you an overview of static site generator (SSG) frameworks that can be hosted with Deploy Now. 
 To start your project, you can either bring your own repository or deploy a sample from the list below. 
-Deploy Now will detect your framework and set up the deployment automatically. 
-The setup information will be stored in the .ionos.yml. You can [customize this file](/docs/file-based-configuration) anytime.
+
+If you want to create your own sample, you can add a `.ionos.yml` file in the repository root to [define the deployment settings](/docs/file-based-configuration) for other users that want to deploy your sample. You can find examples of how  `.ionos.yml` is set up for different frameworks below. 
 
 ## hello-plain-html
 
@@ -30,7 +30,7 @@ distFolder: "./"
 
 ## hello-gridsome
 
-A website based on Vue.js framework [Gridsome](https://gridsome.org/).
+A website based on the Vue.js framework [Gridsome](https://gridsome.org/).
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-gridsome)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-gridsome)
@@ -58,7 +58,7 @@ build:
 
 ## hello-gatsby
 
-A website based on React framework [Gatsby](https://www.gatsbyjs.com/).
+A website based on the React framework [Gatsby](https://www.gatsbyjs.com/).
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-gatsby)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-gatsby)
@@ -86,7 +86,7 @@ build:
 
 ## hello-hugo
 
-A website based on Go framework [Hugo](https://gohugo.io/).
+A website based on the Go framework [Hugo](https://gohugo.io/).
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-hugo)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-hugo)
@@ -111,7 +111,7 @@ build:
 
 ## hello-jigsaw
 
-A website based on PHP framework [Jigsaw](https://jigsaw.tighten.co/).
+A website based on the PHP framework [Jigsaw](https://jigsaw.tighten.co/).
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-jigsaw)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-jigsaw)
@@ -138,7 +138,7 @@ build:
 
 ## hello-jekyll
 
-A website based on Ruby framework [Jekyll](https://jekyllrb.com/).
+A website based on the Ruby framework [Jekyll](https://jekyllrb.com/).
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-jekyll)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-jekyll)
@@ -161,7 +161,7 @@ build:
 
 ## hello-next
 
-A website based on [Next](https://nextjs.org/) as [Server Side Generation (SSG)](hhttps://nextjs.org/docs/basic-features/static-file-serving) version.
+A website based on [static file serving](https://nextjs.org/docs/basic-features/static-file-serving) with [Next](https://nextjs.org/).
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-next)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-next)
@@ -186,7 +186,7 @@ build:
 
 ## hello-nuxt
 
-A website based on [Nuxt](https://nuxtjs.org) as [Server Side Generation (SSG)](https://nuxtjs.org/docs/2.x/concepts/static-site-generation) version.
+A website based on [Static Site Generation](https://nuxtjs.org/docs/2.x/concepts/static-site-generation) with [Nuxt](https://nuxtjs.org).
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-nuxt)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-nuxt)
@@ -211,7 +211,7 @@ build:
 
 ## hello-vuepress
 
-A website based on Vue-powered Static Site Generator [VuePress](https://vuepress.vuejs.org/).
+A website based on the Vue-powered Static Site Generator [VuePress](https://vuepress.vuejs.org/).
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-vuepress)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-vuepress)
