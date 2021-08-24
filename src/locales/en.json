@@ -63,7 +63,7 @@
     "toggle-dark-mode": "Toggle darkmode"
   },
   "about-us": {
-    "title": "Hi there!<br/><span class=\"text-ui-primary\">We're the Deploy Now team.</span>",
+    "title": "Hi there!<br/>We're the <span class=\"text-ui-primary\">Deploy Now</span> team.",
     "text": "Our company asked us to build a product that we’d use ourselves, so we did. Our mission is to connect the GitHub community to the powerful hosting platform that we engineered in-house.",
     "ionos-title": "Who is IONOS?",
     "ionos-text": "Headquartered in Germany, IONOS offers web hosting, domain and cloud products in Europe and North America. IONOS manages more than 8 million customer contracts and hosts over 12 million domains in its own regional data centers. Customers in all markets have access to free, personal 24/7 support in their own language.",

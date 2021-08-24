@@ -327,3 +327,20 @@ table {
     pointer-events: none;
   }
 }
+
+.mermaid {
+  @apply mb-4;
+
+  svg {
+    @apply py-4 bg-white rounded overflow-hidden;
+  }
+
+
+  //[class*="messageLine"] {
+  //  stroke: var(--color-ui-typo) !important;
+  //}
+//
+  //.messageText {
+  //  fill: var(--color-ui-typo) !important;
+  //}
+}
