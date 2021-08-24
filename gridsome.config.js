@@ -51,7 +51,7 @@ module.exports = {
             items: [
               '/docs/configuration-overview/',
               '/docs/file-based-configuration/',
-              '/docs/github-action/',
+              '/docs/github-actions/',
               '/docs/domain-tls/',
             ],
           },
