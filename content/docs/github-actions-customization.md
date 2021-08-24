@@ -8,7 +8,7 @@ editable: true
 
 # GitHub Actions customization
 
-Once you have connected Deploy Now to your repository, you will notive that we have injected a `ionos-space.yml` file into `.github/workflows/`. This file defines how the GitHub Actions workflow is set up. You can make changes to this file to customize the workflow. However, you should try to avoid changes or deletions of `fetch project data`, `checkout project` and `deploy build`to ensure that the deployment works as expected. 
+Once you have connected Deploy Now to your repository, you will notice that we have injected a `ionos-space.yml` file into `.github/workflows/`. This file defines how the GitHub Actions workflow is set up. You can make changes to this file to customize the workflow. However, you should try to avoid changes or deletions of `fetch project data`, `checkout project` and `deploy build`to ensure that the deployment works as expected. 
 
 ## Sample file
 
