@@ -14,7 +14,7 @@
   "home-features": {
     "overline": "Hosting optimized for git workflows",
     "title": "Deploy your <span class=\"text-ui-primary\">GitHub repository</span> to powerful infrastucture in a few clicks",
-    "text": "Connect your GitHub account and set up your project in a few simple steps. Git push new code and we’ll instantly update it by connecting it to the GitHub Actions pipeline.",
+    "text": "Connect your GitHub account and select your project in a few simple steps. Git push new code and we’ll instantly update your site by connecting to the GitHub Actions pipeline.",
     "button": "Read introduction"
   },
   "home-hero": {
@@ -27,7 +27,7 @@
     },
     "deploy-sample": {
       "title": "Deploy a sample",
-      "text": "Setup a deployment with one of our framework samples."
+      "text": "Set up a deployment with one of our framework samples."
     },
     "faq": {
       "title": "FAQ",
