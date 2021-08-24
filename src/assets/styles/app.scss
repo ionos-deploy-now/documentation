@@ -16,6 +16,9 @@
   --color-ui-border: theme("colors.gray.300");
   --color-ui-headline: #1F282D;
   --color-ui-body: #50575B;
+  // Mermaid
+  --color-mermaid-bg: #e8f6fe;
+  --color-mermaid-warning: #ffffda;
 }
 
 html.dark {
@@ -170,13 +173,13 @@ table {
   h4,
   h5,
   h6 {
-    @apply -mt-12 pt-20;
+    @apply mt-10;
   }
 
   h2 + h3,
   h2 + h2,
   h3 + h3 {
-    @apply border-none -mt-20;
+    @apply border-none;
   }
 
   h2,
@@ -339,12 +342,13 @@ table {
     @apply py-4 bg-white rounded overflow-hidden;
   }
 
+  rect {
+    &.actor {
+      fill: var(--color-mermaid-bg) !important;
+    }
 
-  //[class*="messageLine"] {
-  //  stroke: var(--color-ui-typo) !important;
-  //}
-//
-  //.messageText {
-  //  fill: var(--color-ui-typo) !important;
-  //}
+    &.note {
+      fill: var(--color-mermaid-warning) !important;
+    }
+  }
 }
