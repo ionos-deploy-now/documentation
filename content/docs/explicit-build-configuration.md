@@ -2,7 +2,7 @@
 description: ''
 sidebar: 'docs'
 prev: '/docs/configuration-overview/'
-next: '/docs/github-action/'
+next: '/docs/github-actions-customization/'
 editable: true
 ---
 
