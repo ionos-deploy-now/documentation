@@ -1,14 +1,14 @@
 ---
 description: ''
 sidebar: 'docs'
-prev: '/docs/file-based-configuration/'
+prev: '/docs/explicit-build-configuration/'
 next: '/docs/domain-tls/'
 editable: true
 ---
 
-# GitHub Actions
+# GitHub Actions customization
 
-Once you have connected Deploy Now to your repository, you will notive that we have injected a `ionos-space.yml` file into `.github/workflows/`. This file defines how the GitHub Actions workflow is set up. You can make changes to this file to customize the workflow. However, you should try to avoid changed or deleting the IONOS key in it to ensure that the workflow runs correctly. IONOS keys are unique per project and are needed to conenct to IONOS infrastructure. 
+Once you have connected Deploy Now to your repository, you will notive that we have injected a `ionos-space.yml` file into `.github/workflows/`. This file defines how the GitHub Actions workflow is set up. You can make changes to this file to customize the workflow. However, you should try to avoid changes or deletions of `fetch project data`, `checkout project` and `deploy build`to ensure that the deployment works as expected. 
 
 ## Sample file
 
