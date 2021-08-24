@@ -13,7 +13,7 @@ Deploy Now is a hosting platform dedicated to developers. Connect your GitHub ac
   
 1. **Connect your GitHub account.** We ask you for the permission to install the [IONOS Deploy Now App](https://github.com/apps/ionos-deploy-now) to your repositories.  
     
-1. **Select your deployment source.** We can deploy either repositories within your GitHub account or any public third party repository. No repository at hand? Deploy one of our samples [Link to "samples". 
+1. **Select your deployment source.** We can deploy either repositories within your GitHub account or any public third party repository. No repository at hand? Deploy one of our [samples](/docs/framework-samples/).
 ![Screenshot from source selection step](/source-selection.jpg)  
   
 1. **Configure the deployment.** Deploy Now scans your repository to detect the framework and the dist folder. In case we are not able to identify them, we ask you to provide them explicitly.
