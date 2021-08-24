@@ -56,18 +56,18 @@ h1,
 h2,
 h3,
 h4 {
-  @apply leading-snug font-black mb-4 text-ui-typo;
+  @apply relative leading-snug font-black mb-4 text-ui-typo;
+
+  a {
+    &::before {
+      @apply absolute right-[100%] pr-2 text-ui-primary opacity-0;
+      content: "#";
+    }
+  }
 
   &:hover {
     a::before {
       @apply opacity-100;
-    }
-  }
-
-  a {
-    &::before {
-      @apply absolute -ml-4 pr-4 text-ui-primary opacity-0 float-left;
-      content: "#";
     }
   }
 }
@@ -219,11 +219,11 @@ table {
 }
 
 .container {
-  @apply pt-8 md:pt-32 py-8 md:py-20;
+  @apply px-16 py-8 md:py-20;
 }
 
 .two-column-layout {
-  @apply grid grid-cols-1 lg:grid-cols-2 gap-4;
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-8;
 }
 
 .flex-center {
@@ -273,7 +273,7 @@ table {
   @apply transition-colors hover:bg-ui-primary hover:text-white;
 }
 
-.icon {
+.icon:not(.icon-link) {
   @apply leading-1 mx-1;
 }
 

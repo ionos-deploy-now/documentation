@@ -2,14 +2,14 @@
   <Layout>
     <div class="flex flex-wrap justify-start">
       <div
-        class="hidden"
-        :class="{ 'border-ui-border border-r overflow-y-auto md:block md:sticky md:w-1/5 lg:order-2 lg:border-l lg:border-r-0': showOnThisPage() }"
+        class="hidden md:block md:sticky md:w-1/5 lg:order-2"
+        :class="{ 'border-ui-border border-r lg:border-l lg:border-r-0 overflow-y-auto': showOnThisPage() }"
         :style="sidebarStyle"
       >
         <OnThisPage v-if="showOnThisPage()" />
       </div>
 
-      <div class="container pb-24 lg:order-1 <md:max-w-[100vw]" :class="{ 'md:w-3/5': showOnThisPage() }">
+      <div class="container pb-24 <md:max-w-[100vw] lg:w-3/5 lg:order-1 " :class="{ 'md:w-3/5': showOnThisPage() }">
         <div class="content" v-html="$page.markdownPage.content" />
 
         <EditLink v-if="showEditLink" class="mt-10" :path="$page.markdownPage.fileInfo.path" />

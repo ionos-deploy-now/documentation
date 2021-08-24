@@ -5,12 +5,12 @@
         <div>
           <iframe
             class="mx-auto"
-            width="560"
+            width="100%"
             height="315"
-            src="https://www.youtube-nocookie.com/embed/wpELzwYFxQw"
+            src="https://www.youtube-nocookie.com/embed/wpELzwYFxQw?controls=0&modestbranding=1"
             title="Deploy Now Video"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; encrypted-media; gyroscope"
             allowfullscreen></iframe>
         </div>
         <div class="my-auto space-y-6">

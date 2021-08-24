@@ -1,6 +1,6 @@
 <template>
   <div class="container bg-ui-background mt-4 lg:mt-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 px-8">
+    <div class="two-column-layout">
       <div class="relative bg-img-dots">
         <div class="text-2xl md:text-4xl font-normal">
           <div>{{ $t('home-hero.deploy-smarter') }}</div>
