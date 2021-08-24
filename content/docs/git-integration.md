@@ -8,7 +8,7 @@ editable: true
 
 # GitHub integration
 
-Deploy Now allows you to deploy public or private projects from one GitHub account. This can be either a personal or an organization account. Setting up a project via Deploy Now automatically generates a [GitHub Actions](https://github.com/features/actions) workflow file, that enables instant deployments to IONOS. Just edit, commit and push your local changes and your updates go live. Try [staging deployments](/docs/staging-deployments/) to preview changes before rolling them out to your production deployment.
+Deploy Now allows you to deploy public or private projects from one GitHub account. This can be either a personal or an organization account, as long as you are the owner of the organization. Setting up a project via Deploy Now automatically generates a [GitHub Actions](https://github.com/features/actions) workflow file, that enables instant deployments to IONOS. Just edit, commit and push your local changes and your updates go live. Try [staging deployments](/docs/staging-deployments/) to preview changes before rolling them out to your production deployment.
 
 ~~~mermaid
 sequenceDiagram
@@ -21,7 +21,7 @@ sequenceDiagram
 ~~~
 
 <!-- ![Deploy Now git integration](/git-integration.svg) -->
-To ensure that the deployment process works correctly you just need to install the IONOS Deploy Now App to your GitHub repository and grant the correpsonding rights. The App requires read access to actions and metadata as well as write access to administration, secrets, code and workflows.
+To ensure that the deployment process works correctly you just need to install the IONOS Deploy Now App to your GitHub repository and grant the corresponding rights. The App requires read access to actions and metadata as well as write access to administration, secrets, code and workflows.
 
 ~~~mermaid
 %%{init: {'darkMode': 'true'}}%%
