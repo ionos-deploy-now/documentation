@@ -8,7 +8,7 @@ editable: true
 
 # Overview
 
-Deploy Now connects GitHub repositories to IONOS infrastructure using [Github actions](https://github.com/features/actions) for the workflow automation. During the project setup  Deploy Now scans your repository for the technologies and frameworks you use and generates a GitHub action workflow file accordingly. This file is located in .github/workflows. If you want to ensure that this detection is correct, you can provide an explicit [file-based configuration](/docs/file-based-configuration/). 
+Deploy Now connects GitHub repositories to IONOS infrastructure using [Github Actions](https://github.com/features/actions) for the workflow automation. During the project setup  Deploy Now scans your repository for the technologies and frameworks you use and generates a GitHub Actions workflow file accordingly. This file is located in .github/workflows. If you want to ensure that this detection is correct, you can provide an explicit [file-based configuration](/docs/file-based-configuration/). 
 
 ~~~mermaid
 %%{init: {'darkMode': 'true'}}%%
