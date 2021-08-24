@@ -2,7 +2,7 @@
 description: ''
 sidebar: 'docs'
 prev: '/docs/framework-samples/'
-next: '/docs/file-based-configuration/'
+next: '/docs/explicit-build-configuration/'
 editable: true
 ---
 
