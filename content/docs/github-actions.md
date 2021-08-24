@@ -6,9 +6,9 @@ next: '/docs/domain-tls/'
 editable: true
 ---
 
-# GitHub Action
+# GitHub Actions
 
-Once you have connected Deploy Now to your repository, you will notive that we have injected a `ionos-space.yml` file into `.github/workflows/`. This file defines how the GitHub action workflow is set up. You can make changes to this file to customize the workflow. However, you should try to avoid changed or deleting the IONOS key in it to ensure that the workflow runs correctly. IONOS keys are unique per project and are needed to conenct to IONOS infrastructure. 
+Once you have connected Deploy Now to your repository, you will notive that we have injected a `ionos-space.yml` file into `.github/workflows/`. This file defines how the GitHub Actions workflow is set up. You can make changes to this file to customize the workflow. However, you should try to avoid changed or deleting the IONOS key in it to ensure that the workflow runs correctly. IONOS keys are unique per project and are needed to conenct to IONOS infrastructure. 
 
 ## Sample file
 
