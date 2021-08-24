@@ -21,7 +21,7 @@
       <g-image src="/team/alex.svg" />
       <g-image src="/team/eric.svg" />
       <g-image src="/team/robin.svg" />
-      <g-image src="/team/roman.svg" />
+      <g-image class="pl-2 h-[185px]" src="/team/roman.svg" />
     </div>
   </div>
 </template>

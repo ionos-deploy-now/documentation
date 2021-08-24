@@ -32,6 +32,10 @@ html.dark {
   .container-secondary {
     background-color: var(--color-midnight);
   }
+
+  .next.logo, .jekyll.logo {
+    filter: invert(1);
+  }
 }
 
 .container-secondary {
@@ -210,7 +214,7 @@ table {
   }
 
   img {
-    @apply mx-auto my-4 md:my-8 shadow rounded bg-white;
+    @apply my-4 md:my-8 shadow rounded bg-white;
   }
 }
 
