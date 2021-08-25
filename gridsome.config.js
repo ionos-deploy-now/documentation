@@ -50,7 +50,7 @@ module.exports = {
             title: 'Configuration',
             items: [
               '/docs/configuration-overview/',
-              '/docs/excplicit-build-configuration/',
+              '/docs/explicit-build-configuration/',
               '/docs/github-actions-customization/',
               '/docs/domain-tls/',
             ],
