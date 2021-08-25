@@ -9,6 +9,10 @@
   --color-ionos-blue: #003d8f;
   --color-midnight: #1b365d;
   --color-dark-midnight: #001b41;
+  --color-horizon: #3B9CDA;
+  --color-bg-lighten-2: #e8f6fe;
+  --color-bg-warning: #ffffda;
+  --color-white: theme("colors.white");
   // UI
   --color-ui-background: theme("colors.white");
   --color-ui-typo: theme("colors.gray.700");
@@ -17,8 +21,7 @@
   --color-ui-headline: #1F282D;
   --color-ui-body: #50575B;
   // Mermaid
-  --color-mermaid-bg: #e8f6fe;
-  --color-mermaid-warning: #ffffda;
+  --color-mermaid-bg: --color-mermaid-warn
 }
 
 html.dark {
@@ -34,6 +37,10 @@ html.dark {
 
   .container-secondary {
     background-color: var(--color-midnight);
+  }
+
+  .deploy-now-logo {
+    filter: brightness(0) invert(1);
   }
 
   .next.logo, .jekyll.logo {
@@ -339,16 +346,30 @@ table {
   @apply mb-4;
 
   svg {
-    @apply py-4 bg-white rounded overflow-hidden;
+    @apply py-4 bg-white rounded shadow overflow-hidden;
   }
 
-  rect {
+  rect, polygon {
     &.actor {
-      fill: var(--color-mermaid-bg) !important;
+      fill: var(--color-bg-lighten-2) !important;
     }
 
     &.note {
-      fill: var(--color-mermaid-warning) !important;
+      fill: var(--color-bg-warning) !important;
+    }
+  }
+
+  .node {
+    .label {
+      color: var(--color-white) !important;
+    }
+
+    .label-container {
+      fill: var(--color-horizon) !important;
+    }
+
+    &.active > * {
+      fill: var(--color-midnight) !important;
     }
   }
 }

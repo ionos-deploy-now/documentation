@@ -3,7 +3,7 @@
     <div class="flex justify-between items-center">
       <div class="flex-center">
         <g-link to="/" class="flex-center mr-2 sm:mr-12" title="Home">
-          <img class="h-8 mr-2" src="/logo.svg" alt="Deploy Now logo" />
+          <img class="h-8 mr-2 deploy-now-logo" src="/logo.svg" alt="Deploy Now logo" />
           <DeployNow />
         </g-link>
 

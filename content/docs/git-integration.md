@@ -24,7 +24,6 @@ sequenceDiagram
 To ensure that the deployment process works correctly you just need to install the IONOS Deploy Now App to your GitHub repository and grant the corresponding rights. The App requires read access to actions and metadata as well as write access to administration, secrets, code and workflows.
 
 ~~~mermaid
-%%{init: {'darkMode': 'true'}}%%
 sequenceDiagram
     autonumber
     User ->> Deploy Now: First login

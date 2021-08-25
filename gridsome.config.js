@@ -110,7 +110,13 @@ module.exports = {
     remark: {
       plugins: [
         // add gridsome-plugin-remark-mermaid always first
-        'gridsome-plugin-remark-mermaid',
+        ['gridsome-plugin-remark-mermaid', {
+          mermaidOptions: {
+            themeVariables: {
+              edgeLabelBackground: '#fff'
+            }
+          }
+        }],
         '@noxify/gridsome-remark-table-align',
         '@gridsome/remark-prismjs',
         'gridsome-plugin-remark-container',

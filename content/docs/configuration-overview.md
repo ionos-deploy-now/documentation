@@ -25,7 +25,6 @@ Deploy Now connects GitHub repositories to IONOS infrastructure using [Github Ac
 ## Deployment setup overview
 
 ~~~mermaid
-%%{init: {'darkMode': 'true'}}%%
 sequenceDiagram
     autonumber
     User ->> Deploy Now: new project
