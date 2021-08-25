@@ -32,8 +32,8 @@ module.exports = {
         { path: '/docs/', title: 'Docs' },
         { path: '/docs/framework-samples/', title: 'Samples' },
         { path: '/docs/faq/', title: 'FAQ' },
-        { path: '/about-us/', title: 'About us' },
         ...(showBlog ? [{ path: '/blog/', title: 'Blog' }] : []),
+        { path: '/about-us/', title: 'About us' },
       ],
     },
     sidebar: [
