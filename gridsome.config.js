@@ -4,6 +4,8 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const showBlog = process.env.SHOW_BLOG === 'true' || false;
+
 module.exports = {
   siteName: 'Deploy Now - Documentation',
   siteDescription: 'Documentation of Deploy Now',
@@ -24,13 +26,14 @@ module.exports = {
     web: process.env.URL_WEB || '',
     twitter: process.env.URL_TWITTER || '',
     github: process.env.URL_GITHUB || '',
+    showBlog,
     nav: {
       links: [
         { path: '/docs/', title: 'Docs' },
         { path: '/docs/framework-samples/', title: 'Samples' },
         { path: '/docs/faq/', title: 'FAQ' },
         { path: '/about-us/', title: 'About us' },
-        { path: '/blog/', title: 'Blog' },
+        ...(showBlog ? [{ path: '/blog/', title: 'Blog' }] : []),
       ],
     },
     sidebar: [
@@ -113,9 +116,9 @@ module.exports = {
         ['gridsome-plugin-remark-mermaid', {
           mermaidOptions: {
             themeVariables: {
-              edgeLabelBackground: '#fff'
-            }
-          }
+              edgeLabelBackground: '#fff',
+            },
+          },
         }],
         '@noxify/gridsome-remark-table-align',
         '@gridsome/remark-prismjs',

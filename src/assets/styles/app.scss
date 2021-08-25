@@ -21,10 +21,13 @@
   --color-ui-headline: #1F282D;
   --color-ui-body: #50575B;
   // Mermaid
-  --color-mermaid-bg: --color-mermaid-warn
+  //--color-mermaid-bg: --color-mermaid-warn
+  // Remark container
+  --cb-admonition-background-color: #61676a;
 }
 
 html.dark {
+  // Dark mode
   --color-ui-background: theme("colors.gray.900");
   --color-ui-typo: theme("colors.gray.100");
   --color-ui-sidebar: theme("colors.gray.800");
@@ -32,7 +35,7 @@ html.dark {
 
   pre[class*="language-"],
   code[class*="language-"] {
-    @apply bg-ui-border;
+    //background-color: #212121;
   }
 
   .container-secondary {
@@ -344,9 +347,10 @@ table {
 
 .mermaid {
   @apply mb-4;
+  font-family: "Open Sans", "trebuchet ms", verdana, sans-serif !important;
 
   svg {
-    @apply py-4 bg-white rounded shadow overflow-hidden;
+    @apply p-4 bg-white rounded shadow overflow-hidden;
   }
 
   rect, polygon {
@@ -366,6 +370,7 @@ table {
 
     .label-container {
       fill: var(--color-horizon) !important;
+      stroke: none !important;
     }
 
     &.active > * {

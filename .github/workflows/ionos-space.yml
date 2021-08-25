@@ -34,6 +34,7 @@ jobs:
           SITE_URL: ${{ steps.project.outputs.site-url }}
           URL_WEB: https://ionos.space
           URL_GITHUB: https://github.com/ionos-deploy-now/documentation
+          SHOW_BLOG: true
       - name: Deploy to IONOS
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: ionos-deploy-now/deploy-to-ionos-action@v1
