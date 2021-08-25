@@ -24,15 +24,13 @@ npm run build
 
 ## Open issues
 
-* prettify components (replace CSS / SASS with WindiCSS where possible)
 * enable plugins: sitemap, PWA
 * check header meta data
 * optimize favicon and other icons: https://realfavicongenerator.net/
-* images
-  * separate images from floating text (maybe a dashed border)
 * remark
   * lazy load images
   * add an arrow icon to all external links
+  * style mermaid graphs with variables
 * add a changelog link in sitebar 
   * which source tbd 
     * a) e.g. https://twitter.com/GHchangelog 
