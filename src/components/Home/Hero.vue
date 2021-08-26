@@ -2,11 +2,11 @@
   <div class="container bg-ui-background mt-4 lg:mt-8">
     <div class="two-column-layout">
       <div class="relative bg-img-dots">
-        <div class="text-2xl md:text-4xl font-normal">
-          <div>{{ $t('home-hero.deploy-smarter') }}</div>
-          <div>{{ $t('home-hero.deploy-faster') }}</div>
-        </div>
-        <DeployNow class="text-4xl md:text-6xl" />
+        <h2 class="mb-0">{{ $t('home-hero.deploy-smarter') }}</h2>
+        <h2 class="mb-2">{{ $t('home-hero.deploy-faster') }}</h2>
+        <h1>
+          <DeployNow class="text-4xl md:text-5xl" />
+        </h1>
         <p class="my-8 md:text-xl md:my-16">
           {{ $t('home-hero.description') }}
         </p>

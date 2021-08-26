@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 py-2 bg-ui-background min-y-[60px]">
+  <div class="px-4 py-2 bg-ui-background min-h-[60px]">
     <div class="flex justify-between items-center">
       <div class="flex-center">
         <g-link to="/" class="flex-center mr-2 sm:mr-12" title="Home">
@@ -12,7 +12,7 @@
             v-for="link in navLinks"
             :key="link.path"
             :to="link.path"
-            class="p-2 mx-2 text-base font-bold text-ui-primary hover:text-ui-secondary"
+            class="p-2 mx-2 font-semibold font-headline text-ui-primary hover:text-ui-secondary dark:hover:text-white"
           >
             {{ link.title }}
           </g-link>
@@ -25,7 +25,7 @@
         </ClientOnly>
       </div>
 
-      <div class="md:flex-center space-x-2 md:space-x-8" :class="iconsClass">
+      <div class="flex-center space-x-2 md:space-x-8" :class="iconsClass">
         <a
           v-if="settings.twitter"
           :href="settings.twitter"
@@ -95,8 +95,8 @@ const Search = () => import(/* webpackChunkName: "search" */ '@/components/Searc
 
 export default {
   components: {
-    DeployNow,
     Search,
+    DeployNow,
     ToggleDarkMode,
     GlobeIcon,
     GithubIcon,
@@ -108,7 +108,6 @@ export default {
     ...mapState({ searchFocused: 'searchFocused' }),
     iconsClass() {
       return {
-        'flex-center': !this.searchFocused,
         '<md:hidden': this.searchFocused,
         '<md:opacity-0': this.searchFocused,
       };

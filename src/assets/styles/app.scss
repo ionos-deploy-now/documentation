@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap');
+
 /**
  * Colors & Variables
  */
@@ -13,13 +15,15 @@
   --color-bg-lighten-2: #e8f6fe;
   --color-bg-warning: #ffffda;
   --color-white: theme("colors.white");
+  --color-text-light: #50575B;
+  --color-text-dark: #1F282D;
   // UI
   --color-ui-background: theme("colors.white");
-  --color-ui-typo: theme("colors.gray.700");
+  --color-ui-typo: var(--color-text-light);
+  --color-ui-headline: var(--color-text-dark);
+  --color-ui-overline: var(--color-primary);
   --color-ui-sidebar: theme("colors.gray.200");
   --color-ui-border: theme("colors.gray.300");
-  --color-ui-headline: #1F282D;
-  --color-ui-body: #50575B;
   // Mermaid
   //--color-mermaid-bg: --color-mermaid-warn
   // Remark container
@@ -30,6 +34,7 @@ html.dark {
   // Dark mode
   --color-ui-background: theme("colors.gray.900");
   --color-ui-typo: theme("colors.gray.100");
+  --color-ui-headline: theme("colors.gray.100");
   --color-ui-sidebar: theme("colors.gray.800");
   --color-ui-border: theme("colors.gray.800");
 
@@ -69,7 +74,7 @@ h1,
 h2,
 h3,
 h4 {
-  @apply relative leading-snug font-black mb-4 text-ui-typo;
+  @apply relative leading-snug font-headline font-semibold mb-4 text-ui-headline;
 
   a {
     &::before {
@@ -86,15 +91,21 @@ h4 {
 }
 
 h1 {
-  @apply text-4xl;
+  @apply tracking-0;
+  font-size: 42px;
+  line-height: 52px;
 }
 
 h2 {
-  @apply text-2xl;
+  @apply tracking-0.5px;
+  font-size: 32px;
+  line-height: 42px;
 }
 
 h3 {
-  @apply text-xl;
+  @apply font-normal tracking-0.5px;
+  font-size: 24px;
+  line-height: 37px;
 }
 
 h4 {
@@ -107,7 +118,7 @@ ul,
 pre,
 strong,
 blockquote {
-  @apply mb-4 text-base text-ui-typo;
+  @apply mb-4 text-base text-ui-typo tracking-normal leading-snug;
 }
 
 blockquote {
@@ -119,7 +130,7 @@ blockquote {
 }
 
 code {
-  @apply px-1 py-1 text-ui-typo bg-ui-sidebar font-mono border-b border-r border-ui-border text-sm rounded;
+  @apply px-1 py-1 text-sm text-ui-typo font-mono bg-ui-sidebar rounded border-b border-r border-ui-border;
 }
 
 pre[class*="language-"] {
@@ -229,14 +240,10 @@ table {
   img {
     @apply my-4 md:my-8 shadow rounded bg-white;
   }
-}
 
-.container {
-  @apply px-16 py-8 md:py-20;
-}
-
-.two-column-layout {
-  @apply grid grid-cols-1 lg:grid-cols-2 gap-8;
+  strong {
+    @apply font-semibold;
+  }
 }
 
 .flex-center {
@@ -265,6 +272,14 @@ table {
 /**
  * Components
  */
+
+.container {
+  @apply py-8 md:py-20;
+}
+
+.two-column-layout {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-8;
+}
 
 .btn {
   @apply px-4 py-2 space-x-2 inline-flex justify-center items-center text-ui-primary bg-ui-background text-ui-primary border border-ui-border rounded-lg cursor-pointer;
@@ -296,20 +311,29 @@ table {
   }
 }
 
-.title {
-  @apply pb-2 text-xl font-bold;
-}
-
 .card {
-  @apply p-4 lg:p-6 rounded-lg shadow-lg border-1 border-transparent overflow-hidden;
+  @apply p-4 lg:p-6 rounded-lg shadow-lg border-0 border-transparent overflow-hidden;
+
+  .title {
+    @apply pb-2 text-xl font-semibold;
+  }
 
   &.invert {
     @apply text-white bg-ui-primary;
   }
+
+  &.light {
+    @apply bg-white;
+    color: var(--color-text-light);
+
+    .title {
+      color: var(--color-text-dark);
+    }
+  }
 }
 
 .overline {
-  @apply text-sm text-ui-primary uppercase;
+  @apply text-xs text-ui-overline font-semibold leading-none tracking-3px uppercase;
 }
 
 .sidebar {

@@ -3,7 +3,10 @@ import createStore from '~/store';
 import DefaultLayout from '~/layouts/Default.vue';
 import 'prism-themes/themes/prism-material-oceanic.css';
 import 'gridsome-plugin-remark-container/themes/default.css';
-import '~/assets/styles/app.scss';
+import '@fontsource/open-sans/latin-400.css';
+import '@fontsource/open-sans/latin-600.css';
+import '@fontsource/open-sans/latin-800.css';
+import '@/assets/styles/app.scss';
 
 export default function (Vue, { router, head, appOptions }) {
   Vue.use(Vuex);

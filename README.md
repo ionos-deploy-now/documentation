@@ -25,6 +25,7 @@ npm run build
 ## Open issues
 
 * consolidate color definitions
+* fix table borders
 * enable plugins: sitemap, PWA
 * check header meta data
 * optimize favicon and other icons: https://realfavicongenerator.net/

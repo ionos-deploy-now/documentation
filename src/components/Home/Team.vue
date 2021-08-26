@@ -2,10 +2,10 @@
   <div class="relative bg-dark-midnight bg-img-dots">
     <div class="container">
       <div class="flex-center flex-col space-y-8 text-white mt-8 mb-16 lg:mt-16 lg:mb-42">
-        <div class="text-sm uppercase">
+        <div class="overline !text-white">
           {{ $t('home-team.overline') }}
         </div>
-        <div class="text-4xl text-center font-bold max-w-[600px]" v-html="$t('home-team.title')"></div>
+        <h2 class="text-center text-white text-4xl font-bold max-w-[600px]" v-html="$t('home-team.title')"></h2>
         <g-link class="btn btn-primary" to="/about-us/">
           {{ $t('home-team.button') }}
         </g-link>

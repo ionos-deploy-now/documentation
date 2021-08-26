@@ -1,6 +1,5 @@
 <template>
-  <div @keydown.down="increment" @keydown.up="decrement" @keydown.enter="go"
-    class="relative transistion-all">
+  <div @keydown.down="increment" @keydown.up="decrement" @keydown.enter="go" class="relative transistion-all">
     <SearchIcon size="1.5x" v-show="!focused" class="icon flex-center !md:hidden" @click="focusSearch" />
     <label class="relative md:flex-center md:opacity-100" :class="searchLabelClass">
       <span class="sr-only">{{ $t('search.title') }}</span>
@@ -9,7 +8,7 @@
         ref="input"
         type="search"
         :value="query"
-        class="block w-full py-2 pl-10 pr-4 border-2 rounded-lg bg-ui-sidebar border-ui-sidebar focus:bg-ui-background md:min-w-[250px] lg:min-w-[400px]"
+        class="block w-full py-2 pl-10 pr-4 border-2 rounded-lg bg-ui-sidebar border-ui-sidebar focus:bg-ui-background md:min-w-[200px] lg:min-w-[300px] xl:min-w-[400px]"
         :class="{ 'rounded-b-none': showResult }"
         :placeholder="$t('search.placeholder')"
         @focus="setSearchFocused(true)"
@@ -37,7 +36,7 @@
         >
           <g-link
             :to="item.url"
-            class="block p-2 -mx-2 text-base font-bold rounded-lg"
+            class="block p-2 -mx-2 text-base font-semibold rounded-lg"
             :class="{ 'bg-ui-sidebar text-ui-primary': focusIndex === index }"
           >
             <span v-if="item.value === item.title">

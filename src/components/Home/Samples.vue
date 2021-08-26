@@ -13,9 +13,9 @@
         <div class="overline">
           {{ $t('home-samples.overline') }}
         </div>
-        <div class="text-4xl text-center font-bold pb-4 z-1">
+        <h2 class="text-center font-bold pb-4 z-1">
           {{ $t('home-samples.title') }}
-        </div>
+        </h2>
         <div class="grid grid-cols-2 gap-4">
           <g-link class="btn btn-primary" to="/docs/framework-samples/">
             {{ $t('home-samples.sample-button') }}

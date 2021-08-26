@@ -4,51 +4,49 @@
       <div class="container">
         <div class="two-column-layout mt-8 lg:mt-16">
           <div class="space-y-4">
-            <div class="text-4xl font-bold leading-normal" v-html="$t('about-us.title')"></div>
-            <div>
+            <h1 v-html="$t('about-us.title')"></h1>
+            <p>
               {{ $t('about-us.text') }}
-            </div>
+            </p>
           </div>
           <div></div>
         </div>
 
         <div class="two-column-layout mt-8 lg:mt-16">
           <div class="space-y-4">
-            <div class="text-xl font-bold">
+            <h2>
               {{ $t('about-us.ionos-title') }}
-            </div>
-            <div>
+            </h2>
+            <p>
               {{ $t('about-us.ionos-text') }}
-            </div>
+            </p>
           </div>
           <div class="space-y-4">
-            <div class="text-xl font-bold">
+            <h2>
               {{ $t('about-us.feedback-title') }}
-            </div>
-            <div>
-              {{ $t('about-us.feedback-text') }}
-            </div>
+            </h2>
+            <p v-html="$t('about-us.feedback-text')"></p>
           </div>
         </div>
       </div>
     </div>
 
     <div class="container">
-      <div class="text-2xl font-bold mb-8">
+      <h2 class="mb-8">
         {{ $t('about-us.team-title') }}
-      </div>
+      </h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto">
-        <div v-for="member in team" :key="member.email" class="card flex !p-0 max-w-[550px]">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mx-auto">
+        <div v-for="member in team" :key="member.email" class="card light flex !p-0 max-w-[600px]">
           <img
             :src="`/team/${member.image}`"
             :alt="`Image of ${member.name}`"
             class="object-cover max-w-[200px]"
             style="background-color: #f5f5f5"
           />
-          <div class="flex-grow p-4 space-y-4 text-ui-headline bg-white">
+          <div class="p-4 space-y-4">
             <div>
-              <div class="text-xl font-bold">{{ member.name }}</div>
+              <div class="title !pb-0">{{ member.name }}</div>
               <div>{{ member.role }}</div>
             </div>
             <div class="space-y-2">
@@ -58,7 +56,7 @@
               </div>
               <a class="flex items-center text-sm" :href="member.github">
                 <GithubIcon size="1.25x" class="icon" />
-                {{ member.github }}
+                {{ stripProtocol(member.github) }}
               </a>
             </div>
             <a class="block text-sm text-ui-primary" :href="`mailto:${member.email}`">
@@ -84,6 +82,11 @@ export default {
     return {
       team: Array.from(TeamMembers).sort((a, b) => a.name.localeCompare(b.name)),
     };
+  },
+  methods: {
+    stripProtocol(str) {
+      return str.replace(/https?:\/\//, '')
+    }
   },
   metaInfo() {
     const title = 'About us';

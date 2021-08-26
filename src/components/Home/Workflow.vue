@@ -3,8 +3,8 @@
     <div class="container">
       <div class="two-column-layout py-8">
         <div class="my-auto space-y-6">
-          <div class="text-sm text-ui-primary uppercase" v-html="$t('home-workflow.overline')"></div>
-          <div class="text-4xl font-bold" v-html="$t('home-workflow.title')"></div>
+          <div class="overline" v-html="$t('home-workflow.overline')"></div>
+          <h2 class="font-bold" v-html="$t('home-workflow.title')"></h2>
           <div>
             {{ $t('home-workflow.text') }}
           </div>

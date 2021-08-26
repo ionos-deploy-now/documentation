@@ -1,7 +1,8 @@
 export default {
   theme: {
     fontFamily: {
-      sans: ["Overpass", "ui-sans-serif", "system-ui", "sans-serif"],
+      sans: ["Open Sans", "ui-sans-serif", "system-ui", "sans-serif"],
+      headline: ["Overpass", "Open Sans", "ui-sans-serif", "system-ui", "sans-serif"],
       mono: ["Overpass Mono", "monospace"],
     },
     extend: {
@@ -22,13 +23,13 @@ export default {
           typo: "var(--color-ui-typo)",
           border: "var(--color-ui-border)",
           headline: "var(--color-ui-headline)",
-          body: "var(--color-ui-body)",
+          overline: "var(--color-ui-overline)",
         },
       },
     },
     container: {
       center: true,
-      padding: "1rem",
+      padding: '1rem',
     },
   },
   scan: {
