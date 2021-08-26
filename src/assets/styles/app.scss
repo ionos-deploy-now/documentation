@@ -97,7 +97,7 @@ h1 {
 }
 
 h2 {
-  @apply tracking-0.5px;
+  @apply tracking-0;
   font-size: 32px;
   line-height: 42px;
 }
@@ -118,7 +118,7 @@ ul,
 pre,
 strong,
 blockquote {
-  @apply mb-4 text-base text-ui-typo tracking-normal leading-snug;
+  @apply mb-4 text-base text-ui-typo tracking-normal;
 }
 
 blockquote {
@@ -348,6 +348,10 @@ table {
     @apply w-1/5 px-0 bg-transparent top-0 bottom-auto inset-x-auto sticky z-0;
     transform: translateX(0);
   }
+}
+
+.email {
+  @apply text-ui-primary hover:underline;
 }
 
 .bg-img-dots {

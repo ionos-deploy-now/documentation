@@ -3,13 +3,9 @@
     <div class="two-column-layout">
       <div class="relative bg-img-dots">
         <h2 class="mb-0">{{ $t('home-hero.deploy-smarter') }}</h2>
-        <h2 class="mb-2">{{ $t('home-hero.deploy-faster') }}</h2>
-        <h1>
-          <DeployNow class="text-4xl md:text-5xl" />
-        </h1>
-        <p class="my-8 md:text-xl md:my-16">
-          {{ $t('home-hero.description') }}
-        </p>
+        <h2 class="mb-0">{{ $t('home-hero.deploy-faster') }}</h2>
+        <h2 class="text-ui-primary">{{ $t('home-hero.deploy-now') }}</h2>
+        <p class="my-8 md:text-xl md:my-16">{{ $t('home-hero.description') }}</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 m-auto <md:max-w-[400px]">
         <g-link to="/docs/" class="card invert" style="background-color: #11C7E6">

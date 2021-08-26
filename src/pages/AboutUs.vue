@@ -2,7 +2,7 @@
   <Layout>
     <div class="bg-img-dots">
       <div class="container">
-        <div class="two-column-layout mt-8 lg:mt-16">
+        <div class="two-column-layout !gap-16 mt-8 lg:mt-16">
           <div class="space-y-4">
             <h1 v-html="$t('about-us.title')"></h1>
             <p>
@@ -12,7 +12,7 @@
           <div></div>
         </div>
 
-        <div class="two-column-layout mt-8 lg:mt-16">
+        <div class="two-column-layout !gap-16 mt-8 lg:mt-16">
           <div class="space-y-4">
             <h2>
               {{ $t('about-us.ionos-title') }}
@@ -36,7 +36,7 @@
         {{ $t('about-us.team-title') }}
       </h2>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mx-auto">
         <div v-for="member in team" :key="member.email" class="card light flex !p-0 max-w-[600px]">
           <img
             :src="`/team/${member.image}`"
@@ -59,7 +59,7 @@
                 {{ stripProtocol(member.github) }}
               </a>
             </div>
-            <a class="block text-sm text-ui-primary" :href="`mailto:${member.email}`">
+            <a class="email block text-sm" :href="`mailto:${member.email}`">
               {{ member.email }}
             </a>
           </div>
