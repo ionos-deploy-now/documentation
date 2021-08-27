@@ -32,5 +32,8 @@ As a result, Jamstack websites can be up to 10 times faster, more secure and che
 
 ## Free Download
 US version: [Download](https://resources.ionos.com/hubfs/Jamstack/Create%20client%20websites%20with%20the%20Jamstack.pdf)
+
 UK version: [Download](	https://resources.ionos.com/hubfs/Jamstack/UK/Create_client_websites_with_the_Jamstack.pdf)
+
 DE version: [Download](https://resources.ionos.com/hubfs/Jamstack/Kundenwebsites%20mit%20dem%20Jamstack%20erstellen.pdf)
+
