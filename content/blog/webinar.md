@@ -3,8 +3,12 @@ description: ''
 
 ---
 
-# Free Webinar: Back to the future - the comeback of the static web :de:
+# Webinar: The comeback of the static web :de:
 
-Our Product Owner Robert gave a keynote at the Digital Bash - Agency Special, explaining why static sites can a good alternative to typical CMS bases websites, how they can be enhanced with dynamic functionalities and which advantages they can generate along a web project lifecycle. 
+## What is it about?
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qWnQaAXneEA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Our Product Owner Robert gave a keynote at the Digital Bash - Agency Special. He explains why traditional CMS conquered the web since the early 2000s and which disadvantages their usage means from a technical and commercial perspective. Learn why static sites can solve a lot of these issues and why the Jamstack is a meaningful update to the static world. Switching to the Jamstack yields many advantages, not only during the development, but along an entire project lifecycle. 
+
+## Free Webinar
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qWnQaAXneEA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
