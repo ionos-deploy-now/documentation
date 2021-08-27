@@ -5,7 +5,7 @@
         <div class="overline !text-white">
           {{ $t('home-team.overline') }}
         </div>
-        <h2 class="text-center text-white text-4xl font-bold max-w-[600px]" v-html="$t('home-team.title')"></h2>
+        <h2 class="text-center text-white text-4xl font-semibold max-w-[600px]" v-html="$t('home-team.title')"></h2>
         <g-link class="btn btn-primary" to="/about-us/">
           {{ $t('home-team.button') }}
         </g-link>

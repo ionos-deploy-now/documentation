@@ -13,7 +13,7 @@
         <div class="overline">
           {{ $t('home-samples.overline') }}
         </div>
-        <h2 class="text-center font-bold pb-4 z-1">
+        <h2 class="text-center font-semibold pb-4 z-1">
           {{ $t('home-samples.title') }}
         </h2>
         <div class="grid grid-cols-2 gap-4">

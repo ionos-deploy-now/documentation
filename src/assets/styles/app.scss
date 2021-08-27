@@ -285,7 +285,7 @@ table {
 }
 
 .btn-hero {
-  @apply px-6 py-4 text-2xl font-bold leading-none shadow-lg border-3 border-ui-primary duration-200 ease-out transform transition-all hover:-translate-y-1;
+  @apply px-6 py-4 text-2xl font-semibold leading-none shadow-lg border-3 border-ui-primary duration-200 ease-out transform transition-all hover:-translate-y-1;
 }
 
 .btn-hover {
@@ -298,7 +298,7 @@ table {
 
 .nav-link {
   &.active {
-    @apply text-ui-primary font-bold border-ui-primary;
+    @apply text-ui-primary font-semibold border-ui-primary;
   }
 }
 

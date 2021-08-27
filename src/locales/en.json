@@ -58,7 +58,7 @@
   "search": {
     "title": "Search documentation",
     "placeholder": "Search documentation...",
-    "no-results": "No results for <span class=\"font-bold\">{query}</span>."
+    "no-results": "No results for <span class=\"font-semibold\">{query}</span>."
   },
   "display-mode": {
     "toggle-dark-mode": "Toggle darkmode"

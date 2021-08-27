@@ -17,7 +17,7 @@
           <div class="overline">
             {{ $t('home-features.overline') }}
           </div>
-          <h2 class="font-bold" v-html="$t('home-features.title')"></h2>
+          <h2 class="font-semibold" v-html="$t('home-features.title')"></h2>
           <div>
             {{ $t('home-features.text') }}
           </div>

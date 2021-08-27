@@ -111,7 +111,7 @@ export default {
         'pl-3': heading.depth === 4,
         'pl-4': heading.depth === 5,
         'pl-5': heading.depth === 6,
-        'font-bold text-ui-primary': this.activeAnchor === heading.anchor,
+        'font-semibold text-ui-primary': this.activeAnchor === heading.anchor,
       };
     },
   },
