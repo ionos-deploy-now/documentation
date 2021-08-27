@@ -20,7 +20,6 @@ sequenceDiagram
     Note left of Deploy Now: checkout, build and deploy to IONOS
 ~~~
 
-<!-- ![Deploy Now git integration](/git-integration.svg) -->
 To ensure that the deployment process works correctly you just need to install the IONOS Deploy Now App to your GitHub repository and grant the corresponding rights. The App requires read access to actions and metadata as well as write access to administration, secrets, code and workflows.
 
 ~~~mermaid
@@ -35,5 +34,4 @@ sequenceDiagram
     Note left of GitHub: Select all or at least one repository
 ~~~
 
-<!-- ![IONOS Deploy Now App](/github-app.png) -->
 Deploy Now does not limit the build time you can use to update your web project. However, the build time that can be used in private repositories depends on your personal GitHub plan.

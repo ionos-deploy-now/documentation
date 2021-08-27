@@ -13,6 +13,7 @@
   --color-dark-midnight: #001b41;
   --color-horizon: #3B9CDA;
   --color-bg-lighten-2: #e8f6fe;
+  --color-bg-lighten-1: #cbdae1;
   --color-bg-warning: #ffffda;
   --color-white: theme("colors.white");
   --color-text-light: #50575B;
@@ -363,9 +364,9 @@ table {
   }
 }
 
+// TODO: Find way to omit !important
 .mermaid {
   @apply mb-4;
-  font-family: "Open Sans", "trebuchet ms", verdana, sans-serif !important;
 
   svg {
     @apply p-4 bg-white rounded shadow overflow-hidden;
@@ -373,6 +374,7 @@ table {
 
   rect, polygon {
     &.actor {
+      stroke: var(--color-bg-lighten-1) !important;
       fill: var(--color-bg-lighten-2) !important;
     }
 

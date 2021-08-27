@@ -5,6 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 const showBlog = process.env.SHOW_BLOG === 'true' || false;
+const fontFamilySans = '"Open Sans", ui-sans-serif, system-ui, sans-serif'
 
 module.exports = {
   siteName: 'Deploy Now - Documentation',
@@ -116,9 +117,18 @@ module.exports = {
         // add gridsome-plugin-remark-mermaid always first
         ['gridsome-plugin-remark-mermaid', {
           mermaidOptions: {
+            //fontFamily: fontFamilySans,
             themeVariables: {
               edgeLabelBackground: '#fff',
             },
+            //sequence: {
+            //  actorFontFamily: fontFamilySans,
+            //  noteFontFamily: fontFamilySans,
+            //  messageFontFamily: fontFamilySans,
+            //},
+            flowchart: {
+              diagramPadding: 10,
+            }
           },
         }],
         '@noxify/gridsome-remark-table-align',
