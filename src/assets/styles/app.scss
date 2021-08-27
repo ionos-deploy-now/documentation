@@ -157,25 +157,16 @@ header {
 }
 
 table {
-  @apply text-left mb-6;
+  @apply text-left mb-6 bg-ui-border rounded-sm;
+  border-spacing: 1px;
+
+  th {
+    @apply font-semibold;
+  }
 
   td,
   th {
-    @apply py-3 px-4;
-    &:first-child {
-      @apply pl-0;
-    }
-
-    &:last-child {
-      @apply pr-0;
-    }
-  }
-
-  tr {
-    @apply border-b-1 border-ui-border;
-    &:last-child {
-      @apply border-b-0;
-    }
+    @apply py-3 px-4 bg-ui-background;
   }
 }
 
