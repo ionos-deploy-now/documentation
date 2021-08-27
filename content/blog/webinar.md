@@ -3,7 +3,7 @@ description: ''
 
 ---
 
-# Webinar: The comeback of the static web :de:
+# Webinar: The comeback of the static web 
 
 ## What is it about?
 
