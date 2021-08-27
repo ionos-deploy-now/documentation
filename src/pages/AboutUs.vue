@@ -59,9 +59,6 @@
                 {{ stripProtocol(member.github) }}
               </a>
             </div>
-            <a class="email block text-sm" :href="`mailto:${member.email}`">
-              {{ member.email }}
-            </a>
           </div>
         </div>
       </div>

@@ -1,7 +1,6 @@
 [
   {
     "name": "Markus Hunsalz",
-    "email": "markus.hunsalz@ionos.com",
     "image": "markus.svg",
     "role": "Passionate Engineer",
     "github": "https://github.com/hunsalz",
@@ -14,20 +13,17 @@
   },
   {
     "name": "Marcel Solle",
-    "email": "marcel.solle@ionos.com",
     "image": "marcel.svg",
     "role": "Frontend Developer",
     "github": "https://github.com/Ap3rtur3",
     "likes": [
       "JavaScript",
       "Vue",
-      "WebGL",
-      "Coffee"
+      "WebGL"
     ]
   },
   {
     "name": "Roman Okon",
-    "email": "roman.okon@ionos.com",
     "image": "roman.svg",
     "role": "Head of Product",
     "github": "https://github.com",
@@ -39,7 +35,6 @@
   },
   {
     "name": "Alexander Gängel",
-    "email": "alexander.gaengel@ionos.com",
     "image": "alex.svg",
     "role": "Fullstack Developer",
     "github": "https://github.com/agaengel",
@@ -51,7 +46,6 @@
   },
   {
     "name": "Fatih Ok",
-    "email": "fatih.ok@ionos.com",
     "image": "fatih.svg",
     "role": "Infrastructure Engineer",
     "github": "https://github.com/fx35",
@@ -65,10 +59,9 @@
   },
   {
     "name": "Eric Szperlinski",
-    "email": "eric.szperlinski@ionos.com",
     "image": "eric.svg",
     "role": "Frontend Developer",
-    "github": "https://github.com",
+    "github": "https://github.com/Freezle",
     "likes": [
       "JavaScript",
       "Vue",
@@ -77,7 +70,6 @@
   },
   {
     "name": "Robert Schleinhege",
-    "email": "robert.schleinhege@ionos.com",
     "image": "robert.svg",
     "role": "Product Owner",
     "github": "https://github.com/Robert95Sch",
@@ -89,7 +81,6 @@
   },
   {
     "name": "Josua Meier",
-    "email": "josua.meier@ionos.com",
     "image": "josua.svg",
     "role": "Frontend Developer",
     "github": "https://github.com/JosuaMeier",
@@ -101,7 +92,6 @@
   },
   {
     "name": "Robin Müller",
-    "email": "robin.mueller@ionos.com",
     "image": "robin.svg",
     "role": "Fullstack Developer",
     "github": "https://github.com/coder-hugo",
