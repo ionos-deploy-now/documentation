@@ -8,16 +8,14 @@ editable: true
 
 # Framework samples
 
-The following framework samples give you an overview of static site generator (SSG) frameworks that can be hosted with Deploy Now. 
-To start your project, you can either bring your own repository or deploy a sample from the list below. 
+The following framework samples give you an overview of static site generator (SSG) frameworks that can be hosted out of the box with Deploy Now. All samples kept simple to give you a basic working prototype.
 
-If you want to create your own sample, you can add a `.ionos.yml` file in the repository root to [define the deployment settings](/docs/file-based-configuration) for other users that want to deploy your sample. You can find examples of how  `.ionos.yml` is set up for different frameworks below. 
+Feel free to create your own sample by adding a `.ionos.yml` file in your repository root folder. [Defining the deployment settings](/docs/file-based-configuration) allows other users to use your sample right away. Below samples give you insights how to do.
 
-## hello-plain-html
+## Plain html sample
 
 Just copy static assets to IONOS. This couldn't be easier. You just need to define a `dist` folder and that's it! 
 Try yourself.
-
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-plain-html)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-plain-html)
@@ -28,7 +26,7 @@ distFolder: "./"
 ```
 :::
 
-## hello-gridsome
+## Gridsome sample
 
 A website based on the Vue.js framework [Gridsome](https://gridsome.org/).
 
@@ -56,7 +54,7 @@ build:
 ```
 :::
 
-## hello-gatsby
+## Gatsby sample
 
 A website based on the React framework [Gatsby](https://www.gatsbyjs.com/).
 
@@ -84,7 +82,7 @@ build:
 ```
 :::
 
-## hello-hugo
+## Hugo sample
 
 A website based on the Go framework [Hugo](https://gohugo.io/).
 
@@ -109,7 +107,7 @@ build:
 ```
 :::
 
-## hello-jigsaw
+## Jigsaw sample
 
 A website based on the PHP framework [Jigsaw](https://jigsaw.tighten.co/).
 
@@ -136,7 +134,7 @@ build:
 ```
 :::
 
-## hello-jekyll
+## Jekyll sample
 
 A website based on the Ruby framework [Jekyll](https://jekyllrb.com/).
 
@@ -159,7 +157,7 @@ build:
 ```
 :::
 
-## hello-next
+## Next sample
 
 A website based on [static file serving](https://nextjs.org/docs/basic-features/static-file-serving) with [Next](https://nextjs.org/).
 
@@ -184,7 +182,7 @@ build:
 ```
 :::
 
-## hello-nuxt
+## Nuxt sample
 
 A website based on [Static Site Generation](https://nuxtjs.org/docs/2.x/concepts/static-site-generation) with [Nuxt](https://nuxtjs.org).
 
@@ -209,7 +207,7 @@ build:
 ```
 :::
 
-## hello-vuepress
+## Vuepress sample
 
 A website based on the Vue-powered Static Site Generator [VuePress](https://vuepress.vuejs.org/).
 

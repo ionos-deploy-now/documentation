@@ -32,14 +32,14 @@ Deploy Now allows you to host static websites based on HTML and CSS. In addition
 ### Static Site Generators
 If you are working with static site generators, Deploy Now allows you to move static files to our infrastructure after every build based on the [GitHub Actions](https://github.com/features/actions) pipeline. If you setup the build pipeline manually, all existing static site generatos can be used. Out of the box, Deploy Now supports the following static site generators:  
 
-- Gridsome [(deploy sample)](/docs/framework-samples/#hello-gridsome)
-- Gatsby [(deploy sample)](/docs/framework-samples/#hello-gatsby)
-- Hugo [(deploy sample)](/docs/framework-samples/#hello-hugo)
-- Jigsaw [(deploy sample)](/docs/framework-samples/#hello-jigsaw)
-- Jekyll [(deploy sample)](/docs/framework-samples/#hello-jekyll)
-- Next [(deploy sample)](/docs/framework-samples/#hello-next)
-- Nuxt [(deploy sample)](/docs/framework-samples/#hello-nuxt)
-- Vuepress [(deploy sample)](/docs/framework-samples/#hello-vuepress)
+- Gridsome [(sample)](/docs/framework-samples/#gridsome-sample)
+- Gatsby [(sample)](/docs/framework-samples/#gatsby-sample)
+- Hugo [(sample)](/docs/framework-samples/#hugo-sample)
+- Jigsaw [(sample)](/docs/framework-samples/#jigsaw-sample)
+- Jekyll [(sample)](/docs/framework-samples/#jekyll-sample)
+- Next [(sample)](/docs/framework-samples/#next-sample)
+- Nuxt [(sample)](/docs/framework-samples/#nuxt-sample)
+- Vuepress [(sample)](/docs/framework-samples/#vuepress-sample)
 - Eleventy
 - Hexo
 - Metalsmith
