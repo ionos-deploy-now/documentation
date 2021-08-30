@@ -31,7 +31,6 @@ npm run build
 * remark
   * lazy load images
   * add an arrow icon to all external links
-  * style mermaid graphs with variables
 * add a changelog link in sitebar 
   * which source tbd 
     * a) e.g. https://twitter.com/GHchangelog 
