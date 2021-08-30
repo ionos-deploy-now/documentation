@@ -1,6 +1,6 @@
 ---
 description: ''
-
+created: '2021-08-22'
 ---
 
 # Whitepaper: Build client websites with Jamstack

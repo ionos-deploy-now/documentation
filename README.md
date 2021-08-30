@@ -41,4 +41,3 @@ npm run build
   * embed .ionos.yml from repo (nice to have)
 * blog
   * do not create markdown nodes if SHOW_BLOG is false
-  * fix createdAt

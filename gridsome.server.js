@@ -12,9 +12,12 @@ module.exports = function (api) {
     if (options.internal.typeName !== 'MarkdownPage') {
       return null;
     }
-    // Set content type for markdown pages
+    // Set content type and timestamp for markdown pages
     options.contentType = options.fileInfo.directory.split('/')[0];
-    options.createdAt = options.internal.timestamp;
+    if (options.created) {
+      options.createdAt = (new Date(options.created)).getTime();
+    }
+
     return options;
   });
 };
