@@ -21,7 +21,7 @@
             {{ $t('home-samples.sample-button') }}
           </g-link>
           <a class="btn btn-secondary border-ui-border" href="https://ionos.space">
-            <ExternalLinkIcon class="icon" size="1x" />
+            <ExternalLinkIcon class="icon" decorative />
             {{ $t('home-samples.sign-up-button') }}
           </a>
         </div>
@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import { ExternalLinkIcon } from 'vue-feather-icons';
+import ExternalLinkIcon from 'vue-material-design-icons/OpenInNew'
 
 export default {
   components: {

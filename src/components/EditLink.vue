@@ -6,7 +6,7 @@
       class="flex items-center opacity-50 hover:opacity-100 hover:no-underline"
       rel="noopener noreferrer"
     >
-      <Edit3Icon size="1x" />
+      <EditIcon decorative />
       <span class="ml-1">
         {{ $t('edit-link.text') }}
       </span>
@@ -25,11 +25,11 @@ query {
 </static-query>
 
 <script>
-import { Edit3Icon } from 'vue-feather-icons';
+import EditIcon from 'vue-material-design-icons/PencilOutline'
 
 export default {
   components: {
-    Edit3Icon,
+    EditIcon,
   },
 
   props: {

@@ -1,18 +1,23 @@
 <template>
   <div @keydown.down="increment" @keydown.up="decrement" @keydown.enter="go" class="relative transistion-all">
-    <SearchIcon size="1.5x" v-show="!focused" class="icon flex-center !md:hidden" @click="focusSearch" />
+    <MagnifyIcon
+      v-if="!focused"
+      class="icon icon-lg flex-center !md:hidden"
+      :title="$t('search.title')"
+      @click="focusSearch(true)"
+    />
     <label class="relative md:flex-center md:opacity-100" :class="searchLabelClass">
       <span class="sr-only">{{ $t('search.title') }}</span>
-      <SearchIcon size="1.25x" class="icon absolute left-3 inset-3 z-1 text-ui-typo" />
+      <MagnifyIcon class="icon absolute left-3 inset-3 z-1 text-ui-typo" decorative />
       <input
         ref="input"
         type="search"
         :value="query"
-        class="block w-full py-2 pl-10 pr-4 border-2 rounded-lg bg-ui-sidebar border-ui-sidebar focus:bg-ui-background md:min-w-[200px] lg:min-w-[300px] xl:min-w-[400px]"
+        class="block w-full py-2 pl-10 pr-4 border-2 rounded-lg bg-ui-sidebar border-ui-sidebar focus:bg-ui-background md:min-w-[200px] lg:min-w-[300px] xxl:min-w-[400px]"
         :class="{ 'rounded-b-none': showResult }"
         :placeholder="$t('search.placeholder')"
-        @focus="setSearchFocused(true)"
-        @blur="setSearchFocused(false)"
+        @focus="focusSearch"
+        @blur="blurSearch"
         @input="onInput"
         @change="onChange"
       />
@@ -45,7 +50,7 @@
 
             <span v-else class="flex items-center">
               {{ item.title }}
-              <ChevronRightIcon size="1x" class="mx-1" />
+              <ChevronRightIcon class="mx-1" decorative />
               <span class="font-normal opacity-75">{{ item.value }}</span>
             </span>
           </g-link>
@@ -75,14 +80,15 @@ query Search {
 </static-query>
 
 <script>
-import { mapState, mapActions } from 'vuex';
-import { ChevronRightIcon, SearchIcon } from 'vue-feather-icons';
+import { mapGetters, mapActions } from 'vuex';
+import MagnifyIcon from 'vue-material-design-icons/Magnify';
+import ChevronRightIcon from 'vue-material-design-icons/ChevronRight';
 import Fuse from 'fuse.js';
 
 export default {
   components: {
+    MagnifyIcon,
     ChevronRightIcon,
-    SearchIcon,
   },
 
   data() {
@@ -93,7 +99,7 @@ export default {
     };
   },
   computed: {
-    ...mapState({ focused: 'searchFocused' }),
+    ...mapGetters({ focused: 'searchFocused' }),
     headings() {
       const result = [];
       const allPages = this.$static.allMarkdownPage.edges.map(edge => edge.node);
@@ -135,11 +141,16 @@ export default {
         this.focusIndex--;
       }
     },
-    focusSearch() {
+    focusSearch(focusInput = false) {
       this.setSearchFocused(true);
       this.$nextTick(() => {
-        this.$refs.input.focus();
-      })
+        if (focusInput) {
+          this.$refs.input.focus();
+        }
+      });
+    },
+    blurSearch() {
+      this.setSearchFocused(false);
     },
     updateSearchResults() {
       const fuse = new Fuse(this.headings, {

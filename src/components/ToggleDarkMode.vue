@@ -5,20 +5,18 @@
     :aria-label="$t('display-mode.toggle-dark-mode')"
     :title="$t('display-mode.toggle-dark-mode')"
   >
-    <SunIcon v-if="isDarkMode" size="1.5x" />
-    <MoonIcon v-else size="1.5x" />
+    <ThemeLightDarkIcon class="icon-lg" />
   </button>
 </template>
 
 <script>
-import { SunIcon, MoonIcon } from 'vue-feather-icons';
+import ThemeLightDarkIcon from 'vue-material-design-icons/ThemeLightDark'
 
 export const DARK_MODE = 'dark';
 
 export default {
   components: {
-    SunIcon,
-    MoonIcon,
+    ThemeLightDarkIcon,
   },
 
   data() {

@@ -19,24 +19,13 @@
         </div>
       </div>
 
-      <div class="px-4 max-w-screen-xs <lg:ml-auto">
+      <div class="px-4 max-w-screen-xs <lg:ml-auto" :class="{ '<lg:flex-grow': searchFocused }">
         <ClientOnly>
           <Search />
         </ClientOnly>
       </div>
 
-      <div class="flex-center space-x-2 md:space-x-8" :class="iconsClass">
-        <a
-          v-if="settings.twitter"
-          :href="settings.twitter"
-          class="icon p-2"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Twitter"
-        >
-          <TwitterIcon size="1.5x" />
-        </a>
-
+      <div class="flex-center space-x-2 md:space-x-8" :class="{ 'hide-mobile': searchFocused }">
         <a
           v-if="settings.github"
           :href="settings.github"
@@ -45,10 +34,10 @@
           rel="noopener noreferrer"
           title="Github"
         >
-          <GithubIcon size="1.5x" />
+          <GithubIcon class="icon icon-lg" />
         </a>
 
-        <ToggleDarkMode class="icon p-2" />
+        <ToggleDarkMode class="icon icon-lg p-2" />
 
         <a
           v-if="settings.web"
@@ -58,7 +47,7 @@
           rel="noopener noreferrer"
           title="Website"
         >
-          <ExternalLinkIcon class="icon" size="1x" />
+          <ExternalLinkIcon class="icon" />
           Deploy Now
         </a>
       </div>
@@ -86,8 +75,9 @@ query {
 </static-query>
 
 <script>
-import { mapState } from 'vuex';
-import { GlobeIcon, GithubIcon, TwitterIcon, ExternalLinkIcon } from 'vue-feather-icons';
+import { mapGetters } from 'vuex';
+import GithubIcon from 'vue-material-design-icons/Github'
+import ExternalLinkIcon from 'vue-material-design-icons/OpenInNew'
 import ToggleDarkMode from '@/components/ToggleDarkMode';
 import DeployNow from '@/components/DeployNow';
 
@@ -98,17 +88,15 @@ export default {
     Search,
     DeployNow,
     ToggleDarkMode,
-    GlobeIcon,
     GithubIcon,
-    TwitterIcon,
     ExternalLinkIcon,
   },
 
   computed: {
-    ...mapState({ searchFocused: 'searchFocused' }),
+    ...mapGetters({ searchFocused: 'searchFocused' }),
     iconsClass() {
       return {
-        '<md:hidden': this.searchFocused,
+        '<md:!hidden': this.searchFocused,
         '<md:opacity-0': this.searchFocused,
       };
     },
@@ -124,3 +112,11 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+@screen <md {
+  .hide-mobile {
+    display: none;
+  }
+}
+</style>

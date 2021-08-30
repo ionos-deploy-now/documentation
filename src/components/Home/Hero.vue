@@ -43,12 +43,10 @@
 </template>
 
 <script>
-import { ExternalLinkIcon } from 'vue-feather-icons';
 import DeployNow from '@/components/DeployNow';
 
 export default {
   components: {
-    ExternalLinkIcon,
     DeployNow,
   },
 };

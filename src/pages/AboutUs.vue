@@ -51,11 +51,11 @@
             </div>
             <div class="space-y-2">
               <div class="flex items-center text-sm">
-                <HeartIcon size="1.25x" class="icon" />
+                <HeartIcon class="icon" decorative />
                 {{ member.likes.join(', ') }}
               </div>
               <a class="flex items-center text-sm" :href="member.github">
-                <GithubIcon size="1.25x" class="icon" />
+                <GithubIcon class="icon" decorative />
                 {{ stripProtocol(member.github) }}
               </a>
             </div>
@@ -68,7 +68,8 @@
 
 <script>
 import TeamMembers from '@/assets/team.json';
-import { GithubIcon, HeartIcon } from 'vue-feather-icons';
+import HeartIcon from 'vue-material-design-icons/HeartOutline'
+import GithubIcon from 'vue-material-design-icons/Github'
 
 export default {
   components: {

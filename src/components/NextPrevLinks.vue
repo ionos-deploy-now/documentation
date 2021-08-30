@@ -5,7 +5,7 @@
       :to="prev.path"
       class="btn btn-hover"
     >
-      <ArrowLeftIcon class="mr-2" size="1x" />
+      <ArrowLeftIcon class="mr-2" decorative />
       {{ prev.title }}
     </g-link>
 
@@ -16,13 +16,14 @@
       :class="{ 'ml-auto': !prev }"
     >
       {{ next.title }}
-      <ArrowRightIcon class="ml-2" size="1x" />
+      <ArrowRightIcon class="ml-2" decorative />
     </g-link>
   </div>
 </template>
 
 <script>
-import { ArrowLeftIcon, ArrowRightIcon } from 'vue-feather-icons';
+import ArrowLeftIcon from 'vue-material-design-icons/ArrowLeft'
+import ArrowRightIcon from 'vue-material-design-icons/ArrowRight'
 
 export default {
   components: {

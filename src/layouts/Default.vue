@@ -27,7 +27,7 @@
         class="icon p-3 text-white rounded-full shadow-lg bg-ui-primary hover:text-white"
         @click="sidebarOpen = !sidebarOpen"
       >
-        <XIcon v-if="sidebarOpen" />
+        <CloseIcon v-if="sidebarOpen" />
         <MenuIcon v-else />
       </button>
     </div>
@@ -45,11 +45,12 @@ query {
 </static-query>
 
 <script>
+import { mapGetters, mapActions } from 'vuex';
 import Sidebar from '@/components/Sidebar';
 import LayoutHeader from '@/components/LayoutHeader';
 import LayoutFooter from '@/components/LayoutFooter';
-import { MenuIcon, XIcon } from 'vue-feather-icons';
-import { mapGetters, mapActions } from 'vuex';
+import MenuIcon from 'vue-material-design-icons/Menu'
+import CloseIcon from 'vue-material-design-icons/Close'
 
 export default {
   components: {
@@ -57,7 +58,7 @@ export default {
     Sidebar,
     LayoutHeader,
     MenuIcon,
-    XIcon,
+    CloseIcon,
   },
   data() {
     return {
