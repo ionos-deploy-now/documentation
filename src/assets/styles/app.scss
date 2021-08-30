@@ -370,6 +370,10 @@ table {
 
   svg {
     @apply p-4 bg-white rounded shadow overflow-hidden;
+
+    foreignObject {
+      overflow: visible;
+    }
   }
 
   rect, polygon {
