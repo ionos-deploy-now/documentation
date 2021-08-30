@@ -4,7 +4,7 @@
       <div class="flex-center">
         <g-link to="/" class="flex-center mr-2 sm:mr-12" title="Home">
           <img class="h-8 mr-2 deploy-now-logo" src="/logo.svg" alt="Deploy Now logo" />
-          <DeployNow />
+          <DeployNow class="text-2xl" />
         </g-link>
 
         <div v-if="navLinks.length > 0" class="hidden xl:block">
