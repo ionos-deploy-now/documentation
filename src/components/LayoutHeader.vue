@@ -53,7 +53,7 @@
         <a
           v-if="settings.web"
           :href="settings.web"
-          class="btn btn-primary ml-4"
+          class="btn btn-primary ml-4 <md:hidden"
           target="_blank"
           rel="noopener noreferrer"
           title="Website"

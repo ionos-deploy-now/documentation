@@ -13,7 +13,7 @@
           </g-link>
         </div>
         <div>
-          <g-image src="/github-workflow.png" class="mx-auto" />
+          <g-image src="/github-workflow.png" class="mx-auto" width="auto" height="522" />
         </div>
       </div>
     </div>

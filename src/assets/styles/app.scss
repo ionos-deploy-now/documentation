@@ -294,7 +294,7 @@ table {
 }
 
 .icon:not(.icon-link) {
-  @apply leading-1 mx-1;
+  @apply leading-1 mx-1 outline-none;
 }
 
 .nav-link {

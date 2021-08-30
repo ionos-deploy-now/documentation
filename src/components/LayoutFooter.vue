@@ -1,34 +1,30 @@
 <template>
-  <div class="px-4 py-3 border-t-1 border-ui-border">
-    <div class="flex flex-grow items-center justify-between">
-      <div class="flex flex-grow items-center">
-        <a href="https://www.ionos.de/impressum" target="_blank" class="mx-3 md:mx-6">{{ $t('footer.imprint') }}</a>
-        <a href="https://www.ionos.de/terms-gtc/terms-privacy" target="_blank" class="mx-3 md:mx-6">{{
-          $t('footer.privacy-policy')
-        }}</a>
-        <a href="https://www.ionos.de/terms-gtc/terms" target="_blank" class="mx-3 md:mx-6">{{
-          $t('footer.terms-and-conditions')
-        }}</a>
+  <div class="p-3 border-t-1 border-ui-border">
+    <div class="flex items-center justify-between text-sm">
+      <div class="mx-2 md:mx-6 hidden">
+        <div class="oao-statuspage-overall-status"></div>
       </div>
-      <div class="mx-2 md:mx-6">&copy; {{ year }} <span>{{ $t('footer.company-name') }}</span></div>
+      <div class="flex items-center">
+        <a class="p-2" href="https://www.ionos.de/impressum" target="_blank">
+          {{ $t('footer.imprint') }}
+        </a>
+        <a class="p-2" href="https://www.ionos.de/terms-gtc/terms-privacy" target="_blank">
+          {{ $t('footer.privacy-policy') }}
+        </a>
+        <a class="p-2" href="https://www.ionos.de/terms-gtc/terms" target="_blank">
+          {{ $t('footer.terms-and-conditions') }}
+        </a>
+      </div>
+      <div class="mx-2 md:mx-6">
+        &copy; {{ year }} <span>{{ $t('footer.company-name') }}</span>
+      </div>
     </div>
   </div>
 </template>
 
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
-
 <script>
 export default {
   computed: {
-    meta() {
-      return this.$static.metadata;
-    },
     year() {
       return new Date().getFullYear();
     },
