@@ -16,7 +16,7 @@
           </div>
         </aside>
 
-        <div class="grid grid-cols-1" :class="{ 'pl-0 lg:w-4/5': hasSidebar }">
+        <div class="grid grid-cols-1 overflow-y-scroll" :class="{ 'pl-0 lg:w-4/5': hasSidebar }">
           <slot />
         </div>
       </main>
