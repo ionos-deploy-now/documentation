@@ -4,7 +4,7 @@
       v-if="!focused"
       class="icon icon-lg flex-center !md:hidden"
       :title="$t('search.title')"
-      @click="focusSearch(true)"
+      @click="showSearch"
     />
     <label class="relative md:flex-center md:opacity-100" :class="searchLabelClass">
       <span class="sr-only">{{ $t('search.title') }}</span>
@@ -16,7 +16,7 @@
         class="block w-full py-2 pl-10 pr-4 border-2 rounded-lg bg-ui-sidebar border-ui-sidebar focus:bg-ui-background md:min-w-[200px] lg:min-w-[300px] xxl:min-w-[400px]"
         :class="{ 'rounded-b-none': showResult }"
         :placeholder="$t('search.placeholder')"
-        @focus="focusSearch"
+        @focus.stop="focusSearch"
         @blur="blurSearch"
         @input="onInput"
         @change="onChange"
@@ -90,7 +90,6 @@ export default {
     MagnifyIcon,
     ChevronRightIcon,
   },
-
   data() {
     return {
       query: '',
@@ -141,16 +140,19 @@ export default {
         this.focusIndex--;
       }
     },
-    focusSearch(focusInput = false) {
-      this.setSearchFocused(true);
+    showSearch() {
+      this.focusSearch()
       this.$nextTick(() => {
-        if (focusInput) {
-          this.$refs.input.focus();
-        }
+        this.$refs.input.focus();
       });
     },
-    blurSearch() {
-      this.setSearchFocused(false);
+    focusSearch() {
+      this.setSearchFocused(true);
+    },
+    blurSearch(event) {
+      if (event.sourceCapabilities) {
+        this.setSearchFocused(false);
+      }
     },
     updateSearchResults() {
       const fuse = new Fuse(this.headings, {
