@@ -120,8 +120,18 @@ module.exports = {
               }
             ],
           forceHttps: true,
+          notCachedFiles: ["/service-worker.js", "/assets/js/service-worker.js"],
         },
       },
+      {
+        use: "gridsome-plugin-service-worker",
+          options: {
+            networkFirst: {
+            routes: ["/", "/about-us", "/docs"],
+            fileTypes: ["document", "script", "style", "image"],
+          },
+        },
+    },
     /* {
       use: '@gridsome/plugin-sitemap',
       options: {},
