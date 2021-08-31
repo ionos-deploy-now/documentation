@@ -22,16 +22,6 @@
       </main>
     </div>
 
-    <div v-if="hasSidebar" class="fixed bottom-0 right-0 z-50 p-8 lg:hidden">
-      <button
-        class="icon p-3 text-white rounded-full shadow-lg bg-ui-primary hover:text-white"
-        @click="sidebarOpen = !sidebarOpen"
-      >
-        <CloseIcon v-if="sidebarOpen" />
-        <MenuIcon v-else />
-      </button>
-    </div>
-
     <LayoutFooter ref="footer" />
   </div>
 </template>
@@ -49,21 +39,12 @@ import { mapGetters, mapActions } from 'vuex';
 import Sidebar from '@/components/Sidebar';
 import LayoutHeader from '@/components/LayoutHeader';
 import LayoutFooter from '@/components/LayoutFooter';
-import MenuIcon from 'vue-material-design-icons/Menu'
-import CloseIcon from 'vue-material-design-icons/Close'
 
 export default {
   components: {
     LayoutFooter,
     Sidebar,
     LayoutHeader,
-    MenuIcon,
-    CloseIcon,
-  },
-  data() {
-    return {
-      sidebarOpen: false,
-    };
   },
   watch: {
     sidebarOpen(isOpen) {
@@ -71,7 +52,7 @@ export default {
     },
   },
   computed: {
-    ...mapGetters(['headerHeight', 'sidebarStyle']),
+    ...mapGetters(['headerHeight', 'sidebarStyle', 'sidebarOpen']),
     hasSidebar() {
       return this.$page?.markdownPage?.sidebar && this.headerHeight > 0;
     },

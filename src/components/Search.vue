@@ -1,19 +1,19 @@
 <template>
   <div @keydown.down="increment" @keydown.up="decrement" @keydown.enter="go" class="relative transistion-all">
     <MagnifyIcon
-      v-if="!focused"
+      v-if="!searchFocused"
       class="icon icon-lg flex-center !md:hidden"
       :title="$t('search.title')"
       @click="showSearch"
     />
-    <label class="relative md:flex-center md:opacity-100" :class="searchLabelClass">
+    <label class="relative md:flex-center md:opacity-100 outline-none" :class="searchLabelClass">
       <span class="sr-only">{{ $t('search.title') }}</span>
       <MagnifyIcon class="icon absolute left-3 inset-3 z-1 text-ui-typo" decorative />
       <input
         ref="input"
         type="search"
         :value="query"
-        class="block w-full py-2 pl-10 pr-4 border-2 rounded-lg bg-ui-sidebar border-ui-sidebar focus:bg-ui-background md:min-w-[200px] lg:min-w-[300px] xxl:min-w-[400px]"
+        class="block w-full py-2 pl-10 pr-4 border-2 rounded-lg bg-ui-sidebar border-ui-sidebar outline-none focus:bg-ui-background md:min-w-[200px] lg:min-w-[300px] xxl:min-w-[400px]"
         :class="{ 'rounded-b-none': showResult }"
         :placeholder="$t('search.placeholder')"
         @focus.stop="focusSearch"
@@ -98,7 +98,7 @@ export default {
     };
   },
   computed: {
-    ...mapGetters({ focused: 'searchFocused' }),
+    ...mapGetters(['searchFocused']),
     headings() {
       const result = [];
       const allPages = this.$static.allMarkdownPage.edges.map(edge => edge.node);
@@ -119,12 +119,12 @@ export default {
     },
     showResult() {
       // Show results, if the input is focused and the query is not empty.
-      return this.focused && this.query.length > 0;
+      return this.searchFocused && this.query.length > 0;
     },
     searchLabelClass() {
       return {
-        '<md:hidden': !this.focused,
-        '<md:opacity-0': !this.focused,
+        '<md:hidden': !this.searchFocused,
+        '<md:opacity-0': !this.searchFocused,
       };
     },
   },

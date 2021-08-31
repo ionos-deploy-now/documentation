@@ -4,7 +4,7 @@
       <div class="flex-center">
         <g-link to="/" class="flex-center mr-2 sm:mr-12" title="Home">
           <img class="h-8 mr-2 deploy-now-logo" src="/logo.svg" alt="Deploy Now logo" />
-          <DeployNow class="md:text-2xl" />
+          <DeployNow class="hidden sm:block md:text-2xl" />
         </g-link>
 
         <div v-if="navLinks.length > 0" class="hidden xl:block">
@@ -19,7 +19,7 @@
         </div>
       </div>
 
-      <div class="md:px-4 max-w-screen-xs <lg:ml-auto" :class="{ '<lg:flex-grow': searchFocused }">
+      <div class="p-3 max-w-screen-xs <lg:ml-auto" :class="{ '<lg:flex-grow': searchFocused }">
         <ClientOnly>
           <Search />
         </ClientOnly>
@@ -50,6 +50,14 @@
           <ExternalLinkIcon class="icon" />
           Deploy Now
         </a>
+
+        <button
+          class="icon p-2 text-white hover:text-white lg:hidden"
+          @click="setSidebarOpen(!sidebarOpen)"
+        >
+          <CloseIcon class="icon icon-lg" v-if="sidebarOpen" />
+          <MenuIcon class="icon icon-lg" v-else />
+        </button>
       </div>
     </div>
   </div>
@@ -75,9 +83,11 @@ query {
 </static-query>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapGetters, mapActions } from 'vuex';
 import GithubIcon from 'vue-material-design-icons/Github'
 import ExternalLinkIcon from 'vue-material-design-icons/OpenInNew'
+import MenuIcon from 'vue-material-design-icons/Menu'
+import CloseIcon from 'vue-material-design-icons/Close'
 import ToggleDarkMode from '@/components/ToggleDarkMode';
 import DeployNow from '@/components/DeployNow';
 
@@ -90,10 +100,11 @@ export default {
     ToggleDarkMode,
     GithubIcon,
     ExternalLinkIcon,
+    MenuIcon,
+    CloseIcon,
   },
-
   computed: {
-    ...mapGetters({ searchFocused: 'searchFocused' }),
+    ...mapGetters(['searchFocused', 'sidebarOpen']),
     iconsClass() {
       return {
         '<md:!hidden': this.searchFocused,
@@ -109,6 +120,9 @@ export default {
     navLinks() {
       return this.settings.nav.links;
     },
+  },
+  methods: {
+    ...mapActions(['setSidebarOpen']),
   },
 };
 </script>

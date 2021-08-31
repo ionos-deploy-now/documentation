@@ -5,10 +5,12 @@ export default function createStore() {
     state: {
       headerHeight: 0,
       searchFocused: false,
+      sidebarOpen: false,
     },
     getters: {
       headerHeight: state => state.headerHeight,
       searchFocused: state => state.searchFocused,
+      sidebarOpen: state => state.sidebarOpen,
       sidebarStyle: state => {
         return {
           top: `${state.headerHeight}px`,
@@ -23,6 +25,9 @@ export default function createStore() {
       setSearchFocused(state, isFocused) {
         state.searchFocused = isFocused;
       },
+      setSidebarOpen(state, isOpen) {
+        state.sidebarOpen = isOpen;
+      },
     },
     actions: {
       setHeaderHeight({ commit }, headerHeight) {
@@ -30,6 +35,9 @@ export default function createStore() {
       },
       setSearchFocused({ commit }, isFocused) {
         commit('setSearchFocused', isFocused);
+      },
+      setSidebarOpen({ commit }, isOpen) {
+        commit('setSidebarOpen', isOpen);
       },
     },
   });
