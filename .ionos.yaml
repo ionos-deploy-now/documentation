@@ -12,7 +12,7 @@ build:
   name: Build project
   command: npm run build
   environment:
-    SITE_URL: ${{ steps.project.outputs.site-url }} 
-    WEB_URL: https://ionos.space
-    GITHUB_URL: https://github.com/ionos-deploy-now/documentation/tree/main
     CI: true
+    SITE_URL: ${{ steps.project.outputs.site-url }}
+    URL_WEB: https://ionos.space
+    URL_GITHUB: https://github.com/ionos-deploy-now/documentation/tree/main

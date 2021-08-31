@@ -4,7 +4,6 @@
 .env
 .env.*
 !.env.example
-.github/workflows/ionos-space.yml
 .idea
 dist
 node_modules
