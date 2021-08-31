@@ -26,6 +26,7 @@
     "eslint-plugin-gridsome": "^1.6.2",
     "eslint-plugin-vue": "^7.15.1",
     "fuse.js": "^6.4.6",
+    "gridsome-plugin-htaccess": "^0.2.1",
     "gridsome-plugin-windicss": "^1.0.2",
     "node-sass": "^6.0.1",
     "prism-themes": "^1.8.0",
