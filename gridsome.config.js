@@ -108,7 +108,12 @@ module.exports = {
     {
         use: "gridsome-plugin-htaccess",
         options: {
-          textCompression: ["text/html"],
+          textCompression: [
+            "text/html",
+            "application/javascript",
+            "text/css",
+            "image/png",
+          ],
           redirections: [
               {
                 from: "/samples/",
