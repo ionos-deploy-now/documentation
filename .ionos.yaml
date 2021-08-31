@@ -4,7 +4,7 @@ setup:
 - name: Setup project
   action: actions/setup-node@v1
   properties:
-    node-version: v12.22.3
+    node-version: v14.x
 prepare:
   name: Prepare project environment
   command: npm ci
