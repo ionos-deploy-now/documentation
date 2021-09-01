@@ -8,8 +8,8 @@ const showBlog = process.env.SHOW_BLOG === 'true' || false;
 const fontFamilySans = '"Open Sans", ui-sans-serif, system-ui, sans-serif'
 
 module.exports = {
-  siteName: 'Deploy Now - Documentation',
-  siteDescription: 'Documentation of Deploy Now',
+  siteName: ' - Docs - IONOS Deploy Now',
+  siteDescription: 'Deploy Now is a platform for building and hosting Static Site Generators and Single Page Applications on inhouse engineered IONOS infrastructure.',
   siteUrl: process.env.SITE_URL,
   pathPrefix: process.env.PATH_PREFIX ? process.env.PATH_PREFIX : '',
   icon: {
