@@ -1,6 +1,6 @@
 ﻿---
 description: ''
-created: '2021-08-22'
+created: '2021-08-26'
 ---
 
 # How to deploy a Blog with React and Deploy Now
