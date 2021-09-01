@@ -14,9 +14,9 @@
         type="search"
         :value="query"
         class="block w-full py-2 pl-10 pr-4 border-2 rounded-lg bg-ui-sidebar border-ui-sidebar outline-none focus:bg-ui-background md:min-w-[200px] lg:min-w-[300px] xxl:min-w-[400px]"
-        :class="{ 'rounded-b-none': showResult }"
+        :class="{ 'md:rounded-b-none': showResult }"
         :placeholder="$t('search.placeholder')"
-        @focus.stop="focusSearch"
+        @focus="focusSearch"
         @blur="blurSearch"
         @input="onInput"
         @change="onChange"
@@ -150,9 +150,19 @@ export default {
       this.setSearchFocused(true);
     },
     blurSearch(event) {
-      if (event.sourceCapabilities) {
-        this.setSearchFocused(false);
+      // Blur event fires unexpectedly when focusing search with query in it
+      if (!event.sourceCapabilities) {
+        event.preventDefault()
+        this.$nextTick(() => {
+          this.$refs.input.focus();
+        });
+        return false;
       }
+
+      this.setSearchFocused(false);
+      this.$nextTick(() => {
+        this.$refs.input.blur();
+      });
     },
     updateSearchResults() {
       const fuse = new Fuse(this.headings, {
