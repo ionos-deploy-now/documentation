@@ -88,7 +88,7 @@ export default {
   },
   metaInfo() {
     const title = 'About us';
-    const description = 'Meet the team';
+    const description = 'Questions or feedback? Get in touch with the team behind IONOS Deploy Now.';
 
     return {
       title,
