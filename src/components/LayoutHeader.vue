@@ -19,7 +19,7 @@
         </div>
       </div>
 
-      <div class="p-3 max-w-screen-xs <lg:ml-auto" :class="{ '<lg:flex-grow': searchFocused }">
+      <div class="p-3 lg:p-0 max-w-screen-xs <lg:ml-auto" :class="{ '<lg:flex-grow': searchFocused }">
         <ClientOnly>
           <Search />
         </ClientOnly>
@@ -52,7 +52,7 @@
         </a>
 
         <button
-          class="icon p-2 text-white hover:text-white lg:hidden"
+          class="icon p-2 text-ui-typo active:text-ui-typo lg:hidden"
           @click="setSidebarOpen(!sidebarOpen)"
         >
           <CloseIcon class="icon icon-lg" v-if="sidebarOpen" />

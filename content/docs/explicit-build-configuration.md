@@ -48,10 +48,14 @@ Option `setup` is a run step used to install the project environment.
 
 The following properties are allowed:
 
+<div class="overflow-y-auto">
+
 |name|type|mandatory|description|example|
 |---|---|---|---|---|
 |name|`String`|`true`|name of the run step|e.g. `Setup project`|
 |command|`String`|`true`|any command|e.g. `npm ci`|
+
+</div>
 
 Common separation of commands by "\n" split.
 
@@ -61,10 +65,14 @@ Option `prepare` is a run step used to install all build dependencies.
 
 The following properties are allowed:
 
+<div class="overflow-y-auto">
+
 |name|type|mandatory|description|example|
 |---|---|---|---|---|
 |name|`String`|`true`|name of the run step|e.g. `Prepare environment`|
 |command|`String`|`true`|any command|e.g. `npm ci`|
+
+</div>
 
 Common separation of commands by "\n" split.
 
@@ -74,11 +82,15 @@ Option `build` is a run step used to build the project.
 
 The following properties are allowed:
 
+<div class="overflow-y-auto">
+
 |name|type|mandatory|description|example|
 |---|---|---|---|---|
 |name|`String`|`true`|name of the run step|e.g. `Build project`|
 |command|`String`|`true`|any command|e.g. `npm run build`|
 |environment|`Map<String, String>`|`false`|Entries are passed as env-variables for the build shell|e.g. `SITE_URL: https://example.com`|
+
+</div>
 
 Common separation of commands by "\n" split.
 

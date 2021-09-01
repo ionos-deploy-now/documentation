@@ -12,7 +12,7 @@
       <main class="relative justify-stretch bg-ui-background" :class="{ 'flex': hasSidebar }">
         <aside v-if="hasSidebar" class="sidebar" :class="{ open: sidebarOpen }" :style="sidebarStyle">
           <div class="w-full pb-16 bg-ui-background">
-            <Sidebar @navigate="sidebarOpen = false" />
+            <Sidebar @navigate="setSidebarOpen(false)" />
           </div>
         </aside>
 
@@ -58,7 +58,7 @@ export default {
     },
   },
   methods: {
-    ...mapActions(['setHeaderHeight']),
+    ...mapActions(['setHeaderHeight', 'setSidebarOpen']),
     onResize() {
       if (this.$refs.header) {
         this.setHeaderHeight(this.$refs.header.offsetHeight);
