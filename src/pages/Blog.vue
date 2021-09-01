@@ -47,7 +47,7 @@ export default {
     formatDate,
   },
   metaInfo: {
-    title: 'Blog',
+    title: 'Deploy Now Blog - All Posts',
   },
 };
 </script>
