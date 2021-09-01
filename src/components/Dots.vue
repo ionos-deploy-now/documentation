@@ -59,7 +59,7 @@ export default {
     updateBounds() {
       this.width = this.$refs.wrapper.offsetWidth;
       this.height = this.$refs.wrapper.offsetHeight;
-    }
+    },
   },
   mounted() {
     this.init();
@@ -67,6 +67,6 @@ export default {
   },
   destroyed() {
     window.removeEventListener('resize', this.updateBounds)
-  }
+  },
 };
 </script>

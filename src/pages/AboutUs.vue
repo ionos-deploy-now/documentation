@@ -84,7 +84,7 @@ export default {
   methods: {
     stripProtocol(str) {
       return str.replace(/https?:\/\//, '')
-    }
+    },
   },
   metaInfo() {
     const title = 'About us';

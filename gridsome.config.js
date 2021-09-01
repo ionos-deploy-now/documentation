@@ -105,6 +105,38 @@ module.exports = {
         },
       },
     },
+    {
+        use: "gridsome-plugin-htaccess",
+        options: {
+          textCompression: [
+            "text/html",
+            "application/javascript",
+            "text/css",
+            "image/png",
+          ],
+          redirections: [
+              {
+                from: "/samples/",
+                to: "/docs/framework-samples/",
+              },
+              {
+                from: "/samples",
+                to: "/docs/framework-samples/",
+              }
+            ],
+          forceHttps: true,
+          notCachedFiles: ["/service-worker.js", "/assets/js/service-worker.js"],
+        },
+      },
+      {
+        use: "gridsome-plugin-service-worker",
+          options: {
+            networkFirst: {
+            routes: ["/", "/about-us", "/docs"],
+            fileTypes: ["document", "script", "style", "image"],
+          },
+        },
+    },
     /* {
       use: '@gridsome/plugin-sitemap',
       options: {},

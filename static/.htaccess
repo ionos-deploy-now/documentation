@@ -1,0 +1,53 @@
+# Users' browser will be forced to visit the HTTPS version of your web app
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+
+# Enable text compression
+<IfModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/html
+	AddOutputFilterByType DEFLATE application/javascript
+	AddOutputFilterByType DEFLATE text/css
+	AddOutputFilterByType DEFLATE image/png
+</IfModule>
+
+
+# Prevent the following files to be cached by your users' browser
+<Files "/service-worker.js">
+	<IfModule mod_expires.c>
+		ExpiresActive Off
+	</IfModule>
+	<IfModule mod_headers.c>
+		FileETag None
+		Header unset ETag
+		Header unset Pragma
+		Header unset Cache-Control
+		Header unset Last-Modified
+		Header set Pragma "no-cache"
+		Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+		Header set Expires "Thu, 1 Jan 1970 00:00:00 GMT"
+	</IfModule>
+</Files>
+<Files "/assets/js/service-worker.js">
+	<IfModule mod_expires.c>
+		ExpiresActive Off
+	</IfModule>
+	<IfModule mod_headers.c>
+		FileETag None
+		Header unset ETag
+		Header unset Pragma
+		Header unset Cache-Control
+		Header unset Last-Modified
+		Header set Pragma "no-cache"
+		Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+		Header set Expires "Thu, 1 Jan 1970 00:00:00 GMT"
+	</IfModule>
+</Files>
+
+
+# Permanents redirections (301)
+Redirect 301 /samples/ /docs/framework-samples/
+Redirect 301 /samples /docs/framework-samples/
+
