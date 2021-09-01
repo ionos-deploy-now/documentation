@@ -25,8 +25,8 @@ export default {
   },
 
   metaInfo() {
-    const title = 'Deploy Now documentation';
-    const description = 'Documentation of Deploy Now';
+    const title = 'Welcome';
+    const description = 'Deploy Now is a platform for building and hosting Static Site Generators and Single Page Applications on inhouse engineered IONOS infrastructure.';
 
     return {
       title: title,
