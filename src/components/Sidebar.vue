@@ -1,5 +1,5 @@
 <template>
-  <div ref="sidebar" v-if="markdownPage" class="px-4 pt-8 lg:pt-12">
+  <div ref="sidebar" class="px-4 pt-8 lg:pt-12">
     <div
       v-for="(section, index) in sidebar.sections"
       :key="section.title"

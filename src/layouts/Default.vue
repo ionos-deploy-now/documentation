@@ -10,7 +10,7 @@
       </header>
 
       <main class="relative justify-center bg-ui-background" :class="{ 'flex': hasSidebar }">
-        <aside class="sidebar" :class="{ 'hidden': !hasSidebar, open: sidebarOpen }" :style="sidebarStyle">
+        <aside class="sidebar" :class="{ 'lg:hidden': !hasSidebar, open: sidebarOpen }" :style="sidebarStyle">
           <div class="w-full pb-16 bg-ui-background">
             <Sidebar @navigate="setSidebarOpen(false)" />
           </div>
