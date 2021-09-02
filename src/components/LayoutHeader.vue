@@ -105,12 +105,6 @@ export default {
   },
   computed: {
     ...mapGetters(['searchFocused', 'sidebarOpen']),
-    iconsClass() {
-      return {
-        '<md:!hidden': this.searchFocused,
-        '<md:opacity-0': this.searchFocused,
-      };
-    },
     meta() {
       return this.$static.metadata;
     },
@@ -126,11 +120,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-@screen <md {
-  .hide-mobile {
-    display: none;
-  }
-}
-</style>

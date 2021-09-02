@@ -41,7 +41,7 @@
           <img
             :src="`/team/${member.image}`"
             :alt="`Image of ${member.name}`"
-            class="object-cover max-w-[200px]"
+            class="object-cover max-w-[150px] lg:max-w-[200px]"
             style="background-color: #f5f5f5"
           />
           <div class="p-4 space-y-4">

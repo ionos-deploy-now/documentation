@@ -1,5 +1,5 @@
 <template>
-  <div ref="sidebar" v-if="showSidebar" class="px-4 pt-8 lg:pt-12">
+  <div ref="sidebar" v-if="markdownPage" class="px-4 pt-8 lg:pt-12">
     <div
       v-for="(section, index) in sidebar.sections"
       :key="section.title"
@@ -21,7 +21,7 @@
           <g-link :to="`${page.path}`" class="flex items-center py-1 font-semibold">
             <span
               class="absolute w-1 h-4 -ml-3 opacity-0 bg-ui-primary transition transform scale-0 origin-center"
-              :class="{ 'opacity-100 scale-100': currentPage.path === page.path }"
+              :class="{ 'opacity-100 scale-100': markdownPage && markdownPage.path === page.path }"
             ></span>
             {{ page.title }}
           </g-link>
@@ -50,38 +50,38 @@ query Sidebar {
       }
     }
   }
+  allMarkdownPage {
+    edges {
+      node {
+        path
+        title
+      }
+    }
+  }
 }
 </static-query>
 
 <script>
 export default {
-  data() {
-    return {
-      expanded: [],
-    };
-  },
   computed: {
+    markdownPage() {
+      return this.$page?.markdownPage;
+    },
     pages() {
-      return this.$page.allMarkdownPage.edges.map(edge => edge.node);
+      return this.$static.allMarkdownPage.edges.map(edge => edge.node);
     },
     sidebar() {
-      return this.$static.metadata.settings.sidebar.find(sidebar => sidebar.name === this.$page.markdownPage.sidebar);
+      return this.$static.metadata.settings.sidebar.find(sidebar => sidebar.name === this.markdownPage?.sidebar || 'docs');
     },
     nav() {
       return this.$static.metadata.settings.nav.links;
-    },
-    showSidebar() {
-      return this.$page.markdownPage.sidebar && this.sidebar;
-    },
-    currentPage() {
-      return this.$page.markdownPage;
     },
   },
   methods: {
     anchorClass({ path }) {
       return {
-        'text-ui-primary': this.currentPage.path === path,
-        'transition transform hover:translate-x-1 hover:text-ui-primary': !this.currentPage.path === path,
+        'text-ui-primary': this.markdownPage?.path === path,
+        'transition transform hover:translate-x-1 hover:text-ui-primary': !this.markdownPage?.path === path,
       };
     },
     findPages(links) {
