@@ -48,17 +48,12 @@ Customer service touchpoints have a large impact on the satisfaction of shop vis
 Even though a lot of communication happens via digital channels, many shop customers like to speak to someone in person. Fruchtec recommends [Placetel](https://www.placetel.com/gb) for managing phone communication. Placetel refers to themselves as a cloud phone system, which means that that their solution is entirely software-based, hosted in the cloud and operates calls via Voice over IP. Placetel easily integrates with any software where client information is managed.
 
 ## Tipps for getting started with Vue.js and API-first eCommerce systems
+
 ### 1. Learn Vue
+Fruchtec highly recommends [Vue Mastery](https://www.vuemastery.com/) to learn the fundamentals of Vue. Vue Mastery offers free and paid courses as well as team discounts.
 ### 2. Learn how to use APIs
-### 3. Understand the Shopify API
-
-1. Learn Vue
-2. Learn how to use APIs
-3. Understand the Shopify API
-
-## Easily deploy your frontend with Deploy Now
-
-
-
-
-]
+The next step would be to understand the concept and handling of APIs in general. How do I open connections? What are asynchronous calls? A fun way to do this is playing around with [chucknorris.io](https://api.chucknorris.io/), a free API that provides facts about Chuck Norris.
+### 3. Experiment with the Shopify API
+Once the API concept is understood, it makes sense to work with Shopify's specific API. All information needed to get started can be found in the [documentation](https://shopify.dev/api). 
+### 4. Host a frontend on Deploy Now and start with the first integrations
+Deploy your Vue frontend instantly from your GitHub account to IONOS inhouse engineered infrastructure. Push new code to you repository and your website code is updated instantly. A step by step guide about how to set up your deployment can be found [here](https://docs.ionos.space/docs/). 
