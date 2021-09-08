@@ -15,7 +15,7 @@ Fruchtec views themselves as the construction company and the fitter of the rest
 
 ## Merging the digital and physical world
 
-For a good shopping experience, a holistic toolchain is required that accompanies both buyer-side and staff-side processes. These processes can be entirely digital - or involve physical activities. Most shop owners have to manage a warehouse. They need to track and refill their inventory, send out packaged to clients and manage returns. Many clients combine online and local stores. Customers can view items physically before buying them online or reserving them online and picking them up in the store. Fruchtecs goal is not to replace human activities with tech. Instead they want to minimize human errors that cause bad customer experiences.
+For a good shopping experience, a holistic toolchain is required that accompanies both buyer-side and staff-side processes. These processes can be entirely digital - or involve physical activities. Most shop owners have to manage a warehouse. They need to track and refill their inventory, send out packages and manage returns. Many clients combine online and local stores. Customers can view items physically before buying them online or reserving them online and picking them up in the store. Fruchtecs goal is not to replace human activities with tech. Instead they want to minimize human errors that cause bad customer experiences.
 
 ## Magaging shop processes with API-first dashboards
 
