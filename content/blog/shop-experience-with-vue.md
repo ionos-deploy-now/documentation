@@ -5,7 +5,7 @@ created: '2021-09-07'
 
 # Building API-first eCommerce Dashboards with Vue.js and Deploy Now
 
-A modern eCommerce system is both, tailored to the needs of the visitor and the maintainer of the shop. A good UX for visitors alone does not make a shop project successful if managing shipping processes or customer requests is too cumbersome for shop owners. [IONOS Agency Partner](https://www.ionos.com/agency-partner) Fruchtec is specialized on building state-of-the-art eCommerce experiences. [Fruchtec](https://www.fruchtec.de/) combines a set of specialized services for a shop experience that feels smooth for their clients and their client's clients. All these services are connected to a Vue.js client dashboard via API. 
+A modern eCommerce system is both, tailored to the needs of the visitor and the maintainer of the shop. A good UX for visitors alone does not make a shop project successful if managing shipping processes or customer requests is too cumbersome for shop owners. [IONOS Agency Partner](https://www.ionos.com/agency-partner) Fruchtec is specialized on building state-of-the-art eCommerce experiences. [Fruchtec](https://www.fruchtec.de/) combines a set of specialized services for a shop experience that feels smooth for their clients and their client's clients. All these services talk to to a Vue.js client dashboards via API. 
 
 ## A good shop experience defined
 
@@ -15,15 +15,17 @@ Fruchtec views themselves as the construction company and the fitter of the rest
 
 ## Merging the digital and physical world
 
-For a good shopping experience, a holistic toolchain is required that accompanies both buyer-side and staff-side processes. These processes can be entirely digital - but a lot of them also involve physical activities. All eCommerce shops have to manage a warehouse. They need to track and refill their inventory, send out packaged to clients and manage returns. Many clients combine online and local stores. Customers can view items physically before buying them online or reserving them online and picking them up in the store. 
+For a good shopping experience, a holistic toolchain is required that accompanies both buyer-side and staff-side processes. These processes can be entirely digital - or involve physical activities. Most shop owners have to manage a warehouse. They need to track and refill their inventory, send out packaged to clients and manage returns. Many clients combine online and local stores. Customers can view items physically before buying them online or reserving them online and picking them up in the store. Fruchtecs goal is not to replace human activities with tech. Instead they want to minimize human errors that cause bad customer experiences.
 
 ## Magaging shop processes with specialized services and Vue dashboards
 
-Fruchtec's tackles this challenge by outsourcing different parts of the setup to specialized services. All these services are connected to dashboards that are designed around certain usecases of the shop's staff. By doing this, Fruchtec follows an API-first approach. 
+Fruchtec's supports their clients by outsourcing different tasks to specialized sercives. All these services are connected to dashboards that are designed around certain usecases of the shop's staff. By doing this, Fruchtec follows an API-first approach. 
 
-> API first means...
+> "The API-first approach refers to a strategy in software development where an application programming interface (API) is created before any code is written. An API, of course, is a type of software that lets an application obtain data from another. It allows various applications to communicate with one another." - Techslang.com
 
-Advantage of this is...
+API-first allows a complete decoupling of frontend and backend. Backend applications can be reused and connected to different client dashboards. The requirements of a dashboard in the warehouse that eases the sending process differs from a dashboard for a stakeholder that manages the marketing campaigns or customer requests. A decoupled approach allows to glue the right information together for the right usecase. Another big advantage is that sources of error are separated and easier to identify. Even if a single backend component fails, the frontend can still run and can display information about the problem. Different technologies can be used for different services and single services can be easily replaced as long as the API doesn't change.
+
+## A powerful tech stack for a modern eCommerce setup
 
 ### Vue.js for customer dashboards
 ### Fruchtec's recommendations for the right service providers
