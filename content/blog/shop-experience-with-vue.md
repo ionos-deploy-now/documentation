@@ -25,7 +25,7 @@ Fruchtec's key approach is to outsource different parts of an eCommerce experien
 
 API-first allows a complete decoupling of frontend and backend. Backend applications can be reused and connected to different client dashboards. The requirements of a dashboard in the warehouse that eases the shipping process differs from a dashboard for a stakeholder that manages the marketing campaigns or customer requests. A decoupled approach allows to glue the right information together for the right usecase. Another big advantage is that sources of error are separated and easier to identify. Even if a single backend component fails, the frontend can still run and can display information about the problem. Different technologies can be used for different services and single services can be easily replaced as long as the API doesn't change.
 
-## Fruchtecs recommendations for a powerful eCommerce setup 
+## Fruchtec's recommendations for a powerful eCommerce setup 
 
 ### Vue.js for customer dashboards
 
