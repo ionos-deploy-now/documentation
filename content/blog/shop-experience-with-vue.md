@@ -33,7 +33,7 @@ Fruchtec recommends Vue.js for building dashboards frontend. [Vue](https://vuejs
 
 ### Shopify for the online shop system
 
-The shop logic and frontends are build with [Shopify](https://www.shopify.com/). Shopify has a broad offering from affordable packages for small businesses to large, cloud-based shop system with Shopify Plus. A large App Store allows users to easily connect marketing, accounting, buying and delivery processes to their shops. Fruchtec especially enjoys to work with Liquid, an open-source templating language that can be used for building shop logics. The biggest advantage of Shopify is their sophisticated [API](https://shopify.dev/api), which is used by Fruchtec to talk to their various dashboards. An Admin API provides access to product, order and customer data whereas a seperated Storefront API can be used to take shop functionalities to any touchpoint. As Shopify also offers a GitHub integration, combining Deploy Now and Shopify allows Fruchtec to manage a majority of their code in the same place. Developers can push changes to shop themes and can instantly preview changes including the shops live data.
+The shop logic and frontends are build with [Shopify](https://www.shopify.com/). Shopify has a broad offering ranging from affordable packages for small businesses to large, cloud-based shop system with Shopify Plus. A large App Store allows users to easily connect marketing, accounting, buying and delivery processes to their shops. Fruchtec especially enjoys to work with Liquid, an open-source templating language that can be used for building shop logics. The biggest advantage of Shopify is their sophisticated [API](https://shopify.dev/api), which is used by Fruchtec to talk to various dashboards and services. An Admin API provides access to product, order and customer data whereas a seperated Storefront API can be used to take shop functionalities to any touchpoint. As Shopify also offers a GitHub integration, combining Deploy Now and Shopify allows Fruchtec to manage a majority of their code in the same place. Developers can push changes to shop themes and can instantly preview changes including the shops live data.
 
 ### Sendcloud for the shipping process
 
@@ -41,7 +41,7 @@ The shipping of orders is oftentimes the most manual process of an eCommerce. Fr
 
 ### Zendesk for customer service
 
-Customer service touchpoints have a large impact on the satisfaction of shop visitors, but also play a large role in the satisfaction of Fruchtec's clients. With the help of [Zendesk](https://www.zendesk.com/), Fruchtec installs a ticket queue in which product specific questions are forwarded to the shop owners, whereas technical issues are directly forwarded to Fruchtec. If a visitor has a technical issue with for example creating an account, the issue is istantly forwarded to a developer. Thus, issues can be fixed immediately - and the shop owner can focus on his business. 
+Customer service touchpoints have a large impact on the satisfaction of shop visitors, but also play a large role in the satisfaction of Fruchtec's clients. With the help of [Zendesk](https://www.zendesk.com/), Fruchtec installs a ticket queue in which product specific questions are forwarded to the shop owners, whereas technical issues are directly forwarded to Fruchtec. If a visitor has a technical issue with for example creating an account, the issue is istantly forwarded to a developer. Thus, issues can be fixed immediately - and shop owners can focus on their business. 
 
 ### Placetel for managing phone calls
 
