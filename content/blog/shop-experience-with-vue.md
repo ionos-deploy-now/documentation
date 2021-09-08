@@ -17,7 +17,7 @@ Fruchtec views themselves as the construction company and the fitter of the rest
 
 For a good shopping experience, a holistic toolchain is required that accompanies both buyer-side and staff-side processes. These processes can be entirely digital - or involve physical activities. Most shop owners have to manage a warehouse. They need to track and refill their inventory, send out packaged to clients and manage returns. Many clients combine online and local stores. Customers can view items physically before buying them online or reserving them online and picking them up in the store. Fruchtecs goal is not to replace human activities with tech. Instead they want to minimize human errors that cause bad customer experiences.
 
-## Magaging shop processes with specialized services and Vue dashboards
+## Magaging shop processes with API-first dashboards
 
 Fruchtec's supports their clients by outsourcing different tasks to specialized sercives. All these services are connected to dashboards that are designed around certain usecases of the shop's staff. By doing this, Fruchtec follows an API-first approach. 
 
@@ -28,7 +28,9 @@ API-first allows a complete decoupling of frontend and backend. Backend applicat
 ## A powerful tech stack for a modern eCommerce setup
 
 ### Vue.js for customer dashboards
-### Fruchtec's recommendations for the right service providers
+
+Fruchtec recommends Vue.js for building dashboards frontend. [Vue](https://vuejs.org/) is an open-source JavaScript framework for building single page applications and user interfaces. Fruchtec likes that many positive aspects that can be found in React and Angular individually are merged into Vue. They enjoy working with Vue-based UI libraries like [Vuetify](https://vuetifyjs.com/en/) and [BootstrapVue](https://bootstrap-vue.org/). Thanks to its adoptability and scalability, Vue is equally suitable for beginners as well as large enterprises. The framework makes it easy to follow clean code rules and comes with a large community that can help with learning best practices.
+
 ### Shopify for the online shop system
 ### Sendcloud for
 ### Zendesk
