@@ -19,7 +19,7 @@ For a good shopping experience, a holistic toolchain is required that accompanie
 
 ## Magaging shop processes with API-first dashboards
 
-Fruchtec's supports their clients by outsourcing different tasks to specialized sercives. All these services are connected to dashboards that are designed around certain usecases of the shop's staff. By doing this, Fruchtec follows an API-first approach. 
+Fruchtec's key approach is to outsource different parts of an eCommerce experience to specialized sercives. All these services are connected to dashboards that are designed around certain usecases of the shop's staff. By doing this, Fruchtec follows an API-first approach. 
 
 > "The API-first approach refers to a strategy in software development where an application programming interface (API) is created before any code is written. An API, of course, is a type of software that lets an application obtain data from another. It allows various applications to communicate with one another." - Techslang.com
 
