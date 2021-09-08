@@ -15,7 +15,7 @@ Fruchtec views themselves as the construction company and the fitter of the rest
 
 ## Merging the digital and physical world
 
-For a good shopping experience, a holistic toolchain is required that accompanies both buyer-side and staff-side processes. These processes can be entirely digital - or involve physical activities. Most shop owners have to manage a warehouse. They need to track and refill their inventory, send out packages and manage returns. Many clients combine online and local stores. Customers can view items physically before buying them online or reserving them online and picking them up in the store. Fruchtecs goal is not to replace human activities with tech. Instead they want to minimize human errors that cause bad customer experiences.
+For a good shopping experience, a holistic toolchain is required that accompanies both buyer-side and staff-side processes. These processes can be entirely digital - or involve physical activities. Most shop owners have to manage a warehouse. They need to track and refill their inventory, send out packages and manage returns. Many clients combine online and local stores. Customers can view items physically before buying them online or reserving them online and picking them up in the store. Fruchtec's goal is not to replace human activities with tech. Instead they want to minimize human errors that cause bad customer experiences.
 
 ## Managing shop processes with API-first dashboards
 
@@ -41,7 +41,7 @@ The shipping of orders is oftentimes the most manual process of an eCommerce. Fr
 
 ### Zendesk for customer service
 
-Customer service touch points have a large impact on the satisfaction of shop visitors, but also play a large role in the satisfaction of Fruchtec's clients. With the help of [Zendesk](https://www.zendesk.com/), Fruchtec installs a ticket queue in which product specific questions are forwarded to the shop owners, whereas technical issues are directly forwarded to Fruchtec. If a visitor has a technical issue with for example creating an account, the issue is instantly forwarded to a developer. Thus, issues can be fixed immediately - and shop owners can focus on their business. 
+Customer service touch points have a large impact on the satisfaction of shop visitors, but also play a large role in the satisfaction of Fruchtec's clients. With the help of [Zendesk](https://www.zendesk.com/), Fruchtec installs a ticket queue in which product specific questions are forwarded to the shop owners, whereas technical issues are directly forwarded to Fruchtec. If a visitor has a technical issue with creating an account for example, the issue is instantly forwarded to a developer. Thus, issues can be fixed immediately - and shop owners can focus on their business. 
 
 ### Placetel for managing phone calls
 
