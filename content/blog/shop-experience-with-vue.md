@@ -49,7 +49,7 @@ Even though a lot of communication happens via digital channels, many shop custo
 
 ## Tipps for getting started with Vue.js and API-first eCommerce systems
 
-### 1. Learn Vue
+### 1. Learn the basic concepts of Vue
 Fruchtec highly recommends [Vue Mastery](https://www.vuemastery.com/) to learn the fundamentals of Vue. Vue Mastery offers free and paid courses as well as team discounts.
 ### 2. Learn how to use APIs
 The next step would be to understand the concept and handling of APIs in general. How do I open connections? What are asynchronous calls? A fun way to do this is playing around with [chucknorris.io](https://api.chucknorris.io/), a free API that provides facts about Chuck Norris.
