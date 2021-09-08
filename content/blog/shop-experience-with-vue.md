@@ -47,7 +47,14 @@ Customer service touchpoints have a large impact on the satisfaction of shop vis
 
 Even though a lot of communication happens via digital channels, many shop customers like to speak to someone in person. Fruchtec recommends [Placetel](https://www.placetel.com/gb) for managing phone communication. Placetel refers to themselves as a cloud phone system, which means that that their solution is entirely software-based, hosted in the cloud and operates calls via Voice over IP. Placetel easily integrates with any software where client information is managed.
 
-## Tipps for getting started with Vue.js for online shops 
+## Tipps for getting started with Vue.js and API-first eCommerce systems
+### 1. Learn Vue
+### 2. Learn how to use APIs
+### 3. Understand the Shopify API
+
+1. Learn Vue
+2. Learn how to use APIs
+3. Understand the Shopify API
 
 ## Easily deploy your frontend with Deploy Now
 
