@@ -24,6 +24,10 @@ export default function (Vue, { router, head, appOptions }) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css2?family=Overpass:wght@100;300&display=swap',
   });
+  head.meta.push({
+    name: 'google-site-verification',
+    content: '4sJSGlVIt-ws6sEGrKNfhBG3lmMXRUI_tz0Cd0gx5E8'
+  })
 
   // Add meta data to each page
   router.beforeEach((to, _from, next) => {
