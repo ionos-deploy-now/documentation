@@ -36,9 +36,9 @@ query {
 
 <script>
 import { mapGetters, mapActions } from 'vuex';
-import Sidebar from '@/components/Sidebar';
-import LayoutHeader from '@/components/LayoutHeader';
-import LayoutFooter from '@/components/LayoutFooter';
+import Sidebar from '~/components/Sidebar';
+import LayoutHeader from '~/components/LayoutHeader';
+import LayoutFooter from '~/components/LayoutFooter';
 
 export default {
   components: {

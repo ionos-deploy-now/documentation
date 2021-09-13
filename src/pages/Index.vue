@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import HomeHero from '@/components/Home/Hero';
-import HomeFeatures from '@/components/Home/Features';
-import HomeSamples from '@/components/Home/Samples';
-import HomeWorkflow from '@/components/Home/Workflow';
-import HomeTeam from '@/components/Home/Team';
+import HomeHero from '~/components/Home/Hero';
+import HomeFeatures from '~/components/Home/Features';
+import HomeSamples from '~/components/Home/Samples';
+import HomeWorkflow from '~/components/Home/Workflow';
+import HomeTeam from '~/components/Home/Team';
 
 export default {
   components: {

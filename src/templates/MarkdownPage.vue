@@ -58,10 +58,10 @@ query ($id: ID!) {
 
 <script>
 import { mapGetters } from 'vuex';
-import OnThisPage from '@/components/OnThisPage.vue';
-import NextPrevLinks from '@/components/NextPrevLinks.vue';
-import EditLink from '@/components/EditLink.vue';
-import {capitalize} from '@/libs/util';
+import OnThisPage from '~/components/OnThisPage.vue';
+import NextPrevLinks from '~/components/NextPrevLinks.vue';
+import EditLink from '~/components/EditLink.vue';
+import { capitalize } from '~/libs/util';
 
 export default {
   components: {
@@ -87,7 +87,7 @@ export default {
     },
   },
   metaInfo() {
-    const contentType = capitalize(this.$page.markdownPage.contentType)
+    const contentType = capitalize(this.$page.markdownPage.contentType);
     const title = `${this.$page.markdownPage.title} | ${contentType}`;
     const description = this.$page.markdownPage.description || this.$page.markdownPage.excerpt;
 

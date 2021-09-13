@@ -67,7 +67,7 @@
 </template>
 
 <script>
-import TeamMembers from '@/assets/team.json';
+import TeamMembers from '~/assets/team.json';
 import HeartIcon from 'vue-material-design-icons/HeartOutline'
 import GithubIcon from 'vue-material-design-icons/Github'
 

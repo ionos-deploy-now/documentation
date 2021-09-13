@@ -32,7 +32,7 @@ query {
 </page-query>
 
 <script>
-import { formatDate } from '@/libs/util';
+import { formatDate } from '~/libs/util';
 
 export default {
   computed: {

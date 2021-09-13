@@ -4,5 +4,6 @@ export function formatDate(timestamp) {
 }
 
 export function capitalize(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
+  const str = string.toString();
+  return str.charAt(0).toUpperCase() + str.slice(1);
 }

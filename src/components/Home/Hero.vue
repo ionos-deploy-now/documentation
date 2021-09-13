@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import DeployNow from '@/components/DeployNow';
+import DeployNow from '~/components/DeployNow';
 
 export default {
   components: {

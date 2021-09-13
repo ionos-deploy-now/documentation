@@ -88,8 +88,8 @@ import GithubIcon from 'vue-material-design-icons/Github'
 import ExternalLinkIcon from 'vue-material-design-icons/OpenInNew'
 import MenuIcon from 'vue-material-design-icons/Menu'
 import CloseIcon from 'vue-material-design-icons/Close'
-import ToggleDarkMode from '@/components/ToggleDarkMode';
-import DeployNow from '@/components/DeployNow';
+import ToggleDarkMode from '~/components/ToggleDarkMode';
+import DeployNow from '~/components/DeployNow';
 
 const Search = () => import(/* webpackChunkName: "search" */ '@/components/Search').catch(error => console.warn(error));
 
