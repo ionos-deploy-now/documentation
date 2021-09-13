@@ -7,3 +7,7 @@ export function capitalize(string) {
   const str = string.toString();
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
+
+export function stripProtocol(url) {
+  return url.replace(/https?:\/\//, '');
+}

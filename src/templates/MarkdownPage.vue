@@ -62,6 +62,7 @@ import OnThisPage from '~/components/OnThisPage.vue';
 import NextPrevLinks from '~/components/NextPrevLinks.vue';
 import EditLink from '~/components/EditLink.vue';
 import { capitalize } from '~/libs/util';
+import { metaInfo } from '~/libs/seo';
 
 export default {
   components: {
@@ -91,35 +92,7 @@ export default {
     const title = `${this.$page.markdownPage.title} | ${contentType}`;
     const description = this.$page.markdownPage.description || this.$page.markdownPage.excerpt;
 
-    return {
-      title,
-      meta: [
-        {
-          name: 'description',
-          content: description,
-        },
-        {
-          key: 'og:title',
-          name: 'og:title',
-          content: title,
-        },
-        {
-          key: 'twitter:title',
-          name: 'twitter:title',
-          content: title,
-        },
-        {
-          key: 'og:description',
-          name: 'og:description',
-          content: description,
-        },
-        {
-          key: 'twitter:description',
-          name: 'twitter:description',
-          content: description,
-        },
-      ],
-    };
+    return metaInfo({ title, description });
   },
 };
 </script>

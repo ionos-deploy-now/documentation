@@ -1,4 +1,4 @@
-export function metaInfo(title, description) {
+export function metaInfo({ title, description }) {
   return {
     title: title,
     meta: [
@@ -12,14 +12,14 @@ export function metaInfo(title, description) {
         content: title,
       },
       {
-        key: 'twitter:title',
-        name: 'twitter:title',
-        content: title,
-      },
-      {
         key: 'og:description',
         name: 'og:description',
         content: description,
+      },
+      {
+        key: 'twitter:title',
+        name: 'twitter:title',
+        content: title,
       },
       {
         key: 'twitter:description',

@@ -68,8 +68,10 @@
 
 <script>
 import TeamMembers from '~/assets/team.json';
-import HeartIcon from 'vue-material-design-icons/HeartOutline'
-import GithubIcon from 'vue-material-design-icons/Github'
+import HeartIcon from 'vue-material-design-icons/HeartOutline';
+import GithubIcon from 'vue-material-design-icons/Github';
+import { stripProtocol } from '~/libs/util';
+import { metaInfo } from '~/libs/seo';
 
 export default {
   components: {
@@ -82,43 +84,11 @@ export default {
     };
   },
   methods: {
-    stripProtocol(str) {
-      return str.replace(/https?:\/\//, '')
-    },
+    stripProtocol,
   },
-  metaInfo() {
-    const title = 'About us';
-    const description = 'Questions or feedback? Get in touch with the team behind IONOS Deploy Now.';
-
-    return {
-      title,
-      meta: [
-        {
-          name: 'description',
-          content: description,
-        },
-        {
-          key: 'og:title',
-          name: 'og:title',
-          content: title,
-        },
-        {
-          key: 'twitter:title',
-          name: 'twitter:title',
-          content: title,
-        },
-        {
-          key: 'og:description',
-          name: 'og:description',
-          content: description,
-        },
-        {
-          key: 'twitter:description',
-          name: 'twitter:description',
-          content: description,
-        },
-      ],
-    };
-  },
+  metaInfo: metaInfo({
+    title: 'About us',
+    description: 'Questions or feedback? Get in touch with the team behind IONOS Deploy Now.',
+  }),
 };
 </script>
