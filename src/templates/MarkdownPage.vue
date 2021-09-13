@@ -28,6 +28,7 @@ query ($id: ID!) {
     id
     title
     description
+    contentType
     path
     fileInfo {
       path
@@ -60,6 +61,7 @@ import { mapGetters } from 'vuex';
 import OnThisPage from '@/components/OnThisPage.vue';
 import NextPrevLinks from '@/components/NextPrevLinks.vue';
 import EditLink from '@/components/EditLink.vue';
+import {capitalize} from '@/libs/util';
 
 export default {
   components: {
@@ -85,11 +87,12 @@ export default {
     },
   },
   metaInfo() {
-    const title = this.$page.markdownPage.title;
+    const contentType = capitalize(this.$page.markdownPage.contentType)
+    const title = `${this.$page.markdownPage.title} | ${contentType}`;
     const description = this.$page.markdownPage.description || this.$page.markdownPage.excerpt;
 
     return {
-      title: title,
+      title,
       meta: [
         {
           name: 'description',
