@@ -5,7 +5,7 @@ created: '2021-09-07'
 
 # Building API-first eCommerce Dashboards with Vue.js and Deploy Now
 
-A modern eCommerce system is both, tailored to the needs of the visitor and the maintainer of the shop. A good UX for visitors alone does not make a shop project successful if managing shipping processes or customer requests is too cumbersome for shop owners. [IONOS Agency Partner](https://www.ionos.com/agency-partner) Fruchtec is specialized on building state-of-the-art eCommerce experiences. [Fruchtec](https://www.fruchtec.de/) combines a set of specialized services for a shop experience that feels smooth for their clients and their client's clients. All these services talk to to a Vue.js client dashboards via API. 
+A modern eCommerce system is both tailored to the needs of the visitor and the maintainer of the shop. A good UX for visitors alone does not make a shop project successful if managing shipping processes or customer requests is too cumbersome for shop owners. [IONOS Agency Partner](https://www.ionos.com/agency-partner) Fruchtec is specialized in building state-of-the-art eCommerce experiences. [Fruchtec](https://www.fruchtec.de/) combines a set of specialized services for a shop experience that feels smooth for their clients and their client's clients. All these services talk to to a Vue.js client dashboards via API. 
 
 ## A good shop experience defined
 
