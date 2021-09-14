@@ -10,7 +10,7 @@ editable: true
 
 The following framework samples give you an overview of static site generator (SSG) frameworks that can be hosted out of the box with Deploy Now. All samples are kept simple to give you a basic working prototype.
 
-Feel free to create your own sample by adding a `.ionos.yml` file in your repository root folder. Providing a [file-based configuration](/docs/file-based-configuration) allows other users to use your sample without setting the build command and dist folder. You can find an examplary configuration below each of the samples. 
+Feel free to create your own sample by adding a `.ionos.yml` file in your repository root folder. Providing a [file-based configuration](/docs/explicit-build-configuration) allows other users to use your sample without setting the build command and dist folder. You can find an examplary configuration below each of the samples. 
 
 ## Plain html sample
 

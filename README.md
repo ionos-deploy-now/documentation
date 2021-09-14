@@ -37,12 +37,4 @@ npm run build
     * b) https://github.com/olivierlacan/keep-a-changelog/blob/main/CHANGELOG.md as classic solution
 * framework-samples.md
   * fix icon-base with GitHub icon
-  * embed .ionos.yml from repo (nice to have)
-* dead links
-  ```
-  https://docs.ionos.space/docs/file-based-configuration	file-based configuration 
-  https://docs.ionos.space/guide/	staging deployments 
-  https://docs.ionos.space/advanced/custom-domains+ssl.html	custom domains 
-  https://docs.ionos.space/about	Our team
-  ```
-  
+  * embed .ionos.yml from repo (nice to have)  
