@@ -4,7 +4,7 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-const showBlog = process.env.SHOW_BLOG === 'true' || false;
+const showBlog = process.env.SHOW_BLOG === 'true';
 const fontFamilySans = '"Open Sans", ui-sans-serif, system-ui, sans-serif'
 
 module.exports = {
@@ -72,7 +72,7 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         baseDir: './content',
-        path: '**/*.md',
+        path: showBlog ? '**/*.md' : '**/!(blog)/*.md',
         typeName: 'MarkdownPage',
         remark: {
           externalLinksTarget: '_blank',

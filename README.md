@@ -25,7 +25,7 @@ npm run build
 ## Open issues
 
 * consolidate color definitions
-* enable plugins: sitemap, PWA
+* enable plugins: sitemap
 * check header meta data
 * optimize favicon and other icons: https://realfavicongenerator.net/
 * remark
@@ -38,5 +38,11 @@ npm run build
 * framework-samples.md
   * fix icon-base with GitHub icon
   * embed .ionos.yml from repo (nice to have)
-* blog
-  * do not create markdown nodes if SHOW_BLOG is false
+* dead links
+  ```
+  https://docs.ionos.space/docs/file-based-configuration	file-based configuration 
+  https://docs.ionos.space/guide/	staging deployments 
+  https://docs.ionos.space/advanced/custom-domains+ssl.html	custom domains 
+  https://docs.ionos.space/about	Our team
+  ```
+  
