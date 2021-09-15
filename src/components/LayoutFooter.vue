@@ -5,13 +5,13 @@
         <div class="oao-statuspage-overall-status"></div>
       </div>
       <div class="flex items-center">
-        <a class="p-2" href="https://www.ionos.de/impressum" target="_blank">
+        <a class="p-2" href="https://www.ionos.de/impressum" target="_blank" rel=”noreferrer”>
           {{ $t('footer.imprint') }}
         </a>
-        <a class="p-2" href="https://www.ionos.de/terms-gtc/terms-privacy" target="_blank">
+        <a class="p-2" href="https://www.ionos.de/terms-gtc/terms-privacy" target="_blank" rel=”noreferrer”>
           {{ $t('footer.privacy-policy') }}
         </a>
-        <a class="p-2" href="https://www.ionos.de/terms-gtc/terms" target="_blank">
+        <a class="p-2" href="https://www.ionos.de/terms-gtc/terms" target="_blank" rel=”noreferrer”>
           {{ $t('footer.terms-and-conditions') }}
         </a>
       </div>
