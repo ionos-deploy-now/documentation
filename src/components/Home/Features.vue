@@ -21,7 +21,7 @@
           <div>
             {{ $t('home-features.text') }}
           </div>
-          <g-link class="btn btn-primary" to="/docs/staging-deployments/">
+          <g-link class="btn btn-primary" to="/docs">
             {{ $t('home-features.button') }}
           </g-link>
         </div>
