@@ -1,6 +1,9 @@
-export function formatDate(timestamp) {
+export function formatDate(timestamp, lang) {
   const date = new Date(timestamp)
-  return [date.getDate(), date.getMonth() + 1, date.getFullYear()].join('.')
+  if (lang === 'de') {
+    return [date.getDate(), date.getMonth() + 1, date.getFullYear()].join('.')
+  }
+  return [date.getFullYear(), date.getMonth() + 1, date.getDate()].join('-')
 }
 
 export function capitalize(string) {

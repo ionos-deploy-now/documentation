@@ -6,7 +6,7 @@ import 'gridsome-plugin-remark-container/themes/default.css';
 import '@fontsource/open-sans/latin-400.css';
 import '@fontsource/open-sans/latin-600.css';
 import '@fontsource/open-sans/latin-800.css';
-import '@/assets/styles/app.scss';
+import '~/assets/styles/app.scss';
 
 export default function (Vue, { router, head, appOptions }) {
   Vue.use(Vuex);
@@ -16,10 +16,10 @@ export default function (Vue, { router, head, appOptions }) {
   Vue.component('Layout', DefaultLayout);
 
   // Add meta data to global head
-  head.link.push({
-    rel: 'preconnect',
-    href: 'https://fonts.gstatic.com',
-  });
+  //head.link.push({
+  //  rel: 'preconnect',
+  //  href: 'https://fonts.gstatic.com',
+  //});
   head.link.push({
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css2?family=Overpass:wght@100;300&display=swap',

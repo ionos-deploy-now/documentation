@@ -27,5 +27,38 @@ export function metaInfo({ title, description }) {
         content: description,
       },
     ],
+    script: [],
   };
+}
+
+export class JsonLd {
+  static wrapper(data) {
+    return {
+      type: 'application/ld+json',
+      json: Object.assign(JsonLd.defaults(), data),
+    }
+  }
+
+  static defaults() {
+    return {
+      '@context': 'https://schema.org',
+    };
+  }
+
+  static blogPost(data = {}) {
+    return JsonLd.wrapper({
+      '@type': 'BlogPosting',
+      headline: data.headline || data.title,
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': data.url,
+      },
+      datePublished: data.createdAt,
+      publisher: {
+        '@type': 'Organization',
+        name: 'IONOS SE',
+      },
+      articleBody: data.content,
+    });
+  }
 }
