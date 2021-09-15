@@ -1,5 +1,5 @@
 ﻿---
-description: ''
+description: 'Our Product Owner Robert explains the advantages of Jamstack websites along a project lifecycle in a free webinar.'
 created: '2021-08-05'
 ---
 
