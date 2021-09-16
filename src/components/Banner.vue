@@ -45,13 +45,13 @@ export default {
   methods: {
     close() {
       this.display = false;
-      if (localStorage) {
+      if (process.isClient && localStorage) {
         localStorage.setItem(this.localStorageKey, isHidden);
       }
     },
   },
   created() {
-    if (localStorage && localStorage.getItem(this.localStorageKey) === isHidden) {
+    if (process.isClient && localStorage && localStorage.getItem(this.localStorageKey) === isHidden) {
       this.close();
     }
   },
