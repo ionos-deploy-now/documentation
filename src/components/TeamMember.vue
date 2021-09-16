@@ -1,5 +1,5 @@
 <template>
-  <div class="card light flex !p-0 max-w-[600px] max-h-[166px]">
+  <div class="card light flex !p-0 max-w-[600px] max-h-[180px]">
     <img
       :src="`/team/${image}`"
       :alt="`Image of ${name || image}`"
