@@ -21,20 +21,3 @@ Create static build in `dist` folder
 ```bash
 npm run build
 ```
-
-## Open issues
-
-* consolidate color definitions
-* enable plugins: sitemap
-* check header meta data
-* optimize favicon and other icons: https://realfavicongenerator.net/
-* remark
-  * lazy load images
-  * add an arrow icon to all external links
-* add a changelog link in sitebar 
-  * which source tbd 
-    * a) e.g. https://twitter.com/GHchangelog 
-    * b) https://github.com/olivierlacan/keep-a-changelog/blob/main/CHANGELOG.md as classic solution
-* framework-samples.md
-  * fix icon-base with GitHub icon
-  * embed .ionos.yml from repo (nice to have)  

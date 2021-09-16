@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 const showBlog = process.env.SHOW_BLOG === 'true';
-const fontFamilySans = '"Open Sans", ui-sans-serif, system-ui, sans-serif'
+const fontFamilySans = '"Open Sans", ui-sans-serif, system-ui, sans-serif';
 
 module.exports = {
   titleTemplate: '%s | IONOS Deploy Now',
@@ -106,41 +106,41 @@ module.exports = {
       },
     },
     {
-        use: 'gridsome-plugin-htaccess',
-        options: {
-          textCompression: [
-            'text/html',
-            'application/javascript',
-            'text/css',
-            'image/png',
-          ],
-          redirections: [
-              {
-                from: '/samples/',
-                to: '/docs/framework-samples/',
-              },
-              {
-                from: '/samples',
-                to: '/docs/framework-samples/',
-              }
-            ],
-          forceHttps: true,
-          notCachedFiles: ['/service-worker.js', '/assets/js/service-worker.js'],
+      use: 'gridsome-plugin-htaccess',
+      options: {
+        textCompression: [
+          'text/html',
+          'application/javascript',
+          'text/css',
+          'image/png',
+        ],
+        redirections: [
+          {
+            from: '/samples/',
+            to: '/docs/framework-samples/',
+          },
+          {
+            from: '/samples',
+            to: '/docs/framework-samples/',
+          },
+        ],
+        forceHttps: true,
+        notCachedFiles: ['/service-worker.js', '/assets/js/service-worker.js'],
+      },
+    },
+    {
+      use: 'gridsome-plugin-service-worker',
+      options: {
+        networkFirst: {
+          routes: ['/', '/about-us', '/docs'],
+          fileTypes: ['document', 'script', 'style', 'image'],
         },
       },
-      {
-        use: 'gridsome-plugin-service-worker',
-          options: {
-            networkFirst: {
-            routes: ['/', '/about-us', '/docs'],
-            fileTypes: ['document', 'script', 'style', 'image'],
-          },
-        },
     },
-    /* {
+    {
       use: '@gridsome/plugin-sitemap',
       options: {},
-    }, */
+    },
   ],
   transformers: {
     remark: {
@@ -159,7 +159,7 @@ module.exports = {
             //},
             flowchart: {
               diagramPadding: 10,
-            }
+            },
           },
         }],
         '@noxify/gridsome-remark-table-align',
