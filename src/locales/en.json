@@ -78,5 +78,12 @@
   "404": {
     "title": "Oh no! There is nothing here.",
     "back": "Go back"
+  },
+  "job-offer": {
+    "team-title": "This could be you",
+    "team-subtitle": "Want to be part of the team?",
+    "frontend": "Frontend Developer",
+    "full-stack": "Full Stack Developer",
+    "middleware": "Middleware Developer"
   }
 }

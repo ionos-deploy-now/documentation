@@ -37,54 +37,59 @@
       </h2>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mx-auto">
-        <div v-for="member in team" :key="member.email" class="card light flex !p-0 max-w-[600px]">
-          <img
-            :src="`/team/${member.image}`"
-            :alt="`Image of ${member.name}`"
-            class="object-cover max-w-[150px] lg:max-w-[200px]"
-            style="background-color: #f5f5f5"
-          />
-          <div class="p-4 space-y-4">
-            <div>
-              <div class="title !pb-0">{{ member.name }}</div>
-              <div>{{ member.role }}</div>
+        <TeamMember
+          v-for="member in team"
+          :key="member.name"
+          v-bind="member"
+        />
+
+        <TeamMember image="octocat.svg">
+          <div>
+            <div class="title !pb-0">
+              {{ $t('job-offer.team-title') }}
             </div>
-            <div class="space-y-2">
-              <div class="flex items-center text-sm">
-                <HeartIcon class="icon" decorative />
-                {{ member.likes.join(', ') }}
-              </div>
-              <a class="flex items-center text-sm" :href="member.github">
-                <GithubIcon class="icon" decorative />
-                {{ stripProtocol(member.github) }}
-              </a>
+            <div>
+              {{ $t('job-offer.team-subtitle') }}
             </div>
           </div>
-        </div>
+          <div>
+            <a
+              v-for="[role, link] in jobOffers"
+              :key="role"
+              :href="link"
+              class="flex text-sm leading-tight hover:underline pb-2"
+              rel="noreferrer"
+            >
+              <OpenInNew class="icon" decorative />
+              {{ $t(`job-offer.${role}`) }}
+            </a>
+          </div>
+        </TeamMember>
       </div>
     </div>
   </Layout>
 </template>
 
 <script>
+import OpenInNew from 'vue-material-design-icons/OpenInNew';
+import TeamMember from '~/components/TeamMember';
 import TeamMembers from '~/assets/team.json';
-import HeartIcon from 'vue-material-design-icons/HeartOutline';
-import GithubIcon from 'vue-material-design-icons/Github';
-import { stripProtocol } from '~/libs/util';
 import { metaInfo } from '~/libs/seo';
 
 export default {
   components: {
-    GithubIcon,
-    HeartIcon,
+    OpenInNew,
+    TeamMember,
   },
   data() {
     return {
       team: Array.from(TeamMembers).sort((a, b) => a.name.localeCompare(b.name)),
+      jobOffers: [
+        ['frontend', 'https://jobs.ionos.de/karriere/jobangebot/1561-web-application-frontend-developer-wmd-%5Bdeploy-now%5D'],
+        ['full-stack', 'https://jobs.ionos.de/karriere/jobangebot/1562-web-application-full-stack-developer-wmd-%5Bdeploy-now%5D'],
+        ['middleware', 'https://jobs.ionos.de/karriere/jobangebot/1563-web-application-middleware-developer-wmd-%5Bdeploy-now%5D'],
+      ],
     };
-  },
-  methods: {
-    stripProtocol,
   },
   metaInfo: metaInfo({
     title: 'About us',
