@@ -9,6 +9,7 @@
               {{ $t('about-us.text') }}
             </p>
           </div>
+
           <div class="-m-4 p-4 space-y-4 rounded-lg card invert z-1">
             <h2 class="text-white flex">
               <BriefcaseSearch class="icon" decorative />
@@ -17,6 +18,10 @@
             <p class="text-white">
               {{ $t('job-offer.about-us-text') }}
             </p>
+            <JobSearchLink>
+              <ChevronDoubleRightIcon class="icon self-center" decorative />
+              <span class="self-center">{{ $t('job-offer.banner-link') }}</span>
+            </JobSearchLink>
           </div>
         </div>
 
@@ -29,6 +34,7 @@
               {{ $t('about-us.ionos-text') }}
             </p>
           </div>
+
           <div class="space-y-4">
             <h2>
               {{ $t('about-us.feedback-title') }}
@@ -80,16 +86,20 @@
 
 <script>
 import OpenInNew from 'vue-material-design-icons/OpenInNew';
+import ChevronDoubleRightIcon from 'vue-material-design-icons/ChevronDoubleRight';
 import BriefcaseSearch from 'vue-material-design-icons/BriefcaseSearch';
 import TeamMember from '~/components/TeamMember';
+import JobSearchLink from '~/components/JobSearchLink';
 import TeamMembers from '~/assets/team.json';
 import { metaInfo } from '~/libs/seo';
 
 export default {
   components: {
     OpenInNew,
+    ChevronDoubleRightIcon,
     BriefcaseSearch,
     TeamMember,
+    JobSearchLink,
   },
   data() {
     return {
