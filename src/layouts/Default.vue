@@ -7,6 +7,9 @@
         @resize="onResize"
       >
         <Banner name="job-offer" :title="$t('job-offer.banner-title')">
+          <template #icon>
+            <BriefcaseSearch class="icon icon-lg" decorative />
+          </template>
           {{ $t('job-offer.banner-subtitle') }}
           <JobSearchLink class="text-primary mx-2">
             <ChevronDoubleRightIcon class="icon self-center" decorative />
@@ -45,6 +48,7 @@ query {
 <script>
 import { mapGetters, mapActions } from 'vuex';
 import ChevronDoubleRightIcon from 'vue-material-design-icons/ChevronDoubleRight';
+import BriefcaseSearch from 'vue-material-design-icons/BriefcaseSearch';
 import LayoutHeader from '~/components/LayoutHeader';
 import LayoutFooter from '~/components/LayoutFooter';
 import Banner from '~/components/Banner';
@@ -54,6 +58,7 @@ import JobSearchLink from '~/components/JobSearchLink';
 export default {
   components: {
     ChevronDoubleRightIcon,
+    BriefcaseSearch,
     LayoutFooter,
     LayoutHeader,
     Banner,

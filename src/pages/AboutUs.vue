@@ -9,7 +9,15 @@
               {{ $t('about-us.text') }}
             </p>
           </div>
-          <div></div>
+          <div class="-m-4 p-4 space-y-4 rounded-lg card invert z-1">
+            <h2 class="text-white flex">
+              <BriefcaseSearch class="icon" decorative />
+              <span class="ml-2">{{ $t('job-offer.about-us-title') }}</span>
+            </h2>
+            <p class="text-white">
+              {{ $t('job-offer.about-us-text') }}
+            </p>
+          </div>
         </div>
 
         <div class="two-column-layout !gap-16 mt-8 lg:mt-16">
@@ -72,6 +80,7 @@
 
 <script>
 import OpenInNew from 'vue-material-design-icons/OpenInNew';
+import BriefcaseSearch from 'vue-material-design-icons/BriefcaseSearch';
 import TeamMember from '~/components/TeamMember';
 import TeamMembers from '~/assets/team.json';
 import { metaInfo } from '~/libs/seo';
@@ -79,6 +88,7 @@ import { metaInfo } from '~/libs/seo';
 export default {
   components: {
     OpenInNew,
+    BriefcaseSearch,
     TeamMember,
   },
   data() {

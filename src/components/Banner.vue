@@ -1,6 +1,6 @@
 <template>
   <div v-show="display" class="flex-center px-4 py-3 text-white bg-midnight">
-    <BriefcaseSearch class="icon icon-lg" decorative />
+    <slot name="icon" />
     <div class="flex-grow ml-4">
       <div class="flex justify-between align-start">
         <span class="font-semibold">{{ title }}</span>
@@ -14,7 +14,6 @@
 </template>
 
 <script>
-import BriefcaseSearch from 'vue-material-design-icons/BriefcaseSearch';
 import CloseIcon from 'vue-material-design-icons/Close';
 
 const isHidden = 'hidden';
@@ -22,7 +21,6 @@ const isHidden = 'hidden';
 export default {
   name: 'Banner',
   components: {
-    BriefcaseSearch,
     CloseIcon,
   },
   props: {
