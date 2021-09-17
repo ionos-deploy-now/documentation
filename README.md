@@ -1,4 +1,4 @@
-![Deploy Now](https://github.com/hunsalz/documentation/actions/workflows/deploy-now.yml/badge.svg?branch=main)
+![Deploy Now](https://github.com/ionos-deploy-now/documentation/actions/workflows/deploy-now.yml/badge.svg?branch=main)
 
 # Deploy Now - Documentation
 
