@@ -32,7 +32,7 @@ export default {
   },
   data() {
     return {
-      display: true,
+      display: false,
     };
   },
   computed: {
@@ -49,8 +49,12 @@ export default {
     },
   },
   created() {
-    if (process.isClient && localStorage && localStorage.getItem(this.localStorageKey) === isHidden) {
-      this.close();
+    if (process.isClient && localStorage) {
+      if (localStorage.getItem(this.localStorageKey) === isHidden) {
+        this.close()
+      } else {
+        this.display = true;
+      }
     }
   },
 };
