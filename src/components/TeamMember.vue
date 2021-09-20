@@ -15,7 +15,7 @@
         <div class="space-y-2">
           <div class="flex items-center text-sm">
             <HeartIcon class="icon" decorative />
-            {{ likeList }}
+            {{ likes }}
           </div>
           <a class="flex items-center text-sm" :href="github">
             <GithubIcon class="icon" decorative />
@@ -39,19 +39,11 @@ export default {
     role: String,
     image: String,
     github: String,
-    likes: {
-      type: Array,
-      default: () => [],
-    },
+    likes: String
   },
   components: {
     GithubIcon,
     HeartIcon,
-  },
-  computed: {
-    likeList() {
-      return this.likes.join(', ');
-    },
   },
   methods: {
     stripProtocol,

@@ -5,6 +5,8 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 const showBlog = process.env.SHOW_BLOG === 'true';
+const includedMarkdownPaths = ['docs', 'team', ...(showBlog ? ['blog'] : [])].join('|')
+const markdownPath = `**/(${includedMarkdownPaths})/*.md`
 const fontFamilySans = '"Open Sans", ui-sans-serif, system-ui, sans-serif';
 
 module.exports = {
@@ -72,7 +74,7 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         baseDir: './content',
-        path: showBlog ? '**/*.md' : '**/!(blog)/*.md',
+        path: markdownPath,
         typeName: 'MarkdownPage',
         remark: {
           externalLinksTarget: '_blank',
@@ -139,7 +141,9 @@ module.exports = {
     },
     {
       use: '@gridsome/plugin-sitemap',
-      options: {},
+      options: {
+        exclude: ['/team/*'],
+      },
     },
   ],
   transformers: {

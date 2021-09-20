@@ -100,7 +100,10 @@ export default {
     },
   },
   methods: {
-    ...mapActions(['setHeaderHeight', 'setSidebarOpen']),
+    ...mapActions({
+      setHeaderHeight: 'setHeaderHeight',
+      setSidebarOpen: 'setSidebarOpen',
+    }),
     onResize() {
       if (this.$refs.header) {
         this.setHeaderHeight(this.$refs.header.offsetHeight);
