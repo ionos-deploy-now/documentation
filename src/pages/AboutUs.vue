@@ -104,9 +104,6 @@ query {
 import BullhornOutline from 'vue-material-design-icons/BullhornOutline';
 import ChevronDoubleRightIcon from 'vue-material-design-icons/ChevronDoubleRight';
 import JobSearchLink from '~/components/JobSearchLink';
-import OpenInNew from 'vue-material-design-icons/OpenInNew';
-import TeamMember from '~/components/TeamMember';
-import TeamMembers from '~/assets/team.json';
 import { metaInfo } from '~/libs/seo';
 
 export default {
@@ -128,10 +125,8 @@ export default {
   },
   computed: {
     team() {
-      return this.$page.allMarkdownPage.edges
-        .map(edge => edge.node)
-        .sort((a, b) => a.name.localeCompare(b.name));
-    },
+      return this.$page.allMarkdownPage.edges.map(edge => edge.node)
+    }
   },
   metaInfo: metaInfo({
     title: 'About us',
