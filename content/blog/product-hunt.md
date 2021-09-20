@@ -1,5 +1,5 @@
 ﻿---
-description: ''
+description: 'Deploy Now made it to #3 product of the day on Product Hunt. View our post and give us feedback.'
 created: '2021-06-12'
 ---
 

@@ -1,5 +1,5 @@
 ﻿---
-description: ''
+description: 'Learn how to deploy a blog build with React in this video tutorial created by Wayne from Devscover. '
 created: '2021-08-26'
 ---
 

@@ -13,15 +13,15 @@
     </div>
 
     <div class="<lg:hidden absolute absolute-center-x bottom-0 flex justify-center items-baseline space-x-[-120px]">
-      <g-image width="auto" height="180px" src="/team/fatih.svg" />
-      <g-image width="auto" height="180px" src="/team/marcel.svg" />
-      <g-image width="auto" height="180px" src="/team/josua.svg" />
-      <g-image width="auto" height="180px" src="/team/robert.svg" />
-      <g-image width="auto" height="180px" src="/team/markus.svg" />
-      <g-image width="auto" height="180px" src="/team/alex.svg" />
-      <g-image width="auto" height="180px" src="/team/eric.svg" />
-      <g-image width="auto" height="180px" src="/team/robin.svg" />
-      <g-image width="auto" height="180px" class="pl-2 h-[185px]" src="/team/roman.svg" />
+      <img width="auto" height="180" src="/team/fatih.svg" alt="Fatih" />
+      <img width="auto" height="180" src="/team/marcel.svg" alt="Marcel" />
+      <img width="auto" height="180" src="/team/josua.svg" alt="Josua" />
+      <img width="auto" height="180" src="/team/robert.svg" alt="Robert" />
+      <img width="auto" height="180" src="/team/markus.svg" alt="Markus" />
+      <img width="auto" height="180" src="/team/alexander.svg" alt="Alexander" />
+      <img width="auto" height="180" src="/team/eric.svg" alt="Eric" />
+      <img width="auto" height="180" src="/team/robin.svg" alt="Robin" />
+      <img width="auto" height="180" src="/team/roman.svg" alt="Roman" class="pl-2 h-[185px]" />
     </div>
   </div>
 </template>

@@ -6,6 +6,17 @@
         class="sticky top-0 z-10 w-full border-b border-ui-border"
         @resize="onResize"
       >
+        <Banner name="job-offer" :title="$t('job-offer.banner-title')">
+          <template #icon>
+            <BriefcaseSearch class="icon icon-lg" decorative />
+          </template>
+          {{ $t('job-offer.banner-subtitle') }}
+          <JobSearchLink class="text-primary mx-2">
+            <ChevronDoubleRightIcon class="icon self-center" decorative />
+            <span class="self-center">{{ $t('job-offer.banner-link') }}</span>
+          </JobSearchLink>
+        </Banner>
+
         <LayoutHeader />
       </header>
 
@@ -36,15 +47,23 @@ query {
 
 <script>
 import { mapGetters, mapActions } from 'vuex';
-import Sidebar from '@/components/Sidebar';
-import LayoutHeader from '@/components/LayoutHeader';
-import LayoutFooter from '@/components/LayoutFooter';
+import ChevronDoubleRightIcon from 'vue-material-design-icons/ChevronDoubleRight';
+import BriefcaseSearch from 'vue-material-design-icons/BriefcaseSearch';
+import LayoutHeader from '~/components/LayoutHeader';
+import LayoutFooter from '~/components/LayoutFooter';
+import Banner from '~/components/Banner';
+import Sidebar from '~/components/Sidebar';
+import JobSearchLink from '~/components/JobSearchLink';
 
 export default {
   components: {
+    ChevronDoubleRightIcon,
+    BriefcaseSearch,
     LayoutFooter,
-    Sidebar,
     LayoutHeader,
+    Banner,
+    Sidebar,
+    JobSearchLink,
   },
   watch: {
     sidebarOpen(isOpen) {
@@ -84,12 +103,12 @@ export default {
         {
           key: 'og:image',
           name: 'og:image',
-          content: process.env.GRIDSOME_SITE_URL + '/favicon.png',
+          content: process.env.SITE_URL + '/favicon.png',
         },
         {
           key: 'twitter:image',
           name: 'twitter:image',
-          content: process.env.GRIDSOME_SITE_URL + '/favicon.png',
+          content: process.env.SITE_URL + '/favicon.png',
         },
       ],
     };

@@ -8,7 +8,11 @@ editable: true
 
 # Staging Deployments
   
-Staging Deployments give you the ability to build & deploy any branch of your web project to IONOS. While working on new features this gives you the advantage to preview changes on the fly and share them with your colleagues or customers. Based on our own experiences, we recommend working with feature branches rather than allways editing the main branch right away. Deploy Now creates new Staging Deployments from freshly opened branches automatically. Staging Deployments receive generic preview URLs. 
+Staging Deployments give you the ability to build & deploy any branch of your web project to IONOS. 
+While working on new features this gives you the advantage to preview changes on the fly and share them with your colleagues or customers. 
+Based on our own experiences, we recommend working with feature branches rather than allways editing the main branch right away. 
+Deploy Now creates new Staging Deployments from freshly opened branches automatically. 
+Staging Deployments receive generic preview URLs. 
 
 ~~~mermaid
 graph TD

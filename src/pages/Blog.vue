@@ -32,7 +32,7 @@ query {
 </page-query>
 
 <script>
-import { formatDate } from '@/libs/util';
+import { formatDate } from '~/libs/util';
 
 export default {
   computed: {
@@ -47,7 +47,7 @@ export default {
     formatDate,
   },
   metaInfo: {
-    title: 'Deploy Now Blog - All Posts',
+    title: 'Blog',
   },
 };
 </script>

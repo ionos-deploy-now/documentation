@@ -4,11 +4,11 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-const showBlog = process.env.SHOW_BLOG === 'true' || false;
-const fontFamilySans = '"Open Sans", ui-sans-serif, system-ui, sans-serif'
+const showBlog = process.env.SHOW_BLOG === 'true';
+const fontFamilySans = '"Open Sans", ui-sans-serif, system-ui, sans-serif';
 
 module.exports = {
-  siteName: ' - Docs - IONOS Deploy Now',
+  titleTemplate: '%s | IONOS Deploy Now',
   siteDescription: 'Deploy Now is a platform for building and hosting Static Site Generators and Single Page Applications on inhouse engineered IONOS infrastructure.',
   siteUrl: process.env.SITE_URL,
   pathPrefix: process.env.PATH_PREFIX ? process.env.PATH_PREFIX : '',
@@ -72,7 +72,7 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         baseDir: './content',
-        path: '**/*.md',
+        path: showBlog ? '**/*.md' : '**/!(blog)/*.md',
         typeName: 'MarkdownPage',
         remark: {
           externalLinksTarget: '_blank',
@@ -106,41 +106,41 @@ module.exports = {
       },
     },
     {
-        use: "gridsome-plugin-htaccess",
-        options: {
-          textCompression: [
-            "text/html",
-            "application/javascript",
-            "text/css",
-            "image/png",
-          ],
-          redirections: [
-              {
-                from: "/samples/",
-                to: "/docs/framework-samples/",
-              },
-              {
-                from: "/samples",
-                to: "/docs/framework-samples/",
-              }
-            ],
-          forceHttps: true,
-          notCachedFiles: ["/service-worker.js", "/assets/js/service-worker.js"],
+      use: 'gridsome-plugin-htaccess',
+      options: {
+        textCompression: [
+          'text/html',
+          'application/javascript',
+          'text/css',
+          'image/png',
+        ],
+        redirections: [
+          {
+            from: '/samples/',
+            to: '/docs/framework-samples/',
+          },
+          {
+            from: '/samples',
+            to: '/docs/framework-samples/',
+          },
+        ],
+        forceHttps: true,
+        notCachedFiles: ['/service-worker.js', '/assets/js/service-worker.js'],
+      },
+    },
+    {
+      use: 'gridsome-plugin-service-worker',
+      options: {
+        networkFirst: {
+          routes: ['/', '/about-us', '/docs'],
+          fileTypes: ['document', 'script', 'style', 'image'],
         },
       },
-      {
-        use: "gridsome-plugin-service-worker",
-          options: {
-            networkFirst: {
-            routes: ["/", "/about-us", "/docs"],
-            fileTypes: ["document", "script", "style", "image"],
-          },
-        },
     },
-    /* {
+    {
       use: '@gridsome/plugin-sitemap',
       options: {},
-    }, */
+    },
   ],
   transformers: {
     remark: {
@@ -159,7 +159,7 @@ module.exports = {
             //},
             flowchart: {
               diagramPadding: 10,
-            }
+            },
           },
         }],
         '@noxify/gridsome-remark-table-align',

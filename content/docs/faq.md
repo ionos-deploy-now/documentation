@@ -27,7 +27,7 @@ In this context, a build is a process in which JavsScript is compiled, or a stat
 You can deploy from an existing GitHub repository in your account, provide the URL to a third party repository you would like to deploy, or you can quickstart with one of our [samples](/docs/framework-samples).
 
 ## Which branches of a repository will be deployed?
-If you deploy a repository that exists in your GitHub account, you can select any branch for deployment. For third party repositories, we allways deploy the current default branch. You can allways switch the branches of your Production Deployment or connect additional branches to [staging deployments](/guide/#staging-deployments).
+If you deploy a repository that exists in your GitHub account, you can select any branch for deployment. For third party repositories, we allways deploy the current default branch. You can allways switch the branches of your Production Deployment or connect additional branches to [staging deployments](/docs/staging-deployments).
 
 ## Can I deploy private repositories?
 Yes, you can deploy any repository for which you provided the required read and write permissions.
@@ -36,7 +36,7 @@ Yes, you can deploy any repository for which you provided the required read and 
 Yes, you can deploy from GitHub organizations, as long as you are the owner of this organization.
 
 ## Can I connect custom domains?
-Yes, you can connect [custom domains](/advanced/custom-domains+ssl.html) to your production deployments to replace the automatically assigned preview URLs. 
+Yes, you can connect [custom domains](/docs/domain-tls) to your production deployments to replace the automatically assigned preview URLs. 
 
 ## Can I connect external domains?
 Yes, you can migrate external domains to IONOS and connect them to Deploy Now. For this, you need to have one existing IONOS domain contract to which you migrate the external domain.
@@ -66,7 +66,7 @@ Yes. Just like GitHubs interface, the Deploy Now interface is in english for all
 Deploy Now uses a freemium model. The three project packages included in the free membership will stay for free. You can purchase additional project packages with more storage and staging deployments any time.
 
 ## Where can I place feature requests?
-[Our team](/about) is continuously working on improving Deploy Now based on your needs and wishes. You can drop your feedback or feature requests directly via the feedback button on the product or below our [Post](https://www.producthunt.com/posts/deploy-now) on Product Hunt.
+[Our team](/about-us) is continuously working on improving Deploy Now based on your needs and wishes. You can drop your feedback or feature requests directly via the feedback button on the product or below our [Post](https://www.producthunt.com/posts/deploy-now) on Product Hunt.
 
 ## What is this documentation built with?
 This documentation is based on the static site generator [Gridsome](https://gridsome.org/).

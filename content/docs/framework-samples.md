@@ -8,14 +8,13 @@ editable: true
 
 # Framework samples
 
-The following framework samples give you an overview of static site generator (SSG) frameworks that can be hosted out of the box with Deploy Now. All samples kept simple to give you a basic working prototype.
+The following framework samples give you an overview of static site generator (SSG) frameworks that can be hosted out of the box with Deploy Now. All samples are kept simple to give you a basic working prototype.
 
-Feel free to create your own sample by adding a `.ionos.yml` file in your repository root folder. [Defining the deployment settings](/docs/file-based-configuration) allows other users to use your sample right away. Below samples give you insights how to do.
+Feel free to create your own sample by adding a `.ionos.yml` file in your repository root folder. Providing a [file-based configuration](/docs/explicit-build-configuration) allows other users to use your sample without setting the build command and dist folder. You can find an examplary configuration below each of the samples. 
 
 ## Plain html sample
 
-Just copy static assets to IONOS. This couldn't be easier. You just need to define a `dist` folder and that's it! 
-Try yourself.
+Simply copies static assets to the infrastructure. You only need to define a `dist` folder.
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-plain-html)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-plain-html)

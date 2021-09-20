@@ -14,10 +14,7 @@ module.exports = function (api) {
     }
     // Set content type and timestamp for markdown pages
     options.contentType = options.fileInfo.directory.split('/')[0];
-    if (options.created) {
-      options.createdAt = (new Date(options.created)).getTime();
-    }
-
+    options.createdAt = options.created ? new Date(options.created).getTime() : false;
     return options;
   });
 };

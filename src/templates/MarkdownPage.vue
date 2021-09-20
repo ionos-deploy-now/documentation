@@ -2,14 +2,14 @@
   <Layout>
     <div class="flex flex-wrap justify-start">
       <div
-        class="<md:hidden lg:order-2 overflow-y-auto"
+        class="<md:hidden lg:w-1/5 lg:order-2 overflow-y-auto"
         :class="{ 'sticky w-1/5 border-ui-border border-r lg:border-l lg:border-r-0': showOnThisPage() }"
         :style="sidebarStyle"
       >
         <OnThisPage v-if="showOnThisPage()" />
       </div>
 
-      <div class="container pb-24 <md:max-w-[90vw] lg:order-1" :class="{ 'md:w-3/5': showOnThisPage() }">
+      <div class="container pb-24 <md:max-w-[90vw] lg:w-3/5 lg:order-1" :class="{ 'md:w-3/5': showOnThisPage() }">
         <div class="content" v-html="$page.markdownPage.content" />
 
         <EditLink v-if="showEditLink" class="mt-10" :path="$page.markdownPage.fileInfo.path" />
@@ -35,6 +35,7 @@ query ($id: ID!) {
     editable
     timeToRead
     content
+    contentType
     sidebar
     next
     prev
@@ -57,9 +58,11 @@ query ($id: ID!) {
 
 <script>
 import { mapGetters } from 'vuex';
-import OnThisPage from '@/components/OnThisPage.vue';
-import NextPrevLinks from '@/components/NextPrevLinks.vue';
-import EditLink from '@/components/EditLink.vue';
+import OnThisPage from '~/components/OnThisPage.vue';
+import NextPrevLinks from '~/components/NextPrevLinks.vue';
+import EditLink from '~/components/EditLink.vue';
+import { capitalize } from '~/libs/util';
+import { metaInfo, JsonLd } from '~/libs/seo';
 
 export default {
   components: {
@@ -83,40 +86,24 @@ export default {
     headings() {
       return this.$page.markdownPage.headings.filter(h => h.depth > 1);
     },
+    pageInfo() {
+      const { contentType, content, title: headline } = this.$page.markdownPage;
+      const title = `${this.$page.markdownPage.title} | ${capitalize(contentType)}`;
+      const description = this.$page.markdownPage.description;
+      return {
+        title,
+        headline,
+        description,
+        content,
+        contentType,
+        url: process.isClient ? window.location.href : this.$route.fullPath,
+      };
+    },
   },
   metaInfo() {
-    const title = this.$page.markdownPage.title;
-    const description = this.$page.markdownPage.description || this.$page.markdownPage.excerpt;
-
-    return {
-      title: title,
-      meta: [
-        {
-          name: 'description',
-          content: description,
-        },
-        {
-          key: 'og:title',
-          name: 'og:title',
-          content: title,
-        },
-        {
-          key: 'twitter:title',
-          name: 'twitter:title',
-          content: title,
-        },
-        {
-          key: 'og:description',
-          name: 'og:description',
-          content: description,
-        },
-        {
-          key: 'twitter:description',
-          name: 'twitter:description',
-          content: description,
-        },
-      ],
-    };
+    const head = metaInfo(this.pageInfo);
+    head.script.push(JsonLd.blogPost(this.pageInfo))
+    return head;
   },
 };
 </script>

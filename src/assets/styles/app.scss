@@ -312,6 +312,11 @@ table {
     width: 1.25em;
   }
 
+  &.icon-sm, &.icon-sm > .material-design-icon__svg {
+    height: 1em;
+    width: 1em;
+  }
+
   &.icon-lg, &.icon-lg > .material-design-icon__svg {
     height: 1.875em;
     width: 1.875em;
@@ -385,7 +390,7 @@ table {
   }
 }
 
-// TODO: Find way to omit !important
+// Is there a way to omit !important ?
 .mermaid {
   @apply mb-4;
 
