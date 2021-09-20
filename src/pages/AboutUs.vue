@@ -84,13 +84,28 @@
   </Layout>
 </template>
 
+<page-query>
+query {
+  allMarkdownPage(filter: { contentType: { eq: "team" } }) {
+    edges {
+      node {
+        name,
+        role,
+        image,
+        github,
+        likes,
+      }
+    }
+  }
+}
+</page-query>
+
 <script>
 import OpenInNew from 'vue-material-design-icons/OpenInNew';
 import ChevronDoubleRightIcon from 'vue-material-design-icons/ChevronDoubleRight';
 import BriefcaseSearch from 'vue-material-design-icons/BriefcaseSearch';
 import TeamMember from '~/components/TeamMember';
 import JobSearchLink from '~/components/JobSearchLink';
-import TeamMembers from '~/assets/team.json';
 import { metaInfo } from '~/libs/seo';
 
 export default {
@@ -103,13 +118,17 @@ export default {
   },
   data() {
     return {
-      team: Array.from(TeamMembers).sort((a, b) => a.name.localeCompare(b.name)),
       jobOffers: [
         ['frontend', 'https://jobs.ionos.de/karriere/jobangebot/1561-web-application-frontend-developer-wmd-%5Bdeploy-now%5D'],
         ['full-stack', 'https://jobs.ionos.de/karriere/jobangebot/1562-web-application-full-stack-developer-wmd-%5Bdeploy-now%5D'],
         ['middleware', 'https://jobs.ionos.de/karriere/jobangebot/1563-web-application-middleware-developer-wmd-%5Bdeploy-now%5D'],
       ],
     };
+  },
+  computed: {
+    team() {
+      return this.$page.allMarkdownPage.edges.map(edge => edge.node)
+    }
   },
   metaInfo: metaInfo({
     title: 'About us',
