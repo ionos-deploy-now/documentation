@@ -27,7 +27,6 @@ API-first allows a complete decoupling of frontend and backend. Backend applicat
 
 ## Fruchtec's recommendations for a powerful eCommerce setup 
 
-
 <img src="/fruchtec-architecture@lg@2x.png" alt="vue js ecommerce dashboard" />
 
 ### Vue.js for customer dashboards
