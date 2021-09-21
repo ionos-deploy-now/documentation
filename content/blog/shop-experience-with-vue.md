@@ -27,6 +27,9 @@ API-first allows a complete decoupling of frontend and backend. Backend applicat
 
 ## Fruchtec's recommendations for a powerful eCommerce setup 
 
+
+<img src="/fruchtec-architecture-dark.png" alt="vue js ecommerce dashboard" />
+
 ### Vue.js for customer dashboards
 
 Fruchtec recommends Vue.js for building dashboards frontend. [Vue](https://vuejs.org/) is an open-source JavaScript framework for building single page applications and user interfaces. Fruchtec likes that many positive aspects that can be found in React and Angular individually are merged into a single framework. They enjoy working with Vue-based UI libraries like [Vuetify](https://vuetifyjs.com/en/) and [BootstrapVue](https://bootstrap-vue.org/). Thanks to its adoptability and scalability, Vue is equally suitable for beginners as well as large enterprises. The framework makes it easy to follow clean code rules and comes with a large community that can help with learning best practices. Fruchtec develops and deploys their Vue frontends with Deploy Now. The staging functionality allows them to work on new dashboard components without affecting their clients' running business. 
