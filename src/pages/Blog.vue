@@ -17,7 +17,7 @@
 
 <page-query>
 query {
-  allMarkdownPage {
+  allMarkdownPage(filter: { contentType: { eq: "blog" } }) {
     edges {
       node {
         path
@@ -38,7 +38,6 @@ export default {
   computed: {
     blogPosts() {
       return this.$page.allMarkdownPage.edges
-        .filter(edge => edge.node.contentType === 'blog')
         .map(edge => edge.node)
         .sort((a, b) => b.createdAt - a.createdAt);
     },
