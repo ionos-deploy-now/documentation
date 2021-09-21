@@ -127,8 +127,10 @@ export default {
   },
   computed: {
     team() {
-      return this.$page.allMarkdownPage.edges.map(edge => edge.node)
-    }
+      return this.$page.allMarkdownPage.edges
+        .map(edge => edge.node)
+        .sort((a, b) => a.name.localeCompare(b.name));
+    },
   },
   metaInfo: metaInfo({
     title: 'About us',
