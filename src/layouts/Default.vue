@@ -6,22 +6,45 @@
         class="sticky top-0 z-10 w-full border-b border-ui-border"
         @resize="onResize"
       >
-        <Banner name="job-offer" :title="$t('job-offer.banner-title')">
+        <Banner class="flex" name="job-offer">
           <template #icon>
-            <BriefcaseSearch class="icon icon-lg" decorative />
+            <BullhornOutline class="icon icon-lg" decorative />
           </template>
-          {{ $t('job-offer.banner-subtitle') }}
-          <JobSearchLink class="text-white mx-2">
-            <ChevronDoubleRightIcon class="icon self-center" decorative />
-            <span class="self-center">{{ $t('job-offer.banner-link') }}</span>
-          </JobSearchLink>
+          <template #content>
+            <div class="flex-grow mx-4">
+              <div class="flex">
+                <div class="flex-grow">
+                  <div class="flex flex-col">
+                    <span class="text-xs md:text-base font-semibold">
+                      {{ $t("job-offer.banner-title") }}
+                    </span>
+                    <span class="text-xs md:text-base">
+                      {{ $t("job-offer.banner-subtitle") }}
+                    </span>
+                  </div>
+                </div>
+                <JobSearchLink
+                  class="flex-center text-primary text-xs md:text-base"
+                >
+                  <ChevronDoubleRightIcon class="icon" decorative />
+                  <span>{{ $t("job-offer.banner-link") }}</span>
+                </JobSearchLink>
+              </div>
+            </div>
+          </template>
         </Banner>
-
         <LayoutHeader />
       </header>
 
-      <main class="relative justify-center bg-ui-background" :class="{ 'flex': hasSidebar }">
-        <aside class="sidebar" :class="{ 'lg:hidden': !hasSidebar, open: sidebarOpen }" :style="sidebarStyle">
+      <main
+        class="relative justify-center bg-ui-background"
+        :class="{ flex: hasSidebar }"
+      >
+        <aside
+          class="sidebar"
+          :class="{ 'lg:hidden': !hasSidebar, open: sidebarOpen }"
+          :style="sidebarStyle"
+        >
           <div class="w-full pb-16 bg-ui-background">
             <Sidebar @navigate="setSidebarOpen(false)" />
           </div>
@@ -46,24 +69,24 @@ query {
 </static-query>
 
 <script>
-import { mapGetters, mapActions } from 'vuex';
-import ChevronDoubleRightIcon from 'vue-material-design-icons/ChevronDoubleRight';
-import BriefcaseSearch from 'vue-material-design-icons/BriefcaseSearch';
-import LayoutHeader from '~/components/LayoutHeader';
-import LayoutFooter from '~/components/LayoutFooter';
-import Banner from '~/components/Banner';
-import Sidebar from '~/components/Sidebar';
-import JobSearchLink from '~/components/JobSearchLink';
+import { mapGetters, mapActions } from "vuex";
+import BullhornOutline from "vue-material-design-icons/BullhornOutline";
+import ChevronDoubleRightIcon from "vue-material-design-icons/ChevronDoubleRight";
+import LayoutHeader from "~/components/LayoutHeader";
+import LayoutFooter from "~/components/LayoutFooter";
+import Banner from "~/components/Banner";
+import Sidebar from "~/components/Sidebar";
+import JobSearchLink from "~/components/JobSearchLink";
 
 export default {
   components: {
+    Banner,
+    BullhornOutline,
     ChevronDoubleRightIcon,
-    BriefcaseSearch,
+    JobSearchLink,
     LayoutFooter,
     LayoutHeader,
-    Banner,
     Sidebar,
-    JobSearchLink,
   },
   watch: {
     sidebarOpen(isOpen) {
