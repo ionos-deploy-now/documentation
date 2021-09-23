@@ -101,18 +101,20 @@ query {
 </page-query>
 
 <script>
-import BullhornOutline from 'vue-material-design-icons/BullhornOutline';
+import OpenInNew from 'vue-material-design-icons/OpenInNew';
 import ChevronDoubleRightIcon from 'vue-material-design-icons/ChevronDoubleRight';
+import BullhornOutline from 'vue-material-design-icons/BullhornOutline';
+import TeamMember from '~/components/TeamMember';
 import JobSearchLink from '~/components/JobSearchLink';
 import { metaInfo } from '~/libs/seo';
 
 export default {
   components: {
-    BullhornOutline,
+    OpenInNew,
     ChevronDoubleRightIcon,
-    JobSearchLink,
-    OpenInNew,  
+    BullhornOutline,
     TeamMember,
+    JobSearchLink,
   },
   data() {
     return {
