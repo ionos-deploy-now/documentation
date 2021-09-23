@@ -10,9 +10,9 @@
             </p>
           </div>
 
-          <div class="-m-4 p-4 space-y-4 rounded-lg card invert z-1">
+          <div class="m-4 p-4 space-y-4 rounded-lg card invert z-1">
             <h2 class="text-white flex">
-              <BriefcaseSearch class="icon self-center" decorative />
+              <BullhornOutline class="icon self-center" decorative />
               <span class="ml-2">{{ $t('job-offer.about-us-title') }}</span>
             </h2>
             <p class="text-white">
@@ -101,20 +101,21 @@ query {
 </page-query>
 
 <script>
-import OpenInNew from 'vue-material-design-icons/OpenInNew';
+import BullhornOutline from 'vue-material-design-icons/BullhornOutline';
 import ChevronDoubleRightIcon from 'vue-material-design-icons/ChevronDoubleRight';
-import BriefcaseSearch from 'vue-material-design-icons/BriefcaseSearch';
-import TeamMember from '~/components/TeamMember';
 import JobSearchLink from '~/components/JobSearchLink';
+import OpenInNew from 'vue-material-design-icons/OpenInNew';
+import TeamMember from '~/components/TeamMember';
+import TeamMembers from '~/assets/team.json';
 import { metaInfo } from '~/libs/seo';
 
 export default {
   components: {
-    OpenInNew,
+    BullhornOutline,
     ChevronDoubleRightIcon,
-    BriefcaseSearch,
-    TeamMember,
     JobSearchLink,
+    OpenInNew,
+    TeamMember,
   },
   data() {
     return {
