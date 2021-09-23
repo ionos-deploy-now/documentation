@@ -1,25 +1,18 @@
 <template>
   <div v-show="display" class="flex-center px-4 py-3 text-white bg-midnight">
     <slot name="icon" />
-    <div class="flex-grow ml-4">
-      <div class="flex justify-between align-start">
-        <span class="font-semibold">{{ title }}</span>
-        <CloseIcon class="icon cursor-pointer" @click="close" />
-      </div>
-      <div class="flex">
-        <slot />
-      </div>
-    </div>
+    <slot name="content" />
+    <CloseIcon class="icon cursor-pointer" @click="close" />
   </div>
 </template>
 
 <script>
-import CloseIcon from 'vue-material-design-icons/Close';
+import CloseIcon from "vue-material-design-icons/Close";
 
-const isHidden = 'hidden';
+const isHidden = "hidden";
 
 export default {
-  name: 'Banner',
+  name: "Banner",
   components: {
     CloseIcon,
   },
@@ -28,7 +21,6 @@ export default {
       type: String,
       required: true,
     },
-    title: String,
   },
   data() {
     return {
@@ -51,7 +43,7 @@ export default {
   created() {
     if (process.isClient && localStorage) {
       if (localStorage.getItem(this.localStorageKey) === isHidden) {
-        this.close()
+        this.close();
       } else {
         this.display = true;
       }
