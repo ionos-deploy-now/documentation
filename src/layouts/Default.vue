@@ -11,7 +11,7 @@
             <BriefcaseSearch class="icon icon-lg" decorative />
           </template>
           {{ $t('job-offer.banner-subtitle') }}
-          <JobSearchLink class="text-primary mx-2">
+          <JobSearchLink class="text-white mx-2">
             <ChevronDoubleRightIcon class="icon self-center" decorative />
             <span class="self-center">{{ $t('job-offer.banner-link') }}</span>
           </JobSearchLink>
