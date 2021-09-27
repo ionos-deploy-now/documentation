@@ -10,28 +10,24 @@
           <template #icon>
             <BullhornOutline class="icon icon-lg" decorative />
           </template>
-          <template #content>
-            <div class="flex-grow mx-4">
-              <div class="flex">
-                <div class="flex-grow">
-                  <div class="flex flex-col">
-                    <span class="text-xs md:text-base font-semibold">
-                      {{ $t("job-offer.banner-title") }}
-                    </span>
-                    <span class="text-xs md:text-base">
-                      {{ $t("job-offer.banner-subtitle") }}
-                    </span>
-                  </div>
+          <div class="flex-grow mx-4">
+            <div class="flex">
+              <div class="flex-grow">
+                <div class="flex flex-col">
+                  <span class="text-xs md:text-base font-semibold">
+                    {{ $t('job-offer.banner-title') }}
+                  </span>
+                  <span class="flex align-center text-xs md:text-base">
+                    {{ $t('job-offer.banner-subtitle') }}
+                    <JobSearchLink class="flex-inline-center text-white text-xs md:text-base ml-3">
+                      <ChevronDoubleRightIcon class="icon" decorative />
+                      <span>{{ $t('job-offer.banner-link') }}</span>
+                    </JobSearchLink>
+                  </span>
                 </div>
-                <JobSearchLink
-                  class="flex-center text-primary text-xs md:text-base"
-                >
-                  <ChevronDoubleRightIcon class="icon" decorative />
-                  <span>{{ $t("job-offer.banner-link") }}</span>
-                </JobSearchLink>
               </div>
             </div>
-          </template>
+          </div>
         </Banner>
         <LayoutHeader />
       </header>
@@ -69,14 +65,14 @@ query {
 </static-query>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
-import BullhornOutline from "vue-material-design-icons/BullhornOutline";
-import ChevronDoubleRightIcon from "vue-material-design-icons/ChevronDoubleRight";
-import LayoutHeader from "~/components/LayoutHeader";
-import LayoutFooter from "~/components/LayoutFooter";
-import Banner from "~/components/Banner";
-import Sidebar from "~/components/Sidebar";
-import JobSearchLink from "~/components/JobSearchLink";
+import { mapGetters, mapActions } from 'vuex';
+import BullhornOutline from 'vue-material-design-icons/BullhornOutline';
+import ChevronDoubleRightIcon from 'vue-material-design-icons/ChevronDoubleRight';
+import LayoutHeader from '~/components/LayoutHeader';
+import LayoutFooter from '~/components/LayoutFooter';
+import Banner from '~/components/Banner';
+import Sidebar from '~/components/Sidebar';
+import JobSearchLink from '~/components/JobSearchLink';
 
 export default {
   components: {

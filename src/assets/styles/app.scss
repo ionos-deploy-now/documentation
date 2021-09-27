@@ -242,6 +242,10 @@ table {
   @apply flex justify-center items-center;
 }
 
+.flex-inline-center {
+  @apply inline-flex justify-center items-center;
+}
+
 .absolute-center-x {
   @apply left-1/2;
   transform: translateX(-50%);
