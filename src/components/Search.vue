@@ -6,7 +6,7 @@
       :title="$t('search.title')"
       @click="showSearch"
     />
-    <label class="relative md:flex-center md:opacity-100 outline-none" :class="searchLabelClass">
+    <label class="md:flex-center md:opacity-100 outline-none" :class="searchLabelClass">
       <span class="sr-only">{{ $t('search.title') }}</span>
       <MagnifyIcon class="icon absolute left-3 inset-3 z-1 text-ui-typo" decorative />
       <input

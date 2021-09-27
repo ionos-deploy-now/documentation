@@ -71,3 +71,32 @@ Deploy Now uses a freemium model. The three project packages included in the fre
 ## What is this documentation built with?
 This documentation is based on the static site generator [Gridsome](https://gridsome.org/).
 
+## NextJs is not recognized during setup and how can I configure my project to make it work?
+First of all, make sure the static app has been exported, as we don't offer a nodejs runtime yet.
+
+Please adapt your build step with the following line as described in this [static-html-export documentation](https://nextjs.org/docs/advanced-features/static-html-export).
+
+`next build && next export`
+
+You should also change under build settings the dist folder as 'out'.
+
+Our [nextjs example](https://github.com/ionos-deploy-now/hello-next) is also available in github. 
+
+You can use the following sample configuration as a guide for manual setup
+
+:::details Example configuration for nextjs
+```
+Language: Javascript
+Template: Node.js
+Variant: npm install
+Build settings:
+  - Build command: npm run build 
+  - Dist folder: out
+```
+
+![Screenshot from source selection step](/nextjs-app-install.png)  
+:::
+
+## Can i use NextJs without exporting a static site or incremental static regeneration feature?
+
+Since we do not yet provide a Nodejs runtime environment, using nextjs without exporting a static page is not possible. Incremental static regeneration also requires server-side rendering at runtime, so regeneration of static pages at runtime is not possible.
