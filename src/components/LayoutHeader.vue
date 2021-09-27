@@ -25,7 +25,7 @@
         </ClientOnly>
       </div>
 
-      <div class="flex-center space-x-2 md:space-x-8" :class="{ 'hide-mobile': searchFocused }">
+      <div class="flex-center lg:space-x-8" :class="{ 'hide-mobile': searchFocused }">
         <a
           v-if="settings.github"
           :href="settings.github"
@@ -91,7 +91,7 @@ import CloseIcon from 'vue-material-design-icons/Close'
 import ToggleDarkMode from '~/components/ToggleDarkMode';
 import DeployNow from '~/components/DeployNow';
 
-const Search = () => import(/* webpackChunkName: "search" */ '@/components/Search').catch(error => console.warn(error));
+const Search = () => import(/* webpackChunkName: "search" */ '~/components/Search').catch(error => console.warn(error));
 
 export default {
   components: {
@@ -104,7 +104,10 @@ export default {
     CloseIcon,
   },
   computed: {
-    ...mapGetters(['searchFocused', 'sidebarOpen']),
+    ...mapGetters({
+      searchFocused: 'searchFocused',
+      sidebarOpen: 'sidebarOpen',
+    }),
     meta() {
       return this.$static.metadata;
     },

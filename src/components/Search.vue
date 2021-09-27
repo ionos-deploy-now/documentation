@@ -13,7 +13,7 @@
         ref="input"
         type="search"
         :value="query"
-        class="block w-full py-2 pl-10 pr-4 border-2 rounded-lg bg-ui-sidebar border-ui-sidebar outline-none focus:bg-ui-background md:min-w-[200px] lg:min-w-[300px] xxl:min-w-[400px]"
+        class="block w-full py-2 pl-10 pr-4 border-2 rounded-lg bg-ui-sidebar border-ui-sidebar outline-none focus:bg-ui-background md:min-w-[260px] xxl:min-w-[400px]"
         :class="{ 'md:rounded-b-none': showResult }"
         :placeholder="$t('search.placeholder')"
         @focus="focusSearch"
@@ -95,10 +95,13 @@ export default {
       query: '',
       focusIndex: -1,
       results: [],
+      displayResultCount: 15,
     };
   },
   computed: {
-    ...mapGetters(['searchFocused']),
+    ...mapGetters({
+      searchFocused: 'searchFocused',
+    }),
     headings() {
       const result = [];
       const allPages = this.$static.allMarkdownPage.edges.map(edge => edge.node);
@@ -169,7 +172,7 @@ export default {
         keys: ['value'],
         threshold: 0.25,
       });
-      this.results = fuse.search(this.query).slice(0, 15);
+      this.results = fuse.search(this.query).slice(0, this.displayResultCount);
     },
     go() {
       if (this.results.length === 0) {
