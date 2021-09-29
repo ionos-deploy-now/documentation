@@ -1,7 +1,7 @@
 <template>
   <div v-show="display" class="flex-center px-4 py-3 text-white bg-midnight">
     <slot name="icon" />
-    <slot />
+    <slot name="content" />
     <CloseIcon class="icon cursor-pointer" @click="close" />
   </div>
 </template>
