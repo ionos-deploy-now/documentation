@@ -27,7 +27,7 @@ export default function (Vue, { router, head, appOptions }) {
   });
   head.meta.push({
     name: 'google-site-verification',
-    content: '4sJSGlVIt-ws6sEGrKNfhBG3lmMXRUI_tz0Cd0gx5E8'
+    content: 'UtLaJ4v0UZBDPJVc8DqCyiUPSSz9TtMroKmflhpH2eo'
   })
 
   // Add meta data to each page
