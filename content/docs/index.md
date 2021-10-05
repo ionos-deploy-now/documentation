@@ -11,7 +11,7 @@ Deploy Now is a hosting platform built from developers for developers. Connect y
 
 ## Deploy Now in a nutshell
 
-Deploy Now provides a full platform for your web projects and integrates perfectly with your https:&#47;&#47;github.com/&lt;your account&gt;. Automation is based on [GitHub Actions](https://github.com/features/actions) that makes it easy to deploy all your changes right away and blends perfectly with your existing dev tooling. 
+Deploy Now provides a full platform for your web projects and integrates perfectly with your https:&#47;&#47;github.com/&lt;your user&gt;. Automation is based on [GitHub Actions](https://github.com/features/actions) that makes it easy to deploy all your changes right away and blends perfectly with your existing dev tooling. 
 
 |FUNCTION SET|APPLICATION STACK|BY DEFAULT|
 |-|-|-|
