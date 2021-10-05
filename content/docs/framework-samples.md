@@ -1,7 +1,7 @@
 ---
 description: ''
 sidebar: 'docs'
-prev: '/docs/staging-deployments/'
+prev: '/docs/framework-guide/'
 next: '/docs/configuration-overview/'
 editable: true
 ---

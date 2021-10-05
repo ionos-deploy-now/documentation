@@ -49,6 +49,7 @@ module.exports = {
               '/docs/',
               '/docs/git-integration/',
               '/docs/staging-deployments/',
+              '/docs/framework-guide/',
               '/docs/framework-samples/',
             ],
           },
