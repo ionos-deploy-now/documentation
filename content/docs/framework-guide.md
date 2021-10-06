@@ -21,9 +21,10 @@ Below the general git-based deployment with Deploy Now is described.
 Afterwards initialize git and push your project to the created GitHub repository by the following commands:
 ```
 git init
-git remote add origin git@github.com:<your user>/project-name.git
-git branch -M main
-git push -u origin main
+git remote add origin git@github.com:username/reponame.git
+git add .
+git commit -m 'initial commit'
+git push origin main
 ```
 
 ### Setup deployment
@@ -32,17 +33,21 @@ Sign in to your [Deploy Now](https://ionos.space/) account and click ```New proj
 
 ### General notes
 
-**Note**: At the moment the number of frameworks Deploy Now is able to detect and setup out of the box is still limited. If you're framework isn't listed below, please choose ```PlainHtml``` as language and template. This workflow will guarantee that at least the deployment setup will work fine and data is transferred from GitHub to Deploy Now. Based on this workflow you're able to customize your build further. 
+:::note
+At the moment the number of frameworks Deploy Now is able to detect and support out of the box is still limited. If you're framework isn't listed below, please choose ```PlainHtml``` as language and template. This workflow will guarantee to you that at least the deployment setup will work fine and data is transferred from GitHub to Deploy Now. Based on this workflow you're able to customize your build further. 
+:::
 
-## Starting your first static web project
+## 5 minute instructions
 
-How to start your first project with Deploy Now if you don't have a specific framework in mind. Let's give you some ideas by example.
+How to start your first project with Deploy Now if you don't have any specific framework in mind. Let's give you some 5 minute instructions for your next web project.
 
-**Note**: Following examples uses ```npx``` by default. If you have npm ≥ 5.2.0 you should already have installed npx on your computer. In the unexpected case you don't have installed ```npx``` you have to install ```npx``` first:
+:::note
+All following samples uses ```npx``` by default. If you have npm ≥ 5.2.0 you should already have installed npx on your computer. In the unexpected case you don't have installed ```npx``` you have to install ```npx``` first:
 
 ```
 npm install -g npx
 ```
+:::
 
 ### Plain html site
 
@@ -55,11 +60,15 @@ echo '<!DOCTYPE html>\n<html>\n\t<body>\n\t\t<h1>Hello World!</h1>\n\t</body>\n<
 echo "`file:///pwd`\index.html"
 ```
 
-2. Visit your site locally by copying stdout to your browser address.
+1. Visit your site locally by copying stdout to your favorite browser bar.
 
-3. After setting up Git based deployment with Deploy Now your ```dist-folder``` should be ```./``` by default.
+2. Now, initialize your Git workflow and setup your deployment as described [above](/docs/framework-guide/#git-based-deployment-with-deploy-now). In your workflow file ```.github/workflows/deploy-now.yml``` your ```dist-folder``` should be ```./``` by default now.
 
-### React App
+### Single Page Applications (SPA)
+
+A single-page application (SPA) interacts with the user by dynamically rewriting the current web page with new data from the web server, instead of reloading the entire page for every request.
+
+#### React app
 
 1. Create a new [React](https://reactjs.org/) app:
 
@@ -69,19 +78,13 @@ cd react-app
 yarn start
 ```
 
-2. Visit your site locally by copying localhost address from CLI stdout to your clipboard. Next, go to your favorite browser to visit site.
+2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
 
-3. After setting up Git based deployment with Deploy Now your ```dist-folder``` should be ```./build``` by default.
+3. Now, initialize your Git workflow and setup your deployment as described [above](/docs/framework-guide/#git-based-deployment-with-deploy-now). In your workflow file ```.github/workflows/deploy-now.yml``` your ```dist-folder``` should be ```./build``` by default now.
 
-Run the following command to achieve the same result locally on your machine:
+#### Vue app
 
-```
-yarn build
-```
-
-### Vue App
-
-Create a new [Vue](https://vuejs.org/) app:
+1. Create a new [Vue](https://vuejs.org/) app:
 
 ```
 npx @vue/cli create --default vue-app
@@ -89,11 +92,34 @@ cd vue-app
 yarn serve
 ```
 
-Lookup localhost address on your terminal window and copy the address to your clipboard. Visit address with your default browser.
+2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
 
-### Angular App
+3. Now, initialize your Git workflow and setup your deployment as described [above](/docs/framework-guide/#git-based-deployment-with-deploy-now). In your workflow file ```.github/workflows/deploy-now.yml``` your ```dist-folder``` should be ```./dist``` by default now.
 
-Create a new [Angular](https://angular.io/) app:
+#### Svelte app
+
+1. Create a new [Svelte](https://svelte.dev/) app:
+
+```
+npx degit sveltejs/template svelte-app
+cd svelte-app
+npm ci
+npm run build
+```
+
+2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+3. Now, initialize your Git workflow and setup your deployment as described [above](/docs/framework-guide/#git-based-deployment-with-deploy-now).
+
+:::caution Grab it!
+Currently Deploy Now doesn't support Ionic setup process automatically. We're working on more automation. But in meanwhile you have to get your hands dirty.
+That means you have to choose for Ionic ```Language = JavaScript```, ```Template = React``` and ```Variant = npm ci``` in Deploy Now. At least this will setup a worklow that depends on node and npm already. But unfortunately your first build will fail. Go to your ```.github/workflows/deploy-now.yml``` and change dist folder from ```dist-folder: dist``` to ```dist-folder: public``` and commit your changes. Now, build and deploy for Svelte in the above setup should work fine.
+:::
+
+
+#### Angular app
+
+1. Create a new [Angular](https://angular.io/) app:
 
 ```
 npx -p @angular/cli ng new angular-app
@@ -101,29 +127,43 @@ cd angular-app
 npm run start
 ```
 
-Lookup localhost address on your terminal window and copy the address to your clipboard. Visit address with your default browser.
+2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
 
-**Note**: So far Deploy Now doesn't support Angular setup process automatically. In meanwhile choose ```Language = JavaScript```, ```Template = Node``` and ```Variant = npm install``` in Deploy Now. Unfortunately the first build will fail. That means that you have to customize the generated ```ionic-app/.github/workflows/deploy-now.yml``` manually. Please replace ```run: npm run build``` with ```run: npm run ng build``` and change dist folder from ```dist-folder: dist``` to ```dist-folder: dist/angular-app``` and commit your workflow. Now, build and deploy should work fine.
+3. Now, initialize your Git workflow and setup your deployment as described [above](/docs/framework-guide/#git-based-deployment-with-deploy-now).
 
-### Ionic App
+:::caution Grab it!
+Currently Deploy Now doesn't support Angular setup process automatically. We're working on more automation. But in meanwhile you have to get your hands dirty.
+That means you have to choose for Angular ```Language = JavaScript```, ```Template = Node``` and ```Variant = npm install``` in Deploy Now. At least this will setup a worklow that depends on node and npm already. But unfortunately your first build will fail. Go to your ```.github/workflows/deploy-now.yml``` and replace ```run: npm run build``` with ```run: npm run ng build``` and change dist folder from ```dist-folder: dist``` to ```dist-folder: dist/angular-app``` and commit your changes. Now, build and deploy for Angular in the above setup should work fine.
+:::
 
-Create a new [Ionic](https://ionicframework.com/) app:
+#### Ionic app
+
+1. Create a new [Ionic](https://ionicframework.com/) app:
 
 ```
-npx @ionic/cli start ionic-app conference --type=react --no-link
+npx @ionic/cli start ionic-app list --type=react --no-link
 cd ionic-app
 npm run serve
 ```
 
-**Note**: So far Deploy Now doesn't support Ionic setup process automatically. In meanwhile choose ```Language = JavaScript```, ```Template = Node``` and ```Variant = npm install``` in Deploy Now. Unfortunately the first build will fail. That means that you have to customize the generated ```ionic-app/.github/workflows/deploy-now.yml``` manually. Please change dist folder from ```dist-folder: dist``` to ```dist-folder: build``` and commit your workflow. Now, build and deploy should work fine.
+2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
 
-Lookup localhost address on your terminal window and copy the address to your clipboard. Visit address with your default browser.
+3. Now, initialize your Git workflow and setup your deployment as described [above](/docs/framework-guide/#git-based-deployment-with-deploy-now).
 
-### Gatsby site
+:::caution Grab it!
+Currently Deploy Now doesn't support Ionic setup process automatically. We're working on more automation. But in meanwhile you have to get your hands dirty.
+That means you have to choose for Ionic ```Language = JavaScript```, ```Template = React``` and ```Variant = npm ci``` in Deploy Now.
+:::
+
+### Server Side Generators (SSG)
+
+A Static Site Generator (SSG) is a tool which run as part of a build to transform content, data, and templates into files which can be deployed to a hosting environment as a ready-to-serve web site.
+
+#### Gatsby site
 
 [Gatsby](https://www.gatsbyjs.com/) is a React-based, open source static site generator that pulls data via GraphQL to a wide range of content sources.
 
-Create a new site by entering the following commands in your terminal:
+1. Create a new site by entering the following commands in your terminal:
 
 ```
 npx gatsby-cli new gatsby-site
@@ -131,13 +171,15 @@ cd gatsby-site
 npm run develop
 ```
 
-Lookup localhost address on your terminal window and copy the address to your clipboard. Visit address with your default browser.
+2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
 
-### Gridsome site
+3. Now, initialize your Git workflow and setup your deployment as described [above](/docs/framework-guide/#git-based-deployment-with-deploy-now). In your workflow file ```.github/workflows/deploy-now.yml``` your ```dist-folder``` should be ```./public``` by default now.
 
-[Gridsome](https://gridsome.org/) is a React-based, open source static site generator that pulls data via GraphQL to a wide range of content sources.
+#### Gridsome site
 
-Create a new site by entering the following commands in your terminal:
+[Gridsome](https://gridsome.org/) is a Vue-based, open source static site generator that pulls data via GraphQL to a wide range of content sources.
+
+1. Create a new site by entering the following commands in your terminal:
 
 ```
 npx @gridsome/cli create gridsome-site
@@ -145,9 +187,59 @@ cd gridsome-site
 npm run develop
 ```
 
-Lookup localhost address on your terminal window and copy the address to your clipboard. Visit address with your default browser.
+2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
 
-### Nuxt site
+3. Now, initialize your Git workflow and setup your deployment as described [above](/docs/framework-guide/#git-based-deployment-with-deploy-now). In your workflow file ```.github/workflows/deploy-now.yml``` your ```dist-folder``` should be ```./dist``` by default now.
+
+#### Hexo site
+
+A fast, simple & powerful blog framework, powered by Node.js and NPM.
+
+1. Create a new site by entering the following commands in your terminal:
+
+```
+npx hexo-cli init hexo-site
+cd hexo-site
+yarn server
+```
+
+2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+3. Now, initialize your Git workflow and setup your deployment as described [above](/docs/framework-guide/#git-based-deployment-with-deploy-now). In your workflow file ```.github/workflows/deploy-now.yml``` your ```dist-folder``` should be ```./public``` by default now.
+
+#### Docusaurus site
+
+Build optimized websites quickly, focus on your content.
+
+1. Create a new site by entering the following commands in your terminal:
+
+```
+npx @docusaurus/init@latest init docusaurus-site classic
+cd docusaurus-site
+yarn start
+```
+
+2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+3. Now, initialize your Git workflow and setup your deployment as described [above](/docs/framework-guide/#git-based-deployment-with-deploy-now).
+
+:::caution Grab it!
+Currently Deploy Now doesn't support Docusaurus setup process automatically. We're working on more automation. But in meanwhile you have to get your hands dirty.
+That means you have to choose for docusaurus ```Language = JavaScript```, ```Template = React``` and ```Variant = yarn``` in Deploy Now.
+:::
+
+
+
+
+
+
+
+
+### Universal Web Applications (UWA)
+
+tbd
+
+#### Nuxt site
 
 ```
 npx create-nuxt-app nuxt-app
@@ -156,19 +248,11 @@ npm run build
 npm run start
 ```
 
-### Next site
+#### Next site
 
 tbd
 
-### Jekyll site
-
-tbd
-
-### Hugo site
-
-tbd
-
-## Starting your first PHP web project
+### Starting your first PHP web project
 
 tbd
 
