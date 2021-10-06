@@ -2,7 +2,8 @@ import Vuex from 'vuex';
 import createStore from '~/store';
 import DefaultLayout from '~/layouts/Default.vue';
 import 'prism-themes/themes/prism-material-oceanic.css';
-import 'gridsome-plugin-remark-container/themes/default.css';
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
+import 'gridsome-plugin-remark-container/themes/classic.css';
 import '@fontsource/open-sans/latin-400.css';
 import '@fontsource/open-sans/latin-600.css';
 import '@fontsource/open-sans/latin-800.css';
