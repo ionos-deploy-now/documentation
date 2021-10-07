@@ -6,9 +6,13 @@ next: '/docs/framework-samples/'
 editable: true
 ---
 
-# Framework guide
+# 5 minute instructions
 
-Deploy Now supports to deploy any kind of static web projects. It doesn't matter if this is build up by a static site generator or any other framework, even it's not listed below, you can still deploy it using this guide.
+How to start your first project with Deploy Now if you don't have any specific framework in mind. Let's give you some 5 minute instructions for your next web project.
+
+:::note
+Make sure you have npx installed. npx is shipped by default since npm ≥ 5.2.0.
+:::
 
 ## Git-based deployment with Deploy Now
 
@@ -37,15 +41,7 @@ Sign in to your [Deploy Now](https://ionos.space/) account and click ```New proj
 At the moment the number of frameworks Deploy Now is able to detect and support out of the box is still limited. If you're framework isn't listed below, please choose ```PlainHtml``` as language and template. This workflow will guarantee to you that at least the deployment setup will work fine and data is transferred from GitHub to Deploy Now. Based on this workflow you're able to customize your build further. 
 :::
 
-## 5 minute instructions
-
-How to start your first project with Deploy Now if you don't have any specific framework in mind. Let's give you some 5 minute instructions for your next web project.
-
-:::note
-Make sure you have npx installed. npx is shipped by default since npm ≥ 5.2.0.
-:::
-
-### Plain html site
+## Plain html site
 
 > The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser.
 
@@ -62,11 +58,11 @@ echo "`file:///pwd`\index.html"
 
 2. Now, initialize your Git workflow and setup your deployment as described [above](/docs/framework-guide/#git-based-deployment-with-deploy-now). In your workflow file ```.github/workflows/deploy-now.yml``` your ```dist-folder``` should be ```./``` by default now.
 
-### Single Page Applications (SPA)
+## Single Page Applications (SPA)
 
 A single-page application (SPA) interacts with the user by dynamically rewriting the current web page with new data from the web server, instead of reloading the entire page for every request.
 
-#### React app
+### React app
 
 > A JavaScript library for building user interfaces
 
@@ -82,7 +78,7 @@ yarn start
 
 3. Now, initialize your Git workflow and setup your deployment as described [above](/docs/framework-guide/#git-based-deployment-with-deploy-now). In your workflow file ```.github/workflows/deploy-now.yml``` your ```dist-folder``` should be ```./build``` by default now.
 
-#### Vue app
+### Vue app
 
 > The Progressive JavaScript Framework
 
@@ -98,7 +94,7 @@ yarn serve
 
 3. Now, initialize your Git workflow and setup your deployment as described [above](/docs/framework-guide/#git-based-deployment-with-deploy-now). In your workflow file ```.github/workflows/deploy-now.yml``` your ```dist-folder``` should be ```./dist``` by default now.
 
-#### Svelte app
+### Svelte app
 
 > Cybernetically enhanced web app
 
@@ -121,7 +117,7 @@ That means you have to choose for Ionic ```Language = JavaScript```, ```Template
 :::
 
 
-#### Angular app
+### Angular app
 
 > The modern web developer's platform
 
@@ -142,7 +138,7 @@ Currently Deploy Now doesn't support Angular setup process automatically. We're 
 That means you have to choose for Angular ```Language = JavaScript```, ```Template = Node``` and ```Variant = npm install``` in Deploy Now. At least this will setup a working deployment workflow. But unfortunately your first build will fail. Go to your ```.github/workflows/deploy-now.yml``` and replace ```run: npm run build``` with ```run: npm run ng build``` and change dist folder from ```dist-folder: dist``` to ```dist-folder: dist/angular-app``` and commit your changes. Now, build and deploy for Angular in the above setup should work fine.
 :::
 
-#### Ionic app
+### Ionic app
 
 > Ionic Framework's app development platform builds amazing cross-platform mobile, web, and desktop apps all with one shared code base and open-web standards.
 
@@ -163,11 +159,11 @@ Currently Deploy Now doesn't support Ionic setup process automatically. We're wo
 That means you have to choose for Ionic ```Language = JavaScript```, ```Template = React``` and ```Variant = npm ci``` in Deploy Now.
 :::
 
-### Server Side Generators (SSG)
+## Server Side Generators (SSG)
 
 A Static Site Generator (SSG) is a tool which run as part of a build to transform content, data, and templates into files which can be deployed to a hosting environment as a ready-to-serve web site.
 
-#### Gatsby site
+### Gatsby site
 
 > [Gatsby](https://www.gatsbyjs.com/) is a React-based, open source static site generator that pulls data via GraphQL to a wide range of content sources.
 
@@ -183,7 +179,7 @@ npm run develop
 
 3. Now, initialize your Git workflow and setup your deployment as described [above](/docs/framework-guide/#git-based-deployment-with-deploy-now). In your workflow file ```.github/workflows/deploy-now.yml``` your ```dist-folder``` should be ```./public``` by default now.
 
-#### Gridsome site
+### Gridsome site
 
 > [Gridsome](https://gridsome.org/) is a Vue-based, open source static site generator that pulls data via GraphQL to a wide range of content sources.
 
@@ -199,7 +195,7 @@ npm run develop
 
 3. Now, initialize your Git workflow and setup your deployment as described [above](/docs/framework-guide/#git-based-deployment-with-deploy-now). In your workflow file ```.github/workflows/deploy-now.yml``` your ```dist-folder``` should be ```./dist``` by default now.
 
-#### Hexo site
+### Hexo site
 
 > A fast, simple & powerful blog framework, powered by Node.js and NPM.
 
@@ -215,7 +211,7 @@ yarn server
 
 3. Now, initialize your Git workflow and setup your deployment as described [above](/docs/framework-guide/#git-based-deployment-with-deploy-now). In your workflow file ```.github/workflows/deploy-now.yml``` your ```dist-folder``` should be ```./public``` by default now.
 
-#### Docusaurus site
+### Docusaurus site
 
 > Build optimized websites quickly, focus on your content.
 
@@ -236,15 +232,7 @@ Currently Deploy Now doesn't support Docusaurus setup process automatically. We'
 That means you have to choose for docusaurus ```Language = JavaScript```, ```Template = React``` and ```Variant = yarn``` in Deploy Now.
 :::
 
-### Universal Web Applications (UWA)
-
-Universal Web Applications describes JavaScript applications which run both on the client and the server. They called also Isomorphic JavaScript.
-
-:::note
-Deploy Now doesn't support server side node applications. As a result you can run following examples only in client mode.
-:::
-
-#### Nuxt site
+### Nuxt as SSG site 
 
 > Build your next Vue.js application with confidence using Nuxt: a framework making web development simple and powerful.
 
@@ -258,7 +246,7 @@ yarn start
 ```
 
 :::note
-Be aware to choose "Static (Static/Jamstack hosting)" as deploymnent target.
+Be aware to choose "Static (Static/Jamstack hosting)" as deploymnent target. Deploy Now doesn't support server side node applications. As a result you can run following examples only in client mode.
 :::
 
 2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
@@ -270,29 +258,7 @@ Currently Deploy Now doesn't support Nuxt setup process automatically. We're wor
 That means you have to choose for Nuxt ```Language = JavaScript```, ```Template = Vue``` and ```Variant = yarn``` in Deploy Now. At least this will setup a working deployment workflow. But unfortunately your first build will fail. Go to your ```.github/workflows/deploy-now.yml``` and replace ```run: yarn build``` with ```run: yarn generate```. Now, build and deploy for Nuxt in the above setup should work fine.
 :::
 
-#### Next site
-
-> The React Framework for Production
-
-1. Create a new site by entering the following commands in your terminal:
-
-```
-npx create-next-app next-app
-cd next-app
-npm run build
-npm start
-```
-
-1. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
-
-2. Now, initialize your Git workflow and setup your deployment as described [above](/docs/framework-guide/#git-based-deployment-with-deploy-now).
-
-:::caution Grab it!
-Currently Deploy Now doesn't support Next setup process automatically. We're working on more automation. But in meanwhile you have to get your hands dirty.
-That means you have to choose for Next ```Language = JavaScript```, ```Template = React``` and ```Variant = npm ci``` in Deploy Now. At least this will setup a working deployment workflow. But unfortunately your first build will fail. Go to your ```.github/workflows/deploy-now.yml``` and change dist folder from ```dist-folder: build``` to ```dist-folder: .next``` and commit your changes. Now, build and deploy for Svelte in the above setup should work fine.
-:::
-
-### PHP
+## PHP
 
 tbd
 
