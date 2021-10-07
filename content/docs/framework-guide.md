@@ -42,14 +42,12 @@ At the moment the number of frameworks Deploy Now is able to detect and support 
 How to start your first project with Deploy Now if you don't have any specific framework in mind. Let's give you some 5 minute instructions for your next web project.
 
 :::note
-All following samples uses ```npx``` by default. If you have npm ≥ 5.2.0 you should already have installed npx on your computer. In the unexpected case you don't have installed ```npx``` you have to install ```npx``` first:
-
-```
-npm install -g npx
-```
+Make sure you have npx installed. npx is shipped by default since npm ≥ 5.2.0.
 :::
 
 ### Plain html site
+
+> The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser.
 
 1. Create a simple plain html site:
 
@@ -70,10 +68,12 @@ A single-page application (SPA) interacts with the user by dynamically rewriting
 
 #### React app
 
+> A JavaScript library for building user interfaces
+
 1. Create a new [React](https://reactjs.org/) app:
 
 ```
-npx create-react-app react-app
+npx create-react-app@latest react-app
 cd react-app
 yarn start
 ```
@@ -84,10 +84,12 @@ yarn start
 
 #### Vue app
 
+> The Progressive JavaScript Framework
+
 1. Create a new [Vue](https://vuejs.org/) app:
 
 ```
-npx @vue/cli create --default vue-app
+npx @vue/cli@latest create --default vue-app
 cd vue-app
 yarn serve
 ```
@@ -98,10 +100,12 @@ yarn serve
 
 #### Svelte app
 
+> Cybernetically enhanced web app
+
 1. Create a new [Svelte](https://svelte.dev/) app:
 
 ```
-npx degit sveltejs/template svelte-app
+npx degit@latest sveltejs/template svelte-app
 cd svelte-app
 npm ci
 npm run build
@@ -113,16 +117,18 @@ npm run build
 
 :::caution Grab it!
 Currently Deploy Now doesn't support Ionic setup process automatically. We're working on more automation. But in meanwhile you have to get your hands dirty.
-That means you have to choose for Ionic ```Language = JavaScript```, ```Template = React``` and ```Variant = npm ci``` in Deploy Now. At least this will setup a worklow that depends on node and npm already. But unfortunately your first build will fail. Go to your ```.github/workflows/deploy-now.yml``` and change dist folder from ```dist-folder: dist``` to ```dist-folder: public``` and commit your changes. Now, build and deploy for Svelte in the above setup should work fine.
+That means you have to choose for Ionic ```Language = JavaScript```, ```Template = React``` and ```Variant = npm ci``` in Deploy Now. At least this will setup a working deployment workflow. But unfortunately your first build will fail. Go to your ```.github/workflows/deploy-now.yml``` and change dist folder from ```dist-folder: dist``` to ```dist-folder: public``` and commit your changes. Now, build and deploy for Svelte in the above setup should work fine.
 :::
 
 
 #### Angular app
 
+> The modern web developer's platform
+
 1. Create a new [Angular](https://angular.io/) app:
 
 ```
-npx -p @angular/cli ng new angular-app
+npx -p @angular/cli@latest ng new angular-app
 cd angular-app
 npm run start
 ```
@@ -133,15 +139,17 @@ npm run start
 
 :::caution Grab it!
 Currently Deploy Now doesn't support Angular setup process automatically. We're working on more automation. But in meanwhile you have to get your hands dirty.
-That means you have to choose for Angular ```Language = JavaScript```, ```Template = Node``` and ```Variant = npm install``` in Deploy Now. At least this will setup a worklow that depends on node and npm already. But unfortunately your first build will fail. Go to your ```.github/workflows/deploy-now.yml``` and replace ```run: npm run build``` with ```run: npm run ng build``` and change dist folder from ```dist-folder: dist``` to ```dist-folder: dist/angular-app``` and commit your changes. Now, build and deploy for Angular in the above setup should work fine.
+That means you have to choose for Angular ```Language = JavaScript```, ```Template = Node``` and ```Variant = npm install``` in Deploy Now. At least this will setup a working deployment workflow. But unfortunately your first build will fail. Go to your ```.github/workflows/deploy-now.yml``` and replace ```run: npm run build``` with ```run: npm run ng build``` and change dist folder from ```dist-folder: dist``` to ```dist-folder: dist/angular-app``` and commit your changes. Now, build and deploy for Angular in the above setup should work fine.
 :::
 
 #### Ionic app
 
+> Ionic Framework's app development platform builds amazing cross-platform mobile, web, and desktop apps all with one shared code base and open-web standards.
+
 1. Create a new [Ionic](https://ionicframework.com/) app:
 
 ```
-npx @ionic/cli start ionic-app list --type=react --no-link
+npx @ionic/cli@latest start ionic-app list --type=react --no-link
 cd ionic-app
 npm run serve
 ```
@@ -161,12 +169,12 @@ A Static Site Generator (SSG) is a tool which run as part of a build to transfor
 
 #### Gatsby site
 
-[Gatsby](https://www.gatsbyjs.com/) is a React-based, open source static site generator that pulls data via GraphQL to a wide range of content sources.
+> [Gatsby](https://www.gatsbyjs.com/) is a React-based, open source static site generator that pulls data via GraphQL to a wide range of content sources.
 
 1. Create a new site by entering the following commands in your terminal:
 
 ```
-npx gatsby-cli new gatsby-site
+npx gatsby-cli@latest new gatsby-site
 cd gatsby-site
 npm run develop
 ```
@@ -177,12 +185,12 @@ npm run develop
 
 #### Gridsome site
 
-[Gridsome](https://gridsome.org/) is a Vue-based, open source static site generator that pulls data via GraphQL to a wide range of content sources.
+> [Gridsome](https://gridsome.org/) is a Vue-based, open source static site generator that pulls data via GraphQL to a wide range of content sources.
 
 1. Create a new site by entering the following commands in your terminal:
 
 ```
-npx @gridsome/cli create gridsome-site
+npx @gridsome/cli@latest create gridsome-site
 cd gridsome-site
 npm run develop
 ```
@@ -193,12 +201,12 @@ npm run develop
 
 #### Hexo site
 
-A fast, simple & powerful blog framework, powered by Node.js and NPM.
+> A fast, simple & powerful blog framework, powered by Node.js and NPM.
 
 1. Create a new site by entering the following commands in your terminal:
 
 ```
-npx hexo-cli init hexo-site
+npx hexo-cli@latest init hexo-site
 cd hexo-site
 yarn server
 ```
@@ -209,7 +217,7 @@ yarn server
 
 #### Docusaurus site
 
-Build optimized websites quickly, focus on your content.
+> Build optimized websites quickly, focus on your content.
 
 1. Create a new site by entering the following commands in your terminal:
 
@@ -228,31 +236,63 @@ Currently Deploy Now doesn't support Docusaurus setup process automatically. We'
 That means you have to choose for docusaurus ```Language = JavaScript```, ```Template = React``` and ```Variant = yarn``` in Deploy Now.
 :::
 
-
-
-
-
-
-
-
 ### Universal Web Applications (UWA)
 
-tbd
+Universal Web Applications describes JavaScript applications which run both on the client and the server. They called also Isomorphic JavaScript.
+
+:::note
+Deploy Now doesn't support server side node applications. As a result you can run following examples only in client mode.
+:::
 
 #### Nuxt site
 
+> Build your next Vue.js application with confidence using Nuxt: a framework making web development simple and powerful.
+
+1. Create a new site by entering the following commands in your terminal:
+
 ```
-npx create-nuxt-app nuxt-app
+npx create-nuxt-app@latest nuxt-app
 cd nuxt-app
-npm run build
-npm run start
+yarn build
+yarn start
 ```
+
+:::note
+Be aware to choose "Static (Static/Jamstack hosting)" as deploymnent target.
+:::
+
+2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+3. Now, initialize your Git workflow and setup your deployment as described [above](/docs/framework-guide/#git-based-deployment-with-deploy-now).
+
+:::caution Grab it!
+Currently Deploy Now doesn't support Nuxt setup process automatically. We're working on more automation. But in meanwhile you have to get your hands dirty.
+That means you have to choose for Nuxt ```Language = JavaScript```, ```Template = Vue``` and ```Variant = yarn``` in Deploy Now. At least this will setup a working deployment workflow. But unfortunately your first build will fail. Go to your ```.github/workflows/deploy-now.yml``` and replace ```run: yarn build``` with ```run: yarn generate```. Now, build and deploy for Nuxt in the above setup should work fine.
+:::
 
 #### Next site
 
-tbd
+> The React Framework for Production
 
-### Starting your first PHP web project
+1. Create a new site by entering the following commands in your terminal:
+
+```
+npx create-next-app next-app
+cd next-app
+npm run build
+npm start
+```
+
+1. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+2. Now, initialize your Git workflow and setup your deployment as described [above](/docs/framework-guide/#git-based-deployment-with-deploy-now).
+
+:::caution Grab it!
+Currently Deploy Now doesn't support Next setup process automatically. We're working on more automation. But in meanwhile you have to get your hands dirty.
+That means you have to choose for Next ```Language = JavaScript```, ```Template = React``` and ```Variant = npm ci``` in Deploy Now. At least this will setup a working deployment workflow. But unfortunately your first build will fail. Go to your ```.github/workflows/deploy-now.yml``` and change dist folder from ```dist-folder: build``` to ```dist-folder: .next``` and commit your changes. Now, build and deploy for Svelte in the above setup should work fine.
+:::
+
+### PHP
 
 tbd
 
