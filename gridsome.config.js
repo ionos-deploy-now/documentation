@@ -5,8 +5,8 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 const showBlog = process.env.SHOW_BLOG === 'true';
-const includedMarkdownPaths = ['docs', 'team', ...(showBlog ? ['blog'] : [])].join('|')
-const markdownPath = `**/(${includedMarkdownPaths})/*.md`
+const includedMarkdownPaths = ['docs', 'team', ...(showBlog ? ['blog'] : [])].join('|');
+const markdownPath = `**/(${includedMarkdownPaths})/*.md`;
 const fontFamilySans = '"Open Sans", ui-sans-serif, system-ui, sans-serif';
 
 module.exports = {
@@ -66,7 +66,7 @@ module.exports = {
             items: [
               '/docs/faq/',
               ...(showBlog ? ['/blog/'] : []),
-              '/about-us/'
+              '/about-us/',
             ],
           },
         ],
@@ -147,6 +147,23 @@ module.exports = {
       use: '@gridsome/plugin-sitemap',
       options: {
         exclude: ['/team/*'],
+      },
+    },
+    {
+      use: 'gridsome-plugin-robots-txt',
+      options: {
+        policy: [
+          {
+            userAgent: 'Googlebot',
+            allow: '/',
+            crawlDelay: 2,
+          },
+          {
+            userAgent: '*',
+            allow: '/',
+            crawlDelay: 10,
+          },
+        ],
       },
     },
   ],
