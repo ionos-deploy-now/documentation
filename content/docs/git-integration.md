@@ -1,7 +1,7 @@
 ---
 description: ''
 sidebar: 'docs'
-prev: '/docs/'
+prev: '/docs/from-repo/'
 next: '/docs/staging-deployments/'
 editable: true
 ---

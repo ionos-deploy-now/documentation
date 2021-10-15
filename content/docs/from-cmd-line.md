@@ -1,45 +1,14 @@
 ---
 description: ''
 sidebar: 'docs'
-prev: '/docs/staging-deployments/'
-next: '/docs/framework-samples/'
+prev: '/docs/from-sample/'
+next: '/docs/from-repo/'
 editable: true
 ---
 
-# 5 minute instructions
+# From command line
 
-How to start your first project with Deploy Now if you don't have any specific framework in mind. Let's give you some 5 minute instructions for your next web project.
-
-:::note
-Make sure you have npx installed. npx is shipped by default since npm ≥ 5.2.0.
-:::
-
-## Git-based deployment with Deploy Now
-
-Below the general git-based deployment with Deploy Now is described. 
-
-### Initialize Git workflow
-
-[Create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
-
-Afterwards initialize git and push your project to the created GitHub repository by the following commands:
-```
-git init
-git remote add origin git@github.com:username/reponame.git
-git add .
-git commit -m 'initial commit'
-git push origin main
-```
-
-### Setup deployment
-
-Sign in to your [Deploy Now](https://ionos.space/) account and click ```New project```. Next, choose the source you want to deploy from. If you created a new GitHub repository you've probably to grant new permission rights to Deploy Now in GitHub. Otherwise it won't be listed right away if you choose ```Deploy from my own GitHub repository```. After selecting one respository the setup process should automatically start. If Deploy Now doesn't have a setup blueprint or some settings are unclear, you will be asked some framework related questions before continuing. If you done take a short break until your project is build and deployed.
-
-### General notes
-
-:::note
-At the moment the number of frameworks Deploy Now is able to detect and support out of the box is still limited. If you're framework isn't listed below, please choose ```PlainHtml``` as language and template. This workflow will guarantee to you that at least the deployment setup will work fine and data is transferred from GitHub to Deploy Now. Based on this workflow you're able to customize your build further. 
-:::
+How to start your first project with Deploy Now if you don't have any specific framework in mind. The following guide provide you with some ideas how to start from scratch.
 
 ## Plain html site
 
@@ -61,6 +30,10 @@ echo "`file:///pwd`\index.html"
 ## Single Page Applications (SPA)
 
 A single-page application (SPA) interacts with the user by dynamically rewriting the current web page with new data from the web server, instead of reloading the entire page for every request.
+
+:::note
+Following SPA instructions use npx. Make sure you have npx installed. npx is shipped by default since npm ≥ 5.2.0.
+:::
 
 ### React app
 
@@ -159,7 +132,7 @@ Currently Deploy Now doesn't support Ionic setup process automatically. We're wo
 That means you have to choose for Ionic ```Language = JavaScript```, ```Template = React``` and ```Variant = npm ci``` in Deploy Now.
 :::
 
-## Server Side Generators (SSG)
+## Static Site Generators (SSG)
 
 A Static Site Generator (SSG) is a tool which run as part of a build to transform content, data, and templates into files which can be deployed to a hosting environment as a ready-to-serve web site.
 
@@ -262,5 +235,30 @@ That means you have to choose for Nuxt ```Language = JavaScript```, ```Template 
 
 tbd
 
+## Git-based deployment with Deploy Now
 
+Below the general git-based deployment with Deploy Now is described. 
+
+### Initialize Git workflow
+
+[Create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
+
+Afterwards initialize git and push your project to the created GitHub repository by the following commands:
+```
+git init
+git remote add origin git@github.com:username/reponame.git
+git add .
+git commit -m 'initial commit'
+git push origin main
+```
+
+### Setup deployment
+
+Sign in to your [Deploy Now](https://ionos.space/) account and click ```New project```. Next, choose the source you want to deploy from. If you created a new GitHub repository you've probably to grant new permission rights to Deploy Now in GitHub. Otherwise it won't be listed right away if you choose ```Deploy from my own GitHub repository```. After selecting one respository the setup process should automatically start. If Deploy Now doesn't have a setup blueprint or some settings are unclear, you will be asked some framework related questions before continuing. If you done take a short break until your project is build and deployed.
+
+### General notes
+
+:::note
+At the moment the number of frameworks Deploy Now is able to detect and support out of the box is still limited. If you're framework isn't listed below, please choose ```PlainHtml``` as language and template. This workflow will guarantee to you that at least the deployment setup will work fine and data is transferred from GitHub to Deploy Now. Based on this workflow you're able to customize your build further. 
+:::
 

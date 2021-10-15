@@ -2,7 +2,7 @@
 description: ''
 sidebar: 'docs'
 prev: '/docs/git-integration/'
-next: '/docs/framework-samples/'
+next: '/docs/configuration-overview/'
 editable: true
 ---
 

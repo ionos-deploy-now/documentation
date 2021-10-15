@@ -1,7 +1,7 @@
 ---
 description: ''
 sidebar: 'docs'
-next: '/docs/git-integration/'
+next: '/docs/from-sample/'
 editable: true
 ---
 

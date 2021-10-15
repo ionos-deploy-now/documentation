@@ -47,10 +47,11 @@ module.exports = {
             title: 'Getting Started',
             items: [
               '/docs/',
+              '/docs/from-sample/',
+              '/docs/from-cmd-line/',
+              '/docs/from-repo/',
               '/docs/git-integration/',
               '/docs/staging-deployments/',
-              '/docs/framework-guide/',
-              '/docs/framework-samples/',
             ],
           },
           {
@@ -172,8 +173,14 @@ module.exports = {
           },
         }],
         '@noxify/gridsome-remark-table-align',
-        '@gridsome/remark-prismjs',
-        'gridsome-plugin-remark-container',
+        ['@gridsome/remark-prismjs', {
+            showLineNumbers: true,
+          },
+        ],
+        ['gridsome-plugin-remark-container', {
+
+          },
+        ],
       ],
     },
   },

@@ -1,16 +1,18 @@
 ---
 description: ''
 sidebar: 'docs'
-prev: '/docs/framework-guide/'
-next: '/docs/configuration-overview/'
+prev: '/docs/'
+next: '/docs/from-cmd-line/'
 editable: true
 ---
 
-# Framework samples
+# From sample
 
-The following framework samples give you an overview of static site generator (SSG) frameworks that can be hosted out of the box with Deploy Now. All samples are kept simple to give you a basic working prototype.
+The following samples give you a first glance how Deploy Now works. Just click on the according __Deploy Now__ button to get your instance live.
 
-Feel free to create your own sample by adding a `.ionos.yml` file in your repository root folder. Providing a [file-based configuration](/docs/explicit-build-configuration) allows other users to use your sample without setting the build command and dist folder. You can find an examplary configuration below each of the samples. 
+The samples kept fairly simple to provide you with working protoytypes out of the box. You can start up from this point to create easily your own web project.
+
+If you don't find what you are looking for, maybe you want to start from scratch. In this case follow our instructions [from command line](/docs/from-cmd-line/) or start [from any existing repository](/docs/from-repo/). 
 
 ## Plain html sample
 
