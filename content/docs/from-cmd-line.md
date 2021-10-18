@@ -8,24 +8,47 @@ editable: true
 
 # From command line
 
-How to start your first project with Deploy Now if you don't have any specific framework in mind. The following guide provide you with some ideas how to start from scratch.
+How to start your first project with Deploy Now if you don't have any specific project in mind, but you like to evaluate new things? The following guide provide you with some ideas how to start from scratch.
 
 ## Plain html site
 
 > The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser.
 
-1. Create a simple plain html site:
+1. Create a simple plain html site
 
 ```
 mkdir my-site
 cd my-site
 echo '<!DOCTYPE html>\n<html>\n\t<body>\n\t\t<h1>Hello World!</h1>\n\t</body>\n</html>' > index.html
-echo "`file:///pwd`\index.html"
+echo "file://`pwd`/index.html"
 ```
 
-1. Visit your site locally by copying stdout to your favorite browser bar.
+2. Visit your site locally by copying stdout to your favorite browser bar.
 
-2. Now, initialize your Git workflow and setup your deployment as described [above](/docs/framework-guide/#git-based-deployment-with-deploy-now). In your workflow file ```.github/workflows/deploy-now.yml``` your ```dist-folder``` should be ```./``` by default now.
+3. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
+
+Afterwards initialize git and push your project to the created GitHub repository by the following commands.
+
+```
+git init
+git add .
+git commit -m "initial commit"
+git branch -M main
+git remote add origin git@github.com:username/reponame.git # replace by URI to your repo
+git push -u origin mai
+```
+
+4. Setup deployment
+
+Sign in to your [Deploy Now](https://ionos.space/) account and click ```New project```. Next, choose the source you want to deploy from.
+
+![Select source](/wizard-deploy-from-own-repo.png)
+
+If you created a new GitHub repository you've probably to grant new permission rights to Deploy Now in GitHub. Otherwise it won't be listed right away if you choose ```Deploy from my own GitHub repository```. After selecting your repository choose following configuration:
+
+![Select configuration](/wizard-plain-html-select.png)
+
+Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```. 
 
 ## Single Page Applications (SPA)
 
@@ -135,6 +158,10 @@ That means you have to choose for Ionic ```Language = JavaScript```, ```Template
 ## Static Site Generators (SSG)
 
 A Static Site Generator (SSG) is a tool which run as part of a build to transform content, data, and templates into files which can be deployed to a hosting environment as a ready-to-serve web site.
+
+:::note
+Following SSG instructions use npx. Make sure you have npx installed. npx is shipped by default since npm ≥ 5.2.0.
+:::
 
 ### Gatsby site
 
