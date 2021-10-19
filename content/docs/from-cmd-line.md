@@ -8,7 +8,9 @@ editable: true
 
 # From command line
 
-How to start your first project with Deploy Now if you don't have any specific project in mind, but you like to evaluate new things? The following guide provide you with some ideas how to start from scratch.
+You don't have a specific project at hand but want to start from scratch? Below you can find instruction how to set up projects with popular frameworks starting from the command line.
+
+*Not what you are looking for? [Start from a sample](/docs/from-sample/) or [deploy an existing repository](/docs/from-repo/).*
 
 ## Plain html site
 
@@ -54,7 +56,7 @@ A single-page application (SPA) interacts with the user by dynamically rewriting
 Following SPA instructions use npx. Make sure you have npx installed. npx is shipped by default since npm ≥ 5.2.0.
 :::
 
-### React app
+### React App
 
 > A JavaScript library for building user interfaces
 
@@ -89,7 +91,7 @@ Sign in to your [Deploy Now](https://ionos.space/) account and click ```New proj
 
 Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
 
-### Vue app
+### Vue App
 
 > The Progressive JavaScript Framework
 
@@ -124,7 +126,7 @@ Sign in to your [Deploy Now](https://ionos.space/) account and click ```New proj
 
 Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
 
-### Svelte app
+### Svelte App
 
 > Cybernetically enhanced web app
 
@@ -164,7 +166,7 @@ At the moment the number of frameworks Deploy Now is able to detect and support 
 
 Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
 
-### Angular app
+### Angular App
 
 > The modern web developer's platform
 
@@ -203,7 +205,7 @@ At the moment the number of frameworks Deploy Now is able to detect and support 
 
 Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
 
-### Ionic app
+### Ionic App
 
 > Ionic Framework's app development platform builds amazing cross-platform mobile, web, and desktop apps all with one shared code base and open-web standards.
 
@@ -250,7 +252,7 @@ A Static Site Generator (SSG) is a tool which run as part of a build to transfor
 Following SSG instructions use npx. Make sure you have npx installed. npx is shipped by default since npm ≥ 5.2.0.
 :::
 
-### Gatsby site
+### Gatsby Site
 
 > [Gatsby](https://www.gatsbyjs.com/) is a React-based, open source static site generator that pulls data via GraphQL to a wide range of content sources.
 
@@ -285,7 +287,7 @@ Sign in to your [Deploy Now](https://ionos.space/) account and click ```New proj
 
 Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
 
-### Gridsome site
+### Gridsome Site
 
 > [Gridsome](https://gridsome.org/) is a Vue-based, open source static site generator that pulls data via GraphQL to a wide range of content sources.
 
@@ -320,7 +322,7 @@ Sign in to your [Deploy Now](https://ionos.space/) account and click ```New proj
 
 Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
 
-### Hexo site
+### Hexo Site
 
 > [Hexo](https://hexo.io/) is a fast, simple & powerful blog framework, powered by Node.js and NPM.
 
@@ -355,7 +357,7 @@ Sign in to your [Deploy Now](https://ionos.space/) account and click ```New proj
 
 Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
 
-### Docusaurus site
+### Docusaurus Site
 
 > Build optimized websites quickly, focus on your content with [Docusaurus](https://docusaurus.io/).
 
@@ -394,7 +396,7 @@ At the moment the number of frameworks Deploy Now is able to detect and support 
 
 Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
 
-### Nuxt as SSG site 
+### Nuxt as SSG Site 
 
 > Build your next Vue.js application with confidence using [NuxtJS](https://nuxtjs.org/): a framework making web development simple and powerful.
 
@@ -441,7 +443,7 @@ Now, take a short break until your project is build and deployed. Deploy Now wil
 
 The following section give you some ideas to use [PHP](https://php.net) with Deploy Now.
 
-### Plain PHP site
+### Plain PHP Site
 
 > PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.
 
