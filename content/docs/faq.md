@@ -24,7 +24,7 @@ A static site generator is an essential component of the jamstack architecture. 
 In this context, a build is a process in which JavsScript is compiled, or a static site generator is run. This can be triggered by a new git commit or by external services such as a headless CMS. Everytime a build is triggered, we use [GitHub Actions](https://github.com/features/actions) to update the files on the webserver.
 
 ## From which sources can I deploy?
-You can deploy from an existing GitHub repository in your account, provide the URL to a third party repository you would like to deploy, or you can quickstart with one of our [samples](/docs/framework-samples).
+You can deploy from an existing GitHub repository in your account, provide the URL to a third party repository you would like to deploy, or you can quickstart with one of our [samples](/docs/from-sample).
 
 ## Which branches of a repository will be deployed?
 If you deploy a repository that exists in your GitHub account, you can select any branch for deployment. For third party repositories, we allways deploy the current default branch. You can allways switch the branches of your Production Deployment or connect additional branches to [staging deployments](/docs/staging-deployments).
@@ -66,7 +66,7 @@ Yes. Just like GitHubs interface, the Deploy Now interface is in english for all
 Deploy Now uses a freemium model. The three project packages included in the free membership will stay for free. You can purchase additional project packages with more storage and staging deployments any time.
 
 ## Where can I place feature requests?
-[Our team](/about-us) is continuously working on improving Deploy Now based on your needs and wishes. You can drop your feedback or feature requests directly via the feedback button on the product or below our [Post](https://www.producthunt.com/posts/deploy-now) on Product Hunt.
+[Our team](/about-us) is continuously working on improving Deploy Now based on your needs and wishes. You can drop your feedback or feature requests directly via the feedback button on the product or below our [post](https://www.producthunt.com/posts/deploy-now) on Product Hunt.
 
 ## What is this documentation built with?
 This documentation is based on the static site generator [Gridsome](https://gridsome.org/).
@@ -97,6 +97,6 @@ Build settings:
 ![Screenshot from source selection step](/nextjs-app-install.png)  
 :::
 
-## Can i use NextJs without exporting a static site or incremental static regeneration feature?
+## Can I use NextJs without exporting a static site or incremental static regeneration feature?
 
 Since we do not yet provide a Nodejs runtime environment, using nextjs without exporting a static page is not possible. Incremental static regeneration also requires server-side rendering at runtime, so regeneration of static pages at runtime is not possible.
