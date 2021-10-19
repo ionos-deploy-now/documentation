@@ -8,7 +8,9 @@ editable: true
 
 # From existing repository
 
-If you want to deploy an existing repository, simply create a new project in Deploy Now and follow the wizard. 
+Allready have an existing project you wish to set up? Simply create a new deployment by following our wizard.
+
+*Not what you are looking for? [Start from a sample](/docs/from-sample/) or [start from the command line](/docs/from-cmd-line/).*
 
 1. **Connect your GitHub account** 
 
