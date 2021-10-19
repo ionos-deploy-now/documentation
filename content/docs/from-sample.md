@@ -8,11 +8,9 @@ editable: true
 
 # From sample
 
-The following samples give you a first glance how Deploy Now works. Just click on the according __Deploy Now__ button to get your instance live.
+Looking for a quick start? Simply click on one of the "Deploy to IONOS buttons" below and we set up a very simple sample project for you. You can use this as a starting point to further work with the selected framework. 
 
-The samples kept fairly simple to provide you with working protoytypes out of the box. You can start up from this point to create easily your own web project.
-
-If you don't find what you are looking for, maybe you want to start from scratch. In this case follow our instructions [from command line](/docs/from-cmd-line/) or start [from any existing repository](/docs/from-repo/). 
+*Not what you are looking for? [Start from the command line](/docs/from-cmd-line/) or [deploy an existing repository](/docs/from-repo/).*
 
 ## Plain html sample
 
