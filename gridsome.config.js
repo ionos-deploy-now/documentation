@@ -47,7 +47,7 @@ module.exports = {
             title: 'Getting Started',
             items: [
               '/docs/',
-              '/docs/from-sample/',
+              '/docs/framework-samples/',
               '/docs/from-cmd-line/',
               '/docs/from-repo/',
               '/docs/git-integration/',
