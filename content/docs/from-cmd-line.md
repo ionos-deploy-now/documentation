@@ -198,7 +198,7 @@ git push -u origin main
 Sign in to your [Deploy Now](https://ionos.space/) account and click ```New project```. Next, choose the source you want to deploy from. If you created a new GitHub repository you've probably to grant new permission rights to Deploy Now in GitHub. Otherwise it won't be listed right away if you choose ```Deploy from my own GitHub repository```. After selecting your repository choose following configuration.
 
 :::note
-At the moment the number of frameworks Deploy Now is able to detect and support out of the box is still limited. [Angular](https://angular.io/) is one of those frameworks. Please follow the inputs you see in the screenshot below.
+At the moment the number of frameworks Deploy Now is able to detect and support out of the box is still limited. [Angular](https://angular.io/) is one of those frameworks. Please follow the inputs you see in the screenshot below. Be aware that your dist folder depends on your Angular setup. See the given input as placeholder and please adapt it to your settings.
 :::
 
 ![Select configuration](/wizard-angular.png)
