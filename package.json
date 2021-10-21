@@ -8,7 +8,7 @@
     "lint": "eslint --ext .ts,.js,.vue src"
   },
   "dependencies": {
-    "@fontsource/open-sans": "^4.5.0",
+    "@fontsource/open-sans": "^4.5.1",
     "@gridsome/plugin-sitemap": "^0.4.0",
     "gridsome": "^0.7.23",
     "gridsome-plugin-i18n": "^1.6.0",
@@ -25,14 +25,14 @@
     "@noxify/gridsome-remark-table-align": "^1.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-gridsome": "^1.6.2",
-    "eslint-plugin-vue": "^7.18.0",
+    "eslint-plugin-vue": "^7.20.0",
     "fuse.js": "^6.4.6",
     "gridsome-plugin-htaccess": "^0.2.1",
     "gridsome-plugin-service-worker": "^0.2.8",
-    "gridsome-plugin-windicss": "^1.0.3",
+    "gridsome-plugin-windicss": "^1.0.4",
     "node-sass": "^6.0.1",
     "prism-themes": "^1.9.0",
     "sass-loader": "^10.1.1",
-    "vue-eslint-parser": "^7.11.0"
+    "vue-eslint-parser": "^8.0.0"
   }
 }
