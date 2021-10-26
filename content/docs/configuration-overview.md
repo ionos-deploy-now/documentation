@@ -18,7 +18,7 @@ An `.ionos.yaml` can be stored in the repository root to make the framework conf
 
 ## GitHub Actions configuration
 
-Deploy Now connects GitHub repositories to IONOS infrastructure using [Github Actions](https://github.com/features/actions) for the workflow automation. During the project setup  Deploy Now scans your repository for the technologies and frameworks you use and stores this information in an `ionos-space.yml`. This file is located in `.github/workflows`. You can edit this file to customize your workflow. 
+Deploy Now connects GitHub repositories to IONOS infrastructure using [Github Actions](https://github.com/features/actions) for the workflow automation. During the project setup  Deploy Now scans your repository for the technologies and frameworks you use and stores this information in an `deploy-now.yml`. This file is located in `.github/workflows`. You can edit this file to customize your workflow. 
 
 [Learn more](/docs/github-actions-customization/)
 
