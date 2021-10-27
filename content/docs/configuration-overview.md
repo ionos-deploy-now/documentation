@@ -30,11 +30,11 @@ Deploy Now connects GitHub repositories to IONOS infrastructure using [Github Ac
 
 [Learn more](/docs/github-actions-customization/)
 
-## Explicit build configuration
+## Create a sample
 
-An `.ionos.yaml` can be stored in the repository root to make the framework configuration, like the dist folder or the build command, explicit. If a working `.ionos.yaml` is located in the root, the framework detection is automatically skipped. This can be especially helpful to make more complex configurations run smoothly or to avoid accidental misconfigurations when you wish your repository to be forked by others. 
+An `.ionos.yaml` can be stored in the repository root to make the framework configuration, like the dist folder or the build command, explicit. If a working `.ionos.yaml` is located in the root, the framework detection is automatically skipped. This is especially helpful if you want to create a sample and want to avoid accidental misconfigurations from users that deploy your repository.
 
-[Learn more](/docs/explicit-build-configuration/)
+[Learn more](/docs/create-sample/)
 
 ## Deployment setup overview
 
