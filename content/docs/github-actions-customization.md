@@ -138,7 +138,7 @@ Build project and set build env vars:
 
 ### Deploy build
 
-The following [action](https://github.com/ionos-deploy-now/deploy-to-ionos-action) deploys data to IONOS via Deploy Now.
+The following [action](https://github.com/ionos-deploy-now/deploy-to-ionos-action) deploys data to IONOS via Deploy Now. If you want to exclude directories from the deployment process or execute commands on your runtime after the deployment, you can do this by editing the [deployment configuration](/docs/deployment-configuration/).
 
 ``` yml
 - name: Deploy build
