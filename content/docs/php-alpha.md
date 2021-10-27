@@ -12,7 +12,7 @@ editable: true
 We would like to offer support for PHP frameworks like Laravel and Symfony on Deploy Now soon. Sounds interesting? Then support us by joining our alpha. Your input is crucial for us to make this milestone happen.
 
 # 1. Give us a ping
-Drop us a short message under <a class=\"email\" href=\"mailto:info@DeployNow.dev\">info@DeployNow.dev</a> and we will add you to the list of alpha participants. Ideally, you already have a Deploy Now account and tell us your GitHub name in your mail. We will avtivate the option to use the alpha in your profile accordingly.
+Drop us a short message under [info@DeployNow.de](mailto:info@DeployNow.de) and we will add you to the list of alpha participants. Ideally, you already have a Deploy Now account and tell us your GitHub name in your mail. We will avtivate the option to use the alpha in your profile accordingly.
 
 # 2. Deploy a sample
 As our wizard is not able to detect and configure PHP projects yet, you need deploy one of our samples to create a Laravel or Symfony project. These two samples contain a [file-based configuration](/docs/create-sample/#skip-the-wizard-with-a-file-based-configuration) that skip the setup wizard and deploy your project instantly.
