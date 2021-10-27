@@ -16,91 +16,52 @@ If your project requires a runtime, you might wish to define which files should 
 Supporting PHP runtimes is currently in alpha. You can join our alpha by following [these](/docs/php-alpha) instructions.
 ::: 
 
-
-
-
-
-Create new page "Configure Workflow"
-Tag this as alpha, maybe put it under "more" 
-Explain the purpose of the "deploy-now-config.yml":
-Setting up the workflow (build & deploy) correctly, resulting in a correct deploy-now.yml (interpreted by GitHub Actions)
-While differentiating between bootstrap and recurring deploys 
-Only needed if customers have a runtime - otherwise use deploy-now-yml directly for static projects
-Explain the structure of the yml
-First and last part is generic for all projects
-Middle part can be adopted
-"Bootstrap" for initial build & deploy, "recurring" for all others
-Adjust excluded folders (persistency), executed scripts on runtime and executed build steps
-Explain the maintenance needs of this file and how updates are handled
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Sample file
 
-This sample of an deploy-now.yml file demonstrates a common workflow.
+This sample of a config.yaml file demonstrates remote commands and excludes can be managed for a PHP project:
 
-:::details deploy-now.yml
+:::details config.yaml
 ``` yml
-name: Deploy-Now
+name: config.yaml
 
-# Triggered when code is pushed to any branch in a repository
-on: [push]
+version: 1.0
 
-jobs:
-  ionos-space:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Fetch project data
-        uses: ionos-deploy-now/retrieve-project-info-action@v1
-        id: project
-        with:
-          project: 719bd98b-3b8c-477b-8563-018a96856ab6
-          api-key: ${{ secrets.IONOS_API_KEY }}
-          service-host: api-eu.ionos.space
-      - name: Checkout project
-        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: actions/checkout@v2
-        with:
-          submodules: 'recursive'
-      - name: Setup project
-        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12.16.x
-      - name: Prepare project environment
-        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        run: |
-          npm install --global yarn
-          yarn install --frozen-lockfile
-      - name: Build project
-        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        run: yarn build
-        env:
-          CI: true
-          SITE_URL: ${{ steps.project.outputs.site-url }}
-      - name: Deploy build
-        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: ionos-deploy-now/deploy-to-ionos-action@v1
-        with:
-          service-host: api-eu.ionos.space
-          branch-id: ${{ steps.project.outputs.branch-id }}
-          storage-quota: ${{ steps.project.outputs.storage-quota }}
-          project: 719bd98b-3b8c-477b-8563-018a96856ab6
-          dist-folder: public
-          remote-host: ${{ steps.project.outputs.remote-host }}
-          api-key: ${{ secrets.IONOS_API_KEY }}
+deploy:
+  force: bootstrap/recurring
+
+  bootstrap:
+    excludes:
+      - tests
+      - node_modules
+
+    remote-commands:
+      - create SQL lite
+      - php8.0 artisan migrate --force
+      - php8.0 artisan cache:clear
+      - php8.0 artisan config:clear
+      - php8.0 artisan route:clear
+      - php8.0 artisan view:clear
+      - php8.0 artisan config:cache
+      - php8.0 artisan route:cache
+      - php8.0 artisan view:cache
+      - seed DB
+
+  recurring:
+    excludes:
+      - tests
+      - node_modules
+      - storage
+
+    remote-commands:
+      - php8.0 artisan migrate --force
+      - php8.0 artisan cache:clear
+      - php8.0 artisan config:clear
+      - php8.0 artisan route:clear
+      - php8.0 artisan view:clear
+      - php8.0 artisan config:cache
+      - php8.0 artisan route:cache
+      - php8.0 artisan view:cache
+
 ```
 :::
 
