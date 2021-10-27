@@ -8,7 +8,7 @@ editable: true
 
 # Overview
 
-Deploy Now uses two different [YAML](https://yaml.org/spec/1.2/spec.html) files to store information that is needed for the build and deploy process. 
+You can use different [YAML](https://yaml.org/spec/1.2/spec.html) files located in your repository to manage build and deployment settings.
 
 |PURPOSE|FILE NAME|LOCATION|NECESSITY|
 |-|-|-|-|
