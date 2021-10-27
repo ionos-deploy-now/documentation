@@ -10,11 +10,11 @@ editable: true
 
 You can use different [YAML](https://yaml.org/spec/1.2/spec.html) files located in your repository to manage build and deployment settings.
 
-|PURPOSE|FILE NAME|LOCATION|NECESSITY|
+|PURPOSE|FILE|NECESSITY|
 |-|-|-|-|
-|[Deployment configuration](/docs/deployment-configuration/): Manage file persistency and remote commands on your runtime |`config.yaml`|`/.deploy-now`|optional|
-|[GitHub Actions customization](/docs/github-actions-customization/): Manage the GitHub Actions workflow directly|`deploy-now.yaml`|`/.github/workflows`|mandatory|
-|[Configure a sample](/docs/create-sample/): Skip the wizard by providing a file-based configuration|`.ionos.yaml`|`./`|optional|
+|[Deployment configuration](/docs/deployment-configuration/): Manage file persistency and remote commands on your runtime |`.deploy-now/config.yaml`|optional|
+|[GitHub Actions customization](/docs/github-actions-customization/): Manage the GitHub Actions workflow directly|`.github/workflows/deploy-now.yaml`|mandatory|
+|[Configure a sample](/docs/create-sample/): Skip the wizard by providing a file-based configuration|`.ionos.yaml`|optional|
 
 
 ## Deployment configuration
