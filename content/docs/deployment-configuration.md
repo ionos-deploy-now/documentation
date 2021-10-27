@@ -67,85 +67,58 @@ deploy:
 
 ## Step-by-step explanation
 
-The following sections provide additional details for used configuration settings.
+The following sections provide additional details about how the `config.yaml` is structured. 
 
-### Fetch project data
+### Switch between `bootstrap` and `recurring`
 
-The following [action](https://github.com/ionos-deploy-now/retrieve-project-info-action) retrieves project meta data and is set up by Deploy Now only.
+The directories you want to exclude and the commands you want to execute on your runtime might differ between initial deployments (`bootstrap`) and any following deployment (`recurring`). By default, the first deployment action of a newly connected branch always uses `bootstrap`, whereas any following deployment action is based on `recurring`. If you want to force either one, you can do this using this switch.
 
 ``` yml
-- name: Fetch project data
-  uses: ionos-deploy-now/retrieve-project-info-action@v1
-  id: project
-  with:
-    project: 719bd98b-3b8c-477b-8563-018a96856ab6
-    api-key: ${{ secrets.IONOS_API_KEY }}
-    service-host: api-eu.ionos.space
+force: bootstrap/recurring
 ```
 
-### Checkout project
+### Bootstrap deployments
 
-Checkout repository from GitHub:
+Directories that you don't want to copy to your runtime during your bootstrap deployment can be listed under `excludes`.
+`Remote commands` are executed on your runtime right after the bootstrap deployment. 
 
 ``` yml
-- name: Checkout project
-  if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-  uses: actions/checkout@v2
-  with:
-    submodules: 'recursive'
+  bootstrap:
+    excludes:
+      - tests
+      - node_modules
+
+    remote-commands:
+      - create SQL lite
+      - php8.0 artisan migrate --force
+      - php8.0 artisan cache:clear
+      - php8.0 artisan config:clear
+      - php8.0 artisan route:clear
+      - php8.0 artisan view:clear
+      - php8.0 artisan config:cache
+      - php8.0 artisan route:cache
+      - php8.0 artisan view:cache
+      - seed DB
 ```
 
-### Setup project
+### Recurring deployments
 
-Set up build runtime:
-
-``` yml
-- name: Setup project
-  if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-  uses: actions/setup-node@v1
-  with:
-    node-version: 12.16.x
-```
-
-### Prepare project environment
-
-Install build dependencies:
+`Excludes` and `remote commands` of any following deployment can be defined under `recurring`.
 
 ``` yml
-- name: Prepare project environment
-  if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-  run: |
-    npm install --global yarn
-    yarn install --frozen-lockfile
-```
+  recurring:
+    excludes:
+      - tests
+      - node_modules
+      - storage
 
-### Build project
-
-Build project and set build env vars:
-
-``` yml
-- name: Build project
-  if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-  run: yarn build
-  env:
-    CI: true
-    SITE_URL: ${{ steps.project.outputs.site-url }}
-```
-
-### Deploy build
-
-The following [action](https://github.com/ionos-deploy-now/deploy-to-ionos-action) deploys data to IONOS via Deploy Now.
-
-``` yml
-- name: Deploy build
-  if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-  uses: ionos-deploy-now/deploy-to-ionos-action@v1
-  with:
-    service-host: api-eu.ionos.space
-    branch-id: ${{ steps.project.outputs.branch-id }}
-    storage-quota: ${{ steps.project.outputs.storage-quota }}
-    project: 719bd98b-3b8c-477b-8563-018a96856ab6
-    dist-folder: public
-    remote-host: ${{ steps.project.outputs.remote-host }}
-    api-key: ${{ secrets.IONOS_API_KEY }}
+    remote-commands:
+      - php8.0 artisan migrate --force
+      - php8.0 artisan cache:clear
+      - php8.0 artisan config:clear
+      - php8.0 artisan route:clear
+      - php8.0 artisan view:clear
+      - php8.0 artisan config:cache
+      - php8.0 artisan route:cache
+      - php8.0 artisan view:cache
 ```
