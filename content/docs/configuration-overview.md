@@ -1,8 +1,8 @@
 ---
 description: ''
 sidebar: 'docs'
-prev: '/docs/framework-samples/'
-next: '/docs/explicit-build-configuration/'
+prev: '/docs/staging-deployments/'
+next: '/docs/workflow-configuration/'
 editable: true
 ---
 
