@@ -1,7 +1,7 @@
 ---
 description: ''
 sidebar: 'docs'
-prev: '/docs/explicit-build-configuration/'
+prev: '/docs/workflow-configuation/'
 next: '/docs/domain-tls/'
 editable: true
 ---
