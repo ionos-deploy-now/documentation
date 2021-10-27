@@ -17,6 +17,7 @@ If you create a sample repository that might be interesting for other GitHub use
 ```
 
 As a results, your deploy button should look like this:
+
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-plain-html)
 
 
