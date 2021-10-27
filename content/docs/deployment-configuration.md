@@ -8,7 +8,44 @@ editable: true
 
 # Deployment configuration
 
-Once you have connected Deploy Now to your repository, you will notice that we have injected a `deploy-now.yml` file into `.github/workflows/`. This file defines how the GitHub Actions workflow is set up. You can make changes to this file to customize the workflow. However, you should try to avoid changes or deletions of `fetch project data`, `checkout project` and `deploy build`to ensure that the deployment works as expected. 
+If your project requires a runtime, you might wish to define which files should be persistent and which commands should be executed remotely. You can do this by using the `config.yaml` in `.deploy-now`. The information stored in this file is used to define the part of the GitHub action that manages the deployment to our infrastructure.
+
+*When working with static sites, the only deployment setting you need ist the dist folder. You can adapt this directly by [customizing GitHub actions](/docs/github-actions-customization).*
+
+:::note
+Supporting PHP runtimes is currently in alpha. You can join our alpha by following [these](/docs/php-alpha) instructions.
+::: 
+
+
+
+
+
+Create new page "Configure Workflow"
+Tag this as alpha, maybe put it under "more" 
+Explain the purpose of the "deploy-now-config.yml":
+Setting up the workflow (build & deploy) correctly, resulting in a correct deploy-now.yml (interpreted by GitHub Actions)
+While differentiating between bootstrap and recurring deploys 
+Only needed if customers have a runtime - otherwise use deploy-now-yml directly for static projects
+Explain the structure of the yml
+First and last part is generic for all projects
+Middle part can be adopted
+"Bootstrap" for initial build & deploy, "recurring" for all others
+Adjust excluded folders (persistency), executed scripts on runtime and executed build steps
+Explain the maintenance needs of this file and how updates are handled
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Sample file
 
