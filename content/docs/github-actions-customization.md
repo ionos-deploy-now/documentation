@@ -1,7 +1,7 @@
 ---
 description: ''
 sidebar: 'docs'
-prev: '/docs/deployment-configuation/'
+prev: '/docs/deployment-configuration/'
 next: '/docs/domain-tls/'
 editable: true
 ---
