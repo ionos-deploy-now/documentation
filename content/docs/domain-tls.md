@@ -2,7 +2,7 @@
 description: ''
 sidebar: 'docs'
 prev: '/docs/github-actions-customization/'
-next: '/docs/faq/'
+next: '/docs/create-sample/'
 editable: true
 ---
 
