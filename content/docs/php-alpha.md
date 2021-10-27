@@ -18,7 +18,7 @@ Drop us a short message under [info@DeployNow.de](mailto:info@DeployNow.de) and 
 As our wizard is not able to detect and configure PHP projects yet, you need deploy one of our samples to create a Laravel or Symfony project. These two samples contain a [file-based configuration](/docs/create-sample/#skip-the-wizard-with-a-file-based-configuration) that skip the setup wizard and deploy your project instantly.
 
 :::note 
-The samples above cannot be deployed with the free project packages that come with your Deploy Now membership, as their file size is too large. We will provide you with a sufficiently large project package on request.
+The samples below cannot be deployed with the free project packages that come with your Deploy Now membership, as their file size is too large. We will provide you with a sufficiently large project package on request.
 :::
 
 ### Laravel sample
