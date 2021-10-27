@@ -1,7 +1,7 @@
 ---
 description: ''
 sidebar: 'docs'
-prev: '/docs/workflow-configuation/'
+prev: '/docs/deployment-configuation/'
 next: '/docs/domain-tls/'
 editable: true
 ---
