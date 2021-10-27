@@ -8,6 +8,16 @@ editable: true
 
 # Create a sample
 
+## Let others deploy your repository with a single click
+
+If you create a sample repository that might be interesting for other GitHub users, you can add a "Deploy to IONOS" button to your repository. This allows users to deploy their instance of your sample with a single click. All you need to to is inserting your repository URL into the snippet below and pasting the snippet in your repository readme.
+
+---
+[![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/your-account/your-repo)
+---
+
+## Add a file-based configuration to your sample
+
 After you connect a repository, Deploy Now tries to detect the technologies you are using to set up the build and deploy process accordingly. However, it might be that we are not able to detect more complex configurations. To ensure that these are working as expected, you can provide an explicit configuration via a `.ionos.yml` file in your repository root.
 
 A file-based configuration also ensures that others who fork your repository on GitHub benefit from a seamless setup process without any unexpected error if they want to deploy their own instance of the project. They don’t have to configure anything in the UI, and they’ll still get an identical project configuration.
