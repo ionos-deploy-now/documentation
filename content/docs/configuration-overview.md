@@ -2,7 +2,7 @@
 description: ''
 sidebar: 'docs'
 prev: '/docs/staging-deployments/'
-next: '/docs/workflow-configuration/'
+next: '/docs/deployment-configuration/'
 editable: true
 ---
 
