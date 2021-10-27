@@ -12,9 +12,9 @@ You can use different [YAML](https://yaml.org/spec/1.2/spec.html) files located 
 
 |PURPOSE|FILE NAME|LOCATION|NECESSITY|
 |-|-|-|-|
-|[Deployment configuration](/docs/deployment-configuration/): Manage file persistency and remote commands on your runtime |config.yaml|/.deploy-now|optional|
-|[GitHub Actions customization](/docs/github-actions-customization/): Manage the GitHub Actions workflow directly|deploy-now|/.github/workflows|mandatory|
-|[Configure a sample](/docs/create-sample/): Skip the wizard by providing a file-based configuration|.ionos.yml|./|optional|
+|[Deployment configuration](/docs/deployment-configuration/): Manage file persistency and remote commands on your runtime |`config.yaml`|`/.deploy-now`|optional|
+|[GitHub Actions customization](/docs/github-actions-customization/): Manage the GitHub Actions workflow directly|deploy-now|`/.github/workflows`|`mandatory`|
+|[Configure a sample](/docs/create-sample/): Skip the wizard by providing a file-based configuration|`.ionos.yml`|`./`|optional|
 
 
 ## Deployment configuration
