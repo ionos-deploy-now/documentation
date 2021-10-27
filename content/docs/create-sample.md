@@ -6,7 +6,7 @@ next: '/docs/github-actions-customization/'
 editable: true
 ---
 
-# Explicit build configuration
+# Create a sample
 
 After you connect a repository, Deploy Now tries to detect the technologies you are using to set up the build and deploy process accordingly. However, it might be that we are not able to detect more complex configurations. To ensure that these are working as expected, you can provide an explicit configuration via a `.ionos.yml` file in your repository root.
 
