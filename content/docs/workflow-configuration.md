@@ -2,7 +2,7 @@
 description: 'How to define which files should be persistent on the runtime and which commands should be executed.'
 sidebar: 'docs'
 prev: '/docs/configuration-overview/'
-next: '/docs/domain-tls/'
+next: '/docs/github-actions-customization/'
 editable: true
 ---
 
