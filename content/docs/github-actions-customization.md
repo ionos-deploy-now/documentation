@@ -10,7 +10,7 @@ editable: true
 
 Once you have connected Deploy Now to your repository, you will notice that we have injected a `deploy-now.yaml` file into `.github/workflows/`. This file defines how the GitHub Actions workflow is set up. You can make changes to this file to customize the workflow. However, you should try to avoid changes or deletions of `fetch project data`, `checkout project` and `deploy build` to ensure that the deployment works as expected. 
 
-*For managing the deployment settings of your runtime, please use the [deployment configuration](/docs/deployment-configuration)*
+*For managing the deployment settings of your runtime, please use the [deployment configuration](/docs/deployment-configuration).*
 
 ## Sample file
 
