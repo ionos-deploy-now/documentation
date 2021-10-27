@@ -1,10 +1,10 @@
 ---
 description: ''
 sidebar: 'docs'
-prev: '/docs/create-sample/'
-next: '/docs/faq/'
+prev: '/about-us/'
+next: ''
 editable: true
 ---
 
-# PHP Alpha
+# Deploy Laravel & Symfony
 
