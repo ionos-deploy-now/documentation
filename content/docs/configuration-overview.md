@@ -10,6 +10,13 @@ editable: true
 
 Deploy Now uses two different [YAML](https://yaml.org/spec/1.2/spec.html) files to store information that is needed for the build and deploy process. 
 
+|PURPOSE|FILE NAME|LOCATION|NECESSITY|
+|-|-|-|-|
+|[Deployment configuration](/docs/workflow-configuration/): Manage file persistency and remote commands in your runtime|config.yaml|/.deploy-now|optional|
+|[GitHub Actions customization](/docs/github-actions-customization/): Manage the GitHub Actions workflow directly|deploy-now|/.github/workflows|mandatory|
+|[Configure a sample](/docs/create-sample/): Skip the wizard by providing a file-based configuration|.ionos.yml|./|optional|
+
+
 ## Explicit build configuration
 
 An `.ionos.yaml` can be stored in the repository root to make the framework configuration, like the dist folder or the build command, explicit. If a working `.ionos.yaml` is located in the root, the framework detection is automatically skipped. This can be especially helpful to make more complex configurations run smoothly or to avoid accidental misconfigurations when you wish your repository to be forked by others. 
