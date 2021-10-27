@@ -1,8 +1,8 @@
 ---
 description: ''
 sidebar: 'docs'
-prev: '/docs/configuration-overview/'
-next: '/docs/github-actions-customization/'
+prev: '/docs/domain-tls/'
+next: ''
 editable: true
 ---
 
