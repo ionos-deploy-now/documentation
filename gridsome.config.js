@@ -72,6 +72,12 @@ module.exports = {
               '/about-us/',
             ],
           },
+          {
+            title: 'JOIN OUR ALPHA',
+            items: [
+              '/docs/php-alpha/',
+            ],
+          },
         ],
       },
     ],
