@@ -38,3 +38,5 @@ While working on your project, you can view logs or any other file in your runti
 
 ## 4. Drop us your feedback
 After you've contacted us via mail, we will provide you with more information about how to drop us your feedback. 
+
+Thanks a lot and happy deploying!
