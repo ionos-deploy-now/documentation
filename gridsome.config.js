@@ -58,9 +58,10 @@ module.exports = {
             title: 'Configuration',
             items: [
               '/docs/configuration-overview/',
-              '/docs/explicit-build-configuration/',
+              '/docs/workflow-configuration/',
               '/docs/github-actions-customization/',
               '/docs/domain-tls/',
+              '/docs/create-sample/',
             ],
           },
           {
