@@ -27,7 +27,7 @@ deploy:
 
   # configure the initial deployment of each branch
   bootstrap:
-    # directories that are not copied to the infrastructure
+    # directories that are not overwritten or removed by the next deployment
     excludes:
       - samplefolder
       - samplefile.txt
@@ -40,7 +40,7 @@ deploy:
 
   # configure all following deployments of each branch
   recurring:
-    # directories that are not copied to the infrastructure
+    # directories that are not overwritten or removed by the next deployment
     excludes:
       - samplefolder
       - samplefile.txt
