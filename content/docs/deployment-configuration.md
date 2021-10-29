@@ -60,14 +60,14 @@ deploy:
 
 ```
 
-## `bootstrap` and `recurring`
+## Configure initial and following deployments
 
 The directories you want to exclude and the commands you want to execute on your runtime might differ between initial deployments (`bootstrap`) and any following deployment (`recurring`). By default, the first deployment action of a newly connected branch always uses `bootstrap`, whereas any following deployment action is based on `recurring`. You have the option to force the use of either one.
 
-## `excludes`
+## Manage persistency 
 
 Per default, all files in your defined dist folder are copied to the infrastructure after every git commit. If you want to prevent certain directories from being copied, you can list them under `excludes`. If you want to copy files to the infrastructure on your initial deployment, but keep them persistent afterwards, you can do this by adding them to the `excludes` in `bootstrap`. 
 
-## `pre-deployment-remote-commands` and `post-deployment-remote-commands`
+## Executing commands on the runtime
 
 You can execute commands on your runtime after `bootstrap` and `recurring` deployments by listing them under `post-deployment-remote-commands` and before `recurring` deployments using `pre-deployment-remote-commands`. 
