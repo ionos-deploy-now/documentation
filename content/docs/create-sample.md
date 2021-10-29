@@ -29,7 +29,7 @@ The following sections will go through each setting option you’ll be able to u
 
 ### Example of a file-based configuration
 
-This sample of .ionos.yaml demonstrates commonn settings available for configuration. You can find more sample files for common frameworks [here](/docs/framework-samples/).
+This sample of .ionos.yaml demonstrates common settings available for configuration. You can find more sample files for common frameworks [here](/docs/framework-samples/).
 
 ``` yml
 ---
