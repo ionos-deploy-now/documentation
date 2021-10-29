@@ -22,14 +22,14 @@ The samples below cannot be deployed with the free project packages that come wi
 :::
 
 ### Laravel sample
-[This repository]() contains a sample for the PHP framework [Laravel](https://laravel.com/). You can deploy it by clicking on the button below.
+[This repository](https://github.com/ionos-deploy-now/laravel-starter) contains a sample for the PHP framework [Laravel](https://laravel.com/). You can deploy it by clicking on the button below.
 
-[![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-plain-html)
+[![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/laravel-starter)
 
 ### Symfony sample
-[This repository]() contains a sample for the PHP framework [Symfony](https://symfony.com/). You can deploy it by clicking on the button below.
+[This repository](https://github.com/ionos-deploy-now/symfony-starter) contains a sample for the PHP framework [Symfony](https://symfony.com/). You can deploy it by clicking on the button below.
 
-[![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-plain-html)
+[![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/symfony-starter)
 
 ## 3. Make it your project
 Starting with the sample, you can either further develop the project or merge in code from your existing Laravel or Symfony project. Both samples contain a `config.yaml` under `.deploy-now` for [configuring your deployment](/docs/deployment-configuration/). You can edit this file to define the directories you want to exclude from your deployments and the commands you want to execute on your runtime. 
