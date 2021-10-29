@@ -16,11 +16,12 @@ If your project requires a runtime, you might wish to define which files should 
 Supporting PHP runtimes is currently in alpha. You can join our alpha by following [these](/docs/php-alpha) instructions.
 ::: 
 
+## Examplary `config.yaml`
+
 ``` yml
 version: 1.0
 deploy:
-
-# comment in one of the following lines to force the use of the recurring or bootstrap configuration
+  # comment in one of the following lines to force the use of the recurring or bootstrap configuration
 #  force: recurring
 #  force: bootstrap
 
@@ -58,62 +59,15 @@ deploy:
       - echo "back again"
 
 ```
-:::
 
-## Step-by-step explanation
+## `bootstrap` and `recurring`
 
-The following sections provide additional details about how the `config.yaml` is structured. 
+The directories you want to exclude and the commands you want to execute on your runtime might differ between initial deployments (`bootstrap`) and any following deployment (`recurring`). By default, the first deployment action of a newly connected branch always uses `bootstrap`, whereas any following deployment action is based on `recurring`. You have the option to force the use of either one.
 
-### Switch between `bootstrap` and `recurring`
+## `excludes`
 
-The directories you want to exclude and the commands you want to execute on your runtime might differ between initial deployments (`bootstrap`) and any following deployment (`recurring`). By default, the first deployment action of a newly connected branch always uses `bootstrap`, whereas any following deployment action is based on `recurring`. If you want to force either one, you can do this using this switch.
+Per default, all files in your defined dist folder are copied to the infrastructure after every git commit. If you want to prevent certain directories from being copied, you can list them under `excludes`. If you want to copy files to the infrastructure on your initial deployment, but keep them persistent afterwards, you can do this by adding them to the `excludes` in `bootstrap`. 
 
-``` yml
-force: bootstrap/recurring
-```
+## `pre-deployment-remote-commands` and `post-deployment-remote-commands`
 
-### Bootstrap deployments
-
-Directories that you don't want to copy to your runtime during your bootstrap deployment can be listed under `excludes`.
-`Remote commands` are executed on your runtime right after the bootstrap deployment. 
-
-``` yml
-  bootstrap:
-    excludes:
-      - tests
-      - node_modules
-
-    remote-commands:
-      - create SQL lite
-      - php8.0 artisan migrate --force
-      - php8.0 artisan cache:clear
-      - php8.0 artisan config:clear
-      - php8.0 artisan route:clear
-      - php8.0 artisan view:clear
-      - php8.0 artisan config:cache
-      - php8.0 artisan route:cache
-      - php8.0 artisan view:cache
-      - seed DB
-```
-
-### Recurring deployments
-
-`Excludes` and `remote commands` of any following deployment can be defined under `recurring`.
-
-``` yml
-  recurring:
-    excludes:
-      - tests
-      - node_modules
-      - storage
-
-    remote-commands:
-      - php8.0 artisan migrate --force
-      - php8.0 artisan cache:clear
-      - php8.0 artisan config:clear
-      - php8.0 artisan route:clear
-      - php8.0 artisan view:clear
-      - php8.0 artisan config:cache
-      - php8.0 artisan route:cache
-      - php8.0 artisan view:cache
-```
+You can execute commands on your runtime after `bootstrap` and `recurring` deployments by listing them under `post-deployment-remote-commands` and before `recurring` deployments using `pre-deployment-remote-commands`. 
