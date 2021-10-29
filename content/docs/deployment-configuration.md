@@ -16,51 +16,46 @@ If your project requires a runtime, you might wish to define which files should 
 Supporting PHP runtimes is currently in alpha. You can join our alpha by following [these](/docs/php-alpha) instructions.
 ::: 
 
-## Sample file
-
-This sample of a config.yaml file demonstrates remote commands and excludes can be managed for a PHP project:
-
-:::details config.yaml
 ``` yml
-name: config.yaml
-
 version: 1.0
-
 deploy:
-  force: bootstrap/recurring
 
+# comment in one of the following lines to force the use of the recurring or bootstrap configuration
+#  force: recurring
+#  force: bootstrap
+
+  # configure the initial deployment of each branch
   bootstrap:
+    # directories that are not copied to the infrastructure
     excludes:
-      - tests
-      - node_modules
+      - samplefolder
+      - samplefile.txt
+      - folder/withfile.txt
+      
+    # commands that are executed on the runtime after new files are copied
+    post-deployment-remote-commands:
+      - touch database.sqlite
+      - php8.0-cli -r "echo 'do something with php';"
 
-    remote-commands:
-      - create SQL lite
-      - php8.0 artisan migrate --force
-      - php8.0 artisan cache:clear
-      - php8.0 artisan config:clear
-      - php8.0 artisan route:clear
-      - php8.0 artisan view:clear
-      - php8.0 artisan config:cache
-      - php8.0 artisan route:cache
-      - php8.0 artisan view:cache
-      - seed DB
-
+  # configure all following deployments of each branch
   recurring:
+    # directories that are not copied to the infrastructure
     excludes:
-      - tests
-      - node_modules
-      - storage
-
-    remote-commands:
-      - php8.0 artisan migrate --force
-      - php8.0 artisan cache:clear
-      - php8.0 artisan config:clear
-      - php8.0 artisan route:clear
-      - php8.0 artisan view:clear
-      - php8.0 artisan config:cache
-      - php8.0 artisan route:cache
-      - php8.0 artisan view:cache
+      - samplefolder
+      - samplefile.txt
+      - folder/withfile.txt
+      - database.sqlite
+      
+    # commands that are executed on the runtime before new files are copied
+    pre-deployment-remote-commands:
+      - echo "starting maintenance mode"
+      
+    # commands that are executed on the runtime after new files are copied
+    post-deployment-remote-commands:
+      - echo "clearing caches"
+      - php8.0-cli -r "echo 'do something with php again';"
+      - echo "leaving maintenance mode"
+      - echo "back again"
 
 ```
 :::
