@@ -10,7 +10,7 @@ editable: true
 
 Allready have an existing project you wish to set up? Simply create a new deployment by following our wizard.
 
-*Not what you are looking for? [Start from a sample](/docs/from-sample/) or [start from the command line](/docs/from-cmd-line/).*
+*Not what you are looking for? [Start from a sample](/docs/framework-samples/) or [start from the command line](/docs/from-cmd-line/).*
 
 1. **Connect your GitHub account** 
 

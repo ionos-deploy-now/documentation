@@ -10,7 +10,7 @@ editable: true
 
 You don't have a specific project at hand but want to start from scratch? Below you can find instruction how to set up projects with popular frameworks starting from the command line.
 
-*Not what you are looking for? [Start from a sample](/docs/from-sample/) or [deploy an existing repository](/docs/from-repo/).*
+*Not what you are looking for? [Start from a sample](/docs/framework-samples/) or [deploy an existing repository](/docs/from-repo/).*
 
 ## Plain html site
 

@@ -33,4 +33,4 @@ You can deploy Single Page Applications based on frameworks like React, Vue, Ang
 Our hosting infastructure uses Apache webservers only. Thus, server-side rendering with Node.js is not supported. Besides, Deploy Now does not support databases. If you are missing one of these or any other technology, you can let us know by requesting a feature via the product dashboard.
 
 ## Getting started
-You can start either [from sample](/docs/from-sample), [from command line](/docs/from-cmd-line) or [from an existing repository](/docs/from-repo).
+You can start either [from sample](/docs/framework-samples), [from command line](/docs/from-cmd-line) or [from an existing repository](/docs/from-repo).
