@@ -19,11 +19,13 @@ Simply copies static assets to the infrastructure. You only need to define a `di
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-plain-html)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-plain-html)
 
+<!---
 :::details .ionos.yml
 ``` yml
 distFolder: "./"
 ```
 :::
+--->
 
 ## Gridsome sample
 
@@ -32,7 +34,8 @@ A website based on the Vue.js framework [Gridsome](https://gridsome.org/).
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-gridsome)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-gridsome)
 
-:::details .ionos.yml
+<!---
+:::details .ionos.yaml
 ``` yml
 ---
 distFolder: dist
@@ -52,6 +55,7 @@ build:
     CI: true
 ```
 :::
+--->
 
 ## Gatsby sample
 
@@ -60,6 +64,7 @@ A website based on the React framework [Gatsby](https://www.gatsbyjs.com/).
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-gatsby)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-gatsby)
 
+<!---
 :::details .ionos.yml
 ``` yml
 ---
@@ -80,6 +85,7 @@ build:
     CI: true
 ```
 :::
+--->
 
 ## Hugo sample
 
@@ -88,6 +94,7 @@ A website based on the Go framework [Hugo](https://gohugo.io/).
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-hugo)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-hugo)
 
+<!---
 :::details .ionos.yml
 ``` yml
 ---
@@ -105,6 +112,7 @@ build:
     SITE_URL: ${{ steps.project.outputs.site-url }}
 ```
 :::
+--->
 
 ## Jigsaw sample
 
@@ -113,6 +121,7 @@ A website based on the PHP framework [Jigsaw](https://jigsaw.tighten.co/).
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-jigsaw)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-jigsaw)
 
+<!---
 :::details .ionos.yml
 ``` yml
 ---
@@ -132,6 +141,7 @@ build:
   command: npm run prod
 ```
 :::
+--->
 
 ## Jekyll sample
 
@@ -140,6 +150,7 @@ A website based on the Ruby framework [Jekyll](https://jekyllrb.com/).
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-jekyll)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-jekyll)
 
+<!---
 :::details .ionos.yml
 ``` yml
 ---
@@ -155,6 +166,7 @@ build:
   command: bundle exec jekyll build
 ```
 :::
+--->
 
 ## Next sample
 
@@ -163,6 +175,7 @@ A website based on [static file serving](https://nextjs.org/docs/basic-features/
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-next)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-next)
 
+<!---
 :::details .ionos.yml
 ``` yml
 ---
@@ -180,6 +193,7 @@ build:
   command: npm run build
 ```
 :::
+--->
 
 ## Nuxt sample
 
@@ -188,6 +202,7 @@ A website based on [Static Site Generation](https://nuxtjs.org/docs/2.x/concepts
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-nuxt)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-nuxt)
 
+<!---
 :::details .ionos.yml
 ``` yml
 ---
@@ -205,6 +220,7 @@ build:
   command: npm run generate
 ```
 :::
+--->
 
 ## Vuepress sample
 
@@ -213,6 +229,7 @@ A website based on the Vue-powered Static Site Generator [VuePress](https://vuep
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-vuepress)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-vuepress)
 
+<!---
 :::details .ionos.yml
 ``` yml
 ---
@@ -230,3 +247,4 @@ build:
   command: npm run build
 ```
 :::
+--->
