@@ -16,7 +16,7 @@ Github should have sent an email regarding this.
 
 To get this working you have to upgrade your Github workflow by following these steps:
 
-1. Check that the workflow configuration file has already the correct name `.github/workflows/deploy-now.yml`. If your repository contains a file named `.github/workflows/ionos-space.yml` please rename it to `.github/workflows/deploy-now.yml`.
+1. Check that the workflow configuration file has already the correct name `.github/workflows/deploy-now.yaml`. If your repository contains a file named `.github/workflows/ionos-space.yml` please rename it to `.github/workflows/deploy-now.yaml`.
 2. Adapt the content of the workflow configuration to allow the triggering of builds by the `workflow_dispatch` event. If you haven't touched this file there should be a line that looks like this:
    ```yaml
    on: [push]

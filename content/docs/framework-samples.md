@@ -20,7 +20,7 @@ Simply copies static assets to the infrastructure. You only need to define a `di
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-plain-html)
 
 <!---
-:::details .ionos.yml
+:::details .ionos.yaml
 ``` yml
 distFolder: "./"
 ```
@@ -65,7 +65,7 @@ A website based on the React framework [Gatsby](https://www.gatsbyjs.com/).
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-gatsby)
 
 <!---
-:::details .ionos.yml
+:::details .ionos.yaml
 ``` yml
 ---
 distFolder: public
@@ -95,7 +95,7 @@ A website based on the Go framework [Hugo](https://gohugo.io/).
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-hugo)
 
 <!---
-:::details .ionos.yml
+:::details .ionos.yaml
 ``` yml
 ---
 distFolder: public
@@ -122,7 +122,7 @@ A website based on the PHP framework [Jigsaw](https://jigsaw.tighten.co/).
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-jigsaw)
 
 <!---
-:::details .ionos.yml
+:::details .ionos.yaml
 ``` yml
 ---
 distFolder: build_production
@@ -151,7 +151,7 @@ A website based on the Ruby framework [Jekyll](https://jekyllrb.com/).
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-jekyll)
 
 <!---
-:::details .ionos.yml
+:::details .ionos.yaml
 ``` yml
 ---
 distFolder: _site
@@ -176,7 +176,7 @@ A website based on [static file serving](https://nextjs.org/docs/basic-features/
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-next)
 
 <!---
-:::details .ionos.yml
+:::details .ionos.yaml
 ``` yml
 ---
 distFolder: out
@@ -203,7 +203,7 @@ A website based on [Static Site Generation](https://nuxtjs.org/docs/2.x/concepts
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-nuxt)
 
 <!---
-:::details .ionos.yml
+:::details .ionos.yaml
 ``` yml
 ---
 distFolder: dist
@@ -230,7 +230,7 @@ A website based on the Vue-powered Static Site Generator [VuePress](https://vuep
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-vuepress)
 
 <!---
-:::details .ionos.yml
+:::details .ionos.yaml
 ``` yml
 ---
 distFolder: src/.vuepress/dist
