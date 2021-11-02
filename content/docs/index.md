@@ -1,7 +1,7 @@
 ---
 description: ''
 sidebar: 'docs'
-next: '/docs/from-sample/'
+next: '/docs/framework-samples/'
 editable: true
 ---
 
