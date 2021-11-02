@@ -439,6 +439,83 @@ At the moment the number of frameworks Deploy Now is able to detect and support 
 
 Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
 
+### Next as SSG Site 
+
+> [Next.js](https://nextjs.org/): The React Framework for Production
+
+1. Create a new site by entering the following commands in your terminal:
+
+```
+npx create-next-app@latest next-site
+cd next-site
+npx next@latest dev
+```
+
+2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+3. Enable static HTML export
+
+:::note
+Currently, Deploy Now doesn't support image optimization available in Next.js >= 10, so that you have to edit the `index.js` file to remove this feature.
+:::
+
+Navigate to `pages/index.js` and delete the following import:
+
+```import Image from 'next/image'```
+
+Next, locate the following Image tag:
+
+```<Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />```
+
+... and replace the Image tag with the standard HTML `img` tag accordingly:
+
+```<img src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />```
+
+Next, edit the `package.json` file and add the `export` option for prerendering all pages to HTML:
+
+```
+"scripts": {
+    ...
+    "export": "next build && next export"
+},
+```
+
+At last, adapt `.eslintrc.json` to overcome Next.js eslint rules restrictions:
+
+```
+{
+  "extends": ["next", "next/core-web-vitals"],
+  "rules": {
+    "@next/next/no-img-element": "off"
+  }
+}
+```
+
+4. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
+
+Afterwards initialize git and push your project to the created GitHub repository by the following commands.
+
+```
+git init
+git add .
+git commit -m "initial commit"
+git branch -M main
+git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
+git push -u origin main
+```
+
+5. Setup deployment
+
+Sign in to your [Deploy Now](https://ionos.space/) account and click ```New project```. Next, choose the source you want to deploy from. If you created a new GitHub repository you've probably to grant new permission rights to Deploy Now in GitHub. Otherwise it won't be listed right away if you choose ```Deploy from my own GitHub repository```. After selecting your repository choose following configuration.
+
+:::note
+At the moment the number of frameworks Deploy Now is able to detect and support out of the box is still limited. [Next.js](https://nextjs.org/) is one of those frameworks. Please follow the inputs you see in the screenshot below.
+:::
+
+![Select configuration](/wizard-next.png)
+
+Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
+
 ## PHP
 
 The following section give you some ideas to use [PHP](https://php.net) with Deploy Now.
