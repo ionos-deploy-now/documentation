@@ -8,152 +8,76 @@ editable: true
 
 # GitHub Actions customization
 
-Once you have connected Deploy Now to your repository, you will notice that we have injected a `deploy-now.yaml` file into `.github/workflows/`. This file defines how the GitHub Actions workflow is set up. You can make changes to this file to customize the workflow. However, you should try to avoid changes or deletions of `fetch project data`, `checkout project` and `deploy build` to ensure that the deployment works as expected. 
+Once you have connected Deploy Now to your repository, you will notice that we have injected a `deploy-now.yaml` file into `.github/workflows/`. This file defines how the GitHub Actions workflow is set up. You can make changes to this file to customize the workflow. 
 
 *For managing the deployment settings of your runtime, please use the [deployment configuration](/docs/deployment-configuration).*
 
 :::tip
-New to GitHub Actions? Check their [documentation](https://docs.github.com/en/actions) to find out how you can use them to enhance the Deploy Now workflow, e.g. by adding  powerful [Continuous Integration](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration) functionalities. Check the [GitHub Actions](https://github.com/marketplace?type=actions) marketplace for other awesome actions you can integrate.
+New to GitHub Actions? Check their [documentation](https://docs.github.com/en/actions) to find out how you can use them to enhance the Deploy Now workflow, e.g. by adding  powerful [Continuous Integration](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration) functionalities. Check the [GitHub Actions](https://github.com/marketplace?type=actions) marketplace for other awesome Actions you can integrate.
 :::
 
-## Sample file
+## Examplary `deploy-now.yaml`
 
-This sample of an deploy-now.yaml file demonstrates a common workflow.
+``` yaml
+name: Deploy Now
 
-:::details deploy-now.yaml
-``` yml
-name: Deploy-Now
-
-# Triggered when code is pushed to any branch in a repository
-on: [push]
+on:
+  - push
+  - workflow_dispatch
 
 jobs:
-  ionos-space:
+  deploy-now:
     runs-on: ubuntu-latest
     steps:
+      # Deploy Now fetches required project meta data
       - name: Fetch project data
         uses: ionos-deploy-now/retrieve-project-info-action@v1
         id: project
         with:
-          project: 719bd98b-3b8c-477b-8563-018a96856ab6
           api-key: ${{ secrets.IONOS_API_KEY }}
+          project: ${{ secrets.IONOS_PROJECT_ID }}
           service-host: api-eu.ionos.space
-      - name: Checkout project
+          
+      # checkout repository from GitHub
+      - name: checkout
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: actions/checkout@v2
         with:
           submodules: 'recursive'
+          
+      # set up build runtime
       - name: Setup project
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: actions/setup-node@v1
         with:
-          node-version: 12.16.x
+          node-version: v12.22.3
+          
+      # install build dependencies
       - name: Prepare project environment
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        run: |
-          npm install --global yarn
-          yarn install --frozen-lockfile
+        run: npm ci
+        
+      # build project and set build env vars. This might be the section you want to customize.
       - name: Build project
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        run: yarn build
-        env:
-          CI: true
-          SITE_URL: ${{ steps.project.outputs.site-url }}
+        run: npm run build
+        
+      # this action deploys the project files to the IONOS infrastructure. If you want to manage file persistency and execute commands on your runtime, you can do this under .deploynow/config.yaml.
       - name: Deploy build
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: ionos-deploy-now/deploy-to-ionos-action@v1
         with:
-          service-host: api-eu.ionos.space
-          branch-id: ${{ steps.project.outputs.branch-id }}
-          storage-quota: ${{ steps.project.outputs.storage-quota }}
-          project: 719bd98b-3b8c-477b-8563-018a96856ab6
-          dist-folder: public
-          remote-host: ${{ steps.project.outputs.remote-host }}
           api-key: ${{ secrets.IONOS_API_KEY }}
-```
-:::
-
-## Step-by-step explanation
-
-The following sections provide additional details for used configuration settings.
-
-### Fetch project data
-
-The following [action](https://github.com/ionos-deploy-now/retrieve-project-info-action) retrieves project meta data and is set up by Deploy Now only.
-
-``` yml
-- name: Fetch project data
-  uses: ionos-deploy-now/retrieve-project-info-action@v1
-  id: project
-  with:
-    project: 719bd98b-3b8c-477b-8563-018a96856ab6
-    api-key: ${{ secrets.IONOS_API_KEY }}
-    service-host: api-eu.ionos.space
+          bootstrap-deploy: ${{ steps.project.outputs.bootstrap-deploy }}
+          branch-id: ${{ steps.project.outputs.branch-id }}
+          dist-folder: src/.vuepress/dist
+          project: ${{ secrets.IONOS_PROJECT_ID }}
+          remote-host: ${{ steps.project.outputs.remote-host }}
+          service-host: api-eu.ionos.space
+          storage-quota: ${{ steps.project.outputs.storage-quota }}
 ```
 
-### Checkout project
+### Project agnostic and customizable Actions
+The Deploy Now workflow contains a set of different Actions. The beginning and the end of the workflow is project agnostic and defined by Deploy Now. The [fetch project data Action](https://github.com/ionos-deploy-now/retrieve-project-info-action) in the beginning retrieves project meta data from Deploy Now. In the end of the workflow, after the build step was executed, generated files are moved to the IONOS infrastructure by the [deploy build Action](https://github.com/ionos-deploy-now/deploy-to-ionos-action). If you want to make configurations to the deployment process itself, you can do this in the [deployment configuration](/docs/deployment-configuration). The middle part in between is project specific and can be customized by you to further enhance your CI/CD pipeline. 
 
-Checkout repository from GitHub:
 
-``` yml
-- name: Checkout project
-  if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-  uses: actions/checkout@v2
-  with:
-    submodules: 'recursive'
-```
-
-### Setup project
-
-Set up build runtime:
-
-``` yml
-- name: Setup project
-  if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-  uses: actions/setup-node@v1
-  with:
-    node-version: 12.16.x
-```
-
-### Prepare project environment
-
-Install build dependencies:
-
-``` yml
-- name: Prepare project environment
-  if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-  run: |
-    npm install --global yarn
-    yarn install --frozen-lockfile
-```
-
-### Build project
-
-Build project and set build env vars:
-
-``` yml
-- name: Build project
-  if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-  run: yarn build
-  env:
-    CI: true
-    SITE_URL: ${{ steps.project.outputs.site-url }}
-```
-
-### Deploy build
-
-The following [action](https://github.com/ionos-deploy-now/deploy-to-ionos-action) deploys data to IONOS via Deploy Now. If you want to exclude directories from the deployment process or execute commands on your runtime after the deployment, you can do this by editing the [deployment configuration](/docs/deployment-configuration/).
-
-``` yml
-- name: Deploy build
-  if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-  uses: ionos-deploy-now/deploy-to-ionos-action@v1
-  with:
-    service-host: api-eu.ionos.space
-    branch-id: ${{ steps.project.outputs.branch-id }}
-    storage-quota: ${{ steps.project.outputs.storage-quota }}
-    project: 719bd98b-3b8c-477b-8563-018a96856ab6
-    dist-folder: public
-    remote-host: ${{ steps.project.outputs.remote-host }}
-    api-key: ${{ secrets.IONOS_API_KEY }}
-```
