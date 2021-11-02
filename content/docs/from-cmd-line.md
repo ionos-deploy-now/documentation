@@ -514,7 +514,7 @@ At the moment the number of frameworks Deploy Now is able to detect and support 
 
 ![Select configuration](/wizard-next.png)
 
-Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
+Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yaml```.
 
 ## PHP
 
