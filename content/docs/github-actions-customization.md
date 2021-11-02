@@ -12,6 +12,10 @@ Once you have connected Deploy Now to your repository, you will notice that we h
 
 *For managing the deployment settings of your runtime, please use the [deployment configuration](/docs/deployment-configuration).*
 
+:::tip
+New to GitHub Actions? Check their [documentation](https://docs.github.com/en/actions) to find out how you can use them to enhance the Deploy Now workflow, e.g. by adding  powerful [Continuous Integration](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration) functionalities. Check the [GitHub Actions](https://github.com/marketplace?type=actions) marketplace for other awesome actions you can integrate.
+:::
+
 ## Sample file
 
 This sample of an deploy-now.yaml file demonstrates a common workflow.
