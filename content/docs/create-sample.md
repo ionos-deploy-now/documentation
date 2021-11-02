@@ -1,8 +1,8 @@
 ---
 description: ''
 sidebar: 'docs'
-prev: '/docs/'
-next: '/docs/from-cmd-line/'
+prev: '/docs/domain-tls/'
+next: '/docs/faq/'
 editable: true
 ---
 
