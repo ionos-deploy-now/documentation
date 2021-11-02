@@ -12,7 +12,7 @@ editable: true
 Deploy Now started with static sites, but it's time to move on. We know that a lot of you create dynamic apps with PHP frameworks, and we would love to add this capability to Deploy Now. Our goal is to enable managing PHP runtimes including databases with the same convenient developer experience like we offer for static sites. We are excited to announce that we are in public Alpha and would love you to join. How? Just follow the steps below.
 
 ## 1. Give us a ping
-Drop us a short message under [info@DeployNow.de](mailto:info@DeployNow.de) and we will add you to the list of alpha participants. Ideally, you already have a Deploy Now account and tell us your GitHub name in your mail. We will avtivate the option to use the alpha in your profile accordingly.
+Drop us a short message under [info@DeployNow.de](mailto:info@DeployNow.de) and we will add you to the list of alpha participants. Ideally, you already have a Deploy Now account and tell us your GitHub name in your mail. We will activate the option to use the alpha in your profile accordingly.
 
 ## 2. Deploy a sample
 As our wizard is not able to detect and configure PHP projects yet, you need deploy one of our samples to create a Laravel or Symfony project. These two samples contain a [file-based configuration](/docs/create-sample/#skip-the-wizard-with-a-file-based-configuration) that skip the setup wizard and deploy your project instantly.
@@ -39,4 +39,4 @@ While working on your project, you can view logs or any other file in your runti
 ## 4. Drop us your feedback
 After you've contacted us via mail, we will provide you with more information about how to drop us your feedback. Your feedback is crucial for us to tune our Alpha and make the right decisions for a profound PHP support.
 
-Thanks a lot from the entire Deploy now team and happy deploying!:-)
+Thanks a lot from the entire Deploy Now team and happy deploying! :-)
