@@ -73,7 +73,7 @@ module.exports = {
             ],
           },
           {
-            title: 'JOIN OUR PHP ALPHA',
+            title: 'JOIN OUR ALPHA',
             items: [
               '/docs/php-alpha/',
             ],
