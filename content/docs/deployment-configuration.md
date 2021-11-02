@@ -60,6 +60,8 @@ deploy:
 
 ```
 
+An examplary `config.yaml` for a Laravel project can be found [here](https://github.com/ionos-deploy-now/laravel-starter), a Symfony example can be found [here](https://github.com/ionos-deploy-now/symfony-starter).
+
 ## Configure initial and following deployments
 
 The directories you want to exclude and the commands you want to execute on your runtime might differ between initial deployments (`bootstrap`) and any following deployment (`recurring`). By default, the first deployment action of a newly connected branch always uses `bootstrap`, whereas any following deployment action is based on `recurring`. You have the option to force the use of either one.
