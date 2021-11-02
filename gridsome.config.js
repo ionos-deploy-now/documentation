@@ -58,9 +58,10 @@ module.exports = {
             title: 'Configuration',
             items: [
               '/docs/configuration-overview/',
-              '/docs/explicit-build-configuration/',
+              '/docs/deployment-configuration/',
               '/docs/github-actions-customization/',
               '/docs/domain-tls/',
+              '/docs/create-sample/',
             ],
           },
           {
@@ -69,6 +70,12 @@ module.exports = {
               '/docs/faq/',
               ...(showBlog ? ['/blog/'] : []),
               '/about-us/',
+            ],
+          },
+          {
+            title: 'JOIN OUR ALPHA',
+            items: [
+              '/docs/php-alpha/',
             ],
           },
         ],

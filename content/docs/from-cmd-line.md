@@ -1,7 +1,7 @@
 ---
 description: ''
 sidebar: 'docs'
-prev: '/docs/from-sample/'
+prev: '/docs/framework-samples/'
 next: '/docs/from-repo/'
 editable: true
 ---
@@ -10,7 +10,7 @@ editable: true
 
 You don't have a specific project at hand but want to start from scratch? Below you can find instruction how to set up projects with popular frameworks starting from the command line.
 
-*Not what you are looking for? [Start from a sample](/docs/from-sample/) or [deploy an existing repository](/docs/from-repo/).*
+*Not what you are looking for? [Start from a sample](/docs/framework-samples/) or [deploy an existing repository](/docs/from-repo/).*
 
 ## Plain html site
 
@@ -46,7 +46,7 @@ Sign in to your [Deploy Now](https://ionos.space/) account and click ```New proj
 
 ![Select configuration](/wizard-plain-html.png)
 
-Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
+Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yaml```.
 
 ## Single Page Applications (SPA)
 
@@ -89,7 +89,7 @@ Sign in to your [Deploy Now](https://ionos.space/) account and click ```New proj
 
 ![Select configuration](/wizard-react.png)
 
-Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
+Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yaml```.
 
 ### Vue App
 
@@ -124,7 +124,7 @@ Sign in to your [Deploy Now](https://ionos.space/) account and click ```New proj
 
 ![Select configuration](/wizard-vue.png)
 
-Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
+Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yaml```.
 
 ### Svelte App
 
@@ -164,7 +164,7 @@ At the moment the number of frameworks Deploy Now is able to detect and support 
 
 ![Select configuration](/wizard-svelte.png)
 
-Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
+Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yaml```.
 
 ### Angular App
 
@@ -203,7 +203,7 @@ At the moment the number of frameworks Deploy Now is able to detect and support 
 
 ![Select configuration](/wizard-angular.png)
 
-Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
+Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yaml```.
 
 ### Ionic App
 
@@ -242,7 +242,7 @@ At the moment the number of frameworks Deploy Now is able to detect and support 
 
 ![Select configuration](/wizard-ionic-react.png)
 
-Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
+Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yaml```.
 
 ## Static Site Generators (SSG)
 
@@ -285,7 +285,7 @@ Sign in to your [Deploy Now](https://ionos.space/) account and click ```New proj
 
 ![Select configuration](/wizard-gatsby.png)
 
-Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
+Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yaml```.
 
 ### Gridsome Site
 
@@ -320,7 +320,7 @@ Sign in to your [Deploy Now](https://ionos.space/) account and click ```New proj
 
 ![Select configuration](/wizard-gridsome.png)
 
-Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
+Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yaml```.
 
 ### Hexo Site
 
@@ -355,7 +355,7 @@ Sign in to your [Deploy Now](https://ionos.space/) account and click ```New proj
 
 ![Select configuration](/wizard-hexo.png)
 
-Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
+Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yaml```.
 
 ### Docusaurus Site
 
@@ -394,7 +394,7 @@ At the moment the number of frameworks Deploy Now is able to detect and support 
 
 ![Select configuration](/wizard-docusaurus.png)
 
-Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
+Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yaml```.
 
 ### Nuxt as SSG Site 
 
@@ -437,7 +437,7 @@ At the moment the number of frameworks Deploy Now is able to detect and support 
 
 ![Select configuration](/wizard-nuxt.png)
 
-Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
+Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yaml```.
 
 ### Next as SSG Site 
 
@@ -558,4 +558,4 @@ At the moment the number of frameworks/languages Deploy Now is able to detect an
 
 ![Select configuration](/wizard-php.png)
 
-Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yml```.
+Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yaml```.

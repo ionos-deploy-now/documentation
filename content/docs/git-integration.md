@@ -16,7 +16,7 @@ sequenceDiagram
     User ->> User: edit and commit
     User ->> GitHub: push
     GitHub ->> GitHub Actions: on push
-    GitHub Actions ->> Deploy Now: run .github/workflows/deploy-now.yml 
+    GitHub Actions ->> Deploy Now: run .github/workflows/deploy-now.yaml 
     Note left of Deploy Now: checkout, build and deploy to IONOS
 ~~~
 

@@ -1,22 +1,35 @@
 ---
 description: ''
 sidebar: 'docs'
-prev: '/docs/configuration-overview/'
-next: '/docs/github-actions-customization/'
+prev: '/docs/domain-tls/'
+next: '/docs/faq/'
 editable: true
 ---
 
-# Explicit build configuration
+# Create a sample
 
-After you connect a repository, Deploy Now tries to detect the technologies you are using to set up the build and deploy process accordingly. However, it might be that we are not able to detect more complex configurations. To ensure that these are working as expected, you can provide an explicit configuration via a `.ionos.yml` file in your repository root.
+## Add a deploy button to your sample
 
-A file-based configuration also ensures that others who fork your repository on GitHub benefit from a seamless setup process without any unexpected error if they want to deploy their own instance of the project. They don’t have to configure anything in the UI, and they’ll still get an identical project configuration.
+If you create a sample repository that might be interesting for other GitHub users, you can add a "Deploy to IONOS" button to your repository. This allows users to deploy their instance of your sample with a single click. All you need to to is inserting your repository URL into the snippet below and pasting the snippet in your repository readme.
 
-The following sections will go through each setting option you’ll be able to use with `.ionos.yml` and give you some samples you could use in your projects. For more information about YAML syntax, visit the [YAML website](https://yaml.org/spec/1.2/spec.html).
+```
+[![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/your-account/your-repo)
+```
 
-## Sample file
+As a results, your deploy button should look like this:
 
-This sample of .ionos.yml demonstrates commonn settings available for configuration. You can find more sample files for common frameworks [here](/docs/framework-samples/).
+[![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-plain-html)
+
+
+## Skip the wizard with a file-based configuration
+
+If you want the setup wizard to be skipped after a users clicks on the deploy button, you can add a file-based configuration to your project. Deploy Now automatically scans for a `.ionos.yaml` in the repository root before directing users to the setup wizard. This avoids that users addicently misconfigure the build and deployment settings.
+
+The following sections will go through each setting option you’ll be able to use with `.ionos.yaml` and give you some samples you could use in your projects. For more information about YAML syntax, visit the [YAML website](https://yaml.org/spec/1.2/spec.html).
+
+### Example of a file-based configuration
+
+This sample of .ionos.yaml demonstrates common settings available for configuration. You can find more sample files for common frameworks [here](/docs/framework-samples/).
 
 ``` yml
 ---
@@ -34,15 +47,15 @@ build:
   command: npm run build
 ```
 
-## Config file options
+### Configuration settings
 
 The following sections provide additional details for commonly used configuration settings.
 
-### distFolder
+#### distFolder
 
 Option `distFolder` is mandatory. You need to specify a public distribution folder. Commonly used folders are: `./` or `public` or `dist`
 
-### setup
+#### setup
 
 Option `setup` is a run step used to install the project environment.
 
@@ -59,7 +72,7 @@ The following properties are allowed:
 
 Common separation of commands by "\n" split.
 
-### prepare
+#### prepare
 
 Option `prepare` is a run step used to install all build dependencies.
 
@@ -76,7 +89,7 @@ The following properties are allowed:
 
 Common separation of commands by "\n" split.
 
-### build
+#### build
 
 Option `build` is a run step used to build the project.
 
