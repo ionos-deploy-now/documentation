@@ -1,9 +1,12 @@
 export function formatDate(timestamp, lang) {
   const date = new Date(timestamp);
+  const year = date.getFullYear()
+  const month = `${date.getMonth() + 1}`.padStart(2, '0')
+  const day = `${date.getDate()}`.padStart(2, '0')
   if (lang === 'de') {
-    return [date.getDate(), date.getMonth() + 1, date.getFullYear()].join('.');
+    return [day, month, year].join('.');
   }
-  return [date.getFullYear(), date.getMonth() + 1, date.getDate()].join('-');
+  return [month, day, year].join('/');
 }
 
 export function capitalize(string) {

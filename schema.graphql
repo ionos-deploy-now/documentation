@@ -1,0 +1,404 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: Query
+}
+
+interface Node {
+    id: ID!
+}
+
+interface NodeConnection {
+    edges: [NodeConnectionEdge]
+    pageInfo: PageInfo!
+    totalCount: Int!
+}
+
+interface NodeConnectionEdge {
+    next: Node
+    node: Node
+    previous: Node
+}
+
+type MarkdownPage implements Node {
+    author: String
+    belongsTo(
+        filter: BelongsToFilterInput,
+        limit: Int,
+        order: SortOrder = DESC,
+        page: Int,
+        "Defaults to 25 when page is provided."
+        perPage: Int,
+        skip: Int = 0,
+        sort: [SortArgument!],
+        sortBy: String = "date"
+    ): NodeBelongsTo
+    content: String
+    contentType: String
+    created(
+        "Date format"
+        format: String,
+        "Locale"
+        locale: String
+    ): Date
+    createdAt: Float
+    description: String
+    editable: Boolean
+    excerpt(
+        "Maximum length of generated excerpt (characters)"
+        length: Int = 200
+    ): String
+    fileInfo: MarkdownPage_FileInfo
+    github: String
+    headings(depth: RemarkHeadingLevels, stripTags: Boolean = true): [RemarkHeading]
+    id: ID!
+    image: String
+    likes: String
+    name: String
+    next: String
+    path(to: String = "default"): String
+    prev: String
+    role: String
+    sidebar: String
+    tags: [String]
+    timeToRead(
+        "Words per minute"
+        speed: Int = 230
+    ): Int
+    title: String
+}
+
+type MarkdownPageConnection implements NodeConnection {
+    edges: [MarkdownPageEdge]
+    pageInfo: PageInfo!
+    totalCount: Int!
+}
+
+type MarkdownPageEdge implements NodeConnectionEdge {
+    next: MarkdownPage
+    node: MarkdownPage
+    previous: MarkdownPage
+}
+
+type MarkdownPage_FileInfo {
+    directory: String
+    extension: String
+    name: String
+    path: String
+}
+
+type Metadata {
+    pathPrefix: String
+    settings: Metadata_Settings
+    siteDescription: String
+    siteName: String
+    siteUrl: String
+}
+
+type Metadata_Settings {
+    github: String
+    nav: Metadata_Settings_Nav
+    showBlog: Boolean
+    sidebar: [Metadata_Settings_Sidebar]
+    twitter: String
+    web: String
+}
+
+type Metadata_Settings_Nav {
+    links: [Metadata_Settings_Nav_Links]
+}
+
+type Metadata_Settings_Nav_Links {
+    path: String
+    title: String
+}
+
+type Metadata_Settings_Sidebar {
+    name: String
+    sections: [Metadata_Settings_Sidebar_Sections]
+}
+
+type Metadata_Settings_Sidebar_Sections {
+    items: [String]
+    title: String
+}
+
+type NodeBelongsTo implements NodeConnection {
+    edges: [NodeBelongsToEdge]
+    pageInfo: PageInfo!
+    totalCount: Int!
+}
+
+type NodeBelongsToEdge implements NodeConnectionEdge {
+    next: Node
+    node: Node
+    previous: Node
+}
+
+type Page {
+    context: JSON!
+    path: String!
+}
+
+type PageInfo {
+    currentPage: Int!
+    hasNextPage: Boolean!
+    hasPreviousPage: Boolean!
+    isFirst: Boolean!
+    isLast: Boolean!
+    perPage: Int!
+    totalItems: Int!
+    totalPages: Int!
+}
+
+type Query {
+    allMarkdownPage(
+        "Filter for MarkdownPage nodes."
+        filter: MarkdownPageFilterInput,
+        limit: Int,
+        order: SortOrder = DESC,
+        page: Int,
+        "Defaults to 25 when page is provided."
+        perPage: Int,
+        skip: Int = 0,
+        sort: [SortArgument],
+        sortBy: String = "date"
+    ): MarkdownPageConnection
+    allPage(
+        "Filter pages."
+        filter: PageFilterInput
+    ): [Page]
+    markdownPage(
+        id: ID,
+        "Will return an error if not nullable."
+        nullable: Boolean = false,
+        path: String
+    ): MarkdownPage
+    metaData: Metadata @deprecated(reason : "Use Query.metadata instead.")
+    metadata: Metadata
+    page(path: String!): Page
+}
+
+type RemarkHeading {
+    anchor: String
+    depth: Int
+    value: String
+}
+
+enum ImageFit {
+    "Embed within both provided dimensions."
+    contain
+    "Crop to cover both provided dimensions."
+    cover
+    "Ignore the aspect ratio of the input and stretch to both provided dimensions."
+    fill
+    "Preserving aspect ratio, resize the image to be as large as possible while ensuring its dimensions are less than or equal to both those specified."
+    inside
+    "Preserving aspect ratio, resize the image to be as small as possible while ensuring its dimensions are greater than or equal to both those specified. Some of these values are based on the object-fit CSS property."
+    outside
+}
+
+enum RemarkHeadingLevels {
+    h1
+    h2
+    h3
+    h4
+    h5
+    h6
+}
+
+enum SortOrder {
+    "Sort ascending"
+    ASC
+    "Sort descending"
+    DESC
+}
+
+enum TypeName {
+    MarkdownPage
+}
+
+input BelongsToFilterInput {
+    id: IDQueryOperatorInput
+    path: StringQueryOperatorInput
+    typeName: TypeNameQueryOperatorInput
+}
+
+input BooleanQueryOperatorInput {
+    "Filter by property of (strict) equality."
+    eq: Boolean
+    "Filter nodes that contain the field, including nodes where the field value is null."
+    exists: Boolean
+    "Filter by property matching any of the provided values."
+    in: [Boolean]
+    "Filter by property not equal to provided value."
+    ne: Boolean
+    "Filter by property not matching any of the provided values."
+    nin: [Boolean]
+}
+
+input DateQueryOperatorInput {
+    "Filter by property between provided values."
+    between: [Date]
+    "Filter by date property equal to provided date value."
+    dteq: Date
+    "Filter by property of (strict) equality."
+    eq: Date
+    "Filter nodes that contain the field, including nodes where the field value is null."
+    exists: Boolean
+    "Filter by property greater than provided value."
+    gt: Date
+    "Filter by property greater or equal to provided value."
+    gte: Date
+    "Filter by property matching any of the provided values."
+    in: [Date]
+    "Filter by property less than provided value."
+    lt: Date
+    "Filter by property less than or equal to provided value."
+    lte: Date
+    "Filter by property not equal to provided value."
+    ne: Date
+    "Filter by property not matching any of the provided values."
+    nin: [Date]
+}
+
+input FloatQueryOperatorInput {
+    "Filter by property between provided values."
+    between: [Float]
+    "Filter by property of (strict) equality."
+    eq: Float
+    "Filter nodes that contain the field, including nodes where the field value is null."
+    exists: Boolean
+    "Filter by property greater than provided value."
+    gt: Float
+    "Filter by property greater or equal to provided value."
+    gte: Float
+    "Filter by property matching any of the provided values."
+    in: [Float]
+    "Filter by property less than provided value."
+    lt: Float
+    "Filter by property less than or equal to provided value."
+    lte: Float
+    "Filter by property not equal to provided value."
+    ne: Float
+    "Filter by property not matching any of the provided values."
+    nin: [Float]
+}
+
+input IDQueryOperatorInput {
+    "Filter by property of (strict) equality."
+    eq: ID
+    "Filter nodes that contain the field, including nodes where the field value is null."
+    exists: Boolean
+    "Filter by property matching any of the provided values."
+    in: [ID]
+    "Filter by property not equal to provided value."
+    ne: ID
+    "Filter by property not matching any of the provided values."
+    nin: [ID]
+}
+
+input JSONQueryOperatorInput {
+    "Filter by property of (strict) equality."
+    eq: JSON
+    "Filter nodes that contain the field, including nodes where the field value is null."
+    exists: Boolean
+    "Filter by property matching any of the provided values."
+    in: [JSON]
+    "Filter by property not equal to provided value."
+    ne: JSON
+    "Filter by property not matching any of the provided values."
+    nin: [JSON]
+    "Filter by property matching provided regular expression."
+    regex: String
+}
+
+input MarkdownPageFilterInput {
+    author: StringQueryOperatorInput
+    content: StringQueryOperatorInput
+    contentType: StringQueryOperatorInput
+    created: DateQueryOperatorInput
+    createdAt: FloatQueryOperatorInput
+    description: StringQueryOperatorInput
+    editable: BooleanQueryOperatorInput
+    excerpt: StringQueryOperatorInput
+    fileInfo: MarkdownPage_FileInfoFilterInput
+    github: StringQueryOperatorInput
+    id: IDQueryOperatorInput
+    image: StringQueryOperatorInput
+    likes: StringQueryOperatorInput
+    name: StringQueryOperatorInput
+    next: StringQueryOperatorInput
+    path: StringQueryOperatorInput
+    prev: StringQueryOperatorInput
+    role: StringQueryOperatorInput
+    sidebar: StringQueryOperatorInput
+    tags: StringListQueryOperatorInput
+    title: StringQueryOperatorInput
+}
+
+input MarkdownPage_FileInfoFilterInput {
+    directory: StringQueryOperatorInput
+    extension: StringQueryOperatorInput
+    name: StringQueryOperatorInput
+    path: StringQueryOperatorInput
+}
+
+input PageFilterInput {
+    context: JSONQueryOperatorInput
+    path: StringQueryOperatorInput
+}
+
+input SortArgument {
+    by: String! = "date"
+    order: SortOrder = DESC
+}
+
+input StringListQueryOperatorInput {
+    "Filter by property containing the provided value."
+    contains: [String]
+    "Filter by property containing any of the provided values."
+    containsAny: [String]
+    "Filter by property containing none of the provided values."
+    containsNone: [String]
+    "Filter which have an array property of specified size."
+    size: Int
+}
+
+input StringQueryOperatorInput {
+    "Filter by property of (strict) equality."
+    eq: String
+    "Filter nodes that contain the field, including nodes where the field value is null."
+    exists: Boolean
+    "Filter by property matching any of the provided values."
+    in: [String]
+    "Filter by property not equal to provided value."
+    ne: String
+    "Filter by property not matching any of the provided values."
+    nin: [String]
+    "Filter by property matching provided regular expression."
+    regex: String
+}
+
+input TypeNameQueryOperatorInput {
+    "Filter by property of (strict) equality."
+    eq: TypeName
+    "Filter nodes that contain the field, including nodes where the field value is null."
+    exists: Boolean
+    "Filter by property matching any of the provided values."
+    in: [TypeName]
+    "Filter by property not equal to provided value."
+    ne: TypeName
+    "Filter by property not matching any of the provided values."
+    nin: [TypeName]
+}
+
+
+scalar Date
+
+"The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf)."
+scalar JSON
+
+scalar File
+
+scalar Image

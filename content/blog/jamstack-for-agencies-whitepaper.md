@@ -1,6 +1,9 @@
 ---
 description: 'Are you still using a monolithic web architecture for your client projects? Learn how moving to the Jamstack can save you time and trouble and increase your project success.'
 created: '2021-08-15'
+author: 'robert-schleinhege'
+tags:
+    - guide
 ---
 
 # Whitepaper: Build client websites with Jamstack

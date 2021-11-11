@@ -1,6 +1,9 @@
 ﻿---
 description: 'Our Product Owner Robert explains the advantages of Jamstack websites along a project lifecycle in a free webinar.'
 created: '2021-08-05'
+author: 'robert-schleinhege'
+tags:
+    - webinar
 ---
 
 # Webinar: The comeback of the static web 

@@ -10,13 +10,8 @@
       </div>
 
       <div class="container pb-24 <md:max-w-[90vw] lg:w-3/5 lg:order-1" :class="{ 'md:w-3/5': showOnThisPage() }">
-        <div class="content" v-html="$page.markdownPage.content" />
-
-        <EditLink v-if="showEditLink" class="mt-10" :path="$page.markdownPage.fileInfo.path" />
-
-        <div v-if="showPrevNextLinks" class="mt-8 pt-8 lg:mt-12 lg:pt-12 border-t border-ui-border">
-          <NextPrevLinks />
-        </div>
+        <Blog v-if="$page.markdownPage.contentType === 'blog'" :page="$page.markdownPage" />
+        <Documentation v-else :page="$page.markdownPage" />
       </div>
     </div>
   </Layout>
@@ -59,16 +54,16 @@ query ($id: ID!) {
 <script>
 import { mapGetters } from 'vuex';
 import OnThisPage from '~/components/OnThisPage.vue';
-import NextPrevLinks from '~/components/NextPrevLinks.vue';
-import EditLink from '~/components/EditLink.vue';
+import Blog from '~/components/content/Blog.vue';
+import Documentation from '~/components/content/Documentation.vue';
 import { capitalize } from '~/libs/util';
 import { metaInfo, JsonLd } from '~/libs/seo';
 
 export default {
   components: {
     OnThisPage,
-    NextPrevLinks,
-    EditLink,
+    Blog,
+    Documentation,
   },
   methods: {
     showOnThisPage() {
@@ -77,12 +72,6 @@ export default {
   },
   computed: {
     ...mapGetters(['sidebarStyle']),
-    showEditLink() {
-      return this.$page.markdownPage.editable === true;
-    },
-    showPrevNextLinks() {
-      return this.$page.markdownPage.prev || this.$page.markdownPage.next;
-    },
     headings() {
       return this.$page.markdownPage.headings.filter(h => h.depth > 1);
     },

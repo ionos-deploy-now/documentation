@@ -73,7 +73,9 @@
     "team-title": "Meet the team"
   },
   "blog": {
-    "title": "Blog"
+    "title": "Blog",
+    "timeToRead": "{time} minute read | {time} minutes read",
+    "back": "Back to overview"
   },
   "404": {
     "title": "Oh no! There is nothing here.",

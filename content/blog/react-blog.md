@@ -1,6 +1,9 @@
 ﻿---
 description: 'Learn how to deploy a blog build with React in this video tutorial created by Wayne from Devscover. '
 created: '2021-08-26'
+author: 'robert-schleinhege'
+tags:
+    - guide
 ---
 
 # How to deploy a Blog with React and Deploy Now
