@@ -4,6 +4,7 @@ created: '2021-08-15'
 author: 'robert-schleinhege'
 tags:
     - guide
+    - jamstack
 ---
 
 # Whitepaper: Build client websites with Jamstack
