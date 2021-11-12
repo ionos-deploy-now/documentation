@@ -4,6 +4,8 @@ created: '2021-09-07'
 author: 'robert-schleinhege'
 tags:
   - guide
+  - vue
+  - ecommerce
 ---
 
 # Building API-first eCommerce dashboards with Vue.js and Deploy Now
