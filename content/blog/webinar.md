@@ -4,6 +4,7 @@ created: '2021-08-05'
 author: 'robert-schleinhege'
 tags:
     - webinar
+    - jamstack
 ---
 
 # Webinar: The comeback of the static web 
