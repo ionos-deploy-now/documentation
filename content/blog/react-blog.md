@@ -4,6 +4,7 @@ created: '2021-08-26'
 author: 'robert-schleinhege'
 tags:
     - guide
+    - react
 ---
 
 # How to deploy a Blog with React and Deploy Now
