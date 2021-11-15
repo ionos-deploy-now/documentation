@@ -7,12 +7,12 @@
           v-for="(post, index) in blogPosts"
           :key="post.path"
           :class="blogPostClass(index)"
-          class="p-8 rounded border-1 border-transparent hover:border-ui-border"
+          class="p-8 rounded border-1 border-transparent hover:border-ui-primary"
         >
           <g-link :to="post.path">
             <h2>{{ post.title }}</h2>
             <div class="text-sm mb-4 space-x-4">
-              <span v-if="post.author" class="text-ui-primary capitalize">@{{ post.author.split('-')[0] }}</span>
+              <span v-if="post.author" class="author font-semibold capitalize">@{{ post.author.split('-')[0] }}</span>
               <span>{{ $tc('blog.timeToRead', post.timeToRead, { time: post.timeToRead }) }}</span>
               <span v-for="tag in post.tags" :key="tag">#{{ tag }}</span>
             </div>
@@ -70,3 +70,9 @@ export default {
   },
 };
 </script>
+
+<style>
+.author {
+  color: #718095;
+}
+</style>
