@@ -19,6 +19,11 @@ Run local server
 npm run develop
 ```
 
+Generate content pages with cli
+```bash
+npm run cli
+```
+
 ## Build
 
 Create static build in `dist` folder

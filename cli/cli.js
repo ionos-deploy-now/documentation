@@ -24,10 +24,14 @@ async function main() {
 }
 
 async function createBlog() {
-  const author = await authorPrompt();
-  const title = await titlePrompt();
-  const slug = slugify(title, { lower: true });
+  let slug;
+  const slugs = contentSlugs('blog');
+  const title = await titlePrompt((title) => {
+    slug = slugify(title, { lower: true });
+    return slugs.includes(slug) ? `File with slug "${slug}" already exists` : true;
+  });
   const description = await descriptionPrompt();
+  const author = await authorPrompt();
   const tags = await tagsPrompt();
   const tagList = tags.map((tag) => `\n - ${tag}`).join('');
   buildTemplate('blog', {
