@@ -394,6 +394,14 @@ table {
   }
 }
 
+.footer {
+  @apply py-16 <md:px-16 text-white bg-dark-midnight;
+
+  a {
+    @apply block hover:underline;
+  }
+}
+
 // Is there a way to omit !important ?
 .mermaid {
   @apply mb-4;
