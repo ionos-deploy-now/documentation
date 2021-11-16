@@ -25,6 +25,15 @@ async function titlePrompt(validate) {
   return await prompt.run();
 }
 
+async function slugPrompt(slug) {
+  const prompt = new Input({
+    name: 'slug',
+    message: 'Enter slug',
+    initial: slug,
+  });
+  return await prompt.run();
+}
+
 async function descriptionPrompt() {
   const prompt = new Input({
     name: 'title',
@@ -43,10 +52,12 @@ async function tagsPrompt() {
 
 async function authorPrompt() {
   const authors = contentSlugs('team');
+  const author = process.env.CLI_AUTHOR;
   const prompt = new Select({
     name: 'author',
     message: 'Which author?',
     choices: authors,
+    ...(author ? { initial: author } : []),
   });
   return await prompt.run();
 }
@@ -72,6 +83,7 @@ async function adjacentLinkPrompt(message = 'Choose link') {
 module.exports = {
   mainPrompt,
   titlePrompt,
+  slugPrompt,
   descriptionPrompt,
   authorPrompt,
   tagsPrompt,

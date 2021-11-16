@@ -6,7 +6,7 @@
     "develop": "gridsome develop",
     "explore": "gridsome explore",
     "lint": "eslint --ext .ts,.js,.vue src",
-    "cli": "node ./cli/index.js"
+    "cli": "DOTENV_CONFIG_PATH=.cli node -r dotenv/config ./cli/index.js"
   },
   "dependencies": {
     "@fontsource/open-sans": "^4.5.1",
@@ -24,6 +24,7 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
     "@noxify/gridsome-remark-table-align": "^1.0.0",
+    "dotenv": "^10.0.0",
     "enquirer": "^2.3.6",
     "eslint": "^7.32.0",
     "eslint-plugin-gridsome": "^1.6.2",

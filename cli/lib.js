@@ -2,6 +2,19 @@ const fs = require('fs');
 const path = require('path');
 
 const contentTitleRegex = /^#\s?(.*)$/m;
+const envFilepath = path.join(__dirname, '..', '.cli');
+
+function checkEnv() {
+  if (!fs.existsSync(envFilepath)) {
+    fs.writeFileSync(envFilepath, 'AUTHOR=');
+  }
+}
+
+function writeEnv(key, value) {
+  checkEnv();
+  const data = fs.readFileSync(envFilepath, { encoding: 'utf8' });
+  console.log(data);
+}
 
 function contentPath(type, slug) {
   if (slug) {

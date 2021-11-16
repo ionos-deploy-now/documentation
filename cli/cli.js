@@ -3,6 +3,7 @@ const { buildTemplate, contentSlugs } = require('./lib');
 const {
   mainPrompt,
   titlePrompt,
+  slugPrompt,
   descriptionPrompt,
   authorPrompt,
   tagsPrompt,
@@ -30,6 +31,7 @@ async function createBlog() {
     slug = slugify(title, { lower: true });
     return slugs.includes(slug) ? `File with slug "${slug}" already exists` : true;
   });
+  slug = await slugPrompt(slug);
   const description = await descriptionPrompt();
   const author = await authorPrompt();
   const tags = await tagsPrompt();
@@ -51,6 +53,7 @@ async function createDocumentation() {
     slug = slugify(title, { lower: true });
     return slugs.includes(slug) ? `File with slug "${slug}" already exists` : true;
   });
+  slug = await slugPrompt(slug);
   const description = await descriptionPrompt();
   const editable = await editablePrompt();
   const prev = await adjacentLinkPrompt('Select previous link');
