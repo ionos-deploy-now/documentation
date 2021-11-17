@@ -1,11 +1,11 @@
 <template>
   <div class="relative bg-img-dots">
     <div class="container">
-      <div class="flex-center flex-col space-y-8 text-white mt-8 mb-16 lg:mt-16 lg:mb-42">
-        <div class="overline !text-white">
+      <div class="flex-center flex-col space-y-8 mt-8 mb-16 lg:mt-16 lg:mb-42">
+        <div class="overline">
           {{ $t('home-team.overline') }}
         </div>
-        <h2 class="text-center text-white text-4xl font-semibold max-w-[600px]" v-html="$t('home-team.title')"></h2>
+        <h2 class="text-center text-4xl font-semibold max-w-[600px]" v-html="$t('home-team.title')"></h2>
         <g-link class="btn btn-primary" to="/about-us/">
           {{ $t('home-team.button') }}
         </g-link>
