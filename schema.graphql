@@ -119,7 +119,13 @@ type Metadata_Settings_Sidebar {
 }
 
 type Metadata_Settings_Sidebar_Sections {
+    external: [Metadata_Settings_Sidebar_Sections_External]
     items: [String]
+    title: String
+}
+
+type Metadata_Settings_Sidebar_Sections_External {
+    path: String
     title: String
 }
 

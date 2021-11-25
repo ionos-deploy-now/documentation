@@ -71,6 +71,12 @@ module.exports = {
               ...(showBlog ? ['/blog/'] : []),
               '/about-us/',
             ],
+            external: [
+              {
+                title: 'Changelog',
+                path: 'https://github.com/ionos-deploy-now/ionos-deploy-now/blob/main/CHANGELOG.md',
+              },
+            ],
           },
           {
             title: 'JOIN OUR ALPHA',
@@ -198,13 +204,9 @@ module.exports = {
         }],
         '@noxify/gridsome-remark-table-align',
         ['@gridsome/remark-prismjs', {
-            showLineNumbers: true,
-          },
-        ],
-        ['gridsome-plugin-remark-container', {
-
-          },
-        ],
+          showLineNumbers: true,
+        }],
+        'gridsome-plugin-remark-container',
       ],
     },
   },
