@@ -53,7 +53,7 @@
         <a href="https://www.ionos.com/" rel="noreferrer" target="_blank">
           <img
             alt="ionos logo"
-            src="https://ce1.uicdn.net/7d5/abcb6399cfff8a905569278386360/webapp/vi-logo.svg"
+            src="https://ce1.uicdn.net/2dd/1690fa2f62f6ed55e11b6c594145c/webapp/vi-logo.svg"
             width="150"
           >
         </a>
