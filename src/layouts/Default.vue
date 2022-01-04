@@ -6,33 +6,6 @@
         class="sticky top-0 z-10 w-full border-b border-ui-border"
         @resize="onResize"
       >
-        <Banner class="flex" name="job-offer">
-          <template #icon>
-            <BullhornOutline class="icon icon-lg" decorative />
-          </template>
-          <template #content>
-            <div class="flex-grow mx-4">
-              <div class="flex">
-                <div class="flex-grow">
-                  <div class="flex flex-col">
-                    <span class="text-xs md:text-base font-semibold">
-                      {{ $t("job-offer.banner-title") }}
-                    </span>
-                    <span class="text-xs md:text-base">
-                      {{ $t("job-offer.banner-subtitle") }}
-                    </span>
-                  </div>
-                </div>
-                <JobSearchLink
-                  class="flex-center text-primary text-xs md:text-base"
-                >
-                  <ChevronDoubleRightIcon class="icon" decorative />
-                  <span>{{ $t("job-offer.banner-link") }}</span>
-                </JobSearchLink>
-              </div>
-            </div>
-          </template>
-        </Banner>
         <LayoutHeader />
       </header>
 

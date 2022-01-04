@@ -9,23 +9,9 @@
               {{ $t('about-us.text') }}
             </p>
           </div>
-
-          <div class="m-4 p-4 space-y-4 rounded-lg card invert z-1">
-            <h2 class="text-white flex">
-              <BullhornOutline class="icon self-center" decorative />
-              <span class="ml-2">{{ $t('job-offer.about-us-title') }}</span>
-            </h2>
-            <p class="text-white">
-              {{ $t('job-offer.about-us-text') }}
-            </p>
-            <JobSearchLink>
-              <ChevronDoubleRightIcon class="icon self-center" decorative />
-              <span class="self-center">{{ $t('job-offer.banner-link') }}</span>
-            </JobSearchLink>
-          </div>
         </div>
 
-        <div class="two-column-layout !gap-16 mt-8 lg:mt-16">
+        <div class="two-column-layout !gap-16 mt-16">
           <div class="space-y-4">
             <h2>
               {{ $t('about-us.ionos-title') }}
