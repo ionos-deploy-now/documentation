@@ -1,5 +1,5 @@
 ---
-description: 'What is the best React-based Static Site Generator? Gatsby vs. React Static vs. Next.js'
+description: 'Gatsby vs. React Static vs. Next.js: What is the best React-based Static Site Generator?'
 created: '2022-01-12'
 author: 'daniel-hunt'
 tags:
@@ -9,7 +9,7 @@ tags:
     - next.js
 ---
 
-# Gatsby vs. React Static vs. Next.js: What Is the best React-based Static Site Generator?
+# Gatsby vs. React Static vs. Next.js: What Is the Best React-based Static Site Generator?
 
 ## Introduction
 I imagine that you’ve found your way to this blog post because you understand the Jamstack and recognize its strengths and its weaknesses. It's effective. The allure of faster load times and serverless architecture is strong and web developers from all over the world are now using the Jamstack. So, how can you leverage the latest frameworks to gain that edge over the competition without breaking the bank? Well, keep reading to find out. In this post, I'll compare the three most popular React-based frameworks compatible with Deploy Now from IONOS (Gatsby, Next.js, and React-Static), their use cases, pros, and cons. 
@@ -20,7 +20,7 @@ I imagine that you’ve found your way to this blog post because you understand 
 Gatsby is one of the more well-known React frameworks because it is very versatile and has a robust development team driving its growth. Another thing that defines Gatsby as a popular framework is the documentation available from their site. Without well-organized documentation, we, as developers, are placed at a severe disadvantage. My love of documentation aside, I've compiled a list of the pros and cons of Gatsby below, as well as some use cases that'll help kick-start your creativity. 
 
 
-### Gatsby: The Pros
+### Gatsby — the Pros
 
 - Speed: Without a server delivering your site's resources, load times drop. This has the potential to increase your business's revenue over the long term.
 
@@ -35,7 +35,7 @@ Gatsby is one of the more well-known React frameworks because it is very versati
 
 - GraphQL support: Used to streamline the process of fetching data from external and internal sources.
 
-### Gatsby: The Cons
+### Gatsby — the Cons
 - No GUI: Gatsby doesn't offer a graphical interface for interacting with their framework. For some devs this isn't a problem, for others, it might be a barrier to entry.
 - Learning curve: Whether this is your first time using a CMS or you're migrating from another platform, you'll have to learn how to use Gatsby and its associated features. 
 - Dynamic content not supported: It is possible to serve dynamic content with Gatsby, but it's not recommended and it is difficult to accomplish effectively. 
@@ -141,17 +141,17 @@ git push -u origin main
 Next.js is a hybrid static site generator. This essentially means that Next.js can accomplish nearly everything we have discussed up until this point and more. Most importantly though, Next.js is production-ready and is excellent for SEO optimization. However, there is one caveat: with all of the wonderful features, such as pre-rendering, code-splitting, SEO-optimization, etc ... you are required to run Next.js in tandem with Node.js. This is ultimately outside of the scope of this article. Static generation / pre-generation does work with Deploy Now, but Node.js can only be used at build time — NOT at run time. Even though this article centers on Deploy Now, we figured Next.js is such a great framework that it deserves an honorable mention.
 
 
-### Pros
+### The Pros of Next.js
 - Speed: Next.js is an extremely fast framework, not as fast as React Static, but fast nonetheless.
 - Production ready: Next.js is production ready straight out of the box. 
-- Documentation: Next.js has excellent documentation that is well kept and updated frequently. 
-- Code samples: One unique feature of Next.js is the large amount of code samples that they have hosted on both their site and Github. Each one of these code samples is free to use in your application without attribution. 
+- Documentation: Next.js has excellent documentation that is well maintained and updated frequently. 
+- Code samples: One unique feature of Next.js is the large amount of code samples that they have hosted on both their site and GitHub. Each one of these code samples is free to use in your application without attribution. 
 - Code splitting: Next.js supports code splitting. 
-- Typescript: Next.js supports Type Script.
+- TypeScript: Next.js supports TypeScript.
 
-### Cons 
-- Node.js Dependence - Next.js requires node.js to run in most situations. 
-- Security - Considering that next.js has a larger amount of dependencies it also has a larger attack surface than any of the frameworks we have touched on. 
+### Next.js — the Cons 
+- Node.js dependence: Next.js requires node.js to run in most situations. 
+- Security: Considering that next.js has a larger amount of dependencies it also has a larger attack surface than any of the frameworks we have touched on. 
 
 ### Use Cases / Examples
 Some sites that utilize Next.js include:
@@ -160,21 +160,21 @@ Some sites that utilize Next.js include:
 - twitch.com
 - att.com
 
-If your company needs a production ready website that can handle the load that comes with a small to medium sized business and the associated web presence then Next.js is definitely worth looking into. As you can see some of the biggest companies in the world use Next.js because of its ease of use and scalability. If you are interested in learning more about Next.js, make sure you check out: https://nextjs.org/.  
+If your company needs a production-ready website that can handle the loads required by a small to medium-sized business, then Next.js is definitely worth looking into. Some of the biggest companies in the world use Next.js, mainly because of its ease of use and scalability. If you're interested in learning more about Next.js, make sure you check out: https://nextjs.org/.  
 
 ### Deploy Using IONOS Deploy Now
 
-1) Create a new sitelocally by entering the following commands into your terminal:
+1) Create a new site locally by entering the following commands into your terminal:
 ```
 npx create-next-app@latest next-site
 cd next-site
 npx next@latest dev
 ```
 
-2) Visit your site locally by copying the localhost address from CLI stdout to your favorite browser.
+2) Visit your site locally by copying the localhost address from CLI stdout and pasting it into your favorite browser.
 
 3) Enable static HTML export.
-NOTE: Currently, Deploy Now doesn’t support image optimization available in Next.js >=, so you have to edit the index.js file to remove this feature:
+NOTE: Currently, Deploy Now doesn’t support the large image optimization available in Next.js >=, so you have to edit the index.js file to remove this feature:
 
 4) Delete the following import from pages/index.js:
 ```
