@@ -223,6 +223,6 @@ git push -u origin main
 10) Set up deployment by signing into your Deploy Now account and clicking “New Project.” Next, choose the source you want to deploy from. Grant the requested permissions to IONOS and proceed to choose the following configuration:
 ![CONFIGURATIONTWO](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3l39qlyuwjo3fyc238h4.png)
 
-_Article written by Daniel Hunt from [digitaljailbreak.com](www.digitaljailbreak.com)_
+_Article written by Daniel Hunt from [digitaljailbreak.com](https://www.digitaljailbreak.com)_
  
 
