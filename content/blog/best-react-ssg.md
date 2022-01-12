@@ -36,11 +36,11 @@ Gatsby is one of the more well-known React frameworks because it is very versati
 - GraphQL support: Used to streamline the process of fetching data from external and internal sources.
 
 ### Gatsby: The Cons
-No GUI — Gatsby doesn't offer a graphical interface for interacting with their framework. For some devs this isn't a problem, for others, it might be a barrier to entry.
-Learning Curve — Whether this is your first time using a CMS or you're migrating from another platform, you'll have to learn how to use Gatsby and its associated features. 
-Doesn't Support Dynamic Content — It is possible to serve dynamic content with Gatsby, but it's not recommended and it is difficult to accomplish it effectively. 
+- No GUI: Gatsby doesn't offer a graphical interface for interacting with their framework. For some devs this isn't a problem, for others, it might be a barrier to entry.
+- Learning curve: Whether this is your first time using a CMS or you're migrating from another platform, you'll have to learn how to use Gatsby and its associated features. 
+- Dynamic content not supported: It is possible to serve dynamic content with Gatsby, but it's not recommended and it is difficult to accomplish effectively. 
 
-As you can see, Gatsby is a pretty powerful React framework. It's important to remember though, that Gatsby is only useful for certain kinds of websites and applications. I've included a few different examples below...
+As you can see, Gatsby is a pretty powerful React framework. It's important to remember though, that Gatsby is only useful for certain kinds of websites and applications. I've included a few different examples below ...
 
 ### Use Cases / Examples
 Gatsby is great for sites that have a large number of pages such as blogs, news sites, documentation portals, and things of that nature. Whether it's a single page or 10,000 pages, Gatsby makes creating them easier than ever. Here are a few noteworthy sites that were built using Gatsby:
@@ -77,7 +77,7 @@ git push -u origin main
 
 ![CONFIGURATION ONE](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9vjkvp6wgeh78zp5906z.png)
 
-5) Now, take a short break until your project build is deployed. Deploy Now will always show you the current build and deploy status of your project. When it's finished, Deploy Now will provide you with a direct URL to your project. You can also find a new workflow file within your repository named .github/workflow/deploy-now.yaml. 
+5) Now, take a quick break until your project build is deployed. Deploy Now will always show you the current build and deploy status of your project. When it's finished, Deploy Now will provide you with a direct URL to your project. You can also find a new workflow file within your repository named .github/workflow/deploy-now.yaml. 
 
  
 ---
@@ -107,7 +107,7 @@ Here are a few examples of pages made with React Static:
 
 What makes React Static an interesting framework is the fact that it rehydrates your static site into a fully functional react application. So if serving up static pages at breakneck speeds is something you or your company might need in the future, then react-static is worth keeping in mind. At the same time, you need to remember that react-static thrives on the need to display static pages fast, so if you’re working with a site model that is JAMpacked (excuse the pun) with dynamic pages full of unique styles then react-static may not be the framework for you ... yet!
 
-### Creating a React-static Site
+### Creating a React Static Site
 1) Create a new site by entering the following commands into your terminal:
 ```	
  npm i -g react-static
@@ -120,9 +120,9 @@ What makes React Static an interesting framework is the fact that it rehydrates 
 react-static create
 ```
 
-3) Follow the prompts within your terminal to configure your project. For the sake of  this example we will be using the `basic` template. 
+3) Follow the prompts within your terminal to configure your project. For the sake of this example, we'll use the "basic" template. 
 
-4) Now, create a new Git repository on GitHub and copy the URI of the repo to your clipboard. Afterwards initialize git and push your project to the created GitHub repository by the following commands: 
+4) Now, create a new Git repository on GitHub and copy the URI of the repo to your clipboard. Afterwards initialize git and push your project to the created GitHub repository using the following commands: 
 ```
 git init
 git add .
@@ -133,27 +133,27 @@ git remote add origin git@github.com:username/reponame.git
 git push -u origin main 
 ```
 
-5) Next, Setup deployment by signing into your Deploy Now account and clicking “New Project.” Choose the source you want to deploy from. Grant the requested permissions to IONOS and proceed to choose the following configuration: `JavaScript, then Node.js and public.` Congratulations your site is deploying!
+5) Next, set up deployment by signing into your Deploy Now account and clicking “New Project.” Choose the source you want to deploy from. Grant the requested permissions to IONOS and proceed to choose the following configuration: 'JavaScript, then Node.js and public.' Tada! Your site is deploying!
 
 ---
 
 ## Next.js
-Next.js is a hybrid static site generator. This essentially means that Next.js can accomplish nearly everything we have discussed up until this point and more. Most importantly though, Next.js is production-ready and has excellent support for SEO optimization. However, there is one caveat: with all of the wonderful features, such as pre-rendering, code-splitting, SEO-optimization, etc... you are required to run Next.js in tandem with Node.js which is ultimately outside of the scope of this article, however, static generation/ pre-generation works with Deploy now but Node.js can only be used at build time NOT at run time. Even though this article centers around Deploy Now, we figured Next.js is such a great framework that it deserves an honorable mention.
+Next.js is a hybrid static site generator. This essentially means that Next.js can accomplish nearly everything we have discussed up until this point and more. Most importantly though, Next.js is production-ready and is excellent for SEO optimization. However, there is one caveat: with all of the wonderful features, such as pre-rendering, code-splitting, SEO-optimization, etc ... you are required to run Next.js in tandem with Node.js. This is ultimately outside of the scope of this article. Static generation / pre-generation does work with Deploy Now, but Node.js can only be used at build time — NOT at run time. Even though this article centers on Deploy Now, we figured Next.js is such a great framework that it deserves an honorable mention.
 
 
 ### Pros
-- Speed - Next.js is an extremely fast framework, not as fast as React Static, but fast nonetheless.
-- Production Ready - Next.js is production ready straight out of the box. 
-- Documentation - Next.js has excellent documentation that is well kept and updated frequently. 
-- Code Samples - One unique feature of Next.js is the large amount of code samples that they have hosted on both their site and Github. Each one of these code samples is free to use in your application without attribution. 
-- Code Splitting - Next.js supports code splitting. 
-- Typescript- Next.js supports Type Script.
+- Speed: Next.js is an extremely fast framework, not as fast as React Static, but fast nonetheless.
+- Production ready: Next.js is production ready straight out of the box. 
+- Documentation: Next.js has excellent documentation that is well kept and updated frequently. 
+- Code samples: One unique feature of Next.js is the large amount of code samples that they have hosted on both their site and Github. Each one of these code samples is free to use in your application without attribution. 
+- Code splitting: Next.js supports code splitting. 
+- Typescript: Next.js supports Type Script.
 
 ### Cons 
 - Node.js Dependence - Next.js requires node.js to run in most situations. 
 - Security - Considering that next.js has a larger amount of dependencies it also has a larger attack surface than any of the frameworks we have touched on. 
 
-### Use Cases/ Examples
+### Use Cases / Examples
 Some sites that utilize Next.js include:
 
 - tiktok.com
