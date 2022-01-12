@@ -12,7 +12,7 @@ tags:
 # Gatsby vs. React Static vs. Next.js: What is the best React-based Static Site Generator?
 
 ## Introduction
-I would imagine that you’ve found your way to this blog post because you understand the Jamstack and recognize its strengths and its weaknesses. It's effective. The allure of faster load times and serverless architecture is strong and web developers all over the world are now using the Jamstack. So, how can you leverage the latest frameworks to gain that edge over the competition without breaking the bank? Well Keep reading to find out We will be comparing three of the most popular React-based frameworks that are compatible with Ionos Deploy Now: Gatsby, Next.js, and React-Static; their use-cases, pros, and cons. 
+I imagine that you’ve found your way to this blog post because you understand the Jamstack and recognize its strengths and its weaknesses. It's effective. The allure of faster load times and serverless architecture is strong and web developers all over the world are now using the Jamstack. So, how can you leverage the latest frameworks to gain that edge over the competition without breaking the bank? Well Keep reading to find out We will be comparing three of the most popular React-based frameworks that are compatible with Ionos Deploy Now: Gatsby, Next.js, and React-Static; their use-cases, pros, and cons. 
 
 ---
 
