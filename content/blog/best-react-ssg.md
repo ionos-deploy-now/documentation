@@ -9,41 +9,41 @@ tags:
     - next.js
 ---
 
-# Gatsby vs. React Static vs. Next.js: What is the best React-based Static Site Generator?
+# Gatsby vs. React Static vs. Next.js: What Is the best React-based Static Site Generator?
 
 ## Introduction
-I imagine that you’ve found your way to this blog post because you understand the Jamstack and recognize its strengths and its weaknesses. It's effective. The allure of faster load times and serverless architecture is strong and web developers all over the world are now using the Jamstack. So, how can you leverage the latest frameworks to gain that edge over the competition without breaking the bank? Well Keep reading to find out We will be comparing three of the most popular React-based frameworks that are compatible with Ionos Deploy Now: Gatsby, Next.js, and React-Static; their use-cases, pros, and cons. 
+I imagine that you’ve found your way to this blog post because you understand the Jamstack and recognize its strengths and its weaknesses. It's effective. The allure of faster load times and serverless architecture is strong and web developers from all over the world are now using the Jamstack. So, how can you leverage the latest frameworks to gain that edge over the competition without breaking the bank? Well, keep reading to find out. In this post, I'll compare the three most popular React-based frameworks compatible with Deploy Now from IONOS (Gatsby, Next.js, and React-Static), their use-cases, pros, and cons. 
 
 ---
 
 ## Gatsby
-Gatsby is one of the more well-known React frameworks because it is very versatile and has a strong development team driving its growth. Another thing that defines Gatsby as a popular framework is the documentation available from their site. Without well-organized documentation, we, as developers, are already placed at a severe disadvantage. My love of documentation aside, I've compiled a list of the pros and cons of Gatsby below, as well as some use-cases to help jump-start your creative spirit. 
+Gatsby is one of the more well-known React frameworks because it is very versatile and has a robust development team driving its growth. Another thing that defines Gatsby as a popular framework is the documentation available from their site. Without well-organized documentation, we, as developers, are placed at a severe disadvantage. My love of documentation aside, I've compiled a list of the pros and cons of Gatsby below, as well as some use cases that'll help kick-start your creativity. 
 
 
-### Pros
+### Gatsby: The Pros
 
-- Speed - When there is no server delivering your site's resources load times will decrease. As we discussed earlier, this has the potential to increase your business's revenue over the long term.
+- Speed — Without a server delivering your site's resources, load times drop. This has the potential to increase your business's revenue over the long term.
 
-- Security - Since there isn't a server to attack, your company's forward-facing assets will be a lot safer.
+- Security — Since there isn't a server to attack, your company's forward-facing assets are a lot safer.
  
-- Configuration - Configuring web servers and their accompanying technologies is stressful, to say the least. With a serverless architecture, you won't have to worry about configuring web servers ever again.
+- Configuration — Configuring web servers and their accompanying technologies is stressful, to say the least. With a serverless architecture, you won't have to worry about configuring web servers ever again.
 
-- Scalability - Gatsby scales effortlessly which makes it a wonderful choice for medium to large-size businesses. 
-- Re-hydration - Even though Gatsby's main use is static sites, it can re-hydrate into a fully functional react application.
+- Scalability — Gatsby scales effortlessly which makes it a wonderful choice for both medium and large businesses. 
+- Re-hydration — Even though Gatsby's main use is for static sites, it can re-hydrate into a fully functional react application.
  
-- Plug-ins - Gatsby comes with a rich plug-in library and let's be honest, who doesn't love plug-ins?
+- Plug-ins — Gatsby comes with a rich plug-in library and let's be honest, who doesn't love plug-ins?
 
-- GraphQL Support - Used to streamline the process of fetching data from external and internal sources.
+- GraphQL Support — Used to streamline the process of fetching data from external and internal sources.
 
-### Cons
-No GUI - Gatsby doesn't offer a graphical interface for interacting with their framework. For some this is not a problem, for others, it could be a barrier to entry.
-Learning Curve - Whether this is your first time using a CMS or you're migrating from another platform you'll have to learn how to use Gatsby and its associated features. 
-Doesn't Support Dynamic Content - It is possible to serve dynamic content with Gatsby, it is not recommended and it is difficult to accomplish it effectively. 
+### Gatsby: The Cons
+No GUI — Gatsby doesn't offer a graphical interface for interacting with their framework. For some devs this isn't a problem, for others, it might be a barrier to entry.
+Learning Curve — Whether this is your first time using a CMS or you're migrating from another platform, you'll have to learn how to use Gatsby and its associated features. 
+Doesn't Support Dynamic Content — It is possible to serve dynamic content with Gatsby, but it's not recommended and it is difficult to accomplish it effectively. 
 
 As you can see, Gatsby is a pretty powerful React framework. It's important to remember though, that Gatsby is only useful for certain kinds of websites and applications. I've included a few different examples below...
 
-### Use Cases/ Examples
-Gatsby is great for sites that have a large number of pages such as blogs, news sites, documentation portals, and things of that nature. Whether it's a single page or ten-thousand pages, Gatsby makes creating them easier than ever. Here are a few noteworthy sites that were built using Gatsby:
+### Use Cases / Examples
+Gatsby is great for sites that have a large number of pages such as blogs, news sites, documentation portals, and things of that nature. Whether it's a single page or 10,000 pages, Gatsby makes creating them easier than ever. Here are a few noteworthy sites that were built using Gatsby:
 
 - www.figma.com
 - www.reactjs.com
