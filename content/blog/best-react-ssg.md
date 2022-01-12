@@ -12,7 +12,7 @@ tags:
 # Gatsby vs. React Static vs. Next.js: What Is the best React-based Static Site Generator?
 
 ## Introduction
-I imagine that you’ve found your way to this blog post because you understand the Jamstack and recognize its strengths and its weaknesses. It's effective. The allure of faster load times and serverless architecture is strong and web developers from all over the world are now using the Jamstack. So, how can you leverage the latest frameworks to gain that edge over the competition without breaking the bank? Well, keep reading to find out. In this post, I'll compare the three most popular React-based frameworks compatible with Deploy Now from IONOS (Gatsby, Next.js, and React-Static), their use-cases, pros, and cons. 
+I imagine that you’ve found your way to this blog post because you understand the Jamstack and recognize its strengths and its weaknesses. It's effective. The allure of faster load times and serverless architecture is strong and web developers from all over the world are now using the Jamstack. So, how can you leverage the latest frameworks to gain that edge over the competition without breaking the bank? Well, keep reading to find out. In this post, I'll compare the three most popular React-based frameworks compatible with Deploy Now from IONOS (Gatsby, Next.js, and React-Static), their use cases, pros, and cons. 
 
 ---
 
@@ -22,18 +22,18 @@ Gatsby is one of the more well-known React frameworks because it is very versati
 
 ### Gatsby: The Pros
 
-- Speed — Without a server delivering your site's resources, load times drop. This has the potential to increase your business's revenue over the long term.
+- Speed: Without a server delivering your site's resources, load times drop. This has the potential to increase your business's revenue over the long term.
 
-- Security — Since there isn't a server to attack, your company's forward-facing assets are a lot safer.
+- Security: Since there isn't a server to attack, your company's forward-facing assets are a lot safer.
  
-- Configuration — Configuring web servers and their accompanying technologies is stressful, to say the least. With a serverless architecture, you won't have to worry about configuring web servers ever again.
+- Configuration: Configuring web servers and their accompanying technologies is stressful, to say the least. With a serverless architecture, you won't have to worry about configuring web servers ever again.
 
-- Scalability — Gatsby scales effortlessly which makes it a wonderful choice for both medium and large businesses. 
-- Re-hydration — Even though Gatsby's main use is for static sites, it can re-hydrate into a fully functional react application.
+- Scalability: Gatsby scales effortlessly which makes it a wonderful choice for both medium and large businesses. 
+- Re-hydration: Even though Gatsby's main use is for static sites, it can re-hydrate into a fully functional react application.
  
-- Plug-ins — Gatsby comes with a rich plug-in library and let's be honest, who doesn't love plug-ins?
+- Plug-ins: Gatsby comes with a rich plug-in library and let's be honest, who doesn't love plug-ins?
 
-- GraphQL Support — Used to streamline the process of fetching data from external and internal sources.
+- GraphQL support: Used to streamline the process of fetching data from external and internal sources.
 
 ### Gatsby: The Cons
 No GUI — Gatsby doesn't offer a graphical interface for interacting with their framework. For some devs this isn't a problem, for others, it might be a barrier to entry.
@@ -59,7 +59,7 @@ cd gatsby-site
 npm run develop 
 ```
 
-2) Visit your site locally by copying localhost address from the CLI stdout to your browser bar.
+2) Visit your site locally by copying the localhost address from the CLI stdout to your browser bar.
 
 3) Now, create a new Git repository on GitHub and copy the URI of the repo to your clipboard.
 Initialize git and push your project to the created GitHub repository using the following commands:
@@ -73,41 +73,41 @@ git remote add origin git@github.com:username/reponame.git
 git push -u origin main
 ```
 
-4) Setup deployment by signing into your Deploy Now account and clicking “New Project.” Next, choose the source you want to deploy from. Grant the requested permissions to IONOS and proceed to choose the following configuration:
+4) Set up deployment by signing into your Deploy Now account and clicking “New Project.” Next, choose the source you want to deploy from. Grant the requested permissions to IONOS and proceed to choose the following configuration:
 
 ![CONFIGURATION ONE](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9vjkvp6wgeh78zp5906z.png)
 
-5) Now, take a short break until your project build is deployed. Deploy Now will always show you the current build and deploy status of your project. When it is finished Deploy Now will provide you with a direct URL to your project. You can also find a new workflow file within your repository named .github/workflow/deploy-now.yaml. 
+5) Now, take a short break until your project build is deployed. Deploy Now will always show you the current build and deploy status of your project. When it's finished, Deploy Now will provide you with a direct URL to your project. You can also find a new workflow file within your repository named .github/workflow/deploy-now.yaml. 
 
  
 ---
 
 ## React Static
-React Static is an open-source progressive site generator written by Tanner Linsley and released in late 2017. A progressive site generator is functionally similar to a static site generator with several key differences. Within the core of a progressive site generator sits a static site that, once requested by the user, begins re-hydrating itself into a full-featured react application allowing for extremely fast load times whenever a link is clicked since the page's assets are already rendered. An easy way to conceptualize React Static is that once a site is requested it progressively transforms into a React application regardless of the entry point. This clever feature coupled with all of the pre-existing benefits of a static site generator makes React Static an attractive choice for developers looking to deploy a static site.   
+React Static is an open-source progressive site generator written by Tanner Linsley and released in late 2017. A progressive site generator is functionally similar to a static site generator with several key differences. Within the core of a progressive site generator sits a static site that, once requested by the user, begins re-hydrating itself into a full-featured react application. This allows for extremely fast load times whenever a link is clicked since the page's assets have already been rendered. An easy way to conceptualize React Static is that once a site is requested it progressively transforms into a React application regardless of the entry point. This clever feature coupled with all of the pre-existing benefits of a static site generator makes React Static an attractive choice for developers looking to deploy a static site.   
 
-### Pros
-- Speed - Since the site is re-hydrated into a full-featured react application there is no need to reload any resources while the user interacts with the site. This results in near-instantaneous response times.  
-- Security - Just like a regular site built using a static site generator, there is no server involved and that is automatically going to result in a more secure site. 
-- Scalability - React Static performs well on everything from single-page sites to larger sites with thousands of pages.
-- Re-hydration -The ability to turn a static site into a full feature react application is what defines React Static. 
-- Data Handling - React Static is flexible on where you source your data. On top of that, React Static also allows for data to be displayed/updated in real-time.
-Seo Friendly
+### Pros of React Static
+- Speed: Since the site is re-hydrated into a full-featured react application, there is no need to reload any resources while the user interacts with the site. This results in near-instantaneous response times.  
+- Security: Just like a regular site built using a static site generator, there is no server involved, which automatically results in a more secure site. 
+- Scalability: React Static performs well on everything from single-page sites to larger sites with thousands of pages.
+- Re-hydration: The ability to turn a static site into a full feature react application is what defines React Static. 
+- Data Handling: React Static is flexible on where you source your data. On top of that, React Static also allows for data to be displayed/updated in real time.
+SEO friendly
 
-### Cons
-- No GUI - Unfortunately, React Static has no GUI to interact with making it a little more difficult to learn for some.
-- Learning Curve - Utilizing React Static will require a good amount of learning but hey... a lot of the strongest frameworks and tools out there require time and effort to get the hang of. 
-- Limited Use-Cases - React Static, while extremely useful, isn't a one-stop for all of your web development needs. Its utility is limited to a certain subset of websites.
-- Minimal Documentation - The amount of documentation released for React Static is pretty limited.
+### Cons of React Static
+- No GUI: Unfortunately, React Static has no GUI to interact with making it a little more difficult to learn for some.
+- Learning curve: Utilizing React Static requires a good amount of learning but hey ... a lot of the strongest frameworks and tools out there require time and effort to get the hang of. 
+- Limited use cases: React Static, while extremely useful, isn't a one-stop for all of your web development needs. Its utility is limited to a certain subset of websites.
+- Minimal documentation: The amount of documentation released for React Static is pretty limited.
 
-### Use Cases/ Examples
+### Use Cases / Examples
 Here are a few examples of pages made with React Static:
 - stoplight.io
 - vector.dev
 - turbotax.intuit.com
 
-What makes react-static an interesting framework is the fact that it rehydrates your static site into a fully functional react application. So if serving up static pages at breakneck speeds is something that you can see you or your company needing to do in the future, then react-static is worth keeping in mind. At the same time, you need to remember that react-static thrives on the need to display static pages fast, so if you’re working with a site model that is JAMpacked (excuse the pun) with dynamic pages full of unique styles then react-static may not be the framework for you… yet!
+What makes React Static an interesting framework is the fact that it rehydrates your static site into a fully functional react application. So if serving up static pages at breakneck speeds is something you or your company might need in the future, then react-static is worth keeping in mind. At the same time, you need to remember that react-static thrives on the need to display static pages fast, so if you’re working with a site model that is JAMpacked (excuse the pun) with dynamic pages full of unique styles then react-static may not be the framework for you ... yet!
 
-### Creating a react-static Site
+### Creating a React-static Site
 1) Create a new site by entering the following commands into your terminal:
 ```	
  npm i -g react-static
