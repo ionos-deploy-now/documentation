@@ -174,11 +174,11 @@ npx next@latest dev
 2) Visit your site locally by copying the localhost address from CLI stdout and pasting it into your favorite browser.
 
 3) Enable static HTML export.
-NOTE: Currently, Deploy Now doesn’t support the large image optimization available in Next.js >=, so you have to edit the index.js file to remove this feature:
+NOTE: Currently, Deploy Now doesn’t support the large image optimization available in Next.js, so you have to edit the index.js file to remove this feature.
 
 4) Delete the following import from pages/index.js:
 ```
- Import Image from 'next/image'
+ Import Image from "next/image"
 ```
 
 5) Next, locate the following image tag:
@@ -199,7 +199,7 @@ NOTE: Currently, Deploy Now doesn’t support the large image optimization avail
 },
 ```
 	
-8) At last, adapt .eslintrc.json to overcome Next.js eslint rules restrictions:
+8) Finally, adapt .eslintrc.json to overcome Next.js eslint rules restrictions:
 ```
 {
     "extends": ["next", "next/core-web-vitals"],
@@ -209,7 +209,7 @@ NOTE: Currently, Deploy Now doesn’t support the large image optimization avail
 )
 ```
 
-9) Now, create a new Git repository on GitHub and copy the URI of the repo to your clipboard. Afterwards initialize git and push your project to the created GitHub repository by the following commands: 
+9) Now, create a new Git repository on GitHub and copy the URI of the repo to your clipboard. Afterwards, initialize git and push your project to the GitHub repository you created using the following commands: 
 ```
 git init
 git add .
@@ -220,9 +220,9 @@ git remote add origin git@github.com:username/reponame.git
 git push -u origin main 
 ```
 
-10) Setup deployment by signing into your Deploy Now account and clicking “New Project.” Next, choose the source you want to deploy from. Grant the requested permissions to IONOS and proceed to choose the following configuration:
+10) Set up deployment by signing into your Deploy Now account and clicking “New Project.” Next, choose the source you want to deploy from. Grant the requested permissions to IONOS and proceed to choose the following configuration:
 ![CONFIGURATIONTWO](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3l39qlyuwjo3fyc238h4.png)
 
-_Article written by Daniel Hunt from [digitaljailbreak.com](digitaljailbreak.com)_
+_Article written by Daniel Hunt from [digitaljailbreak.com](www.digitaljailbreak.com)_
  
 
