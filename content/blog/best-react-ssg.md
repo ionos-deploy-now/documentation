@@ -160,7 +160,6 @@ Some sites that utilize Next.js include:
 - twitch.com
 - att.com
 
-
 If your company needs a production ready website that can handle the load that comes with a small to medium sized business and the associated web presence then Next.js is definitely worth looking into. As you can see some of the biggest companies in the world use Next.js because of its ease of use and scalability. If you are interested in learning more about Next.js, make sure you check out: https://nextjs.org/.  
 
 ### Deploy Using IONOS Deploy Now
