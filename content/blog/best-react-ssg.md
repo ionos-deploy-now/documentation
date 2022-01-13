@@ -1,5 +1,5 @@
 ---
-description: 'Gatsby vs. React Static vs. Next.js: What's the best React-based Static Site Generator?'
+description: 'Gatsby vs. React Static vs. Next.js: What's the Best React-based Static Site Generator?'
 created: '2022-01-12'
 author: 'daniel-hunt'
 tags:
