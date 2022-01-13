@@ -1,5 +1,5 @@
 ---
-description: 'Gatsby vs. React Static vs. Next.js: What's the Best React-based Static Site Generator?'
+description: 'Gatsby vs. React Static vs. Next.js: What's the best React-based static site generator?'
 created: '2022-01-12'
 author: 'daniel-hunt'
 tags:
@@ -9,7 +9,7 @@ tags:
     - next.js
 ---
 
-# Gatsby vs. React Static vs. Next.js: What's the Best React-based Static Site Generator?
+# Gatsby vs. React Static vs. Next.js: What's the best React-based static site generator?
 
 ## Introduction
 I imagine that you’ve found your way to this blog post because you understand the Jamstack and recognize its strengths and its weaknesses. It's effective. The allure of faster load times and serverless architecture is strong and web developers from all over the world are now using the Jamstack. So, how can you leverage the latest frameworks to gain that edge over the competition without breaking the bank? Well, keep reading to find out. In this post, I'll compare the three most popular React-based frameworks compatible with Deploy Now from IONOS (Gatsby, Next.js, and React-Static), their use cases, pros, and cons. 
@@ -20,7 +20,7 @@ I imagine that you’ve found your way to this blog post because you understand 
 Gatsby is one of the more well-known React frameworks because it is very versatile and has a robust development team driving its growth. Another thing that defines Gatsby as a popular framework is the documentation available from their site. Without well-organized documentation, we, as developers, are placed at a severe disadvantage. My love of documentation aside, I've compiled a list of the pros and cons of Gatsby below, as well as some use cases that'll help kick-start your creativity. 
 
 
-### Gatsby — the Pros
+### Gatsby — the pros
 
 - Speed: Without a server delivering your site's resources, load times drop. This has the potential to increase your business's revenue over the long term.
 
@@ -35,21 +35,21 @@ Gatsby is one of the more well-known React frameworks because it is very versati
 
 - GraphQL support: Used to streamline the process of fetching data from external and internal sources.
 
-### Gatsby — the Cons
+### Gatsby — the cons
 - No GUI: Gatsby doesn't offer a graphical interface for interacting with their framework. For some devs this isn't a problem, for others, it might be a barrier to entry.
 - Learning curve: Whether this is your first time using a CMS or you're migrating from another platform, you'll have to learn how to use Gatsby and its associated features. 
 - Dynamic content not supported: It is possible to serve dynamic content with Gatsby, but it's not recommended and it is difficult to accomplish effectively. 
 
 As you can see, Gatsby is a pretty powerful React framework. It's important to remember though, that Gatsby is only useful for certain kinds of websites and applications. I've included a few different examples below ...
 
-### Use Cases / Examples
+### Use cases / Examples
 Gatsby is great for sites that have a large number of pages such as blogs, news sites, documentation portals, and things of that nature. Whether it's a single page or 10,000 pages, Gatsby makes creating them easier than ever. Here are a few noteworthy sites that were built using Gatsby:
 
 - www.figma.com
 - www.reactjs.com
 - www.affirm.com
  
-### Deploying Using Ionos Deploy Now
+### Deploying using IONOS Deploy Now
 
 1) Create a new site by entering the following commands in your terminal:
 
@@ -99,7 +99,7 @@ SEO friendly
 - Limited use cases: React Static, while extremely useful, isn't a one-stop for all of your web development needs. Its utility is limited to a certain subset of websites.
 - Minimal documentation: The amount of documentation released for React Static is pretty limited.
 
-### Use Cases / Examples
+### Use cases / examples
 Here are a few examples of pages made with React Static:
 - stoplight.io
 - vector.dev
@@ -107,7 +107,7 @@ Here are a few examples of pages made with React Static:
 
 What makes React Static an interesting framework is the fact that it rehydrates your static site into a fully functional react application. So if serving up static pages at breakneck speeds is something you or your company might need in the future, then react-static is worth keeping in mind. At the same time, you need to remember that react-static thrives on the need to display static pages fast, so if you’re working with a site model that is JAMpacked (excuse the pun) with dynamic pages full of unique styles then react-static may not be the framework for you ... yet!
 
-### Creating a React Static Site
+### Creating a React Static site
 1) Create a new site by entering the following commands into your terminal:
 ```	
  npm i -g react-static
@@ -149,11 +149,11 @@ Next.js is a hybrid static site generator. This essentially means that Next.js c
 - Code splitting: Next.js supports code splitting. 
 - TypeScript: Next.js supports TypeScript.
 
-### Next.js — the Cons 
+### Next.js — the cons 
 - Node.js dependence: Next.js requires node.js to run in most situations. 
 - Security: Considering that next.js has a larger amount of dependencies it also has a larger attack surface than any of the frameworks we have touched on. 
 
-### Use Cases / Examples
+### Use cases / examples
 Some sites that utilize Next.js include:
 
 - tiktok.com
@@ -162,7 +162,7 @@ Some sites that utilize Next.js include:
 
 If your company needs a production-ready website that can handle the loads required by a small to medium-sized business, then Next.js is definitely worth looking into. Some of the biggest companies in the world use Next.js, mainly because of its ease of use and scalability. If you're interested in learning more about Next.js, make sure you check out: https://nextjs.org/.  
 
-### Deploy Using IONOS Deploy Now
+### Deploy via Deploy Now from IONOS
 
 1) Create a new site locally by entering the following commands into your terminal:
 ```
