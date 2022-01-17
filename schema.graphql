@@ -50,6 +50,7 @@ type MarkdownPage implements Node {
     ): String
     fileInfo: MarkdownPage_FileInfo
     github: String
+    header: String
     headings(depth: RemarkHeadingLevels, stripTags: Boolean = true): [RemarkHeading]
     id: ID!
     image: String
@@ -61,6 +62,7 @@ type MarkdownPage implements Node {
     role: String
     sidebar: String
     tags: [String]
+    teaser: String
     timeToRead(
         "Words per minute"
         speed: Int = 230
@@ -330,6 +332,7 @@ input MarkdownPageFilterInput {
     excerpt: StringQueryOperatorInput
     fileInfo: MarkdownPage_FileInfoFilterInput
     github: StringQueryOperatorInput
+    header: StringQueryOperatorInput
     id: IDQueryOperatorInput
     image: StringQueryOperatorInput
     likes: StringQueryOperatorInput
@@ -340,6 +343,7 @@ input MarkdownPageFilterInput {
     role: StringQueryOperatorInput
     sidebar: StringQueryOperatorInput
     tags: StringListQueryOperatorInput
+    teaser: StringQueryOperatorInput
     title: StringQueryOperatorInput
 }
 

@@ -31,6 +31,7 @@ query ($id: ID!) {
     timeToRead
     content
     contentType
+    header
     sidebar
     next
     prev
