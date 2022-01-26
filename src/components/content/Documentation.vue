@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="content" v-html="page.content" />
+    <VueRemarkContent class="content"/>
 
     <EditLink v-if="showEditLink" class="mt-10" :path="page.fileInfo.path" />
 
@@ -30,6 +30,6 @@ export default {
     showPrevNextLinks() {
       return this.page.prev || this.page.next;
     },
-  }
+  },
 };
 </script>

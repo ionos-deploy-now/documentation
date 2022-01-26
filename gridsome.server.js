@@ -1,11 +1,17 @@
 const path = require('path')
 const gridsomeConfig = require('./gridsome.config')
+const { estimateTimeToRead } = require('@gridsome/transformer-remark/lib/timeToRead')
 
 function resolveAlias(filepath) {
   if (filepath.startsWith('@assets/')) {
     return filepath.replace('@assets', path.join(__dirname, 'src', 'assets'))
   }
   return filepath
+}
+
+function generateExcerpt(textToStrip, length) {
+  let regex = /\r?\n|\r/g
+  return textToStrip.replace(regex, "").slice(0,length)
 }
 
 module.exports = function (api) {
@@ -28,6 +34,10 @@ module.exports = function (api) {
     // Set optional header/teaser images
     options.header = options.header ? resolveAlias(options.header) : null;
     options.teaser = options.teaser ? resolveAlias(options.teaser) : null;
+    // Set timeToRead and excerpt for markdown pages
+    options.timeToRead = estimateTimeToRead(options.content, 230);
+    options.excerpt = generateExcerpt(options.content, 200);
+    
     return options;
   });
 };

@@ -5,7 +5,7 @@
       {{ $t('blog.back') }}
     </g-link>
     <g-image v-if="page.header" :src="page.header" fit="contain" class="my-8 rounded-lg" height="400" />
-    <div class="content" v-html="page.content" />
+    <VueRemarkContent class="content"/>
   </div>
 </template>
 

@@ -5,9 +5,6 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 const showBlog = process.env.SHOW_BLOG === 'true';
-const includedMarkdownPaths = ['docs', 'team', ...(showBlog ? ['blog'] : [])].join('|');
-const markdownPath = `**/(${includedMarkdownPaths})/*.md`;
-const fontFamilySans = '"Open Sans", ui-sans-serif, system-ui, sans-serif';
 
 module.exports = {
   titleTemplate: '%s | IONOS Deploy Now',
@@ -90,15 +87,36 @@ module.exports = {
   },
   plugins: [
     {
-      use: '@gridsome/source-filesystem',
+      use: '@gridsome/vue-remark',
       options: {
-        baseDir: './content',
-        path: markdownPath,
         typeName: 'MarkdownPage',
+        baseDir: './content',
+        // path: markdownPath,
+        template: './src/templates/MarkdownPage.vue',
         remark: {
-          externalLinksTarget: '_blank',
-          externalLinksRel: ['noopener', 'noreferrer'],
+          grayMatter: {
+            excerpt: true,
+          },
         },
+        plugins: [
+          // add gridsome-plugin-remark-mermaid always first
+          ['gridsome-plugin-remark-mermaid', {
+            removeStyleTags: true,
+            mermaidOptions: {
+              themeVariables: {
+                edgeLabelBackground: '#fff',
+              },
+              flowchart: {
+                diagramPadding: 10,
+              },
+            },
+          }],
+          '@noxify/gridsome-remark-table-align',
+          ['@gridsome/remark-prismjs', {
+            showLineNumbers: true,
+          }],
+          'gridsome-plugin-remark-container',
+        ],
       },
     },
     {
@@ -182,32 +200,4 @@ module.exports = {
       },
     },
   ],
-  transformers: {
-    remark: {
-      plugins: [
-        // add gridsome-plugin-remark-mermaid always first
-        ['gridsome-plugin-remark-mermaid', {
-          mermaidOptions: {
-            //fontFamily: fontFamilySans,
-            themeVariables: {
-              edgeLabelBackground: '#fff',
-            },
-            //sequence: {
-            //  actorFontFamily: fontFamilySans,
-            //  noteFontFamily: fontFamilySans,
-            //  messageFontFamily: fontFamilySans,
-            //},
-            flowchart: {
-              diagramPadding: 10,
-            },
-          },
-        }],
-        '@noxify/gridsome-remark-table-align',
-        ['@gridsome/remark-prismjs', {
-          showLineNumbers: true,
-        }],
-        'gridsome-plugin-remark-container',
-      ],
-    },
-  },
 };
