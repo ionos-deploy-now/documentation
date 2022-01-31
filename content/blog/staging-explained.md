@@ -13,7 +13,7 @@ Developing frontends oftentimes involves a lot of back and forth, experiments an
 Wayne from the YouTube Channel Devscover shows in his newest video how easy Staging Deployments can be created based on a Gatsby example. Simply create a new feature branch on GitHub and preview your changes in a Staging Deployment before merging them to production.
 Every Staging Deployment goes live under a preview URL that you can share with colleagues or customers to get feedback.
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=dByRfkzi-60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 Do you like the example website deployed in the video? Hit this button to deploy your own version.
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/wazcov/Gatsby-IONOS-Deploy-Now)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dByRfkzi-60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
