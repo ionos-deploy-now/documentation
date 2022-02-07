@@ -7,6 +7,9 @@ import 'gridsome-plugin-remark-container/themes/classic.css';
 import '@fontsource/open-sans/latin-400.css';
 import '@fontsource/open-sans/latin-600.css';
 import '@fontsource/open-sans/latin-800.css';
+import '@fontsource/overpass/400.css';
+import '@fontsource/overpass/600.css';
+import '@fontsource/overpass/700.css';
 import '~/assets/styles/app.scss';
 
 export default function (Vue, { router, head, appOptions }) {
@@ -21,10 +24,6 @@ export default function (Vue, { router, head, appOptions }) {
   //  rel: 'preconnect',
   //  href: 'https://fonts.gstatic.com',
   //});
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css2?family=Overpass:wght@100;300&display=swap',
-  });
   head.meta.push({
     name: 'google-site-verification',
     content: 'UtLaJ4v0UZBDPJVc8DqCyiUPSSz9TtMroKmflhpH2eo'
