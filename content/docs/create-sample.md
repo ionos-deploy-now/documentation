@@ -5,6 +5,7 @@ prev: '/docs/domain-tls/'
 next: '/docs/faq/'
 editable: true
 ---
+import CreateCodeSnippet from '~/components/CreateCodeSnippet.vue'
 
 # Create a sample
 
@@ -19,6 +20,10 @@ If you create a sample repository that might be interesting for other GitHub use
 As a results, your deploy button should look like this:
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-plain-html)
+
+### Generate your own
+
+<create-code-snippet />
 
 
 ## Skip the wizard with a file-based configuration
@@ -106,4 +111,3 @@ The following properties are allowed:
 </div>
 
 Common separation of commands by "\n" split.
-

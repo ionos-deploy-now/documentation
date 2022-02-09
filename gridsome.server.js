@@ -2,6 +2,8 @@ const path = require('path')
 const gridsomeConfig = require('./gridsome.config')
 const { estimateTimeToRead } = require('@gridsome/transformer-remark/lib/timeToRead')
 
+const RemarkTransformer = require('@gridsome/transformer-remark')
+
 function resolveAlias(filepath) {
   if (filepath.startsWith('@assets/')) {
     return filepath.replace('@assets', path.join(__dirname, 'src', 'assets'))
@@ -9,9 +11,18 @@ function resolveAlias(filepath) {
   return filepath
 }
 
-function generateExcerpt(textToStrip, length) {
-  let regex = /\r?\n|\r/g
-  return textToStrip.replace(regex, "").slice(0,length)
+const remark = new RemarkTransformer({},{});
+
+function generateExcerpt(excerpt, length) {
+  let regex = /^#+\s+(.*)/g
+
+  excerpt = excerpt.replace(regex, "").slice(0, length);
+
+  if (length && excerpt.length > length) {
+    excerpt = excerpt.substr(0, excerpt.lastIndexOf(' ', length - 1))
+  }
+
+  return excerpt
 }
 
 module.exports = function (api) {
@@ -25,6 +36,9 @@ module.exports = function (api) {
   });
 
   api.onCreateNode(options => {
+    console.log('extendNodeType', remark.extendNodeType);
+    console.log('options', options);
+
     if (options.internal.typeName !== 'MarkdownPage') {
       return null;
     }
@@ -36,8 +50,10 @@ module.exports = function (api) {
     options.teaser = options.teaser ? resolveAlias(options.teaser) : null;
     // Set timeToRead and excerpt for markdown pages
     options.timeToRead = estimateTimeToRead(options.content, 230);
-    options.excerpt = generateExcerpt(options.content, 200);
-    
+    options.excerpt = generateExcerpt(options.content, 200); // remark.extendNodeType(options).excerpt // .parse(options).excerpt
+
+    console.log('excerpt', options.excerpt);
+
     return options;
   });
 };

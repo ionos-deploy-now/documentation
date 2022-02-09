@@ -17,3 +17,5 @@ export function capitalize(string) {
 export function stripProtocol(url) {
   return `${url}`.replace(/https?:\/\//, '');
 }
+
+

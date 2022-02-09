@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap");
 
 /**
  * Colors & Variables
@@ -11,13 +11,13 @@
   --color-ionos-blue: #003d8f;
   --color-midnight: #1b365d;
   --color-dark-midnight: #001b41;
-  --color-horizon: #3B9CDA;
+  --color-horizon: #3b9cda;
   --color-bg-lighten-2: #e8f6fe;
   --color-bg-lighten-1: #cbdae1;
   --color-bg-warning: #ffffda;
   --color-white: theme("colors.white");
-  --color-text-light: #50575B;
-  --color-text-dark: #1F282D;
+  --color-text-light: #50575b;
+  --color-text-dark: #1f282d;
   // UI
   --color-ui-background: theme("colors.white");
   --color-ui-typo: var(--color-text-light);
@@ -52,7 +52,8 @@ html.dark {
     filter: brightness(0) invert(1);
   }
 
-  .next.logo, .jekyll.logo {
+  .next.logo,
+  .jekyll.logo {
     filter: invert(1);
   }
 }
@@ -287,7 +288,8 @@ table {
   @apply px-4 py-2 space-x-2 inline-flex justify-center items-center text-ui-primary bg-ui-background text-ui-primary border border-ui-border rounded-lg cursor-pointer;
 }
 
-.btn-primary, .btn-secondary {
+.btn-primary,
+.btn-secondary {
   @apply text-lg border-2 border-ui-primary bg-ui-background z-1;
 }
 
@@ -303,6 +305,10 @@ table {
   @apply transition-colors hover:bg-ui-primary hover:text-white;
 }
 
+.icon-right {
+  @apply icon absolute right-2 inset-y-3 z-1
+}
+
 .icon:not(.icon-link) {
   @apply leading-1 mx-1 outline-none;
 }
@@ -316,12 +322,14 @@ table {
     width: 1.25em;
   }
 
-  &.icon-sm, &.icon-sm > .material-design-icon__svg {
+  &.icon-sm,
+  &.icon-sm > .material-design-icon__svg {
     height: 1em;
     width: 1em;
   }
 
-  &.icon-lg, &.icon-lg > .material-design-icon__svg {
+  &.icon-lg,
+  &.icon-lg > .material-design-icon__svg {
     height: 1.875em;
     width: 1.875em;
   }
@@ -381,14 +389,14 @@ table {
 
   &::before {
     @apply z-0;
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background: url('/background-bright-mode.svg');
+    background: url("/background-bright-mode.svg");
     opacity: 0.1;
     pointer-events: none;
   }
@@ -400,6 +408,20 @@ table {
   a {
     @apply block hover:underline;
   }
+}
+
+.error {
+  @apply leading-snug border-red-500;
+
+  color: red;
+
+  p {
+    color: red;
+  }
+}
+
+.copyToClipboard {
+  @apply block w-full py-2 pl-4 pr-10 border-2 rounded-lg bg-ui-sidebar border-ui-sidebar outline-none focus:bg-ui-background md:min-w-[260px] xxl:min-w-[400px];
 }
 
 // Is there a way to omit !important ?
@@ -414,7 +436,8 @@ table {
     }
   }
 
-  rect, polygon {
+  rect,
+  polygon {
     &.actor {
       stroke: var(--color-bg-lighten-1) !important;
       fill: var(--color-bg-lighten-2) !important;

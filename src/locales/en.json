@@ -77,6 +77,15 @@
     "timeToRead": "{time} minute read | {time} minutes read",
     "back": "Back to overview"
   },
+  "create-a-sample": {
+    "error": "<b>Error</b>: The Git Repository must be a valid URL.",
+    "default-repository": "https://github.com/your-account/your-repo",
+    "markdown-link": "[![ Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo={0}",
+    "html-link": "<a href=&quot;https://ionos.space/setup?repo={0}&quot;> <img src=&quot;https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg&quot; alt=&quot;Deploy to IONOS&quot; />",
+    "snippets":  {
+      "description": "A {0} snippet that shows a linked Deploy Button."
+    }
+  },
   "404": {
     "title": "Oh no! There is nothing here.",
     "back": "Go back"
