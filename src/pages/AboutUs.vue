@@ -43,7 +43,7 @@
           v-bind="member"
         />
 
-        <TeamMember image="octocat.svg">
+<!--        <TeamMember image="octocat.svg">
           <div>
             <div class="title !pb-0">
               {{ $t('job-offer.team-title') }}
@@ -64,7 +64,7 @@
               {{ $t(`job-offer.${role}`) }}
             </a>
           </div>
-        </TeamMember>
+        </TeamMember>-->
       </div>
     </div>
   </Layout>
@@ -75,11 +75,11 @@ query {
   allMarkdownPage(filter: { contentType: { eq: "team" } }) {
     edges {
       node {
-        name,
-        role,
-        image,
-        github,
-        likes,
+        name
+        role
+        image
+        github
+        likes
       }
     }
   }
