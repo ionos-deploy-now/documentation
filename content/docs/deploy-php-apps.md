@@ -10,9 +10,11 @@ editable: true
 
 Deploy Now PHP projects retrieve code from your GitHub repository, detect the PHP framework you are using and set up an automated build and deployment pipeline. GitHub repositories can be public or private and owned by users or organizations. Your app is hosted on IONOS shared hosting infrastructure. Each code update triggers a new build and deployment via GitHub Actions.
 
-To create a PHP project in Deploy Now, click **add project** and select **PHP project** after the framework detection. 
+## Setup
 
-## Supported frameworks and technologies
+To create a PHP project in Deploy Now, click **add project** and select **PHP project** after the framework detection. The setup wizard guides you through the build, deployment and runtime configuration. Tutorials showing how projects can be set up on the command line can be found [here](docs/from-cmd-line). If you don't have a project at hand, you can deploy one of our [sample projects](/docs/framework-samples).
+
+## Supported frameworks
 
 Deploy Now automatically detects Laravel and Symfony projects and automates the build steps accordingly. In general, Deploy Now supports all apps that run on PHP and can be build with Node.js, Composer, Ruby or any other [language supported by GitHub Actions](https://docs.github.com/en/get-started/learning-about-github/github-language-support). PHP apps are equipped with MariaDBs for both production and staging.
 
