@@ -30,7 +30,7 @@ Depending on your location, Deploy Now apps are hosted on IONOS datacenters in E
 ## Features
 
 - 10 GB storage per deployment
-- 2 GB Maria DB
+- 2 GB MariaDB for production and staging
 - [Staging Deployments](/docs/staging-deployments/)
 - [Custom domains and SSL](/docs/domain-tls/)
 - Visitor statistics
