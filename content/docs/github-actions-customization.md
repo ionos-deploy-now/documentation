@@ -6,7 +6,7 @@ next: '/docs/domain-tls/'
 editable: true
 ---
 
-# GitHub Actions customization
+# Build configuration
 
 Once you have connected Deploy Now to your repository, you will notice that we have injected a `deploy-now.yaml` file into `.github/workflows/`. This file defines how the GitHub Actions workflow is set up. You can make changes to this file to customize the workflow. 
 
