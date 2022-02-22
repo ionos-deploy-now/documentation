@@ -50,18 +50,28 @@ module.exports = {
               '/docs/framework-samples/',
               '/docs/from-cmd-line/',
               '/docs/from-repo/',
-              '/docs/git-integration/',
-              '/docs/staging-deployments/',
+            ],
+          },
+          {
+            title: 'Usecases',
+            items: [
+              '/docs/deploy-static-sites/',
+              '/docs/deploy-php-apps/',
             ],
           },
           {
             title: 'Configuration',
             items: [
-              '/docs/configuration-overview/',
-              '/docs/deployment-configuration/',
               '/docs/github-actions-customization/',
+              '/docs/deployment-configuration/',
+              '/docs/runtime-configuration/',
+            ],
+          },
+          {
+            title: 'Features',
+            items: [
+              '/docs/staging-deployments/',
               '/docs/domain-tls/',
-              '/docs/create-sample/',
             ],
           },
           {
@@ -70,18 +80,13 @@ module.exports = {
               '/docs/faq/',
               ...(showBlog ? ['/blog/'] : []),
               '/about-us/',
+              '/docs/create-sample/',
             ],
             external: [
               {
                 title: 'Changelog',
                 path: 'https://github.com/ionos-deploy-now/ionos-deploy-now/blob/main/CHANGELOG.md',
               },
-            ],
-          },
-          {
-            title: 'JOIN OUR ALPHA',
-            items: [
-              '/docs/php-alpha/',
             ],
           },
         ],
