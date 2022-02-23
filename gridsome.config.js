@@ -65,12 +65,12 @@ module.exports = {
               '/docs/github-actions-customization/',
               '/docs/deployment-configuration/',
               '/docs/runtime-configuration/',
-              '/docs/git-integration/',
             ],
           },
           {
             title: 'Features',
             items: [
+              '/docs/git-integration/',
               '/docs/staging-deployments/',
               '/docs/domain-tls/',
             ],
