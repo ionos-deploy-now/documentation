@@ -77,6 +77,12 @@ module.exports = {
                 path: 'https://github.com/ionos-deploy-now/ionos-deploy-now/blob/main/CHANGELOG.md',
               },
             ],
+            external: [
+              {
+                title: 'Request a feature',
+                path: 'https://github.com/ionos-deploy-now/ionos-deploy-now/issues/new/choose',
+              },
+            ],
           },
           {
             title: 'JOIN OUR ALPHA',
