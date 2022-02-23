@@ -8,75 +8,40 @@ editable: true
 
 # Deploy static sites via GitHub
 
-Once you have connected Deploy Now to your repository, you will notice that we have injected a `deploy-now.yaml` file into `.github/workflows/`. This file defines how the GitHub Actions workflow is set up. You can make changes to this file to customize the workflow. 
+Deploy Now Static Projects supports direct deployments via GitHub for Static Site Generators, Single Page Applications and any other static asset. Repositories can be public or private and owned by GitHub users or organizations. After connecting your repository, Deploy Now detects the framework you are using and sets up a build and deployment workflow accordingly. Each code update triggers a new build via GitHub Actions. Results are deployed to IONOS shared hosting infrastructure.
 
-*For managing the deployment settings of your runtime, please use the [deployment configuration](/docs/deployment-configuration).*
+## Setup
 
-:::tip
-New to GitHub Actions? Check their [documentation](https://docs.github.com/en/actions) to find out how you can use them to enhance the Deploy Now workflow, e.g. by adding  powerful [Continuous Integration](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration) functionalities. Check the [GitHub Actions](https://github.com/marketplace?type=actions) marketplace for other awesome Actions you can integrate.
-:::
+You might want to [create a new project on the command line](docs/from-cmd-line), [deploy an existing repository](/docs/from-repo/) or [deploy one of our samples](/docs/framework-samples) for a quickstart. New Static Projects can be set up in the Deploy Now dashboard by clicking  **add project** and selecting **Static project** after the framework detection.
 
-## Examplary `deploy-now.yaml`
+## Supported frameworks
 
-``` yaml
-name: Deploy Now
+Deploy Now supports all apps that run on PHP and can be build with Node.js, Composer, Ruby or any other [language supported by GitHub Actions](https://docs.github.com/en/get-started/learning-about-github/github-language-support). Automatic detection and workflow setup are available for the following frameworks.
 
-on:
-  - push
-  - workflow_dispatch
+**Static Site Generators**: Hugo, Gatsby, Gridsome, Docusaurus, Vuepress, Vitepress, NuxtJS (static), NextJS (static), Hexo, Metalsmith, 11ty, UmiJS, Astro, Scully, ElderJS, Middleman, Jekyll, Nanoc, Pelican, mkdocs, Jigsaw, Sculpin
 
-jobs:
-  deploy-now:
-    runs-on: ubuntu-latest
-    steps:
-      # Deploy Now fetches required project meta data
-      - name: Fetch project data
-        uses: ionos-deploy-now/retrieve-project-info-action@v1
-        id: project
-        with:
-          api-key: ${{ secrets.IONOS_API_KEY }}
-          project: ${{ secrets.IONOS_PROJECT_ID }}
-          service-host: api-eu.ionos.space
-          
-      # checkout repository from GitHub
-      - name: checkout
-        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: actions/checkout@v2
-        with:
-          submodules: 'recursive'
-          
-      # set up build runtime
-      - name: Setup project
-        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: v12.22.3
-          
-      # install build dependencies
-      - name: Prepare project environment
-        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        run: npm ci
-        
-      # build project and set build env vars. This might be the section you want to customize.
-      - name: Build project
-        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        run: npm run build
-        
-      # this action deploys the project files to the IONOS infrastructure. If you want to manage file persistency and execute commands on your runtime, you can do this under .deploynow/config.yaml.
-      - name: Deploy build
-        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: ionos-deploy-now/deploy-to-ionos-action@v1
-        with:
-          api-key: ${{ secrets.IONOS_API_KEY }}
-          bootstrap-deploy: ${{ steps.project.outputs.bootstrap-deploy }}
-          branch-id: ${{ steps.project.outputs.branch-id }}
-          dist-folder: src/.vuepress/dist
-          project: ${{ secrets.IONOS_PROJECT_ID }}
-          remote-host: ${{ steps.project.outputs.remote-host }}
-          service-host: api-eu.ionos.space
-          storage-quota: ${{ steps.project.outputs.storage-quota }}
-```
+**Single Page Applications**: Angular, React, Vue, Ionic, Svelte, Ember
 
-### Project agnostic and customizable Actions
-The Deploy Now workflow contains a set of different Actions. The beginning and the end of the workflow is project agnostic and defined by Deploy Now. The [fetch project data Action](https://github.com/ionos-deploy-now/retrieve-project-info-action) in the beginning retrieves project meta data from Deploy Now. In the end of the workflow, after the build step was executed, generated files are moved to the IONOS infrastructure by the [deploy build Action](https://github.com/ionos-deploy-now/deploy-to-ionos-action). If you want to make configurations to the deployment process itself, you can do this in the [deployment configuration](/docs/deployment-configuration). The middle part in between is project specific and can be customized by you to further enhance your CI/CD pipeline. 
+*Please note that Deploy Now does not support Node.js runtime environments.*
 
+## Infrastructure
+
+Static sites are delivered via shared hosting infrastures in Europe and North America. The datacenters are run by IONOS directly and come with georedundancy, DDoS protection and green energy.
+
+## Configuration
+
+The initial configuration of the build steps can be made via the setup wizard. Deploy Now sets up a GitHub Actions workflow accordingly. This workflow, including build commands, the publish directory and the build environment variables, can be adapted in the worlflow yaml in your repository directly. Build logs are available in GitHub Actions. 
+
+[Learn more](/docs/github-actions-customization/)
+
+
+## Features
+
+- [Staging Deployments](/docs/staging-deployments/)
+- [Custom domains and SSL](/docs/domain-tls/)
+- Visitor statistics
+- Unlimited bandwith
+
+## Pricing
+
+Prices in your local currency can be found on the respective shop pages for [US](), [UK](), [GER](), [CA](), [ES](), [FR](), [MX]() and [IT](). 
