@@ -23,9 +23,28 @@ Deploy Now automatically detects Laravel and Symfony projects and automates the 
 Depending on your location, Deploy Now apps are hosted on IONOS datacenters in Europe and North America. IONOS shared hosting infrastructure runs apache webservers and support a wiede variety of PHP versions. The infrastructure is georedundant, protected from DDoS attacks and powered by green energy.
 
 ## Configuration
+
+The configuration of your application is initially made via the setup wizard. After the setup, you can change configuration directly in your repository code. 
+
 ### Build
+
+Build steps are executed automatically based on GitHub Actions. Build logs can be viewed directly in GitHub Actions. Build commands, the publish directory and the build environment variables can be adapted in the worlflow yaml in your repository.
+
+[Learn more](/docs/github-actions-customization/)
+
 ### Deployment
+
+If you have a stateful runtime, you can keep files persistent by defining excludes in a configuration yaml file. Here, you can also define commands that are executed on the runtime before or after the deployment. 
+
+[Learn more](/docs/deployment-configuration/)
+
 ### Runtime
+
+Deploy Now is purely Git-centered, which means that you cannot access your runtime via SSH. You can provide a .env file and additional secrets during the setup, that can be adapted later on. Databases can be managed via PHP MyAdmin. Logs and other runtime files can be viewed and downloaded via the user interface.
+
+[Learn more](/docs/runtime-configuration/)
+
+Hier brauch ich noch hilfe - was kann der Kunde hier wie nach dem Setup noch anpassen?
 
 ## Features
 
