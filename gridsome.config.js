@@ -53,7 +53,7 @@ module.exports = {
             ],
           },
           {
-            title: 'Usecases',
+            title: 'Stacks',
             items: [
               '/docs/deploy-static-sites/',
               '/docs/deploy-php-apps/',
