@@ -20,7 +20,7 @@ Deploy Now automatically detects Laravel and Symfony projects and automates the 
 
 ## Infrastructure
 
-Depending on your location, Deploy Now apps are hosted on IONOS datacenters in Europe and North America. IONOS shared hosting infrastructure runs apache webservers and support a wiede variety of PHP versions. The infrastructure is georedundant, protected from DDoS attacks and powered by green energy.
+Depending on your location, Deploy Now apps are hosted on IONOS datacenters in Europe and North America. IONOS shared hosting infrastructure runs apache webservers and supports a wide variety of PHP versions. The infrastructure is georedundant, protected from DDoS attacks and powered by green energy.
 
 ## Configuration
 
@@ -40,7 +40,7 @@ If you have a stateful runtime, you can keep files persistent by defining exclud
 
 ### Runtime
 
-Deploy Now is purely Git-centered, which means that you cannot access your runtime via SSH. You can provide a .env file and additional secrets during the setup, that can be adapted later on. Databases can be managed via PHP MyAdmin. Logs and other runtime files can be viewed and downloaded via the user interface.
+Deploy Now is purely Git-centered, which means that you cannot access your runtime via SSH. You can provide a .env file and additional secrets during the setup, that can be adapted later on. Databases can be managed via PHP MyAdmin. Logs and other runtime files can be viewed and downloaded via the user interface. Additionally, a .HTACCESS file can be moved to the runtime via your publish directory.
 
 [Learn more](/docs/runtime-configuration/)
 
