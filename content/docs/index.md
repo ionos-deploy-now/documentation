@@ -7,7 +7,7 @@ editable: true
 
 # Introduction
 
-Deploy Now is a hosting platform built from developers for developers. Connect your GitHub account with Deploy Now and get your web project live in seconds. Deploy Now updates your website on [IONOS](https://www.ionos.com/) shared hosting infrastructure after every git commit. The workflow automation is based on Automation is based on [GitHub Actions](https://github.com/features/actions).
+Deploy Now is a hosting platform that allows you to deploy static sites and PHP apps directly via GitHub. As a tool built from developers for developers, Deploy Now automates build and deployment so you can focus entirely on your code. Your code is deployed to [IONOS](https://www.ionos.com/) reliable shared hosting infrastructure in Europe and North America. The workflow automation is based on [GitHub Actions](https://github.com/features/actions) and can be customized directly in your repository.
 
 ## Deploy Now in a nutshell
 
