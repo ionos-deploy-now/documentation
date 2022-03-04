@@ -21,7 +21,7 @@
     "deploy-smarter": "Deploy smarter.",
     "deploy-faster": "Deploy faster.",
     "deploy-now": "Deploy now.",
-    "description": "Connect your GitHub account and instantly deploy your static web projects on DDoS-protected, georedundant, green IONOS infrastructure.",
+    "description": "Connect your GitHub account and instantly deploy your site or app on DDoS-protected, georedundant, green IONOS infrastructure.",
     "getting-started": {
       "title": "Getting started",
       "text": "How to connect a repository and set up a deployment."
