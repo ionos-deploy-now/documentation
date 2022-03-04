@@ -36,8 +36,8 @@
     }
   },
   "home-samples": {
-    "overline": "More than static",
-    "title": "The home for your Jamstack project or Single Page Application",
+    "overline": "One platform for all your projects",
+    "title": "The home for your Static Site, Single Page Application or PHP App",
     "sample-button": "Deploy a sample",
     "sign-up-button": "Sign up free"
   },
