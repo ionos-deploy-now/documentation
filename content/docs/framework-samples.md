@@ -248,3 +248,14 @@ build:
 ```
 :::
 --->
+
+## Laravel sample
+
+A website based on the PHP framework [Laravel](https://laravel.com). [View repository](https://github.com/ionos-deploy-now/laravel-starter.
+
+[![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/laravel-starter)
+
+## Symfony sample
+A website based on the PHP framework [Symfony](https://symfony.com/). [View repository](https://github.com/ionos-deploy-now/symfony-starter.
+
+[![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/symfony-starter)
