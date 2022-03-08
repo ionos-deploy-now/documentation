@@ -33,7 +33,7 @@ Depending on your location, Deploy Now apps are hosted on IONOS datacenters in E
 - Visitor statistics
 - Unlimited bandwith
 
-### How do I set up a deployment?
+### How do I set up a new deployment?
 
 To create a PHP project in Deploy Now, click **add project** and select **PHP project** after the framework detection. The [setup wizard](/docs/from-repo/) guides you through the build, deployment and runtime configuration. Tutorials showing how projects can be set up on the command line can be found [here](docs/from-cmd-line). If you don't have a project at hand, you can deploy one of our [sample projects](/docs/framework-samples).
 
