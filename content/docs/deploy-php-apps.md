@@ -8,7 +8,44 @@ editable: true
 
 # Deploy PHP apps via GitHub
 
-Deploy Now PHP projects retrieve code from your GitHub repository, detect the PHP framework you are using and set up an automated build and deployment pipeline. GitHub repositories can be public or private and owned by users or organizations. Your app is hosted on IONOS shared hosting infrastructure. Each code update triggers a new build and deployment via GitHub Actions.
+## What you need to know when creating a new PHP project
+
+### What does Deploy Now offer?
+
+#### Automated deployments via GitHub
+
+Deploy Now PHP projects retrieve code from your GitHub repository, detect the PHP framework you are using and set up an automated build and deployment pipeline. GitHub repositories can be public or private and owned by users or organizations. Each code update triggers a new build and deployment via GitHub Actions.
+
+#### Comprehensive framework support
+
+#### Deployments to secure infrastructure
+
+#### Powerful features
+
+### How do I set up a deployment?
+
+### Pricing
+
+## How to manage your Deploy Now PHP project
+
+### Adapting build steps
+
+### Manage files on runtimes
+
+### Executing commands on runtime
+
+### Manage databases
+
+### Create HTACCESS file
+
+### Adapt environment variables
+
+
+
+
+
+
+
 
 ## Setup
 
