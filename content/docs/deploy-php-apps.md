@@ -43,7 +43,7 @@ Prices in your local currency can be found on the respective shop pages for [US]
 
 ## How to manage your Deploy Now PHP project
 
-Deploy Now follows the approach to prefill configuration files based on the inputs from the project creation wizard, which can be later on edited by the user directly via their repository.
+Deploy Now follows the approach to prefill configuration files based on the inputs from the project creation wizard, which can be later on edited directly in the repository.
 
 ### Adapting build steps
 
