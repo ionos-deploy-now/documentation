@@ -20,7 +20,7 @@ We'll need your permission to install the [IONOS Deploy Now App](https://github.
 
 Select a public or private repository from your GitHub account or paste in a link to a third party repository. Third party repositories are copied to a new source repository in your GitHub account. You will be asked for a name for this new source repository. 
 
-3. **Confirm detected project**
+3. **Confirm detected framework**
 
 Deploy Now scans your repository to detect the framework you are using to prefill all workflow settings. You will be asked to confirm the detected framework or to clarify which framework you are using if we cannot identify your framework. If you are deploying a static site generator, single page application or simply a plain HTML website, you can procede with a Static Project in this step. If your project requires a PHP runtime or a database, please continue with a PHP project.  
   
