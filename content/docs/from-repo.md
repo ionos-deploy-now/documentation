@@ -18,19 +18,38 @@ We'll need your permission to install the [IONOS Deploy Now App](https://github.
     
 2. **Select your deployment source**
 
-We can deploy either repositories within your GitHub account or a public, third party repository. Third party repositories are copied to a new source repository in your GitHub account. You will be asked for a name for this new source repository. 
-![Screenshot from source selection step](/source-selection.jpg)  
+Select a public or private repository from your GitHub account or paste in a link to a third party repository. Third party repositories are copied to a new source repository in your GitHub account. You will be asked for a name for this new source repository. 
+
+3. **Confirm detected project**
+
+Deploy Now scans your repository to detect the framework you are using to prefill all workflow settings. You will be asked to confirm the detected framework or to clarify which framework you are using if we cannot identify your framework. If you are deploying a static site generator, single page application or simply a plain HTML website, you can procede with a Static Project in this step. If your project requires a PHP runtime or a database, please continue with a PHP project.  
   
-3. **Configure the deployment**
+4. **Build settings**
 
-Deploy Now scans your repository to detect the framework you are using in order to set the correct build command and dist folder. If we can't identify them automatically, you'll get a request to provide them manually.
-![Screenshot from configuration screen](/confirm-configuration.jpg)
+Your build steps will be prefilled based on the detected framework. You can add node, composer or bundler steps or execute any other script or command. Define versions for each build step, add build commands and set environment variables. You can change the order of your build steps via drag and drop. Each project can have exactly one publish directory. The files of this directory will be deployed to the infrastructure after the build step.
 
-4. **Your project gets built** 
+[More about build settings](/docs/github-actions-customization)
 
-After a couple of seconds, your website will go live on a preview URL. 
-![Screenshot from project details](/project-details.jpg)
+5. **Runtime settings**
 
-5. **Just git push and your updates go live** 
+In case you are creating a PHP project, you need to specify a PHP version for the runtime. This step does not exist for Static projects. Please note that your web project will run on a different machine than your build pipeline. Build environment variables are not available after the deployment. Instead, you can create runtime secrets via the UI and refer to their values in the configuration file form by adding a `$` in front of the key. These secrets will be stored in GitHub secrets. Deploy Now automatically creates a set of keys required for connecting to the database. Their values can be referenced by a `$` in front of the key as well and will be created dynamically during the deployment.
 
-Congrats! Your project is live. You can now open [staging deployments](/docs/staging-deployments/) or connect a [custom domain](/docs/domain-tls/).
+[More about runtime settings](/docs/runtime-configuration)
+
+6. **Deployment settings**
+
+After your web project builds, results will be automatically deployed to IONOS infrastructure. In case you are creating a PHP project, you might want to execute commands on your runtime or keep certain files persistent. In this step, you can specify both for the bootstrap deployment, i.e. the initial creation of your project, and any recurring deployment after that. Pre deployment remote commands are executed before new files are moved to the server. Post deployment remote commands are executed afterwards. Excluded paths are prevented from being overwritten by new deployments.
+
+[More about deployment settings](/docs/deployment-configuration)
+
+7. **Review your settings** 
+
+Take your time and review your settings before creating the project. You can still make changes to the configuration after the project creation, as described in the configuration section of the docs.
+
+8. **Congrats! Your project gets built** 
+
+After completing the setup, we automatically trigger the first build and deployment. We connect your project to a preview URL.
+
+9. **Just git push and your updates go live** 
+
+Deploy Now will now trigger deployments on every git commit to your repository. You can open [staging deployments](/docs/staging-deployments/) to deploy multiple branches and connect a [custom domain](/docs/domain-tls/) to your production deployment.
