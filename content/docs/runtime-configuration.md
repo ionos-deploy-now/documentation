@@ -41,7 +41,11 @@ Deploy Now offers 2GB MariaDBs for both production and staging deployments in PH
 
 You have the option to execute commands on the runtime before and after each deployment. Visit [deployment configuration](/docs/deployment-configuration) for more information. Deploy Now currently does not offer the option to execute runtime commands at any time, neither via SSH or e.g. cronjobs. 
 
-:::tip Missing a feature? Feel free to drop your request via [GitHub Issues](https://github.com/ionos-deploy-now/ionos-deploy-now/issues/new/choose) :::
+:::tip 
+
+Missing a feature? Feel free to drop your request via [GitHub Issues](https://github.com/ionos-deploy-now/ionos-deploy-now/issues/new/choose)
+
+:::
 
 
 
