@@ -10,20 +10,23 @@ editable: true
 
 If you create a new PHP project in Deploy Now, you can specify all relevant deployment settings in the setup wizard. The deployment configuration specifies which files should be persistent after being deployed to your runtime and which commands.
 
-## Adapt
+## Adapt deployment configurations for existing projects
 
+The inputs from the initial project creation will be stored in a `config.yaml` in the `.deploy-now` folder of your repository. You can adapt this file directly via GitHub. The new settings become active with the next deployment. 
 
+## Explanation of deployment settings
 
+### Configure initial and following deployments
 
+The directories you want to exclude and the commands you want to execute on your runtime might differ between initial deployments (`bootstrap`) and any following deployment (`recurring`). By default, the first deployment action of a newly connected branch always uses `bootstrap`, whereas any following deployment action is based on `recurring`. You have the option to force the use of either one.
 
+### Manage persistency 
 
-# Deployment configuration
+Per default, all files in your defined dist folder are copied to the infrastructure after every git commit. If you want to prevent certain directories from being copied, you can list them under `excludes`. `Excludes` also prevent files that are created by your application from beeing deleted. If you want to copy files to the infrastructure on your initial deployment, but keep them persistent afterwards, you can do this by adding them to the `excludes` in `bootstrap`. 
 
-If your project requires a runtime, you might wish to define which files should be persistent and which commands should be executed remotely. You can do this by using the `config.yaml` in `.deploy-now`. The information stored in this file is used to define the part of the GitHub action that manages the deployment to our infrastructure.
+### Executing commands on the runtime
 
-*When working with static sites, the only deployment setting you need ist the dist folder. You can adapt this directly by [customizing GitHub actions](/docs/github-actions-customization).*
-
-
+You can execute commands on your runtime after `bootstrap` and `recurring` deployments by listing them under `post-deployment-remote-commands` and before `recurring` deployments using `pre-deployment-remote-commands`. 
 
 ## Examplary `config.yaml`
 
@@ -71,14 +74,3 @@ deploy:
 
 An examplary `config.yaml` for a Laravel project can be found [here](https://github.com/ionos-deploy-now/laravel-starter), a Symfony example can be found [here](https://github.com/ionos-deploy-now/symfony-starter).
 
-## Configure initial and following deployments
-
-The directories you want to exclude and the commands you want to execute on your runtime might differ between initial deployments (`bootstrap`) and any following deployment (`recurring`). By default, the first deployment action of a newly connected branch always uses `bootstrap`, whereas any following deployment action is based on `recurring`. You have the option to force the use of either one.
-
-## Manage persistency 
-
-Per default, all files in your defined dist folder are copied to the infrastructure after every git commit. If you want to prevent certain directories from being copied, you can list them under `excludes`. `Excludes` also prevent files that are created by your application from beeing deleted. If you want to copy files to the infrastructure on your initial deployment, but keep them persistent afterwards, you can do this by adding them to the `excludes` in `bootstrap`. 
-
-## Executing commands on the runtime
-
-You can execute commands on your runtime after `bootstrap` and `recurring` deployments by listing them under `post-deployment-remote-commands` and before `recurring` deployments using `pre-deployment-remote-commands`. 
