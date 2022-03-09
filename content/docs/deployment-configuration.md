@@ -1,8 +1,8 @@
 ---
-description: 'How to define which files should be persistent on the runtime and which commands should be executed.'
+description: 'How to define file persistency and remote commands in Deploy Now.'
 sidebar: 'docs'
-prev: '/docs/configuration-overview/'
-next: '/docs/github-actions-customization/'
+prev: '/docs/github-actions-customization/'
+next: '/docs/runtime-configuration/'
 editable: true
 ---
 
