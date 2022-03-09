@@ -1,5 +1,5 @@
 ---
-description: ''
+description: 'Deploy static or PHP starter projects with a few clicks '
 sidebar: 'docs'
 prev: '/docs/'
 next: '/docs/from-cmd-line/'
