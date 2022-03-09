@@ -1,8 +1,8 @@
 ---
-description: ''
+description: 'How to configure the build steps of your Deploy Now project. Deploy Now detects your framework from the repository and sets up a GitHub Actions workflow accordingly.'
 sidebar: 'docs'
-prev: '/docs/deployment-configuration/'
-next: '/docs/domain-tls/'
+prev: '/docs/deploy-php-apps/'
+next: '/docs/deployment-configuration/'
 editable: true
 ---
 
