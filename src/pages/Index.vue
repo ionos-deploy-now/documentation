@@ -27,7 +27,7 @@ export default {
 
   metaInfo: metaInfo({
     title: 'Documentation',
-    description: 'Deploy Now is a platform for building and hosting Static Site Generators and Single Page Applications on inhouse engineered IONOS infrastructure.',
+    description: 'Build, stage & deploy static sites, single page applications and PHP apps directly via GitHub to IONOS infrastructure.',
   }),
 };
 </script>
