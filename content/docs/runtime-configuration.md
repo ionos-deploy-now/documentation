@@ -17,7 +17,7 @@ When creating a project that requires a PHP runtime, you will be asked to provid
 If you wish to update your configuration files after the first deployment, you can do this my moving an updated version of your config file to the runtime via your publish directory. Runtime secrets will be stored in GitHub secrets and can be adapted there. 
 
 
-## Examplary ´json´ config file
+## Examplary `config.json`
 
 ``` json
 {
