@@ -8,11 +8,11 @@ editable: true
 
 # Build configuration
 
-## During project creation
+## Prefill build configurations using the setup wizard
 
 When setting up a new project in Deploy Now, you can configure your build process directly in the UI. Deploy Now analyzes your repository for the framework you are using and prefills input fields accordingly. Your build can contain various build steps such as a Node.js, Composer or Bundler. Each build step can contain multiple build commands and build environment variables. All build steps should move output to one publish directory. 
 
-## For existing projects
+## Adapt build configuraitons for existing projects
 
 The inputs of the project creation process are used to set up an automated workflow based on GitHub Actions. This workflow is defined under `.github/workflows/deploy-now.yaml`.
 
@@ -22,7 +22,7 @@ New to GitHub Actions? Check their [documentation](https://docs.github.com/en/ac
 
 If you want to adapt your build steps for existing projects, you can do this directly by editing the workflow yaml. Below, you can find an examplary workflow. The [fetch project data Action](https://github.com/ionos-deploy-now/retrieve-project-info-action) in the beginning retrieves project meta data from Deploy Now. Afterwards the repository is checked out, a build runtime is created, dependencies are installed and build steps are executed. Feel free to customize these step anytime to adapt your build or further enhance your CI/CD pipeline. The [deploy build Action](https://github.com/ionos-deploy-now/deploy-to-ionos-action) moves the build results to the infrastructure. 
 
-## Examplary `deploy-now.yaml`
+## Examplary workflow configuration
 
 ``` yaml
 name: Deploy Now
