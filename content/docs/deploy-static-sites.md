@@ -77,7 +77,7 @@ Prices in your local currency can be found on the respective shop pages for [US]
 
 ## How to manage your Deploy Now static project
 
-### Adapting build steps
+### Adapt build steps
 
 Build steps are executed automatically based on GitHub Actions. Build logs can be viewed directly in GitHub Actions. Build commands, the publish directory and the build environment variables can be adapted in `.github/workflows/deploy-now.yaml`. [Learn more](/docs/github-actions-customization/)
 
