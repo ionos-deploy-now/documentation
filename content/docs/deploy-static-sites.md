@@ -1,8 +1,8 @@
 ---
-description: ''
+description: 'A quick overview of how to deploy and manage a static site via GitHub when using Deploy Now. Deploy Now offers automated deployments, comprehensive framework support, a secure infrastructure and predictable pricing.'
 sidebar: 'docs'
-prev: '/docs/deployment-configuration/'
-next: '/docs/domain-tls/'
+prev: '/docs/from-repo/'
+next: '/docs/deploy-php-apps/'
 editable: true
 ---
 
