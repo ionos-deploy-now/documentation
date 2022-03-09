@@ -88,6 +88,10 @@ module.exports = {
                 title: 'Changelog',
                 path: 'https://github.com/ionos-deploy-now/ionos-deploy-now/blob/main/CHANGELOG.md',
               },
+              {
+                title: 'Request a feature',
+                path: 'https://github.com/ionos-deploy-now/ionos-deploy-now/issues/new/choose',
+              },
             ],
           },
         ],
