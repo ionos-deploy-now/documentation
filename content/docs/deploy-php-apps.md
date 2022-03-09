@@ -1,8 +1,8 @@
 ---
-description: ''
+description: 'How to deploy a PHP application including a database directly via GitHub. Including smart setups for Laravel and Symfony, build automation and staging.'
 sidebar: 'docs'
-prev: '/docs/deployment-configuration/'
-next: '/docs/domain-tls/'
+prev: '/docs/deploy-static-sites/'
+next: '/docs/github-actions-customization/'
 editable: true
 ---
 
