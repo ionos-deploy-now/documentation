@@ -12,7 +12,7 @@ editable: true
 
 When setting up a new project in Deploy Now, you can configure your build process directly in the UI. Deploy Now analyzes your repository for the framework you are using and prefills input fields accordingly. Your build can contain various build steps such as a Node.js, Composer or Bundler. Each build step can contain multiple build commands and build environment variables. All build steps should move output to one publish directory. 
 
-## Adapt build configuraitons for existing projects
+## Adapt build configurations for existing projects
 
 The inputs of the project creation process are used to set up an automated workflow based on GitHub Actions. This workflow is defined under `.github/workflows/deploy-now.yaml`.
 
