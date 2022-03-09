@@ -4,13 +4,15 @@
       <div class="space-y-4">
         <div class="font-bold">Docs</div>
         <g-link to="/docs/">Introduction</g-link>
+        <g-link to="/docs/deploy-static-sites/">Deploy a Static Site</g-link>
+        <g-link to="/docs/deploy-php-apps/">Deploy a PHP App</g-link>
+        <g-link to="/docs/github-actions-customization/">Build configuration</g-link>
+        <g-link to="/docs/deployment-configuration/">Deployment configuration</g-link>
+        <g-link to="/docs/runtime-configuration/">Runtime configuration</g-link>
         <g-link to="/docs/git-integration/">Github Integration</g-link>
         <g-link to="/docs/staging-deployments/">Staging Deployments</g-link>
-        <g-link to="/docs/framework-samples/">Framework samples</g-link>
-        <g-link to="/docs/configuration-overview/">Configuration</g-link>
-        <g-link to="/docs/deployment-configuration/">Explicit build configuration</g-link>
-        <g-link to="/docs/github-actions-customization/">GitHub Actions costumization</g-link>
         <g-link to="/docs/domain-tls/">Domains &amp; TLS/SSL</g-link>
+        <g-link to="/docs/framework-samples/">Framework samples</g-link>
       </div>
       <div class="space-y-4">
         <div class="font-bold">Customer Shops</div>
