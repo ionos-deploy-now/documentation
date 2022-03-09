@@ -71,7 +71,7 @@ Static sites are delivered via shared hosting infrastures in Europe and North Am
 
 Static Projects can be added to your Deploy Now membership on a monthly base. Each project can contain multiple deployed branches from a single GitHub repository. Prices in your local currency can be found on the respective shop pages for [US](https://www.ionos.com/hosting/deploy-now), [UK](https://www.ionos.co.uk/hosting/deploy-now), [GER](https://www.ionos.de/hosting/deploy-now), [CA](https://www.ionos.ca/hosting/deploy-now), [ES](https://www.ionos.es/alojamiento/deploy-now), [FR](https://www.ionos.fr/hebergement/deploy-now), [MX](https://www.ionos.mx/alojamiento/deploy-now) and [IT](https://www.ionos.it/hosting/deploy-now). 
 
-### How do I set up a new deployment?
+### How to set up a new Static Project
 
 You might want to [create a new project on the command line](docs/from-cmd-line), [deploy an existing repository](/docs/from-repo/) or [deploy one of our samples](/docs/framework-samples) for a quickstart. New Static Projects can be set up in the Deploy Now dashboard by clicking  **add project** and selecting **Static Project** after the framework detection. Simply follow the instructions in the wizard to get your project up an running.
 
