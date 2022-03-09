@@ -45,7 +45,7 @@ Prices in your local currency can be found on the respective shop pages for [US]
 
 Deploy Now follows the approach to prefill configuration files based on the inputs from the project creation wizard, which can be later on edited directly in the repository.
 
-### Adapting build steps
+### Adapt build steps
 
 Build steps are executed automatically based on GitHub Actions. Build logs can be viewed directly in GitHub Actions. Build commands, the publish directory and the build environment variables can be adapted in `.github/workflows/deploy-now.yaml`. [Learn more](/docs/github-actions-customization/)
 
@@ -53,7 +53,7 @@ Build steps are executed automatically based on GitHub Actions. Build logs can b
 
 The current state of the webserver files including logs can be viewed via the deployment viewer in the Deploy Now dashboard. You can also download files here. Moving files onto the server is only possible via GitHub. If you want to keep files persistent, i.e. prevent them from being overwritten with the next commit, you can do this by adding excludes to `.deploy-now/config.yaml`. [Learn more](/docs/deployment-configuration/)
 
-### Executing commands on runtime
+### Execute commands on runtime
 
 To avoid inconsistencies between the GitHub repository and the runtime version of your project, Deploy Now does not offer SSH access to the server. Users can define commands to be executed on the runtime before and after deployments in `.deploy-now/config.yaml`. [Learn more](/docs/deployment-configuration/)
 
