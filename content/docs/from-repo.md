@@ -1,8 +1,8 @@
 ---
-description: ''
+description: 'Step by step guide about how to create a new project in Deploy Now when starting with an existing repository.'
 sidebar: 'docs'
 prev: '/docs/from-cmd-line/'
-next: '/docs/git-integration/'
+next: '/docs/deploy-static-sites/'
 editable: true
 ---
 
