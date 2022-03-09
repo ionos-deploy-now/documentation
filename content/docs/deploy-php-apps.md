@@ -8,13 +8,13 @@ editable: true
 
 # Deploy PHP apps via GitHub
 
-## What you need to know when creating a new PHP project
+## Creating a new PHP Project in Deploy Now
 
-### What does Deploy Now offer?
+### What do PHP Projects offer?
 
 #### Automated deployments via GitHub
 
-Deploy Now PHP projects retrieve code from your GitHub repository, detect the PHP framework you are using and set up an automated build and deployment pipeline accordingly. GitHub repositories can be public or private and owned by users or organizations. Each code update triggers a new build and deployment via GitHub Actions.
+Deploy Now PHP Projects retrieve code from your GitHub repository, detect the PHP framework you are using and set up an automated build and deployment pipeline accordingly. GitHub repositories can be public or private and owned by users or organizations. Each code update triggers a new build and deployment via GitHub Actions.
 
 #### Comprehensive framework support
 
@@ -35,13 +35,13 @@ Depending on your location, Deploy Now apps are hosted on IONOS datacenters in E
 
 #### Predictable pricing
 
-PHP projects can be added to your Deploy Now membership on a monthly basis. The price for a project is fixed and does not depend on metrics such as resource consumption. Each project corresponds to one connected GitHub repository and can contain multiple deployed branches. Prices in your local currency can be found on the respective shop pages for [US](https://www.ionos.com/hosting/deploy-now), [UK](https://www.ionos.co.uk/hosting/deploy-now), [GER](https://www.ionos.de/hosting/deploy-now), [CA](https://www.ionos.ca/hosting/deploy-now), [ES](https://www.ionos.es/alojamiento/deploy-now), [FR](https://www.ionos.fr/hebergement/deploy-now), [MX](https://www.ionos.mx/alojamiento/deploy-now) and [IT](https://www.ionos.it/hosting/deploy-now). 
+PHP Projects can be added to your Deploy Now membership on a monthly basis. The price for a project is fixed and does not depend on metrics such as resource consumption. Each project corresponds to one connected GitHub repository and can contain multiple deployed branches. Prices in your local currency can be found on the respective shop pages for [US](https://www.ionos.com/hosting/deploy-now), [UK](https://www.ionos.co.uk/hosting/deploy-now), [GER](https://www.ionos.de/hosting/deploy-now), [CA](https://www.ionos.ca/hosting/deploy-now), [ES](https://www.ionos.es/alojamiento/deploy-now), [FR](https://www.ionos.fr/hebergement/deploy-now), [MX](https://www.ionos.mx/alojamiento/deploy-now) and [IT](https://www.ionos.it/hosting/deploy-now). 
 
 ### How do I set up a new deployment?
 
-To create a PHP project in Deploy Now, click **add project** and select **PHP project** after the framework detection. The [setup wizard](/docs/from-repo/) guides you through the build, deployment and runtime configuration. Tutorials showing how projects can be set up on the command line can be found [here](docs/from-cmd-line). If you don't have a project at hand, you can deploy one of our [sample projects](/docs/framework-samples).
+To create a PHP Project in Deploy Now, click **add project** and select **PHP Project** after the framework detection. The [setup wizard](/docs/from-repo/) guides you through the build, deployment and runtime configuration. Tutorials showing how projects can be set up on the command line can be found [here](docs/from-cmd-line). If you don't have a project at hand, you can deploy one of our [sample projects](/docs/framework-samples).
 
-## How to manage your Deploy Now PHP project
+## Managing an existing PHP Project after the project creation
 
 Deploy Now follows the approach to prefill configuration files based on the inputs from the project creation wizard, which can be later on edited directly in the repository.
 
