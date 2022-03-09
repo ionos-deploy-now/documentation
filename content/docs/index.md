@@ -1,5 +1,5 @@
 ---
-description: ''
+description: 'Deploy Now in a nutshell and how to get started'
 sidebar: 'docs'
 next: '/docs/framework-samples/'
 editable: true
