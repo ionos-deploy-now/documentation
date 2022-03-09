@@ -6,15 +6,24 @@ next: '/docs/github-actions-customization/'
 editable: true
 ---
 
+# Prefill deployment configurations using the setup wizard
+
+If you create a new PHP project in Deploy Now, you can specify all relevant deployment settings in the setup wizard. The deployment configuration specifies which files should be persistent after being deployed to your runtime and which commands.
+
+## Adapt
+
+
+
+
+
+
 # Deployment configuration
 
 If your project requires a runtime, you might wish to define which files should be persistent and which commands should be executed remotely. You can do this by using the `config.yaml` in `.deploy-now`. The information stored in this file is used to define the part of the GitHub action that manages the deployment to our infrastructure.
 
 *When working with static sites, the only deployment setting you need ist the dist folder. You can adapt this directly by [customizing GitHub actions](/docs/github-actions-customization).*
 
-:::note
-Supporting PHP runtimes is currently in alpha. You can join our alpha by following [these](/docs/php-alpha) instructions.
-::: 
+
 
 ## Examplary `config.yaml`
 
