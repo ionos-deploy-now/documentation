@@ -14,10 +14,11 @@ When creating a project that requires a PHP runtime, you will be asked to provid
 
 ## Adapt runtime configurations for existing projects
 
-If you wish to update your configuration files after the first deployment, you can do this my moving an updated version of your config file to the runtime via your publish directory. Runtime secrets will be stored in GitHub secrets and can be adapted there. 
+### Editing the config file
 
+After the project creation, we will create a config file based on your inputs and store it under your provided path in the `.deploy-now` folder of your repository. You can edit this file directly and Deploy Now will copy it to the right location on your runtime with the next deployment.
 
-## Examplary `config.json`
+### Examplary `config.json`
 
 
 ``` json
@@ -31,13 +32,17 @@ If you wish to update your configuration files after the first deployment, you c
 }
 ```
 
+### Adapting secret environment variables
+
+Secret environment variabels are stored and can be edited in GitHub secrets. After adding a new GitHub secret, you can communicate it's value to your runtime via the render-templates-action in `.github/workflows/deploy-now.yaml`. The value of the secret can than be referenced in your config file via `$` plus the name of the value as described above.
+
 ## HTACCESS files
 
 Deploy Now webservers will react to any HTACCESS that is moved to the browser via the root of the publish directory. You can use your HTACCESS file to define redirects or password protections.
 
 ## Manage databases
 
-Deploy Now offers 2GB MariaDBs for both production and staging deployments in PHP Projects. Users have access to a PHP MyAdmin interface for each database. When opening a new stage, staging databases do not contain data that was stored in your productive database during runtime per default. Please be aware that you need to copy data from production to staging manually.
+Deploy Now offers 2GB MariaDBs for both production and staging deployments in PHP Projects. Users have access to a PHP MyAdmin interface for each database. When opening a new stage, staging databases do not contain data that was stored in your productive database during runtime per default. Please be aware that you need to copy data from production to staging manually. MariaDBs are running on version 10.5.
 
 ## Execute commands on runtime
 
