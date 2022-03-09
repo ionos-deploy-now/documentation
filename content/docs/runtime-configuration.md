@@ -10,54 +10,23 @@ editable: true
 
 ## Prefill runtime configurations using the setup wizard
 
-If you create a new PHP project in Deploy Now, you can specify all relevant deployment settings in the setup wizard. The deployment configuration specifies which files should be persistent after being deployed to your runtime and which commands.
+When creating a project that requires a PHP runtime, you will be asked to provide a runtime configuration. You can select between a variety of different PHP versions for your runtime. IONOS is generally fast in providing newly released PHP versions. Please note that build environment variables are not available on the runtime. You can define a set of environment variables in a config file templating form. The resulting config file will be deployed on the runtime under the provided target file path. You can define runtime secrets and reference their values in the config file by adding a ´$´ in front of their key. If you wish to set up a MariaDB, Deploy Now defines a set of keys, whose values can be referenced by ´$key´as well. The values of these variables will be dynamically set during the deployment.
 
 ## Adapt runtime configurations for existing projects
 
-The inputs from the initial project creation will be stored in a `config.yaml` in the `.deploy-now` folder of your repository. You can adapt this file directly via GitHub. The new settings become active with the next deployment. 
+If you wish to update your configuration files after the first deployment, you can do this my moving an updated version of your config file to the runtime via your publish directory. Runtime secrets will be stored in GitHub secrets and can be adapted there. 
 
-## Examplary config file
 
-``` yml
-version: 1.0
-deploy:
-  # comment in one of the following lines to force the use of the recurring or bootstrap configuration
-#  force: recurring
-#  force: bootstrap
+## Examplary ´json´ config file
 
-  # configure the initial deployment of each branch
-  bootstrap:
-    # directories that are not overwritten or removed by the next deployment
-    excludes:
-      - samplefolder
-      - samplefile.txt
-      - folder/withfile.txt
-      
-    # commands that are executed on the runtime after new files are copied
-    post-deployment-remote-commands:
-      - touch database.sqlite
-      - php8.0-cli -r "echo 'do something with php';"
-
-  # configure all following deployments of each branch
-  recurring:
-    # directories that are not overwritten or removed by the next deployment
-    excludes:
-      - samplefolder
-      - samplefile.txt
-      - folder/withfile.txt
-      - database.sqlite
-      
-    # commands that are executed on the runtime before new files are copied
-    pre-deployment-remote-commands:
-      - echo "starting maintenance mode"
-      
-    # commands that are executed on the runtime after new files are copied
-    post-deployment-remote-commands:
-      - echo "clearing caches"
-      - php8.0-cli -r "echo 'do something with php again';"
-      - echo "leaving maintenance mode"
-      - echo "back again"
-
+``` json
+{
+  "app.name" : "myproject",
+  "myvariable" : "valueofvariable",
+  "mysecret" : "$mysecret",
+  "db.user" : "$runtime.db_user",
+  "db.password" : "$runtime.db_password,
+}
 ```
 
 
