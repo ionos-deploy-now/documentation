@@ -19,13 +19,15 @@ If you wish to update your configuration files after the first deployment, you c
 
 ## Examplary `config.json`
 
+
 ``` json
 {
   "app.name" : "myproject",
-  "myvariable" : "valueofvariable",
   "mysecret" : "$mysecret",
   "db.user" : "$runtime.db_user",
   "db.password" : "$runtime.db_password",
+  "db.url" : "$runtime.db_url",
+  "db.name" : "$runtime.db_name",
 }
 ```
 
