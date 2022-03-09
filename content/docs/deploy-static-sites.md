@@ -93,3 +93,7 @@ Build environment variables can be adapted under `.deploy-now/config.yaml`. Secr
 ### Add a domain
 
 You can connect any kind of custom domain in a few clicks. If you want to connect a domain that you have not purchased at IONOS, you need to switch to the IONOS nameservers first. Each domain is automatically SSL secured.
+
+### Monitor traffic
+
+Visitor statistics such as session duration and pages per session are calculated and aggregated based on server logs. You can find them in the project details page next to each deployment.
