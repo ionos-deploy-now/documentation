@@ -6,7 +6,9 @@ next: '/docs/github-actions-customization/'
 editable: true
 ---
 
-# Prefill deployment configurations using the setup wizard
+# Deployment configuration
+
+## Prefill deployment configurations using the setup wizard
 
 If you create a new PHP project in Deploy Now, you can specify all relevant deployment settings in the setup wizard. The deployment configuration specifies which files should be persistent after being deployed to your runtime and which commands.
 
