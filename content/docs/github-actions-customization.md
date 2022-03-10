@@ -20,7 +20,21 @@ The inputs of the project creation process are used to set up an automated workf
 New to GitHub Actions? Check their [documentation](https://docs.github.com/en/actions) to find out how you can use them to enhance the Deploy Now workflow, e.g. by adding  powerful [Continuous Integration](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration) functionalities. Check the [GitHub Actions](https://github.com/marketplace?type=actions) marketplace for other awesome Actions you can integrate.
 :::
 
-If you want to adapt your build steps for existing projects, you can do this directly by editing the workflow yaml. Below, you can find an examplary workflow. The [fetch project data Action](https://github.com/ionos-deploy-now/retrieve-project-info-action) in the beginning retrieves project meta data from Deploy Now. Afterwards the repository is checked out, a build runtime is created, dependencies are installed and build steps are executed. Feel free to customize these step anytime to adapt your build or further enhance your CI/CD pipeline. The [deploy build Action](https://github.com/ionos-deploy-now/deploy-to-ionos-action) moves the build results to the infrastructure. 
+### Fetch project data and checkout project
+
+The first step `fetch project data` based on the [fetch project data Action](https://github.com/ionos-deploy-now/retrieve-project-info-action) retrieved meta data from Deploy Now. Afterwards, the `checkout` step checks out your repository so the workflow can access it. 
+
+### Install dependencies, render templates and execute build steps
+
+In the following, all dependencies that are required to run your build are installed. You can adapt these steps if you need additional dependencies or want to update the versions of existing ones. 
+
+
+### Deploy results to the runtime
+
+lorem
+
+
+If you want to adapt your build steps for existing projects, you can do this directly by editing the workflow yaml. Below, you can find an examplary workflow. The [fetch project data Action](https://github.com/ionos-deploy-now/retrieve-project-info-action) in the beginning retrieves project meta data from Deploy Now. Afterwards the repository is checked out, dependencies are installed, build steps are executed. Feel free to customize these step anytime to adapt your build or further enhance your CI/CD pipeline. The [deploy build Action](https://github.com/ionos-deploy-now/deploy-to-ionos-action) moves the build results to the infrastructure. 
 
 Environment variables can be added in XXX. Secrets can be referenced by XXX
 
