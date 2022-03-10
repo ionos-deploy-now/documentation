@@ -22,7 +22,7 @@ New to GitHub Actions? Check their [documentation](https://docs.github.com/en/ac
 
 ### Triggering the workflow
 
-The workflow will be triggered by any git commit or certain events in Deploy Now, such as domain connects. You can add additional triggers below `on:`.
+The workflow will be triggered by any git commit or certain events in Deploy Now, such as domain connects. You can add custom events to trigger the workflow as described in the [GitHub Actions docs](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on).
 
 ### Fetch project data and checkout project
 
