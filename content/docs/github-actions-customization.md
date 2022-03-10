@@ -37,7 +37,6 @@ jobs:
   deploy-now:
     runs-on: ubuntu-latest
     steps:
-      # Deploy Now fetches required project meta data
       - name: Fetch project data
         uses: ionos-deploy-now/retrieve-project-info-action@v1
         id: project
@@ -45,32 +44,40 @@ jobs:
           api-key: ${{ secrets.IONOS_API_KEY }}
           project: ${{ secrets.IONOS_PROJECT_ID }}
           service-host: api-eu.ionos.space
-          
-      # checkout repository from GitHub
       - name: checkout
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: actions/checkout@v2
         with:
           submodules: 'recursive'
-          
-      # set up build runtime
-      - name: Setup project
+      - name: Setup composer
+        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        uses: php-actions/composer@v6
+        with:
+          args: --optimize-autoloader
+      - name: Setup Node.js v14.x
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: actions/setup-node@v1
         with:
-          node-version: v12.22.3
-          
-      # install build dependencies
+          node-version: 14.x
+      - name: Render templates
+        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        uses: ionos-deploy-now/template-renderer-action@feature/improvements
+        with:
+          secrets: |
+            appUrl: ${{ steps.project.outputs.site-url }}
+            mail:
+              host: ${{ secrets.IONOS_MAIL_HOST }}
+              port: ${{ secrets.IONOS_MAIL_PORT }}
+              user: ${{ secrets.IONOS_MAIL_USERNAME }}
+              password: ${{ secrets.IONOS_MAIL_PASSWORD }}
+              encryption: ${{ secrets.IONOS_MAIL_ENCRYPTION }}
+              fromAddress: ${{ secrets.IONOS_MAIL_FROM_ADDRESS }}
       - name: Prepare project environment
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         run: npm ci
-        
-      # build project and set build env vars. This might be the section you want to customize.
-      - name: Build project
+      - name: Build assets and run tests
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        run: npm run build
-        
-      # this action deploys the project files to the IONOS infrastructure. If you want to manage file persistency and execute commands on your runtime, you can do this under .deploynow/config.yaml.
+        run: npm run prod; php artisan key:generate --force -n; php artisan test;
       - name: Deploy build
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: ionos-deploy-now/deploy-to-ionos-action@v1
@@ -78,11 +85,12 @@ jobs:
           api-key: ${{ secrets.IONOS_API_KEY }}
           bootstrap-deploy: ${{ steps.project.outputs.bootstrap-deploy }}
           branch-id: ${{ steps.project.outputs.branch-id }}
-          dist-folder: src/.vuepress/dist
+          dist-folder: ./
           project: ${{ secrets.IONOS_PROJECT_ID }}
           remote-host: ${{ steps.project.outputs.remote-host }}
           service-host: api-eu.ionos.space
           storage-quota: ${{ steps.project.outputs.storage-quota }}
+
 ```
 
 
