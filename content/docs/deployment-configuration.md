@@ -24,11 +24,11 @@ The directories you want to exclude and the commands you want to execute on your
 
 ### Manage persistency 
 
-Per default, all files in your defined dist folder are copied to the infrastructure after every git commit. If you want to prevent certain directories from being copied, you can list them under `excludes`. `Excludes` also prevent files that are created by your application from beeing deleted. If you want to copy files to the infrastructure on your initial deployment, but keep them persistent afterwards, you can do this by adding them to the `excludes` in `bootstrap`. 
+Per default, all files in your publish directory are copied to the infrastructure after every git commit. If you want to prevent certain directories from being copied, you can list them under `excludes`. `Excludes` also prevent files that are created by your application from beeing deleted. If you want to copy files to the infrastructure on your initial deployment, but keep them persistent afterwards, you can do this by adding them to the `excludes` in `bootstrap`. 
 
 ### Executing commands on the runtime
 
-You can execute commands on your runtime after `bootstrap` and `recurring` deployments by listing them under `post-deployment-remote-commands` and before `recurring` deployments using `pre-deployment-remote-commands`. 
+You can execute commands on your runtime after `bootstrap` and `recurring` deployments by listing them under `post-deployment-remote-commands` and before `recurring` deployments using `pre-deployment-remote-commands`. The folders `logs`, `.deploy-now`, `.git` and `.github` are marked as excludes by default.
 
 ## Examplary `config.yaml`
 
