@@ -30,7 +30,7 @@ The first step `fetch project data` based on the [fetch project data Action](htt
 
 ### Install dependencies, render templates and execute build steps
 
-In the following, all dependencies that are required to run your build are installed. You can adapt these steps if you need additional dependencies or want to update the versions of existing ones. `Render templates` passes GitHub secrets that are meant to be used on the runtime to the infrastructure in order to make them accessible in configuration files. More information regarding runtime environment variables can be found under [runtime configuration](/docs/runtime-configuration). Afterwards, build commands are executed in the order that was defined in the project set up. Environment variables can be listed under `env`. Secret values can be referenced via `${{ secrets.KEY_NAME }}`.
+In the following, all dependencies that are required to run your build are installed. You can adapt these steps if you need additional dependencies or want to update the versions of existing ones. `Render templates` passes GitHub secrets that are meant to be used on the runtime to the infrastructure in order to make them accessible in configuration files. More information regarding runtime environment variables can be found under [runtime configuration](/docs/runtime-configuration). Afterwards, build commands are executed in the order that was defined in the project set up. Environment variables can be listed under `env`. Secret values are stored in GitHub secrets and can be referenced via `${{ secrets.KEY_NAME }}`. All GitHub secrets starting with `IONOS` are necessary to exchange information with Deploy Now and should not be deleted.
 
 ### Deploy results to the runtime
 
