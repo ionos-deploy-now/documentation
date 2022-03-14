@@ -65,9 +65,13 @@ Databases will be automacially created for both production and staging. You can 
 
 Deploy Now webservers will react to any HTACCESS that is moved to the browser via the root of the publish directory. You can use your HTACCESS file to define redirects or password protections.
 
-### Adapt environment variables
+### Adapt build environment variables
 
-Build environment variables can be adapted under `.deploy-now/config.yaml`. Runtime environment variables can be adapted by moving an updated configuration file to your runtime. Secrets are generally stored as GitHub secrets. 
+Build environment variables can be adapted in the workflow description under `.github/workflows/deploy-now.yaml`. Secrets are generally stored as GitHub secrets. You can reference their values with `${{ secrets.KEY_NAME }}`. [Learn more](/docs/github-actions-customization/#install-dependencies-render-templates-and-execute-build-steps)
+
+### Adapt runtime environment variables
+
+Runtime environment variables can be adapted by moving an updated configuration file to your runtime. Secrets are generally stored as GitHub secrets. You can transfer their values to the infrastructure via the `render templates` step in `.github/workflows/deploy-now.yaml`. [Learn more](/docs/runtime-configuration/#adding-new-runtime-secrets)
 
 ### Add a domain
 
