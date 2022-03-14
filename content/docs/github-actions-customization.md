@@ -28,9 +28,17 @@ The workflow will be triggered by any git commit or certain events in Deploy Now
 
 The first step `fetch project data` based on the [fetch project data Action](https://github.com/ionos-deploy-now/retrieve-project-info-action) retrieves meta data from Deploy Now. Afterwards, the `checkout` step checks out your repository so the workflow can access it. 
 
-### Install dependencies, render templates and execute build steps
+### Install dependencies
 
-In the following, all dependencies that are required to run your build are installed. You can adapt these steps if you need additional dependencies or want to update the versions of existing ones. `Render templates` passes GitHub secrets that are meant to be used on the runtime to the infrastructure in order to make them accessible in configuration files. More information regarding runtime environment variables can be found under [runtime configuration](/docs/runtime-configuration). Afterwards, build commands are executed in the order that was defined in the project set up. Environment variables can be listed under `env`. Secret values are stored in GitHub secrets and can be referenced via `${{ secrets.KEY_NAME }}`. All GitHub secrets starting with `IONOS` are necessary to exchange information with Deploy Now and should not be deleted.
+Each dependency that is required to run your build steps is installed in a seperate step. You can adapt these steps if you need additional dependencies or want to update the versions of existing ones. 
+
+### Render templates based on runtime secrets
+
+`Render templates` passes GitHub secrets that are meant to be used on the runtime to the infrastructure in order to make them accessible in configuration files. More information regarding runtime environment variables can be found under [runtime configuration](/docs/runtime-configuration). 
+
+### Build commands and build environment variables
+
+Afterwards, build commands are executed in the order that was defined in the project set up. Environment variables can be directly inserted under `env`. If you want a variable to be secret, you can create a new [GitHub Secret](https://docs.github.com/en/actions/security-guides/encrypted-secrets) and reference it via `${{ secrets.KEY_NAME }}`. All GitHub secrets starting with `IONOS` are necessary to exchange information with Deploy Now and should not be deleted.
 
 ### Deploy results to the runtime
 
