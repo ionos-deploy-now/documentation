@@ -20,7 +20,24 @@ After the project creation, we will create a config file based on your inputs an
 
 ### Adding new runtime secrets
 
-If you want to create new runtime secrets, you need to add these to [GitHub secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets) first.
+If you want to create new runtime secrets, you need to add these to [GitHub secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets) first. In the second step, you need to pass the new secrets to the runtime via the GitHub Actions workflow. Add your secrets to the `Render templates` step in `.github/workflows/deploy-now.yaml`.
+
+``` yaml
+ - name: Render templates
+        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        uses: ionos-deploy-now/template-renderer-action@feature/improvements
+        with:
+          secrets: |
+            appUrl: ${{ steps.project.outputs.site-url }}
+            mail:
+              host: ${{ secrets.IONOS_MAIL_HOST }}
+              port: ${{ secrets.IONOS_MAIL_PORT }}
+              user: ${{ secrets.IONOS_MAIL_USERNAME }}
+              password: ${{ secrets.IONOS_MAIL_PASSWORD }}
+              encryption: ${{ secrets.IONOS_MAIL_ENCRYPTION }}
+              fromAddress: ${{ secrets.IONOS_MAIL_FROM_ADDRESS }}
+```
+Now that the runtime is able to receive the values of your secrets, you can reference them in your config file by adding a `$` in front of their key.
 
 ### Examplary `config.json`
 
@@ -59,11 +76,6 @@ MAIL_ENCRYPTION={{ .secrets.mail.encryption }}
 MAIL_FROM_ADDRESS={{ .secrets.mail.fromAddress }}
 MAIL_FROM_NAME="${APP_NAME}"
 ```
-
-### Adapting secret environment variables
-
-Secret environment variabels are stored and can be edited in GitHub secrets. After adding a new GitHub secret, you can communicate it's value to your runtime via the render-templates-action in `.github/workflows/deploy-now.yaml`. The value of the secret can than be referenced in your config file via `$` plus the name of the value as described above.
-
 ## HTACCESS files
 
 Deploy Now webservers will react to any HTACCESS that is moved to the browser via the root of the publish directory. You can use your HTACCESS file to define redirects or password protections.
