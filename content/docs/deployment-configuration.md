@@ -16,6 +16,8 @@ If you create a new PHP project in Deploy Now, you can specify all relevant depl
 
 The inputs from the initial project creation will be stored in a `config.yaml` in the `.deploy-now` folder of your repository. You can adapt this file directly via GitHub. The new settings become active with the next deployment. 
 
+If required, you can use [sprig functions](http://masterminds.github.io/sprig/ ) in your config file.
+
 ## Explanation of deployment settings
 
 ### Configure initial and following deployments
