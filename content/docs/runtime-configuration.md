@@ -10,17 +10,23 @@ editable: true
 
 ## Prefill runtime configurations using the setup wizard
 
-When creating a project that requires a PHP runtime, you will be asked to provide a runtime configuration. You can select between a variety of different PHP versions for your runtime. Please note that build environment variables are not available on the runtime. You can define a set of environment variables in a config file templating form. The resulting config file will be deployed on the runtime under the provided target file path. You can define runtime secrets and reference their values in the config file by adding a `$` in front of their key. If you wish to set up a MariaDB, Deploy Now defines a set of keys, whose values can be referenced by `$key` as well. The values of these variables will be dynamically set during the deployment. Database variables are stored in Deploy Now databases and cannot be accessed via GitHub secrets.
+### PHP version
+
+You can select between a variety of different PHP versions for your runtime. The PHP version will be used for production deployments and also represent the default for any additional staging deployment. As the build pipeline is located on a different infrastructure than your runtime, your PHP version for composer build steps can differ from your runtime PHP version. 
+
+### Config file templating
+
+You can define a set of environment variables in a config file templating form. The resulting config file will be deployed on the runtime under the provided target file path. You can define runtime secrets in this step as well. To make use of them in your config file, you can reference them via `key = $key`. Deploy Now automatically replaces the placeholders with the secret values when deploying the config file to the infrastructure. If you wish to set up a MariaDB, Deploy Now defines a set of keys, whose values can be referenced by `$key` as well. The values of these variables will be dynamically set during the deployment. Database variables are stored in Deploy Now databases and cannot be accessed via GitHub secrets.
 
 ## Adapt runtime configurations for existing projects
 
 ### Editing the config file
 
-After the project creation, we will create a config file based on your inputs and store it under your provided path in the `.deploy-now` folder of your repository. You can edit this file directly and Deploy Now will copy it to the right location on your runtime with the next deployment.
+After the project creation, we will create a config file based on your inputs and store it under your provided target path in the `.deploy-now` folder of your repository. You can edit this file directly and Deploy Now will copy it to the right location on your runtime with the next deployment.
 
 ### Adding new runtime secrets
 
-If you want to create new runtime secrets, you need to add these to [GitHub secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets) first. In the second step, you need to pass the new secrets to the runtime via the GitHub Actions workflow. Add your secrets to the `Render templates` step in `.github/workflows/deploy-now.yaml`. 
+If you want to create new runtime secrets, you need to add these to [GitHub secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets) first. In the second step, you need to pass the new secrets to the runtime via the GitHub Actions workflow. Add your secrets to the `Render templates` step in `.github/workflows/deploy-now.yaml` by referencing values via `${{ secrets.key }}`. 
 
 ``` yaml
  - name: Render templates
@@ -37,7 +43,7 @@ If you want to create new runtime secrets, you need to add these to [GitHub secr
               encryption: ${{ secrets.IONOS_MAIL_ENCRYPTION }}
               fromAddress: ${{ secrets.IONOS_MAIL_FROM_ADDRESS }}
 ```
-Now that the runtime is able to receive the values of your secrets, you can reference them in your config file by adding a `$` in front of their key.
+Now that the runtime is able to receive the values of your secrets, you can reference them in your config file via `{{ secrets.key }}`
 
 ### Examplary `config.json`
 
