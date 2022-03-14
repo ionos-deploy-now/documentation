@@ -20,7 +20,7 @@ After the project creation, we will create a config file based on your inputs an
 
 ### Adding new runtime secrets
 
-If you want to create new runtime secrets, you need to add these to [GitHub secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets) first. In the second step, you need to pass the new secrets to the runtime via the GitHub Actions workflow. Add your secrets to the `Render templates` step in `.github/workflows/deploy-now.yaml`.
+If you want to create new runtime secrets, you need to add these to [GitHub secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets) first. In the second step, you need to pass the new secrets to the runtime via the GitHub Actions workflow. Add your secrets to the `Render templates` step in `.github/workflows/deploy-now.yaml`. 
 
 ``` yaml
  - name: Render templates
@@ -40,7 +40,6 @@ If you want to create new runtime secrets, you need to add these to [GitHub secr
 Now that the runtime is able to receive the values of your secrets, you can reference them in your config file by adding a `$` in front of their key.
 
 ### Examplary `config.json`
-
 
 ``` json
 APP_NAME=Laravel
