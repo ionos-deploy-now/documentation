@@ -24,9 +24,7 @@ The directories you want to exclude and the commands you want to execute on your
 
 ### Manage persistency 
 
-Per default, all files in your publish directory are copied to the infrastructure after every git commit. If you want to prevent certain directories from being copied, you can list them under `excludes`. `Excludes` also prevent files that are created by your application from beeing deleted. If you want to copy files to the infrastructure on your initial deployment, but keep them persistent afterwards, you can do this by adding them to the `excludes` in `bootstrap`.
-
-[//]: # (TODO recurring instead of bootstrap?)
+Per default, all files in your publish directory are copied to the infrastructure after every git commit. If you want to prevent certain directories from being copied, you can list them under `excludes`. `Excludes` also prevent files that are created by your application from beeing deleted. If you want to copy files to the infrastructure on your initial deployment, but keep them persistent afterwards, you can do this by adding them to the `excludes` in `recurring`, but leaving them out in `bootstrap`.
 
 ### Executing commands on the runtime
 
