@@ -18,8 +18,7 @@ Deploy Now Static Projects support direct deployments via GitHub for Static Site
 
 #### Comprehensive framework support
 
-[//]: # (TODO: "run on PHP"?)
-Deploy Now supports all apps that run on PHP and can be build with Node.js, Composer, Ruby or any other [language supported by GitHub Actions](https://docs.github.com/en/get-started/learning-about-github/github-language-support). Automatic detection and workflow setup are available for the following frameworks.
+Deploy Now supports all static sites that can be build with Node.js, Composer, Ruby or any other [language supported by GitHub Actions](https://docs.github.com/en/get-started/learning-about-github/github-language-support). Automatic detection and workflow setup are available for the following frameworks.
 
 **Static Site Generators**: 
 
@@ -85,13 +84,11 @@ Build steps are executed automatically based on GitHub Actions. Build logs can b
 
 ### Create HTACCESS file
 
-[//]: # (TODO "moved to the browser"?)
-Deploy Now webservers will react to any HTACCESS that is moved to the browser via the root of the publish directory. You can use your HTACCESS file to define redirects or password protections.
+Deploy Now webservers will react to any HTACCESS that is moved to the server via the root of the publish directory. You can use your HTACCESS file to define redirects or password protections.
 
 ### Adapt environment variables
 
-[//]: # (TODO "Build"?)
-Build environment variables can be adapted under `.deploy-now/config.yaml`. Secrets are stored as GitHub secrets. 
+Environment variables for your build steps can be adapted directly in the workflow under `.deploy-now/config.yaml`. Secrets are stored as GitHub secrets and can be referenced from the workflow as well. [Learn more](/docs/github-actions-customization/)
 
 ### Add a domain
 
