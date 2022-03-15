@@ -16,13 +16,21 @@ You can select between a variety of different PHP versions for your runtime. The
 
 ### Config file templating
 
-You can define a set of environment variables in a config file templating form. The resulting config file will be deployed on the runtime under the provided target file path. You can define runtime secrets in this step as well. To make use of them in your config file, you can reference them via `key = $key`. Deploy Now automatically replaces the placeholders with the secret values when deploying the config file to the infrastructure. If you wish to set up a MariaDB, Deploy Now defines a set of keys, whose values can be referenced by `$key` as well. The values of these variables will be dynamically set during the deployment. Database variables are stored in Deploy Now databases and cannot be accessed via GitHub secrets.
+You can define a set of variables in a config file templating form. The resulting config file will be deployed on the runtime under the provided target file path. You can define runtime secrets in this step as well.
+
+The config file templating is using the golang template engine for rendering the provided files. Therefore, you could insert your data by putting it inside curly braces (`{{ expression }}`). In most cases it will be enough to place a reference to the variable at the desired place inside your config file e.g. `{{ .secrets.key }}` or `{{ .runtime.key }}`. If you want to learn more about the syntax you could check out the [golang documentation](https://pkg.go.dev/text/template). Additionally, the [sprig functions](http://masterminds.github.io/sprig/ ) were installed if you need some more complex methods. 
+
+If you wish to set up a MariaDB, Deploy Now defines a set of keys, whose values are prefixed with `.runtime.db`. These variables contain the database user (`.runtime.db.user`) and password (`.runtime.db.password`) as well as the host (`.runtime.db.host`) and the database name (`.runtime.db.name`). The values of these variables will be dynamically set during the deployment. Database variables are stored internally in Deploy Now and cannot be accessed via GitHub secrets.
+
+Some apps my require the url they are running on. This value can be accessed by using the key `.runtime.appUrl`.
 
 ## Adapt runtime configurations for existing projects
 
 ### Editing the config file
 
-After the project creation, we will create a config file based on your inputs and store it under your provided target path in the `.deploy-now` folder of your repository. You can edit this file directly and Deploy Now will copy it to the right location on your runtime with the next deployment.
+After the project creation, we will create a config file based on your inputs and store it under your provided target path in the `.deploy-now` folder of your repository and add the suffix `.template` to indicate that this file contains some placeholders. You can edit this file directly and Deploy Now will copy it to the right location on your runtime with the next deployment.
+
+If you want to create a new config file which contains some placeholder values simply add a file with the suffix `.template` to the `.deploy-now` folder. The relative path of this file inside the `.deploy-now` folder will be used as target path for the deployed config file.  
 
 ### Adding new runtime secrets
 
@@ -34,7 +42,6 @@ If you want to create new runtime secrets, you need to add these to [GitHub secr
         uses: ionos-deploy-now/template-renderer-action@feature/improvements
         with:
           secrets: |
-            appUrl: ${{ steps.project.outputs.site-url }}
             mail:
               host: ${{ secrets.IONOS_MAIL_HOST }}
               port: ${{ secrets.IONOS_MAIL_PORT }}
@@ -43,7 +50,7 @@ If you want to create new runtime secrets, you need to add these to [GitHub secr
               encryption: ${{ secrets.IONOS_MAIL_ENCRYPTION }}
               fromAddress: ${{ secrets.IONOS_MAIL_FROM_ADDRESS }}
 ```
-Now that the runtime is able to receive the values of your secrets, you can reference them in your config file via `{{ secrets.key }}`
+Now that the runtime is able to receive the values of your secrets, you can reference them in your config file via `{{ .secrets.key }}`
 
 ### Examplary `config.json`
 
@@ -51,7 +58,7 @@ Now that the runtime is able to receive the values of your secrets, you can refe
 APP_NAME=Laravel
 APP_ENV=local
 APP_DEBUG=true
-APP_URL={{ .secrets.appUrl }}
+APP_URL={{ .runtime.appUrl }}
 APP_KEY=
 
 LOG_CHANNEL=stack

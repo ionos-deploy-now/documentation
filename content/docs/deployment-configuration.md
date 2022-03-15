@@ -10,13 +10,11 @@ editable: true
 
 ## Prefill deployment configurations using the setup wizard
 
-If you create a new PHP project in Deploy Now, you can specify all relevant deployment settings in the setup wizard. The deployment configuration specifies which files should be persistent after being deployed to your runtime and which commands.
+If you create a new PHP project in Deploy Now, you can specify all relevant deployment settings in the setup wizard. The deployment configuration specifies which files should be persistent after being deployed to your runtime and which commands should be executed.
 
 ## Adapt deployment configurations for existing projects
 
 The inputs from the initial project creation will be stored in a `config.yaml` in the `.deploy-now` folder of your repository. You can adapt this file directly via GitHub. The new settings become active with the next deployment. 
-
-If required, you can use [sprig functions](http://masterminds.github.io/sprig/ ) in your config file.
 
 ## Explanation of deployment settings
 
@@ -26,7 +24,9 @@ The directories you want to exclude and the commands you want to execute on your
 
 ### Manage persistency 
 
-Per default, all files in your publish directory are copied to the infrastructure after every git commit. If you want to prevent certain directories from being copied, you can list them under `excludes`. `Excludes` also prevent files that are created by your application from beeing deleted. If you want to copy files to the infrastructure on your initial deployment, but keep them persistent afterwards, you can do this by adding them to the `excludes` in `bootstrap`. 
+Per default, all files in your publish directory are copied to the infrastructure after every git commit. If you want to prevent certain directories from being copied, you can list them under `excludes`. `Excludes` also prevent files that are created by your application from beeing deleted. If you want to copy files to the infrastructure on your initial deployment, but keep them persistent afterwards, you can do this by adding them to the `excludes` in `bootstrap`.
+
+[//]: # (TODO recurring instead of bootstrap?)
 
 ### Executing commands on the runtime
 

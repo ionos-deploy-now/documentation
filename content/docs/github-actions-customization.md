@@ -84,7 +84,6 @@ jobs:
         uses: ionos-deploy-now/template-renderer-action@feature/improvements
         with:
           secrets: |
-            appUrl: ${{ steps.project.outputs.site-url }}
             mail:
               host: ${{ secrets.IONOS_MAIL_HOST }}
               port: ${{ secrets.IONOS_MAIL_PORT }}

@@ -14,10 +14,11 @@ editable: true
 
 #### Automated deployments via GitHub
 
-Deploy Now Static Projects supports direct deployments via GitHub for Static Site Generators, Single Page Applications and any other static asset. Repositories can be public or private and owned by GitHub users or organizations. After connecting your repository, Deploy Now detects the framework you are using and sets up a build and deployment workflow accordingly. Each code update triggers a new build via GitHub Actions.
+Deploy Now Static Projects support direct deployments via GitHub for Static Site Generators, Single Page Applications and any other static asset. Repositories can be public or private and owned by GitHub users or organizations. After connecting your repository, Deploy Now detects the framework you are using and sets up a build and deployment workflow accordingly. Each code update triggers a new build via GitHub Actions.
 
 #### Comprehensive framework support
 
+[//]: # (TODO: "run on PHP"?)
 Deploy Now supports all apps that run on PHP and can be build with Node.js, Composer, Ruby or any other [language supported by GitHub Actions](https://docs.github.com/en/get-started/learning-about-github/github-language-support). Automatic detection and workflow setup are available for the following frameworks.
 
 **Static Site Generators**: 
@@ -84,10 +85,12 @@ Build steps are executed automatically based on GitHub Actions. Build logs can b
 
 ### Create HTACCESS file
 
+[//]: # (TODO "moved to the browser"?)
 Deploy Now webservers will react to any HTACCESS that is moved to the browser via the root of the publish directory. You can use your HTACCESS file to define redirects or password protections.
 
 ### Adapt environment variables
 
+[//]: # (TODO "Build"?)
 Build environment variables can be adapted under `.deploy-now/config.yaml`. Secrets are stored as GitHub secrets. 
 
 ### Add a domain
