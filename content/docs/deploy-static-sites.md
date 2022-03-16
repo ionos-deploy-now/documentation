@@ -88,7 +88,7 @@ Deploy Now webservers will react to any HTACCESS that is moved to the server via
 
 ### Adapt environment variables
 
-Environment variables for your build steps can be adapted directly in the workflow under `.deploy-now/config.yaml`. Secrets are stored as GitHub secrets and can be referenced from the workflow as well. [Learn more](/docs/github-actions-customization/)
+Environment variables for your build steps can be adapted directly in the workflow under `.github/workflows/deploy-now.yaml`. Secrets are stored as GitHub secrets and can be referenced from the workflow as well. [Learn more](/docs/github-actions-customization/)
 
 ### Add a domain
 
