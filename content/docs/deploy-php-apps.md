@@ -63,7 +63,7 @@ Databases will be automacially created for both production and staging. You can 
 
 ### Create HTACCESS file
 
-Deploy Now webservers will react to any HTACCESS that is moved to the browser via the root of the publish directory. You can use your HTACCESS file to define redirects or password protections.
+Deploy Now webservers will react to any HTACCESS file that is moved to the root directory of the server as part of the publish directory. You can use your HTACCESS file to define redirects or password protections. [Learn more](/docs/runtime-configuration/#htaccess-files)
 
 ### Adapt build environment variables
 
