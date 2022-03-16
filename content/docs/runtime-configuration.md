@@ -90,7 +90,7 @@ MAIL_FROM_NAME="${APP_NAME}"
 ```
 ## HTACCESS files
 
-Deploy Now webservers will react to any HTACCESS that is moved to the browser via the root of the publish directory. You can use your HTACCESS file to define redirects or password protections.
+Deploy Now webservers will react to any HTACCESS that is moved to the browser via the root of the publish directory. You can use your HTACCESS file to define redirects or password protections. In case your project's document directory is not the project's root directory, we add a HTACCESS file to the root directory during the deployment to point to your document directory. This HTACCESS file can be adapted via `.deploy-now/.htaccess.template`. The HTACCESS file generated from this template replaces any other HTACCESS file that might already exist in your project root directory.
 
 ## Manage databases
 
