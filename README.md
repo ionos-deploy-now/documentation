@@ -2,7 +2,7 @@
 
 # Deploy Now - Documentation
 
-Use [Gridsome](https://gridsome.org) with NodeJS v12.22
+Uses [Gridsome](https://gridsome.org) with NodeJS v12.22
 
 ## Setup
 
