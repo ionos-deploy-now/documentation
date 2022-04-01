@@ -13,6 +13,8 @@ tags:
 
 # Gatsby vs. React Static vs. Next.js: What's the best React-based static site generator?
 
+![Product Screencast](/screencast.gif)
+
 ## Introduction
 
 I imagine that you’ve found your way to this blog post because you understand the Jamstack and recognize its strengths
