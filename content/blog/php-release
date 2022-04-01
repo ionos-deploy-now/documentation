@@ -2,8 +2,6 @@
 description: "Great Update: PHP on Deploy Now Released"
 created: '2022-04-01'
 author: 'robert'
-header: '@assets/blog/dpnw-react-ssg.jpg'
-teaser: '@assets/blog/dpnw-react-ssg.jpg'
 tags:
     - react
     - gatsby
