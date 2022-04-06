@@ -13,7 +13,7 @@ tags:
 
 ## What is new
 
-Das ist nur ein Test, kann ich die Aenderungen direkt sehen?
+
 
 ## Tiny feature deepdive
 
