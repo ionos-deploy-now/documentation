@@ -1,8 +1,8 @@
 ---
-description: ''
+description: 'Deploy Now allows you to create multiple Staging Deployments from feature branches and provides preview URLs. This allows you to preview changes before merging them to production.'
 sidebar: 'docs'
 prev: '/docs/git-integration/'
-next: '/docs/configuration-overview/'
+next: '/docs/domain-tls/'
 editable: true
 ---
 

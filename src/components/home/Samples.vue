@@ -39,7 +39,7 @@ export default {
   },
   data() {
     return {
-      logos: ['angular', 'hexo', 'jekyll', 'next', 'nuxt', 'react', 'vue'],
+      logos: ['angular', 'hexo', 'jekyll', 'laravel', 'nuxt', 'symfony', 'vue'],
     };
   },
   methods: {
@@ -71,7 +71,7 @@ export default {
   left: 20%;
 }
 
-.next {
+.laravel {
   top: 30%;
   left: 15%;
 }
@@ -81,7 +81,7 @@ export default {
   left: 35%;
 }
 
-.react {
+.symfony {
   top: 50%;
   left: 80%;
 }

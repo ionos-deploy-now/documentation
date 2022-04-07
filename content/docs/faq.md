@@ -1,15 +1,21 @@
 ---
-description: ''
+description: 'Frequently Asked Questions about Deploy Now, supported frameworks and technologies and how to deploy them.'
 sidebar: 'docs'
 prev: '/docs/domain-tls/'
-next: '/about-us/'
+next: '/blog/'
 editable: true
 ---
 
 # Frequently Asked Questions
 
 ## What can I deploy with Deploy Now?
-You can deploy any kind of website or app that work with HTML, CSS and client-side JavaScript. This includes popular frontend frameworks like Vue, React and Angular as well as static site generators like Gatsby, Hugo, Nuxt, Next, Jekyll, Jigsaw, Gridsome or Hexo, which follow the Jamstack approach.
+Deploy Now supports automated builds and deployments for Static Projects and PHP Projects. Static Projects support all kind of static frameworks that can work with HTML, CSS and client-side JavaScript. PHP Projects offer a PHP runtime and MariaDB. 
+
+## Which PHP frameworks are supported out of the box?
+Deploy Now detects Laravel and Symfony projects automatically and automates the build and deployment pipeline accordingly.
+
+## Which static frameworks are supported out of the box?
+Deploy Now supports the following static site generators, following the Jamstack approach: Hugo, Gatsby, Gridsome, Docusaurus, Vuepress, Vitepress, Hexo, Metalsmith, 11ty, UmiJS, Astro, Scully, ElderJS, Middleman, Jekyll, Nanoc, Pelican, mkdocs, Jigsaw, Sculpin as well as the static site generation flavor of Nuxt.js and Next.js. Server-side rendering with Node.js is not supported. In additon, Deploy Now offers out of the box support for these single page application frameworks: Angular, React, Vue, Svelte, Ionic and Ember.
 ![Deployment Options](/deploy-now-supported-frameworks.svg)  
 
 ## What is the Jamstack? 
@@ -21,7 +27,7 @@ A static site generator is an essential component of the jamstack architecture. 
 ![Static Site Generator](/static-site-generator.svg) 
 
 ## What is a build?
-In this context, a build is a process in which JavsScript is compiled, or a static site generator is run. This can be triggered by a new git commit or by external services such as a headless CMS. Everytime a build is triggered, we use [GitHub Actions](https://github.com/features/actions) to update the files on the webserver.
+In this context, a build is a process in scripts are executed to generate the files that make up your web project. This can be triggered by a new git commit or by any other custom defined event. Everytime a build is triggered, we use [GitHub Actions](https://github.com/features/actions) to update the files on the webserver.
 
 ## From which sources can I deploy?
 You can deploy from an existing GitHub repository in your account, provide the URL to a third party repository you would like to deploy, or you can quickstart with one of our [samples](/docs/framework-samples).
@@ -40,6 +46,9 @@ Yes, you can connect [custom domains](/docs/domain-tls) to your production deplo
 
 ## Can I connect external domains?
 Yes, you can migrate external domains to IONOS and connect them to Deploy Now. For this, you need to have one existing IONOS domain contract to which you migrate the external domain.
+
+## Can I create HTACCESS files?
+Yes, you .HTACCESS files can be moved to your runtime via your publish directory.
 
 ## Why can't I see my repository in the set up selection?
 You can only select repository to which you have granted the required read and write permissions.
@@ -63,15 +72,15 @@ This can have various reasons. It might be that the new git commit exceeds the i
 Yes. Just like GitHubs interface, the Deploy Now interface is in english for all markets.
 
 ## Is Deploy Now for free?
-Deploy Now uses a freemium model. The three project packages included in the free membership will stay for free. You can purchase additional project packages with more storage and staging deployments any time.
+Deploy Now uses a freemium model. The three static starter project packages included in the free membership will stay for free. You can purchase additional project packages with more storage and staging deployments or PHP and database support any time.
 
 ## Where can I place feature requests?
-[Our team](/about-us) is continuously working on improving Deploy Now based on your needs and wishes. You can drop your feedback or feature requests directly via the feedback button on the product or below our [post](https://www.producthunt.com/posts/deploy-now) on Product Hunt.
+[Our team](/about-us) is continuously working on improving Deploy Now based on your needs and wishes. You can drop your feedback or feature requests directly via [GitHub Actions](https://github.com/ionos-deploy-now/ionos-deploy-now/issues/new/choose) or below our [post](https://www.producthunt.com/posts/deploy-now) on Product Hunt.
 
 ## What is this documentation built with?
 This documentation is based on the static site generator [Gridsome](https://gridsome.org/).
 
-## NextJs is not recognized during setup and how can I configure my project to make it work?
+## Next.js or Nuxt.js is not recognized during setup and how can I configure my project to make it work?
 First of all, make sure the static app has been exported, as we don't offer a nodejs runtime yet.
 
 Please adapt your build step with the following line as described in this [static-html-export documentation](https://nextjs.org/docs/advanced-features/static-html-export).
@@ -97,6 +106,6 @@ Build settings:
 ![Screenshot from source selection step](/nextjs-app-install.png)  
 :::
 
-## Can I use NextJs without exporting a static site or incremental static regeneration feature?
+## Can I use Next.js without exporting a static site or incremental static regeneration feature?
 
 Since we do not yet provide a Nodejs runtime environment, using nextjs without exporting a static page is not possible. Incremental static regeneration also requires server-side rendering at runtime, so regeneration of static pages at runtime is not possible.

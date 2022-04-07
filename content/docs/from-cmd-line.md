@@ -1,5 +1,5 @@
 ---
-description: ''
+description: 'Quick manuals about how to set up a static or PHP project on the command line'
 sidebar: 'docs'
 prev: '/docs/framework-samples/'
 next: '/docs/from-repo/'

@@ -21,7 +21,7 @@
     "deploy-smarter": "Deploy smarter.",
     "deploy-faster": "Deploy faster.",
     "deploy-now": "Deploy now.",
-    "description": "Connect your GitHub account and instantly deploy your static web projects on DDoS-protected, georedundant, green IONOS infrastructure.",
+    "description": "Build, stage & deploy static sites, single page applications and PHP apps directly via GitHub to IONOS infrastructure.",
     "getting-started": {
       "title": "Getting started",
       "text": "How to connect a repository and set up a deployment."
@@ -36,8 +36,8 @@
     }
   },
   "home-samples": {
-    "overline": "More than static",
-    "title": "The home for your Jamstack project or Single Page Application",
+    "overline": "One platform for all your projects",
+    "title": "The home for your Static Site, Single Page Application or PHP App",
     "sample-button": "Deploy a sample",
     "sign-up-button": "Sign up free"
   },

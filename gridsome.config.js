@@ -50,18 +50,29 @@ module.exports = {
               '/docs/framework-samples/',
               '/docs/from-cmd-line/',
               '/docs/from-repo/',
-              '/docs/git-integration/',
-              '/docs/staging-deployments/',
+            ],
+          },
+          {
+            title: 'Stacks',
+            items: [
+              '/docs/deploy-static-sites/',
+              '/docs/deploy-php-apps/',
             ],
           },
           {
             title: 'Configuration',
             items: [
-              '/docs/configuration-overview/',
-              '/docs/deployment-configuration/',
               '/docs/github-actions-customization/',
+              '/docs/deployment-configuration/',
+              '/docs/runtime-configuration/',
+            ],
+          },
+          {
+            title: 'Features',
+            items: [
+              '/docs/git-integration/',
+              '/docs/staging-deployments/',
               '/docs/domain-tls/',
-              '/docs/create-sample/',
             ],
           },
           {
@@ -70,6 +81,7 @@ module.exports = {
               '/docs/faq/',
               ...(showBlog ? ['/blog/'] : []),
               '/about-us/',
+              '/docs/create-sample/',
             ],
             external: [
               {
@@ -80,12 +92,6 @@ module.exports = {
                 title: 'Request a feature',
                 path: 'https://github.com/ionos-deploy-now/ionos-deploy-now/issues/new/choose',
               },
-            ],
-          },
-          {
-            title: 'JOIN OUR ALPHA',
-            items: [
-              '/docs/php-alpha/',
             ],
           },
         ],

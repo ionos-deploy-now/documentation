@@ -1,7 +1,7 @@
 ---
-description: ''
+description: 'Deploy Now allows you to deploy from public or private repositories owned by GitHub users or organizations. After every git commit, a GitHub Actions workflow automatically updates your web project on the infrastructure'
 sidebar: 'docs'
-prev: '/docs/from-repo/'
+prev: '/docs/runtime-configuration/'
 next: '/docs/staging-deployments/'
 editable: true
 ---

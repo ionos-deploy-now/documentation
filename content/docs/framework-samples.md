@@ -1,5 +1,5 @@
 ---
-description: ''
+description: 'Deploy static or PHP starter projects with a few clicks '
 sidebar: 'docs'
 prev: '/docs/'
 next: '/docs/from-cmd-line/'
@@ -14,7 +14,7 @@ Looking for a quick start? Simply click on one of the "Deploy to IONOS buttons" 
 
 ## Plain html sample
 
-Simply copies static assets to the infrastructure. You only need to define a `dist` folder.
+Simply copies static assets to the infrastructure. You only need to define a `dist` folder. [View repository](https://github.com/ionos-deploy-now/hello-plain-html).
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-plain-html)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-plain-html)
@@ -29,7 +29,7 @@ distFolder: "./"
 
 ## Gridsome sample
 
-A website based on the Vue.js framework [Gridsome](https://gridsome.org/).
+A website based on the Vue.js framework [Gridsome](https://gridsome.org/). [View repository](https://github.com/ionos-deploy-now/hello-gridsome).
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-gridsome)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-gridsome)
@@ -59,7 +59,7 @@ build:
 
 ## Gatsby sample
 
-A website based on the React framework [Gatsby](https://www.gatsbyjs.com/).
+A website based on the React framework [Gatsby](https://www.gatsbyjs.com/). [View repository](https://github.com/ionos-deploy-now/hello-gatsby).
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-gatsby)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-gatsby)
@@ -89,7 +89,7 @@ build:
 
 ## Hugo sample
 
-A website based on the Go framework [Hugo](https://gohugo.io/).
+A website based on the Go framework [Hugo](https://gohugo.io/). [View repository](https://github.com/ionos-deploy-now/hello-hugo).
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-hugo)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-hugo)
@@ -116,7 +116,7 @@ build:
 
 ## Jigsaw sample
 
-A website based on the PHP framework [Jigsaw](https://jigsaw.tighten.co/).
+A website based on the PHP framework [Jigsaw](https://jigsaw.tighten.co/). [View repository](https://github.com/ionos-deploy-now/hello-jigsaw).
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-jigsaw)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-jigsaw)
@@ -145,7 +145,7 @@ build:
 
 ## Jekyll sample
 
-A website based on the Ruby framework [Jekyll](https://jekyllrb.com/).
+A website based on the Ruby framework [Jekyll](https://jekyllrb.com/). [View repository](https://github.com/ionos-deploy-now/hello-jekyll).
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-jekyll)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-jekyll)
@@ -170,7 +170,7 @@ build:
 
 ## Next sample
 
-A website based on [static file serving](https://nextjs.org/docs/basic-features/static-file-serving) with [Next](https://nextjs.org/).
+A website based on [static file serving](https://nextjs.org/docs/basic-features/static-file-serving) with [Next](https://nextjs.org/). [View repository](https://github.com/ionos-deploy-now/hello-next).
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-next)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-next)
@@ -197,7 +197,7 @@ build:
 
 ## Nuxt sample
 
-A website based on [Static Site Generation](https://nuxtjs.org/docs/2.x/concepts/static-site-generation) with [Nuxt](https://nuxtjs.org).
+A website based on [Static Site Generation](https://nuxtjs.org/docs/2.x/concepts/static-site-generation) with [Nuxt](https://nuxtjs.org). [View repository](https://github.com/ionos-deploy-now/hello-nuxt).
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-nuxt)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-nuxt)
@@ -224,7 +224,7 @@ build:
 
 ## Vuepress sample
 
-A website based on the Vue-powered Static Site Generator [VuePress](https://vuepress.vuejs.org/).
+A website based on the Vue-powered Static Site Generator [VuePress](https://vuepress.vuejs.org/). [View repository](https://github.com/ionos-deploy-now/hello-vuepress).
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-vuepress)
 [<icon-base name="GitHub" view-box="0 0 25 25" color="black"><icon-github/></icon-base>](https://github.com/ionos-deploy-now/hello-vuepress)
@@ -248,3 +248,14 @@ build:
 ```
 :::
 --->
+
+## Laravel sample
+
+A website based on the PHP framework [Laravel](https://laravel.com). [View repository](https://github.com/ionos-deploy-now/laravel-starter).
+
+[![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/laravel-starter)
+
+## Symfony sample
+A website based on the PHP framework [Symfony](https://symfony.com/). [View repository](https://github.com/ionos-deploy-now/symfony-starter).
+
+[![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/symfony-starter)

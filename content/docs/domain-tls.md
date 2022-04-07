@@ -1,14 +1,14 @@
 ---
-description: ''
+description: 'Deploy Now allows you to replace preview URLs by any kind of custom domain. All domains are automatically SSL secured.'
 sidebar: 'docs'
-prev: '/docs/github-actions-customization/'
-next: '/docs/create-sample/'
+prev: '/docs/staging-deployments/'
+next: '/docs/faq/'
 editable: true
 ---
 
 # Domains & TLS/SSL
 
-Deploy Now provides a generic preview URL by default to all deployment branches. All URLs are SSL protected and http requests are redirected to https by default.
+Deploy Now provides a generic preview URL by default for all your deployments. All URLs are SSL protected and http requests are redirected to https by default.
 
 ## Custom domains
 
