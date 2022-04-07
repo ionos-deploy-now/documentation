@@ -20,6 +20,7 @@ As a results, your deploy button should look like this:
 
 [![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-plain-html)
 
+<!--
 
 ## Skip the wizard with a file-based configuration
 
@@ -106,4 +107,6 @@ The following properties are allowed:
 </div>
 
 Common separation of commands by "\n" split.
+
+-->
 
