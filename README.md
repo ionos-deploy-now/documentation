@@ -2,9 +2,15 @@
 
 # Deploy Now - Documentation
 
-Uses [Gridsome](https://gridsome.org) with NodeJS v12.22
+This is the [official documentation](https://docs.ionos.space/) of IONOS Deploy Now, the hosting platform for instant deployments of static sites and PHP Apps via GitHub. The documentation uses [Gridsome](https://gridsome.org) with NodeJS v12.22 and is running on IONOS Deploy Now.
 
-## Setup
+## Contribute
+
+Found a bug or typo or missing important content? Feel free to open a pull request. We will review it quickly. Are you missing something bigger? Feel free to open a [GitHub Issue](https://github.com/ionos-deploy-now/ionos-deploy-now/issues).
+
+## Fork & deploy
+
+### Setup
 
 Install dependencies and edit the new `.env` file.
 
@@ -13,7 +19,7 @@ npm ci
 cp .env.example .env
 ```
 
-## Develop
+### Develop
 
 Run local server.
 
@@ -21,7 +27,7 @@ Run local server.
 npm run develop
 ```
 
-## Content
+### Content
 
 All content resides in the `content` directory, where the next directory name decides the `contentType`.
 Pages can be created manually or generated with the cli.
@@ -30,7 +36,7 @@ Pages can be created manually or generated with the cli.
 npm run cli
 ```
 
-## Build
+### Build
 
 Create static build in `dist` folder.
 
