@@ -21,19 +21,18 @@ Exactly one year after our first release, after many small improvements and eval
 
 ## How does deploying PHP on Deploy Now feel like?
 
-Our main goal was to make the deployment of dynamic pages as fast and enjoyable as static pages. Our wizard guides you through the setup of your workflow, starting with connecting your repo. Now we get a picture of your code and help you set up your build pipeline. New to PHP: You may want to make files persistent or execute commands on your runtime. You can define these deployment settings in the wizard and change them in a file afterwards.
-
+Our main goal was to make the deployment of dynamic pages as fast and enjoyable as static pages. Our wizard guides you through the setup of the workflow, starting with connecting your repo. Now we get a picture of your code and help you set up your build pipeline. New to PHP: You may want to make files persistent or execute commands on your runtime. You can define these deployment settings in the wizard and change them in a file afterwards.
 We also help you to create environment variables for your runtime, that can be secret or not, and template a config file. You can create a database and reference it’s key value pairs in your config file and set up a send mail account if you like.
 
 You can find a step by step guide for setting up your workflow [here](/docs/from-repo/). 
 
-## Our most powerful feature: A smart setup for 30+ frameworks
+## A smart setup for 30+ frameworks
 
 ![Framework Detection](/detection.gif)
 
 Deploy Now wants to make setting up automated workflows as seamless as possible. This is why we’ve fundamentally updated our detection algorithm. Our  algorithm scans your repository for the frameworks you use and the build steps you need to prefill our setup wizard. The inputs of the detection, together with your adaptions, is used to set up a GitHub Actions workflow, that you can adjust anytime.
 
-## Supported Static Site Generators, Single Page Application Frameworks and PHP Frameworks
+## Supported Static Site Generators, SPA Frameworks and PHP Frameworks
 
 Below, you can find an updated list of all the frameworks we detect out of the box in addition to Laravel and Symfony. Of course, you an always set up completely custom build pipelines, if you don't find your favorite framework in the list.
 
@@ -62,7 +61,9 @@ Below, you can find an updated list of all the frameworks we detect out of the b
 | Jigsaw | 
 | Sculpin |
 
+Do you have feefback for us or are you missing a feature? Let us know on [GitHub Issues](https://github.com/ionos-deploy-now/ionos-deploy-now/issues).
 
+We hope you enjoy the new features!
 
 
 
