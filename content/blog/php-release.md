@@ -1,5 +1,5 @@
 ---
-description: 'Deploy Now supports php-frameworks Laravel and Symfony'
+description: 'Deploy Now now supports the deployment of PHP-Apps including support for MariaDB and automated setups for Laravel and Symfony.'
 created: '2022-04-13'
 author: 'robert-schleinhege'
 header: '@assets/blog/deploy-now-php-launch.png'
