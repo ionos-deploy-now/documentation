@@ -1,11 +1,13 @@
-﻿---
+---
 description: 'Deploy Now supports php-frameworks Laravel and Symfony'
 created: '2022-04-13'
 author: 'chris-kaufmann'
 tags:
-    - php 
+    - php
+    - laravel
+    - symfony
+    
 ---
-![](deploy-now-php-launch.png)
 
 #Introducing LAMP-Stack support on Deploy Now! Our approach to deploy dynamic websites 
 
