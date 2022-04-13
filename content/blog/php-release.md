@@ -17,8 +17,7 @@ tags:
 
 Almost exactly one year after our first release, after many small improvements and evaluating and implementing your feedback, the first major feature release for Deploy Now has gone live. In addition to the already supported generators for static sites, we now also support the most famous web stack, the LAMP stack, and thus now also dynamic sites and the PHP frameworks Laravel and Symfony.
 
-![alt text](https://github.com/ionos-deploy-now/documentation/blob/php-article/src/assets/blog/deploy-now-php-launch.png "PHP Teaser")
-
+![Domain select](/domain-select.png)
 
 ## How does deploying PHP on Deploy Now feel like?
 
