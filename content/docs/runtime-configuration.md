@@ -22,7 +22,7 @@ The config file templating is using the golang template engine for rendering the
 
 If you wish to set up a MariaDB, Deploy Now defines a set of keys, whose values are prefixed with `.runtime.db`. These variables contain the database user (`.runtime.db.user`) and password (`.runtime.db.password`) as well as the host (`.runtime.db.host`) and the database name (`.runtime.db.name`). The values of these variables will be dynamically set during the deployment. Database variables are stored internally in Deploy Now and cannot be accessed via GitHub secrets.
 
-Some apps my require the url they are running on. This value can be accessed by using the key `.runtime.appUrl`.
+Some apps may require the url they are running on. This value can be accessed by using the key `.runtime.app_url`.
 
 ## Adapt runtime configurations for existing projects
 
@@ -58,7 +58,7 @@ Now that the runtime is able to receive the values of your secrets, you can refe
 APP_NAME=Laravel
 APP_ENV=local
 APP_DEBUG=true
-APP_URL={{ .runtime.appUrl }}
+APP_URL={{ .runtime.app_url }}
 APP_KEY=
 
 LOG_CHANNEL=stack
