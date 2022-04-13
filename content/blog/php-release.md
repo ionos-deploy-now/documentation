@@ -30,6 +30,33 @@ We also help you to create environment variables for your runtime, that can be s
 
 Deploy Now wants makes setting up automated workflows as seamless as possible. This is why we’ve fundamentally updated our detection algorithm, that scan your repo for the frameworks you use and the build steps you need to prefill our setup wizard. The inputs of the detection, together with your adaptions, is used to set up a GitHub Actions workflow, that you can adapt anytime
 
+## Supported Static Site Generators, Single Page Application Frameworks and php Frameworks
+
+| Static Site Generators | SPA Frameworks | php Frameworks  |
+| :------------- |:-------------| :-----|
+| Hugo | Angular | Laravel |
+| Gatsby | React | Symfony |        
+| Gridsome | Vue |
+| Docusaurus | Ionic |
+| Vuepress | Svelte |
+| Vitepress | Ember |
+| NuxtJS (static) |
+| NextJS (static) |
+| Hexo |
+| Metalsmith |
+| 11ty | 
+| UmiJS |
+| Astro | 
+| Scully | 
+| ElderJS |
+| Middleman | 
+| Jekyll |
+| Nanoc |
+| Pelican |
+| mkdocs |
+| Jigsaw | 
+| Sculpin |
+
 
 
 
