@@ -17,7 +17,7 @@ tags:
 
 Almost exactly one year after our first release, after many small improvements and evaluating and implementing your feedback, the first major feature release for Deploy Now has gone live. In addition to the already supported generators for static sites, we now also support the most famous web stack, the LAMP stack, and thus now also dynamic sites and the PHP frameworks Laravel and Symfony.
 
-![Domain select](/domain-select.png)
+![PHP now available](/phpmenu.gif)
 
 ## How does deploying PHP on Deploy Now feel like?
 
@@ -26,6 +26,8 @@ Our main goal was to make the deployment of dynamic pages as fast and enjoyable 
 We also help you to create environment variables for your runtime, that can be secret or not, and template a config file. You can create a database and reference it’s key value pairs in your config file and set up a send mail account if you like.
 
 ## Our most powerful feature: A smart setup for 30+ frameworks
+
+![Framework Detection](/detection.gif)
 
 Deploy Now wants makes setting up automated workflows as seamless as possible. This is why we’ve fundamentally updated our detection algorithm, that scan your repo for the frameworks you use and the build steps you need to prefill our setup wizard. The inputs of the detection, together with your adaptions, is used to set up a GitHub Actions workflow, that you can adapt anytime
 
