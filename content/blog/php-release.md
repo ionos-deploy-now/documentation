@@ -19,7 +19,7 @@ Exactly one year after our first release, after many small improvements and eval
 
 ![PHP now available](/phpmenu3.gif)
 
-## How does deploying PHP on Deploy Now feel like?
+## What does deploying PHP on Deploy Now feel like?
 
 Our main goal was to make the deployment of dynamic pages as fast and enjoyable as static pages. Our wizard guides you through the setup of the workflow, starting with connecting your repo. Now we get a picture of your code and help you set up your build pipeline. New to PHP: You may want to make files persistent or execute commands on your runtime. You can define these deployment settings in the wizard and change them in a file afterwards.
 We also help you to create environment variables for your runtime, that can be secret or not, and template a config file. You can create a database and reference it’s key value pairs in your config file and set up a send mail account if you like.
