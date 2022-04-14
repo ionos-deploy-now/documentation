@@ -30,7 +30,7 @@ You can find a step by step guide for setting up your workflow [here](/docs/from
 
 ![Framework Detection](/detection.gif)
 
-Deploy Now wants to make setting up automated workflows as seamless as possible. This is why we’ve fundamentally updated our detection algorithm. Our  algorithm scans your repository for the frameworks you use and the build steps you need to prefill our setup wizard. The inputs of the detection, together with your adaptions, is used to set up a GitHub Actions workflow, that you can adjust anytime.
+Deploy Now makes setting up automated workflows as seamless as possible. This is why we’ve fundamentally updated our detection algorithm. Our  algorithm scans your repository for the frameworks you use and the build steps you need to prefill our setup wizard. The inputs of the detection, together with your adaptions, is used to set up a GitHub Actions workflow, that you can adjust anytime.
 
 ## Supported Static Site Generators, SPA Frameworks and PHP Frameworks
 
@@ -61,7 +61,7 @@ Below, you can find an updated list of all the frameworks we detect out of the b
 | Jigsaw | 
 | Sculpin |
 
-Do you have feefback for us or are you missing a feature? Let us know on [GitHub Issues](https://github.com/ionos-deploy-now/ionos-deploy-now/issues).
+Do you have feedback for us or are you missing a feature? Let us know on [GitHub Issues](https://github.com/ionos-deploy-now/ionos-deploy-now/issues).
 
 We hope you enjoy the new features!
 
