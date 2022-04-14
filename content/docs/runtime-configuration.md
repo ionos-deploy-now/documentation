@@ -32,6 +32,8 @@ After the project creation, we will create a config file based on your inputs an
 
 If you want to create a new config file which contains some placeholder values simply add a file with the suffix `.template` to the `.deploy-now` folder. The relative path of this file inside the `.deploy-now` folder will be used as target path for the deployed config file.  
 
+Database variables can be referenced via `{{.runtime.db.user}}`, `{{.runtime.db.password}}`, `{{.runtime.db.host}}`,  and `{{.runtime.db.name}}`.
+
 ### Adding new runtime secrets
 
 If you want to create new runtime secrets, you need to add these to [GitHub secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets) first. In the second step, you need to pass the new secrets to the runtime via the GitHub Actions workflow. Add your secrets to the `Render templates` step in `.github/workflows/deploy-now.yaml` by referencing values via `${{ secrets.key }}`. 
