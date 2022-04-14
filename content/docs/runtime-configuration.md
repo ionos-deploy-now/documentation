@@ -18,9 +18,19 @@ You can select between a variety of different PHP versions for your runtime. The
 
 You can define a set of variables in a config file templating form. The resulting config file will be deployed on the runtime under the provided target file path. You can define runtime secrets in this step as well.
 
+#### Syntax
+
 The config file templating is using the golang template engine for rendering the provided files. Therefore, you could insert your data by putting it inside curly braces (`{{ expression }}`). In most cases it will be enough to place a reference to the variable at the desired place inside your config file e.g. `{{ .secrets.key }}` or `{{ .runtime.key }}`. If you want to learn more about the syntax you could check out the [golang documentation](https://pkg.go.dev/text/template). Additionally, the [sprig functions](http://masterminds.github.io/sprig/ ) were installed if you need some more complex methods. 
 
+#### Database
+
 If you wish to set up a MariaDB, Deploy Now defines a set of keys, whose values are prefixed with `.runtime.db`. These variables contain the database user (`.runtime.db.user`) and password (`.runtime.db.password`) as well as the host (`.runtime.db.host`) and the database name (`.runtime.db.name`). The values of these variables will be dynamically set during the deployment. Database variables are stored internally in Deploy Now and cannot be accessed via GitHub secrets.
+
+#### Send mail account
+
+If you wish, Deploy Now creates a mail account for you that you can use to send mails from scripts. The credentials of the mail account will be stored in your GitHub secrets and can be referenced in the config file via `{{.secrets.IONOS_MAIL_HOST}}`. Keep in mind that secrets are only available at runtime if you list them in the render templates step of your [GitHub Actions workflow](https://docs.ionos.space/docs/github-actions-customization/). 
+
+#### App URL
 
 Some apps may require the url they are running on. This value can be accessed by using the key `.runtime.app_url`.
 
@@ -32,7 +42,9 @@ After the project creation, we will create a config file based on your inputs an
 
 If you want to create a new config file which contains some placeholder values simply add a file with the suffix `.template` to the `.deploy-now` folder. The relative path of this file inside the `.deploy-now` folder will be used as target path for the deployed config file.  
 
-Database variables can be referenced via `{{.runtime.db.user}}`, `{{.runtime.db.password}}`, `{{.runtime.db.host}}`,  and `{{.runtime.db.name}}`.
+Database variables can be referenced via `{{.runtime.db.user}}`, `{{.runtime.db.password}}`, `{{.runtime.db.host}}`,  and `{{.runtime.db.name}}`. Send mail variables can be referenced via `{{.secrets.IONOS_MAIL_HOST}}`, `{{.secrets.IONOS_MAIL_PORT}}`, `{{.secrets.IONOS_MAIL_USERNAME}}`, `{{.secrets.IONOS_MAIL_PASSWORD}}`, `{{.secrets.IONOS_MAIL_ENCRYPTION}}` and `{{.secrets.IONOS_MAIL_ENCRYPTION}}` and `{{.secrets.IONOS_MAIL_FROM_ADDRESS}}`.
+
+Changes become active with the next deployment.
 
 ### Adding new runtime secrets
 
