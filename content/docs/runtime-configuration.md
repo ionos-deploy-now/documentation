@@ -110,6 +110,8 @@ Deploy Now webservers will react to any HTACCESS file that is moved to the root 
 
 Deploy Now offers 2GB MariaDBs for both production and staging deployments in PHP Projects. Users have access to a PHP MyAdmin interface for each database. When opening a new stage, staging databases do not contain data that was stored in your productive database during runtime per default. Please be aware that you need to copy data from production to staging manually. MariaDBs are running on version 10.5.
 
+A backup of your database is creates automatically once per day and stored for 7 days. If you wish to access or restore a database backup, please contact our customer service. 
+
 ## Execute commands on runtime
 
 You have the option to execute commands on the runtime before and after each deployment. Visit [deployment configuration](/docs/deployment-configuration) for more information. Deploy Now currently does not offer the option to execute runtime commands at any time, neither via SSH or e.g. cronjobs. 
