@@ -1,5 +1,5 @@
 ---
-description: 'Deploy Now allows you to replace preview URLs by any kind of custom domain. All domains are automatically SSL secured.'
+description: 'The server files of each deployment including server logs can be accessed in the Deployment Viewer'
 sidebar: 'docs'
 prev: '/docs/domain-tls/'
 next: '/docs/visitor-statistics/'
