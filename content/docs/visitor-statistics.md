@@ -10,7 +10,7 @@ editable: true
 
 Deploy Now offers an easy to use dashboard that creates visitor statistics from your server logs. Visitor statistics do not create or read any cookies. The visitor's IP is transmitted when a page is requested, anonymized immediately after transmission and processed without personal reference.
 
-# Available information
+## Available information
 
 - Referrer (previously visited website)
 - Requested website or file
