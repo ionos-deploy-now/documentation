@@ -1,7 +1,7 @@
 ---
 description: 'Frequently Asked Questions about Deploy Now, supported frameworks and technologies and how to deploy them.'
 sidebar: 'docs'
-prev: '/docs/domain-tls/'
+prev: '/docs/visitor-statistics/'
 next: '/blog/'
 editable: true
 ---
