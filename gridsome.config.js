@@ -73,6 +73,8 @@ module.exports = {
               '/docs/git-integration/',
               '/docs/staging-deployments/',
               '/docs/domain-tls/',
+              '/docs/deployment-viewer/',
+              '/docs/visitor-statistics/',
             ],
           },
           {
