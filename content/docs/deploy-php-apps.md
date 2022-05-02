@@ -51,7 +51,7 @@ Build steps are executed automatically based on GitHub Actions. Build logs can b
 
 ### Manage files on runtime
 
-The current state of the webserver files including logs can be viewed via the deployment viewer in the Deploy Now dashboard. You can also download files here. Moving files onto the server is only possible via GitHub. If you want to keep files persistent, i.e. prevent them from being overwritten with the next commit, you can do this by adding excludes to `.deploy-now/config.yaml`. [Learn more](/docs/deployment-configuration/)
+The current state of the webserver files including logs can be viewed via the [deployment viewer](/docs/deployment-viewer) in the Deploy Now dashboard. You can also download files here. Moving files onto the server is only possible via GitHub. If you want to keep files persistent, i.e. prevent them from being overwritten with the next commit, you can do this by adding excludes to `.deploy-now/config.yaml`. [Learn more](/docs/deployment-configuration/)
 
 ### Execute commands on runtime
 
@@ -60,6 +60,8 @@ To avoid inconsistencies between the GitHub repository and the runtime version o
 ### Manage databases
 
 Databases will be automacially created for both production and staging. You can access your databases via PHP MyAdmin. [Learn more](/docs/runtime-configuration/)
+
+A backup of your database is creates automatically once per day and stored for 7 days. If you wish to access or restore a database backup, please contact our customer service. 
 
 ### Create HTACCESS file
 
