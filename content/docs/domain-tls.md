@@ -6,7 +6,7 @@ next: '/docs/deployment-viewer/'
 editable: true
 ---
 
-# Domains & TLS/SSL
+# Domains and TLS
 
 Deploy Now provides a generic preview URL by default for all your deployments. All URLs are SSL protected and http requests are redirected to https by default.
 
