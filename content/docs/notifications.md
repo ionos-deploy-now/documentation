@@ -1,8 +1,8 @@
 ---
 description: 'Deploy Now helps you setting up deployment notifications from GitHub Actions directly to Slack or RocketChat.'
 sidebar: 'docs'
-prev: '/docs/runtime-configuration/'
-next: '/docs/staging-deployments/'
+prev: '/docs/visitor-statistics/'
+next: '/docs/faq/'
 editable: true
 ---
 
