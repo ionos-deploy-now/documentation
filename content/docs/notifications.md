@@ -36,13 +36,13 @@ Then navigate to the project details in Deploy Now, click on **notifications** i
 
 ## Set up RocketChat notifications
 
-*Go to your admin page
-*Go to Integrations
-*Create a New Integration and select Incoming WebHook
-*Select the channel were you will receive the alerts (you can override in messages)
-*Set Script Enabled to True
-*Paste your script inside the Script field
-*Save the integration
+* Go to your admin page
+* Go to Integrations
+* Create a New Integration and select Incoming WebHook
+* Select the channel were you will receive the alerts (you can override in messages)
+* Set Script Enabled to True
+* Paste your script inside the Script field
+* Save the integration
 
 (see also [here](https://martinschoeler.github.io/docs/administrator-guides/integrations/))
 
