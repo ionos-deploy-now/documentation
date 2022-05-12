@@ -23,6 +23,8 @@ sequenceDiagram
 
 ## Set up Slack notifications
 
+First, you need to set up an App in Slack:
+
 * Create a Slack App for your workspace (alternatively use an existing app you have already created and installed).
 * Add the [`chat.write`](https://api.slack.com/scopes/chat:write) bot scope under **OAuth & Permissions**.
 * Install the app to your workspace.
@@ -35,6 +37,8 @@ Then navigate to the project details in Deploy Now, click on **notifications** i
 
 
 ## Set up RocketChat notifications
+
+First, you need to create a WebHook in RocketChat:
 
 * Go to your admin page
 * Go to Integrations
