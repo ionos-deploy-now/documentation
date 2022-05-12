@@ -2,7 +2,7 @@
 description: 'How to manage config files and runtime environment variables in Deploy Now.'
 sidebar: 'docs'
 prev: '/docs/deployment-configuration/'
-next: '/docs/git-integration/'
+next: '/docs/apache-configuration-htaccess/'
 editable: true
 ---
 
