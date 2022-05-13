@@ -65,6 +65,7 @@ module.exports = {
               '/docs/github-actions-customization/',
               '/docs/deployment-configuration/',
               '/docs/runtime-configuration/',
+              '/docs/apache-configuration-htaccess/',
             ],
           },
           {
