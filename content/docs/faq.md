@@ -71,9 +71,6 @@ This can have various reasons. It might be that the new git commit exceeds the i
 ## Is the interface english only?
 Yes. Just like GitHubs interface, the Deploy Now interface is in english for all markets.
 
-## Is Deploy Now for free?
-Deploy Now uses a freemium model. The three static starter project packages included in the free membership will stay for free. You can purchase additional project packages with more storage and staging deployments or PHP and database support any time.
-
 ## Where can I place feature requests?
 [Our team](/about-us) is continuously working on improving Deploy Now based on your needs and wishes. You can drop your feedback or feature requests directly via [GitHub Actions](https://github.com/ionos-deploy-now/ionos-deploy-now/issues/new/choose) or below our [post](https://www.producthunt.com/posts/deploy-now) on Product Hunt.
 
