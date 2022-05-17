@@ -43,9 +43,6 @@
           Legal Information
         </a>
         <div class="font-bold">Assets</div>
-        <a href="https://www.ionos.de/hosting/kostenloses-hosting" rel="noreferrer" target="_blank">
-          Is Deploy Now for free?
-        </a>
         <a href="https://www.ionos.com/hosting/jamstack" rel="noreferrer" target="_blank">What is the Jamstack?</a>
         <g-link target="_blank" to="/about-us/">About Deploy Now</g-link>
         <g-link target="_blank" to="/blog/">Blog</g-link>
