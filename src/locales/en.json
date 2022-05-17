@@ -39,7 +39,7 @@
     "overline": "One platform for all your projects",
     "title": "The home for your Static Site, Single Page Application or PHP App",
     "sample-button": "Deploy a sample",
-    "sign-up-button": "Sign up free"
+    "sign-up-button": "Sign up"
   },
   "home-team": {
     "overline": "We are the team - We are deploy now",
@@ -67,7 +67,7 @@
     "title": "Hi there!<br/>We're the <span class=\"text-ui-primary\">Deploy Now</span> team.",
     "text": "Our company asked us to build a product that we’d use ourselves, so we did. Our mission is to connect the GitHub community to the powerful hosting platform that we engineered in-house.",
     "ionos-title": "Who is IONOS?",
-    "ionos-text": "Headquartered in Germany, IONOS offers web hosting, domain and cloud products in Europe and North America. IONOS manages more than 8 million customer contracts and hosts over 12 million domains in its own regional data centers. Customers in all markets have access to free, personal 24/7 support in their own language.",
+    "ionos-text": "Headquartered in Germany, IONOS offers web hosting, domain and cloud products in Europe and North America. IONOS manages more than 8 million customer contracts and hosts over 12 million domains in its own regional data centers. Customers in all markets have access to personal 24/7 support in their own language.",
     "feedback-title": "Feedback appreciated",
     "feedback-text": "Got ideas or missing a feature? We’re still working on Deploy Now and would love to hear what you think. Use the feedback button in the product or send an email to <a class=\"email\" href=\"mailto:info@DeployNow.dev\">info@DeployNow.dev</a>.",
     "team-title": "Meet the team"
