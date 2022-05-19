@@ -16,6 +16,8 @@ The Deployment Viewer can be found next to each deployment in the project detail
 
 ## Log files
 
+![Log files](/09_Log_files.gif)
+
 Log data can be found in the logs directory of your web space in the files access.log.CW.gz for the past weeks and access.log.CW.D.gz for the current week.
 
 - CW stands for calendar week
