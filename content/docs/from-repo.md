@@ -10,7 +10,7 @@ editable: true
 
 Allready have an existing project you wish to set up? Simply create a new deployment by following our wizard.
 
-![From existing repository](/02.gif)
+![From existing repository](/03_From_existing_repository.gif)
 
 *Not what you are looking for? [Start from a sample](/docs/framework-samples/) or [start from the command line](/docs/from-cmd-line/).*
 
