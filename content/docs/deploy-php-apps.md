@@ -12,6 +12,8 @@ editable: true
 
 ### What do PHP Projects offer?
 
+![PHP Projects in Deploy Now](/04_PHP_apps_via_GitHub.gif)
+
 #### Automated deployments via GitHub
 
 Deploy Now PHP Projects retrieve code from your GitHub repository, detect the PHP framework you are using and set up an automated build and deployment pipeline accordingly. GitHub repositories can be public or private and owned by users or organizations. Each code update triggers a new build and deployment via GitHub Actions.
