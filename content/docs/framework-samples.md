@@ -12,7 +12,7 @@ Looking for a quick start? Simply click on one of the "Deploy to IONOS buttons" 
 
 *Not what you are looking for? [Start from the command line](/docs/from-cmd-line/) or [deploy an existing repository](/docs/from-repo/).*
 
-![Where to find samples](/02_From_Sample.gi)
+![Where to find samples](/02_From_Sample.gif)
 
 ## Plain html sample
 
