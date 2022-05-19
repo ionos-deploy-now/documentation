@@ -8,13 +8,13 @@ editable: true
 
 # View files and logs
 
+![Log files](/09_Log_files.gif)
+
 ## Deployment Viewer
 
 The Deployment Viewer can be found next to each deployment in the project detail page. The Deployment Viewer shows the files that are currently stored in the server. You can switch between branches and download files. The Deployment Viewer does not provide write access to files.
 
 ## Log files
-
-![Log files](/09_Log_files.gif)
 
 Log data can be found in the logs directory of your web space in the files access.log.CW.gz for the past weeks and access.log.CW.D.gz for the current week.
 
