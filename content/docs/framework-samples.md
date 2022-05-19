@@ -8,6 +8,8 @@ editable: true
 
 # From sample
 
+![Visitor statistics](/02_From_Sample.gif)
+
 Looking for a quick start? Simply click on one of the "Deploy to IONOS buttons" below and we set up a very simple sample project for you. You can use this as a starting point to further work with the selected framework. 
 
 *Not what you are looking for? [Start from the command line](/docs/from-cmd-line/) or [deploy an existing repository](/docs/from-repo/).*
