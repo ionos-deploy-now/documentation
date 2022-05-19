@@ -13,7 +13,8 @@ Deploy Now is a hosting platform that allows you to deploy static sites and PHP 
 [How to deploy a static site](/docs/deploy-static-sites)
 
 [How to deploy a PHP app](/docs/deploy-php-apps)
-![Where to find Deploy Now](/01.gif)
+
+![Where to find Deploy Now](/01_Introduction.gif)
 
 ## Deploy Now in a nutshell
 
