@@ -10,8 +10,6 @@ editable: true
 
 ## Deployment Viewer
 
-![Deployment Viewer](/08_Deployment_Viewer.gif)
-
 The Deployment Viewer can be found next to each deployment in the project detail page. The Deployment Viewer shows the files that are currently stored in the server. You can switch between branches and download files. The Deployment Viewer does not provide write access to files.
 
 ## Log files
