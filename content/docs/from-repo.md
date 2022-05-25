@@ -28,7 +28,7 @@ Deploy Now scans your repository to detect the framework you are using to prefil
   
 4. **Build settings**
 
-![Configure your build steps](/02_From_sample_build flat.gif)
+![Configure your build steps](/02_From_sample_build_flat.gif)
 
 Your build steps will be prefilled based on the detected framework. You can add node, composer or bundler steps or execute any other script or command. Define versions for each build step, add build commands and set environment variables. You can change the order of your build steps via drag and drop. Each project can have exactly one publish directory. The files of this directory will be deployed to the infrastructure after the build step.
 
