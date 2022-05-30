@@ -76,6 +76,7 @@ module.exports = {
               '/docs/domain-tls/',
               '/docs/deployment-viewer/',
               '/docs/visitor-statistics/',
+              '/docs/cronjobs/',
             ],
           },
           {
