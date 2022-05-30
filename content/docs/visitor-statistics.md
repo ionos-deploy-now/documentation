@@ -2,7 +2,7 @@
 description: 'Deploy Now offers a dashboard showing aggregated visitor statistics based on server logs.'
 sidebar: 'docs'
 prev: '/docs/deployment-viewer/'
-next: '/docs/faq/'
+next: '/docs/cronjobs/'
 editable: true
 ---
 
