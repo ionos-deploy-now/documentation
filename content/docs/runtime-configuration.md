@@ -108,9 +108,11 @@ Deploy Now offers 2GB MariaDBs for both production and staging deployments in PH
 
 A backup of your database is creates automatically once per day and stored for 7 days. If you wish to access or restore a database backup, please contact our customer service. 
 
-## Execute commands on runtime
+## Execute commands on runtime & schedule cron jobs
 
-You have the option to execute commands on the runtime before and after each deployment. Visit [deployment configuration](/docs/deployment-configuration) for more information. Deploy Now currently does not offer the option to execute runtime commands at any time, neither via SSH or e.g. cronjobs. 
+You have the option to execute commands on the runtime before and after each deployment. Visit [deployment configuration](/docs/deployment-configuration) for more information. Deploy Now currently does not offer the option to execute runtime commands at any time via SSH.
+
+[Cron jobs](/docs/cronjobs) can be directly defined under `.deploy.now/config.yaml` in your repository.
 
 :::tip 
 
