@@ -16,7 +16,7 @@
           :id="page.path"
           :key="page.path"
           :class="anchorClass(page)"
-          @mousedown="$emit('navigate')"
+          @click="$emit('navigate')"
         >
           <g-link :to="page.path" class="flex items-center py-1 font-semibold">
             <span
