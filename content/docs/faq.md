@@ -47,8 +47,6 @@ Yes, you can connect [custom domains](/docs/domain-tls) to your production deplo
 ## Can I connect external domains?
 Yes, you can migrate external domains to IONOS and connect them to Deploy Now. For this, you need to have one existing IONOS domain contract to which you migrate the external domain.
 
-## Can I create HTACCESS files?
-Yes, you .HTACCESS files can be moved to your runtime via your publish directory.
 
 ## Why can't I see my repository in the set up selection?
 You can only select repository to which you have granted the required read and write permissions.
