@@ -34,6 +34,12 @@ Learn how to set up your workflow with this [step-by-step guide](/docs/from-repo
 
 We’ve fundamentally updated our detection algorithm to make setting up automated workflows in Deploy Now as seamless as possible. The algorithm scans your repository for the frameworks you're using and the build steps you need, then prefills the setup wizard. These inputs, and any changes you make, are used to set up a GitHub Actions workflow. You can modify your workflow at any point. 
 
+## Learn more in the video
+Get to know the vision behind Deploy Now, our develepment team and how to set up a Laravel App in a few clicks.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4rBQ7ePl2ZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ## Supported static site generators, SPA and PHP frameworks
 In additon to Laravel and Symfony, here's an updated list of all the frameworks we detect out of the box. If you don't find your favorite framework in the list, you can always set up your own custom build pipelines.
 
