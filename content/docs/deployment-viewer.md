@@ -8,7 +8,7 @@ editable: true
 
 # View files and logs
 
-![Log files](/09_Log_files.gif)
+![Log files](/09_View_files_and_logs_flat.gif)
 
 ## Deployment Viewer
 
