@@ -65,6 +65,7 @@ module.exports = {
               '/docs/github-actions-customization/',
               '/docs/deployment-configuration/',
               '/docs/runtime-configuration/',
+              '/docs/apache-configuration-htaccess/',
             ],
           },
           {
@@ -75,6 +76,7 @@ module.exports = {
               '/docs/domain-tls/',
               '/docs/deployment-viewer/',
               '/docs/visitor-statistics/',
+              '/docs/cronjobs/',
             ],
           },
           {

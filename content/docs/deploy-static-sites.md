@@ -82,10 +82,6 @@ You might want to [create a new project on the command line](docs/from-cmd-line)
 
 Build steps are executed automatically based on GitHub Actions. Build logs can be viewed directly in GitHub Actions. Build commands, the publish directory and the build environment variables can be adapted in `.github/workflows/deploy-now.yaml`. [Learn more](/docs/github-actions-customization/)
 
-### Create HTACCESS file
-
-Deploy Now webservers will react to any HTACCESS file that is moved to the root directory of the server as part of the publish directory. You can use your HTACCESS file to define redirects or password protections. [Learn more](/docs/runtime-configuration/#htaccess-files)
-
 ### Adapt environment variables
 
 Environment variables for your build steps can be adapted directly in the workflow under `.github/workflows/deploy-now.yaml`. Secrets are stored as GitHub secrets and can be referenced from the workflow as well. [Learn more](/docs/github-actions-customization/)

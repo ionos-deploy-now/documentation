@@ -7,7 +7,7 @@
             class="mx-auto"
             width="100%"
             height="315"
-            src="https://www.youtube-nocookie.com/embed/wpELzwYFxQw?controls=0&modestbranding=1"
+            src="https://www.youtube-nocookie.com/embed/4rBQ7ePl2ZE?controls=0&modestbranding=1"
             title="Deploy Now Video"
             frameborder="0"
             allow="accelerometer; encrypted-media; gyroscope"
@@ -21,7 +21,7 @@
           <div>
             {{ $t('home-features.text') }}
           </div>
-          <g-link class="btn btn-primary" to="/docs">
+          <g-link class="btn btn-primary" to="/docs/deploy-php-apps/">
             {{ $t('home-features.button') }}
           </g-link>
         </div>

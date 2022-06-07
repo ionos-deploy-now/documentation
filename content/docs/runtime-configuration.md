@@ -2,7 +2,7 @@
 description: 'How to manage config files and runtime environment variables in Deploy Now.'
 sidebar: 'docs'
 prev: '/docs/deployment-configuration/'
-next: '/docs/git-integration/'
+next: '/docs/apache-configuration-htaccess/'
 editable: true
 ---
 
@@ -102,19 +102,17 @@ MAIL_ENCRYPTION={{ .secrets.mail.encryption }}
 MAIL_FROM_ADDRESS={{ .secrets.mail.fromAddress }}
 MAIL_FROM_NAME="${APP_NAME}"
 ```
-## HTACCESS files
-
-Deploy Now webservers will react to any HTACCESS file that is moved to the root directory of the server as part of the publish directory. You can use your HTACCESS file to define redirects or password protections. In case your project's document directory is not the project's root directory, we add a HTACCESS file to the root directory during the deployment to point to your document directory. This HTACCESS file can be adapted via `.deploy-now/.htaccess.template`. The HTACCESS file generated from this template replaces any other HTACCESS file that might already exist in your project root directory.
-
 ## Manage databases
 
 Deploy Now offers 2GB MariaDBs for both production and staging deployments in PHP Projects. Users have access to a PHP MyAdmin interface for each database. When opening a new stage, staging databases do not contain data that was stored in your productive database during runtime per default. Please be aware that you need to copy data from production to staging manually. MariaDBs are running on version 10.5.
 
 A backup of your database is creates automatically once per day and stored for 7 days. If you wish to access or restore a database backup, please contact our customer service. 
 
-## Execute commands on runtime
+## Execute commands on runtime & schedule cron jobs
 
-You have the option to execute commands on the runtime before and after each deployment. Visit [deployment configuration](/docs/deployment-configuration) for more information. Deploy Now currently does not offer the option to execute runtime commands at any time, neither via SSH or e.g. cronjobs. 
+You have the option to execute commands on the runtime before and after each deployment. Visit [deployment configuration](/docs/deployment-configuration) for more information. Deploy Now currently does not offer the option to execute runtime commands at any time via SSH.
+
+[Cron jobs](/docs/cronjobs) can be directly defined under `.deploy.now/config.yaml` in your repository.
 
 :::tip 
 

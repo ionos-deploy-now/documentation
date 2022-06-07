@@ -65,10 +65,6 @@ Databases will be automacially created for both production and staging. You can 
 
 A backup of your database is creates automatically once per day and stored for 7 days. If you wish to access or restore a database backup, please contact our customer service. 
 
-### Create HTACCESS file
-
-Deploy Now webservers will react to any HTACCESS file that is moved to the root directory of the server as part of the publish directory. You can use your HTACCESS file to define redirects or password protections. [Learn more](/docs/runtime-configuration/#htaccess-files)
-
 ### Adapt build environment variables
 
 Build environment variables can be adapted in the workflow description under `.github/workflows/deploy-now.yaml`. Secrets are generally stored as GitHub secrets. You can reference their values with `${{ secrets.KEY_NAME }}`. [Learn more](/docs/github-actions-customization/#install-dependencies-render-templates-and-execute-build-steps)

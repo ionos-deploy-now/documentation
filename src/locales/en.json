@@ -12,10 +12,10 @@
     "text": "Suggest changes to this page"
   },
   "home-features": {
-    "overline": "Hosting optimized for git workflows",
-    "title": "Deploy your <span class=\"text-ui-primary\">GitHub repository</span> to powerful infrastucture in a few clicks",
-    "text": "Connect your GitHub account and select your project in a few simple steps. Git push new code and we’ll instantly update your site by connecting to the GitHub Actions pipeline.",
-    "button": "Read introduction"
+    "overline": "Feature release presentation",
+    "title": "Deploy your <span class=\"text-ui-primary\">PHP App</span> to powerful infrastucture in a few clicks",
+    "text": "Learn how Deploy Now enables easy workflow configuration for PHP frameworks like Laravel and Symfony and get to know our team.",
+    "button": "About PHP Projects"
   },
   "home-hero": {
     "deploy-smarter": "Deploy smarter.",
