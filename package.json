@@ -27,7 +27,7 @@
     "@noxify/gridsome-remark-table-align": "^1.0.0",
     "dotenv": "^16.0.1",
     "enquirer": "^2.3.6",
-    "eslint": "^8.16.0",
+    "eslint": "^8.17.0",
     "eslint-plugin-gridsome": "^1.6.2",
     "eslint-plugin-vue": "^9.1.0",
     "fuse.js": "^6.6.2",
