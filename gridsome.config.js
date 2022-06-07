@@ -160,6 +160,13 @@ module.exports = {
           },
         ],
         forceHttps: true,
+        disableDirectoryIndex: true,
+        disableServerSignature: true,
+        pingable: false,
+        // preventScriptInjection: true,
+        contentSecurityPolicy: {
+          "default-src": ["self"]
+        },
         notCachedFiles: ['/service-worker.js', '/assets/js/service-worker.js'],
       },
     },
