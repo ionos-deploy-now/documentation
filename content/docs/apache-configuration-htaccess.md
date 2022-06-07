@@ -12,7 +12,7 @@ Deploy Now uses [Apache HTTPD server](https://httpd.apache.org/) in a shared inf
 
 ## General
 
-A .htaccess file is a common way to make configuration changes on per-directory basis. A .htaccess file can have multiple configuration directives at once. All configuration directives applies to the directory in which the .htaccess file resides and all subdirectories. It's good to know that each directory can define it's one .htaccess file. Directives are applied in the order that they are found. A directive found high up in the directory tree can override all dirctives found before or even definend by the Apache main configuration itself.
+A .htaccess file is a common way to make configuration changes on per-directory basis. A .htaccess file can have multiple configuration directives at once. All configuration directives applies to the directory in which the .htaccess file resides and all subdirectories. It's good to know that each directory can define it's one .htaccess file. Directives are applied in the order that they are found. A directive found high up in the directory tree can override all directives found before or even defined by the Apache main configuration itself.
 
 ## Redirects and Rewrites
 
@@ -46,15 +46,25 @@ You can find other samples [here](https://github.com/phanan/htaccess#security) a
 
 ### Password protection
 
-[Password protection](https://httpd.apache.org/docs/current/howto/auth.html#gettingitworking) via basic authentication is technical possible. But the reference path to your `AuthUserFile` needs to be absolute. This information isn't public availabe in Deploy Now at the moment. We will provide a solution soon.
-
-
+[Password protection](https://httpd.apache.org/docs/current/howto/auth.html#gettingitworking) via basic authentication is technical possible. But the reference path to your `AuthUserFile` needs to be absolute. This information isn't public available in Deploy Now at the moment. We will provide a solution soon.
 
 <!-- ## Performance -->
 
 ## Pitfalls
 
+A collection of some common problems with .htaccess files.
+
+### .htaccess is not working
+
+1. First of all check that your `.htaccess` file is transferred. In order to do that you can lookup your latest Deploy Now workflow in GitHub Actions and view the output of the deployment or you browse through the Deployment Viewer of Deploy Now to verify that the file exists.
+2. Just to be sure please verify that your file is named exactly in this way: `.htaccess`
+3. tbd --- AllowOverride
+
+
+
 ### Encoding
+
+HTTP/1.1 defined ISO-8859-1 as default charset. 
 
 ### Multiviews
 
