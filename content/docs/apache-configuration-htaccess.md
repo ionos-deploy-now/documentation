@@ -50,6 +50,7 @@ You can find other samples [here](https://github.com/phanan/htaccess#security) a
 
 <!-- ## Performance -->
 
+<!--
 ## Pitfalls
 
 A collection of some common problems with .htaccess files.
@@ -67,5 +68,5 @@ A collection of some common problems with .htaccess files.
 HTTP/1.1 defined ISO-8859-1 as default charset. 
 
 ### Multiviews
-
+-->
 <!-- ## Errors -->
