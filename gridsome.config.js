@@ -169,7 +169,7 @@ module.exports = {
           "connect-src": ["self", "data:", "*.uicdn.net", "*.producthunt.com"],
           "font-src": ["self", "data:"],
           "frame-src": ["self", "data:", "*.youtube-nocookie.com"],
-          "img-src": ["self", "data:", "*.uicdn.net", "*.producthunt.com"],
+          "img-src": ["self", "data:", "*.ionos.space", "*.uicdn.net", "*.producthunt.com"],
           "script-src": ["self", "unsafe-inline"], // remove any inline scripts so that 'unsafe-inline' gets obsolete
           "style-src": ["self", "data:", "unsafe-inline"],
         },
