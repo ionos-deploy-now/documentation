@@ -1,6 +1,18 @@
 {
   "name": "deploy-now-documentation",
   "private": true,
+  "description": "Documentation of Deploy Now",
+  "keywords": [
+    "gridsome",
+    "documentation",
+    "cicd",
+    "git-workflow",
+    "deployment",
+    "hosting",
+    "Deploy Now",
+    "IONOS"
+  ],
+  "license": "MIT",
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
@@ -9,8 +21,8 @@
     "cli": "DOTENV_CONFIG_PATH=.cli node -r dotenv/config ./cli/index.js"
   },
   "dependencies": {
-    "@fontsource/open-sans": "^4.5.8",
-    "@fontsource/overpass": "^4.5.6",
+    "@fontsource/open-sans": "^4.5.10",
+    "@fontsource/overpass": "^4.5.8",
     "@gridsome/plugin-sitemap": "^0.4.0",
     "gridsome": "^0.7.23",
     "gridsome-plugin-i18n": "^1.6.0",
@@ -27,9 +39,9 @@
     "@noxify/gridsome-remark-table-align": "^1.0.0",
     "dotenv": "^16.0.1",
     "enquirer": "^2.3.6",
-    "eslint": "^8.15.0",
+    "eslint": "^8.17.0",
     "eslint-plugin-gridsome": "^1.6.2",
-    "eslint-plugin-vue": "^8.7.1",
+    "eslint-plugin-vue": "^9.1.0",
     "fuse.js": "^6.6.2",
     "gridsome-plugin-htaccess": "^0.2.1",
     "gridsome-plugin-service-worker": "^0.2.8",
@@ -38,6 +50,16 @@
     "prism-themes": "^1.9.0",
     "sass-loader": "^10.1.1",
     "slugify": "^1.6.5",
-    "vue-eslint-parser": "^9.0.1"
+    "vue-eslint-parser": "^9.0.2"
+  },
+  "engines": {
+    "node": "^14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ionos-deploy-now/documentation"
+  },
+  "bugs": {
+    "url": "https://github.com/ionos-deploy-now/documentation/issues"
   }
 }
