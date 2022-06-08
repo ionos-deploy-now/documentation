@@ -10,6 +10,8 @@ editable: true
 
 Allready have an existing project you wish to set up? Simply create a new deployment by following our wizard.
 
+![From existing repository](/03_From_existing_repository_flat.gif)
+
 *Not what you are looking for? [Start from a sample](/docs/framework-samples/) or [start from the command line](/docs/from-cmd-line/).*
 
 1. **Connect your GitHub account** 
@@ -25,6 +27,8 @@ Select a public or private repository from your GitHub account or paste in a lin
 Deploy Now scans your repository to detect the framework you are using to prefill all workflow settings. You will be asked to confirm the detected framework or to clarify which framework you are using if we cannot identify your framework. If you are deploying a static site generator, single page application or simply a plain HTML website, you can procede with a Static Project in this step. If your project requires a PHP runtime or a database, please continue with a PHP project.  
   
 4. **Build settings**
+
+![Configure your build steps](/02_From_sample_build_flat.gif)
 
 Your build steps will be prefilled based on the detected framework. You can add node, composer or bundler steps or execute any other script or command. Define versions for each build step, add build commands and set environment variables. You can change the order of your build steps via drag and drop. Each project can have exactly one publish directory. The files of this directory will be deployed to the infrastructure after the build step.
 
