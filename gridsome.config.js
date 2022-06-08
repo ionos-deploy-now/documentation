@@ -166,7 +166,7 @@ module.exports = {
         // preventScriptInjection: true,
         contentSecurityPolicy: {
           "default-src": ["self"],
-          "connect-src": ["self", "data:", "*.uicdn.net", "*.producthunt.com"],
+          "connect-src": ["self", "data:", "*.ionos.space", "*.uicdn.net", "*.producthunt.com"],
           "font-src": ["self", "data:"],
           "frame-src": ["self", "data:", "*.youtube-nocookie.com"],
           "img-src": ["self", "data:", "*.ionos.space", "*.uicdn.net", "*.producthunt.com"],
