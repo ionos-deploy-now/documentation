@@ -16,7 +16,6 @@ runtime:
   cron-jobs:
     - command: my-cron-job-command
       schedule: 0 5 * * * # run every day at 5:00
-      mailto: me@mail.com # optional mail address to which the output of command is send
 ```
 
 A description of the crontab syntax that is required to define schedules can be found [here](https://www.adminschoice.com/crontab-quick-reference).
