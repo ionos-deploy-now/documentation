@@ -48,6 +48,25 @@ You can find other samples [here](https://github.com/phanan/htaccess#security) a
 
 [Password protection](https://httpd.apache.org/docs/current/howto/auth.html#gettingitworking) via basic authentication is technical possible. But the reference path to your `AuthUserFile` needs to be absolute. This information isn't public available in Deploy Now at the moment. We will provide a solution soon.
 
+<!-- ## Performance -->
+
+<!--
+## Pitfalls
+
+A collection of some common problems with .htaccess files.
+
+### .htaccess is not working
+
+1. First of all check that your `.htaccess` file is transferred. In order to do that you can lookup your latest Deploy Now workflow in GitHub Actions and view the output of your deployment. Alternatively you browse through the Deployment Viewer of Deploy Now to verify that the corresponding file exists.
+2. Just to be sure please verify that your file is named exactly in this way: `.htaccess`
+
+### Encoding
+
+HTTP/1.1 defined ISO-8859-1 as default charset. 
+
+-->
+<!-- ## Errors -->
+
 ## Templating .htaccess
 
 Some frameworks expect additional directives by default. For this case Deploy Now offers the opportunity to add a ```.htaccess.template``` in your ```.deploy-now/``` folder. The file itself works just like a normal .htaccess file and is simple copied to the root context of your web project. This ensures that all directives apply to all levels.
@@ -58,7 +77,7 @@ A list of directives for some commonly used frameworks.
 
 #### Laravel
 
-In Laravel the [entry point](https://laravel.com/docs/master/structure#the-public-directory) for all incoming requests is ```ìndex.php``` located in the ```/public``` directory. You need to adapt this entry point by redirecting all requests to this folder structure:
+In [Laravel](https://laravel.com/) the [entry point](https://laravel.com/docs/master/structure#the-public-directory) for all incoming requests is ```ìndex.php``` located in the ```/public``` directory. You need to adapt this entry point by redirecting all requests to this folder structure:
 
 ```
 # check that mod_rewrite is enabled
@@ -106,25 +125,14 @@ With Single Page Apps (SPAs) client-side routing has become very popular. Client
 </IfModule>
 ```
 
-<!-- ## Performance -->
+#### Nuxt
 
-<!--
-## Pitfalls
+[Nuxt v3](https://v3.nuxtjs.org/) is using [Native ES Modules](https://v3.nuxtjs.org/guide/going-further/esm/). The mime type ```*.mjs``` is not that popular so far. At the moment you have to add the type on your own. 
 
-A collection of some common problems with .htaccess files.
-
-### .htaccess is not working
-
-1. First of all check that your `.htaccess` file is transferred. In order to do that you can lookup your latest Deploy Now workflow in GitHub Actions and view the output of the deployment or you browse through the Deployment Viewer of Deploy Now to verify that the file exists.
-2. Just to be sure please verify that your file is named exactly in this way: `.htaccess`
-3. tbd --- AllowOverride
-
-
-
-### Encoding
-
-HTTP/1.1 defined ISO-8859-1 as default charset. 
-
-### Multiviews
--->
-<!-- ## Errors -->
+```
+# check that mod_mime is enabled
+<IfModule mod_mime.c>
+  # add support for ECMAScript modules
+  AddType text/javascript js mjs
+</IfModule>
+```
