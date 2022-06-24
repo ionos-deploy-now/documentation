@@ -2,8 +2,8 @@
 description: 'Deploy Now supports PHP app deployment including support for MariaDB and automated setups for Laravel and Symfony.'
 created: '2022-06-24'
 author: 'robert-schleinhege'
-header: '@assets/blog/filename.png'
-teaser: '@assets/blog/filename.png'
+header: '@assets/blog/DPNW_dev.to—Laravel@1x.png'
+teaser: '@assets/blog/DPNW_dev.to—Laravel@1x.png'
 tags:
     - tutorial
     - laravel
