@@ -1,5 +1,5 @@
 ---
-description: 'Deploy Now supports PHP app deployment including support for MariaDB and automated setups for Laravel and Symfony.'
+description: 'Learn how to build and deploy your Laravel App automatically with GitHub Actions and Deploy Now - in 3 simple steps. Deploy Now offers out of the box workflow automation and reliable hosting.'
 created: '2022-06-24'
 author: 'robert-schleinhege'
 header: '@assets/blog/DPNW_dev.to—Laravel@1x.png'
