@@ -17,7 +17,9 @@ Laravel is a much-loved, free PHP framework for developing web applications. Usi
 
 Now, the best way to round off a satisfying coding session without killing your creative spark is a ridiculously fast and simple deployment experience for testing and production.  
 
-Sound like something you could get on board with? Then this tutorial is for you. If you prefer video content, you can find a video tutorial for setting up a Laravel project [here](https://youtu.be/wo61ZoD_qpI?t=343).
+Sound like something you could get on board with? Then this tutorial is for you. If you prefer video content, you can find a video tutorial for setting up a Laravel project below.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/otSwpzsoZss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## What you need to get started
 
