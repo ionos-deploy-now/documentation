@@ -34,7 +34,7 @@ GitHub Actions automates, customises, and executes software deployment workflows
 
 Deploy Now’s setup assistant makes it possible to launch new projects in seconds, literally. Upfront scans of GitHub repositories collect data to intelligently produce out-of-the box configurations with tons of pre-filled data.
 
-##  The 3 steps to a next-level deployment experience
+##  The 4 steps to a next-level deployment experience
 
 1. **Sign up for Deploy Now and link it with your GitHub account.** Deploy Now will need access to the GitHub repository that you want to deploy from.   
 
