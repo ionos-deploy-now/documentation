@@ -67,15 +67,60 @@ HTTP/1.1 defined ISO-8859-1 as default charset.
 -->
 <!-- ## Errors -->
 
-## Templating .htaccess
+## Additional frameworks directives
 
-Some frameworks expect additional directives by default. For this case Deploy Now offers the opportunity to add a ```.htaccess.template``` in your ```.deploy-now/``` folder. The file itself works just like a normal .htaccess file and is simple copied to the root context of your web project. This ensures that all directives apply to all levels.
+Some frameworks need additional directives by default. Following you find a list of commonly used frameworks with helpful directives.
 
-### Frameworks that requires directives
+### Templating .htaccess
 
-A list of directives for some commonly used frameworks.
+Deploy Now offers a ```.htaccess``` templating for your deployment base directory. This is especially useful if your deployment build results in a subfolder structure which is located relative to your deployment base directory. In this case ```.deploy-now/.htaccess.template``` ensures directives that still apply to all levels. The file itself works just like a normal ```.htaccess``` file and is simply copied to your deployment base directory. 
 
-#### Laravel
+### Single Page Apps like Angular, ReactJS, Vue.js 
+
+With Single Page Apps (SPAs) client-side routing has become very popular. Client side routing is a type of routing where as the user navigates around the SPA no full page reload takes place. That's even the case when the page URL changes. Instead, JavaScript is used to update the URL and fetch and display new content. For that reason you need to ensure that your URLs will reach your router. Usually this is done by redirecting all requests to the entry point of your SPA:
+
+```
+# check that mod_negotiation is enabled
+<IfModule mod_negotiation.c>
+
+    # diable MultiViews to prevent the Apache behavior of indexing a directory
+    Options -MultiViews
+
+</IfModule>
+
+# check that mod_rewrite is enabled
+<IfModule mod_rewrite.c>
+
+    # enable the runtime rewrite engine
+    RewriteEngine On
+    RewriteBase /
+
+    # stop processing any other rule set if index.html is requested
+    RewriteRule ^index\.html$ - [L]
+
+    # route everything else to /index.html
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.html [L]
+
+</IfModule>
+```
+
+### Nuxt
+
+[Nuxt v3](https://v3.nuxtjs.org/) introduces [Native ES Modules](https://v3.nuxtjs.org/guide/going-further/esm/). The mime type ```*.mjs``` is not that popular so far. At the moment you have to add the mime type on your own. 
+
+```
+# check that mod_mime is enabled
+<IfModule mod_mime.c>
+
+    # add support for ECMAScript modules
+    AddType text/javascript js mjs
+
+</IfModule>
+```
+
+### Laravel
 
 In [Laravel](https://laravel.com/) the [entry point](https://laravel.com/docs/master/structure#the-public-directory) for all incoming requests is ```ìndex.php``` located in the ```/public``` directory. You need to adapt this entry point by redirecting all requests to this folder structure:
 
@@ -83,56 +128,15 @@ In [Laravel](https://laravel.com/) the [entry point](https://laravel.com/docs/ma
 # check that mod_rewrite is enabled
 <IfModule mod_rewrite.c>
 
-# enable the runtime rewrite engine
-RewriteEngine On
+    # enable the runtime rewrite engine
+    RewriteEngine On
 
-# serve existing files from /public folder as if they were in your base directory
-RewriteCond %{REQUEST_URI} !public/
-RewriteRule (.*) /public/$1 [L]
+    # serve existing files from /public folder as if they were in your base directory
+    RewriteCond %{REQUEST_URI} !public/
+    RewriteRule (.*) /public/$1 [L]
 
-# route everything else to /public/index.php
-RewriteRule ^ /public/index.php [L]
+    # route everything else to /public/index.php
+    RewriteRule ^ /public/index.php [L]
 
-</IfModule>
-```
-
-#### Single Page Apps like Angular, ReactJS, Vue.js 
-
-With Single Page Apps (SPAs) client-side routing has become very popular. Client side routing is a type of routing where as the user navigates around the SPA no full page reload takes place. That's even the case when the page URL changes. Instead, JavaScript is used to update the URL and fetch and display new content. For that reason you need to ensure that your URLs will reach your router. Usually this is done by redirecting all requests to the entry point of your SPA:
-
-
-```
-# check that mod_negotiation is enabled
-<IfModule mod_negotiation.c>
-  # diable MultiViews to prevent the Apache behavior of indexing a directory
-  Options -MultiViews
-</IfModule>
-
-# check that mod_rewrite is enabled
-<IfModule mod_rewrite.c>
-
-  # enable the runtime rewrite engine
-  RewriteEngine On
-  RewriteBase /
-
-  # stop processing any other rule set if index.html is requested
-  RewriteRule ^index\.html$ - [L]
-
-  # route everything else to /index.html
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /index.html [L]
-</IfModule>
-```
-
-#### Nuxt
-
-[Nuxt v3](https://v3.nuxtjs.org/) is using [Native ES Modules](https://v3.nuxtjs.org/guide/going-further/esm/). The mime type ```*.mjs``` is not that popular so far. At the moment you have to add the type on your own. 
-
-```
-# check that mod_mime is enabled
-<IfModule mod_mime.c>
-  # add support for ECMAScript modules
-  AddType text/javascript js mjs
 </IfModule>
 ```
