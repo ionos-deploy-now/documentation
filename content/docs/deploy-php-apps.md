@@ -43,6 +43,10 @@ PHP Projects can be added to your Deploy Now membership on a monthly basis. The 
 
 To create a PHP Project in Deploy Now, click **add project** and select **PHP Project** after the framework detection. The [setup wizard](/docs/from-repo/) guides you through the build, deployment and runtime configuration. Tutorials showing how projects can be set up on the command line can be found [here](docs/from-cmd-line). If you don't have a project at hand, you can deploy one of our [sample projects](/docs/framework-samples). Additional staging deployments can be created simply by opening new branches in the repository and toggle them on for staging in the project details page.
 
+This video tutorial provides a comprehensive overview of how to create and manage a PHP application, using Laravel as an example.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/otSwpzsoZss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Managing an existing PHP Project after the project creation
 
 Deploy Now follows the approach to prefill configuration files based on the inputs from the project creation wizard, which can be later on edited directly in the repository.
