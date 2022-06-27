@@ -81,7 +81,7 @@ jobs:
           node-version: 14.x
       - name: Render templates
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: ionos-deploy-now/template-renderer-action@feature/improvements
+        uses: ionos-deploy-now/template-renderer-action@v1
         with:
           secrets: |
             mail:
