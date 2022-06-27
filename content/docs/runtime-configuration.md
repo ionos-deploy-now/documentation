@@ -53,7 +53,7 @@ If you want to create new runtime secrets, you need to add these to [GitHub secr
 ``` yaml
  - name: Render templates
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: ionos-deploy-now/template-renderer-action@feature/improvements
+        uses: ionos-deploy-now/template-renderer-action@v1
         with:
           secrets: |
             mail:
