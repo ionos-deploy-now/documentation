@@ -16,19 +16,17 @@ A .htaccess file is a common way to make configuration changes on per-directory 
 
 ## Redirects and Rewrites
 
-A redirect or forward directive instructs the client to switch URLs and navigate to the destination of the directive. The class of [3xx](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#3xx_redirection) - HTTP status codes indicates such redirects. This means that the client must take an additional action to complete the request. Your browser perform this action automatically and you can notice this by a change to the new URL of the directive in your browser bar. Redirects are often used to redirect an old path to a new one or make content available under more than one URL.
+A **redirect** or **forward directive** instructs the client to switch URLs and navigate to the destination of the directive. The class of [3xx](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#3xx_redirection) - HTTP status codes indicates such redirects. This means that the client must take an additional action to complete the request. Your browser perform this action automatically and you can notice this by a change to the new URL of the directive in your browser bar. Redirects are often used to redirect an old path to a new one or make content available under more than one URL.
 
-In contrast, a rewrite directive instructs the server to serve the content of the directive destination at the original URL. The browser won't notice anything of this directive. This kind of technique grew in popularity for client-side routing in Single Page Applications (SPAs) where all requests are handled via `index.html`. 
+In contrast, a **rewrite directive** instructs the server to serve the content of the directive destination at the original URL. The browser won't notice anything of this directive. This kind of technique grew in popularity for client-side routing in Single Page Applications (SPAs) where all requests are handled via `index.html`. You will need the following [directives](#single-page-apps-like-angular-reactjs-vuejs) to get your SPA up and running.
 
-**Notice** the following [directives](#single-page-apps-like-angular-reactjs-vuejs) to get your SPA up and running.
-
-You find more sample snippets for redirects or rewrites [here](https://github.com/phanan/htaccess#rewrite-and-redirection) and you can use our [.htaccess sample](https://github.com/ionos-deploy-now/.htaccess-samples) as playground.
+**Note**: You find more sample snippets for redirects or rewrites [here](https://github.com/phanan/htaccess#rewrite-and-redirection) and you can use our [.htaccess sample](https://github.com/ionos-deploy-now/.htaccess-samples) as playground.
 
 ## Security
 
 Choosing the right configuration can be a great booster for web security and the good news is, it's much easier as you probably think. The following paragraph should give you some ideas and further links.
 
-### HTTP Security Headers 
+### HTTP Security Headers
 
 HTTP Security Headers are a subset of HTTP headers and are exchanged between a web client and a server to specify the security-related details of HTTP communication. Some HTTP headers that are indirectly related to privacy and security can also be considered HTTP security headers. By enabling suitable headers in web applications and web server settings, you can prevent security vulnerabilities like Cross-Site Scripting, Clickjacking, Information disclosure and much more.
 
@@ -91,7 +89,7 @@ Enable [gzip](https://en.wikipedia.org/wiki/Gzip) and [brotli](https://en.wikipe
 
     RewriteRule "\.html\.br$" "-" [T=text/html,E=no-brotli:1,E=no-gzip:1]
     RewriteRule "\.css\.br$" "-" [T=text/css,E=no-brotli:1,E=no-gzip:1]
-    RewriteRule "\.js\.br$"  "-" [T=text/javascript,E=no-brotli:1,E=no-gzip:1]
+    RewriteRule "\.js\.br$" "-" [T=text/javascript,E=no-brotli:1,E=no-gzip:1]
 
     <FilesMatch "(\.html\.br|\.js\.br|\.css\.br)$">
       Header append Content-Encoding br
@@ -104,7 +102,7 @@ Enable [gzip](https://en.wikipedia.org/wiki/Gzip) and [brotli](https://en.wikipe
 
     RewriteRule "\.html\.gz$" "-" [T=text/html,E=no-brotli:1,E=no-gzip:1]
     RewriteRule "\.css\.gz$" "-" [T=text/css,E=no-brotli:1,E=no-gzip:1]
-    RewriteRule "\.js\.gz$"  "-" [T=text/javascript,E=no-brotli:1,E=no-gzip:1]
+    RewriteRule "\.js\.gz$" "-" [T=text/javascript,E=no-brotli:1,E=no-gzip:1]
 
     <FilesMatch "(\.html\.gz|\.js\.gz|\.css\.gz)$">
       Header append Content-Encoding gzip
@@ -120,7 +118,7 @@ Enable [gzip](https://en.wikipedia.org/wiki/Gzip) and [brotli](https://en.wikipe
                                   text/xml \
                                   application/javascript \
                                   application/json \                                      
-                                  application/xml \
+                                  application/xml
 </IfModule>
 ```
 
