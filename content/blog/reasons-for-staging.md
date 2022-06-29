@@ -14,11 +14,11 @@ tags:
 
 In software development, staging is the process of testing your code in a live environment before pushing it to production. A staging environment is pretty much a replica of a production environment, so you can see exactly what users will experience once you release the code. Development teams often work with multiple instances within three types of environments: 
 
-**Local environment** – every developer has one. Here, code is committed to various branches of development streams and previewed locally. 
+- **Local environment** – every developer has one. Here, code is committed to various branches of development streams and previewed locally. 
 
-**Staging environment** – runs code in a live environment for testing purposes. Developers might stage release candidates as they approach rollout, or much earlier in the development phase to verify git pushes. Stages can be connected directly to the main branch, or to feature branches which are not yet merged into master.
+- **Staging environment** – runs code in a live environment for testing purposes. Developers might stage release candidates as they approach rollout, or much earlier in the development phase to verify git pushes. Stages can be connected directly to the main branch, or to feature branches which are not yet merged into master.
 
-**Production environment** – runs the live version of a project.	 
+- **Production environment** – runs the live version of a project.	 
 
 ## Why development teams often skip the stage 
 
