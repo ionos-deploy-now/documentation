@@ -2,8 +2,8 @@
 description: 'In software development, staging is the process of testing your code in a live environment before pushing it to production. Learn how using staging workflows can improve your workflows and make your stakeholders happy.'
 created: '2022-06-29'
 author: 'robert-schleinhege'
-header: 'DPNW_dev.to— Staging@2x.png'
-teaser: 'DPNW_dev.to— Staging@2x.png'
+header: '@assets/blog/DPNW_dev.to— Staging@2x.png'
+teaser: '@assets/blog/DPNW_dev.to— Staging@2x.png'
 tags:
     - staging
     - development
