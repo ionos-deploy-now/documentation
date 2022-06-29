@@ -106,13 +106,11 @@ jobs:
         uses: ionos-deploy-now/deploy-to-ionos-action@v1
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
-          bootstrap-deploy: ${{ steps.project.outputs.bootstrap-deploy }}
           branch-id: ${{ steps.project.outputs.branch-id }}
           dist-folder: ./
           project: ${{ secrets.IONOS_PROJECT_ID }}
-          remote-host: ${{ steps.project.outputs.remote-host }}
           service-host: api-eu.ionos.space
-          storage-quota: ${{ steps.project.outputs.storage-quota }}
+          runtime-placeholder-files: ${{ steps.template.outputs.runtime-placeholder-files }}
 
 ```
 
