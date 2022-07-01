@@ -26,8 +26,8 @@ The good news is that Deploy Now does all that for you and more. Deploy Now is a
 Ready for your fastest Jekyll deployment ever? Let’s go.
 ## What you need to get started
 
-A static Jekyll site in a GitHub repository. If you just want to see how everything works first, you can simply clone [our starter](https://github.com/ionos-deploy-now/hello-jekyll).
-A [Deploy Now account](https://ionos.space/sign-up) 
+- A static Jekyll site in a GitHub repository. If you just want to see how everything works first, you can simply clone [our starter](https://github.com/ionos-deploy-now/hello-jekyll).
+- A [Deploy Now account](https://ionos.space/sign-up) 
 
 
 
@@ -61,14 +61,6 @@ If Deploy Now has successfully detected Jekyll, it will add the two commands sho
 4. Finally, check any settings you have made and click on **create project**. You’ll be redirected to the project detail page while your site is being built and deployed in the background.
 
 There you have it! Your site is now live on green, DDoS-protected web servers, located in IONOS data centres in Europe and North America. Enjoy adding your own [custom domain](https://docs.ionos.space/docs/domain-tls/), monitoring the [page traffic](https://docs.ionos.space/docs/visitor-statistics/) or creating additional [staging environments](https://docs.ionos.space/docs/staging-deployments/).
-
-
-
-
-
-
-
-
 
 
 
