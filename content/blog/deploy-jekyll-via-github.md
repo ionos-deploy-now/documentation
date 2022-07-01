@@ -1,12 +1,12 @@
 ---
-description: 'Learn how to build and deploy your Laravel App automatically with GitHub Actions and Deploy Now - in 3 simple steps. Deploy Now offers out of the box workflow automation and reliable hosting.'
-created: '2022-06-24'
+description: 'Learn how to build and deploy static websites with Jekyll instantly via GitHub to highly available hosting. Jekyll transforms plain text into static websites and blogs. Written in Ruby, Jekyll is a pioneer among static site generators.'
+created: '2022-07-01'
 author: 'robert-schleinhege'
-header: '@assets/blog/laravel-header2x.png'
-teaser: '@assets/blog/laravel-header2x.png'
+header: ''
+teaser: ''
 tags:
     - tutorial
-    - laravel
+    - jekyll
     - github
     
 ---
