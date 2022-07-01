@@ -13,15 +13,9 @@ tags:
 
 # Tutorial: Fastest ever Jekyll deployments via GitHub
 
-[Jekyll](https://jekyllrb.com/) transforms plain text into static websites and blogs. Written in Ruby, Jekyll is a pioneer among static site generators. And a terrific one, too.
+[Jekyll](https://jekyllrb.com/) transforms plain text into static websites and blogs. Written in Ruby, Jekyll is a pioneer among static site generators. And a terrific one, too. For starters, you get to focus on your content and your content alone. No need to bother with databases, comment moderation and updates. What you put in – whether it’s CSS, HTML or Markdown – comes out as a ready-to-deploy static site in no time. And being fully-blog aware, Jekyll is the perfect companion to quickly launch or import blogs without programming knowledge.
 
-For starters, you get to focus on your content and your content alone. No need to bother with databases, comment moderation and updates. What you put in – whether it’s CSS, HTML or Markdown – comes out as a ready-to-deploy static site in no time.
-
-And being fully-blog aware, Jekyll is the perfect companion to quickly launch or import blogs without programming knowledge.
-
-What’s not so great about deploying your content is having to worry about hosting. Oh, and having to repeat the same mundane deployment steps over and over again with every merge and change. 
-
-The good news is that Deploy Now does all that for you and more. Deploy Now is a build tool created by developers for developers, bringing together modern Git workflows and IONOS infrastructure. It’s simple enough for pure content writers but also suitable for professional web app development.
+What’s not so great about deploying your content is having to worry about hosting. Oh, and having to repeat the same mundane deployment steps over and over again with every merge and change. The good news is that Deploy Now does all that for you and more. Deploy Now is a build tool created by developers for developers, bringing together modern Git workflows and IONOS infrastructure. It’s simple enough for pure content writers but also suitable for professional web app development.
 
 Ready for your fastest Jekyll deployment ever? Let’s go.
 
