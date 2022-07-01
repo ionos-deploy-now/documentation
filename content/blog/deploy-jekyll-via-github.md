@@ -24,14 +24,11 @@ What’s not so great about deploying your content is having to worry about host
 The good news is that Deploy Now does all that for you and more. Deploy Now is a build tool created by developers for developers, bringing together modern Git workflows and IONOS infrastructure. It’s simple enough for pure content writers but also suitable for professional web app development.
 
 Ready for your fastest Jekyll deployment ever? Let’s go.
+
 ## What you need to get started
 
 - A static Jekyll site in a GitHub repository. If you just want to see how everything works first, you can simply clone [our starter](https://github.com/ionos-deploy-now/hello-jekyll).
 - A [Deploy Now account](https://ionos.space/sign-up) 
-
-
-
-
 
 ## Deploy Now and GitHub Actions – a match made in heaven
 
@@ -52,11 +49,10 @@ To be specific, Deploy Now scans your repo and presents you with a prefilled wor
 3. Review the suggested build steps. For Jekyll, Deploy Now will preselect the Ruby programming language alongside build commands and a publishing directory.
 ![Jekyll build steps](/jekyll-buildsteps.png)
 :::tip
-Good to know: Jekyll projects require a bundler build step. Bundler manages  packages (gems) in Ruby – the programming language of Jekyll - and ensures they are available in the correct version for your project.
-
+Jekyll projects require a bundler build step. Bundler manages  packages (gems) in Ruby – the programming language of Jekyll - and ensures they are available in the correct version for your project.
 These dependencies are defined in a  gemfile containing all the gems required for a website or application. Bundler then takes this list, installs the respective packages, and makes them available to your project. 
 :::
-If Deploy Now has successfully detected Jekyll, it will add the two commands shown in the screenshot to your build workflow. "bundle install" installs the defined dependencies from the Gemfile whereas "bundle exec jekyll build" generates the HTML and CSS files of your website and copies the result to the  _site folder.
+If Deploy Now has successfully detected Jekyll, it will add the two commands shown in the screenshot to your build workflow. `bundle install` installs the defined dependencies from the Gemfile whereas `bundle exec jekyll build` generates the HTML and CSS files of your website and copies the result to the  *_site folder*.
 
 4. Finally, check any settings you have made and click on **create project**. You’ll be redirected to the project detail page while your site is being built and deployed in the background.
 
