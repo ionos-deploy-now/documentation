@@ -50,14 +50,11 @@ To be specific, Deploy Now scans your repo and presents you with a prefilled wor
 2. Select the repository with that Jekyll site you want to publish.
 
 3. Review the suggested build steps. For Jekyll, Deploy Now will preselect the Ruby programming language alongside build commands and a publishing directory.
-
-
 :::tip
 Good to know: Jekyll projects require a bundler build step. Bundler manages  packages (gems) in Ruby – the programming language of Jekyll - and ensures they are available in the correct version for your project.
 
 These dependencies are defined in a  gemfile containing all the gems required for a website or application. Bundler then takes this list, installs the respective packages, and makes them available to your project. 
 :::
-
 If Deploy Now has successfully detected Jekyll, it will add the two commands shown in the screenshot to your build workflow. "bundle install" installs the defined dependencies from the Gemfile whereas "bundle exec jekyll build" generates the HTML and CSS files of your website and copies the result to the  _site folder.
 
 4. Finally, check any settings you have made and click on **create project**. You’ll be redirected to the project detail page while your site is being built and deployed in the background.
