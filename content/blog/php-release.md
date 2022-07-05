@@ -30,7 +30,7 @@ Learn how to set up your workflow with this [step-by-step guide](/docs/from-repo
 
 ## Smart setup for 30+ frameworks
 
-![Framework Detection](/detection.gif)
+![Framework Detection](/02_From_sample_detection_flat.gif)
 
 We’ve fundamentally updated our detection algorithm to make setting up automated workflows in Deploy Now as seamless as possible. The algorithm scans your repository for the frameworks you're using and the build steps you need, then prefills the setup wizard. These inputs, and any changes you make, are used to set up a GitHub Actions workflow. You can modify your workflow at any point. 
 
