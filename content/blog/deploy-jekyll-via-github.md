@@ -8,7 +8,6 @@ tags:
     - tutorial
     - jekyll
     - github
-    
 ---
 
 # Tutorial: Fastest ever Jekyll deployments via GitHub

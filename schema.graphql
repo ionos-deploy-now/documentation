@@ -4,6 +4,21 @@ schema {
     query: Query
 }
 
+"Add fields from field values."
+directive @infer on OBJECT
+
+"Add reference resolver."
+directive @reference(
+    "Reference node by a custom field value."
+    by: String = "id"
+) on FIELD_DEFINITION
+
+"Return value from another field."
+directive @proxy(from: String) on FIELD_DEFINITION
+
+"Paginate a connection in a query. Only supported in page-query."
+directive @paginate on FIELD
+
 interface Node {
     id: ID!
 }
@@ -50,8 +65,22 @@ type MarkdownPage implements Node {
     ): String
     fileInfo: MarkdownPage_FileInfo
     github: String
-    header: String
+    header(
+        "Background color for 'contain'"
+        background: String,
+        "Blur level for base64 string"
+        blur: Int,
+        "Fit"
+        fit: ImageFit = cover,
+        "Height"
+        height: Int,
+        "Quality (default: 75)"
+        quality: Int,
+        "Width"
+        width: Int
+    ): Image
     headings(depth: RemarkHeadingLevels, stripTags: Boolean = true): [RemarkHeading]
+    hidden: Boolean
     id: ID!
     image: String
     likes: String
@@ -62,7 +91,20 @@ type MarkdownPage implements Node {
     role: String
     sidebar: String
     tags: [String]
-    teaser: String
+    teaser(
+        "Background color for 'contain'"
+        background: String,
+        "Blur level for base64 string"
+        blur: Int,
+        "Fit"
+        fit: ImageFit = cover,
+        "Height"
+        height: Int,
+        "Quality (default: 75)"
+        quality: Int,
+        "Width"
+        width: Int
+    ): Image
     timeToRead(
         "Words per minute"
         speed: Int = 230
@@ -182,7 +224,7 @@ type Query {
         nullable: Boolean = false,
         path: String
     ): MarkdownPage
-    metaData: Metadata @deprecated(reason : "Use Query.metadata instead.")
+    metaData: Metadata @deprecated(reason: "Use Query.metadata instead.")
     metadata: Metadata
     page(path: String!): Page
 }
@@ -225,6 +267,15 @@ enum SortOrder {
 enum TypeName {
     MarkdownPage
 }
+
+scalar Date
+
+scalar File
+
+scalar Image
+
+"The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf)."
+scalar JSON
 
 input BelongsToFilterInput {
     id: IDQueryOperatorInput
@@ -306,6 +357,21 @@ input IDQueryOperatorInput {
     nin: [ID]
 }
 
+input ImageQueryOperatorInput {
+    "Filter by property of (strict) equality."
+    eq: Image
+    "Filter nodes that contain the field, including nodes where the field value is null."
+    exists: Boolean
+    "Filter by property matching any of the provided values."
+    in: [Image]
+    "Filter by property not equal to provided value."
+    ne: Image
+    "Filter by property not matching any of the provided values."
+    nin: [Image]
+    "Filter by property matching provided regular expression."
+    regex: String
+}
+
 input JSONQueryOperatorInput {
     "Filter by property of (strict) equality."
     eq: JSON
@@ -332,7 +398,8 @@ input MarkdownPageFilterInput {
     excerpt: StringQueryOperatorInput
     fileInfo: MarkdownPage_FileInfoFilterInput
     github: StringQueryOperatorInput
-    header: StringQueryOperatorInput
+    header: ImageQueryOperatorInput
+    hidden: BooleanQueryOperatorInput
     id: IDQueryOperatorInput
     image: StringQueryOperatorInput
     likes: StringQueryOperatorInput
@@ -343,7 +410,7 @@ input MarkdownPageFilterInput {
     role: StringQueryOperatorInput
     sidebar: StringQueryOperatorInput
     tags: StringListQueryOperatorInput
-    teaser: StringQueryOperatorInput
+    teaser: ImageQueryOperatorInput
     title: StringQueryOperatorInput
 }
 
@@ -402,13 +469,3 @@ input TypeNameQueryOperatorInput {
     "Filter by property not matching any of the provided values."
     nin: [TypeName]
 }
-
-
-scalar Date
-
-"The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf)."
-scalar JSON
-
-scalar File
-
-scalar Image

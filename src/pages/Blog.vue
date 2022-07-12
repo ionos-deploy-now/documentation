@@ -32,6 +32,7 @@ query {
         tags
         author
         createdAt
+        hidden
       }
     }
   }
@@ -49,6 +50,7 @@ export default {
     sortedBlogPosts() {
       return this.$page.allMarkdownPage.edges
         .map(edge => edge.node)
+        .filter(node => !node.hidden)
         .sort((a, b) => b.createdAt - a.createdAt);
     },
     groupedBlogPosts() {
