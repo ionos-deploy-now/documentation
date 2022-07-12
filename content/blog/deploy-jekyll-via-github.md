@@ -2,8 +2,8 @@
 description: 'Learn how to build and deploy static websites with Jekyll instantly via GitHub to highly available hosting. Jekyll transforms plain text into static websites and blogs. Written in Ruby, Jekyll is a pioneer among static site generators.'
 created: '2022-07-01'
 author: 'robert-schleinhege'
-header: ''
-teaser: ''
+header: '@assets/blog/DPNW_dev.to—jekyll@2x.png'
+teaser: '@assets/blog/DPNW_dev.to—jekyll@2x.png'
 tags:
     - tutorial
     - jekyll
