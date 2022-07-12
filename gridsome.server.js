@@ -28,6 +28,7 @@ module.exports = function (api) {
     // Set optional header/teaser images
     options.header = options.header ? resolveAlias(options.header) : null;
     options.teaser = options.teaser ? resolveAlias(options.teaser) : null;
+    options.hidden = options.hidden ?? false;
     return options;
   });
 };
