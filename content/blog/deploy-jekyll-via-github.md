@@ -21,7 +21,7 @@ Ready for your fastest Jekyll deployment ever? Let’s go.
 ## What you need to get started
 
 - A static Jekyll site in a GitHub repository. If you just want to see how everything works first, you can simply clone [our starter](https://github.com/ionos-deploy-now/hello-jekyll).
-- A [Deploy Now account](https://ionos.space/sign-up) 
+- A [Deploy Now account](https://www.ionos.com/hosting/deploy-now?utm_source=deploy-now-docs&utm_medium=blog&utm_campaign=jekyll#pricing) 
 
 ## Deploy Now and GitHub Actions – a match made in heaven
 
