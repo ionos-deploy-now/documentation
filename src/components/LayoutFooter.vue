@@ -16,21 +16,21 @@
       </div>
       <div class="space-y-4">
         <div class="font-bold">Customer Shops</div>
-        <a href="https://www.ionos.com/hosting/deploy-now" rel="noreferrer" target="_blank">United States</a>
-        <a href="https://www.ionos.co.uk/hosting/deploy-now" rel="noreferrer" target="_blank">United Kingdom</a>
-        <a href="https://www.ionos.de/hosting/deploy-now" rel="noreferrer" target="_blank">Germany</a>
-        <a href="https://www.ionos.ca/hosting/deploy-now" rel="noreferrer" target="_blank">Canada</a>
-        <a href="https://www.ionos.es/alojamiento/deploy-now" rel="noreferrer" target="_blank">Spain</a>
-        <a href="https://www.ionos.fr/hebergement/deploy-now" rel="noreferrer" target="_blank">France</a>
-        <a href="https://www.ionos.it/hosting/deploy-now" rel="noreferrer" target="_blank">Italy</a>
-        <a href="https://www.ionos.mx/alojamiento/deploy-now" rel="noreferrer" target="_blank">Mexico</a>
+        <a href="https://www.ionos.com/hosting/deploy-now?utm_source=deploy-now-docs&utm_medium=footer&utm_campaign=shop-links" rel="noreferrer" target="_blank">United States</a>
+        <a href="https://www.ionos.co.uk/hosting/deploy-now?utm_source=deploy-now-docs&utm_medium=footer&utm_campaign=shop-links" rel="noreferrer" target="_blank">United Kingdom</a>
+        <a href="https://www.ionos.de/hosting/deploy-now?utm_source=deploy-now-docs&utm_medium=footer&utm_campaign=shop-links" rel="noreferrer" target="_blank">Germany</a>
+        <a href="https://www.ionos.ca/hosting/deploy-now?utm_source=deploy-now-docs&utm_medium=footer&utm_campaign=shop-links" rel="noreferrer" target="_blank">Canada</a>
+        <a href="https://www.ionos.es/alojamiento/deploy-now?utm_source=deploy-now-docs&utm_medium=footer&utm_campaign=shop-links" rel="noreferrer" target="_blank">Spain</a>
+        <a href="https://www.ionos.fr/hebergement/deploy-now?utm_source=deploy-now-docs&utm_medium=footer&utm_campaign=shop-links" rel="noreferrer" target="_blank">France</a>
+        <a href="https://www.ionos.it/hosting/deploy-now?utm_source=deploy-now-docs&utm_medium=footer&utm_campaign=shop-links" rel="noreferrer" target="_blank">Italy</a>
+        <a href="https://www.ionos.mx/alojamiento/deploy-now?utm_source=deploy-now-docs&utm_medium=footer&utm_campaign=shop-links" rel="noreferrer" target="_blank">Mexico</a>
       </div>
       <div class="space-y-4">
         <div class="font-bold">Company</div>
-        <a href="https://www.ionos.com/about" rel="noreferrer" target="_blank">
+        <a href="https://www.ionos.com/about?utm_source=deploy-now-docs&utm_medium=footer&utm_campaign=shop-links" rel="noreferrer" target="_blank">
           About IONOS
         </a>
-        <a href="https://www.ionos.com/agency-partner" rel="noreferrer" target="_blank">
+        <a href="https://www.ionos.com/agency-partner?utm_source=deploy-now-docs&utm_medium=footer&utm_campaign=shop-links" rel="noreferrer" target="_blank">
           IONOS Agency Partner Programm
         </a>
         <a href="https://www.ionos.com/terms-gtc/general-terms-and-conditions/" rel=”noreferrer” target="_blank">
