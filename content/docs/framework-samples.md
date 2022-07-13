@@ -8,7 +8,7 @@ editable: true
 
 # From sample
 
-Looking for a quick start? Simply click on one of the "Deploy to IONOS buttons" below and we set up a very simple sample project for you. You can use this as a starting point to further work with the selected framework. 
+Looking for a quick start? [Sign up for Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) and simply click on one of the "Deploy to IONOS buttons" below - and we set up a very simple sample project for you. You can use this as a starting point to further work with the selected framework. 
 
 *Not what you are looking for? [Start from the command line](/docs/from-cmd-line/) or [deploy an existing repository](/docs/from-repo/).*
 
