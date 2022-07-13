@@ -16,7 +16,7 @@ Allready have an existing project you wish to set up? Simply create a new deploy
 
 1. **Connect your GitHub account** 
 
-We'll need your permission to install the [IONOS Deploy Now App](https://github.com/apps/ionos-deploy-now) to your repositories. You can either grant access to selected or all repositories in your account. You can edit or revoke these permissions any time.
+After you have [signed up for Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides), we'll need your permission to install the [IONOS Deploy Now App](https://github.com/apps/ionos-deploy-now) to your repositories. You can either grant access to selected or all repositories in your account. You can edit or revoke these permissions any time.
     
 2. **Select your deployment source**
 
