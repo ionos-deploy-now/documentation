@@ -24,7 +24,7 @@ Sound like something you could get on board with? Then this tutorial is for you.
 ## What you need to get started
 
 - An existing Laravel app in a GitHub repository. If you just want to see how everything works first before using your own projects, you can clone our [starter repo](https://github.com/ionos-deploy-now/laravel-starter) or create an example app from the [command line](https://laravel.com/docs/9.x/installation#getting-started-on-macos). 
-- A [Deploy Now account](https://ionos.space/sign-up) with a PHP Project. More on this soon.
+- A [Deploy Now account](https://www.ionos.com/hosting/deploy-now?utm_source=deploy-now-docs&utm_medium=blog&utm_campaign=laravel-guide#pricing) with a PHP Project. More on this soon.
 
 Side note: It makes sense to check and test commits to your app on a local machine first before pushing it to the repo. For this, Laravel recommends Sail, a light-weight CLI to start Laravel apps and side-containers (database, mail server, etc.) within a local docker installation.
 
