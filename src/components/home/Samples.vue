@@ -20,7 +20,7 @@
           <g-link class="btn btn-primary" to="/docs/framework-samples/">
             {{ $t('home-samples.sample-button') }}
           </g-link>
-          <a class="btn btn-secondary border-ui-border" href="https://ionos.space">
+          <a class="btn btn-secondary border-ui-border" href="https://www.ionos.com/hosting/deploy-now?utm_source=deploy-now-docs&utm_medium=home&utm_campaign=button#pricing">
             <ExternalLinkIcon class="icon" decorative />
             {{ $t('home-samples.sign-up-button') }}
           </a>
