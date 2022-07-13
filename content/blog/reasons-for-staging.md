@@ -52,7 +52,7 @@ There's no crystal ball showing project managers how far you are with the code o
 Deploy Now is a build tool created by developers for developers for building and hosting static site generators, PHP apps and single page applications on custom engineered IONOS infrastructure. 
 Create a feature branch locally, push it to staging, view your code live, merge to production and automatically shut down the staging environment. 
 
-That's how easy staging with [Deploy Now](https://www.ionos.com/hosting/deploy-now) is.  
+That's how easy staging with [Deploy Now](https://www.ionos.com/hosting/deploy-now?utm_source=deploy-now-docs&utm_medium=blog&utm_campaign=staging-reasons) is.  
 
 Every Deploy Now package offers staging branches as SSL-secured preview URLs. Share these URLs with clients and team members or use them to check your code on different devices and browsers. 
 
