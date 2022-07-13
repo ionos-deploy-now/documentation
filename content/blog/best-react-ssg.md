@@ -62,7 +62,7 @@ kick-start your creativity.
 As you can see, Gatsby is a pretty powerful React framework. It's important to remember though, that Gatsby is only
 useful for certain kinds of websites and applications. I've included a few different examples below ...
 
-### Use cases / Examples
+### Use cases / examples
 
 Gatsby is great for sites that have a large number of pages such as blogs, news sites, documentation portals, and things
 of that nature. Whether it's a single page or 10,000 pages, Gatsby makes creating them easier than ever. Here are a few
@@ -72,7 +72,7 @@ noteworthy sites that were built using Gatsby:
 - [reactjs.org](https://reactjs.org)
 - [affirm.com](https://affirm.com)
 
-### Deploying using IONOS Deploy Now
+### Deploying using [IONOS Deploy Now](https://www.ionos.com/hosting/deploy-now?utm_source=deploy-now-docs&utm_medium=blog&utm_campaign=react-ssg-comparison)
 
 1) Create a new site by entering the following commands in your terminal:
 
@@ -231,7 +231,7 @@ then Next.js is definitely worth looking into. Some of the biggest companies in 
 its ease of use and scalability. If you're interested in learning more about Next.js, make sure you check
 out: https://nextjs.org/.
 
-### Deploy via Deploy Now from IONOS
+### Deploy via [Deploy Now](https://www.ionos.com/hosting/deploy-now?utm_source=deploy-now-docs&utm_medium=blog&utm_campaign=react-ssg-comparison) from IONOS
 
 1) Create a new site locally by entering the following commands into your terminal:
 
