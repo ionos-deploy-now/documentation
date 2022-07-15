@@ -5,6 +5,8 @@ author: 'robert-schleinhege'
 tags:
     - webinar
     - jamstack
+hidden: true
+
 ---
 
 # Webinar: The comeback of the static web 
