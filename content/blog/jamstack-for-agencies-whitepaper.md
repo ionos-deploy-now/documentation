@@ -5,8 +5,7 @@ author: 'robert-schleinhege'
 tags:
     - guide
     - jamstack
-hidden: true
-
+    
 ---
 
 # Whitepaper: Build client websites with Jamstack
@@ -41,5 +40,5 @@ US version: [Download](https://resources.ionos.com/hubfs/Jamstack/Create%20clien
 
 UK version: [Download](	https://resources.ionos.com/hubfs/Jamstack/UK/Create_client_websites_with_the_Jamstack.pdf)
 
-DE version: [Download](https://resources.ionos.com/hubfs/Jamstack/Kundenwebsites%20mit%20dem%20Jamstack%20erstellen.pdf)
+
 
