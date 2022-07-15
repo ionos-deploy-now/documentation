@@ -17,7 +17,7 @@ Are you still using a monolithic web architecture for your client projects? Lear
 
 ## Included in the whitepaper 
 
-### Common issues when working with convetional web architectures and CMS
+### Common issues when working with conventional web architectures and CMS
 Most of the conventional CMS-based websites use the LAMP-Stack, and acronym for Linux as the operating system, Apache as the webserver technology, MySQL for databases and PHP as the programming language. The key bottleneck of this setup is the database, where content like images and text are stored. Everytime a user request is send to the webserver many database queries and results are passed trough a multi layered system - before the user receives a first response. This causes long load times, high resource consumption and limited scalability. While the race for good rankings is becoming tougher and tougher, these disadvantages can get you behind competition. In addition, CMS and their plugins need to be updated regularly to avoid security vulnarabilites resulting in never ending maintenance of client projects. 
 
 ### To a better architecture with prerendering and decoupling 
