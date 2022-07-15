@@ -5,6 +5,8 @@ author: 'robert-schleinhege'
 tags:
     - guide
     - jamstack
+hidden: true
+
 ---
 
 # Whitepaper: Build client websites with Jamstack
