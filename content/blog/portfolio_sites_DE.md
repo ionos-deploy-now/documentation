@@ -20,7 +20,7 @@ title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; cli
 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-## Unsere Tipps für Ihre Portfoliowebsite
+## Unsere Tipps für Ihre Portfolio-Website
 ### Zeigen Sie sich von Ihrer kreativsten und besten Seite
 Wer auch immer sich Ihr Portfolio anschaut, möchte auf keinen Fall genau dasselbe sehen, was sie auch schon auf anderen Portfolio-Seiten gesehen haben. Zeigen Sie also auf jeden Fall Ihre origenellsten, modernsten und einzigartigsten Projekte.
 
