@@ -5,7 +5,7 @@ author: 'robert-schleinhege'
 tags:
     - webinar
     - jamstack
-hidden: false
+hidden: true
 
 ---
 
