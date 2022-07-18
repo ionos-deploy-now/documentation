@@ -26,7 +26,7 @@ Wer auch immer sich Ihr Portfolio anschaut, möchte auf keinen Fall genau dassel
 Natürlich muss man irgendwo anfangen. Wenn Sie noch nicht so viele eigene Projekte umgesetzt haben, versuchen Sie trotzdem nur die auszuwählen, auf die Sie besonders stolz sind. Das Gleiche gilt natürlich für den Fall, dass Sie schon sehr viele Projekte umgesetzt haben. Versuchen Sie hier Projekte anhand eines roten Fadens auszuwählen. Also wählen Sie z.B. Projekte gruppiert nach Kundenanforderungen oder verwendeten Technologien aus.
 
 ### Testimonials
-Sollten Sie bereits auf eine ganze Reihe zufriedener Kunden zurückblicken, dann lassen Sie sich von Ihnen empfehlen. Testimonials sind eine hervorragende Art zu zeigen, dass ehemalige Kunden von Ihrer Arbeit begeistert sind. 
+Sollten Sie bereits auf eine ganze Reihe zufriedener Kunden zurückblicken, dann lassen Sie sich von Ihnen empfehlen. Testimonials sind eine hervorragende Art zu zeigen, dass ehemalige Kunden von Ihrer Arbeit begeistert sind. Fragen Sie bei zufriedenen Kunden auf jeden Fall nach, ob sie dir nicht sogar einen kurzen Referenztext schreiben können, den Sie dann auf Ihrer Portfolio-Website präsentieren können.
 
 ### Aktuell bleiben und regelmäßig aktualisieren
 Beschränken Sie sich auf Arbeiten der letzten drei Jahre, denn Technik- und Designtrends kommen und gehen. Ihr Portfolio sollte zeigen, dass Sie am Puls der Zeit sind. Um sicherzustellen, immer aktuell zu bleiben, sollten Sie Ihre Portfolio-Website mindestens alle 6 Monate aktualisieren. 
