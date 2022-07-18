@@ -31,6 +31,8 @@ Sollten Sie bereits auf eine ganze Reihe zufriedener Kunden zurückblicken, dann
 ### Aktuell bleiben und regelmäßig aktualisieren
 Beschränken Sie sich auf Arbeiten der letzten drei Jahre, denn Technik- und Designtrends kommen und gehen. Ihr Portfolio sollte zeigen, dass Sie am Puls der Zeit sind. Um sicherzustellen, immer aktuell zu bleiben, sollten Sie Ihre Portfolio-Website mindestens alle 6 Monate aktualisieren. 
 
+### Holen Sie sich eine zweite Meinung ein
+Die Auswahl passender Projekte kann recht schwer sein. Holen Sie sich Feeback 
 
 
 
