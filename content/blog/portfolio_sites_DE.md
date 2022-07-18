@@ -6,7 +6,7 @@ tags:
     - portfolio
     - portfolio-website
     - best practices
-hidden: false
+hidden: true
 
 ---
 # Hosten Sie Ihre eigene Portfolio-Website mit Deploy Now
@@ -14,9 +14,11 @@ Unser Partner Kevin Chromik, selbst Mobile Software Engineer und YouTuber, hat s
 Er zeigt auch, wie man Projekte ansprechend präsentieren kann. 
 Und für die beste Außenwirksamkeit möchten wir Ihnen zusätzliche Tipps für Ihre Portfolio-Website an die Hand geben.
 
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5SZqFbLI4DM" 
 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ## Unsere Tipps für Ihre Portfoliowebsite
 ### Zeigen Sie sich von Ihrer kreativsten und besten Seite
