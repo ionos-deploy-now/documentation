@@ -1,5 +1,5 @@
 ---
-description: 'Unser Partner Kevin Chromik schaut sich Portfolio-Websites seiner Zuschauer und gibt Tipps zu Best Practices und Layout'
+description: 'Unser Partner Kevin Chromik schaut sich Portfolio-Websites seiner Zuschauer an und gibt Tipps zu Best Practices und Layout'
 created: '2022-07-18'
 author: 'chris-kaufmann'
 tags:
@@ -10,7 +10,7 @@ hidden: false
 
 ---
 # Hosten Sie Ihre eigene Portfolio-Website mit Deploy Now
-Unser Partner Kevin Chromik, selbst Mobile Software Enineer und YouTuber, hat sich einige Portfolio-Websites seiner Zuschauer angeschaut. Im Video gibt er Tipps zu Best Practices und Layout für eine solche Website. 
+Unser Partner Kevin Chromik, selbst Mobile Software Engineer und YouTuber, hat sich einige Portfolio-Websites seiner Zuschauer angeschaut. Im Video gibt er Tipps zu Best Practices und Layout für eine solche Website. 
 Er zeigt auch, wie man Projekte ansprechend präsentieren kann. 
 Und für die beste Außenwirksamkeit möchten wir Ihnen zusätzliche Tipps für Ihre Portfolio-Website an die Hand geben.
 
@@ -32,7 +32,11 @@ Sollten Sie bereits auf eine ganze Reihe zufriedener Kunden zurückblicken, dann
 Beschränken Sie sich auf Arbeiten der letzten drei Jahre, denn Technik- und Designtrends kommen und gehen. Ihr Portfolio sollte zeigen, dass Sie am Puls der Zeit sind. Um sicherzustellen, immer aktuell zu bleiben, sollten Sie Ihre Portfolio-Website mindestens alle 6 Monate aktualisieren. 
 
 ### Holen Sie sich eine zweite Meinung ein
-Die Auswahl passender Projekte kann recht schwer sein. Holen Sie sich Feeback 
+Die Auswahl passender Projekte kann recht schwer sein. Holen Sie sich deswegen Feedback von einer erfahrenen Kollegin oder Kollegen. Dinge, die ein Test-Leser beachten sollte:
+Gibt es Typos oder andere Fehler?
+Findet man sich leicht zurecht und kann einfach durch das Portfolio klicken?
+Fehlt etwas Wichtiges?
+Basierend auf dem Feedback können Sie entsprechende Änderungen vornehmen.
 
 
 
