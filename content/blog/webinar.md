@@ -1,20 +1,20 @@
 ﻿---
-description: 'Our Product Owner Robert explains the advantages of Jamstack websites along a project lifecycle in a free webinar.'
+description: 'Unser Product Owner Robert erklärt in einem kostenlosen Webinar die Vorteile von Jamstack-Websites entlang eines Projektlebenszyklus.'
 created: '2021-08-05'
 author: 'robert-schleinhege'
 tags:
     - webinar
     - jamstack
-hidden: true
+hidden: false
 
 ---
 
-# Webinar: The comeback of the static web 
+# Webinar: Das Comeback des statischen Webs
 
-## What is it about?
+## Worum geht es?
 
-Our Product Owner Robert gave a keynote at the Digital Bash - Agency Special. He explains why traditional CMS conquered the web since the early 2000s and which disadvantages their usage means from a technical and commercial perspective. Learn why static sites can solve a lot of these issues and why the Jamstack is a meaningful update to the static world. Switching to the Jamstack yields many advantages, not only during the development, but along an entire project lifecycle. 
+Unser Product Owner Robert hielt eine Keynote auf dem Digital Bash - Agency Special. Er erklärt, wie traditionelle CMS das Web seit den frühen 2000er Jahren erobert haben und welche Nachteile ihre Verwendung aus technischer und kommerzieller Sicht mit sich bringt. Erfahren Sie, warum statische Websites viele dieser Probleme lösen können und warum der Jamstack ein sinnvolles Update für die statische Welt ist. Der Umstieg auf den Jamstack bringt viele Vorteile mit sich, nicht nur während der Entwicklung, sondern über den gesamten Lebenszyklus eines Projektes.
 
-## Free Webinar
+## Kostenloses Webinar
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qWnQaAXneEA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
