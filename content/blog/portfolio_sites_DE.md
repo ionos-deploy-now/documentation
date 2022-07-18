@@ -1,5 +1,5 @@
 ---
-description: 'Unser Partner Kevin Chromik schaut sich Portfolio-Websites seiner Zuschauer an und gibt Tipps zu Best Practices und Layout'
+description: 'Unser Partner Kevin Chromik schaut sich Portfolio-Websites seiner Zuschauer an und gibt Tipps zu Best Practices und Layout.'
 created: '2022-07-18'
 author: 'chris-kaufmann'
 tags:
