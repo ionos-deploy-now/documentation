@@ -1,7 +1,7 @@
 ---
 description: 'Unser Partner Kevin Chromik schaut sich Portfolio-Websites seiner Zuschauer und gibt Tipps zu Best Practices und Layout'
 created: '2022-07-18'
-author: 'robert-schleinhege'
+author: 'chris-kaufmann'
 tags:
     - portfolio
     - portfolio-website
