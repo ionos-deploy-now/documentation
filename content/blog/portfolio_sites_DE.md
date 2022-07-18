@@ -31,10 +31,11 @@ Natürlich muss man irgendwo anfangen. Wenn Sie noch nicht so viele eigene Proje
 Sollten Sie bereits auf eine ganze Reihe zufriedener Kunden zurückblicken, dann lassen Sie sich von Ihnen empfehlen. Testimonials sind eine hervorragende Art zu zeigen, dass ehemalige Kunden von Ihrer Arbeit begeistert sind. Fragen Sie bei zufriedenen Kunden auf jeden Fall nach, ob sie dir nicht sogar einen kurzen Referenztext schreiben können, den Sie dann auf Ihrer Portfolio-Website präsentieren können.
 
 ### Aktuell bleiben und regelmäßig aktualisieren
-Beschränken Sie sich auf Arbeiten der letzten drei Jahre, denn Technik- und Designtrends kommen und gehen. Ihr Portfolio sollte zeigen, dass Sie am Puls der Zeit sind. Um sicherzustellen, immer aktuell zu bleiben, sollten Sie Ihre Portfolio-Website mindestens alle 6 Monate aktualisieren. 
+Beschränken Sie sich auf Arbeiten der letzten drei Jahre, denn Technik- und Designtrends kommen und gehen. Ihr Portfolio sollte zeigen, dass Sie am Puls der Zeit sind. Um sicherzustellen, immer aktuell zu bleiben, sollten Sie Ihre Portfolio-Website mindestens alle 6 Monate aktualisieren. Das Aktualisieren mag zwar offensichtlich sein, ist aber extrem wichtig.
 
 ### Holen Sie sich eine zweite Meinung ein
-Die Auswahl passender Projekte kann recht schwer sein. Holen Sie sich deswegen Feedback von einer erfahrenen Kollegin oder Kollegen. Dinge, die ein Test-Leser beachten sollte:
+Die Auswahl passender Projekte kann recht schwer sein. Holen Sie sich deswegen Feedback von einer erfahrenen Kollegin oder einem erfahrenen Kollegen.
+Dinge, die ein Test-Leser beachten sollte:
 Gibt es Typos oder andere Fehler?
 Findet man sich leicht zurecht und kann einfach durch das Portfolio klicken?
 Fehlt etwas Wichtiges?
