@@ -5,7 +5,7 @@ author: 'robert-schleinhege'
 tags:
     - guide
     - jamstack
-hidden: true
+hidden: false
 
 ---
 
