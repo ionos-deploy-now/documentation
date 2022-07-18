@@ -6,7 +6,7 @@ tags:
     - portfolio
     - portfolio-website
     - best practices
-hidden: true
+hidden: false
 
 ---
 # Hosten Sie Ihre eigene Portfolio-Website mit Deploy Now
