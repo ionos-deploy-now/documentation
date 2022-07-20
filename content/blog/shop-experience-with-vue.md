@@ -6,6 +6,8 @@ tags:
   - guide
   - vue
   - ecommerce
+
+teaser: '/fruchtec-architecture-lg.png'
 ---
 
 # Building API-first eCommerce dashboards with Vue.js and Deploy Now
