@@ -2,7 +2,8 @@
   <div ref="wrapper">
     <svg ref="svg" :width="width" :height="height" :viewBox="viewBox">
       <circle
-        v-for="dot in dots"
+        v-for="(dot, index) in dots"
+        :key="index"
         :cx="dot.x"
         :cy="dot.y"
         :r="size"

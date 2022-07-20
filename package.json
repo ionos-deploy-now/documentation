@@ -40,7 +40,6 @@
     "dotenv": "^16.0.1",
     "enquirer": "^2.3.6",
     "eslint": "^8.18.0",
-    "eslint-plugin-gridsome": "^1.6.2",
     "eslint-plugin-vue": "^9.1.1",
     "fuse.js": "^6.6.2",
     "gridsome-plugin-htaccess": "^0.2.1",

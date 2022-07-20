@@ -87,20 +87,12 @@ query {
 </page-query>
 
 <script>
-import OpenInNew from 'vue-material-design-icons/OpenInNew';
-import ChevronDoubleRightIcon from 'vue-material-design-icons/ChevronDoubleRight';
-import BullhornOutline from 'vue-material-design-icons/BullhornOutline';
 import TeamMember from '~/components/TeamMember';
-import JobSearchLink from '~/components/JobSearchLink';
 import { metaInfo } from '~/libs/seo';
 
 export default {
   components: {
-    OpenInNew,
-    ChevronDoubleRightIcon,
-    BullhornOutline,
     TeamMember,
-    JobSearchLink,
   },
   data() {
     return {
