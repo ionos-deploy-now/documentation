@@ -24,6 +24,7 @@
     "@fontsource/open-sans": "^4.5.10",
     "@fontsource/overpass": "^4.5.8",
     "@gridsome/plugin-sitemap": "^0.4.0",
+    "countries-and-timezones": "^3.3.0",
     "gridsome": "^0.7.23",
     "gridsome-plugin-i18n": "^1.6.0",
     "gridsome-plugin-remark-container": "^0.1.3",

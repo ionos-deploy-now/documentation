@@ -41,10 +41,28 @@ query {
 
 <script>
 import BlogTeaser from '~/components/BlogTeaser';
+import { loadScript } from "../libs/script-loader";
+import { checkForPrivacyConsent, hasScriptLoaded, STATISTICS } from "../libs/privacy-consent";
 
 export default {
   components: {
     BlogTeaser,
+  },
+  mounted() {
+    if (!hasScriptLoaded()) {
+      loadScript({
+        src: 'https://var.uicdn.net/shopsshort/privacy/v1/bundle.js',
+        options: { body: true },
+        onLoaded: () => {
+          checkForPrivacyConsent(STATISTICS, this.loadPixelTracking);
+        },
+      });
+    }
+  },
+  methods: {
+    loadPixelTracking() {
+      console.log('load pixel tracking');
+    },
   },
   computed: {
     sortedBlogPosts() {
