@@ -30,6 +30,6 @@ export default {
     showPrevNextLinks() {
       return this.page.prev || this.page.next;
     },
-  }
+  },
 };
 </script>

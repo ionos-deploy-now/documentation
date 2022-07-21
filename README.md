@@ -17,6 +17,9 @@ npm ci
 cp .env.example .env
 ```
 
+:warning: If .env is missing errors like `Error: Cannot query field "teaser" on type "MarkdownPage".` appear.
+
+
 ### Develop
 
 Run local server.

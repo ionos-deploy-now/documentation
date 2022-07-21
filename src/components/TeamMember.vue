@@ -39,7 +39,7 @@ export default {
     role: String,
     image: String,
     github: String,
-    likes: String
+    likes: String,
   },
   components: {
     GithubIcon,

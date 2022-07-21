@@ -1,7 +1,8 @@
 <template>
   <div class="relative bg-img-dots">
     <img
-      v-for="logo in logos"
+      v-for="(logo, index) in logos"
+      :key="index"
       class="logo absolute pointer-events-none z-0"
       :class="{[logo]: true}"
       :src="logoPath(logo)"
