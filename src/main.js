@@ -38,11 +38,4 @@ export default function (Vue, { router, head, appOptions, isClient }) {
     });
     next();
   });
-
-  if (isClient) {
-    head.link.push({
-      rel: 'stylesheet',
-      href: 'https://var.uicdn.net/shopsshort/privacy/v1/bundle.css',
-    });
-  }
 }

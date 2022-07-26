@@ -41,23 +41,11 @@ query {
 
 <script>
 import BlogTeaser from '~/components/BlogTeaser';
-import { loadScript } from "../libs/script-loader";
-import { checkForPrivacyConsent, hasScriptLoaded, STATISTICS } from "../libs/privacy-consent";
+import { checkForPrivacyConsent, STATISTICS } from "../libs/privacy-consent";
 
 export default {
   components: {
     BlogTeaser,
-  },
-  mounted() {
-    if (!hasScriptLoaded()) {
-      loadScript({
-        src: 'https://var.uicdn.net/shopsshort/privacy/v1/bundle.js',
-        options: { body: true },
-        onLoaded: () => {
-          checkForPrivacyConsent(STATISTICS, this.loadPixelTracking);
-        },
-      });
-    }
   },
   methods: {
     loadPixelTracking() {
@@ -82,8 +70,23 @@ export default {
       }, { left: [], right: [] });
     },
   },
-  metaInfo: {
-    title: 'Blog',
+  metaInfo() {
+    return {
+      title: 'Blog',
+      script: [
+        {
+          src: 'https://var.uicdn.net/shopsshort/privacy/v1/bundle.js',
+          body: true,
+          callback: () => checkForPrivacyConsent(STATISTICS, this.loadPixelTracking),
+        },
+      ],
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://var.uicdn.net/shopsshort/privacy/v1/bundle.css',
+        },
+      ],
+    }
   },
 };
 </script>

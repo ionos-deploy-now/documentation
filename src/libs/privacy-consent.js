@@ -34,14 +34,6 @@ export function checkForPrivacyConsent(type, consentedCallback) {
   }
 }
 
-export function hasStatisticsConsented() {
-  return hasConsented(STATISTICS);
-}
-
 export function hasConsented(type) {
   return getPrivacyContent()?.hasConsented(type);
-}
-
-export function hasScriptLoaded() {
-  return !!getPrivacyContent();
 }
