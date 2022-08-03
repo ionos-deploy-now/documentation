@@ -19,6 +19,7 @@ query {
   metadata {
     settings {
       github
+      branch
     }
   }
 }
@@ -43,8 +44,11 @@ export default {
     github() {
       return this.$static.metadata.settings.github;
     },
+    branch() {
+      return this.$static.metadata.settings.branch;
+    },
     url() {
-      return `${this.github}/edit/main/content/${this.path}`;
+      return `${this.github}/edit/${this.branch}/content/${this.path}`;
     },
   },
 };

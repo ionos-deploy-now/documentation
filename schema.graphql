@@ -140,6 +140,7 @@ type Metadata {
 }
 
 type Metadata_Settings {
+    branch: String
     github: String
     nav: Metadata_Settings_Nav
     showBlog: Boolean

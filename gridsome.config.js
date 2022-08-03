@@ -34,6 +34,7 @@ module.exports = {
     web: process.env.URL_WEB || "",
     twitter: process.env.URL_TWITTER || "",
     github: process.env.URL_GITHUB || "",
+    branch: process.env.GITHUB_REF_NAME || "main",
     showBlog,
     nav: {
       links: [

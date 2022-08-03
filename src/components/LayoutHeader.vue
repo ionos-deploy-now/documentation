@@ -27,8 +27,7 @@
 
       <div class="flex-center lg:space-x-8" :class="{ 'hide-mobile': searchFocused }">
         <a
-          v-if="settings.github"
-          :href="settings.github"
+          :href="this.github"
           class="icon p-2"
           target="_blank"
           rel="noopener noreferrer"
@@ -70,6 +69,7 @@ query {
     settings {
       web
       github
+      branch
       twitter
       nav {
         links {
@@ -113,6 +113,9 @@ export default {
     },
     settings() {
       return this.meta.settings;
+    },
+    github() {
+      return `${this.settings.github}/tree/${this.settings.branch}`
     },
     navLinks() {
       return this.settings.nav.links;
