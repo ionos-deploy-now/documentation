@@ -1,5 +1,5 @@
 ---
-description: 'Are you working on a web project in GitHub and want to know the Lighthouse KPIs of your project after each git push? Here's how.'
+description: "Are you working on a web project in GitHub and want to know the Lighthouse KPIs of your project after each git push? Here is how you can show them directly in GitHub Actions"
 created: '2022-08-04'
 author: 'robert-schleinhege'
 header: '@assets/blog/githubactions-lighthouse.png'
