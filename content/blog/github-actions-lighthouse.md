@@ -15,7 +15,7 @@ Are you working on a web project in GitHub and want to know the Lighthouse KPIs 
 
 Our goal is to make your Lighthouse results look like [this](https://github.com/Robert95Sch/lighthouse-action-demo/actions/runs/2803566749):
 
-![Screenshot of Lighthouse results](@assets/blog/screenshot-lighthouse-1.png)
+![Screenshot of Lighthouse results](screenshot-lighthouse-1.png)
 
 ## 1. Use GitHub Actions to build your code 
 We would like to calculate Lighthouse KPIs from a website that is actually being built and deployed. GitHub Actions[https://github.com/features/actions] is a nice vehicle to execute these steps right on git push. 
@@ -71,7 +71,7 @@ If you are using Deploy Now, you can replace `https://example.com/` by `${{ step
 ## 4. Generate a pretty output 
 GitHub recently announced a nice feature called [Job Summaries](https://github.blog/2022-05-09-supercharging-github-actions-with-job-summaries/). They allow you to generate a visual status report in the GitHub UI right after each workflow execution.
 
-![Lighthouse KPI results](@assets/blog/screenshot-lighthouse-2.png)
+![Lighthouse KPI results](screenshot-lighthouse-2.png)
 
 As you can see in the image above, I've decorated it with some additional information. The key point is to insert the correct reference to the different KPIs, e.g. `${{ fromJSON(steps.lighthouse.outputs.manifest)[0].summary.performance }}` to be able to print them. 
 
