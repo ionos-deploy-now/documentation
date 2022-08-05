@@ -6,8 +6,8 @@ header: '@assets/blog/githubactions-lighthouse.png'
 teaser: '@assets/blog/githubactions-lighthouse.png'
 tags:
     - tutorial
-    - laravel
-    - github
+    - githubactions
+    - lighthouse
     
 ---
 
