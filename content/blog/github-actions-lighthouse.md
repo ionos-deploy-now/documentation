@@ -1,6 +1,6 @@
 ---
 description: 'Are you working on a web project in GitHub and want to know the Lighthouse KPIs of your project after each git push? Here's how.'
-created: '022-08-04'
+created: '2022-08-04'
 author: 'robert-schleinhege'
 header: '@assets/blog/githubactions-lighthouse.png'
 teaser: '@assets/blog/githubactions-lighthouse.png'
