@@ -9,6 +9,8 @@ tags:
     - lighthouse
 ---
 
+# Tutorial: Automated Lighthouse tests with GitHub Actions
+
 Are you working on a web project in GitHub and want to know the Lighthouse KPIs of your project after each git push? Here's how.
 
 Our goal is to make your Lighthouse results look like [this](https://github.com/Robert95Sch/lighthouse-action-demo/actions/runs/2803566749):
