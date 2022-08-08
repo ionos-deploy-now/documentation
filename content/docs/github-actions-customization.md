@@ -115,4 +115,4 @@ jobs:
 ```
 
 ## Need help?
-Feel free to reach out to us via <a href="mailto:someone@yoursite.com">deploynow-support@ionos.com</a>.
+Feel free to reach out to us via <a href="mailto:deploynow-support@ionos.com">deploynow-support@ionos.com</a>.
