@@ -120,5 +120,7 @@ Missing a feature? Feel free to drop your request via [GitHub Issues](https://gi
 
 :::
 
+## Need help?
+Feel free to reach out to us via <a href="mailto:someone@yoursite.com">deploynow-support@ionos.com</a>.
 
 
