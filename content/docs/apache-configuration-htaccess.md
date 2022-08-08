@@ -217,3 +217,7 @@ In [Laravel](https://laravel.com/) the [entry point](https://laravel.com/docs/ma
 
 - List of [Available Apache Modules](https://www.ionos.com/help/hosting/htaccess/available-apache-modules/)
 - Useful [.htaccess Snippets](https://github.com/phanan/htaccess)
+
+
+## Need help?
+Feel free to reach out to us via <a href="mailto:deploynow-support@ionos.com">deploynow-support@ionos.com</a>.
