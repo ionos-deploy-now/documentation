@@ -76,3 +76,5 @@ deploy:
 
 An examplary `config.yaml` for a Laravel project can be found [here](https://github.com/ionos-deploy-now/laravel-starter), a Symfony example can be found [here](https://github.com/ionos-deploy-now/symfony-starter).
 
+## Need help?
+Feel free to reach out to us via <a href="mailto:someone@yoursite.com">deploynow-support@ionos.com</a>.
