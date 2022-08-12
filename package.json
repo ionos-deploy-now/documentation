@@ -21,15 +21,15 @@
     "cli": "DOTENV_CONFIG_PATH=.cli node -r dotenv/config ./cli/index.js"
   },
   "dependencies": {
-    "@fontsource/open-sans": "^4.5.10",
-    "@fontsource/overpass": "^4.5.8",
+    "@fontsource/open-sans": "^4.5.11",
+    "@fontsource/overpass": "^4.5.9",
     "@gridsome/plugin-sitemap": "^0.4.0",
     "gridsome": "^0.7.23",
     "gridsome-plugin-i18n": "^1.6.0",
     "gridsome-plugin-remark-container": "^0.1.3",
     "gridsome-plugin-remark-mermaid": "^1.0.1",
     "gridsome-plugin-robots-txt": "^1.0.2",
-    "vue-material-design-icons": "^5.0.0",
+    "vue-material-design-icons": "^5.1.2",
     "vuex": "^3.6.2"
   },
   "devDependencies": {
@@ -40,12 +40,12 @@
     "dotenv": "^16.0.1",
     "enquirer": "^2.3.6",
     "eslint": "^8.18.0",
-    "eslint-plugin-gridsome": "^1.6.2",
     "eslint-plugin-vue": "^9.1.1",
+    "eslint-plugin-gridsome": "^1.6.2",
     "fuse.js": "^6.6.2",
     "gridsome-plugin-htaccess": "^0.2.1",
     "gridsome-plugin-service-worker": "^0.2.8",
-    "gridsome-plugin-windicss": "^1.0.6",
+    "gridsome-plugin-windicss": "^1.0.7",
     "node-sass": "^6.0.1",
     "prism-themes": "^1.9.0",
     "sass-loader": "^10.1.1",
