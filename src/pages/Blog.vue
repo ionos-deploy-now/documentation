@@ -41,10 +41,16 @@ query {
 
 <script>
 import BlogTeaser from '~/components/BlogTeaser';
+import { checkForPrivacyConsent, STATISTICS } from "../libs/privacy-consent";
 
 export default {
   components: {
     BlogTeaser,
+  },
+  methods: {
+    loadPixelTracking() {
+      console.log('load pixel tracking');
+    },
   },
   computed: {
     sortedBlogPosts() {
@@ -64,8 +70,23 @@ export default {
       }, { left: [], right: [] });
     },
   },
-  metaInfo: {
-    title: 'Blog',
+  metaInfo() {
+    return {
+      title: 'Blog',
+      script: [
+        {
+          src: 'https://var.uicdn.net/shopsshort/privacy/v1/bundle.js',
+          body: true,
+          callback: () => checkForPrivacyConsent(STATISTICS, this.loadPixelTracking),
+        },
+      ],
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://var.uicdn.net/shopsshort/privacy/v1/bundle.css',
+        },
+      ],
+    }
   },
 };
 </script>

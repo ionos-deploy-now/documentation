@@ -38,6 +38,7 @@ jobs:
           node-version: v14.x
 
       - name: Build Node assets
+        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         env:
           CI: true
           SHOW_BLOG: true

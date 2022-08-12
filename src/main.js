@@ -12,7 +12,7 @@ import '@fontsource/overpass/600.css';
 import '@fontsource/overpass/700.css';
 import '~/assets/styles/app.scss';
 
-export default function (Vue, { router, head, appOptions }) {
+export default function (Vue, { router, head, appOptions, isClient }) {
   Vue.use(Vuex);
   appOptions.store = createStore();
 
@@ -26,7 +26,7 @@ export default function (Vue, { router, head, appOptions }) {
   //});
   head.meta.push({
     name: 'google-site-verification',
-    content: 'UtLaJ4v0UZBDPJVc8DqCyiUPSSz9TtMroKmflhpH2eo'
+    content: 'UtLaJ4v0UZBDPJVc8DqCyiUPSSz9TtMroKmflhpH2eo',
   })
 
   // Add meta data to each page
