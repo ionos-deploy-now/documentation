@@ -8,7 +8,7 @@ editable: true
 
 # From command line
 
-You don't have a specific project at hand but want to start from scratch? Below you can find instruction how to set up projects with popular frameworks starting from the command line.
+You don't have a specific project at hand and you want to start from scratch? Below you can find instruction how to set up projects with popular frameworks starting just from the command line.
 
 *Not what you are looking for? [Start from a sample](/docs/framework-samples/) or [deploy an existing repository](/docs/from-repo/).*
 
@@ -42,19 +42,17 @@ git push -u origin main
 
 4. Setup deployment
 
-Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click ```New project```. Next, choose the source you want to deploy from. If you created a new GitHub repository you've probably to grant new permission rights to Deploy Now in GitHub. Otherwise it won't be listed right away if you choose ```Deploy from my own GitHub repository```. After selecting your repository choose following configuration.
+Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click ```Add new project```. Next, choose your newly created project. With your selection Deploy Now will try to detect your framework specifics on the fly and suggest an appropriate project package. In this case this should result in ```Plain HTML``` without any build steps. This is fine in this case. Just proceed and finalize the setup.
 
 ![Select configuration](/wizard-plain-html.png)
 
-Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yaml```.
+Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
+
+Now, if you look at your repository you will find a new workflow file named ```.github/workflows/deploy-now.yaml```. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
 
 ## Single Page Applications (SPA)
 
 A single-page application (SPA) interacts with the user by dynamically rewriting the current web page with new data from the web server, instead of reloading the entire page for every request.
-
-:::note
-Following SPA instructions use npx. Make sure you have npx installed. npx is shipped by default since npm ≥ 5.2.0.
-:::
 
 ### React App
 
@@ -65,7 +63,8 @@ Following SPA instructions use npx. Make sure you have npx installed. npx is shi
 ```
 npx create-react-app@latest react-app
 cd react-app
-yarn start
+npm i
+npm run start
 ```
 
 2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
@@ -85,11 +84,13 @@ git push -u origin main
 
 4. Setup deployment
 
-Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click ```New project```. Next, choose the source you want to deploy from. If you created a new GitHub repository you've probably to grant new permission rights to Deploy Now in GitHub. Otherwise it won't be listed right away if you choose ```Deploy from my own GitHub repository```. After selecting your repository choose following configuration.
+Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click ```Add new project```. Next, choose your newly created project. With your selection Deploy Now will try to detect your framework specifics on the fly and suggest an appropriate project package. With ```React``` Deploy Now will propose a ```NodeJS``` build step with prefilled inputs from the ```package.json``` of the repository. All defaults in this case should be fine. Just proceed and finalize the setup.
 
 ![Select configuration](/wizard-react.png)
 
-Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yaml```.
+Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
+
+Now, if you look at your repository you will find a new workflow file named ```.github/workflows/deploy-now.yaml```. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
 
 ### Vue App
 
@@ -100,7 +101,7 @@ Now, take a short break until your project is build and deployed. Deploy Now wil
 ```
 npx @vue/cli@latest create --default vue-app
 cd vue-app
-yarn serve
+npm run serve
 ```
 
 2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
@@ -120,11 +121,13 @@ git push -u origin main
 
 4. Setup deployment
 
-Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click ```New project```. Next, choose the source you want to deploy from. If you created a new GitHub repository you've probably to grant new permission rights to Deploy Now in GitHub. Otherwise it won't be listed right away if you choose ```Deploy from my own GitHub repository```. After selecting your repository choose following configuration.
+Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click ```Add new project```. Next, choose your newly created project. With your selection Deploy Now will try to detect your framework specifics settings on the fly and suggest an appropriate project package. With ```Vue``` Deploy Now will propose a ```NodeJS``` build step with prefilled inputs from the ```package.json``` of the repository. All defaults in this case should be fine. Just proceed and finalize the setup.
 
 ![Select configuration](/wizard-vue.png)
 
-Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yaml```.
+Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
+
+Now, if you look at your repository you will find a new workflow file named ```.github/workflows/deploy-now.yaml```. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
 
 ### Svelte App
 
@@ -133,9 +136,9 @@ Now, take a short break until your project is build and deployed. Deploy Now wil
 1. Create a new [Svelte](https://svelte.dev/) app:
 
 ```
-npx degit@latest sveltejs/template svelte-app
+npm create svelte@latest svelte-app
 cd svelte-app
-npm install
+npm i
 npm run dev
 ```
 
@@ -156,15 +159,13 @@ git push -u origin main
 
 4. Setup deployment
 
-Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click ```New project```. Next, choose the source you want to deploy from. If you created a new GitHub repository you've probably to grant new permission rights to Deploy Now in GitHub. Otherwise it won't be listed right away if you choose ```Deploy from my own GitHub repository```. After selecting your repository choose following configuration.
-
-:::note
-At the moment the number of frameworks Deploy Now is able to detect and support out of the box is still limited. [Svelte](https://svelte.dev/) is one of those frameworks. Please follow the inputs you see in the screenshot below.
-:::
+Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click ```Add new project```. Next, choose your newly created project. With your selection Deploy Now will try to detect your framework specifics settings on the fly and suggest an appropriate project package. With ```Svelte``` Deploy Now will propose a ```NodeJS``` build step with prefilled inputs from the ```package.json``` of the repository. All defaults in this case should be fine. Just proceed and finalize the setup.
 
 ![Select configuration](/wizard-svelte.png)
 
-Now, take a short break until your project is build and deployed. Deploy Now will always show you the current build & deploy status of your project. If it's done Deploy Now provides a direct URL to your project. Besides you find in your repository a new workflow file named ```.github/workflows/deploy-now.yaml```.
+Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
+
+Now, if you look at your repository you will find a new workflow file named ```.github/workflows/deploy-now.yaml```. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
 
 ### Angular App
 
