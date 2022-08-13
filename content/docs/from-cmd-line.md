@@ -287,6 +287,83 @@ Now, if you look at your repository you will find a new workflow file named `.gi
 
 A Static Site Generator (SSG) is a tool which run as part of a build to transform content, data, and templates into files which can be deployed to a hosting environment as a ready-to-serve web site.
 
+## Standard SSG Tools
+
+
+### Astro Site
+
+> [Astro](https://astro.build/) is an all-in-one web framework for building fast, content-focused websites.
+
+1. Create a new site by entering the following commands in your terminal:
+
+```
+npm create astro@latest
+cd <new project dir>
+npm run dev
+```
+
+2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+3. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
+
+Afterwards initialize git and push your project to the created GitHub repository by the following commands.
+
+```
+git init
+git add .
+git commit -m "initial commit"
+git branch -M main
+git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
+git push -u origin main
+```
+
+4. Setup deployment
+
+Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click `Add new project`. Next, choose your newly created project. With your selection Deploy Now will try to detect your framework specifics settings on the fly and suggest an appropriate project package. With `Astro` Deploy Now will propose a `NodeJS` build step with prefilled inputs from the `package.json` of the repository. All defaults in this case should be fine. Just proceed and finalize the setup.
+
+![Select configuration](/wizard-astro.png)
+
+Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
+
+Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+
+### Docusaurus Site
+
+> Build optimized websites quickly, focus on your content with [Docusaurus](https://docusaurus.io/).
+
+1. Create a new site by entering the following commands in your terminal:
+
+```
+npx @docusaurus/init@latest init docusaurus-site classic
+cd docusaurus-site
+yarn start
+```
+
+2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+3. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
+
+Afterwards initialize git and push your project to the created GitHub repository by the following commands.
+
+```
+git init
+git add .
+git commit -m "initial commit"
+git branch -M main
+git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
+git push -u origin main
+```
+
+4. Setup deployment
+
+Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click `Add new project`. Next, choose your newly created project. With your selection Deploy Now will try to detect your framework specifics settings on the fly and suggest an appropriate project package. With `Docusaurus` Deploy Now will propose a `NodeJS` build step with prefilled inputs from the `package.json` of the repository. All defaults in this case should be fine. Just proceed and finalize the setup.
+
+![Select configuration](/wizard-docusaurus.png)
+
+Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
+
+Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+
 ### Gatsby Site
 
 > [Gatsby](https://www.gatsbyjs.com/) is a React-based, open source static site generator that pulls data via GraphQL to a wide range of content sources.
@@ -398,85 +475,10 @@ Now, take a short break until your project is deployed. Deploy Now will always s
 
 Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
 
-### Docusaurus Site
+## Hybrid SSG Tools
 
-> Build optimized websites quickly, focus on your content with [Docusaurus](https://docusaurus.io/).
 
-1. Create a new site by entering the following commands in your terminal:
-
-```
-npx @docusaurus/init@latest init docusaurus-site classic
-cd docusaurus-site
-yarn start
-```
-
-2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
-
-3. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
-
-Afterwards initialize git and push your project to the created GitHub repository by the following commands.
-
-```
-git init
-git add .
-git commit -m "initial commit"
-git branch -M main
-git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
-git push -u origin main
-```
-
-4. Setup deployment
-
-Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click `Add new project`. Next, choose your newly created project. With your selection Deploy Now will try to detect your framework specifics settings on the fly and suggest an appropriate project package. With `Docusaurus` Deploy Now will propose a `NodeJS` build step with prefilled inputs from the `package.json` of the repository. All defaults in this case should be fine. Just proceed and finalize the setup.
-
-![Select configuration](/wizard-docusaurus.png)
-
-Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
-
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
-
-### NuxtJS as SSG Site 
-
-> Build your next Vue.js application with confidence using [NuxtJS](https://nuxtjs.org/): a framework making web development simple and powerful.
-
-1. Create a new site by entering the following commands in your terminal:
-
-:::note
-Be aware to choose "Static (Static/Jamstack hosting)" as deployment target. Deploy Now doesn't support server side node applications yet.
-:::
-
-```
-npx create-nuxt-app@latest nuxt-site
-cd nuxt-site
-yarn dev
-```
-
-1. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
-
-2. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
-
-Afterwards initialize git and push your project to the created GitHub repository by the following commands.
-
-```
-git init
-git add .
-git commit -m "initial commit"
-git branch -M main
-git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
-git push -u origin main
-```
-
-4. Setup deployment
-
-Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click `Add new project`. Next, choose your newly created project. With your selection Deploy Now will try to detect your framework specifics settings on the fly and suggest an appropriate project package. With `NuxtJS` Deploy Now will propose a `NodeJS` build step with prefilled inputs from the `package.json` of the repository. All defaults in this case should be fine. Just proceed and finalize the setup.
-
-![Select configuration](/wizard-nuxtjs.png)
-
-Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
-
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
-
-### NextJS as SSG Site 
+### NextJS 
 
 > [Next.js](https://nextjs.org/): The React Framework for Production
 
@@ -519,6 +521,87 @@ git push -u origin main
 Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click `Add new project`. Next, choose your newly created project. With your selection Deploy Now will try to detect your framework specifics settings on the fly and suggest an appropriate project package. With `NextJS` Deploy Now will propose a `NodeJS` build step with prefilled inputs from the `package.json` of the repository. All defaults in this case should be fine. Just proceed and finalize the setup.
 
 ![Select configuration](/wizard-nextjs.png)
+
+Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
+
+Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+
+### NuxtJS 
+
+> Build your next Vue.js application with confidence using [NuxtJS](https://nuxtjs.org/): a framework making web development simple and powerful.
+
+1. Create a new site by entering the following commands in your terminal:
+
+:::note
+Be aware to choose "Static (Static/Jamstack hosting)" as deployment target. Deploy Now doesn't support server side node applications yet.
+:::
+
+```
+npx create-nuxt-app@latest nuxt-site
+cd nuxt-site
+yarn dev
+```
+
+2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+3. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
+
+Afterwards initialize git and push your project to the created GitHub repository by the following commands.
+
+```
+git init
+git add .
+git commit -m "initial commit"
+git branch -M main
+git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
+git push -u origin main
+```
+
+4. Setup deployment
+
+Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click `Add new project`. Next, choose your newly created project. With your selection Deploy Now will try to detect your framework specifics settings on the fly and suggest an appropriate project package. With `NuxtJS` Deploy Now will propose a `NodeJS` build step with prefilled inputs from the `package.json` of the repository. All defaults in this case should be fine. Just proceed and finalize the setup.
+
+![Select configuration](/wizard-nuxtjs.png)
+
+Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
+
+Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+
+## Binary SSG Tools
+
+
+### Jekyll Site
+
+> [Jekyll](https://jekyllrb.com/) transforms your plain text into static websites and blogs.
+
+1. Requires pre-install of `jekyll`. See [installation](https://jekyllrb.com/docs/installation/) instructions.
+
+2. Create a new site by entering the following commands in your terminal:
+
+```
+jekyll new jekyll-site
+```
+
+3. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+4. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
+
+Afterwards initialize git and push your project to the created GitHub repository by the following commands.
+
+```
+git init
+git add .
+git commit -m "initial commit"
+git branch -M main
+git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
+git push -u origin main
+```
+
+5. Setup deployment
+
+Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click `Add new project`. Next, choose your newly created project. With your selection Deploy Now will try to detect your framework specifics settings on the fly and suggest an appropriate project package. With `Jekyll` Deploy Now will propose a `Bundler` build step with prefilled inputs from the `package.json` of the repository. All defaults in this case should be fine. Just proceed and finalize the setup.
+
+![Select configuration](/wizard-jekyll.png)
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
