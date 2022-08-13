@@ -599,7 +599,7 @@ git push -u origin main
 
 5. Setup deployment
 
-Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click `Add new project`. Next, choose your newly created project. With your selection Deploy Now will try to detect your framework specifics settings on the fly and suggest an appropriate project package. With `Jekyll` Deploy Now will propose a `Bundler` build step with prefilled inputs from the `package.json` of the repository. All defaults in this case should be fine. Just proceed and finalize the setup.
+Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click `Add new project`. Next, choose your newly created project. With your selection Deploy Now will try to detect your framework specifics settings on the fly and suggest an appropriate project package. With `Jekyll` Deploy Now will propose a `Bundler` build step with prefilled inputs from the `Gemfile` of the repository. All defaults in this case should be fine. Just proceed and finalize the setup.
 
 ![Select configuration](/wizard-jekyll.png)
 
