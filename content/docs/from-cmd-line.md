@@ -32,10 +32,9 @@ echo "file://`pwd`/index.html"
 Afterwards initialize git and push your project to the created GitHub repository by the following commands.
 
 ```
-git init
+git init -b main
 git add .
 git commit -m "initial commit"
-git branch -M main
 git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
 git push -u origin main
 ```
@@ -64,20 +63,22 @@ A single-page application (SPA) interacts with the user by dynamically rewriting
 npx create-react-app@latest react-app
 cd react-app
 npm i
-npm run start
 ```
 
 2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+```
+npm run start
+```
 
 3. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
 
 Afterwards initialize git and push your project to the created GitHub repository by the following commands.
 
 ```
-git init
+git init -b main
 git add .
 git commit -m "initial commit"
-git branch -M main
 git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
 git push -u origin main
 ```
@@ -100,21 +101,23 @@ Now, if you look at your repository you will find a new workflow file named `.gi
 
 ```
 npx @vue/cli@latest create --default vue-app
-cd vue-app
-npm run serve
 ```
 
 2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+```
+cd vue-app
+npm run serve
+```
 
 3. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
 
 Afterwards initialize git and push your project to the created GitHub repository by the following commands.
 
 ```
-git init
+git init -b main
 git add .
 git commit -m "initial commit"
-git branch -M main
 git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
 git push -u origin main
 ```
@@ -138,20 +141,22 @@ Now, if you look at your repository you will find a new workflow file named `.gi
 ```
 npx -p @angular/cli@latest ng new angular-app
 cd angular-app
-npm run start
 ```
 
 2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+```
+npm run start
+```
 
 3. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
 
 Afterwards initialize git and push your project to the created GitHub repository by the following commands.
 
 ```
-git init
+git init -b main
 git add .
 git commit -m "initial commit"
-git branch -M main
 git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
 git push -u origin main
 ```
@@ -177,20 +182,22 @@ Now, if you look at your repository you will find a new workflow file named `.gi
 npm create svelte@latest svelte-app
 cd svelte-app
 npm i
-npm run dev
 ```
 
 2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+```
+npm run dev
+```
 
 3. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
 
 Afterwards initialize git and push your project to the created GitHub repository by the following commands.
 
 ```
-git init
+git init -b main
 git add .
 git commit -m "initial commit"
-git branch -M main
 git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
 git push -u origin main
 ```
@@ -213,11 +220,14 @@ Now, if you look at your repository you will find a new workflow file named `.gi
 
 ```
 npx ember-cli new ember-app
-cd ember-app
-npm run start
 ```
 
 2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+```
+cd ember-app
+npm run start
+```
 
 :::note
 The default component `<WelcomePage />` isn't rendered properly in production mode and [leads to errors](https://github.com/ember-cli/ember-welcome-page/issues/385). Therefore you need to replace this component with some meaningful content or simply remove `production` from `"build": "ember build --environment=production"` in your `package.json` to see first of all that your site is working. 
@@ -228,10 +238,9 @@ The default component `<WelcomePage />` isn't rendered properly in production mo
 Afterwards initialize git and push your project to the created GitHub repository by the following commands.
 
 ```
-git init
+git init -b main
 git add .
 git commit -m "initial commit"
-git branch -M main
 git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
 git push -u origin main
 ```
@@ -254,21 +263,23 @@ Now, if you look at your repository you will find a new workflow file named `.gi
 
 ```
 npx @ionic/cli@latest start ionic-app list --type=react --no-link
-cd ionic-app
-npm run start
 ```
 
 2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+```
+cd ionic-app
+npm run start
+```
 
 3. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
 
 Afterwards initialize git and push your project to the created GitHub repository by the following commands.
 
 ```
-git init
+git init -b main
 git add .
 git commit -m "initial commit"
-git branch -M main
 git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
 git push -u origin main
 ```
@@ -298,21 +309,23 @@ A Static Site Generator (SSG) is a tool which run as part of a build to transfor
 
 ```
 npm create astro@latest
-cd <new project dir>
-npm run dev
 ```
 
 2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+```
+cd <new project dir>
+npm run dev
+```
 
 3. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
 
 Afterwards initialize git and push your project to the created GitHub repository by the following commands.
 
 ```
-git init
+git init -b main
 git add .
 git commit -m "initial commit"
-git branch -M main
 git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
 git push -u origin main
 ```
@@ -335,21 +348,23 @@ Now, if you look at your repository you will find a new workflow file named `.gi
 
 ```
 npx @docusaurus/init@latest init docusaurus-site classic
-cd docusaurus-site
-yarn start
 ```
 
 2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+```
+cd docusaurus-site
+yarn start
+```
 
 3. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
 
 Afterwards initialize git and push your project to the created GitHub repository by the following commands.
 
 ```
-git init
+git init -b main
 git add .
 git commit -m "initial commit"
-git branch -M main
 git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
 git push -u origin main
 ```
@@ -372,21 +387,23 @@ Now, if you look at your repository you will find a new workflow file named `.gi
 
 ```
 npx gatsby-cli@latest new gatsby-site
-cd gatsby-site
-npm run develop
 ```
 
 2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+```
+cd gatsby-site
+npm run develop
+```
 
 3. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
 
 Afterwards initialize git and push your project to the created GitHub repository by the following commands.
 
 ```
-git init
+git init -b main
 git add .
 git commit -m "initial commit"
-git branch -M main
 git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
 git push -u origin main
 ```
@@ -409,21 +426,23 @@ Now, if you look at your repository you will find a new workflow file named `.gi
 
 ```
 npx @gridsome/cli@latest create gridsome-site
-cd gridsome-site
-npm run develop
 ```
 
 2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+```
+cd gridsome-site
+npm run develop
+```
 
 3. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
 
 Afterwards initialize git and push your project to the created GitHub repository by the following commands.
 
 ```
-git init
+git init -b main
 git add .
 git commit -m "initial commit"
-git branch -M main
 git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
 git push -u origin main
 ```
@@ -447,20 +466,23 @@ Now, if you look at your repository you will find a new workflow file named `.gi
 ```
 npx hexo-cli@latest init hexo-site
 cd hexo-site
-yarn server
+npm i
 ```
 
 2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+```
+npm run server
+```
 
 3. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
 
 Afterwards initialize git and push your project to the created GitHub repository by the following commands.
 
 ```
-git init
+git init -b main
 git add .
 git commit -m "initial commit"
-git branch -M main
 git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
 git push -u origin main
 ```
@@ -486,11 +508,14 @@ Now, if you look at your repository you will find a new workflow file named `.gi
 
 ```
 npx create-next-app@latest next-site --example basic-css
-cd next-site
-npx next@latest dev
 ```
 
 2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+```
+cd next-site
+npx next@latest dev
+```
 
 3. Enable static HTML export
 
@@ -508,10 +533,9 @@ You have to explicit define that you want to export your site as static version.
 Afterwards initialize git and push your project to the created GitHub repository by the following commands.
 
 ```
-git init
+git init -b main
 git add .
 git commit -m "initial commit"
-git branch -M main
 git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
 git push -u origin main
 ```
@@ -539,20 +563,23 @@ Be aware to choose "Static (Static/Jamstack hosting)" as deployment target. Depl
 ```
 npx create-nuxt-app@latest nuxt-site
 cd nuxt-site
-yarn dev
+npm i
 ```
 
 2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+```
+npm run dev
+```
 
 3. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
 
 Afterwards initialize git and push your project to the created GitHub repository by the following commands.
 
 ```
-git init
+git init -b main
 git add .
 git commit -m "initial commit"
-git branch -M main
 git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
 git push -u origin main
 ```
@@ -569,6 +596,54 @@ Now, if you look at your repository you will find a new workflow file named `.gi
 
 ## Binary SSG Tools
 
+### Hugo Site
+
+> [Hugo](https://gohugo.io/) is the world’s fastest framework for building websites
+
+1. Requires pre-install of `hugo`. See [installation](https://gohugo.io/getting-started/installing) instructions.
+
+2. Create a new site by entering the following commands in your terminal:
+
+```
+hugo new site hugo-site
+cd hugo-site
+git init -b main
+git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+echo theme = \"ananke\" >> config.toml
+hugo new posts/my-first-post.md
+echo "---
+title: "My First Post"
+date: 2022-01-01T12:12:12+01:00
+draft: false
+---" > content/posts/my-first-post.md
+```
+
+3. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+```
+hugo server -D
+```
+
+4. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
+
+Afterwards initialize git and push your project to the created GitHub repository by the following commands.
+
+```
+git add .
+git commit -m "initial commit"
+git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
+git push -u origin main
+```
+
+5. Setup deployment
+
+Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click `Add new project`. Next, choose your newly created project. With your selection Deploy Now will try to detect your framework specifics settings on the fly and suggest an appropriate project package. With `Hugo` Deploy Now will propose a `Hugo` build step with prefilled inputs. All defaults in this case should be fine. Just proceed and finalize the setup.
+
+![Select configuration](/wizard-hugo.png)
+
+Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
+
+Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
 
 ### Jekyll Site
 
@@ -582,17 +657,29 @@ Now, if you look at your repository you will find a new workflow file named `.gi
 jekyll new jekyll-site
 ```
 
+:::note
+Note that you run the following command if your local setup doesn't match a Linux-powered machine. 
+```
+bundle lock --add-platform x86_64-linux
+```
+This will save you from unexpected errors in the build process. Reason is the GitHub Runners architecture.
+:::
+
+
 3. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+```
+jekyll serve
+```
 
 4. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
 
 Afterwards initialize git and push your project to the created GitHub repository by the following commands.
 
 ```
-git init
+git init -b main
 git add .
 git commit -m "initial commit"
-git branch -M main
 git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
 git push -u origin main
 ```
@@ -631,10 +718,9 @@ php -S localhost:8000
 Afterwards initialize git and push your project to the created GitHub repository by the following commands.
 
 ```
-git init
+git init -b main
 git add .
 git commit -m "initial commit"
-git branch -M main
 git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
 git push -u origin main
 ```
