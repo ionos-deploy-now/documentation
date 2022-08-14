@@ -12,7 +12,9 @@ You don't have a specific project at hand and you want to start from scratch? Be
 
 *Not what you are looking for? [Start from a sample](/docs/framework-samples/) or [deploy an existing repository](/docs/from-repo/).*
 
-## Plain html site
+## Plain sites
+
+### Html site
 
 > The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser.
 
@@ -44,6 +46,43 @@ git push -u origin main
 Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click `Add new project`. Next, choose your newly created project. With your selection Deploy Now will try to detect your framework specifics on the fly and suggest an appropriate project package. In this case this should result in `Plain HTML` without any further build steps. This is fine in this case. Just proceed and finalize the setup.
 
 ![Select configuration](/wizard-plain-html.png)
+
+Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
+
+Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+
+### PHP Site
+
+> PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.
+
+1. Create a simple PHP site
+
+```
+mkdir php-site
+cd php-site
+echo '<?php phpinfo(); ?>' > index.php
+php -S localhost:8000
+```
+
+2. Visit your site locally by copying localhost:8000 to your favorite browser bar.
+
+3. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
+
+Afterwards initialize git and push your project to the created GitHub repository by the following commands.
+
+```
+git init -b main
+git add .
+git commit -m "initial commit"
+git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
+git push -u origin main
+```
+
+4. Setup deployment
+
+Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click `Add new project`. Next, choose your newly created project. With your selection Deploy Now will try to detect your framework specifics settings on the fly and suggest an appropriate project package. In this case this should result in `PHP` without any further build steps. This is fine in this case. Just proceed and finalize the setup.
+
+![Select configuration](/wizard-php.png)
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
@@ -497,6 +536,48 @@ Now, take a short break until your project is deployed. Deploy Now will always s
 
 Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
 
+### Jigsaw Site
+
+> [Jigsaw](https://jigsaw.tighten.com/) is a framework for rapidly building static sites using the same modern tooling that powers your web applications.
+
+1. Create a new site by entering the following commands in your terminal:
+
+```
+mkdir jigsaw-site
+cd jigsaw-site
+composer require tightenco/jigsaw
+vendor/bin/jigsaw init docs
+```
+
+2. Visit your site locally by copying localhost address from CLI stdout to your favorite browser bar.
+
+```
+vendor/bin/jigsaw serve
+```
+
+3. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
+
+Afterwards initialize git and push your project to the created GitHub repository by the following commands.
+
+```
+git init -b main
+git add .
+git commit -m "initial commit"
+git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
+git push -u origin main
+```
+
+4. Setup deployment
+
+Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click `Add new project`. Next, choose your newly created project. With your selection Deploy Now will try to detect your framework specifics settings on the fly and suggest an appropriate project package. With `Jigsaw` Deploy Now will propose a `Composer` and a `NodeJS` build step with prefilled inputs. All defaults in this case should be fine. Just proceed and finalize the setup.
+
+![Select configuration](/wizard-jigsaw1.png)
+![Select configuration](/wizard-jigsaw2.png)
+
+Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
+
+Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+
 ## Hybrid SSG Tools
 
 
@@ -689,47 +770,6 @@ git push -u origin main
 Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click `Add new project`. Next, choose your newly created project. With your selection Deploy Now will try to detect your framework specifics settings on the fly and suggest an appropriate project package. With `Jekyll` Deploy Now will propose a `Bundler` build step with prefilled inputs from the `Gemfile` of the repository. All defaults in this case should be fine. Just proceed and finalize the setup.
 
 ![Select configuration](/wizard-jekyll.png)
-
-Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
-
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
-
-## PHP
-
-The following section give you some ideas to use [PHP](https://php.net) with Deploy Now.
-
-### Plain PHP Site
-
-> PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.
-
-1. Create a simple PHP site
-
-```
-mkdir php-site
-cd php-site
-echo '<?php phpinfo(); ?>' > index.php
-php -S localhost:8000
-```
-
-2. Visit your site locally by copying localhost:8000 to your favorite browser bar.
-
-3. Now, [create a new Git repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository) and copy the URI of the repo to your clipboard.
-
-Afterwards initialize git and push your project to the created GitHub repository by the following commands.
-
-```
-git init -b main
-git add .
-git commit -m "initial commit"
-git remote add origin git@github.com:username/reponame.git # replace by URI of your repo
-git push -u origin main
-```
-
-4. Setup deployment
-
-Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm_medium=doc-content&utm_campaign=setup-guides) account and click `Add new project`. Next, choose your newly created project. With your selection Deploy Now will try to detect your framework specifics settings on the fly and suggest an appropriate project package. In this case this should result in `PHP` without any further build steps. This is fine in this case. Just proceed and finalize the setup.
-
-![Select configuration](/wizard-php.png)
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
