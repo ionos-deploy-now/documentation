@@ -8,7 +8,7 @@ editable: true
 
 # From existing repository
 
-Allready have an existing project you wish to set up? Simply create a new deployment by following our wizard.
+Already have an existing project you wish to set up? Simply create a new deployment by following our wizard.
 
 ![From existing repository](/03_From_existing_repository_flat.gif)
 
@@ -24,7 +24,7 @@ Select a public or private repository from your GitHub account or paste in a lin
 
 3. **Confirm detected framework**
 
-Deploy Now scans your repository to detect the framework you are using to prefill all workflow settings. You will be asked to confirm the detected framework or to clarify which framework you are using if we cannot identify your framework. If you are deploying a static site generator, single page application or simply a plain HTML website, you can procede with a Static Project in this step. If your project requires a PHP runtime or a database, please continue with a PHP project.  
+Deploy Now scans your repository to detect the framework you are using to prefill all workflow settings. You will be asked to confirm the detected framework or to clarify which framework you are using if we cannot identify your framework. If you are deploying a static site generator, single page application or simply a plain HTML website, you can proceed with a Static Project in this step. If your project requires a PHP runtime or a database, please continue with a PHP project.  
   
 4. **Build settings**
 
