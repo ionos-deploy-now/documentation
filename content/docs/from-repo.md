@@ -6,7 +6,7 @@ next: '/docs/deploy-static-sites/'
 editable: true
 ---
 
-# From existing repository
+# From Repository
 
 Already have an existing project you wish to set up? Simply create a new deployment by following our wizard.
 
