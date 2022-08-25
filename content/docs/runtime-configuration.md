@@ -81,7 +81,7 @@ LOG_LEVEL=debug
 DB_CONNECTION=mysql
 DB_HOST={{ .runtime.db.host }}
 DB_PORT=3306
-DB_DATABASE={{ .runtime.db.database }}
+DB_DATABASE={{ .runtime.db.name }}
 DB_USERNAME={{ .runtime.db.user }}
 DB_PASSWORD={{ .runtime.db.password }}
 
