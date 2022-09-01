@@ -14,7 +14,7 @@ Cron jobs can be defined directly under `.deploy-now.config.yaml` in your reposi
 ```
 runtime:
   cron-jobs:
-    - command: my-cron-job-command
+    - command: my-cron-job-command # the deployment is located at $HOME/htdocs/ to execute a deployed script just prefix it accordingly
       schedule: 0 5 * * * # run every day at 5:00
 ```
 
