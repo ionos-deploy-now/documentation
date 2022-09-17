@@ -27,11 +27,12 @@ A static site generator is an essential component of the jamstack architecture. 
 ![Static Site Generator](/static-site-generator.svg) 
 
 ## What is a build?
+
 In this context, a build is a process in scripts are executed to generate the files that make up your web project. This can be triggered by a new git commit or by any other custom defined event. Everytime a build is triggered, we use [GitHub Actions](https://github.com/features/actions) to update the files on the webserver.
 
 ## From which sources can I deploy?
 You can deploy from an existing GitHub repository in your account, provide the URL to a third party repository you would like to deploy, or you can quickstart with one of our [samples](/docs/framework-samples).
-
+https://www.bloomberg.com/news/articles/2022-07-12/millions-of-americans-regret-quitting-in-the-great-resignation?cid=other-eml-onp-mip-mck&hlkid=b33bd99d2a124fbc982d626b61377f86&hctky=1926&hdpid=c5e5f2cb-ec86-4eef-a24e-3e81d3ffa876&utm_source=website&utm_medium=share&utm_campaign=mobile_web_share
 ## Which branches of a repository will be deployed?
 If you deploy a repository that exists in your GitHub account, you can select any branch for deployment. For third party repositories, we allways deploy the current default branch. You can allways switch the branches of your Production Deployment or connect additional branches to [staging deployments](/docs/staging-deployments).
 
