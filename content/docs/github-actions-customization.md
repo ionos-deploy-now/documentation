@@ -8,6 +8,77 @@ editable: true
 
 # Build configuration
 
+Build steps are automated in GitHub Actions workflows. These workflows are set up during project creation. Deploy Now analyzes your repositories and suggest the required build steps accordingly. Build steps can make use of Node.js, Composer or Budnler. After the set up, build settings can be edited directly in the GitHub Actions workflow files stored in the repository.
+
+Settings can differ between the `workflow v1`, used in projects created until 11/22, and `workflow v2`, used for newer projects. 
+
+## Important settings
+
+### Build commands
+#### Description
+Combining your source code and dependencies to build a runnable instance of your web project. 
+#### How to edit
+Editing commands or adding new commands in building steps of `.github/workflows/deploy-now.yaml` for `workflow v1`
+or `.github/workflows/[project-name]-build.yaml` for `workflow v2`.
+#### Example
+``` yaml
+      - name: Build Node assets
+        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        env:
+          CI: true
+          SITE_URL: ${{ steps.project.outputs.site-url }}
+        run: |
+          npm ci
+          npm run build
+```
+
+### Build dependencies
+#### Description
+Before running a build command, the languages and software required for your build needs to be installed.
+#### How to edit
+`workflow v1`: Edit the "setup node", "setup composer" etc. steps in `.github/workflows/deploy-now.yaml` for `workflow v1` or `.github/workflows/[project-name]-build.yaml` for `workflow v2`.
+#### Example
+``` yaml
+      - name: Setup Node
+        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: v16.x
+```
+
+
+### Build environment variables
+#### Description
+Key value pairs accessible during your build for behavior customization or connecting to APIs. They can be either stored as plain text or, if sensitive, stored as [GitHub secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets). 
+#### How to edit
+Navigate to the dependency set up or build execution steps in `.github/workflows/deploy-now.yaml` for `workflow v1` or `.github/workflows/[project-name]-build.yaml` for `workflow v2`. List key-value-pairs below `env:` 
+#### Example
+``` yaml
+      - name: Build PHP assets
+        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        env:
+          MY_ENV_VAR: value-for-my-env-var
+          MY_SECRET_ENV_VAR: ${{ secrets.MY_SECRET }} 
+        run: php artisan key:generate --force -n
+```
+
+
+
+
+### Build dependencies
+#### Description
+#### How to edit
+#### Example
+
+### Publish directory
+#### Description
+#### How to edit
+#### Example
+
+
+
+
+
 ## Prefill build configurations using the setup wizard
 
 When setting up a new project in Deploy Now, you can configure your build process directly in the UI. Deploy Now analyzes your repository for the framework you are using and prefills input fields accordingly. Your build can contain various build steps such as a Node.js, Composer or Bundler. Each build step can contain multiple build commands and build environment variables. Environment variables that are secret are stored in GitHub secrets.
