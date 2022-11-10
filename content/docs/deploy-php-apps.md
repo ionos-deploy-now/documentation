@@ -15,19 +15,24 @@ Deploy Now offers a convenient toolset to automate builds and deployments for dy
 Deploy Now supports PHP projects that can be build with Node.js, Composer, Ruby or any other [language supported by GitHub Actions](https://docs.github.com/en/get-started/learning-about-github/github-language-support). Setting up Content Management System such as WordPress is possible, but does not yet come with automated, prefilled setups. 
 
 ### Laravel
+After you connect your Laravel repository, Deploy Now suggests you build steps you can adapt to your liking. It might help you to deploy our [laravel sample project](/docs/framework-samples/#laravel-sample) for a completely prefilled setup including build steps, prefilled `.env`, `.htaccess`, file persistency management and automated runtime commands before and after each deployment. A complete manual of setting up a Laravel project can be found below.
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/otSwpzsoZss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### Symfony
-
-
+Deploy Now automacally detects Symfony projects and suggests build steps accordingly. The setup follows the same logic as a Laravel setup. You can deploy our [symfony sample project](/docs/framework-samples/#symfony-sample) for a quick start.
 
 ## Features
 - Automated builds and deployments
 - Connect your custom domain
 - SSL automatically connected and renewed 
+- Set up [Cron Jobs](/docs/cronjobs/)
 - Deploy additional branches with [Staging Deployments](/docs/staging-deployments/)
 - Deploy one branch to multiple environments with [Multi Deployments](/docs/staging-deployments/)
+- 10GB storage
+- Up-to-date PHP versions
+- MariaDB for each deployment
 - Monitor traffic with [Visitor statistics](/docs/visitor-statistics/)
 - Fixed monthly pricing (see plans for [US](https://www.ionos.com/hosting/deploy-now), [UK](https://www.ionos.co.uk/hosting/deploy-now), [GER](https://www.ionos.de/hosting/deploy-now), [CA](https://www.ionos.ca/hosting/deploy-now), [ES](https://www.ionos.es/alojamiento/deploy-now), [FR](https://www.ionos.fr/hebergement/deploy-now), [MX](https://www.ionos.mx/alojamiento/deploy-now) and [IT](https://www.ionos.it/hosting/deploy-now))
 
@@ -61,49 +66,12 @@ Redirects and rewrites can be managed via `.htaccess` files. Visit [Apache confi
 
 
 
-
-
-
-# Deploy PHP apps via GitHub
-
-## Creating a new PHP Project in Deploy Now
-
-### What do PHP Projects offer?
-
-![PHP Projects in Deploy Now](/04_PHP_apps_via_GitHub.gif)
-
-#### Automated deployments via GitHub
-
-Deploy Now PHP Projects retrieve code from your GitHub repository, detect the PHP framework you are using and set up an automated build and deployment pipeline accordingly. GitHub repositories can be public or private and owned by users or organizations. Each code update triggers a new build and deployment via GitHub Actions.
-
-#### Comprehensive framework support
-
-Out of the box, Deploy Now is able to detect Laravel and Smyfony. In general, Deploy Now supports all apps that run on PHP and can be build with Node.js, Composer, Ruby or any other [language supported by GitHub Actions](https://docs.github.com/en/get-started/learning-about-github/github-language-support). PHP apps are equipped with MariaDBs for both production and staging.
-
-#### Deployments to secure infrastructure
-
-Depending on your location, Deploy Now apps are hosted on IONOS datacenters in Europe and North America. IONOS shared hosting infrastructure runs apache webservers and supports a wide variety of PHP versions. The infrastructure is georedundant, protected from DDoS attacks and powered by green energy.
-
-#### Powerful features
-
-- 10 GB storage per deployment
-- 2 GB MariaDB for production and staging
-- [Staging Deployments](/docs/staging-deployments/)
-- [Custom domains and SSL](/docs/domain-tls/)
-- Visitor statistics
-- Unlimited bandwith
-
-#### Predictable pricing
-
-PHP Projects can be added to your Deploy Now membership on a monthly basis. The price for a project is fixed and does not depend on metrics such as resource consumption. Each project corresponds to one connected GitHub repository and can contain multiple deployed branches. Prices in your local currency can be found on the respective shop pages for [US](https://www.ionos.com/hosting/deploy-now), [UK](https://www.ionos.co.uk/hosting/deploy-now), [GER](https://www.ionos.de/hosting/deploy-now), [CA](https://www.ionos.ca/hosting/deploy-now), [ES](https://www.ionos.es/alojamiento/deploy-now), [FR](https://www.ionos.fr/hebergement/deploy-now), [MX](https://www.ionos.mx/alojamiento/deploy-now) and [IT](https://www.ionos.it/hosting/deploy-now). 
+ 
 
 ### How to set up a new PHP project
 
 To create a PHP Project in Deploy Now, click **add project** and select **PHP Project** after the framework detection. The [setup wizard](/docs/from-repo/) guides you through the build, deployment and runtime configuration. Tutorials showing how projects can be set up on the command line can be found [here](docs/from-cmd-line). If you don't have a project at hand, you can deploy one of our [sample projects](/docs/framework-samples). Additional staging deployments can be created simply by opening new branches in the repository and toggle them on for staging in the project details page.
 
-This video tutorial provides a comprehensive overview of how to create and manage a PHP application, using Laravel as an example.
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/otSwpzsoZss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Managing an existing PHP Project after the project creation
 
