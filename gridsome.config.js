@@ -76,6 +76,7 @@ module.exports = {
             items: [
               "/docs/git-integration/",
               "/docs/staging-deployments/",
+              "/docs/multi-deployments/",
               "/docs/domain-tls/",
               "/docs/deployment-viewer/",
               "/docs/visitor-statistics/",
