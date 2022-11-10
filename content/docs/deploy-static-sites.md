@@ -32,9 +32,7 @@ Angular, React, Vue, Ionic, Svelte and Ember
 
 ## Setup
 
-Simply connect your repository and follow a guided setup of build dependencies and steps. After the setup, your project gets deployed instantly and will build and deploy on every following `git push`. 
-
-You might want to [create a new project on the command line](docs/from-cmd-line), [deploy an existing repository](/docs/from-repo/) or [deploy one of our samples](/docs/framework-samples) for a quickstart. New Static Projects can be set up in the Deploy Now dashboard by clicking  **add project** and selecting `Starter Project` or `Static Project`(for more storage and stages) after the framework detection. Simply follow the instructions in the wizard to get your project up an running.
+Simply connect your repository and follow a guided setup of build dependencies and steps. After the setup, your project gets deployed instantly and will build and deploy on every following `git push`. You might want to [create a new project on the command line](docs/from-cmd-line), [deploy an existing repository](/docs/from-repo/) or [deploy one of our samples](/docs/framework-samples) for a quickstart. 
 
 ## Settings
 
