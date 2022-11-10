@@ -22,30 +22,9 @@ sequenceDiagram
 
 To ensure that the deployment process works correctly you just need to install the IONOS Deploy Now App to your GitHub repository and grant the corresponding rights. The App requires read access to actions and metadata as well as write access to administration, secrets, code and workflows. Deploy Now does not limit the build time you can use to update your web project. However, the build time that can be used in private repositories depends on your personal GitHub plan.
 
-## Workflow v1 (projects created until 11/2022): Including support for `Staging Deployments`
+## `Workflow v1` (projects created until 11/2022)
 
-A GitHub Actions workflow in `.github/workflows/deploy-now.yaml` runs the entire build and deployment. This workflow exists per branch allowing users to stage branches before deploying to production.
-
-~~~mermaid
-flowchart LR
-    subgraph prepare
-    a1(fetch project data)-->a2(checkout repository)
-    end
-    subgraph build
-    b1(generate .env/.htaccess)-->b2(install dependencies)-->b3(run build)
-    end
-    subgraph deploy
-    c1(deploy)
-    end
-    a2 --> b1
-    b3 --> c1
-~~~
-
-`.env`/`.htaccess` files are generated from `.env.template`/`.htaccess.template` files in `.deploy-now`. Files can be excluded from deployments in `.deploy-now/config.yaml`.
-
-## Workflow v2 (projects created from 11/2022): Including support for `Staging Deployments` and `Multi Deployments`
-
-A GitHub Actions workflow in `.github/workflows/deploy-now.yaml` runs the entire build and deployment. This workflow exists per branch allowing users to stage branches before deploying to production.
+A GitHub Actions workflow in `.github/workflows/deploy-now.yaml` runs the entire build and deployment. This workflow exists per branch to enable `Staging Deployments`. 
 
 ~~~mermaid
 flowchart LR
@@ -63,4 +42,29 @@ flowchart LR
 ~~~
 
 `.env`/`.htaccess` files are generated from `.env.template`/`.htaccess.template` files in `.deploy-now`. Files can be excluded from deployments in `.deploy-now/config.yaml`.
+
+## `Workflow v2` (projects created from 11/2022)
+
+An orchestration workflow in `.github/workflows/[project-name]-orchestration.yaml` runs the build steps specified in `.github/workflows/[project-name]-build.yaml` and triggers `.github/workflows/deploy-to-ionos.yaml` for the deployment. This decoupled set up enables `Multi Deployments` in addition to `Staging Deployments`.
+
+~~~mermaid
+flowchart LR
+    subgraph s1[project-name-orchestration.yaml]
+    subgraph s2[project-name-build.yaml]
+    b1(generate .env/.htaccess)-->b2(install dependencies)-->b3(run build)
+    end
+    a1(check readiness)-->a2(build)-->b1
+    b3-->a3(trigger deployment)
+    end
+    subgraph s3[deploy-to-ionos.yaml]
+    c1(deploy to deployment 1)
+    c2(deploy to deployment 2)
+    c3(deploy to deployment 3)
+    end
+    a3 --> c1
+    a3 --> c2
+    a3 --> c3
+~~~
+
+`.env`/`.htaccess` files are generated from `.env.template`/`.htaccess.template` files in `.deploy-now/[project-name]`. Files can be excluded from deployments in `.deploy-now/[project-name]/config.yaml`.
 
