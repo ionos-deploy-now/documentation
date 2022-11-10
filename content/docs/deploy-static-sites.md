@@ -44,5 +44,5 @@ Build settings can be adapted directly in the configuration files of the GitHub 
 ### Domains & TLS
 You can connect any kind of custom domain in a few clicks. If you want to connect a domain that you have not purchased at IONOS, you need to switch to the IONOS nameservers first. Each domain is automatically SSL secured.
 
-# Redirects, rewrites, HTACCESS
+### Redirects, rewrites, HTACCESS
 Redirects and rewrites can be managed via `.htaccess` files. Visit [Apache configuration](/docs/apache-configuration-htaccess) for examples.
