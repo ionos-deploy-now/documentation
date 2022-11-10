@@ -13,9 +13,9 @@ Deploy Now is a hosting platform that allows you to deploy static sites and PHP 
 
 [How to deploy a PHP app](/docs/deploy-php-apps)
 
-## What is does
+## How Deploy Now works
 
-Deploy Now abstracts from the complexity of infrastructure provisioning, CI/CD configuration and TLS/domain handling. Connect your repository to Deploy Now and set up your GitHub Actions workflow in a step-by-step guide. Based on your required dependencies and build steps, a workflow is set up for you that automatically connects to IONOS shared hosting platform. This is done automatically every time you open a new branch. The GitHub Actions workflow and other configurations, such as cronjobs, file persistency, automated runtime commands, `.env`and `.htaccess` can be managed directly and version-controlled in the repository files. Sensitive data such as database or email credentials can be stored in GitHub secrets and referenced in runtime configuration files. Deploy Now injects their values during the deployment process. Databases can be managed via phpMyAdmin. Use `Multi Deployments` to deploy from one repository to multiple runtimes. 
+Deploy Now abstracts from the complexity of infrastructure provisioning, CI/CD configuration and TLS/domain handling. Connect your repository to Deploy Now and sets up a GitHub Actions [build and deploy workflow](/docs/git-integration/) in a step-by-step guide.The workflow, cronjobs, file persistency, automated runtime commands, `.env` and `.htaccess` can be managed directly and version-controlled in the repository files. Sensitive data such as database or email credentials can be stored in GitHub secrets and referenced in runtime configuration files. Deploy Now injects their values during the deployment process. Databases can be managed via phpMyAdmin. Use `Staging Deployments` to deploy feature branches and  `Multi Deployments` to deploy from one repository to multiple runtimes. 
 
 ## Deploy Now in a nutshell
 
