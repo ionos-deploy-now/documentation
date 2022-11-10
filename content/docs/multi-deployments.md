@@ -34,6 +34,6 @@ By default, each production deployment goes live under a preview URL. All previe
 ## Production data
 Each production deployment receives its own filespace and database, meaning their productive data can differ. Files that need to be kept persistent on the server can be defined in `config.yaml` under `.deploy-now`.
 
-## Set up
+## Setup
 Simply set up a Deploy Now project as usual and add additional production deployments on the project detail page. Each production deployment requires one Deploy Now project package. Multi deployments can be created for `starter projects`, `static projects` and `php projects`, using only project packages of the same type. The number of the available staging deployments adds up based on the number of production deployments created. 
 
