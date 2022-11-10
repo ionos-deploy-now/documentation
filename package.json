@@ -46,7 +46,7 @@
     "gridsome-plugin-htaccess": "^0.2.1",
     "gridsome-plugin-service-worker": "^0.2.8",
     "gridsome-plugin-windicss": "^1.0.7",
-    "node-sass": "^6.0.1",
+    "node-sass": "^8.0.0",
     "prism-themes": "^1.9.0",
     "sass-loader": "^10.1.1",
     "slugify": "^1.6.5",
