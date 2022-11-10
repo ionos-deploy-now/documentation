@@ -13,7 +13,7 @@ Build steps are automated in GitHub Actions workflows. These workflows are set u
 Settings can differ between the `workflow v1`, used in projects created until 11/22, and `workflow v2`, used for newer projects. 
 
 :::tip
-New to GitHub Actions? Check their [documentation](https://docs.github.com/en/actions) to find out how you can use them to enhance the Deploy Now workflow, e.g. by adding  powerful [Continuous Integration](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration) functionalities. Check the [GitHub Actions](https://github.com/marketplace?type=actions) marketplace for other awesome Actions you can integrate.
+New to GitHub Actions? Check their [documentation](https://docs.github.com/en/actions) for instructions and the [GitHub Actions](https://github.com/marketplace?type=actions) marketplace for powerful extensions.
 :::
 
 ## Configurations
