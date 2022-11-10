@@ -7,8 +7,10 @@ editable: true
 ---
 
 # Staging deployments
+
+## Concept
   
-Staging deployments give you the ability to build and deploy branches in addition to your main branch. This allows you to stage changes before merging them to production, giving colleagues or customers the option to test and provide feedback. By default, new branches get deployed automatically and receive preview URLs. As Staging Deployment are not meant to be visible for website visitors, you cannot connect them with custom domains. If you are happy with your changes, simply roll them out by merging the branch to production.
+Staging deployments give you the ability to build and deploy branches in addition to your main branch. This allows you to stage changes before merging them to production, giving colleagues or customers the option to test and provide feedback. 
 
 ~~~mermaid
 graph TD
@@ -22,4 +24,8 @@ graph TD
     F --> F1([preview URL])
 ~~~
 
+## Domains
+By default, new branches get deployed automatically and receive preview URLs. As Staging Deployment are not meant to be visible for website visitors, you cannot connect them with custom domains. If you are happy with your changes, simply roll them out by merging the branch to production.
 
+## Production data
+Data from the producion deployment webspace and database is not copied to staging. You can copy productive data to a staging deployment using phpMyAdmin.
