@@ -26,7 +26,7 @@ Interactions between GitHub and Deploy Now are managed by the IONOS Deploy Now A
 
 The workflow version used depends on your project creation date.
 
-## v1 (projects created until 11/2022)
+### v1 (projects created until 11/2022)
 
 A GitHub Actions workflow in `.github/workflows/deploy-now.yaml` runs the entire build and deployment. This workflow exists per branch to enable [Staging Deployments](/docs/staging-deployments). 
 
@@ -47,7 +47,7 @@ flowchart LR
 
 `.env`/`.htaccess` files are generated from `.env.template`/`.htaccess.template` files in `.deploy-now`. Files can be excluded from deployments in `.deploy-now/config.yaml`.
 
-## v2 (projects created from 11/2022)
+### v2 (projects created from 11/2022)
 
 An orchestration workflow in `.github/workflows/[project-name]-orchestration.yaml` runs the build steps specified in `.github/workflows/[project-name]-build.yaml` and triggers `.github/workflows/deploy-to-ionos.yaml` for the deployment. This decoupled set up enables [Multi Deployments](/docs/multi-deployments) in addition to [Staging Deployments](/docs/staging-deployments).
 
