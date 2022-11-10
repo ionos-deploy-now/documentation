@@ -8,6 +8,53 @@ editable: true
 
 # Deploy Static Sites via GitHub
 
+Deploy Now offers automated builds and deployments to a shared hosting infrastructure for any static sites, such as Static Site Generation projects, Single Page Applications or plain HTML/CSS websites. They can be set up as a `starter project` that comes with your Deploy Now plan or as an `static project` for more storage and staging environments.
+
+## Supported frameworks
+Deploy Now supports all static sites that can be build with Node.js, Composer, Ruby or any other [language supported by GitHub Actions](https://docs.github.com/en/get-started/learning-about-github/github-language-support). The following frameworks can be detected automatically to prefill required build dependencies and commands. Please note that we do not provide Node.js runtime environments. 
+
+### Static Site Generators
+
+Hugo, Gatsby, Gridsome, Docusaurus, Vuepress, Vitepress, NuxtJS (static), NextJS (static), Hexo, Metalsmith, 11ty, UmiJS, Astro, Scully, ElderJS, Middleman, Jekyll, Nanoc, Pelican, mkdocs, Jigsaw and Sculpin
+
+### Single Page Applications
+
+Angular, React, Vue, Ionic, Svelte and Ember
+
+## Features
+- Automated builds and deployments
+- Connect your custom domain
+- SSL automatically connected and renewed 
+- Deploy additional branches with [Staging Deployments](/docs/staging-deployments/)
+- Deploy one branch to multiple environments with [Multi Deployments](/docs/staging-deployments/)
+- Monitor traffic with [Visitor statistics](/docs/visitor-statistics/)
+- Fixed monthly pricing (see plans for [US](https://www.ionos.com/hosting/deploy-now), [UK](https://www.ionos.co.uk/hosting/deploy-now), [GER](https://www.ionos.de/hosting/deploy-now), [CA](https://www.ionos.ca/hosting/deploy-now), [ES](https://www.ionos.es/alojamiento/deploy-now), [FR](https://www.ionos.fr/hebergement/deploy-now), [MX](https://www.ionos.mx/alojamiento/deploy-now) and [IT](https://www.ionos.it/hosting/deploy-now))
+
+
+
+
+
+
+
+
+#### Deployments to secure infrastructure
+
+Static sites are delivered via shared hosting infrastures in Europe and North America. The datacenters are run by IONOS directly and come with georedundancy, DDoS protection and green energy.
+
+#### Powerful features
+
+- [Staging Deployments](/docs/staging-deployments/)
+- [Custom domains and SSL](/docs/domain-tls/)
+- Visitor statistics
+- Unlimited bandwith
+
+
+
+
+
+
+
+
 ## Creating a new Static Project in Deploy Now
 
 ### What do Static Projects offer?
