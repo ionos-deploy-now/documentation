@@ -21,8 +21,8 @@ graph TD
     A(local workspace):::active -->|push to main| B(GitHub repository):::active
     B -->|on push| C{Deploy Now}:::active
     C -->|deploy main| D([production deployment 1]):::active
-    C -->|deploy branch A| E([production deployment 2]):::active
-    C -->|deploy branch N| F([production deployment 3]):::active
+    C -->|deploy main| E([production deployment 2]):::active
+    C -->|deploy main| F([production deployment 3]):::active
     D --> D1([custom domain]):::active
     E --> E1([custom domain]):::active
     F --> F1([custom domain]):::active
