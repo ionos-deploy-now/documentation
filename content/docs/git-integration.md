@@ -20,7 +20,7 @@ sequenceDiagram
     GitHub Actions ->> IONOS: deploy
 ~~~
 
-To ensure that the deployment process works correctly you just need to install the IONOS Deploy Now App to your GitHub repository and grant the corresponding rights. The App requires read access to actions and metadata as well as write access to administration, secrets, code and workflows. Deploy Now does not limit the build time you can use to update your web project. However, the build time that can be used in private repositories depends on your personal GitHub plan.
+Interactions between GitHub and Deploy Now are managed by the IONOS Deploy Now App, which requires read access to actions and metadata as well as write access to administration, secrets, code and workflows. The GitHub Actions build time of private repositories depends on your personal GitHub plan.
 
 ## `Workflow v1` (projects created until 11/2022)
 
