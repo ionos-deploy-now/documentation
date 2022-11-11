@@ -9,7 +9,7 @@ editable: true
 # Cron jobs
 
 ## Creating a cron job
-Cron jobs can be defined directly under `.deploy-now.config.yaml` in your repository. Simply add new cron jobs including a command and a schedule to the sheet. 
+Cron jobs can be defined directly in the `config.yaml` under .deploy-now` in your repository. Simply add new cron jobs including a command and a schedule to the sheet. 
 
 ```
 runtime:
