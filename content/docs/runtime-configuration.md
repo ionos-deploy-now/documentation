@@ -8,6 +8,91 @@ editable: true
 
 # Runtime configuration
 
+`PHP projects` are equipped with a PHP runtime, cronjobs, a MariaDB and a send mail account. Deploy Now offers a convenient solution to configure application configarion files such as `.env`, allowing you to reference to sensitive data such as database credentials without storing them in plain text.
+
+Templates for `.env` and `.htaccess` can be stored under `.deploy-now` for [workflow v1](/docs/git-integration/#v1-projects-created-until-112022) and `.deploy-now/[project-name]` for [workflow v2](docs/git-integration/#v2-projects-created-from-112022). More information about the Deploy Now workflows can be found under [GitHub integration](/docs/git-integration/).
+
+## Configurations
+
+### PHP version
+#### Description
+Deploy Now offers a wide choice of PHP versions. Note that PHP versions for the runtime can be different from those for the build.
+#### How to edit
+Lorem
+#### Example
+``` yaml
+     bla
+```
+
+### Database
+#### Description
+Lorem
+#### How to edit
+Lorem
+#### Example
+``` yaml
+     bla
+```
+
+### Cronjobs
+#### Description
+Lorem
+#### How to edit
+Lorem
+#### Example
+``` yaml
+     bla
+```
+
+### Sendm mail account
+#### Description
+Lorem
+#### How to edit
+Lorem
+#### Example
+``` yaml
+     bla
+```
+
+### .ENV
+#### Description
+Lorem
+#### How to edit
+Lorem
+#### Example
+``` yaml
+     bla
+```
+
+### .HTACCESS
+#### Description
+Lorem
+#### How to edit
+Lorem
+#### Example
+``` yaml
+     bla
+```
+
+## Need help?
+Feel free to reach out to us via <a href="mailto:deploynow-support@ionos.com">deploynow-support@ionos.com</a>.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Prefill runtime configurations using the setup wizard
 
 ### PHP version
