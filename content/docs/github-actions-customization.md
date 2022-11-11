@@ -10,7 +10,7 @@ editable: true
 
 Build steps are automated in GitHub Actions workflows. These workflows are set up during project creation. Deploy Now analyzes your repositories and suggest the required build steps accordingly. Build steps can make use of Node.js, Composer or Budnler. After the set up, build settings can be edited directly in the GitHub Actions workflow files stored in the repository.
 
-Settings can differ between the `workflow v1`, used in projects created until 11/22, and `workflow v2`, used for newer projects. 
+Settings can differ between the `workflow v1`, used in projects created until 11/22, and `workflow v2`, used for newer projects. More information about the Deploy Now workflows can be found under [GitHub integration](/docs/git-integration/).
 
 :::tip
 New to GitHub Actions? Check their [documentation](https://docs.github.com/en/actions) for instructions and the [GitHub Actions](https://github.com/marketplace?type=actions) marketplace for powerful extensions.
