@@ -76,7 +76,7 @@ Send mail credential reference
 Custom secret and non-secret credential reference
 ``` yaml
      # non-secret
-     key = value
+     key: value
      # secret
      key: ${{ secrets.key }}
      
@@ -97,7 +97,7 @@ Please note that when adding new custom variables, they need to be referenced un
 ```
 Under `workflow v2`:
 
-@ Marlon Müller - bite unten einfügen :-)
+@ Marlon Müller - bite unten einfügen wie das für V2 aussieht :-)
 
 Database credential reference
 ``` yaml
@@ -122,7 +122,7 @@ Send mail credential reference
 Custom secret and non-secret credential reference
 ``` yaml
      # non-secret
-     key = value
+     key: value
      # secret
      key: ${{ secrets.key }}
      
