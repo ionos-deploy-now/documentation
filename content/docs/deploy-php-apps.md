@@ -28,7 +28,7 @@ Deploy Now automacally detects Symfony projects and suggests build steps accordi
 - SSL automatically connected and renewed 
 - Set up [Cron Jobs](/docs/cronjobs/)
 - Deploy additional branches with [Staging Deployments](/docs/staging-deployments/)
-- Deploy one branch to multiple environments with [Multi Deployments](/docs/staging-deployments/)
+- Deploy one branch to multiple environments with [Multi Deployments](/docs/multi-deployments/)
 - 10GB storage
 - Up-to-date PHP versions
 - MariaDB for each deployment
@@ -62,7 +62,7 @@ Cron Jobs can be managed in the `config.yaml` under `.deploy-now` as described [
 The current state of the webserver files including logs can be viewed via the [deployment viewer](/docs/deployment-viewer) in the Deploy Now dashboard. You can also download files here. Moving files onto the server is only possible via GitHub. If you want to keep files persistent, i.e. prevent them from being overwritten with the next commit, you can do this by adding excludes to the `config.yaml` under `.deploy-now`. Visit [deployment configuration](/docs/deployment-configuration/) for instructions.
 
 ### Database
-Databases will be automacially created for both production and staging. You can access your databases via PHP MyAdmin. A backup of your database is creates automatically once per day and stored for 7 days. If you wish to access or restore a database backup, please contact our customer service. 
+Databases will be automatically created for both production and staging deployments. You can access your databases via PHP MyAdmin. A backup of your database is creates automatically once per day and stored for 7 days. If you wish to access or restore a database backup, please contact our customer service. 
 
 ### Execute commands on runtime
 To avoid inconsistencies between the GitHub repository and the runtime version of your project, Deploy Now does not offer SSH access to the server. Users can define commands to be executed on the runtime before and after deployments in the `config.yaml` under `.deploy-now` as described [here](/docs/deployment-configuration/).

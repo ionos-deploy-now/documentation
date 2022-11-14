@@ -8,7 +8,7 @@ editable: true
 
 # Build configuration
 
-Build steps are automated in GitHub Actions workflows. These workflows are set up during project creation. Deploy Now analyzes your repositories and suggest the required build steps accordingly. Build steps can make use of Node.js, Composer or Budnler. After the set up, build settings can be edited directly in the GitHub Actions workflow files stored in the repository.
+Build steps are automated in GitHub Action workflows. These workflows are set up during project creation. Deploy Now analyzes your repositories and suggest the required build steps accordingly. Build steps can make use of Node.js, Composer or Bundler. After the set up, build settings can be edited directly in the GitHub Action workflow files stored in the repository.
 
 Configurations can be made under `.github/workflows/deploy-now.yaml` for [workflow v1](/docs/git-integration/#v1-projects-created-until-112022) and `.github/workflows/[project-name]-build.yaml` for [workflow v2](docs/git-integration/#v2-projects-created-from-112022). More information about the Deploy Now workflows can be found under [GitHub integration](/docs/git-integration/).
 
@@ -53,7 +53,7 @@ Edit versions of the existing setup steps or adding additional steps to install 
 #### Description
 Key value pairs accessible during your build for behavior customization or connecting to APIs. They can be either stored as plain text or, if sensitive, stored as [GitHub secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets). 
 #### How to edit
-Navigate to the dependency set up or build execution steps and list key-value-pairs below `env:`.
+Navigate to the setup of the dependency or the build execution steps and list key-value-pairs below `env:` according to the documentation of the corresponding action.
 #### Example
 ``` yaml
       - name: Build PHP assets

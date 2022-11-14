@@ -26,7 +26,7 @@ Angular, React, Vue, Ionic, Svelte and Ember
 - Connect your custom domain
 - SSL automatically connected and renewed 
 - Deploy additional branches with [Staging Deployments](/docs/staging-deployments/)
-- Deploy one branch to multiple environments with [Multi Deployments](/docs/staging-deployments/)
+- Deploy one branch to multiple environments with [Multi Deployments](/docs/multi-deployments/)
 - Monitor traffic with [Visitor statistics](/docs/visitor-statistics/)
 - Fixed monthly pricing (see plans for [US](https://www.ionos.com/hosting/deploy-now), [UK](https://www.ionos.co.uk/hosting/deploy-now), [GER](https://www.ionos.de/hosting/deploy-now), [CA](https://www.ionos.ca/hosting/deploy-now), [ES](https://www.ionos.es/alojamiento/deploy-now), [FR](https://www.ionos.fr/hebergement/deploy-now), [MX](https://www.ionos.mx/alojamiento/deploy-now) and [IT](https://www.ionos.it/hosting/deploy-now))
 

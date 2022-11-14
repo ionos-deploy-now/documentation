@@ -16,13 +16,13 @@ Deploy Now offers configurations for file persistency and automated runtime comm
 
 ### Excludes
 #### Description
-by default, all files in your publish directory get deployed. Directories that should not be deployed can be listed as excludes. Vice versa, files created by your application at runtime can also be listed as excluced, preventing them from being deleted. You can define different excludes for the first deployment (`bootstrap`) and any following deployment (`recurring`). 
+by default, all files in your publish directory get deployed. Directories that should not be deployed can be listed as excludes. Vice versa, files created by your application at runtime can also be listed as excluced, preventing them from being deleted. You can define different excludes for the first deployment (`bootstrap`) and any following deployment (`recurring`). The folders `logs`, `.deploy-now`, `.git` and `.github` are marked as excludes by default. 
 #### How to edit
 Listing directories relative to the publish directory under `excludes:` in `config.yaml`. Changes become active with the next deployment.
 #### Example
 ``` yaml
     bootstrap:
-      # directories that are not overwritten or removed by the next deployment
+      # directories that are not copied by the initial deployment
       excludes:
         - samplefolder
         - samplefile.txt
@@ -42,7 +42,7 @@ Listing directories relative to the publish directory under `excludes:` in `conf
 #### Description
 You can execute commands on your runtime after `bootstrap` and before and after `recurring` deployments. This allows you to prepare your application to prepare for deployments or process deployments.
 #### How to edit
-List runtime commands under `pre-deployment-remote-commands`or `post-deployment-remote-commands`. The folders `logs`, `.deploy-now`, `.git` and `.github` are marked as excludes by default.
+List runtime commands under `pre-deployment-remote-commands`or `post-deployment-remote-commands`.
 #### Example
 ``` yaml
     # commands that are executed on the runtime before new files are copied

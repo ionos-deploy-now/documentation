@@ -8,7 +8,7 @@ editable: true
 
 # GitHub integration
 
-Deploy Now build your project in a [GitHub Actions](https://github.com/features/actions) workflow and deploys results instanlty to IONOS infrastructure. Repositories can be `public` or `private` and owned by `personal accounts` or `GitHub organizations`. 
+Deploy Now builds your project in a [GitHub Actions](https://github.com/features/actions) workflow and deploys results instantly to IONOS infrastructure. Repositories can be `public` or `private` and owned by `personal accounts` or `GitHub organizations`. 
 
 ~~~mermaid
 sequenceDiagram
@@ -20,7 +20,7 @@ sequenceDiagram
     GitHub Actions ->> IONOS: deploy
 ~~~
 
-Interactions between GitHub and Deploy Now are managed by the IONOS Deploy Now App, which requires read access to actions and metadata as well as write access to administration, secrets, code and workflows. The GitHub Actions build time of private repositories depends on your personal GitHub plan.
+Interactions between GitHub and Deploy Now are managed by the IONOS Deploy Now App, which requires read access to actions and metadata as well as write access to administration, secrets, code and workflows. The available GitHub Actions build time of private repositories depends on your personal GitHub plan.
 
 ## Workflow versions
 

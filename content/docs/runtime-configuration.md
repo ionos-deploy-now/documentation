@@ -8,7 +8,9 @@ editable: true
 
 # Runtime configuration
 
-`PHP projects` are equipped with a PHP runtime, cronjobs, a MariaDB and a send mail account. Deploy Now offers a convenient solution to configure application configarion files such as `.env`, allowing you to reference to sensitive data such as database credentials without storing them in plain text.
+The runtime configuration is only relevant for projects using PHP as other runtimes are not supported at the moment.
+
+`PHP projects` are equipped with a PHP runtime, cron jobs, a MariaDB and a send mail account. Deploy Now offers a convenient solution to generate application configuration files such as `.env`, allowing you to reference to sensitive data such as database credentials without storing them in plain text.
 
 Templates for `.env` and `.htaccess` can be stored under `.deploy-now` for [workflow v1](/docs/git-integration/#v1-projects-created-until-112022) and `.deploy-now/[project-name]` for [workflow v2](docs/git-integration/#v2-projects-created-from-112022). More information about the Deploy Now workflows can be found under [GitHub integration](/docs/git-integration/).
 
@@ -22,15 +24,15 @@ PHP versions of production and staging deployments can be adapted in the project
 
 ### Database
 #### Description
-Each `PHP project` is equipped wiht 1 2GB MariaDB. 
+Each `PHP project` is equipped with one 2GB MariaDB. 
 #### How to edit
-Databases can be managed via phpMyAdmin in the project dahsboard. How to reference database credentials in `.env` is described under [application configuration](/docs/runtime-configuration/#application-configuration).
+Databases can be managed via phpMyAdmin in the project dashboard. How to reference database credentials in `.env` is described under [application configuration](/docs/runtime-configuration/#application-configuration).
 
-### Cronjobs
+### Cron jobs
 #### Description
 Cron jobs execute recurring tasks, like executing scripts, on your runtime at fixed points in time.
 #### How to edit
-Cron jobs can be defined in the `config.yaml` under `.deploy-now` in your repository. More information about cron job syntax can be found [here](ttps://de.ryte.com/wiki/CronJob).
+Cron jobs can be defined in the `config.yaml` under `.deploy-now` for [workflow v1](/docs/git-integration/#v1-projects-created-until-112022) and `.deploy-now/[project-name]` for [workflow v2](docs/git-integration/#v2-projects-created-from-112022) in your repository. More information about cron job syntax can be found [here](https://de.ryte.com/wiki/CronJob).
 #### Example
 ```
 runtime:
@@ -47,7 +49,7 @@ Mail credentials are stored in the GitHub secrets of your repository. How to ref
 
 ### Application configuration
 #### Description
-Most dynamic projects require an application configuration file such as `.env`. Such files are simple text files for controlling applications environment constants. As these constants might not be stored as plain text in your repository, you can add placeholders in configuration files that get replaced by their actual values during deployment. Actual values are stored in GitHub secrets.
+Most dynamic projects require an application configuration file such as `.env`. Such files are simple text files for controlling application environment constants. As these constants might not be stored as plain text in your repository, you can add placeholders in configuration files that get replaced by their actual values during deployment. Actual values are stored in GitHub secrets.
 #### How to edit
 Configuration file templates are stored in `.deploy-now` for [workflow v1](/docs/git-integration/#v1-projects-created-until-112022) and `.deploy-now/[project-name]` for [workflow v2](docs/git-integration/#v2-projects-created-from-112022). The relative path of this file within this folder (you may add additional sub-folders) will be used as the target path for the deployed config file. They are suffixed with `.template`. The reference syntax can be found in the examples below. Database credentials are stored in GitHub secrets as well since `workflow v2`.
 #### Example
@@ -97,35 +99,37 @@ Please note that when adding new custom variables, they need to be referenced un
 ```
 Under `workflow v2`:
 
-@ Marlon Müller - bite unten einfügen wie das für V2 aussieht :-)
-
 Database credential reference
 ``` yaml
      DB_CONNECTION=mysql
-     DB_HOST={{ .runtime.db.host }}
+     DB_HOST=$IONOS_DB_HOST
      DB_PORT=3306
-     DB_DATABASE={{ .runtime.db.name }}
-     DB_USERNAME={{ .runtime.db.user }}
-     DB_PASSWORD={{ .runtime.db.password }}
+     DB_DATABASE=$IONOS_DB_NAME
+     DB_USERNAME=$IONOS_DB_USERNAME
+     DB_PASSWORD=$IONOS_DB_PASSWORD
 ```
 Send mail credential reference
 ``` yaml
      MAIL_MAILER=smtp
-     MAIL_HOST={{ .secrets.mail.host }}
-     MAIL_PORT={{ .secrets.mail.port }}
-     MAIL_USERNAME={{ .secrets.mail.user }}
-     MAIL_PASSWORD={{ .secrets.mail.password }}
-     MAIL_ENCRYPTION={{ .secrets.mail.encryption }}
-     MAIL_FROM_ADDRESS={{ .secrets.mail.fromAddress }}
+     MAIL_HOST=$IONOS_MAIL_HOST
+     MAIL_PORT=$IONOS_MAIL_PORT
+     MAIL_USERNAME=$IONOS_MAIL_USERNAME
+     MAIL_PASSWORD=IONOS_MAIL_PASSWORD
+     MAIL_ENCRYPTION=IONOS_MAIL_ENCRYPTION
+     MAIL_FROM_ADDRESS=IONOS_MAIL_FROM_ADDRESS
      MAIL_FROM_NAME="${APP_NAME}"
 ```
-Custom secret and non-secret credential reference
+
+Inserted values could also be url-encoded if this is required by you framework. Simply use the following syntax:
 ``` yaml
-     # non-secret
-     key: value
-     # secret
-     key: ${{ secrets.key }}
+     URL_ENCODED_PASSWORD=${ IONOS_DB_PASSWORD.urlEncoded() }
      
+```
+
+All secrets and deployment specific variables are automatically passed to the template action, therefore you do not have to edit this section on you own.  
+``` yaml
+    with:
+      data: '[${{ toJson(secrets) }}, ${{ steps.deployment.outputs.template-variables }}]'
 ```
 
 ### .HTACCESS

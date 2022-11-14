@@ -25,7 +25,7 @@ graph TD
 ~~~
 
 ## Domains
-By default, new branches get deployed automatically and receive preview URLs. As Staging Deployment are not meant to be visible for website visitors, you cannot connect them with custom domains. If you are happy with your changes, simply roll them out by merging the branch to production.
+By default, new branches get deployed automatically and receive preview URLs. As Staging Deployments are not meant to be visible for website visitors, you cannot connect them with custom domains. If you are happy with your changes, simply roll them out by merging the branch to production.
 
 ## Production data
 Data from the producion deployment webspace and database is not copied to staging. You can copy productive data to a staging deployment using phpMyAdmin.
