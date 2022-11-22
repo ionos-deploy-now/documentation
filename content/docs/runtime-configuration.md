@@ -134,7 +134,7 @@ All secrets and deployment specific variables are automatically passed to the te
 #### Description
 HTACCESS is a configuration file used by apache-based web servers. It can be used to define redirects and rewrites and includes security and performance relevant configurations. See [Apache configuration](/docs/apache-configuration-htaccess/) for an extensive overview of functionalities that are available in Deploy Now. 
 #### How to edit
-HTACCESS files are stored in `.deploy-now` for [workflow v1](/docs/git-integration/#v1-projects-created-until-112022) and `.deploy-now/[project-name]` for [workflow v2](docs/git-integration/#v2-projects-created-from-112022). The relative path of this file within this folder (you may add additional sub-folders) will be used as the target path for the deployed HTACCESS file. Files need to be named `HTACCESS.template`.
+HTACCESS files are stored in `.deploy-now` for [workflow v1](/docs/git-integration/#v1-projects-created-until-112022) and `.deploy-now/[project-name]` for [workflow v2](docs/git-integration/#v2-projects-created-from-112022). The relative path of this file within this folder (you may add additional sub-folders) will be used as the target path for the deployed HTACCESS file. Files need to be named `.htaccess.template`.
 #### Example
 Examples can be found under [Apache configuration](/docs/apache-configuration-htaccess/).
 
