@@ -12,7 +12,7 @@ Deploy Now offers a convenient toolset to automate builds and deployments for dy
 ![PHP Projects in Deploy Now](/04_PHP_apps_via_GitHub.gif)
 
 ## Supported frameworks
-Deploy Now supports PHP projects that can be build with Node.js, Composer, Ruby or any other [language supported by GitHub Actions](https://docs.github.com/en/get-started/learning-about-github/github-language-support). Setting up Content Management System such as WordPress is possible, but does not yet come with automated, prefilled setups. 
+Deploy Now can host any PHP Application built with Composer and Node.js, see [languages supported by GitHub Actions](https://docs.github.com/en/get-started/learning-about-github/github-language-support). Setting up Content Management System such as WordPress is possible, but does not yet come with automated, prefilled setups. 
 
 ### Laravel
 After you connect your Laravel repository, Deploy Now suggests you build steps you can adapt to your liking. It might help you to deploy our [laravel sample project](/docs/framework-samples/#laravel-sample) for a completely prefilled setup including build steps, prefilled `.env`, `.htaccess`, file persistency management and automated runtime commands before and after each deployment. A complete manual of setting up a Laravel project can be found below.
