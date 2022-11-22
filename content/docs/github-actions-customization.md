@@ -37,7 +37,7 @@ Editing commands or adding new commands in building steps of the workflow file.
 
 ### Build dependencies
 #### Description
-Before running a build command, the languages and software required for your build needs to be installed.
+Before running a build command, the software required for your build needs to be installed.
 #### How to edit
 Edit versions of the existing setup steps or adding additional steps to install dependencies, following the schema below.
 #### Example
