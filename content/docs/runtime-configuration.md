@@ -83,15 +83,13 @@ Custom secret and non-secret credential reference
      key: ${{ secrets.key }}
      
 ```
-Please note that when adding new custom variables, they need to be referenced under `.github/workflows/deploy-now.yaml` as shown below.
+Please note that when adding new secret custom variables, they need to be referenced under `.github/workflows/deploy-now.yaml` as shown below.
 
 ``` yaml
  - name: Render templates
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: ionos-deploy-now/template-renderer-action@v1
         with:
-          # this is a non-secret custom variable
-          key = value
           secrets: |
                # this is a secret custom variable
                key: ${{ secrets.key }}
