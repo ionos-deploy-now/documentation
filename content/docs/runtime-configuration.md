@@ -75,6 +75,10 @@ Send mail credential reference
      MAIL_FROM_ADDRESS={{ .secrets.mail.fromAddress }}
      MAIL_FROM_NAME="${APP_NAME}"
 ```
+Reference App URL
+``` yaml
+     APP_URL={{ .runtime.app_url }}
+```
 Custom secret and non-secret credential reference
 ``` yaml
      # non-secret
@@ -117,7 +121,10 @@ Send mail credential reference
      MAIL_FROM_ADDRESS=IONOS_MAIL_FROM_ADDRESS
      MAIL_FROM_NAME="${APP_NAME}"
 ```
-
+Reference App URL
+``` yaml
+     APP_URL=$IONOS_APP_URL
+```
 Inserted values could also be url-encoded if this is required by you framework. Simply use the following syntax:
 ``` yaml
      URL_ENCODED_PASSWORD=${ IONOS_DB_PASSWORD.urlEncoded() }
