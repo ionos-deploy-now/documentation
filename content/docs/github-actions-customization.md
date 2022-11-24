@@ -24,9 +24,21 @@ Combining your source code and dependencies to build a runnable instance of your
 #### How to edit
 Editing commands or adding new commands in building steps of the workflow file.
 #### Example
+`workflow v1`:
 ``` yaml
       - name: Build Node assets
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        env:
+          CI: true
+          SITE_URL: ${{ steps.project.outputs.site-url }}
+        run: |
+          npm ci
+          npm run build
+```
+
+`workflow v2`:
+``` yaml
+      - name: Build Node assets
         env:
           CI: true
           SITE_URL: ${{ steps.project.outputs.site-url }}
@@ -41,9 +53,18 @@ Before running a build command, the software required for your build needs to be
 #### How to edit
 Edit versions of the existing setup steps or adding additional steps to install dependencies, following the schema below.
 #### Example
+`workflow v1`:
 ``` yaml
       - name: Setup Node
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: v16.x
+```
+
+`workflow v2`:
+``` yaml
+      - name: Setup Node
         uses: actions/setup-node@v1
         with:
           node-version: v16.x
@@ -55,9 +76,19 @@ Key value pairs accessible during your build for behavior customization or conne
 #### How to edit
 Navigate to the setup of the dependency or the build execution steps and list key-value-pairs below `env:` according to the documentation of the corresponding action.
 #### Example
+`workflow v1`:
 ``` yaml
       - name: Build PHP assets
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        env:
+          MY_ENV_VAR: value-for-my-env-var
+          MY_SECRET_ENV_VAR: ${{ secrets.MY_SECRET }} 
+        run: php artisan key:generate --force -n
+```
+
+`workflow v2`:
+``` yaml
+      - name: Build PHP assets
         env:
           MY_ENV_VAR: value-for-my-env-var
           MY_SECRET_ENV_VAR: ${{ secrets.MY_SECRET }} 

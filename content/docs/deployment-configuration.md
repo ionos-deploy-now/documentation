@@ -40,7 +40,7 @@ Listing directories relative to the publish directory under `excludes:` in `conf
 
 ### Remote commands
 #### Description
-You can execute commands on your runtime after `bootstrap` and before and after `recurring` deployments. This allows you to prepare your application to prepare for deployments or process deployments.
+You can execute commands on your runtime during the deployment process. This could either be done before or after the deployment. You can define different commands for the initial deployment (`bootstrap`) and any other deployment (`recurring`).
 #### How to edit
 List runtime commands under `pre-deployment-remote-commands`or `post-deployment-remote-commands`.
 #### Example

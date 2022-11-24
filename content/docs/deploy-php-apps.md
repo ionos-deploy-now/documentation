@@ -44,8 +44,8 @@ After connecting your repository, Deploy Now will guide you trough the following
 
 ## Settings
 
-### Build dependencies, commands and environment variables
-[Build settings](/docs/github-actions-customization/) can be adapted directly in the configuration files of the GitHub Actions workflow under `.github/workflows`. 
+### Build setup
+[Build settings](/docs/github-actions-customization/) like dependencies, commands and environment variables can be adapted directly in the configuration files of the GitHub Actions workflow under `.github/workflows`. 
 
 ### Domains & TLS
 Custom domains can be connected in a few clicks to replace the IONOS placeholder domain. If you want to connect a domain that you have not purchased at IONOS, you need to switch to the IONOS nameservers first. Each domain is automatically SSL secured.

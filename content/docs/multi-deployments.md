@@ -13,7 +13,7 @@ editable: true
 Multi deployments allow you to deploy your productive branch to multiple production deployments after one, centralized build. This allows you to deploy many instances of a web service efficiently. The instances might differ in their persistent data in filespace or database.
 
 :::tip
-Multi Deployments are only available for projects running under the [v2 workflow](/docs/git-integration/#v2-projects-created-from-112022). Projects created under v1 need to be switched to v2 manually or by re-creating them. 
+Multi Deployments are only available for projects running under the [v2 workflow](/docs/git-integration/#v2-projects-created-from-112022). Projects created under v1 need to be switched to v2 manually e.g. by re-creating them. We will also provide a way to open a pull request in your repository which tries to do the migration automatically. 
 :::
 
 ~~~mermaid
