@@ -13,21 +13,20 @@ Deploy Now is a hosting platform that allows you to deploy static sites and PHP 
 
 [How to deploy a PHP app](/docs/deploy-php-apps)
 
-## Under the hood
+## How Deploy Now works
 
-Deploy Now provides the value of setting up a GitHub Actions workflow in a convenient setup wizard and provides a shared hosting infrastructure that is automatically connected to the workflow. As a result of the setup, Deploy Now injects a `.yaml` describing the GitHub Actions workflow directly into the repisitory. By default, this workflow is triggered on git push and automatically installs build dependencies, executes build steps and rsyncs results to the IONOS infrastructure. Once the workflow is injected into the repository, it is up to the user to extend it or keep it up to date. 
-
-All other settings that are made in the project setup can be adapted in an additional config file that gets injected into a `.deploy-now` folder of the repository. If your project requires configuration files such as `.env` or `.htaccess` on the runtime, you can place them into this folder and suffix them with an additional `.template`. The relative path of this file inside the `.deploy-now` folder will be used as the target path for the deployed file on the server. You can store sensitive information in GitHub secrets and reference them in your configuration files. Deploy Now automatically replaces placeholders with real variable values during the deployment process.
+Deploy Now abstracts from the complexity of infrastructure provisioning, CI/CD configuration and TLS/domain handling. Connect your repository to Deploy Now and set up a GitHub Actions [build and deploy workflow](/docs/git-integration/) in a step-by-step guide. The workflow, cronjobs, file persistency, automated runtime commands, `.env` and `.htaccess` can be managed directly and version-controlled in the repository files. Sensitive data such as database or email credentials can be stored in GitHub secrets and referenced in runtime configuration files. Deploy Now injects their values during the deployment process. Databases can be managed via phpMyAdmin. Use `Staging Deployments` to deploy feature branches and  `Multi Deployments` to deploy from one repository to multiple runtimes. 
 
 ## Deploy Now in a nutshell
 
 |FUNCTION SET|APPLICATION STACK|BY DEFAULT|
 |-|-|-|
-|Smart framework setup|HTTP/2|DDos Protection|
+|Smart framework setups|HTTP/2|DDos Protection|
 |Automated deployments|Apache|Geo redundancy|
 |[Staging deployments](/docs/staging-deployments)|[SSL/TLS by default](/docs/domain-tls/#tlsssl)|[Climate-neutral hosting](https://www.ionos.com/environment)|
-|[Custom domains](/docs/domain-tls)|Wide variety of PHP versions|IPv6|
-|[Visitor statistics](/docs/visitor-statistics)|[Cron jobs](/docs/cron-jobs)||
+|[Multi deployments](/docs/multi-deployments)|Wide variety of PHP versions|IPv6|
+|[Custom domains](/docs/domain-tls)|[Cron jobs](/docs/cron-jobs)||
+|[Visitor statistics](/docs/visitor-statistics)|||
 
 ## Getting started
 You can start either [from sample](/docs/framework-samples), [from command line](/docs/from-cmd-line) or [from an existing repository](/docs/from-repo).
