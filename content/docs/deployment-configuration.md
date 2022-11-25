@@ -10,7 +10,7 @@ editable: true
 
 Workflows deploy to IONOS infrastructure after the [build](/docs/github-actions-customization/). Build results can be deployed to one instance or multiple instances with [Multi deployments](/docs/multi-deployments/). Additional feature branches can be deployed as [Staging deployments](/docs/staging-deployments/). More information about the Deploy Now workflows can be found under [GitHub integration](/docs/git-integration/).
 
-Deploy Now offers configurations for file persistency and automated runtime commands for `PHP projects`. Configurations can be made under `.deploy-now/config.yaml` for [workflow v1](/docs/git-integration/#v1-projects-created-until-112022) and `.deploy-now/[project-name]/config.yaml` for [workflow v2](docs/git-integration/#v2-projects-created-from-112022).
+Deploy Now offers configurations for file persistency and automated runtime commands for `PHP projects`. Configurations can be made under `.deploy-now/config.yaml` for [workflow v1](/docs/git-integration/#workflow-versions) and `.deploy-now/[project-name]/config.yaml` for [workflow v2](/docs/git-integration/#workflow-versions).
 
 ## Configurations
 
