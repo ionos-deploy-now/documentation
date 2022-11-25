@@ -12,7 +12,7 @@ The runtime configuration is only relevant for projects using PHP as other runti
 
 `PHP projects` are equipped with a PHP runtime, cron jobs, a MariaDB and a send mail account. Deploy Now offers a convenient solution to generate application configuration files such as `.env`, allowing you to reference to sensitive data such as database credentials without storing them in plain text.
 
-Templates for `.env` and `.htaccess` can be stored under `.deploy-now` for [workflow v1](/docs/git-integration/#v1-projects-created-until-112022) and `.deploy-now/[project-name]` for [workflow v2](docs/git-integration/#v2-projects-created-from-112022). More information about the Deploy Now workflows can be found under [GitHub integration](/docs/git-integration/).
+Templates for `.env` and `.htaccess` can be stored under `.deploy-now` for [workflow v1](/docs/git-integration/#workflow-versions) and `.deploy-now/[project-name]` for [workflow v2](/docs/git-integration/#workflow-versions). More information about the Deploy Now workflows can be found under [GitHub integration](/docs/git-integration/).
 
 ## Configurations
 
@@ -32,7 +32,7 @@ Databases can be managed via phpMyAdmin in the project dashboard. How to referen
 #### Description
 Cron jobs execute recurring tasks, like executing scripts, on your runtime at fixed points in time.
 #### How to edit
-Cron jobs can be defined in the `config.yaml` under `.deploy-now` for [workflow v1](/docs/git-integration/#v1-projects-created-until-112022) and `.deploy-now/[project-name]` for [workflow v2](docs/git-integration/#v2-projects-created-from-112022) in your repository. More information about cron job syntax can be found [here](https://de.ryte.com/wiki/CronJob).
+Cron jobs can be defined in the `config.yaml` under `.deploy-now` for [workflow v1](/docs/git-integration/#v1-projects-created-until-112022) and `.deploy-now/[project-name]` for [workflow v2](/docs/git-integration/#workflow-versions) in your repository. More information about cron job syntax can be found [here](https://de.ryte.com/wiki/CronJob).
 #### Example
 ```
 runtime:
@@ -51,7 +51,7 @@ Mail credentials are stored in the GitHub secrets of your repository. How to ref
 #### Description
 Most dynamic projects require an application configuration file such as `.env`. Such files are simple text files for controlling application environment constants. As these constants might not be stored as plain text in your repository, you can add placeholders in configuration files that get replaced by their actual values during deployment. Actual values are stored in GitHub secrets.
 #### How to edit
-Configuration file templates are stored in `.deploy-now` for [workflow v1](/docs/git-integration/#v1-projects-created-until-112022) and `.deploy-now/[project-name]` for [workflow v2](docs/git-integration/#v2-projects-created-from-112022). The relative path of this file within this folder (you may add additional sub-folders) will be used as the target path for the deployed config file. They are suffixed with `.template`. The reference syntax can be found in the examples below. Database credentials are stored in GitHub secrets as well since `workflow v2`.
+Configuration file templates are stored in `.deploy-now` for [workflow v1](/docs/git-integration/#workflow-versions) and `.deploy-now/[project-name]` for [workflow v2](/docs/git-integration/#workflow-versions). The relative path of this file within this folder (you may add additional sub-folders) will be used as the target path for the deployed config file. They are suffixed with `.template`. The reference syntax can be found in the examples below. Database credentials are stored in GitHub secrets as well since `workflow v2`.
 #### Example
 Under `workflow v1`:
 
@@ -141,7 +141,7 @@ All secrets and deployment specific variables are automatically passed to the te
 #### Description
 HTACCESS is a configuration file used by apache-based web servers. It can be used to define redirects and rewrites and includes security and performance relevant configurations. See [Apache configuration](/docs/apache-configuration-htaccess/) for an extensive overview of functionalities that are available in Deploy Now. 
 #### How to edit
-HTACCESS files are stored in `.deploy-now` for [workflow v1](/docs/git-integration/#v1-projects-created-until-112022) and `.deploy-now/[project-name]` for [workflow v2](docs/git-integration/#v2-projects-created-from-112022). The relative path of this file within this folder (you may add additional sub-folders) will be used as the target path for the deployed HTACCESS file. Files need to be named `.htaccess.template`.
+HTACCESS files are stored in `.deploy-now` for [workflow v1](/docs/git-integration/#workflow-versions) and `.deploy-now/[project-name]` for [workflow v2](/docs/git-integration/#workflow-versions). The relative path of this file within this folder (you may add additional sub-folders) will be used as the target path for the deployed HTACCESS file. Files need to be named `.htaccess.template`.
 #### Example
 Examples can be found under [Apache configuration](/docs/apache-configuration-htaccess/).
 
