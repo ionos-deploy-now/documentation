@@ -19,6 +19,8 @@ After you connect your Laravel repository, Deploy Now suggests you build steps y
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/otSwpzsoZss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+_Please note that the [syntax of the variable references](https://docs.ionos.space/docs/runtime-configuration/#application-configuration) changed since the release of the video_
+
 ### Symfony
 Deploy Now automacally detects Symfony projects and suggests build steps accordingly. The setup follows the same logic as a Laravel setup. You can deploy our [symfony sample project](/docs/framework-samples/#symfony-sample) for a quick start.
 
