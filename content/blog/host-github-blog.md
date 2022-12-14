@@ -35,7 +35,7 @@ Once you've created your GitHub blog, you'll need to find a host to serve your b
 
 * **Self-Hosting.** Many developers host their blogs on their own servers. If you are already running a private web server, or if you want more control than you have using a hosting service, you may choose to self-host your blog. There are a variety of[ tools you can use to help automate your blog's workflow](https://github.com/awesome-selfhosted/awesome-selfhosted).
 * **GitHub Pages**. GitHub offers a free hosting solution called[ GitHub Pages](https://pages.github.com/). GitHub Pages works with Jekyll, a popular static site generator. Your blog content is automatically deployed to GitHub Pages whenever you push your changes to your GitHub repository. GitHub Pages is an excellent solution for a small blog, but you may run into limitations as you grow.
-* **Shared Hosting with GitHub Support**.[ Deploy Now from Ionos](http://allows%20you%20to%20deploy%20static%20sites%20and%20php%20apps%20directly%20via%20github.%20as%20a%20tool%20built%20from%20developers%20for%20developers%2C%20deploy%20now%20automates%20build%20and%20deployment%20so%20you%20can%20focus%20entirely%20on%20your%20code.%20your%20code%20is%20deployed%20to%20ionos%20reliable%20shared%20hosting%20infrastructure%20in%20europe%20and%20north%20america.%20the%20workflow/) allows you to deploy static sites and PHP apps directly via GitHub. Your blog is stored on [IONOS](https://www.ionos.com/) reliable shared hosting infrastructure in Europe and North America.
+* **Shared Hosting with GitHub Support**.[ Deploy Now from ](http://allows%20you%20to%20deploy%20static%20sites%20and%20php%20apps%20directly%20via%20github.%20as%20a%20tool%20built%20from%20developers%20for%20developers%2C%20deploy%20now%20automates%20build%20and%20deployment%20so%20you%20can%20focus%20entirely%20on%20your%20code.%20your%20code%20is%20deployed%20to%20ionos%20reliable%20shared%20hosting%20infrastructure%20in%20europe%20and%20north%20america.%20the%20workflow/) allows you to deploy static sites and PHP apps directly via GitHub. Your blog is stored on [IONOS](https://www.ionos.com/) reliable shared hosting infrastructure in Europe and North America.
 
 
 ## How to Choose a Hosting Solution for Your GitHub Blog
@@ -196,6 +196,6 @@ Choosing the right host for your GitHub Blog depends on your needs and plans for
 
 ## Deploy Now: The Hosting Solution That Automates Deploying Directly from GitHub 
 
-Ionos’ [Deploy Now](https://docs.ionos.space/) analyzes your files and automatically builds a customizable workflow to automate deploying your blog to Ionos’ secure and reliable hosting platform. With Deploy Now, you can automatically deploy your blog updates each time you create a post or make a change to your blog.
+IONOS’ [Deploy Now](https://docs.ionos.space/) analyzes your files and automatically builds a customizable workflow to automate deploying your blog to IONOS’ secure and reliable hosting platform. With Deploy Now, you can automatically deploy your blog updates each time you create a post or make a change to your blog.
 
 Get started today by learning [more about Deploy Now](https://docs.ionos.space/docs/faq/) or [creating a sample project](https://docs.ionos.space/docs/framework-samples/).
