@@ -1,6 +1,6 @@
 ---
-description: "Both frameworks have pros and cons, so how can you decide which framework is suitable for your project? In this article, we’ll compare Laravel vs. Symfony and help provide some guidance so you can pick the framework that’s right for your project."
-created: '2022-12-05'
+description: "If you're a developer, you know that GitHub is the go-to platform for version control and code collaboration. These features also mean GitHub can be an excellent platform for storing your blog files. And, if you choose the right host for your blog, deploying new blog posts can be as simple as committing your changes."
+created: '2022-12-14'
 author: 'katy-kozee'
 header: '@assets/blog/github-blog.png'
 teaser: '@assets/blog/github-blog.png'
