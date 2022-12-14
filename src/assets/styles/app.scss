@@ -158,6 +158,7 @@ header {
 table {
   @apply text-left mb-6 bg-ui-border rounded-sm;
   border-spacing: 1px;
+  border-collapse: initial;
 
   th {
     @apply font-semibold;
