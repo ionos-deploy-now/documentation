@@ -107,8 +107,8 @@ Database credential reference
      DB_HOST=$IONOS_DB_HOST
      DB_PORT=3306
      DB_DATABASE=$IONOS_DB_NAME
-     DB_USERNAME=$IONOS_DB_USERNAME
-     DB_PASSWORD=$IONOS_DB_PASSWORD
+     DB_USERNAME="$IONOS_DB_USERNAME"
+     DB_PASSWORD="$IONOS_DB_PASSWORD"
 ```
 Send mail credential reference
 ``` yaml
