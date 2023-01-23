@@ -104,3 +104,17 @@ Build settings:
 ## Can I use Next.js without exporting a static site or incremental static regeneration feature?
 
 Since we do not yet provide a Nodejs runtime environment, using nextjs without exporting a static page is not possible. Incremental static regeneration also requires server-side rendering at runtime, so regeneration of static pages at runtime is not possible.
+
+## Which IPs or IP range is used by deployed website and apps for outbound connections?
+
+Following is the list of IP ranges used by the Deploy Now for outbound connection started by your deployed app or a website:
+82.165.80.0/24
+82.165.81.0/24
+82.165.82.0/24
+82.165.83.0/24
+82.165.84.0/24
+82.165.85.0/24
+82.165.86.0/24
+82.165.87.0/24
+82.165.88.0/24
+82.165.89.0/24
