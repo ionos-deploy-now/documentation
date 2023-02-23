@@ -44,7 +44,7 @@ If you want to use Git commands effectively, you need to understand the basic Gi
     
 5.  You can then push your code to the remote repository.
     
-![Git workflow schema](https://lh3.googleusercontent.com/0wtm7-j2vZJ-CGtcZyaGmWQ6bc-0pAQjEZHZ5e30zlXJDUtL6tahvFhlJqHkc7XgImcJB85egucAm2zKqakV7inMCiU99vRyuThHpmipiBK6ZvxJ0bFC3C-eI6bJcdouUwXWOq6ltOOlKhXUIhRo4j3XH-KBdJG0RGTCcJaYu1RxlJsLXcJXBGKh9GkABQ)
+![Git workflow schema](/git-workflow.jpeg)
 
 ## Git Branches
 
@@ -148,7 +148,7 @@ The git add command allows multiple files to be listed on the command line and a
 
 If you delete a file from your working directory, the add command deletes it from the staging area. 
 For example:
-![Git add command](https://lh4.googleusercontent.com/9VGiCIJ2S_vCk5annmvFL-Bj6nzWTQuGEHF9QNV9cLCgCwvzUe2z-NNG8IloByBgHQG7M7ibF7vI4rnb4gHVN1pywkeVOV24dTjhSFjunQhLqMY-R2Zk7HFDdF7cX2AFexBKzRLN5eeVI1PbXewfFc5lB4ep4fppM9ITThaXEn5G64Xl8cRxMX-w1LDMug)
+![Git add command](/console-1.png)
 
 *To add all changed files (including new files, updated files, and deleted files) to the staging area:*
 
@@ -189,7 +189,7 @@ Git status is a particularly helpful command for beginners. It displays the diff
     git status
 
 Here’s an example of the information you can determine from a git status command.
-![Git status](https://lh5.googleusercontent.com/M1wcOUjLbfqDy3ytu1lK_mzFH5jxCnlO1nC_5iSCaMj6biilyyYoEZlv7WRKnBkJGcXEBozdsAOJq5I0W4l299wt6KH3MWoHTwE0BY2aB2qxl8oJUSmEHlakqgaL1_aiwcbXIJE5o5iXHcxulvF8NddbhgaOcw1XOt63FeIk146upGBBPuwoQ7WXfMeZGw)
+![Git status](/console-2.png)
 
 In this example, we can see that:
 
