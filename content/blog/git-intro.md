@@ -1,5 +1,5 @@
 ---
-description: "Both frameworks have pros and cons, so how can you decide which framework is suitable for your project? In this article, we’ll compare Laravel vs. Symfony and help provide some guidance so you can pick the framework that’s right for your project."
+description: "As a developer, you'll need to work with a version control system, especially if you're working on a project with other developers. A version control system stores the project history so we can easily see what code changes have been implemented, when and by whom. This guide descripes how to use Git, the most popular version control system."
 created: '2023-02-13'
 author: 'katy-kozee'
 header: '@assets/blog/git-intro-cover.png'
