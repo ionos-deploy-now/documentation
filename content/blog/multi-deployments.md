@@ -31,7 +31,10 @@ To facilitate this, they chose a managed LAMP stack hosting environment capable 
 
 Philipp collaborated with the Deploy Now engineering team. They co-created a multi-deployment feature to meet cobra's specific needs. The team created a UX and technical concept, which Philipp validated, and then developed it. Afterward, cobra's team provided QA testing of the release candidate. 
 
-With the help of Deploy Now, cobra successfully launched their events portal. “Bringing in a new instance from our side is a matter of two clicks now, allowing our client to be up and running in no time”, confirms Philipp. 
+With the help of Deploy Now, cobra successfully launched their events portal. 
+
+> “Bringing in a new instance from our side is a matter of two clicks now, allowing our client to be up and running in no time.” 
+> -- <cite>Philipp Kreis, CTO at cobra</cite>
 
 ## Multi deployments in action
 
@@ -48,11 +51,3 @@ To update the code in all production environments, just do one git push to the r
 **![Animation content publishing](/MultiDeployments.gif)**
 
 Give it a try!
-
-
-
-
-
-
-
-
