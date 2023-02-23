@@ -23,7 +23,7 @@ Additionally, the feature provides an easy-to-use interface, giving you full vis
 
 ## Cobra CRM
 
-Cobra CRM provides CRM solutions as a service, and has recently built an events module as an extension to their core offering. 
+[Cobra CRM](https://www.cobra.de/) provides CRM solutions as a service, and has recently built an events module as an extension to their core offering. 
 
 "Our clients kept asking for a smart solution to organise events, be it fundraising dinners, training workshops, or annual general meetings," says Philipp Kreis, CTO at cobra. "With the new online events portal, we wanted to make it as easy and effective as possible to create, publish, and manage attendance for any type of event." 
 
