@@ -29,7 +29,7 @@ Additionally, the feature provides an easy-to-use interface, giving you full vis
 
 To facilitate this, they chose a managed LAMP stack hosting environment capable of connecting to their GitHub repositories, where they store and manage code. They then contacted the team behind Deploy Now, the only provider that offers automated deployments of PHP projects from GitHub to an automatically provisioned web space.
 
-Philipp collaborated with the Deploy Now engineering team. They co-created a multi-deployment feature to meet cobra's specific needs. The team created a UX and technical concept, which Philipp validated, and then developed it. Afterward, cobra's team provided QA testing of the release candidate. 
+Philipp collaborated with the Deploy Now engineering team. They co-created a multi-deployment feature to meet cobra's specific needs. The team created a UX and technical concept while keeping Philipp in the feedback loop. Afterward, cobra's team provided QA testing of the release candidate. 
 
 With the help of Deploy Now, cobra successfully launched their events portal. 
 
