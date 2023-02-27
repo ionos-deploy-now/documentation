@@ -33,7 +33,7 @@ Philipp collaborated with the Deploy Now engineering team. They co-created a mul
 
 With the help of Deploy Now, cobra successfully launched their events portal. 
 
-> “Bringing in a new instance from our side is a matter of two clicks now, allowing our client to be up and running in no time.” 
+> “Bringing in a new instance from our side is a matter of two clicks now, allowing our clients to be up and running in no time.” 
 > -- <cite>Philipp Kreis, CTO at cobra</cite>
 
 ## Multi deployments in action
