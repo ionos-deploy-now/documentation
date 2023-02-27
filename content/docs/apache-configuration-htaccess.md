@@ -10,6 +10,12 @@ editable: true
 
 Deploy Now uses [Apache HTTPD server](https://httpd.apache.org/) in a shared infrastructure environment. As a result users do not have rights to edit the main server configuration file on there own. However you can define your own configuration via [.htaccess](https://httpd.apache.org/docs/current/howto/htaccess.html).
 
+:::tip 
+
+Script limit settings such as `post_max_size` and `upload_max_filesize` can be adjusted by deploying a `php.ini` to the document root. The `memory_limit` and the `max_execution time` are already set to the maximum that is provided in your project package.
+
+:::
+
 ## General
 
 A .htaccess file is a common way to make configuration changes on per-directory basis. A .htaccess file can have multiple configuration directives at once. All configuration directives applies to the directory in which the .htaccess file resides and all subdirectories. It's good to know that each directory can define it's one .htaccess file. Directives are applied in the order that they are found. A directive found high up in the directory tree can override all directives found before or even defined by the Apache main configuration itself.
