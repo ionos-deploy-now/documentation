@@ -2,8 +2,8 @@
 description: "With our newest Multi Deployments feature, you can publish to multiple productive instances with a single Git Push. Read how we worked on this feature together with our customer Cobra CRM"
 created: '2023-02-23'
 author: 'simon-morgan'
-header: '@assets/blog/'
-teaser: '@assets/blog/'
+header: '@assets/blog/multi-deployments-cover.png'
+teaser: '@assets/blog/multi-deployments-cover.png'
 tags:
     - news
     - release
