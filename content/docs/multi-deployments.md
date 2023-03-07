@@ -8,6 +8,8 @@ editable: true
 
 # Multi deployments
 
+**![Animation content publishing](/MultiDeployments.gif)**
+
 ## Concept
   
 Multi deployments allow you to deploy your productive branch to multiple production deployments after one, centralized build. This allows you to deploy many instances of a web service efficiently. The instances might differ in their persistent data in filespace or database.
@@ -36,4 +38,7 @@ Each production deployment receives its own filespace and database, meaning thei
 
 ## Setup
 Simply set up a Deploy Now project as usual and add additional production deployments on the project detail page. Each production deployment requires one Deploy Now project package. Multi deployments can be created for `starter projects`, `static projects` and `php projects`, using only project packages of the same type. The number of the available staging deployments adds up based on the number of production deployments created. 
+
+## Example use case
+Read how Cobra CRM uses Multi Deployments at scale in our [blog post](https://docs.ionos.space/blog/multi-deployments/). 
 
