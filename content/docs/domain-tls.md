@@ -1,7 +1,7 @@
 ---
 description: 'Deploy Now allows you to replace preview URLs by any kind of custom domain. All domains are automatically SSL secured.'
 sidebar: 'docs'
-prev: '/docs/staging-deployments/'
+prev: '/docs/database/'
 next: '/docs/deployment-viewer/'
 editable: true
 ---
