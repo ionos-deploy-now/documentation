@@ -26,7 +26,7 @@ Deploy Now abstracts from the complexity of infrastructure provisioning, CI/CD c
 |[Staging deployments](/docs/staging-deployments)|[SSL/TLS by default](/docs/domain-tls/#tlsssl)|[Climate-neutral hosting](https://www.ionos.com/environment)|
 |[Multi deployments](/docs/multi-deployments)|Wide variety of PHP versions|IPv6|
 |[Custom domains](/docs/domain-tls)|[Cron jobs](/docs/cron-jobs)||
-|[Visitor statistics](/docs/visitor-statistics)|||
+|[Visitor statistics](/docs/visitor-statistics)|[MariaDB](/docs/database)||
 
 ## Getting started
 You can start either [from sample](/docs/framework-samples), [from command line](/docs/from-cmd-line) or [from an existing repository](/docs/from-repo).
