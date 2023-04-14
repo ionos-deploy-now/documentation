@@ -1,10 +1,12 @@
 ---
-description: 'Deploy Now provides MariaDBs for PHP Projects. Each deployment receives it's own database, that can be managed via phpMyAdmin.'
+description: 'Deploy Now provides MariaDBs for PHP Projects. Each deployment receives its own database that can be managed via phpMyAdmin.'
 sidebar: 'docs'
 prev: '/docs/multi-deployments/'
 next: '/docs/domain-tls/'
 editable: true
 ---
+
+# Multi deployments
 
 # Database
 
