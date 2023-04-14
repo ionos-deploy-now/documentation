@@ -6,8 +6,6 @@ next: '/docs/domain-tls/'
 editable: true
 ---
 
-# Multi deployments
-
 # Database
 
 PHP Projects in Deploy Now are equipped with databases. Each production and staging deployment receives one MariaDB. 
