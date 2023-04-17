@@ -15,9 +15,9 @@
           <div class="title py-4 lg:pt-10">{{ $t('home-hero.deploy-sample.title') }}</div>
           <div>{{ $t('home-hero.deploy-sample.text') }}</div>
         </g-link>
-        <g-link to="/docs/faq/" class="card invert" style="background-color: #003D8F">
-          <div class="title py-4 lg:pt-10">{{ $t('home-hero.faq.title') }}</div>
-          <div>{{ $t('home-hero.faq.text') }}</div>
+        <g-link to="/docs/blog/" class="card invert" style="background-color: #003D8F">
+          <div class="title py-4 lg:pt-10">{{ $t('home-hero.blog.title') }}</div>
+          <div>{{ $t('home-hero.blog.text') }}</div>
         </g-link>
       </div>
     </div>
