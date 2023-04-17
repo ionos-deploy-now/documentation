@@ -24,15 +24,15 @@
     "description": "Deploy Static Sites, Single Page Applications and PHP Apps directly via GitHub Actions to IONOS' global infrastructure.",
     "getting-started": {
       "title": "Getting started",
-      "text": "Connect a repository and set up a deployment"
+      "text": "Connect a repo and set up a deployment"
     },
     "deploy-sample": {
       "title": "Deploy a sample",
-      "text": "Easy to deploy sample reopsitories"
+      "text": "Sample repos for Laravel, Hugo & Co"
     },
     "blog": {
       "title": "Blog",
-      "text": "Product news and helpful guides"
+      "text": "The latest news from our team"
     }
   },
   "home-samples": {
