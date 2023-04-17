@@ -2,12 +2,9 @@
   <div class="container bg-ui-background mt-4 lg:mt-8">
     <div class="two-column-layout">
       <div class="relative bg-img-dots">
-        <h2 class="mb-0">{{ $t('home-hero.deploy-smarter') }}</h2>
-        <h2 class="mb-0">{{ $t('home-hero.deploy-faster') }}</h2>
-        <h2>
-          <DeployNow class="text-ui-primary" />
-        </h2>
-        <p class="my-8 md:text-xl md:my-16">{{ $t('home-hero.description') }}</p>
+        <h1 class="mb-0 text-ui-primary mt-8">{{ $t('home-hero.h1') }}</h1>
+        <h2>{{ $t('home-hero.h2') }}</h2>
+        <p class="mb-8 mt-4 md:text-xl">{{ $t('home-hero.description') }}</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 m-auto <md:max-w-[400px]">
         <g-link to="/docs/" class="card invert" style="background-color: #11C7E6">
@@ -18,9 +15,9 @@
           <div class="title py-4 lg:pt-10">{{ $t('home-hero.deploy-sample.title') }}</div>
           <div>{{ $t('home-hero.deploy-sample.text') }}</div>
         </g-link>
-        <g-link to="/docs/faq/" class="card invert" style="background-color: #003D8F">
-          <div class="title py-4 lg:pt-10">{{ $t('home-hero.faq.title') }}</div>
-          <div>{{ $t('home-hero.faq.text') }}</div>
+        <g-link to="/blog/" class="card invert" style="background-color: #003D8F">
+          <div class="title py-4 lg:pt-10">{{ $t('home-hero.blog.title') }}</div>
+          <div>{{ $t('home-hero.blog.text') }}</div>
         </g-link>
       </div>
     </div>

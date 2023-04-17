@@ -18,21 +18,21 @@
     "button": "About PHP Projects"
   },
   "home-hero": {
-    "deploy-smarter": "Deploy smarter.",
-    "deploy-faster": "Deploy faster.",
+    "h1": "Hosting, made for developers",
+    "h2": "Git push, build, deploy.",
     "deploy-now": "Deploy now.",
-    "description": "Build, stage & deploy static sites, single page applications and PHP apps directly via GitHub to IONOS infrastructure.",
+    "description": "Deploy Static Sites, Single Page Applications and PHP Apps directly via GitHub Actions to IONOS' global infrastructure.",
     "getting-started": {
       "title": "Getting started",
-      "text": "How to connect a repository and set up a deployment."
+      "text": "Connect a repo and set up a deployment"
     },
     "deploy-sample": {
       "title": "Deploy a sample",
-      "text": "Set up a deployment with one of our framework samples."
+      "text": "Sample repos for Laravel, Hugo & Co"
     },
-    "faq": {
-      "title": "FAQ",
-      "text": "Frequently asked questions about Deploy Now."
+    "blog": {
+      "title": "Blog",
+      "text": "The latest news from our team"
     }
   },
   "home-samples": {
