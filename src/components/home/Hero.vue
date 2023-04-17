@@ -2,7 +2,7 @@
   <div class="container bg-ui-background mt-4 lg:mt-8">
     <div class="two-column-layout">
       <div class="relative bg-img-dots">
-        <h1 class="mb-0">{{ $t('home-hero.h1') }}</h1>
+        <h1 class="mb-0 text-ui-primary">{{ $t('home-hero.h1') }}</h1>
         <h2 class="mb-0">{{ $t('home-hero.h2') }}</h2>
         <p class="my-12 md:text-xl md:my-16">{{ $t('home-hero.description') }}</p>
       </div>
