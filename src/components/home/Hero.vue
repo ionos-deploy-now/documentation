@@ -2,9 +2,9 @@
   <div class="container bg-ui-background mt-4 lg:mt-8">
     <div class="two-column-layout">
       <div class="relative bg-img-dots">
-        <h1 class="mb-0 text-ui-primary my-8">{{ $t('home-hero.h1') }}</h1>
-        <h2 class="mb-0">{{ $t('home-hero.h2') }}</h2>
-        <p class="my-12 md:text-xl md:my-16">{{ $t('home-hero.description') }}</p>
+        <h1 class="mb-0 text-ui-primary mt-8">{{ $t('home-hero.h1') }}</h1>
+        <h2>{{ $t('home-hero.h2') }}</h2>
+        <p class="mb-8 mt-4 md:text-xl">{{ $t('home-hero.description') }}</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 m-auto <md:max-w-[400px]">
         <g-link to="/docs/" class="card invert" style="background-color: #11C7E6">
