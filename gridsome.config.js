@@ -42,7 +42,7 @@ module.exports = {
         { path: "/docs/faq/", title: "FAQ" },
         ...(showBlog ? [{ path: "/blog/", title: "Blog" }] : []),
         { path: "/about-us/", title: "About us" },
-        { path: "https://www.ionos.com/hosting/deploy-now?utm_source=deploy-now-docs&utm_medium=navigation&utm_campaign=sign-up#pricing", title: "Sign up" },
+        { path: "https://www.ionos.com/hosting/deploy-now?utm_source=deploy-now-docs&utm_medium=navigation&utm_campaign=sign-up#pricing", title: "Pricing" },
       ],
     },
     sidebar: [
