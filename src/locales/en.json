@@ -30,9 +30,9 @@
       "title": "Deploy a sample",
       "text": "Set up a deployment with one of our framework samples."
     },
-    "faq": {
-      "title": "FAQ",
-      "text": "Frequently asked questions about Deploy Now."
+    "blog": {
+      "title": "Blog",
+      "text": "Product news and helpful guides"
     }
   },
   "home-samples": {
