@@ -12,7 +12,7 @@ tags:
 
 # How to Incorporate GitHub and CI/CD Deployments into Your Web Agency's Workflow 
 
-As a Product Owner for Deploy Now, I've interviewed many agencies. Roughly half of them use tools like GitHub to collaborate on their code. A minority works with CI/CD pipelines. Why? Well, because they don't necessarily need to. The average client project is relatively small: Maybe a landing page with a blog section. A single developer can easily develop the project locally to then upload it via SSH for a final check by the client. Bringing new skills to the team and automating processes is an investment. As a smaller agency, you need to decide wether working on another client project instead would be the wiser decision. 
+As a Product Owner for Deploy Now, I've interviewed many agencies. Roughly half of them use tools like GitHub to collaborate on their code. A minority works with CI/CD pipelines. Why? Well, because they don't necessarily need to. The average client project is relatively small: Maybe a landing page with a blog section. A single developer can easily develop the project locally to then upload it via SSH for a final check by the client. Bringing new skills to the team and automating processes is an investment. As a smaller agency, you need to decide whether working on another client project instead would be the wiser decision. 
 
 However, I strongly believe that an investment into GitHub and CI/CD team workflows can be a game changer for your agency. There is a whole world to explore for your team. You will likely see efficiency, code quality and client satisfaction will increase already after a couple of weeks. GitHub and CI/CD are growing ecosystems with more and more tools that lower the hurdles of working with them.
 
@@ -25,7 +25,7 @@ Each team member that will work on code, and ideally also surrounding stakeholde
 - Version control
 - Local and remote repositories 
 - Branches and pull requests
-- `Git clone`, `git checkout`, `git add`, vgit commit` and `git push`
+- `Git clone`, `git checkout`, `git add`, `git commit` and `git push`
 
 Read more in our [comprehensive onboarding to Git](https://docs.ionos.space/blog/git-intro/#10-git-help).
 After learning these concepts, discuss with your team how you plan to apply them. Create a GitHub organization and start experimenting. 
@@ -38,11 +38,11 @@ You might end up maintaining a set of repositories for different use cases such 
 
 ## 3. Set up the first working CI/CD pipeline
 
-The next step is to deploy what is inside your repository. Ideally, each git push to your main branch leads to an automated *build* and *deployment* to some kind of infrastructure. Since you are working with GitHub already, it makes a lot of sence to let GitHub Actions take care of this. To learn more about the tool, you can read our [introduction to GitHub Actions](https://docs.ionos.space/blog/github-actions/). 
+The next step is to deploy what is inside your repository. Ideally, each git push to your main branch leads to an automated *build* and *deployment* to some kind of infrastructure. Since you are working with GitHub already, it makes a lot of sense to let GitHub Actions take care of this. To learn more about the tool, you can read our [introduction to GitHub Actions](https://docs.ionos.space/blog/github-actions/). 
 
 Build and deployment steps are specified in a [yaml file](https://docs.github.com/en/actions/using-workflows/about-workflows) that describes your GitHub Actions workflow. GitHub runs your build steps on their own virtual machines every time the workflow is triggered, e.g. by a `git push`. To successfully deploy your website, you need to authenticate with some kind of infrastructure. 
 
-If you are working with static site generators, single page applications or PHP Apps,[Deploy Now](https://www.ionos.com/hosting/deploy-now?ar=1)can ease this process. Simply connect a repository, specify your build steps and Deploy Now will set up the workflow, hosting and TLS for you.
+If you are working with static site generators, single page applications or PHP Apps, [Deploy Now](https://www.ionos.com/hosting/deploy-now?ar=1) can ease this process. Simply connect a repository, specify your build steps and Deploy Now will set up the workflow, hosting and TLS for you.
 
 ## 4. Get used to the process for some iterations
 
@@ -54,7 +54,7 @@ This is already a pretty decent setup to work on some client projects and finetu
 
 Even though someone now reviews code before it is merged to main, you're still not 100% sure if the code will work as expected. To mitigate this, you can add automated tests to your CI/CD workflow. I described how you can run and visualize Lighthouse tests in GitHub Actions [here](https://docs.ionos.space/blog/github-actions-lighthouse/#1-use-github-actions-to-build-your-code). 
 
-However, QA processes are hard to automate completely. Staging environments give you the option to manually preview websites before they go live. If you are working with multiple branches already, why not deploy them just as you deploy your main branch? Many hosting tools such as [Deploy Now]((https://www.ionos.com/hosting/deploy-now?ar=1) provide an out-of-the-box feature for this without extra costs. Simply open a new branch and watch it being deployed under a preview-URL. If the website looks good, merge your changes to the main branch. [Read more](https://docs.ionos.space/blog/reasons-for-staging/) about why staging your code is a pretty good idea.
+However, QA processes are hard to automate completely. Staging environments give you the option to manually preview websites before they go live. If you are working with multiple branches already, why not deploy them just as you deploy your main branch? Many hosting tools such as [Deploy Now](https://www.ionos.com/hosting/deploy-now?ar=1) provide an out-of-the-box feature for this without extra costs. Simply open a new branch and watch it being deployed under a preview-URL. If the website looks good, merge your changes to the main branch. Here are [5 reasons](https://docs.ionos.space/blog/reasons-for-staging/) how staging processes can help your agency be more successful.
 
 ## 6. Incorporate clients in rollout processes
 
@@ -67,7 +67,7 @@ Now you can make code udpates to a branch, stage it for preview, and then roll i
 
 We've talked about building up a set of starter repositories you can clone for new projects in step 2. But wouldn't it be great to keep re-used code centralized for similar projects, instead of distributing it to many repositories? Centralization makes it especially efficient to distribute updates to all your projects across the project lifecycle.
 
-If your projects are sufficiently similar to each other, I would suggest to maintain their code in a single repository and use persistent files and database content to customize them. The latter would remain unaffected from new deployments. You can read [here](https://docs.ionos.space/blog/multi-deployments/) how a Deploy Now user deploys from one repository to multiple environments using the [Multi Deployments feature](https://docs.ionos.space/docs/multi-deployments/).
+If your projects are sufficiently similar to each other, I would suggest to maintaining their code in a single repository and use persistent files and database content to customize them. The latter would remain unaffected from new deployments. You can read [here](https://docs.ionos.space/blog/multi-deployments/) how a Deploy Now user deploys from one repository to multiple environments using the [Multi Deployments feature](https://docs.ionos.space/docs/multi-deployments/).
 
 I wish you and your team a lot of fun and success exploring!
 
