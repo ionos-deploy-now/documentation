@@ -1,13 +1,13 @@
 ---
-description: "."
-created: '2023-02-23'
-author: 'robert.schleinhege'
+description: "GitHub and CI/CD pipelines are productivity boosters for your web agency. Here is a 7 step plan how you can introduce them to your team workflows."
+created: '2023-04-18'
+author: 'robert-schleinhege'
 header: '@assets/blog/agency-cover.png'
 teaser: '@assets/blog/agency-cover.png'
 tags:
     - agency
     - github
-    - ci/cd
+    - cicd
 ---
 
 # How to Incorporate GitHub and CI/CD Deployments into Your Web Agency's Workflow 
