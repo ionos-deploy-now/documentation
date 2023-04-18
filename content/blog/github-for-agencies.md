@@ -27,7 +27,7 @@ Each team member that will work on code, and ideally also surrounding stakeholde
 - Branches and pull requests
 - `Git clone`, `git checkout`, `git add`, `git commit` and `git push`
 
-Read more in our [comprehensive onboarding to Git](https://docs.ionos.space/blog/git-intro/#10-git-help).
+Read more in our [comprehensive onboarding to Git](https://docs.ionos.space/blog/git-intro).
 After learning these concepts, discuss with your team how you plan to apply them. Create a GitHub organization and start experimenting. 
 
 ## 2. Build up a set of sample repos
@@ -52,7 +52,7 @@ This is already a pretty decent setup to work on some client projects and finetu
 
 ## 5. Add staging and automated tests to your workflow 
 
-Even though someone now reviews code before it is merged to main, you're still not 100% sure if the code will work as expected. To mitigate this, you can add automated tests to your CI/CD workflow. I described how you can run and visualize Lighthouse tests in GitHub Actions [here](https://docs.ionos.space/blog/github-actions-lighthouse/#1-use-github-actions-to-build-your-code). 
+Even though someone now reviews code before it is merged to main, you're still not 100% sure if the code will work as expected. To mitigate this, you can add automated tests to your CI/CD workflow. I described how you can run and visualize Lighthouse tests in GitHub Actions [here](https://docs.ionos.space/blog/github-actions-lighthouse). 
 
 However, QA processes are hard to automate completely. Staging environments give you the option to manually preview websites before they go live. If you are working with multiple branches already, why not deploy them just as you deploy your main branch? Many hosting tools such as [Deploy Now](https://www.ionos.com/hosting/deploy-now?ar=1) provide an out-of-the-box feature for this without extra costs. Simply open a new branch and watch it being deployed under a preview-URL. If the website looks good, merge your changes to the main branch. Here are [5 reasons](https://docs.ionos.space/blog/reasons-for-staging/) how staging processes can help your agency be more successful.
 
