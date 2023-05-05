@@ -105,6 +105,10 @@ Build settings:
 
 Since we do not yet provide a Nodejs runtime environment, using nextjs without exporting a static page is not possible. Incremental static regeneration also requires server-side rendering at runtime, so regeneration of static pages at runtime is not possible.
 
+## How do I need to configure the deployment for Angular projects?
+
+After selecting the repository and project package, Deploy Now should already suggest the correct build steps. These can be further customized on demand. By default the publish directory is `dist/name-of-your-project`. However, it might be that the publish directory of your Angular project is customized under `outputPath` in `angular.json`. If so, make sure that the output path configured here matches the publish directory in the Deploy Now setup.
+
 ## Which IPs or IP range is used by deployed website and apps for outbound connections?
 
 Following is the list of IP ranges used by the Deploy Now for outbound connection started by your deployed app or a website:
