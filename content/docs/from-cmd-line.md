@@ -52,7 +52,7 @@ Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+Now, if you look at your repository you will find workflow files for build and deployment in `.github/workflows`. Feel free to [customize your workflow](https://docs.ionos.space/docs/github-actions-customization/) from here.
 
 ### PHP Site
 
@@ -89,7 +89,7 @@ Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+Now, if you look at your repository you will find workflow files for build and deployment in `.github/workflows`. Feel free to [customize your workflow](https://docs.ionos.space/docs/github-actions-customization/) from here.
 
 ### CSS Frameworks
 
@@ -107,7 +107,7 @@ Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+Now, if you look at your repository you will find workflow files for build and deployment in `.github/workflows`. Feel free to [customize your workflow](https://docs.ionos.space/docs/github-actions-customization/) from here.
 
 ## Single Page Applications (SPA)
 
@@ -151,7 +151,7 @@ Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+Now, if you look at your repository you will find workflow files for build and deployment in `.github/workflows`. Feel free to [customize your workflow](https://docs.ionos.space/docs/github-actions-customization/) from here.
 
 ### Vue App
 
@@ -190,7 +190,7 @@ Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+Now, if you look at your repository you will find workflow files for build and deployment in `.github/workflows`. Feel free to [customize your workflow](https://docs.ionos.space/docs/github-actions-customization/) from here.
 
 ### Angular App
 
@@ -230,7 +230,7 @@ From here proceed and finalize the setup.
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+Now, if you look at your repository you will find workflow files for build and deployment in `.github/workflows`. Feel free to [customize your workflow](https://docs.ionos.space/docs/github-actions-customization/) from here.
 
 ### Svelte App
 
@@ -270,7 +270,7 @@ Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+Now, if you look at your repository you will find workflow files for build and deployment in `.github/workflows`. Feel free to [customize your workflow](https://docs.ionos.space/docs/github-actions-customization/) from here.
 
 ### Ember App
 
@@ -313,7 +313,7 @@ Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+Now, if you look at your repository you will find workflow files for build and deployment in `.github/workflows`. Feel free to [customize your workflow](https://docs.ionos.space/docs/github-actions-customization/) from here.
 
 ### Ionic App
 
@@ -352,7 +352,7 @@ Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+Now, if you look at your repository you will find workflow files for build and deployment in `.github/workflows`. Feel free to [customize your workflow](https://docs.ionos.space/docs/github-actions-customization/) from here.
 
 ## Static Site Generators
 
@@ -395,7 +395,7 @@ Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+Now, if you look at your repository you will find workflow files for build and deployment in `.github/workflows`. Feel free to [customize your workflow](https://docs.ionos.space/docs/github-actions-customization/) from here.
 
 ### Docusaurus Site
 
@@ -434,7 +434,7 @@ Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+Now, if you look at your repository you will find workflow files for build and deployment in `.github/workflows`. Feel free to [customize your workflow](https://docs.ionos.space/docs/github-actions-customization/) from here.
 
 ### Gatsby Site
 
@@ -473,7 +473,7 @@ Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+Now, if you look at your repository you will find workflow files for build and deployment in `.github/workflows`. Feel free to [customize your workflow](https://docs.ionos.space/docs/github-actions-customization/) from here.
 
 ### Gridsome Site
 
@@ -512,7 +512,7 @@ Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+Now, if you look at your repository you will find workflow files for build and deployment in `.github/workflows`. Feel free to [customize your workflow](https://docs.ionos.space/docs/github-actions-customization/) from here.
 
 ### Hexo Site
 
@@ -552,7 +552,7 @@ Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+Now, if you look at your repository you will find workflow files for build and deployment in `.github/workflows`. Feel free to [customize your workflow](https://docs.ionos.space/docs/github-actions-customization/) from here.
 
 ### Jigsaw Site
 
@@ -594,7 +594,7 @@ Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+Now, if you look at your repository you will find workflow files for build and deployment in `.github/workflows`. Feel free to [customize your workflow](https://docs.ionos.space/docs/github-actions-customization/) from here.
 
 ## Hybrid SSG Tools
 
@@ -648,7 +648,7 @@ Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+Now, if you look at your repository you will find workflow files for build and deployment in `.github/workflows`. Feel free to [customize your workflow](https://docs.ionos.space/docs/github-actions-customization/) from here.
 
 ### NuxtJS Site
 
@@ -692,7 +692,7 @@ Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+Now, if you look at your repository you will find workflow files for build and deployment in `.github/workflows`. Feel free to [customize your workflow](https://docs.ionos.space/docs/github-actions-customization/) from here.
 
 ## Binary SSG Tools
 
@@ -745,7 +745,7 @@ Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+Now, if you look at your repository you will find workflow files for build and deployment in `.github/workflows`. Feel free to [customize your workflow](https://docs.ionos.space/docs/github-actions-customization/) from here.
 
 ### Jekyll Site
 
@@ -794,4 +794,4 @@ Sign in to your [Deploy Now](https://ionos.space/?utm_source=deploy-now-docs&utm
 
 Now, take a short break until your project is deployed. Deploy Now will always show you the current build and deploy status of your project. If it's done Deploy Now provides a direct URL to your project. 
 
-Now, if you look at your repository you will find a new workflow file named `.github/workflows/deploy-now.yaml`. This file includes all initial build and deployment instructions for you project. Feel free to customize your workflow from now on here.
+Now, if you look at your repository you will find workflow files for build and deployment in `.github/workflows`. Feel free to [customize your workflow](https://docs.ionos.space/docs/github-actions-customization/) from here.
