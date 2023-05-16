@@ -15,7 +15,7 @@ Deploy Now supports automated builds and deployments for Static Projects and PHP
 Deploy Now detects Laravel and Symfony projects automatically and automates the build and deployment pipeline accordingly.
 
 ## Does IONOS Deploy Now support Node.js?
-Deploy Now helps you setting up GitHub Actions to run build steps on `Git Push` to then deploy to IONOS shared hosting. GitHub Actions offers Node.js at build time, e.g. to execute `npm run build`, `ng build` or `next build`. This is sufficient to deploy static sites created with Angular, React, Vue, Next.js or Nuxt.js. However, IONOS does not provide server side rendering with Node.js on the runtime infrastructure. 
+Deploy Now helps you setting up GitHub Actions to run build steps on `Git Push` to then deploy to IONOS shared hosting. GitHub Actions offers Node.js at build time, e.g. to execute `npm run build`. This is sufficient to build and deploy static sites created with Angular, React, Vue, Next.js or Nuxt.js. However, IONOS does not provide server side rendering with Node.js on the runtime infrastructure. 
 
 ## Which static frameworks are supported out of the box?
 Deploy Now supports the following static site generators, following the Jamstack approach: Hugo, Gatsby, Gridsome, Docusaurus, Vuepress, Vitepress, Hexo, Metalsmith, 11ty, UmiJS, Astro, Scully, ElderJS, Middleman, Jekyll, Nanoc, Pelican, mkdocs, Jigsaw, Sculpin as well as the static site generation flavor of Nuxt.js and Next.js. Server-side rendering with Node.js is not supported. In additon, Deploy Now offers out of the box support for these single page application frameworks: Angular, React, Vue, Svelte, Ionic and Ember.
