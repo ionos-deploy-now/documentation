@@ -72,7 +72,7 @@ noteworthy sites that were built using Gatsby:
 - [reactjs.org](https://reactjs.org)
 - [affirm.com](https://affirm.com)
 
-### Deploying using [IONOS Deploy Now](https://www.ionos.com/hosting/deploy-now?utm_source=deploy-now-docs&utm_medium=blog&utm_campaign=react-ssg-comparison)
+### Deploying using [Deploy Now](https://www.ionos.com/hosting/deploy-now?utm_source=deploy-now-docs&utm_medium=blog&utm_campaign=react-ssg-comparison)
 
 1) Create a new site by entering the following commands in your terminal:
 
@@ -100,11 +100,9 @@ git push -u origin main
 4) Set up deployment by signing into your Deploy Now account and clicking “New Project.” Next, choose the source you
    want to deploy from. Grant the requested permissions to IONOS and proceed to choose the following configuration:
 
-![CONFIGURATION ONE](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9vjkvp6wgeh78zp5906z.png)
-
 5) Now, take a quick break until your project build is deployed. Deploy Now will always show you the current build and
    deploy status of your project. When it's finished, Deploy Now will provide you with a direct URL to your project. You
-   can also find a new workflow file within your repository named .github/workflow/deploy-now.yaml.
+   can also find new workflow files within your repository under `.github/workflow`.
 
  
 ---
@@ -298,8 +296,7 @@ git push -u origin main
 ```
 
 10) Set up deployment by signing into your Deploy Now account and clicking “New Project.” Next, choose the source you
-    want to deploy from. Grant the requested permissions to IONOS and proceed to choose the following configuration:
-    ![CONFIGURATIONTWO](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3l39qlyuwjo3fyc238h4.png)
+    want to deploy from. Grant the requested permissions to IONOS, define `next build` as your build command and `out` as your dist folder and you are ready to go.
 
 _Article written by Daniel Hunt from [digitaljailbreak.com](https://www.digitaljailbreak.com)_
  
