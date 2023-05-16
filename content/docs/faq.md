@@ -112,13 +112,16 @@ After selecting the repository and project package, Deploy Now should already su
 ## Which IPs or IP range is used by deployed website and apps for outbound connections?
 
 Following is the list of IP ranges used by the Deploy Now for outbound connection started by your deployed app or a website:
-82.165.80.0/24
-82.165.81.0/24
-82.165.82.0/24
-82.165.83.0/24
-82.165.84.0/24
-82.165.85.0/24
-82.165.86.0/24
-82.165.87.0/24
-82.165.88.0/24
-82.165.89.0/24
+- 82.165.80.0/24
+- 82.165.81.0/24
+- 82.165.82.0/24
+- 82.165.83.0/24
+- 82.165.84.0/24
+- 82.165.85.0/24
+- 82.165.86.0/24
+- 82.165.87.0/24
+- 82.165.88.0/24
+- 82.165.89.0/24
+
+## Is there an IONOS Deploy Now support mail? 
+If you need support, feel free to submit a request ticket directly in the Deploy Now dashboard or to contact us via <a href="deploynow-support@ionos.com">deploynow-support@ionos.com</a>. Please note that this is the mail address of the Deploy Now support team. For requests regarding any other product, please contact IONOS [via phone or via live chat](https://www.ionos.com/contact).
