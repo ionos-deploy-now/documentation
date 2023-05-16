@@ -101,6 +101,7 @@ Build settings:
   - Dist folder: out
 ```
 
+
 ## Can I use Next.js without exporting a static site or incremental static regeneration feature?
 
 Since we do not provide a Node.js runtime environment yet, using Next.js without exporting a static page is not possible. Incremental static regeneration also requires server-side rendering at runtime, so regeneration of static pages at runtime is not possible.
