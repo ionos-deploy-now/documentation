@@ -159,7 +159,7 @@ Some frameworks need additional directives by default. Following you find a list
 
 ### Templating .htaccess
 
-Deploy Now offers a `.htaccess` templating for your deployment base directory. This is especially useful if your deployment build results in a subfolder structure which is located relative to your deployment base directory. In this case `.deploy-now/.htaccess.template` ensures directives that still apply to all levels. The file itself works just like a normal `.htaccess` file and is simply copied to your deployment base directory. 
+Deploy Now offers a `.htaccess` templating for your deployment base directory. This is especially useful if your deployment build results in a subfolder structure which is located relative to your deployment base directory. In this case `.deploy-now/project-name/.htaccess.template` ensures directives that still apply to all levels. The file itself works just like a normal `.htaccess` file and is simply copied to your deployment base directory. More information about file templating can be found [here](https://docs.ionos.space/docs/runtime-configuration/#htaccess).  
 
 ### Single Page Apps like Angular, ReactJS, Vue.js 
 
