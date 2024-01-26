@@ -41,7 +41,7 @@ Deploy Now abstracts from the complexity of infrastructure provisioning, CI/CD c
 |**Included in**|Deploy Now Membership|additionally bookable|additionally bookable|
 |**Price**|3 projects for 4€ per month|2€/month per project - monthly cancellable|7€/month per project - monthly cancellable|
 
-Each project type is deployed to IONOS infrastructure, comes with georedundancy and DDoS protection and visitor statistics 
+Each project type is deployed to IONOS infrastructure, comes with georedundancy, DDoS protection and visitor statistics.
 
 ## Getting started
 You can start either [from sample](/docs/framework-samples), [from command line](/docs/from-cmd-line) or [from an existing repository](/docs/from-repo).
