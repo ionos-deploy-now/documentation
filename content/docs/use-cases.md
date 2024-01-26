@@ -1,7 +1,7 @@
 ---
 description: 'Which project type suites which use case'
 sidebar: 'docs'
-prev: '/docs/index/'
+prev: '/docs/'
 next: '/docs/framework-samples/'
 editable: true
 ---
