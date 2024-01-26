@@ -30,8 +30,19 @@ Deploy Now abstracts from the complexity of infrastructure provisioning, CI/CD c
 
 ## Deploy Now project types
 
-
-
+|Feature|StarterProject|StaticProject|PHPProject|
+|-|-|-|-|
+|**ProjectType**|StarterProject|StaticProject|PHPProject|
+|**UseCases**|StaticSiteGenerators&SinglePageApplications|StaticSiteGenerators&SinglePageApplications|PHPApplications|
+|**StorageperDeployment**|50MB|1GB|10GB|
+|**StagingDeployments**|1|5|5|
+|**DeploymenttoIONOSinfrastructure**|✅|✅|✅|
+|**Georedundancy&DDoSprotection**|✅|✅|✅|
+|**Visitorstatistics**|✅|✅|✅|
+|**PHPruntimeenvironment**|-|-|PHP8.2andolder|
+|**Database**|-|-|2GBMariaDBwithPHPMyAdminAccess|
+|**Includedin**|DeployNowMembership|additionallybookable|additionallybookable|
+|**Price**|3projectsfor4€permonth|2€/monthperproject-monthlycancellable|7€/monthperproject-monthlycancellable|
 
 ## Getting started
 You can start either [from sample](/docs/framework-samples), [from command line](/docs/from-cmd-line) or [from an existing repository](/docs/from-repo).
