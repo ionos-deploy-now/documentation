@@ -32,17 +32,17 @@ Deploy Now abstracts from the complexity of infrastructure provisioning, CI/CD c
 
 |Feature|StarterProject|StaticProject|PHPProject|
 |-|-|-|-|
-|**ProjectType**|StarterProject|StaticProject|PHPProject|
+|**Project Type**|StarterProject|StaticProject|PHPProject|
 |**UseCases**|StaticSiteGenerators&SinglePageApplications|StaticSiteGenerators&SinglePageApplications|PHPApplications|
-|**StorageperDeployment**|50MB|1GB|10GB|
-|**StagingDeployments**|1|5|5|
-|**DeploymenttoIONOSinfrastructure**|✅|✅|✅|
-|**Georedundancy&DDoSprotection**|✅|✅|✅|
-|**Visitorstatistics**|✅|✅|✅|
-|**PHPruntimeenvironment**|-|-|PHP8.2andolder|
-|**Database**|-|-|2GBMariaDBwithPHPMyAdminAccess|
-|**Includedin**|DeployNowMembership|additionallybookable|additionallybookable|
-|**Price**|3projectsfor4€permonth|2€/monthperproject-monthlycancellable|7€/monthperproject-monthlycancellable|
+|**StorageperDeployment**|50 MB|1 GB|10 GB|
+|**Staging Deployments**|1|5|5|
+|**Deployment to IONOS infrastructure**|✅|✅|✅|
+|**Georedundancy & DDoS protection**|✅|✅|✅|
+|**Visitor statistics**|✅|✅|✅|
+|**PHP runtime environment**|-|-|PHP8.2andolder|
+|**Database**|-|-|2GB MariaDB with PHPMyAdmin access|
+|**Included in**|Deploy Now Membership|additionally bookable|additionally bookable|
+|**Price**|3 projects for 4€per month|2€/month per project-monthly cancellable|7€/month per project-monthly cancellable|
 
 ## Getting started
 You can start either [from sample](/docs/framework-samples), [from command line](/docs/from-cmd-line) or [from an existing repository](/docs/from-repo).
