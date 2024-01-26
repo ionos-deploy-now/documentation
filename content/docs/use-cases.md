@@ -6,3 +6,10 @@ next: '/docs/framework-samples/'
 editable: true
 ---
 
+## Project type use cases
+
+# Starter project
+
+# Static project
+
+# PHP project
