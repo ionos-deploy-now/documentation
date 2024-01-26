@@ -30,8 +30,8 @@ Deploy Now abstracts from the complexity of infrastructure provisioning, CI/CD c
 
 ## Deploy Now Packages
 
-| Feature | Starter Project                                        | Static Project                                          | PHP Project                                             |
-|---------------------------------|--------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------|
+|Feature| Starter Project|Static Project|PHP Project|
+
 | **Project Type**                | Starter Project                                        | Static Project                                          | PHP Project                                             |
 | **Use Cases**                   | Static Site Generators & Single Page Applications      | Static Site Generators & Single Page Applications       | PHP Applications                                        |
 | **Storage per Deployment**      | 50 MB                                                  | 1 GB                                                    | 10 GB                                                   |
