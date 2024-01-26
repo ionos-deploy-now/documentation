@@ -1,7 +1,7 @@
 ---
 description: 'Deploy static or PHP starter projects with a few clicks'
 sidebar: 'docs'
-prev: '/docs/'
+prev: '/docs/use-cases'
 next: '/docs/from-cmd-line/'
 editable: true
 ---
