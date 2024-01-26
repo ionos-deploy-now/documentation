@@ -28,6 +28,23 @@ Deploy Now abstracts from the complexity of infrastructure provisioning, CI/CD c
 |[Custom domains](/docs/domain-tls)|[Cron jobs](/docs/cron-jobs)||
 |[Visitor statistics](/docs/visitor-statistics)|[MariaDB](/docs/database)||
 
+## Deploy Now Packages
+
+| Feature | Starter Project                                        | Static Project                                          | PHP Project                                             |
+|---------------------------------|--------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------|
+| **Project Type**                | Starter Project                                        | Static Project                                          | PHP Project                                             |
+| **Use Cases**                   | Static Site Generators & Single Page Applications      | Static Site Generators & Single Page Applications       | PHP Applications                                        |
+| **Storage per Deployment**      | 50 MB                                                  | 1 GB                                                    | 10 GB                                                   |
+| **Staging Deployments**         | 1                                                      | 5                                                       | 5                                                       |
+| **Deployment to IONOS infrastructure** | ✅                                                | ✅                                                       | ✅                                                       |
+| **Georedundancy & DDoS protection** | ✅                                               | ✅                                                       | ✅                                                       |
+| **Visitor statistics**          | ✅                                                     | ✅                                                       | ✅                                                       |
+| **PHP runtime environment**     | -                                                      | -                                                       | PHP 8.2 and older                                       |
+| **Database**                    | -                                                      | -                                                       | 2 GB MariaDB with PHPMyAdmin Access                     |
+| **Included in**                 | Deploy Now Membership                                  | additionally bookable                                   | additionally bookable                                   |
+| **Price**                       | 3 projects for 4€ per month                            | 2€/month per project - monthly cancellable              | 7€/month per project - monthly cancellable              |
+
+
 ## Getting started
 You can start either [from sample](/docs/framework-samples), [from command line](/docs/from-cmd-line) or [from an existing repository](/docs/from-repo).
 
