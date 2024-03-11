@@ -36,7 +36,7 @@ Deploy Now abstracts from the complexity of infrastructure provisioning, CI/CD c
 | **Use Cases** | Static Site Generators & Single Page Applications | Static Site Generators & Single Page Applications | PHP Applications |
 | **Storage per Deployment** | 50 MB | 1 GB | 10 GB |
 | **Staging Deployments** | 1 | 5 | 5 |
-| **PHP runtime environment** | - | - | PHP 8.2 and older |
+| **PHP runtime environment** | - | - | PHP 8.3 and older |
 | **Database** | - | - | 2 GB MariaDB with PHPMyAdmin Access |
 | **Included in** | Deploy Now Membership | additionally bookable | additionally bookable |
 | **Price** | 3 projects for 4€ per month | 2€/month per project - monthly cancellable | 7€/month per project - monthly cancellable |
