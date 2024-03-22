@@ -39,9 +39,9 @@ Deploy Now abstracts from the complexity of infrastructure provisioning, CI/CD c
 | **PHP runtime environment** | - | - | PHP 8.3 and older |
 | **Database** | - | - | 2 GB MariaDB with PHPMyAdmin Access |
 | **Included in** | Deploy Now Membership | additionally bookable | additionally bookable |
-| **Price** | 3 projects for 4€ per month | 2€/month per project - monthly cancellable | 7€/month per project - monthly cancellable |
+| **Price** | 3 projects for 4€/$/£ per month | 2€/$/£ per month per project - monthly cancellable | 7€/$/£ per month per project - monthly cancellable |
 
-Each project type is deployed to IONOS infrastructure, comes with georedundancy, DDoS protection and visitor statistics.
+Each project type is deployed to IONOS infrastructure and comes with geo-redundancy, DDoS protection and visitor statistics.
 
 ## Getting started
 You can start either [from sample](/docs/framework-samples), [from command line](/docs/from-cmd-line) or [from an existing repository](/docs/from-repo).
