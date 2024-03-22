@@ -15,7 +15,7 @@ Deploy Now provides a generic preview URL by default for all your deployments. A
 For your production deployment you can choose any available domain of all your IONOS contracts. You can select the domains straight from project detail view.
 ![Domain select](/domain-select.png)
 
-Besides you can assign externally registered domains to Deploy Now. For now you need at least one existing domain contract at IONOS, so that you're able to control DNS entries by IONOS. You can find a step-by-step guide [here](https://www.ionos.com/help/domains/set-up-and-manage-an-external-domain-at-11-ionos/setting-up-an-external-domain-at-11-ionos/). SSL is included by default too. 
+Besides you can assign externally registered domains to Deploy Now. For now you need at least one existing domain contract at IONOS, so that you're able to control DNS entries by IONOS. You can find a step-by-step guide [here](https://www.ionos.com/help/domains/set-up-and-manage-an-external-domain-at-11-ionos/setting-up-an-external-domain-at-11-ionos/). SSL is included by default too. If you do not have a domain contract at IONOS, please contact us via [deploynow-support@ionos.com](mailto:deploynow-support@ionos.com).
 
 ## TLS/SSL
 
