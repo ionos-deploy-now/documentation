@@ -21,13 +21,13 @@ jobs:
 
       - name: checkout
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           submodules: 'recursive'
 
       - name: Setup Node
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: v14.x
 
