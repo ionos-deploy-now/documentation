@@ -42,29 +42,6 @@
           :key="member.name"
           v-bind="member"
         />
-
-<!--        <TeamMember image="octocat.svg">
-          <div>
-            <div class="title !pb-0">
-              {{ $t('job-offer.team-title') }}
-            </div>
-            <div>
-              {{ $t('job-offer.team-subtitle') }}
-            </div>
-          </div>
-          <div>
-            <a
-              v-for="[role, link] in jobOffers"
-              :key="role"
-              :href="link"
-              class="flex text-sm leading-tight hover:underline pb-2"
-              rel="noreferrer"
-            >
-              <OpenInNew class="icon" decorative />
-              {{ $t(`job-offer.${role}`) }}
-            </a>
-          </div>
-        </TeamMember>-->
       </div>
     </div>
   </Layout>
@@ -87,20 +64,12 @@ query {
 </page-query>
 
 <script>
-import OpenInNew from 'vue-material-design-icons/OpenInNew';
-import ChevronDoubleRightIcon from 'vue-material-design-icons/ChevronDoubleRight';
-import BullhornOutline from 'vue-material-design-icons/BullhornOutline';
 import TeamMember from '~/components/TeamMember';
-import JobSearchLink from '~/components/JobSearchLink';
 import { metaInfo } from '~/libs/seo';
 
 export default {
   components: {
-    OpenInNew,
-    ChevronDoubleRightIcon,
-    BullhornOutline,
     TeamMember,
-    JobSearchLink,
   },
   data() {
     return {

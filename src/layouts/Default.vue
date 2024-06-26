@@ -43,20 +43,13 @@ query {
 
 <script>
 import { mapGetters, mapActions } from "vuex";
-import BullhornOutline from "vue-material-design-icons/BullhornOutline";
-import ChevronDoubleRightIcon from "vue-material-design-icons/ChevronDoubleRight";
 import LayoutHeader from "~/components/LayoutHeader";
 import LayoutFooter from "~/components/LayoutFooter";
-import Banner from "~/components/Banner";
 import Sidebar from "~/components/Sidebar";
-import JobSearchLink from "~/components/JobSearchLink";
+
 
 export default {
   components: {
-    Banner,
-    BullhornOutline,
-    ChevronDoubleRightIcon,
-    JobSearchLink,
     LayoutFooter,
     LayoutHeader,
     Sidebar,

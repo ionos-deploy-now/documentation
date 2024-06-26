@@ -6,6 +6,7 @@
       :class="{[logo]: true}"
       :src="logoPath(logo)"
       :alt="`${logo} logo`"
+      :key="logo"
     />
 
     <div class="container">

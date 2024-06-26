@@ -39,13 +39,3 @@
     </div>
   </div>
 </template>
-
-<script>
-import DeployNow from '~/components/DeployNow';
-
-export default {
-  components: {
-    DeployNow,
-  },
-};
-</script>

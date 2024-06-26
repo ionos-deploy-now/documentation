@@ -16,5 +16,6 @@ module.exports = {
   rules: {
     'object-curly-spacing': ['error', 'always'],
     'comma-dangle': ['error', 'always-multiline'],
+    'vue/multi-word-component-names': 'off',
   }
 };

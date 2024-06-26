@@ -1,6 +1,6 @@
-const { selectAll } = require('unist-util-select');
+//const { selectAll } = require('unist-util-select');
 const map = require('unist-util-map');
-const toHast = require('mdast-util-to-hast');
+//const toHast = require('mdast-util-to-hast');
 
 const addClasses = (node, classes) => {
   node.data = node.data || {};
@@ -16,13 +16,13 @@ function wrapNode(node) {
     children: [node],
     data: {
       //hName: 'div',
-    }
+    },
   })
   delete node.position;
   return addClasses(wrapper,`${node.type}-wrapper`);
 }
 
-module.exports = function (options) {
+module.exports = function () {
   return async function transform(tree) {
     return map(tree, (node) => {
       if (node.type === 'table') console.log('----------\nNode: ', node);
