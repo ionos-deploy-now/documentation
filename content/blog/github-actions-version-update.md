@@ -1,5 +1,5 @@
 ---
-description: ''
+description: 'Some actions in your workflow files might be outdated. Follow this quick guide and update your workflow files to ensure better performance, security and compatibility with the latest GitHub features.'
 created: '2024-06-26'
 author: 'marcel-solle'
 tags:
@@ -15,17 +15,17 @@ Some actions in your workflow files might be outdated.
 This update involves upgrading the versions of two actions: `checkout` and `node-setup` to version 4 (`v4`). 
 These enhancements ensure better performance, security and compatibility with the latest GitHub features.
 
-## How to Update Your Workflows
+## How to update your workflows
 
 To benefit from these updates, you’ll need to modify your workflow files. Here’s a quick guide:
 
-### Step 1: Locate Your Workflow Files
+### Step 1: Locate your workflow files
 
 Navigate to the `.github/workflows/` directory in your repository.
 
-### Step 2: Update Action Versions
+### Step 2: Update action versions
 
-Edit your workflow files to update the actions to `v4`:
+Edit your workflow files to update the respective actions to `v4`:
 
 ```yaml
 - name: Checkout repository
