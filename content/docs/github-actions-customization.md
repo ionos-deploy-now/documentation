@@ -57,7 +57,7 @@ Edit versions of the existing setup steps or adding additional steps to install 
 ``` yaml
       - name: Setup Node
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: v16.x
 ```
@@ -65,7 +65,7 @@ Edit versions of the existing setup steps or adding additional steps to install 
 `workflow v2`:
 ``` yaml
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: v16.x
 ```

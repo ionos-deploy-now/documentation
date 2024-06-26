@@ -37,9 +37,9 @@ This sample of .ionos.yaml demonstrates common settings available for configurat
 distFolder: dist
 setup:
 - name: Setup project
-  action: actions/setup-node@v1
+  action: actions/setup-node@v4
   properties:
-    node-version: v12.22.x
+    node-version: v16.x
 prepare:
   name: Prepare project environment
   command: npm ci

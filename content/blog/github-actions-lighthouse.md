@@ -36,7 +36,7 @@ Then install the dependencies that you need for your build on the GitHub Actions
 ```
       - name: Setup Node
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: v16.x
 
