@@ -12,7 +12,7 @@ const includedMarkdownPaths = [
 ].join("|");
 const markdownPath = `**/(${includedMarkdownPaths})/*.md`;
 const fontFamilySans = '"Open Sans", ui-sans-serif, system-ui, sans-serif';
-console.log(process.env);
+console.log(process.env.SITE_URL, JSON.stringify(process.env.SITE_URL));
 
 module.exports = {
   titleTemplate: "%s | IONOS Deploy Now",
