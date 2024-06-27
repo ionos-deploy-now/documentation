@@ -216,8 +216,6 @@ module.exports = {
     {
       use: "gridsome-plugin-robots-txt",
       options: {
-        host: process.env.SITE_URL,
-        sitemap: process.env.SITE_URL + '/sitemap.xml',
         policy: [
           {
             userAgent: "Googlebot",
