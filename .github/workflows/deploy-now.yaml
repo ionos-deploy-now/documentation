@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Fetch project data
-        uses: ionos-deploy-now/retrieve-project-info-action@v1.5.0
+        uses: ionos-deploy-now/retrieve-project-info-action@a129f4a4537c4bc04d07f2f767ff17eb5d2bd457
         id: project
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
