@@ -126,3 +126,13 @@ Following is the list of IP ranges used by the Deploy Now for outbound connectio
 
 ## Is there an IONOS Deploy Now support mail? 
 If you need support, feel free to submit a request ticket directly in the Deploy Now dashboard or to contact us via <a href="deploynow-support@ionos.com">deploynow-support@ionos.com</a>. Please note that this is the email address of the Deploy Now support team. For requests regarding any other product, please contact IONOS [via phone or via live chat](https://www.ionos.com/contact).
+
+## I get a 403 error after deploying my website, what can I do?
+### Make sure you have created an index file
+An index file (typically named index.html) is the entry point for your website. It is the first file that is loaded when a user visits your site, and it provides the initial content and structure for your web page. Deploy Now requires an index file to be present in your project's output folder, as it is used to determine the starting point for your website. If you do not have an index file, you will receive a 403 error when trying to access your website.
+
+### Make sure you configured the output folder correctly according to the framework you used 
+The output folder is the directory where your built website files are stored. To configure the output folder for your Deploy Now project, you need to specify the correct folder path in your project settings. The output folder should contain your website's index file, as well as any other files required for your website to function correctly. If you are unsure about how to configure the output folder, please consult the documentation for your specific framework or build tool.
+
+### Make sure you have an .htaccess file
+An .htaccess file is a configuration file used by web servers to control access to your website and configure various settings. It is a required file for many websites, and its absence can cause errors. To include an .htaccess file in your Deploy Now project, simply add it to your project's root directory or output folder. Make sure to configure the file correctly according to your website's needs. If you are unsure about how to create or configure an .htaccess file, please consult the documentation for your specific framework.
