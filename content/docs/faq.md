@@ -100,7 +100,7 @@ Build settings:
   - Build command: npm run build 
   - Dist folder: out
 ```
-
+:::
 
 ## Can I use Next.js without exporting a static site or incremental static regeneration feature?
 
