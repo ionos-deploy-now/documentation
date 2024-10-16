@@ -32,7 +32,7 @@ Angular, React, Vue, Ionic, Svelte and Ember
 
 ## Setup
 
-Simply connect your repository and follow a guided setup of build dependencies and steps. After the setup, your project gets deployed instantly and will build and deploy on every following `git push`. You might want to [create a new project on the command line](docs/from-cmd-line), [deploy an existing repository](/docs/from-repo/) or [deploy one of our samples](/docs/framework-samples) for a quickstart. 
+Simply connect your repository and follow a guided setup of build dependencies and steps. After the setup, your project gets deployed instantly and will build and deploy on every following `git push`. You might want to [create a new project on the command line](/docs/from-cmd-line/), [deploy an existing repository](/docs/from-repo/) or [deploy one of our samples](/docs/framework-samples) for a quickstart. 
 
 ## Settings
 
