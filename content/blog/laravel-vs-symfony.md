@@ -122,15 +122,15 @@ This chart summarizes the popularity of each framework.
    </td>
   </tr>
   <tr>
-   <td>Number of websites using the framework<sup>1</sup>
+   <td>Number of websites using the framework
    </td>
-   <td>133,610
+   <td>743,470<sup>1</sup>
    </td>
-   <td>10,571
+   <td>106,890<sup>2</sup>
    </td>
   </tr>
   <tr>
-   <td>G2 Rating<sup>2</sup>
+   <td>G2 Rating<sup>3</sup>
    </td>
    <td>4.5 Stars
    </td>
@@ -148,8 +148,9 @@ This chart summarizes the popularity of each framework.
 </table>
 
 
-<sup>1 </sup>[Source](https://www.similartech.com/compare/laravel-vs-symfony) \
-<sup>2 </sup>[Source](https://www.g2.com/compare/laravel-vs-symfony)
+<sup>1 </sup>[Source](https://aundigital.ae/blog/laravel-usage-statistics/) \
+<sup>2 </sup>[Source](https://trends.builtwith.com/framework/symfony-PHP-Framework) \
+<sup>3 </sup>[Source](https://www.g2.com/compare/laravel-vs-symfony)
 
 
 ## Summary
