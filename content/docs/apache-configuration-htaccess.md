@@ -190,7 +190,7 @@ With Single Page Apps (SPAs) client-side routing has become very popular. Client
 
 ### Nuxt
 
-[Nuxt v3](https://v3.nuxtjs.org/) introduces [Native ES Modules](https://v3.nuxtjs.org/guide/going-further/esm/). The mime type `*.mjs` is not that popular so far. At the moment you have to add the mime type on your own. 
+[Nuxt v3](https://v3.nuxtjs.org/) introduces [Native ES Modules](https://nuxt.com/docs/guide/concepts/esm). The mime type `*.mjs` is not that popular so far. At the moment you have to add the mime type on your own. 
 
 ```
 # check that mod_mime is enabled
