@@ -125,7 +125,7 @@ Following is the list of IP ranges used by the Deploy Now for outbound connectio
 - 82.165.89.0/24
 
 ## Is there an IONOS Deploy Now support mail? 
-If you need support, feel free to submit a request ticket directly in the Deploy Now dashboard or to contact us via <a href="deploynow-support@ionos.com">deploynow-support@ionos.com</a>. Please note that this is the email address of the Deploy Now support team. For requests regarding any other product, please contact IONOS [via phone or via live chat](https://www.ionos.com/contact).
+If you need support, feel free to submit a request ticket directly in the Deploy Now dashboard or to contact us via <a class="email" href="mailto:deploynow-support@ionos.com">deploynow-support@ionos.com</a>. Please note that this is the email address of the Deploy Now support team. For requests regarding any other product, please contact IONOS [via phone or via live chat](https://www.ionos.com/contact).
 
 ## I get a 403 error after deploying my website, what can I do?
 ### Make sure you have created an index file
