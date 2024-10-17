@@ -298,6 +298,6 @@ git push -u origin main
 10) Set up deployment by signing into your Deploy Now account and clicking “New Project.” Next, choose the source you
     want to deploy from. Grant the requested permissions to IONOS, define `next build` as your build command and `out` as your dist folder and you are ready to go.
 
-_Article written by Daniel Hunt from [digitaljailbreak.com](https://www.digitaljailbreak.com)_
+_Article written by Daniel Hunt from [Danial Hunt](https://github.com/dhunt12)_
  
 
