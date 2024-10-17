@@ -68,5 +68,5 @@ The next step is to understand the concept and handling of APIs in general. How 
 ### 3. Experiment with the Shopify API
 Once the API concept is understood, it makes sense to work with Shopify's specific API. All information needed to get started can be found in the [documentation](https://shopify.dev/api). 
 ### 4. Host a frontend on Deploy Now and start with the first integrations
-Deploy your Vue frontend instantly from your GitHub account to IONOS' in-house engineered infrastructure. Push new code to your repository and your website code is updated instantly. A step-by-step guide to setting up your deployment can be found [here](https://docs.ionos.space/from-repo/). You can sign up for Deploy Now [here](https://www.ionos.com/hosting/deploy-now?utm_source=deploy-now-docs&utm_medium=blog&utm_campaign=ecommerce-vue#pricing).
+Deploy your Vue frontend instantly from your GitHub account to IONOS' in-house engineered infrastructure. Push new code to your repository and your website code is updated instantly. A step-by-step guide to setting up your deployment can be found [here](https://docs.ionos.space/from-repo). You can sign up for Deploy Now [here](https://www.ionos.com/hosting/deploy-now?utm_source=deploy-now-docs&utm_medium=blog&utm_campaign=ecommerce-vue#pricing).
 
