@@ -6,7 +6,7 @@ next: 'git-integration'
 editable: true
 ---
 
-# GitHub Actions in IONOS DeployNow
+# GitHub Actions in IONOS Deploy Now
 
 ## BUILD PROCESS
 
