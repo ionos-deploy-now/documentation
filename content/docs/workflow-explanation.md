@@ -8,6 +8,14 @@ editable: true
 
 # GitHub Actions in IONOS Deploy Now
 
+This document provides a detailed overview of the **build and deployment processes** used in projects implemented with **IONOS DeployNow**, integrated with **GitHub Actions** for automated continuous integration and deployment. It outlines **mandatory** and **optional** steps, offering guidance adaptable to various types of projects and frameworks, including **PHP applications** (like **Laravel** and **Symfony**), **Single Page Applications (SPA)** using frameworks like **React, Angular**, and **Vue**, and a wide range of **static site generators** (such as **Gatsby, Hugo**, and **Jekyll**).
+
+The first section, **BUILD PROCESS**, covers the essential steps for preparing and building the project before deployment, from setting up the environment to creating and optimizing production-ready assets. Each step is categorized as either "Mandatory" or "Optional," with a focus on its applicability based on the technology used.
+
+The second section, **DEPLOYMENT PROCESS**, explains the necessary steps to deploy the built project to the target server or platform. These steps are also divided into mandatory and optional, including tasks such as **server configuration**, **database migrations**, and **content validation**, with specific examples for each type of project.
+
+To access detailed information on these processes directly in **GitHub**, you can navigate to **your repository > Actions > Select the specific action** you want to check.
+
 ## BUILD PROCESS
 
 ### Mandatory Steps (for most projects)
