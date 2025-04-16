@@ -24,16 +24,6 @@ A description of the crontab syntax that is required to define schedules can be 
 
 To run a PHP command using a specific version, you need to provide the absolute path to the desired PHP version. Below is a list of the available versions:
 
-- `/usr/bin/php4.4-cli`
-- `/usr/bin/php5.2-cli`
-- `/usr/bin/php5.4-cli`
-- `/usr/bin/php5.5-cli`
-- `/usr/bin/php5.6-cli`
-- `/usr/bin/php7.0-cli`
-- `/usr/bin/php7.1-cli`
-- `/usr/bin/php7.2-cli`
-- `/usr/bin/php7.3-cli`
-- `/usr/bin/php7.4-cli`
 - `/usr/bin/php8.0-cli`
 - `/usr/bin/php8.1-cli`
 - `/usr/bin/php8.2-cli`
