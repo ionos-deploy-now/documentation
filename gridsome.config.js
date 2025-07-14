@@ -88,6 +88,7 @@ module.exports = {
             title: "More",
             items: [
               "/docs/faq/",
+              "/docs/provider/",
               ...(showBlog ? ["/blog/"] : []),
               "/about-us/",
               "/docs/create-sample/",
