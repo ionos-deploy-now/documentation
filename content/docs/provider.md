@@ -8,7 +8,7 @@ editable: true
 
 
 
-# Guidance for Migrating a Git-Based Project
+# How to migrate your Deploy Now Project
 
 > Due to the EU Data Act, we are legally obliged to inform you about how you can move to another provider. However, we hope you like Deploy Now so much that you stay!
 
@@ -18,13 +18,13 @@ Moving a project from IONOS Deploy Now to a new hosting provider is a manageable
 
 Before you begin, you must ensure your project's code is located in a repository that your new hosting provider can access.
 
-If your code is already located on a compatible Git provider (such as GitHub), you can proceed directly to the "Migration Process" section.
+If your code is already located on a compatible Git provider, you can proceed directly to the "Migration Process" section.
 
 ### Moving Your Codebase to a Different Git Provider
 
 If your code is on a Git provider that is not compatible with your new host, you must first move the repository. The recommended method is to create a "mirror," which duplicates the repository perfectly, including all branches, tags, and commit history.
 
-1.  **Create a New Repository:** Start by creating a new, empty repository on the target Git provider (e.g., GitHub).
+1.  **Create a New Repository:** Start by creating a new, empty repository on the target Git provider (e.g., GitLab, Bitbucket).
 2.  **Mirror the Repository:** This is most commonly done via the command line. You perform a "bare clone" of your existing repository and then "mirror-push" it to the new repository's address. The general commands are:
     ```bash
     git clone --bare [https://old-provider.com/user/repo.git](https://old-provider.com/user/repo.git)
