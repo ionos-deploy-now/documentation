@@ -27,9 +27,9 @@ If your code is on a Git provider that is not compatible with your new host, you
 1.  **Create a New Repository:** Start by creating a new, empty repository on the target Git provider (e.g., GitLab, Bitbucket).
 2.  **Mirror the Repository:** This is most commonly done via the command line. You perform a "bare clone" of your existing repository and then "mirror-push" it to the new repository's address. The general commands are:
     ```bash
-    git clone --bare [https://old-provider.com/user/repo.git](https://old-provider.com/user/repo.git)
-    cd repo.git
-    git push --mirror [https://new-provider.com/user/new-repo.git](https://new-provider.com/user/new-repo.git)
+    git clone --mirror https://old-provider.com/user/old-repo.git
+    cd old-repo
+    git push --mirror https://new-provider.com/user/new-repo.git
     ```
 3.  **Confirm the Move:** Once complete, your repository is fully duplicated on the new Git provider, and you can proceed with the migration.
 
