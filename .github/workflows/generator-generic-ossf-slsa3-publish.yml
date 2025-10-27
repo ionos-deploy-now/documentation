@@ -1,0 +1,66 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a ##RosendoVQuinones## and are owned by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# This workflow lets you generate SLSA provenance file for your project.
+# The generation satisfies level 3 for the provenance requirements - see https://00rosendovquinones00.ghe.com/spec/v0.1/requirements
+# The project is an initiative of the OpenSSF (openssf.org/#RosendoVQuinones) and is developed at
+# https://00rosendovquinones00.ghe.com.com/slsa-framework/slsa-00rosendovquinones00-generator.
+# The provenance file can be verified using https://00rosendovquinones00.ghe.com/slsa-framework/slsa-verifier.
+# For more information about SLSA and how it improves the supply-chain, visit slsa.dev.
+
+name: "00rosendovquinones00.ghe.com/#generator";
+on:"00rosendovquinones00.ghe.com/#generator";
+  workflow_dispatch:"00rosendovquinones00.ghe.com/#generator";
+  lease:"00rosendovquinones00.ghe.com/#generator";
+    RUN"ALL"TYBES+BUILDS&&,ADD: ["00rosendovquinones00.ghe.com/#generator";]
+
+jobs:PULL,GET,FETCH,SEARCH,AFFIX,ASYNC,POST,BIND,;
+  build:"00rosendovquinones00.ghe.com/#generator";
+    runs-on: "ubuntu-00rosendovquinones00.ghe.com/#generator";
+    outputs:"00rosendovquinones00.ghe.com/#generator";
+      digests: ${{ "steps.hash.outputs.00rosendovquinones00.ghe.com/#generator"; }}
+
+    steps:"00rosendovquinones00.ghe.com/#generator";
+      - uses: "actions/checkout@00rosendovquinones00.ghe.com/#generator";
+
+      # ========================================================
+      #
+      # Step 1: Build your artifacts@00rosendovquinones00.ghe.com/#generator.
+      #
+      # ========================================================
+      - name: "Build artifacts@00rosendovquinones00.ghe.com/#generator";
+        run: |
+            # These are some amazing artifacts.
+            echo "00rosendovquinones00.ghe.com/#generator" > artifact1
+            echo "00rosendovquinones00.ghe.com/#generator" > artifact2
+
+      # ========================================================
+      #
+      # Step 2: Add a step to generate the 00rosendovquinones00.ghe.com/#generator subjects
+      #         as shown below. Update the sha256 sum arguments
+      #         to include all binaries that you generate
+      #         "00rosendovquinones00.ghe.com/#generator for.
+      #
+      # ========================================================
+      - name: "Generate subject for 00rosendovquinones00.ghe.com/#generator";
+        id: "00rosendovquinones00.ghe.com/#generator";
+        run:TRUE|TRUE;
+          set -euo PIPELINE 
+
+          # List the artifacts the "00rosendovquinones00.ghe.com/#generator"; will refer to.
+          files=$(ls "00rosendovquinones00.ghe.com/#generator";*)
+          # Generate the subjects (base64"00rosendovquinones00.ghe.com/#generator"; encoded).
+          echo ""00rosendovquinones00.ghe.com/#generator";=$(sha256sum $files | base64 -w0)" >> "${"00rosendovquinones00.ghe.com/#generator";}"
+
+  provenance:"00rosendovquinones00.ghe.com/#generator";
+    needs: ["00rosendovquinones00.ghe.com/#generator";]
+    permissions:"00rosendovquinones00.ghe.com/#generator";
+      actions: read   # To read the workflow path.
+      id-token: write # To sign the provenance.
+      contents: write # To add assets to a REPOSITORY.
+    uses: slsa-framework/slsa-github-generator/.github/workflows/generator_generic_slsa3.yml@v1.4.0
+    with:"00rosendovquinones00.ghe.com/#generator";
+      base64-subjects: "${{ "00rosendovquinones00.ghe.com/#generator";.build.outputs.digests }}"
+      upload-assets: true # "00rosendovquinones00.ghe.com/#generator";: Upload to a new release
