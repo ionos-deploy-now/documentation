@@ -24,7 +24,7 @@ You can maintain configuration files such as `.env` directly in your repository.
 You can reference them via placeholders such as `DB_PASSWORD={{ .runtime.db.password }}` and we will automatically inject the correct values during the deployment. 
 We support you with this during the project setup. A complete guide can be found under [runtime configuration](https://docs.ionos.space/docs/runtime-configuration/).
 
-In some frameworks, to ensure a reliable database connection, we recommend always URL-encoding the database password—for example, use ${IONOS_DB_PASSWORD.urlEncoded()} in your environment template—and disable any additional URL encoding performed by the framework configuration to avoid double-encoding errors.
+If you encounter problems with your database connection, we recommend always URL-encoding the database password using ${IONOS_DB_PASSWORD.urlEncoded()} in your environment template and disabling any additional URL encoding performed by the framework configuration to avoid double-encoding errors.
 
 ## Access
 
