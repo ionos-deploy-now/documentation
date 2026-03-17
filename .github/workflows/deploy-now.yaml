@@ -12,42 +12,48 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Fetch project data
-        uses: ionos-deploy-now/retrieve-project-info-action@v1
+        uses: ionos-deploy-now/project-action@v1
         id: project
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
-          project: ${{ secrets.IONOS_PROJECT_ID }}
+          project-id: ${{ secrets.IONOS_PROJECT_ID }}
           service-host: api-eu.ionos.space
+          action: retrieve-info
 
       - name: checkout
-        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        if: ${{ fromJSON(steps.project.outputs.info).deployment-enabled }}
         uses: actions/checkout@v4
         with:
           submodules: 'recursive'
 
       - name: Setup Node
-        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        if: ${{ fromJSON(steps.project.outputs.info).deployment-enabled }}
         uses: actions/setup-node@v4
         with:
           node-version: v14.x
 
       - name: Build Node assets
+        if: ${{ fromJSON(steps.project.outputs.info).deployment-enabled }}
         env:
           CI: true
           SHOW_BLOG: true
-          SITE_URL: ${{ steps.project.outputs.site-url }}
+          SITE_URL: ${{ fromJSON(steps.project.outputs.info).site-url }}
           URL_GITHUB: https://github.com/ionos-deploy-now/documentation/
           URL_WEB: https://ionos.space
         run: |
           npm ci
           npm run build
+
       - name: Deploy to IONOS
-        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: ionos-deploy-now/deploy-to-ionos-action@feature/tls
+        if: ${{ fromJSON(steps.project.outputs.info).deployment-enabled }}
+        uses: ionos-deploy-now/deploy-to-ionos-action@v2
         with:
-          project: ${{ secrets.IONOS_PROJECT_ID }}
-          branch-id: ${{ steps.project.outputs.branch-id }}
           service-host: api-eu.ionos.space
           api-key: ${{ secrets.IONOS_API_KEY }}
-          dist-folder: dist
-          runtime-placeholder-files: ${{ steps.template.outputs.runtime-placeholder-files }}
+          project-id: ${{ secrets.IONOS_PROJECT_ID }}
+          branch-id: ${{ fromJSON(steps.project.outputs.info).branch-id }}
+          deployment-id: ${{ fromJSON(steps.project.outputs.info).branch-info.principal-deployment.deployment-id }}
+          deployment-folder: dist
+          deployment-info: ${{ steps.project.outputs.info }}
+          ssh-user: ${{ fromJSON(steps.project.outputs.info).branch-info.principal-deployment.ssh-user }}
+          ssh-key: ${{ fromJSON(steps.project.outputs.info).branch-info.principal-deployment.ssh-key }}
