@@ -32,12 +32,16 @@ jobs:
         with:
           node-version: v14.x
 
+      - name: Debug project info
+        if: ${{ fromJSON(steps.project.outputs.info).deployment-enabled }}
+        run: echo '${{ steps.project.outputs.info }}' | jq .
+
       - name: Build Node assets
         if: ${{ fromJSON(steps.project.outputs.info).deployment-enabled }}
         env:
           CI: true
           SHOW_BLOG: true
-          SITE_URL: ${{ fromJSON(steps.project.outputs.info).site-url }}
+          SITE_URL: ${{ fromJSON(steps.project.outputs.info).site-url || 'https://docs.ionos.space' }}
           URL_GITHUB: https://github.com/ionos-deploy-now/documentation/
           URL_WEB: https://ionos.space
         run: |
