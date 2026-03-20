@@ -2,7 +2,7 @@
 description: 'Frequently Asked Questions about Deploy Now, supported frameworks and technologies and how to deploy them.'
 sidebar: 'docs'
 prev: '/docs/cronjobs/'
-next: '/docs/feature-management/'
+next: '/docs/managing-projects-and-feature-slots/'
 editable: true
 ---
 

@@ -1,49 +1,55 @@
 ---
-description: 'Feature Management and Project Consistency in Deploy Now'
+description: 'Managing Projects and Feature Slots in Deploy Now'
 sidebar: 'docs'
 prev: '/docs/faq/'
 next: '/docs/provider/'
 editable: true
 ---
 
-# Feature Management and Project Consistency in Deploy Now
+# Managing Projects and Feature Slots in Deploy Now
 
 ## Overview
 
-When using **Deploy Now**, each online project must be paired with a corresponding active Deploy Now Project feature. This ensures predictable deployment behavior and consistent resource usage across your projects.
+When managing your **Deploy Now** projects, a common misconception is that every online project is hard-linked to a specific "Project Feature" in your contract. 
 
-In Deploy Now, the number of enabled **Deploy Now features** must always match the number of **projects currently online**.
+In reality, Deploy Now features simply act as an overall pool of available **slots**. There is no direct connection between a specific project and a specific feature. Instead of looking for an exact match, you only need to ensure that your total number of available slots meets or exceeds your total number of currently deployed projects.
 
-## Feature–Project Relationship
+## Understanding Static vs. Dynamic Slots
 
-Deploy Now uses a one-to-one relationship between:
+When managing your features and projects, the only distinction you need to make is the *type* of project you are hosting. Features are categorized into two types of slots:
 
-- **Feature units** — these represent active deployment capacity, including staging deployments and feature environments.
-- **Online projects** — the live apps or sites currently deployed through Deploy Now.
+* **Static Slots:** Used for hosting static projects.
+* **Dynamic Slots:** Used for hosting dynamic projects.
 
-Make sure your project count aligns with your available features before making changes to avoid temporary configuration mismatches.
+As long as you have enough slots of the correct type to cover your active projects, your Deploy Now environment will operate smoothly. The exact feature you add or remove does not matter, only the **total number of slots**.
 
-## What Happens If a Feature Is Removed by Mistake
+## Deleting a Project and a Feature
 
-If a Deploy Now feature that is associated with an online project is deleted unintentionally:
+Because there is no fixed connection between a project and a feature, removing a project to save costs is a straightforward, two-step process. You do not need to identify the "exact" feature to delete. 
 
-- The **online project is *not*** deleted.
-- The project **remains in Deploy Now and continues to exist** as a resource.
-- No data loss occurs as a result of the feature deletion.
-- Deploy Now marks the project as lacking one matching feature but does not disable the project itself.
+To safely scale down:
+1. **Delete the Project:** Remove the specific online project you no longer need via the Deploy Now interface. Take note of whether it was a static or dynamic project.
+2. **Delete Any Matching Feature Slot:** Navigate to your plan management and cancel *any* feature of the corresponding type (static or dynamic). 
+
+**Important:** Before removing a feature, always verify that your remaining number of slots is equal to or greater than the number of projects you plan to keep online.
+
+## What Happens If a Feature (Slot) Is Removed by Mistake?
+
+If you accidentally delete a Deploy Now feature slot before deleting a project—resulting in fewer slots than active projects—your deployments are safe:
+
+* The **online project is *not*** deleted.
+* The project remains in Deploy Now and your files are safe (no data loss occurs).
+* Deploy Now will simply flag your account as lacking the necessary slot capacity.
 
 ## Restoring Normal Operation
 
-To restore correct feature–project alignment:
+If you find yourself with a capacity mismatch (more projects than slots), you can easily restore normal operation by balancing your numbers:
 
-1. **Re-activate a Deploy Now feature** via your dashboard or contacting support.
-2. Ensure the **total number of active features matches the total number of online projects**.
-3. Deploy Now will automatically return to normal operational state once alignment is restored.
-
-This process ensures that each project has the correct deployment support without impacting uptime.
+* **Option A:** Re-activate a Deploy Now feature (static or dynamic, depending on what is missing) via your dashboard.
+* **Option B:** Delete an unused online project to free up an existing slot, bringing your active project count back within your limit.
 
 ## Best Practice Recommendations
 
-- Review your active features regularly via the Deploy Now dashboard.
-- Before removing a feature, confirm that the intended project is no longer needed or has been decommissioned.
-- If you encounter mismatches, re-add a free feature rather than deleting the associated project.
+* **Think in "Parking Spaces":** Treat your Deploy Now features like parking spaces (slots) and your projects like cars. Any car can park in any available space of the right size (static vs. dynamic). 
+* **Check the Type:** Always double-check if the project you are managing is static or dynamic before adding or removing features.
+* **Count Before Deleting:** Before removing a feature from your account, briefly count your remaining active projects to ensure you have enough capacity left over.
