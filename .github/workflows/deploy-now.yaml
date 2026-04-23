@@ -43,7 +43,7 @@ jobs:
           npm run build
       - name: Deploy to IONOS
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: ionos-deploy-now/deploy-to-ionos-action@v1
+        uses: ionos-deploy-now/deploy-to-ionos-action@v1.4.9
         with:
           project: ${{ secrets.IONOS_PROJECT_ID }}
           branch-id: ${{ steps.project.outputs.branch-id }}
