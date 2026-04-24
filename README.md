@@ -38,7 +38,7 @@ npm run cli
 
 Create static build in `dist` folder.
 
-Trigger Build
+Trigger Build 2
 ```bash
 npm run build
 ```
