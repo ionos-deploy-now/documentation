@@ -24,4 +24,4 @@ Log data can be found in the logs directory of your web space in the files acces
 
 - .gz means that the file is compressed to save space
 
-The logs for the current day are updated almost in real time. Due to the large amount of data, log data is kept available for a maximum of 8 weeks. The space used by the access logs is ignored when determing your remaining storage space. There is no need to delete the "logs" folder in order to have more storage space.
+The logs for the current day are updated almost in real time. Due to the large amount of data, log data is kept available for a maximum retention of 30 days. The space used by the access logs is ignored when determing your remaining storage space. There is no need to delete the "logs" folder in order to have more storage space.
